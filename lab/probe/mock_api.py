@@ -30,6 +30,15 @@ def has_tool_result(content):
     return isinstance(content, list) and any(isinstance(b, dict) and b.get("type") == "tool_result" for b in content)
 
 
+def last_tool_name(messages):
+    """Name of the tool the assistant called last (None if its last message called none)."""
+    for m in reversed(messages or []):
+        if m.get("role") == "assistant":
+            names = [b.get("name") for b in m.get("content") or [] if isinstance(b, dict) and b.get("type") == "tool_use"]
+            return names[-1] if names else None
+    return None
+
+
 def last_user(messages):
     for m in reversed(messages or []):
         if m.get("role") == "user":
@@ -59,6 +68,9 @@ def plan(body):
     if is_compact:
         return n, [{"type": "text", "text": "<analysis>mock analysis</analysis>\n<summary>\nMOCK-COMPACT-SUMMARY #%d: the user asked several probe questions.\n</summary>" % n}], "end_turn", usage_in
     if has_tool_result(lu.get("content")):
+        if last_tool_name(msgs) == "Read":      # [[READTURN]]: report what the Read of a turn file returned
+            got = " ".join(str(b.get("content"))[:200] for b in lu["content"] if isinstance(b, dict) and b.get("type") == "tool_result")
+            return n, [{"type": "text", "text": "턴 파일을 읽은 결과입니다 (#%d): %s" % (n, got.replace("\n", " ")[:200])}], "end_turn", usage_in
         return n, [{"type": "text", "text": "## 결과\n\n도구 실행을 마쳤습니다. 최종 답변 #%d 입니다.\n\n- 항목 A\n- 항목 B" % n}], "end_turn", usage_in
     if "[[SLOW]]" in prompt_text:
         SLOW_IDS.add(n)
@@ -69,6 +81,14 @@ def plan(body):
         nm = "Agent" if "Agent" in tools else "Task"
         return n, [{"type": "tool_use", "id": "toolu_mock%06d" % n, "name": nm,
                     "input": {"description": "probe subagent", "prompt": "Reply with the single word SUBAGENT-PONG.", "subagent_type": "general-purpose"}}], "tool_use", usage_in
+    if "[[READTURN]]" in prompt_text and "Read" in tools:
+        # Act like a model that follows the injected ctx-index table of contents: read the first turn file.
+        m = re.search(r"디렉터리: (.+?) \(턴 \d+개\)", "\n".join(text_of(x.get("content")) for x in msgs))
+        if m:
+            d = m.group(1)
+            return n, [{"type": "tool_use", "id": "toolu_mock%06d" % n, "name": "Read",
+                        "input": {"file_path": d + ("\\" if "\\" in d else "/") + "0001.md"}}], "tool_use", usage_in
+        return n, [{"type": "text", "text": "주입된 목차를 찾지 못했습니다 (#%d)." % n}], "end_turn", usage_in
     if "[[BIG]]" in prompt_text:
         usage_in = int(os.environ.get("MOCK_BIG_TOKENS", "190000"))
     if "[[SLOW]]" in prompt_text:

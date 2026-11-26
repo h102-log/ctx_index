@@ -2,7 +2,7 @@
 
 `ctx-index` 훅을 구현하기 전에 실제 Claude Code의 훅 이벤트 스키마를 확인하고 설계를 미리 시험해 본 자료입니다. 보고서는 [`docs/phase3-report.md`](../docs/phase3-report.md)에 있습니다.
 
-**이 디렉터리는 최종 산출물이 아닙니다.** `proto/ctx_proto.py`는 설계 검증용 프로토타입이며, 훅 본체 · 테스트 스위트 · 측정 스크립트는 승인 후(④)에 따로 작성합니다.
+**이 디렉터리는 최종 산출물이 아닙니다.** `proto/ctx_proto.py`는 설계 검증용 프로토타입입니다. 승인 후(④)에 작성한 훅 본체 · 테스트 스위트 · 측정 스크립트는 저장소 루트의 [`hooks/`](../hooks), [`tests/`](../tests), [`tools/`](../tools)에 있고, 그 결과는 [`docs/phase4-report.md`](../docs/phase4-report.md)에 있습니다. 테스트 스위트는 이 디렉터리의 캡처 사본(`tests/fixtures/captures/`)을 최종 훅에 재생하고, 최종 훅과 프로토타입의 결과가 같은지 비교합니다.
 
 ## 구성
 
@@ -71,6 +71,28 @@ PROBE_OUT=$PWD/.run/out/c/payloads.jsonl ./scen_c.sh
 CTX_INDEX_DIR=$PWD/.run/out/e2e-ctx PROBE_SETTINGS=proto-settings.json python3 drive.py scen_e2e
 ```
 
+최종 훅(`hooks/ctx_index.py`)의 종단 실행은 설정 템플릿 대신 **설치 도우미를 가짜 HOME에 대고 실행해** 등록합니다. 훅과 기록이 모두 `.run/home/.claude/` 아래에 생기므로 실제 계정과 설정에는 영향이 없습니다.
+
+```bash
+HOME=$PWD/.run/home python3 ../../tools/install_hook.py
+```
+
+```bash
+echo '{}' > .run/settings/empty.json && PROBE_SETTINGS=empty.json python3 drive.py scen_e2e
+```
+
+```bash
+PROBE_SETTINGS=empty.json python3 drive.py scen_read
+```
+
+```bash
+HOME=$PWD/.run/home python3 ../../tools/ctx_index_measure.py
+```
+
+- `scen_read`의 `[[READTURN]]` 프롬프트에서 모의 API는 주입된 목차의 "디렉터리:" 줄을 찾아 첫 턴 파일을 `Read`합니다. 턴 파일은 프로젝트 밖에 있어서, `.run/home/.claude/settings.json`의 `permissions.allow`에 `Read(~/.claude/ctx-index/**)`가 없으면 헤드리스 실행에서는 권한이 거부됩니다.
+- 목차가 어느 요청에 들어갔는지는 모의 API 요청 로그(`.run/out/requests.jsonl`)에서 고정 머리말을 찾아 확인합니다.
+- TUI 시나리오도 같은 방식으로 돌립니다: `PROBE_SETTINGS=empty.json python3 tui_drive.py scen_tui3`.
+
 채집한 캡처를 커밋할 수 있는 형태로 정리합니다.
 
 ```bash
@@ -81,6 +103,7 @@ python3 pack_captures.py .run/out ../captures/v2 --map "$PWD/.run=/lab/probe" --
 - 전체 이벤트를 보려면 `PROBE_SETTINGS=probe-settings.json`(v1 프로브)을 씁니다.
 - 브랜치 전환 시나리오(`scen_a`)는 테스트 프로젝트에 브랜치를 만들므로, 다시 돌리기 전에 `setup_lab.py --fresh`로 초기화합니다.
 - `sim_replay.py`의 stacked 검사 한 건은 모의 API의 답변 일련번호("답변 9", "답변 10")에 묶여 있어, 새로 채집한 캡처에서는 번호가 달라질 수 있습니다.
+- 캡처를 새로 만들어 `captures/v2`를 바꾸면 `tests/fixtures/captures/`도 같은 내용으로 맞춥니다(테스트가 둘이 같은지 확인합니다).
 
 ## 캡처 정리 규칙
 
