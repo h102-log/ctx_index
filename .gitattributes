@@ -1,0 +1,6 @@
+# Keep line endings byte-exact on every platform. Git for Windows converts text files to CRLF
+# on checkout by default; the replay fixtures are cut at recorded byte offsets, and the
+# committed simulation outputs are compared byte for byte.
+* text=auto eol=lf
+*.jsonl -text
+*.out -text
