@@ -1,0 +1,43 @@
+{
+ "hooks": {
+  "UserPromptSubmit": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3 \"__PROBE__/probe_hook2.py\" UPS"
+     }
+    ]
+   }
+  ],
+  "Stop": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3 \"__PROBE__/probe_hook2.py\" STOP"
+     }
+    ]
+   },
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3 \"__PROBE__/block_once.py\""
+     }
+    ]
+   }
+  ],
+  "SessionStart": [
+   {
+    "matcher": "compact",
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3 \"__PROBE__/probe_hook2.py\" SS-compact"
+     }
+    ]
+   }
+  ]
+ }
+}

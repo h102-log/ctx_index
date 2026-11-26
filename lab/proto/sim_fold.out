@@ -1,0 +1,97 @@
+======================================================================================================================================================
+PART 2-A  렌더링과 접기 단계 경계 (상한 6000자, 미리보기 70/90자, 첫 압축 접기 5턴, 소형 기준 500B)
+======================================================================================================================================================
+S1 첫 압축, 12턴                                   turns=  12  stage=full chars=1791 utf16=1791  full-lines= 12 fold-lines= 0 folded=   0 preview=70/90  kept 0001.md..0012.md  0.3ms 
+      | 이 세션에서 있었던 턴의 목록입니다. 결과의 요약이 아니며 빠진 것이 있을 수 있습니다. 세부가 필요하면 아래 디렉터리의 해당 턴 파일을 직접 읽으세요.
+      | 디렉터리: C:\Users\honggildong\.claude\ctx-index\3f2c9a54-7b1e-4c0d-9a6f-5e8d2b1c4a70\turns (턴 12개)
+      | 형식: 파일 크기 | 요청 → 답변
+      | 0001.md 0.1KB | 좋아 그대로 해줘 → 커밋했습니다 (a1b2c3d).
+      | 0002.md 0.1KB | 계속 → Done.
+      | 0003.md 12.6KB | auth 미들웨어에서 세션 토큰 갱신이 간헐적으로 실패하는 원인을 찾아줘. 로그는 logs/auth-2026-11-20.lo… → 재시도 로직은 gateway 타임아웃(30초)과 클라이언트 타임아웃(10초)의 불일치 때문에 동일 주문에 대해 최대 3회까지 결제 요청을 중복 전송할 수 있습니…
+      | 0004.md 5.3KB | CI에서 test_order_pipeline 이 20% 확률로 실패해. flaky 원인을 좁혀보고 고칠 수 있으면 고쳐줘.… → The flake comes from a shared temp directory: two test workers write order fixtures to th…
+      | 0005.md 5.3KB | [목표] 결제 모듈의 재시도 로직을 분석하고, 타임아웃이 중복 결제로 이어지는 경로가 있는지 확인해줘. 관련 파일은 paym… → The flake comes from a shared temp directory: two test workers write order fixtures to th…
+      | 0006.md 0.1KB | 테스트도 돌려줘 → 계속하겠습니다.
+      | … (4 more lines) …
+      | 0011.md 10.5KB | CI에서 test_order_pipeline 이 20% 확률로 실패해. flaky 원인을 좁혀보고 고칠 수 있으면 고쳐줘.… → 토큰 갱신 실패는 refresh 엔드포인트의 락 범위가 사용자 단위가 아니라 세션 단위여서, 같은 사용자의 탭 두 개가 동시에 갱신을 시도할 때 한쪽이 이미 폐…
+      | 0012.md 5.3KB | auth 미들웨어에서 세션 토큰 갱신이 간헐적으로 실패하는 원인을 찾아줘. 로그는 logs/auth-2026-11-20.lo… → The flake comes from a shared temp directory: two test workers write order fixtures to th…
+S2 첫 압축, 40턴                                   turns=  40  stage=full chars=5819 utf16=5819  full-lines= 40 fold-lines= 0 folded=   0 preview=70/90  kept 0001.md..0040.md  0.1ms 
+S3 첫 압축, 48턴                                   turns=  48  stage=2a   chars=3864 utf16=3864  full-lines= 43 fold-lines= 1 folded=   5 preview=35/45  kept 0001.md..0043.md  0.2ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0044.md~0048.md 10.7KB (5턴 접힘)
+S4 첫 압축, 70턴                                   turns=  70  stage=2a   chars=5401 utf16=5401  full-lines= 65 fold-lines= 1 folded=   5 preview=35/45  kept 0001.md..0065.md  0.3ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0066.md~0070.md 12.8KB (5턴 접힘)
+S5 첫 압축, 110턴                                  turns= 110  stage=2c   chars=5924 utf16=5924  full-lines= 52 fold-lines=22 folded=  58 preview=35/45  kept 0003.md..0082.md  1.4ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0001.md~0002.md 0.1KB (2턴 접힘) ; 0006.md 0.1KB (접힘) ; 0008.md 0.1KB (접힘) ; 0015.md 0.1KB (접힘) …
+S6 첫 압축, 300턴                                  turns= 300  stage=2c   chars=5923 utf16=5923  full-lines= 52 fold-lines=22 folded= 248 preview=35/45  kept 0003.md..0082.md  3.2ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0001.md~0002.md 0.1KB (2턴 접힘) ; 0006.md 0.1KB (접힘) ; 0008.md 0.1KB (접힘) ; 0015.md 0.1KB (접힘) …
+S7 2회차 압축(경계=40), 58턴                          turns=  58  stage=1    chars=5885 utf16=5885  full-lines= 40 fold-lines= 1 folded=  18 preview=70/90  kept 0001.md..0040.md  0.2ms 
+                                                 stage-1 segment: since turn 41 (18 turns) ; fold lines: 0041.md~0058.md 88.5KB (18턴 접힘)
+      | 이 세션에서 있었던 턴의 목록입니다. 결과의 요약이 아니며 빠진 것이 있을 수 있습니다. 세부가 필요하면 아래 디렉터리의 해당 턴 파일을 직접 읽으세요.
+      | 디렉터리: C:\Users\honggildong\.claude\ctx-index\3f2c9a54-7b1e-4c0d-9a6f-5e8d2b1c4a70\turns (턴 58개)
+      | 형식: 파일 크기 | 요청 → 답변 · '접힘'은 미리보기만 생략한 구간이며 파일은 그대로 있음
+      | 0001.md 0.1KB | 좋아 그대로 해줘 → 커밋했습니다 (a1b2c3d).
+      | 0002.md 0.1KB | 계속 → Done.
+      | 0003.md 12.6KB | auth 미들웨어에서 세션 토큰 갱신이 간헐적으로 실패하는 원인을 찾아줘. 로그는 logs/auth-2026-11-20.lo… → 재시도 로직은 gateway 타임아웃(30초)과 클라이언트 타임아웃(10초)의 불일치 때문에 동일 주문에 대해 최대 3회까지 결제 요청을 중복 전송할 수 있습니…
+      | 0004.md 5.3KB | CI에서 test_order_pipeline 이 20% 확률로 실패해. flaky 원인을 좁혀보고 고칠 수 있으면 고쳐줘.… → The flake comes from a shared temp directory: two test workers write order fixtures to th…
+      | … (35 more lines) …
+      | 0040.md 12.6KB | 지금까지 분석한 내용을 바탕으로 마이그레이션 계획을 단계별로 정리해줘. 다운타임 없이 진행해야 하고 롤백 절차도 반드시 포함… → 재시도 로직은 gateway 타임아웃(30초)과 클라이언트 타임아웃(10초)의 불일치 때문에 동일 주문에 대해 최대 3회까지 결제 요청을 중복 전송할 수 있습니…
+      | 0041.md~0058.md 88.5KB (18턴 접힘)
+S8 2회차 압축(경계=40, 당시 진행 중)                      turns=  58  stage=1    chars=5705 utf16=5705  full-lines= 39 fold-lines= 1 folded=  19 preview=70/90  kept 0001.md..0039.md  0.2ms 
+                                                 stage-1 segment: since turn 40 (19 turns) ; fold lines: 0040.md~0058.md 101.2KB (19턴 접힘)
+S9 2회차 압축(경계=40), 140턴                         turns= 140  stage=1    chars=5888 utf16=5888  full-lines= 40 fold-lines= 1 folded= 100 preview=70/90  kept 0001.md..0040.md  0.3ms 
+                                                 stage-1 segment: since turn 41 (100 turns) ; fold lines: 0041.md~0140.md 593.8KB (100턴 접힘)
+S10 3회차 압축(경계=140), 400턴                       turns= 400  stage=2c   chars=5923 utf16=5923  full-lines= 52 fold-lines=22 folded= 348 preview=35/45  kept 0003.md..0082.md  2.7ms 
+                                                 stage-1 segment: since turn 141 (260 turns) ; fold lines: 0001.md~0002.md 0.1KB (2턴 접힘) ; 0006.md 0.1KB (접힘) ; 0008.md 0.1KB (접힘) ; 0015.md 0.1KB (접힘) …
+S11 경계가 0턴으로 기록된 뒤(=첫 압축 취급), 60턴              turns=  60  stage=2a   chars=4645 utf16=4645  full-lines= 55 fold-lines= 1 folded=   5 preview=35/45  kept 0001.md..0055.md  0.2ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0056.md~0060.md 19.0KB (5턴 접힘)
+
+======================================================================================================================================================
+PART 2-B  단계 전환 경계 탐색: 첫 압축에서 턴 수 n을 1..400으로 늘리며 단계가 바뀌는 지점
+======================================================================================================================================================
+  n=  1 → stage full (chars=246, 접힌 턴=0, 미리보기=70/90)
+  n= 42 → stage 1    (chars=5341, 접힌 턴=5, 미리보기=70/90)
+  n= 46 → stage 2a   (chars=3664, 접힌 턴=5, 미리보기=35/45)
+  n= 80 → stage 2b   (chars=5997, 접힌 턴=12, 미리보기=35/45)
+  n= 89 → stage 2c   (chars=5921, 접힌 턴=37, 미리보기=35/45)
+
+======================================================================================================================================================
+PART 2-C  상한 스트레스: 무작위 세션 3,000개 (턴 1~3,000개, 한글/emoji/장문 한 줄/긴 경로/임의 경계) — 길이는 code point와 UTF-16 둘 다 검사
+======================================================================================================================================================
+  장문 한 줄 미리보기 계산(요청 200,000자 + 답변 300,000자): 1.15ms → 요청 미리보기 240자, 답변 미리보기 240자
+  3,000/3,000 세션 상한 준수. 단계 분포: {"1": 493, "2a": 337, "2b": 468, "2c": 964, "full": 738}
+  최대 길이=6000 (case,n,stage=(191, 75, '2c')) · 전체 27.8s · 단일 렌더 최장 41ms
+  머리말 경로만으로 상한 초과(7,000자 경로): stage=cut chars=6000 → 상한 준수=True
+
+======================================================================================================================================================
+PART 2-D  1차 접기 방식 비교: 명세 그대로(구간 전체 접기) vs 역제안(같은 구간 안에서 최신 턴부터 필요한 만큼만 접기)
+======================================================================================================================================================
+첫 압축 40턴 / 명세 그대로                              turns=  40  stage=full chars=5819 utf16=5819  full-lines= 40 fold-lines= 0 folded=   0 preview=70/90  kept 0001.md..0040.md  0.1ms 
+첫 압축 40턴 / 필요한 만큼                              turns=  40  stage=full chars=5819 utf16=5819  full-lines= 40 fold-lines= 0 folded=   0 preview=70/90  kept 0001.md..0040.md  0.1ms 
+첫 압축 48턴 / 명세 그대로                              turns=  48  stage=2a   chars=3864 utf16=3864  full-lines= 43 fold-lines= 1 folded=   5 preview=35/45  kept 0001.md..0043.md  0.2ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0044.md~0048.md 10.7KB (5턴 접힘)
+첫 압축 48턴 / 필요한 만큼                              turns=  48  stage=2a   chars=3864 utf16=3864  full-lines= 43 fold-lines= 1 folded=   5 preview=35/45  kept 0001.md..0043.md  0.3ms 
+                                                 stage-1 segment: first-compaction: newest 5 ; fold lines: 0044.md~0048.md 10.7KB (5턴 접힘)
+2회차(경계 3) 45턴 / 명세 그대로                         turns=  45  stage=1    chars= 522 utf16= 522  full-lines=  3 fold-lines= 1 folded=  42 preview=70/90  kept 0001.md..0003.md  0.1ms 
+                                                 stage-1 segment: since turn 4 (42 turns) ; fold lines: 0004.md~0045.md 274.4KB (42턴 접힘)
+2회차(경계 3) 45턴 / 필요한 만큼                         turns=  45  stage=1    chars=5884 utf16=5884  full-lines= 40 fold-lines= 1 folded=   5 preview=70/90  kept 0001.md..0040.md  0.4ms 
+                                                 stage-1 segment: since turn 4 (42 turns) ; fold lines: 0041.md~0045.md 35.8KB (5턴 접힘)
+2회차(경계 40) 58턴 / 명세 그대로                        turns=  58  stage=1    chars=5885 utf16=5885  full-lines= 40 fold-lines= 1 folded=  18 preview=70/90  kept 0001.md..0040.md  0.2ms 
+                                                 stage-1 segment: since turn 41 (18 turns) ; fold lines: 0041.md~0058.md 88.5KB (18턴 접힘)
+2회차(경계 40) 58턴 / 필요한 만큼                        turns=  58  stage=1    chars=5885 utf16=5885  full-lines= 40 fold-lines= 1 folded=  18 preview=70/90  kept 0001.md..0040.md  0.4ms 
+                                                 stage-1 segment: since turn 41 (18 turns) ; fold lines: 0041.md~0058.md 88.5KB (18턴 접힘)
+2회차(경계 20) 120턴 / 명세 그대로                       turns= 120  stage=1    chars=2849 utf16=2849  full-lines= 20 fold-lines= 1 folded= 100 preview=70/90  kept 0001.md..0020.md  0.3ms 
+                                                 stage-1 segment: since turn 21 (100 turns) ; fold lines: 0021.md~0120.md 601.2KB (100턴 접힘)
+2회차(경계 20) 120턴 / 필요한 만큼                       turns= 120  stage=1    chars=5887 utf16=5887  full-lines= 40 fold-lines= 1 folded=  80 preview=70/90  kept 0001.md..0040.md  0.8ms 
+                                                 stage-1 segment: since turn 21 (100 turns) ; fold lines: 0041.md~0120.md 459.4KB (80턴 접힘)
+
+======================================================================================================================================================
+PART 2-E  종단 흐름(프로토타입 훅 호출): 60턴 → 압축#1 → 30턴 → 압축#2 → 12턴 → 압축#3, 경계 읽기→렌더링→기록 순서
+======================================================================================================================================================
+  압축 #1: 기록 전 경계 0줄 → 기록 후 1줄 | stage=2a chars=4222 | 접힌 줄: 0056.md~0060.md 29.4KB (5턴 접힘)
+  압축 #2: 기록 전 경계 1줄 → 기록 후 2줄 | stage=2a chars=4672 | 접힌 줄: 0061.md~0090.md 207.9KB (30턴 접힘)
+  압축 #3: 기록 전 경계 2줄 → 기록 후 3줄 | stage=2c chars=5980 | 접힌 줄: 0004.md~0005.md 0.1KB (2턴 접힘) ; 0010.md~0011.md 0.1KB (2턴 접힘) ; 0014.md~0015.md 0.1KB (2턴 접힘) ; 0018.md~0019.md 0.1KB (2턴 접힘) ; 0021.md 0.1KB (접힘) ; 0023.md~0024.md 0.1KB (2턴 접힘) ; 0031.md~0034.md 0.2KB (4턴 접힘) ; 0037.md~0038.md 0.1KB (2턴 접힘) ; 0041.md~0042.md 0.1KB (2턴 접힘) ; 0044.md 0.1KB (접힘) ; 0050.md~0053.md 0.2KB (4턴 접힘) ; 0060.md 0.1KB (접힘) ; 0062.md~0063.md 0.1KB (2턴 접힘) ; 0070.md 0.1KB (접힘) ; 0074.md 0.1KB (접힘) ; 0081.md 0.1KB (접힘) ; 0083.md~0084.md 0.1KB (2턴 접힘) ; 0086.md~0102.md 111.5KB (17턴 접힘)
+  세션 디렉터리 1개(cwd가 바뀌어도 동일): ['11111111-2222-3333-4444-555555555555']
+  파일: ['compactions.jsonl', 'index.md', 'meta.json', 'turns'], turns/ 102개
+  턴 파일 무손실: 요청 원문 포함=True, 답변 원문 포함=True
+  index.md 스냅샷 == 마지막 주입문: True
+
+ALL FOLD SIMULATIONS PASSED

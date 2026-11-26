@@ -1,0 +1,48 @@
+{
+ "hooks": {
+  "UserPromptSubmit": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3",
+      "args": [
+       "__PROBE__/probe_hook.py",
+       "EXEC-UPS"
+      ]
+     }
+    ]
+   }
+  ],
+  "Stop": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3",
+      "args": [
+       "__PROBE__/probe_hook.py",
+       "EXEC-STOP"
+      ],
+      "timeout": 20
+     }
+    ]
+   }
+  ],
+  "SessionStart": [
+   {
+    "matcher": "compact",
+    "hooks": [
+     {
+      "type": "command",
+      "command": "python3",
+      "args": [
+       "__PROBE__/probe_hook.py",
+       "EXEC-SS"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
