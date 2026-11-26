@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# throwaway run directory of the lab (fake HOME, test project, captures, mock API request log)
+lab/probe/.run/

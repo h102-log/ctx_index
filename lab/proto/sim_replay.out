@@ -1,0 +1,193 @@
+====================================================================================================
+LAB a — stream-json: 일반/도구/서브에이전트/커스텀 슬래시/브랜치 전환/compact/빈 답변/clear  (hook events fed: 19)
+
+  session 13034315…  turns=8  compactions=1  errors.jsonl=False
+    0001.md 0.2KB | 첫 번째 질문: 한글 테스트입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=0e55aef9]
+    0002.md 0.1KB | [[TOOL]] 도구를 써서 답해줘 → 도구 실행을 마쳤습니다. 최종 답변 #20 입니다.
+        [status=done kind=user nreq=1 nans=1 pid=51024464]
+    0003.md 0.1KB | [[AGENT]] 서브에이전트를 써서 답해줘 → 도구 실행을 마쳤습니다. 최종 답변 #22 입니다.
+        [status=done kind=user nreq=1 nans=1 pid=b62b047e]
+    0004.md 1.3KB | [작업 알림] Agent "probe subagent" finished → 요청하신 내용( [SYSTEM NOTIFICATION - NOT USER INPUT] Thi)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=auto nreq=1 nans=1 pid=c33cd515]
+    0005.md 0.2KB | /mycmd 인자1 인자2 → 요청하신 내용( mycmd /mycm)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=6050964f]
+    0006.md 0.2KB | 브랜치 전환 후 질문입니다 → 요청하신 내용(브랜치 전환 후 질문입니다)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=ea767820]
+    0007.md 0.2KB | 압축 후 첫 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=2e0af90e]
+    0008.md 0.1KB | [[EMPTY]] 빈 답변 케이스 → (답변 없음/중단)
+        [status=done kind=user nreq=1 nans=0 pid=20bea185]
+    compaction: {"last_turn": 6, "last_open": false, "turns": 6, "chars": 750, "stage": "full", "folded": 0}
+
+  session a85e6a77…  turns=1  compactions=0  errors.jsonl=False
+    0001.md 0.2KB | clear 이후 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=6184d9ba]
+
+  --- injected additionalContext (session 13034315…, 750 chars / utf16 754) ---
+  | 이 세션에서 있었던 턴의 목록입니다. 결과의 요약이 아니며 빠진 것이 있을 수 있습니다. 세부가 필요하면 아래 디렉터리의 해당 턴 파일을 직접 읽으세요.
+  | 디렉터리: <CTX>/13034315-d5d6-4e8b-95bd-3f68787f5fda/turns (턴 6개)
+  | 형식: 파일 크기 | 요청 → 답변
+  | 0001.md 0.2KB | 첫 번째 질문: 한글 테스트입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0002.md 0.1KB | [[TOOL]] 도구를 써서 답해줘 → 도구 실행을 마쳤습니다. 최종 답변 #20 입니다.
+  | 0003.md 0.1KB | [[AGENT]] 서브에이전트를 써서 답해줘 → 도구 실행을 마쳤습니다. 최종 답변 #22 입니다.
+  | 0004.md 1.3KB | [작업 알림] Agent "probe subagent" finished → 요청하신 내용( [SYSTEM NOTIFICATION - NOT USER INPUT] Thi)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0005.md 0.2KB | /mycmd 인자1 인자2 → 요청하신 내용( mycmd /mycm)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0006.md 0.2KB | 브랜치 전환 후 질문입니다 → 요청하신 내용(브랜치 전환 후 질문입니다)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+====================================================================================================
+LAB b — 자동 압축(UserPromptSubmit→압축→Stop 순서) + 수동 압축(/compact 지시문)  (hook events fed: 12)
+
+  session 9846eea2…  turns=5  compactions=2  errors.jsonl=False
+    0001.md 0.2KB | B1 일반 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=06ad111b]
+    0002.md 0.2KB | [[BIG]] B2 컨텍스트를 거의 다 채우는 턴 → 요청하신 내용([[BIG]] B2 컨텍스트를 거의 다 채우는 턴)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=bd1ef8b3]
+    0003.md 0.2KB | B3 자동 압축 직후에 처리되어야 하는 질문 → 요청하신 내용( Attribution for git commits and pull reque)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=7816c81a]
+    0004.md 0.2KB | B4 일반 질문 → 요청하신 내용(B4 일반 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=93438036]
+    0005.md 0.2KB | B6 두 번째(수동) 압축 이후 질문 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=2e6330df]
+    compaction: {"last_turn": 3, "last_open": true, "turns": 3, "chars": 456, "stage": "full", "folded": 0}
+    compaction: {"last_turn": 4, "last_open": false, "turns": 4, "chars": 605, "stage": "full", "folded": 0}
+
+  --- injected additionalContext (session 9846eea2…, 456 chars / utf16 458) ---
+  | 이 세션에서 있었던 턴의 목록입니다. 결과의 요약이 아니며 빠진 것이 있을 수 있습니다. 세부가 필요하면 아래 디렉터리의 해당 턴 파일을 직접 읽으세요.
+  | 디렉터리: <CTX>/9846eea2-e533-4cd0-81d2-70324ad356f6/turns (턴 3개)
+  | 형식: 파일 크기 | 요청 → 답변
+  | 0001.md 0.2KB | B1 일반 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0002.md 0.2KB | [[BIG]] B2 컨텍스트를 거의 다 채우는 턴 → 요청하신 내용([[BIG]] B2 컨텍스트를 거의 다 채우는 턴)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0003.md 0.1KB | B3 자동 압축 직후에 처리되어야 하는 질문 → (진행 중)
+
+  --- injected additionalContext (session 9846eea2…, 605 chars / utf16 609) ---
+  | 이 세션에서 있었던 턴의 목록입니다. 결과의 요약이 아니며 빠진 것이 있을 수 있습니다. 세부가 필요하면 아래 디렉터리의 해당 턴 파일을 직접 읽으세요.
+  | 디렉터리: <CTX>/9846eea2-e533-4cd0-81d2-70324ad356f6/turns (턴 4개)
+  | 형식: 파일 크기 | 요청 → 답변
+  | 0001.md 0.2KB | B1 일반 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0002.md 0.2KB | [[BIG]] B2 컨텍스트를 거의 다 채우는 턴 → 요청하신 내용([[BIG]] B2 컨텍스트를 거의 다 채우는 턴)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0003.md 0.2KB | B3 자동 압축 직후에 처리되어야 하는 질문 → 요청하신 내용( Attribution for git commits and pull reque)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0004.md 0.2KB | B4 일반 질문 → 요청하신 내용(B4 일반 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+====================================================================================================
+LAB c — Stop 훅 차단으로 Stop 2회 / --resume / --continue / --fork-session  (hook events fed: 11)
+
+  session 156a61bd…  turns=1  compactions=0  errors.jsonl=False
+    0001.md 0.4KB | C0 스톱 훅이 한 번 막는 케이스 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함. (+1)
+        [status=done kind=user nreq=1 nans=2 pid=93786635]
+
+  session 5b9214f5…  turns=1  compactions=0  errors.jsonl=False
+    0001.md 0.2KB | C4 fork 후 질문 → 요청하신 내용(C4 fork 후 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=9c1ff51f]
+
+  session d493ed30…  turns=3  compactions=0  errors.jsonl=False
+    0001.md 0.2KB | C1 새 세션 첫 질문 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=5f6aac64]
+    0002.md 0.2KB | C2 resume 후 질문 → 요청하신 내용(C2 resume 후 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=5e83d1d8]
+    0003.md 0.2KB | C3 continue 후 질문 → 요청하신 내용(C3 continue 후 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=9f79d61d]
+====================================================================================================
+LAB d — 대화형 TUI: 내장 명령 / Esc 중단 / bash 모드(!cmd) / compact / clear / exit  (hook events fed: 11)
+
+  session 396a8901…  turns=1  compactions=0  errors.jsonl=False
+    0001.md 0.2KB | clear 이후 대화형 질문 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=87d9465a]
+
+  session 765c470d…  turns=5  compactions=1  errors.jsonl=False
+    0001.md 0.2KB | 대화형 첫 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=f1030169]
+    0002.md 0.1KB | [[SLOW]] 느린 답변을 요청합니다 → (답변 없음/중단)
+        [status=open kind=user nreq=1 nans=0 pid=8a1e4b97]
+    0003.md 0.2KB | 중단 이후 질문입니다 → 요청하신 내용([Request interrupted by user] 중단 이후 질문입니다)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=0fb32f6c]
+    0004.md 0.3KB | !echo bash-mode-probe → 요청하신 내용( echo bash-mode-probe )에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=orphan nreq=1 nans=1 pid=a0c9f032]
+    0005.md 0.2KB | 압축 이후 대화형 질문 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=a1aa851b]
+    compaction: {"last_turn": 4, "last_open": false, "turns": 4, "chars": 556, "stage": "full", "folded": 0}
+
+  --- injected additionalContext (session 765c470d…, 556 chars / utf16 559) ---
+  | 이 세션에서 있었던 턴의 목록입니다. 결과의 요약이 아니며 빠진 것이 있을 수 있습니다. 세부가 필요하면 아래 디렉터리의 해당 턴 파일을 직접 읽으세요.
+  | 디렉터리: <CTX>/765c470d-af4f-47fb-a363-0494caeb06ed/turns (턴 4개)
+  | 형식: 파일 크기 | 요청 → 답변
+  | 0001.md 0.2KB | 대화형 첫 질문입니다 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0002.md 0.1KB | [[SLOW]] 느린 답변을 요청합니다 → (답변 없음/중단)
+  | 0003.md 0.2KB | 중단 이후 질문입니다 → 요청하신 내용([Request interrupted by user] 중단 이후 질문입니다)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+  | 0004.md 0.3KB | !echo bash-mode-probe → 요청하신 내용( echo bash-mode-probe )에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+====================================================================================================
+LAB e — 대화형 TUI: 작업 중 입력(대기열) — 별도 턴으로 처리 / 진행 중 턴에 흡수  (hook events fed: 7)
+
+  session a82f09d8…  turns=3  compactions=0  errors.jsonl=False
+    0001.md 0.3KB | [[SLOW]] Q1 느린 답변 (+1) → 느린 답변 시작… 안녕하세요!
+        [status=done kind=user nreq=2 nans=1 pid=076cdb50]
+    0002.md 0.2KB | Q2 대기열에 넣은 질문 → 요청하신 내용(Q2 대기열에 넣은 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=orphan nreq=1 nans=1 pid=1a151531]
+    0003.md 0.2KB | [[TOOL]] [[SLOW]] Q3 도구와 느린 응답 (+1) → 도구 실행을 마쳤습니다. 최종 답변 #55 입니다.
+        [status=done kind=user nreq=2 nans=1 pid=3fbc9858]
+====================================================================================================
+LAB stacked — 대화형 TUI: 중첩 대기열(Q1 실행 중 Q2 입력, Q2 실행 중 Q5 입력) + 유휴 상태의 일반/커스텀 슬래시  (hook events fed: 10)
+
+  session 4d792b24…  turns=5  compactions=0  errors.jsonl=False
+    0001.md 0.2KB | N1 평범한 질문 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=ef089fdd]
+    0002.md 0.2KB | /mycmd 대화형 인자 → 요청하신 내용( mycmd /mycm)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=35b1ad39]
+    0003.md 0.2KB | [[SLOW]] Q1 느린 답변 (+1) → 느린 답변 시작… 안녕하세요!
+        [status=done kind=user nreq=2 nans=1 pid=70a85006]
+    0004.md 0.2KB | [[SLOW]] Q2 첫 번째 대기열 (+1) → 느린 답변 시작… 안녕하세요!
+        [status=done kind=recovered nreq=2 nans=1 pid=9524f357]
+    0005.md 0.2KB | Q5 두 번째 대기열 → 요청하신 내용(Q5 두 번째 대기열)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=orphan nreq=1 nans=1 pid=50ddf682]
+====================================================================================================
+LAB headless — stream-json: 일반 / 커스텀 슬래시 / 백그라운드 서브에이전트 → 작업 알림 자동 턴 / 후속 질문  (hook events fed: 10)
+
+  session 38ddfa6b…  turns=5  compactions=0  errors.jsonl=False
+    0001.md 0.2KB | G1 일반 질문 → 요청하신 내용( As you answer the user's questions, you ca)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=52ac4800]
+    0002.md 0.2KB | /mycmd 헤드리스 인자 → 요청하신 내용( mycmd /mycm)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=3c51759e]
+    0003.md 0.2KB | [[AGENT]] G3 서브에이전트(백그라운드 알림 유발) → 도구 실행을 마쳤습니다. 최종 답변 #14 입니다.
+        [status=done kind=user nreq=1 nans=1 pid=ee0a638a]
+    0004.md 1.3KB | [작업 알림] Agent "probe subagent" finished → 요청하신 내용( [SYSTEM NOTIFICATION - NOT USER INPUT] Thi)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=auto nreq=1 nans=1 pid=33cb32c6]
+    0005.md 0.2KB | G4 알림 이후 질문 → 요청하신 내용(G4 알림 이후 질문)에 대한 모의 답변입니다. 한글·emoji 🙂 포함.
+        [status=done kind=user nreq=1 nans=1 pid=ae7991a1]
+
+====================================================================================================
+  [PASS] a: 세션 2개(원 세션 + /clear 이후 새 session_id)만 생성 — 브랜치 전환·압축은 디렉터리를 바꾸지 않음
+  [PASS] a: 원 세션 턴 8개(일반, 도구, 서브에이전트, 작업 알림, 커스텀 슬래시, 브랜치 전환 후, 압축 후, 빈 답변)
+  [PASS] a: 내장 명령(/compact,/cost,/help,/status,/clear)은 턴으로 기록되지 않음
+  [PASS] a: 커스텀 슬래시 명령은 입력 원문 그대로 기록
+  [PASS] a: 도구 턴의 답변은 최종 텍스트(중간 내레이션 아님)
+  [PASS] a: task-notification 자동 턴은 [작업 알림] 요약으로 표시
+  [PASS] a: last_assistant_message 없는 Stop → 폴백이 이전 턴 답변을 끌어오지 않음(답변 0건, done)
+  [PASS] a: 압축 주입 1회, 상한 이하, 고정 머리말로 시작
+  [PASS] a: 디렉터리 절대 경로는 주입문에 1회만 등장
+  [PASS] a: 턴 파일에 요청·답변 원문 그대로 저장(한글·emoji·코드펜스)
+  [PASS] a: errors.jsonl 없음
+  [PASS] b: 압축 2회 모두 같은 세션 디렉터리, 경계 2줄 기록
+  [PASS] b: 자동 압축 시점의 진행 중 턴은 '(진행 중)'으로 표시('중단' 아님)
+  [PASS] b: 자동 압축 경계는 last_turn=3, last_open=True(진행 중이던 3번 턴)
+  [PASS] b: 자동 압축 뒤 도착한 Stop이 같은 턴(3번)에 귀속
+  [PASS] b: 수동 압축 경계는 last_turn=4, last_open=False
+  [PASS] b: '/compact <지시문>'은 턴으로 기록되지 않음(턴 5개)
+  [PASS] c: 같은 prompt_id의 Stop 2회 → 턴 1개에 답변 2건(목차 줄 중복 없음)
+  [PASS] c: 턴 파일에 두 답변이 순서대로 저장('답변', '답변 (이어짐 2)')
+  [PASS] c: --resume/--continue 는 같은 session_id → 같은 디렉터리에 턴 3개 누적
+  [PASS] c: --fork-session 은 새 session_id 디렉터리(세션 3개)
+  [PASS] d: Esc 중단 턴은 Stop 미발생 → open 유지, 목차에 '(답변 없음/중단)'
+  [PASS] d: UserPromptSubmit 없이 온 Stop(bash 모드)은 직전 턴에 붙지 않고 새 턴 파일
+  [PASS] d: 그 새 턴의 요청은 트랜스크립트에서 복원('!echo bash-mode-probe')
+  [PASS] d: 중단 다음 턴의 답변이 중단된 턴에 잘못 붙지 않음
+  [PASS] d: /clear 이후는 새 session_id 디렉터리
+  [PASS] e: Q1 턴에는 Q1의 답변 1건만 귀속(Q2의 답변이 섞이지 않음)
+  [PASS] e: Q2는 작업 중 입력으로 Q1 턴 파일에 '추가 요청'으로도 보존
+  [PASS] e: Q2 자체 턴은 Stop 시점에 새 턴으로 만들어지고 요청은 트랜스크립트에서 복원, Q2의 답변이 귀속
+  [PASS] e: 도구 턴 중 입력(Q4)은 같은 턴에 흡수 → 턴 1개, 요청 2건, 답변 1건
+  [PASS] e: 어떤 턴도 '(답변 없음/중단)'으로 잘못 표시되지 않음
+  [PASS] stacked: 유휴 상태의 일반 프롬프트·커스텀 슬래시는 '새 턴'으로 판정(트랜스크립트 선조회가 오판하지 않음)
+  [PASS] stacked: 턴 5개 — Q1(+Q2 입력) / Q2 자체 턴(+Q5 입력) / Q5 자체 턴
+  [PASS] stacked: Q2 자체 턴은 UserPromptSubmit(Q5) 시점에 트랜스크립트에서 요청을 복원해 생성
+  [PASS] stacked: Q2의 답변(#9)은 Q2 자체 턴에, Q5의 답변(#10)은 Q5 자체 턴에 귀속
+  [PASS] headless: 턴 5개, 모두 UserPromptSubmit로 생성(오판 없음), 작업 알림은 auto
+  [PASS] headless: 모든 턴에 답변 1건씩 귀속
+replay checks: 37/37 passed
