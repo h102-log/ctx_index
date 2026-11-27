@@ -1,0 +1,424 @@
+참고용 로그 37: DNS 동기화(dns-sync) 존 갱신 구간. '확인'이라고만 답해 줘.
+
+2026-11-10T19:16:17 INFO  dns-sync/ds-node-01 request done id=req-f8630bda route=/dns-sync/v1/cancel status=503 latency_ms=151
+2026-11-10T19:16:18 INFO  dns-sync/ds-node-21 request done id=req-456b77bd route=/dns-sync/v1/cancel status=200 latency_ms=107
+2026-11-10T19:16:23 WARN  dns-sync/ds-node-18 alert fired rule=p99_latency_high value=72ms threshold=58ms
+2026-11-10T19:16:24 WARN  dns-sync/ds-node-22 alert fired rule=conn_pool_saturated value=76% threshold=71%
+2026-11-10T19:16:30 INFO  dns-sync/ds-node-04 request done id=req-c70acacf route=/dns-sync/v1/create status=404 latency_ms=79
+2026-11-10T19:16:37 INFO  dns-sync/ds-node-16 request done id=req-249d800c route=/dns-sync/v1/cancel status=204 latency_ms=180
+2026-11-10T19:16:43 INFO  dns-sync/ds-node-23 config applied key=cache.ttl_s value=965 by=yjchoi
+2026-11-10T19:16:44 INFO  dns-sync/ds-node-06 config applied key=http.max_conns value=false by=sykang
+2026-11-10T19:16:46 INFO  dns-sync/ds-node-22 request done id=req-ab368980 route=/dns-sync/v1/list status=201 latency_ms=81
+2026-11-10T19:16:50 INFO  dns-sync/ds-node-11 cache stats region=ap-ne-2b hit_ratio=89.5% evictions=4779
+2026-11-10T19:16:51 INFO  dns-sync/ds-node-07 pool resize target=dns-sync-worker max_pool_size=151 prev=156
+2026-11-10T19:16:53 INFO  dns-sync/ds-node-14 deploy step release=dns-sync-4.17.3 step=shift_traffic_10 result=ok took_s=51
+2026-11-10T19:16:58 WARN  dns-sync/ds-node-20 alert fired rule=cpu_steal_high value=54% threshold=44%
+2026-11-10T19:17:01 INFO  dns-sync/ds-node-09 request done id=req-358a9f41 route=/dns-sync/v1/create status=400 latency_ms=51
+2026-11-10T19:17:05 ERROR dns-sync/ds-node-01 job failed job=dns-sync-export attempt=4 cause=bad_checksum
+2026-11-10T19:17:08 INFO  dns-sync/ds-node-13 deploy step release=dns-sync-4.11.8 step=shift_traffic_10 result=ok took_s=211
+2026-11-10T19:17:10 INFO  dns-sync/ds-node-02 cache stats region=ap-se-1a hit_ratio=83.6% evictions=28963
+2026-11-10T19:17:16 INFO  dns-sync/ds-node-13 request done id=req-b526788e route=/dns-sync/v1/verify status=200 latency_ms=51
+2026-11-10T19:17:21 INFO  dns-sync/ds-node-21 request done id=req-76bb176a route=/dns-sync/v1/verify status=200 latency_ms=16
+2026-11-10T19:17:22 INFO  dns-sync/ds-node-11 request done id=req-d9f3def8 route=/dns-sync/v1/sync status=200 latency_ms=328
+2026-11-10T19:17:28 INFO  dns-sync/ds-node-12 backup finished file=/vault/weekly/sessions_2026w37.tar.zst size_mb=6297 checksum=227f2b82
+2026-11-10T19:17:32 INFO  dns-sync/ds-node-20 pool resize target=dns-sync-cache max_pool_size=193 prev=232
+2026-11-10T19:17:33 INFO  dns-sync/ds-node-03 request done id=req-0d85a677 route=/dns-sync/v1/status status=200 latency_ms=174
+2026-11-10T19:17:40 INFO  dns-sync/ds-node-08 request done id=req-68fc3c97 route=/dns-sync/v1/list status=400 latency_ms=676
+2026-11-10T19:17:43 INFO  dns-sync/ds-node-08 pool resize target=dns-sync-upstream max_pool_size=78 prev=30
+2026-11-10T19:17:49 INFO  dns-sync/ds-node-09 cache stats region=ap-ne-2b hit_ratio=79.6% evictions=10491
+2026-11-10T19:17:54 INFO  dns-sync/ds-node-04 request done id=req-9306ac16 route=/dns-sync/v1/verify status=200 latency_ms=79
+2026-11-10T19:18:01 INFO  dns-sync/ds-node-05 request done id=req-339091e6 route=/dns-sync/v1/update status=200 latency_ms=124
+2026-11-10T19:18:02 INFO  dns-sync/ds-node-04 pool resize target=dns-sync-worker max_pool_size=191 prev=192
+2026-11-10T19:18:08 INFO  dns-sync/ds-node-05 request done id=req-0ae3b972 route=/dns-sync/v1/get status=200 latency_ms=220
+2026-11-10T19:18:13 ERROR dns-sync/ds-node-19 job failed job=dns-sync-reindex attempt=2 cause=lock_wait_exceeded
+2026-11-10T19:18:15 INFO  dns-sync/ds-node-11 cache stats region=ap-ne-2a hit_ratio=91.0% evictions=27472
+2026-11-10T19:18:19 ERROR dns-sync/ds-node-09 job failed job=dns-sync-cleanup attempt=3 cause=lock_wait_exceeded
+2026-11-10T19:18:21 INFO  dns-sync/ds-node-16 request done id=req-62196f3c route=/dns-sync/v1/create status=503 latency_ms=121
+2026-11-10T19:18:25 INFO  dns-sync/ds-node-02 config applied key=http.read_timeout_ms value=false by=mjlee
+2026-11-10T19:18:27 INFO  dns-sync/ds-node-20 pool resize target=dns-sync-worker max_pool_size=230 prev=184
+2026-11-10T19:18:33 NOTE  dns-sync/ds-node-10 operator=yjchoi memo="점검 창을 3분 연장함. 승인: 민도현 파트장."
+2026-11-10T19:18:40 ERROR dns-sync/ds-node-14 job failed job=dns-sync-reindex attempt=2 cause=bad_checksum
+2026-11-10T19:18:44 INFO  dns-sync/ds-node-12 ticket linked id=OPS-48386 reason=schema_change
+2026-11-10T19:18:46 INFO  dns-sync/ds-node-16 config applied key=tls.session_cache value=false by=ejlim
+2026-11-10T19:18:53 INFO  dns-sync/ds-node-21 config applied key=retry.max_attempts value=false by=mjlee
+2026-11-10T19:18:59 INFO  dns-sync/ds-node-13 backup finished file=/vault/weekly/users_2026w37.tar.zst size_mb=25223 checksum=2cd057f5
+2026-11-10T19:19:03 WARN  dns-sync/ds-node-08 alert fired rule=queue_depth_high value=88 threshold=85
+2026-11-10T19:19:07 WARN  dns-sync/ds-node-11 alert fired rule=replica_lag_high value=84s threshold=78s
+2026-11-10T19:19:08 INFO  dns-sync/ds-node-09 request done id=req-38e052f8 route=/dns-sync/v1/create status=200 latency_ms=136
+2026-11-10T19:19:14 ERROR dns-sync/ds-node-22 job failed job=dns-sync-reindex attempt=1 cause=quota_exceeded
+2026-11-10T19:19:21 INFO  dns-sync/ds-node-08 pool resize target=dns-sync-cache max_pool_size=50 prev=4
+2026-11-10T19:19:25 INFO  dns-sync/ds-node-07 ticket linked id=OPS-47148 reason=flaky_healthcheck
+2026-11-10T19:19:32 INFO  dns-sync/ds-node-11 cache stats region=ap-se-1a hit_ratio=65.0% evictions=32349
+2026-11-10T19:19:33 INFO  dns-sync/ds-node-11 backup finished file=/vault/daily/audit_20261017.tar.zst size_mb=74463 checksum=96adb5ed
+2026-11-10T19:19:38 INFO  dns-sync/ds-node-08 request done id=req-badb3fec route=/dns-sync/v1/update status=200 latency_ms=91
+2026-11-10T19:19:39 INFO  dns-sync/ds-node-23 request done id=req-bce129fe route=/dns-sync/v1/cancel status=200 latency_ms=49
+2026-11-10T19:19:40 INFO  dns-sync/ds-node-18 ticket linked id=OPS-48967 reason=schema_change
+2026-11-10T19:19:45 INFO  dns-sync/ds-node-06 request done id=req-2b37cb71 route=/dns-sync/v1/verify status=200 latency_ms=145
+2026-11-10T19:19:49 INFO  dns-sync/ds-node-05 ticket linked id=OPS-47547 reason=dns_ttl_change
+2026-11-10T19:19:53 INFO  dns-sync/ds-node-05 request done id=req-0a8f0498 route=/dns-sync/v1/status status=500 latency_ms=74
+2026-11-10T19:20:00 INFO  dns-sync/ds-node-17 request done id=req-d953f9b3 route=/dns-sync/v1/create status=500 latency_ms=49
+2026-11-10T19:20:03 INFO  dns-sync/ds-node-22 cache stats region=us-we-2b hit_ratio=69.9% evictions=20210
+2026-11-10T19:20:05 NOTE  dns-sync/ds-node-12 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-10T19:20:09 INFO  dns-sync/ds-node-23 pool resize target=dns-sync-db max_pool_size=199 prev=213
+2026-11-10T19:20:12 WARN  dns-sync/ds-node-24 alert fired rule=queue_depth_high value=78 threshold=66
+2026-11-10T19:20:15 WARN  dns-sync/ds-node-17 alert fired rule=heap_used_high value=97% threshold=87%
+2026-11-10T19:20:17 INFO  dns-sync/ds-node-16 request done id=req-1ffe3394 route=/dns-sync/v1/create status=200 latency_ms=612
+2026-11-10T19:20:21 ERROR dns-sync/ds-node-13 job failed job=dns-sync-reindex attempt=3 cause=quota_exceeded
+2026-11-10T19:20:22 INFO  dns-sync/ds-node-07 request done id=req-a8c23dff route=/dns-sync/v1/list status=200 latency_ms=70
+2026-11-10T19:20:25 INFO  dns-sync/ds-node-15 deploy step release=dns-sync-4.10.8 step=shift_traffic_100 result=ok took_s=49
+2026-11-10T19:20:32 INFO  dns-sync/ds-node-09 ticket linked id=OPS-47582 reason=dependency_upgrade
+2026-11-10T19:20:38 INFO  dns-sync/ds-node-09 request done id=req-cdffd7a8 route=/dns-sync/v1/status status=200 latency_ms=342
+2026-11-10T19:20:43 INFO  dns-sync/ds-node-20 request done id=req-39dd7420 route=/dns-sync/v1/get status=200 latency_ms=122
+2026-11-10T19:20:48 INFO  dns-sync/ds-node-08 config applied key=breaker.open_ratio value=false by=sykang
+2026-11-10T19:20:55 INFO  dns-sync/ds-node-01 request done id=req-ed309825 route=/dns-sync/v1/create status=201 latency_ms=271
+2026-11-10T19:21:02 INFO  dns-sync/ds-node-07 pool resize target=dns-sync-cache max_pool_size=177 prev=199
+2026-11-10T19:21:06 INFO  dns-sync/ds-node-02 deploy step release=dns-sync-4.12.5 step=migrate result=ok took_s=88
+2026-11-10T19:21:11 INFO  dns-sync/ds-node-03 config applied key=tls.session_cache value=27 by=dwjung
+2026-11-10T19:21:15 INFO  dns-sync/ds-node-14 deploy step release=dns-sync-4.12.0 step=pull_image result=ok took_s=59
+2026-11-10T19:21:21 WARN  dns-sync/ds-node-16 alert fired rule=fd_usage_high value=59% threshold=57%
+2026-11-10T19:21:24 INFO  dns-sync/ds-node-12 deploy step release=dns-sync-4.21.4 step=start result=ok took_s=76
+2026-11-10T19:21:28 INFO  dns-sync/ds-node-04 config applied key=worker.concurrency value=true by=ejlim
+2026-11-10T19:21:35 INFO  dns-sync/ds-node-06 request done id=req-f6b365c8 route=/dns-sync/v1/status status=200 latency_ms=44
+2026-11-10T19:21:41 INFO  dns-sync/ds-node-01 request done id=req-17821cdc route=/dns-sync/v1/update status=429 latency_ms=246
+2026-11-10T19:21:46 INFO  dns-sync/ds-node-06 request done id=req-700bd0c0 route=/dns-sync/v1/update status=200 latency_ms=337
+2026-11-10T19:21:49 INFO  dns-sync/ds-node-15 config applied key=log.sample_rate value=1 by=yjchoi
+2026-11-10T19:21:52 INFO  dns-sync/ds-node-10 request done id=req-a0d5b993 route=/dns-sync/v1/cancel status=200 latency_ms=126
+2026-11-10T19:21:58 INFO  dns-sync/ds-node-03 request done id=req-7743d8b0 route=/dns-sync/v1/list status=200 latency_ms=70
+2026-11-10T19:22:04 ERROR dns-sync/ds-node-17 job failed job=dns-sync-rollup attempt=1 cause=oom_killed
+2026-11-10T19:22:09 INFO  dns-sync/ds-node-11 request done id=req-ee4e9525 route=/dns-sync/v1/update status=200 latency_ms=221
+2026-11-10T19:22:14 INFO  dns-sync/ds-node-16 request done id=req-c591dd09 route=/dns-sync/v1/update status=200 latency_ms=183
+2026-11-10T19:22:18 INFO  dns-sync/ds-node-11 backup finished file=/vault/weekly/audit_2026w36.tar.zst size_mb=26100 checksum=432e935c
+2026-11-10T19:22:24 INFO  dns-sync/ds-node-06 request done id=req-61cec0c4 route=/dns-sync/v1/verify status=400 latency_ms=45
+2026-11-10T19:22:28 INFO  dns-sync/ds-node-04 request done id=req-d2a06e32 route=/dns-sync/v1/create status=503 latency_ms=118
+2026-11-10T19:22:35 NOTE  dns-sync/ds-node-19 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-10T19:22:36 INFO  dns-sync/ds-node-12 request done id=req-e847ec73 route=/dns-sync/v1/status status=200 latency_ms=206
+2026-11-10T19:22:42 INFO  dns-sync/ds-node-03 request done id=req-ddc39c1a route=/dns-sync/v1/update status=200 latency_ms=31
+2026-11-10T19:22:43 INFO  dns-sync/ds-node-07 config applied key=canary.traffic_percent value=665 by=ejlim
+2026-11-10T19:22:49 INFO  dns-sync/ds-node-24 request done id=req-f0774d91 route=/dns-sync/v1/status status=500 latency_ms=37
+2026-11-10T19:22:56 INFO  dns-sync/ds-node-07 cache stats region=ap-ne-2b hit_ratio=79.2% evictions=28011
+2026-11-10T19:22:57 INFO  dns-sync/ds-node-22 request done id=req-7ee1dd49 route=/dns-sync/v1/status status=200 latency_ms=65
+2026-11-10T19:22:58 INFO  dns-sync/ds-node-17 config applied key=http.read_timeout_ms value=4964 by=mjlee
+2026-11-10T19:23:03 INFO  dns-sync/ds-node-22 request done id=req-d2736a85 route=/dns-sync/v1/status status=500 latency_ms=63
+2026-11-10T19:23:08 INFO  dns-sync/ds-node-20 request done id=req-7218adb4 route=/dns-sync/v1/verify status=200 latency_ms=87
+2026-11-10T19:23:14 INFO  dns-sync/ds-node-18 request done id=req-4d033de9 route=/dns-sync/v1/get status=201 latency_ms=115
+2026-11-10T19:23:18 INFO  dns-sync/ds-node-19 pool resize target=dns-sync-db max_pool_size=97 prev=54
+2026-11-10T19:23:19 INFO  dns-sync/ds-node-20 config applied key=canary.latency_p99_threshold_ms value=false by=ejlim
+2026-11-10T19:23:21 INFO  dns-sync/ds-node-08 request done id=req-71f131a3 route=/dns-sync/v1/update status=200 latency_ms=60
+2026-11-10T19:23:22 ERROR dns-sync/ds-node-16 job failed job=dns-sync-cleanup attempt=4 cause=dns_failure
+2026-11-10T19:23:27 WARN  dns-sync/ds-node-06 alert fired rule=heap_used_high value=96% threshold=85%
+2026-11-10T19:23:31 INFO  dns-sync/ds-node-13 pool resize target=dns-sync-queue max_pool_size=356 prev=304
+2026-11-10T19:23:35 INFO  dns-sync/ds-node-22 request done id=req-9b653b98 route=/dns-sync/v1/verify status=409 latency_ms=120
+2026-11-10T19:23:42 ERROR dns-sync/ds-node-04 job failed job=dns-sync-cleanup attempt=1 cause=bad_checksum
+2026-11-10T19:23:49 ERROR dns-sync/ds-node-02 job failed job=dns-sync-cleanup attempt=5 cause=lock_wait_exceeded
+2026-11-10T19:23:55 WARN  dns-sync/ds-node-01 alert fired rule=error_ratio_high value=81% threshold=70%
+2026-11-10T19:23:59 INFO  dns-sync/ds-node-15 ticket linked id=OPS-49723 reason=flaky_healthcheck
+2026-11-10T19:24:01 WARN  dns-sync/ds-node-08 alert fired rule=replica_lag_high value=67s threshold=56s
+2026-11-10T19:24:03 WARN  dns-sync/ds-node-24 alert fired rule=p99_latency_high value=75ms threshold=70ms
+2026-11-10T19:24:09 INFO  dns-sync/ds-node-20 request done id=req-002ec028 route=/dns-sync/v1/list status=200 latency_ms=36
+2026-11-10T19:24:15 INFO  dns-sync/ds-node-09 request done id=req-c0379bb2 route=/dns-sync/v1/update status=200 latency_ms=799
+2026-11-10T19:24:16 ERROR dns-sync/ds-node-03 job failed job=dns-sync-cleanup attempt=2 cause=lock_wait_exceeded
+2026-11-10T19:24:22 INFO  dns-sync/ds-node-08 request done id=req-a824e7bf route=/dns-sync/v1/update status=200 latency_ms=188
+2026-11-10T19:24:23 INFO  dns-sync/ds-node-01 backup finished file=/vault/daily/orders_20261013.tar.zst size_mb=5685 checksum=dd488162
+2026-11-10T19:24:29 INFO  dns-sync/ds-node-24 request done id=req-f50aaeeb route=/dns-sync/v1/list status=200 latency_ms=48
+2026-11-10T19:24:32 INFO  dns-sync/ds-node-13 pool resize target=dns-sync-cache max_pool_size=340 prev=339
+2026-11-10T19:24:36 INFO  dns-sync/ds-node-11 request done id=req-e4dfa22e route=/dns-sync/v1/get status=200 latency_ms=967
+2026-11-10T19:24:40 INFO  dns-sync/ds-node-10 request done id=req-7b11c9d0 route=/dns-sync/v1/list status=404 latency_ms=77
+2026-11-10T19:24:43 INFO  dns-sync/ds-node-21 request done id=req-76f94132 route=/dns-sync/v1/create status=429 latency_ms=105
+2026-11-10T19:24:47 INFO  dns-sync/ds-node-01 cache stats region=ap-se-1a hit_ratio=59.6% evictions=28384
+2026-11-10T19:24:54 INFO  dns-sync/ds-node-06 request done id=req-22b2a064 route=/dns-sync/v1/create status=200 latency_ms=169
+2026-11-10T19:24:57 INFO  dns-sync/ds-node-11 config applied key=flush.interval_ms value=18% by=dwjung
+2026-11-10T19:24:59 WARN  dns-sync/ds-node-03 alert fired rule=queue_depth_high value=96 threshold=85
+2026-11-10T19:25:03 NOTE  dns-sync/ds-node-07 operator=yjchoi memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-10T19:25:07 INFO  dns-sync/ds-node-16 config applied key=canary.traffic_percent value=false by=hbyoon
+2026-11-10T19:25:08 INFO  dns-sync/ds-node-17 config applied key=retry.max_attempts value=300 by=yjchoi
+2026-11-10T19:25:13 INFO  dns-sync/ds-node-04 request done id=req-cab452b6 route=/dns-sync/v1/get status=500 latency_ms=130
+2026-11-10T19:25:14 INFO  dns-sync/ds-node-04 pool resize target=dns-sync-cache max_pool_size=70 prev=112
+2026-11-10T19:25:15 INFO  dns-sync/ds-node-03 request done id=req-2cc1009e route=/dns-sync/v1/get status=200 latency_ms=111
+2026-11-10T19:25:20 INFO  dns-sync/ds-node-04 ticket linked id=OPS-47482 reason=node_drain
+2026-11-10T19:25:24 INFO  dns-sync/ds-node-01 request done id=req-0386910c route=/dns-sync/v1/update status=409 latency_ms=319
+2026-11-10T19:25:29 INFO  dns-sync/ds-node-17 request done id=req-0586df25 route=/dns-sync/v1/status status=500 latency_ms=221
+2026-11-10T19:25:31 INFO  dns-sync/ds-node-01 request done id=req-c9d0170c route=/dns-sync/v1/update status=200 latency_ms=332
+2026-11-10T19:25:32 WARN  dns-sync/ds-node-20 alert fired rule=cpu_steal_high value=53% threshold=45%
+2026-11-10T19:25:39 INFO  dns-sync/ds-node-05 request done id=req-674f90cd route=/dns-sync/v1/cancel status=429 latency_ms=1718
+2026-11-10T19:25:42 WARN  dns-sync/ds-node-01 alert fired rule=heap_used_high value=89% threshold=85%
+2026-11-10T19:25:45 INFO  dns-sync/ds-node-20 request done id=req-ec751de3 route=/dns-sync/v1/update status=200 latency_ms=172
+2026-11-10T19:25:50 INFO  dns-sync/ds-node-17 request done id=req-c98b2e25 route=/dns-sync/v1/update status=200 latency_ms=12
+2026-11-10T19:25:52 INFO  dns-sync/ds-node-06 request done id=req-7fa2d905 route=/dns-sync/v1/update status=503 latency_ms=51
+2026-11-10T19:25:58 NOTE  dns-sync/ds-node-01 operator=mjlee memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-10T19:26:01 INFO  dns-sync/ds-node-14 request done id=req-5f36e75d route=/dns-sync/v1/status status=200 latency_ms=322
+2026-11-10T19:26:06 INFO  dns-sync/ds-node-19 ticket linked id=OPS-48332 reason=oncall_handoff
+2026-11-10T19:26:12 INFO  dns-sync/ds-node-16 request done id=req-c14972ef route=/dns-sync/v1/cancel status=200 latency_ms=104
+2026-11-10T19:26:15 INFO  dns-sync/ds-node-24 config applied key=dns.ttl_s value=true by=yjchoi
+2026-11-10T19:26:19 INFO  dns-sync/ds-node-06 pool resize target=dns-sync-queue max_pool_size=217 prev=168
+2026-11-10T19:26:22 INFO  dns-sync/ds-node-02 ticket linked id=OPS-47323 reason=dependency_upgrade
+2026-11-10T19:26:25 INFO  dns-sync/ds-node-22 request done id=req-38be9360 route=/dns-sync/v1/list status=400 latency_ms=25
+2026-11-10T19:26:30 NOTE  dns-sync/ds-node-15 operator=jhpark memo="타임아웃을 54ms에서 78ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-10T19:26:32 WARN  dns-sync/ds-node-08 alert fired rule=error_ratio_high value=51% threshold=41%
+2026-11-10T19:26:37 INFO  dns-sync/ds-node-12 request done id=req-c5be857e route=/dns-sync/v1/sync status=200 latency_ms=165
+2026-11-10T19:26:38 NOTE  dns-sync/ds-node-22 operator=hbyoon memo="동시 처리 수를 36에서 13로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-10T19:26:40 INFO  dns-sync/ds-node-24 ticket linked id=OPS-47804 reason=dns_ttl_change
+2026-11-10T19:26:47 WARN  dns-sync/ds-node-23 alert fired rule=queue_depth_high value=52 threshold=43
+2026-11-10T19:26:51 INFO  dns-sync/ds-node-14 request done id=req-a900e4bc route=/dns-sync/v1/get status=200 latency_ms=56
+2026-11-10T19:26:52 INFO  dns-sync/ds-node-09 request done id=req-3d2ea4ee route=/dns-sync/v1/update status=503 latency_ms=46
+2026-11-10T19:26:56 INFO  dns-sync/ds-node-20 request done id=req-b7f4cd05 route=/dns-sync/v1/get status=409 latency_ms=90
+2026-11-10T19:27:02 INFO  dns-sync/ds-node-06 config applied key=retry.backoff_ms value=44 by=hbyoon
+2026-11-10T19:27:08 INFO  dns-sync/ds-node-24 request done id=req-f7659936 route=/dns-sync/v1/cancel status=500 latency_ms=88
+2026-11-10T19:27:10 INFO  dns-sync/ds-node-17 request done id=req-f2bdd443 route=/dns-sync/v1/cancel status=200 latency_ms=91
+2026-11-10T19:27:17 INFO  dns-sync/ds-node-23 config applied key=worker.concurrency value=false by=mjlee
+2026-11-10T19:27:20 INFO  dns-sync/ds-node-14 deploy step release=dns-sync-4.13.8 step=start result=ok took_s=154
+2026-11-10T19:27:23 INFO  dns-sync/ds-node-19 config applied key=limiter.burst value=3170 by=dwjung
+2026-11-10T19:27:28 INFO  dns-sync/ds-node-18 request done id=req-c35b8743 route=/dns-sync/v1/create status=200 latency_ms=41
+2026-11-10T19:27:34 INFO  dns-sync/ds-node-09 cache stats region=ap-ne-2b hit_ratio=77.8% evictions=36585
+2026-11-10T19:27:41 INFO  dns-sync/ds-node-20 request done id=req-843a4ec3 route=/dns-sync/v1/verify status=200 latency_ms=432
+2026-11-10T19:27:43 INFO  dns-sync/ds-node-02 pool resize target=dns-sync-queue max_pool_size=352 prev=363
+2026-11-10T19:27:47 INFO  dns-sync/ds-node-02 cache stats region=ap-ne-2a hit_ratio=88.7% evictions=9111
+2026-11-10T19:27:50 INFO  dns-sync/ds-node-08 request done id=req-29b9cc19 route=/dns-sync/v1/sync status=200 latency_ms=54
+2026-11-10T19:27:56 WARN  dns-sync/ds-node-21 alert fired rule=queue_depth_high value=86 threshold=71
+2026-11-10T19:27:59 INFO  dns-sync/ds-node-09 request done id=req-52bf66bc route=/dns-sync/v1/cancel status=200 latency_ms=73
+2026-11-10T19:28:03 INFO  dns-sync/ds-node-11 request done id=req-5d5198b3 route=/dns-sync/v1/verify status=200 latency_ms=380
+2026-11-10T19:28:05 INFO  dns-sync/ds-node-05 config applied key=retry.backoff_ms value=8139 by=hbyoon
+2026-11-10T19:28:12 INFO  dns-sync/ds-node-19 request done id=req-e0fa3ac7 route=/dns-sync/v1/verify status=503 latency_ms=314
+2026-11-10T19:28:16 WARN  dns-sync/ds-node-23 alert fired rule=fd_usage_high value=63% threshold=53%
+2026-11-10T19:28:19 INFO  dns-sync/ds-node-18 request done id=req-fbc75c22 route=/dns-sync/v1/update status=200 latency_ms=65
+2026-11-10T19:28:25 INFO  dns-sync/ds-node-05 request done id=req-04e988cb route=/dns-sync/v1/update status=200 latency_ms=386
+2026-11-10T19:28:31 INFO  dns-sync/ds-node-24 request done id=req-f0a84dd9 route=/dns-sync/v1/get status=400 latency_ms=42
+2026-11-10T19:28:33 INFO  dns-sync/ds-node-21 request done id=req-e682c098 route=/dns-sync/v1/status status=200 latency_ms=76
+2026-11-10T19:28:38 INFO  dns-sync/ds-node-24 request done id=req-32c03083 route=/dns-sync/v1/list status=429 latency_ms=276
+2026-11-10T19:28:39 INFO  dns-sync/ds-node-04 request done id=req-1c23d8ff route=/dns-sync/v1/sync status=204 latency_ms=221
+2026-11-10T19:28:45 NOTE  dns-sync/ds-node-19 operator=sykang memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-11-10T19:28:46 INFO  dns-sync/ds-node-20 pool resize target=dns-sync-worker max_pool_size=37 prev=7
+2026-11-10T19:28:49 INFO  dns-sync/ds-node-13 request done id=req-200d24ae route=/dns-sync/v1/get status=200 latency_ms=103
+2026-11-10T19:28:50 INFO  dns-sync/ds-node-15 request done id=req-4d3b7e2f route=/dns-sync/v1/status status=200 latency_ms=70
+2026-11-10T19:28:56 ERROR dns-sync/ds-node-14 job failed job=dns-sync-rollup attempt=3 cause=oom_killed
+2026-11-10T19:28:58 INFO  dns-sync/ds-node-06 config applied key=http.max_conns value=true by=ejlim
+2026-11-10T19:29:02 NOTE  dns-sync/ds-node-03 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-10T19:29:04 INFO  dns-sync/ds-node-14 request done id=req-f87b0d0d route=/dns-sync/v1/create status=400 latency_ms=41
+2026-11-10T19:29:08 INFO  dns-sync/ds-node-11 request done id=req-a37657ba route=/dns-sync/v1/cancel status=400 latency_ms=223
+2026-11-10T19:29:09 INFO  dns-sync/ds-node-02 request done id=req-d3adbcd2 route=/dns-sync/v1/create status=409 latency_ms=39
+2026-11-10T19:29:12 INFO  dns-sync/ds-node-05 ticket linked id=OPS-47452 reason=quota_increase
+2026-11-10T19:29:15 INFO  dns-sync/ds-node-02 config applied key=shard.count value=true by=yjchoi
+2026-11-10T19:29:19 INFO  dns-sync/ds-node-02 request done id=req-378d4d9a route=/dns-sync/v1/list status=200 latency_ms=63
+2026-11-10T19:29:25 INFO  dns-sync/ds-node-04 request done id=req-9ab83f79 route=/dns-sync/v1/status status=500 latency_ms=237
+2026-11-10T19:29:27 INFO  dns-sync/ds-node-23 request done id=req-1e21ccf6 route=/dns-sync/v1/sync status=200 latency_ms=57
+2026-11-10T19:29:33 INFO  dns-sync/ds-node-19 config applied key=log.sample_rate value=false by=dwjung
+2026-11-10T19:29:40 NOTE  dns-sync/ds-node-06 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-10T19:29:43 INFO  dns-sync/ds-node-22 ticket linked id=OPS-47355 reason=runbook_update
+2026-11-10T19:29:45 INFO  dns-sync/ds-node-04 deploy step release=dns-sync-4.12.5 step=healthcheck result=ok took_s=11
+2026-11-10T19:29:49 INFO  dns-sync/ds-node-10 ticket linked id=OPS-49086 reason=schema_change
+2026-11-10T19:29:55 INFO  dns-sync/ds-node-16 cache stats region=ap-ne-2b hit_ratio=62.8% evictions=5178
+2026-11-10T19:30:00 INFO  dns-sync/ds-node-02 request done id=req-ee1d0a78 route=/dns-sync/v1/list status=200 latency_ms=247
+2026-11-10T19:30:02 INFO  dns-sync/ds-node-03 config applied key=worker.concurrency value=21 by=mjlee
+2026-11-10T19:30:09 INFO  dns-sync/ds-node-01 deploy step release=dns-sync-4.11.2 step=shift_traffic_100 result=ok took_s=213
+2026-11-10T19:30:10 WARN  dns-sync/ds-node-09 alert fired rule=disk_usage_warning value=97% threshold=94%
+2026-11-10T19:30:15 INFO  dns-sync/ds-node-17 request done id=req-8a4c6a47 route=/dns-sync/v1/verify status=503 latency_ms=77
+2026-11-10T19:30:20 INFO  dns-sync/ds-node-24 backup finished file=/vault/daily/inventory_20261024.tar.zst size_mb=50632 checksum=13866d55
+2026-11-10T19:30:27 WARN  dns-sync/ds-node-02 alert fired rule=fd_usage_high value=77% threshold=69%
+2026-11-10T19:30:28 INFO  dns-sync/ds-node-18 cache stats region=ap-ne-2a hit_ratio=94.8% evictions=29324
+2026-11-10T19:30:35 INFO  dns-sync/ds-node-09 request done id=req-f1e20bef route=/dns-sync/v1/list status=201 latency_ms=78
+2026-11-10T19:30:36 INFO  dns-sync/ds-node-05 request done id=req-92af56cd route=/dns-sync/v1/update status=200 latency_ms=170
+2026-11-10T19:30:43 INFO  dns-sync/ds-node-12 request done id=req-c9674966 route=/dns-sync/v1/cancel status=200 latency_ms=165
+2026-11-10T19:30:47 INFO  dns-sync/ds-node-06 pool resize target=dns-sync-queue max_pool_size=63 prev=27
+2026-11-10T19:30:48 INFO  dns-sync/ds-node-01 ticket linked id=OPS-49737 reason=cert_rotation
+2026-11-10T19:30:53 INFO  dns-sync/ds-node-21 config applied key=tls.session_cache value=5579 by=hbyoon
+2026-11-10T19:31:00 INFO  dns-sync/ds-node-18 request done id=req-ec77f9a2 route=/dns-sync/v1/sync status=200 latency_ms=203
+2026-11-10T19:31:03 INFO  dns-sync/ds-node-10 deploy step release=dns-sync-4.18.1 step=shift_traffic_100 result=ok took_s=87
+2026-11-10T19:31:04 INFO  dns-sync/ds-node-01 pool resize target=dns-sync-cache max_pool_size=261 prev=285
+2026-11-10T19:31:09 INFO  dns-sync/ds-node-05 deploy step release=dns-sync-4.15.5 step=shift_traffic_10 result=ok took_s=59
+2026-11-10T19:31:11 INFO  dns-sync/ds-node-15 config applied key=http.read_timeout_ms value=true by=jhpark
+2026-11-10T19:31:18 INFO  dns-sync/ds-node-16 config applied key=flush.interval_ms value=false by=shkim
+2026-11-10T19:31:22 INFO  dns-sync/ds-node-02 config applied key=log.sample_rate value=50 by=mjlee
+2026-11-10T19:31:24 INFO  dns-sync/ds-node-21 config applied key=gc.pause_target_ms value=false by=shkim
+2026-11-10T19:31:31 INFO  dns-sync/ds-node-10 cache stats region=ap-ne-2a hit_ratio=67.0% evictions=35333
+2026-11-10T19:31:34 INFO  dns-sync/ds-node-11 request done id=req-24ddbc33 route=/dns-sync/v1/create status=204 latency_ms=309
+2026-11-10T19:31:36 WARN  dns-sync/ds-node-13 alert fired rule=conn_pool_saturated value=87% threshold=73%
+2026-11-10T19:31:38 INFO  dns-sync/ds-node-23 request done id=req-6b9dcd3c route=/dns-sync/v1/create status=200 latency_ms=279
+2026-11-10T19:31:40 WARN  dns-sync/ds-node-02 alert fired rule=p99_latency_high value=59ms threshold=47ms
+2026-11-10T19:31:47 INFO  dns-sync/ds-node-01 deploy step release=dns-sync-4.21.8 step=shift_traffic_10 result=ok took_s=232
+2026-11-10T19:31:53 INFO  dns-sync/ds-node-10 request done id=req-244d3988 route=/dns-sync/v1/sync status=429 latency_ms=224
+2026-11-10T19:31:58 INFO  dns-sync/ds-node-15 request done id=req-19781555 route=/dns-sync/v1/verify status=200 latency_ms=357
+2026-11-10T19:32:05 INFO  dns-sync/ds-node-21 request done id=req-7a5947e8 route=/dns-sync/v1/get status=200 latency_ms=330
+2026-11-10T19:32:08 WARN  dns-sync/ds-node-19 alert fired rule=heap_used_high value=74% threshold=69%
+2026-11-10T19:32:09 WARN  dns-sync/ds-node-11 alert fired rule=replica_lag_high value=87s threshold=74s
+2026-11-10T19:32:16 INFO  dns-sync/ds-node-21 request done id=req-ae055aa5 route=/dns-sync/v1/get status=503 latency_ms=31
+2026-11-10T19:32:18 INFO  dns-sync/ds-node-19 ticket linked id=OPS-49283 reason=log_volume_spike
+2026-11-10T19:32:25 INFO  dns-sync/ds-node-02 config applied key=http.max_conns value=false by=ejlim
+2026-11-10T19:32:32 INFO  dns-sync/ds-node-21 config applied key=limiter.burst value=1 by=mjlee
+2026-11-10T19:32:36 INFO  dns-sync/ds-node-11 deploy step release=dns-sync-4.22.9 step=shift_traffic_50 result=ok took_s=30
+2026-11-10T19:32:39 INFO  dns-sync/ds-node-01 request done id=req-ee15a5a7 route=/dns-sync/v1/create status=200 latency_ms=141
+2026-11-10T19:32:44 INFO  dns-sync/ds-node-22 deploy step release=dns-sync-4.13.6 step=healthcheck result=ok took_s=170
+2026-11-10T19:32:45 INFO  dns-sync/ds-node-22 request done id=req-d36a2871 route=/dns-sync/v1/get status=429 latency_ms=278
+2026-11-10T19:32:49 WARN  dns-sync/ds-node-04 alert fired rule=conn_pool_saturated value=66% threshold=54%
+2026-11-10T19:32:55 INFO  dns-sync/ds-node-18 request done id=req-697ef7c2 route=/dns-sync/v1/list status=204 latency_ms=262
+2026-11-10T19:32:58 INFO  dns-sync/ds-node-04 config applied key=cache.ttl_s value=24 by=yjchoi
+2026-11-10T19:33:05 INFO  dns-sync/ds-node-21 request done id=req-4d24d4f0 route=/dns-sync/v1/update status=204 latency_ms=301
+2026-11-10T19:33:11 INFO  dns-sync/ds-node-24 deploy step release=dns-sync-4.21.7 step=shift_traffic_50 result=ok took_s=196
+2026-11-10T19:33:18 INFO  dns-sync/ds-node-19 request done id=req-e2089adc route=/dns-sync/v1/verify status=200 latency_ms=551
+2026-11-10T19:33:20 ERROR dns-sync/ds-node-07 job failed job=dns-sync-reindex attempt=5 cause=quota_exceeded
+2026-11-10T19:33:26 INFO  dns-sync/ds-node-10 request done id=req-e7ce47d1 route=/dns-sync/v1/verify status=200 latency_ms=69
+2026-11-10T19:33:29 INFO  dns-sync/ds-node-12 request done id=req-7f91f1ae route=/dns-sync/v1/verify status=500 latency_ms=131
+2026-11-10T19:33:31 INFO  dns-sync/ds-node-11 request done id=req-fecdd418 route=/dns-sync/v1/create status=200 latency_ms=76
+2026-11-10T19:33:32 INFO  dns-sync/ds-node-04 request done id=req-04e1de05 route=/dns-sync/v1/status status=204 latency_ms=91
+2026-11-10T19:33:37 INFO  dns-sync/ds-node-06 config applied key=gc.pause_target_ms value=4 by=dwjung
+2026-11-10T19:33:39 INFO  dns-sync/ds-node-13 deploy step release=dns-sync-4.13.0 step=verify result=ok took_s=127
+2026-11-10T19:33:45 INFO  dns-sync/ds-node-19 config applied key=breaker.open_ratio value=39 by=hbyoon
+2026-11-10T19:33:46 ERROR dns-sync/ds-node-22 job failed job=dns-sync-reindex attempt=5 cause=dns_failure
+2026-11-10T19:33:48 INFO  dns-sync/ds-node-18 config applied key=limiter.burst value=true by=dwjung
+2026-11-10T19:33:55 INFO  dns-sync/ds-node-02 deploy step release=dns-sync-4.21.2 step=pull_image result=ok took_s=162
+2026-11-10T19:33:59 NOTE  dns-sync/ds-node-08 operator=shkim memo="타임아웃을 46ms에서 49ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-10T19:34:06 INFO  dns-sync/ds-node-20 pool resize target=dns-sync-worker max_pool_size=308 prev=312
+2026-11-10T19:34:12 INFO  dns-sync/ds-node-17 request done id=req-6e23f9d4 route=/dns-sync/v1/create status=429 latency_ms=228
+2026-11-10T19:34:16 WARN  dns-sync/ds-node-08 alert fired rule=heap_used_high value=80% threshold=66%
+2026-11-10T19:34:22 INFO  dns-sync/ds-node-17 deploy step release=dns-sync-4.19.4 step=shift_traffic_100 result=ok took_s=213
+2026-11-10T19:34:28 INFO  dns-sync/ds-node-04 request done id=req-e4a6dd9c route=/dns-sync/v1/list status=200 latency_ms=45
+2026-11-10T19:34:35 INFO  dns-sync/ds-node-14 request done id=req-57c3fbc0 route=/dns-sync/v1/update status=200 latency_ms=302
+2026-11-10T19:34:42 INFO  dns-sync/ds-node-06 request done id=req-657262ae route=/dns-sync/v1/update status=200 latency_ms=91
+2026-11-10T19:34:46 INFO  dns-sync/ds-node-21 request done id=req-51409469 route=/dns-sync/v1/cancel status=200 latency_ms=431
+2026-11-10T19:34:50 INFO  dns-sync/ds-node-23 request done id=req-8409893f route=/dns-sync/v1/list status=200 latency_ms=65
+2026-11-10T19:34:53 INFO  dns-sync/ds-node-16 pool resize target=dns-sync-queue max_pool_size=95 prev=50
+2026-11-10T19:34:55 INFO  dns-sync/ds-node-13 pool resize target=dns-sync-cache max_pool_size=76 prev=49
+2026-11-10T19:35:02 INFO  dns-sync/ds-node-01 request done id=req-96c8662a route=/dns-sync/v1/sync status=200 latency_ms=42
+2026-11-10T19:35:03 INFO  dns-sync/ds-node-15 request done id=req-6b4022d5 route=/dns-sync/v1/list status=200 latency_ms=247
+2026-11-10T19:35:05 INFO  dns-sync/ds-node-04 request done id=req-f7c5f434 route=/dns-sync/v1/cancel status=204 latency_ms=176
+2026-11-10T19:35:11 INFO  dns-sync/ds-node-13 backup finished file=/vault/daily/users_20261026.tar.zst size_mb=14791 checksum=efd7d774
+2026-11-10T19:35:13 INFO  dns-sync/ds-node-08 pool resize target=dns-sync-upstream max_pool_size=344 prev=394
+2026-11-10T19:35:16 INFO  dns-sync/ds-node-11 pool resize target=dns-sync-cache max_pool_size=373 prev=359
+2026-11-10T19:35:23 INFO  dns-sync/ds-node-18 request done id=req-ede21144 route=/dns-sync/v1/cancel status=200 latency_ms=249
+2026-11-10T19:35:24 NOTE  dns-sync/ds-node-04 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-10T19:35:27 INFO  dns-sync/ds-node-12 config applied key=queue.batch_size value=true by=dwjung
+2026-11-10T19:35:33 INFO  dns-sync/ds-node-09 config applied key=shard.count value=4283 by=yjchoi
+2026-11-10T19:35:38 INFO  dns-sync/ds-node-17 deploy step release=dns-sync-4.11.5 step=shift_traffic_100 result=ok took_s=223
+2026-11-10T19:35:45 INFO  dns-sync/ds-node-07 pool resize target=dns-sync-db max_pool_size=334 prev=354
+2026-11-10T19:35:50 INFO  dns-sync/ds-node-22 request done id=req-c2456ca7 route=/dns-sync/v1/update status=204 latency_ms=405
+2026-11-10T19:35:52 INFO  dns-sync/ds-node-12 request done id=req-4f87f61e route=/dns-sync/v1/list status=200 latency_ms=52
+2026-11-10T19:35:58 INFO  dns-sync/ds-node-21 request done id=req-0524a8ec route=/dns-sync/v1/cancel status=200 latency_ms=60
+2026-11-10T19:36:01 INFO  dns-sync/ds-node-14 request done id=req-e4042839 route=/dns-sync/v1/list status=200 latency_ms=137
+2026-11-10T19:36:08 NOTE  dns-sync/ds-node-23 operator=hbyoon memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-10T19:36:10 INFO  dns-sync/ds-node-02 request done id=req-c3ca7292 route=/dns-sync/v1/status status=200 latency_ms=127
+2026-11-10T19:36:12 WARN  dns-sync/ds-node-21 alert fired rule=gc_pause_long value=88ms threshold=80ms
+2026-11-10T19:36:16 INFO  dns-sync/ds-node-04 ticket linked id=OPS-47151 reason=oncall_handoff
+2026-11-10T19:36:19 ERROR dns-sync/ds-node-11 job failed job=dns-sync-export attempt=2 cause=dns_failure
+2026-11-10T19:36:21 INFO  dns-sync/ds-node-11 ticket linked id=OPS-49203 reason=oncall_handoff
+2026-11-10T19:36:22 INFO  dns-sync/ds-node-16 request done id=req-ada23431 route=/dns-sync/v1/status status=200 latency_ms=179
+2026-11-10T19:36:23 INFO  dns-sync/ds-node-21 request done id=req-3452c841 route=/dns-sync/v1/list status=200 latency_ms=175
+2026-11-10T19:36:30 WARN  dns-sync/ds-node-06 alert fired rule=cpu_steal_high value=63% threshold=51%
+2026-11-10T19:36:31 INFO  dns-sync/ds-node-19 pool resize target=dns-sync-cache max_pool_size=261 prev=269
+2026-11-10T19:36:32 ERROR dns-sync/ds-node-24 job failed job=dns-sync-reindex attempt=5 cause=oom_killed
+2026-11-10T19:36:38 INFO  dns-sync/ds-node-03 backup finished file=/vault/daily/payments_20261004.tar.zst size_mb=78270 checksum=16a1a9f6
+2026-11-10T19:36:45 INFO  dns-sync/ds-node-02 request done id=req-54796d64 route=/dns-sync/v1/status status=503 latency_ms=55
+2026-11-10T19:36:52 INFO  dns-sync/ds-node-03 request done id=req-caab8844 route=/dns-sync/v1/status status=204 latency_ms=117
+2026-11-10T19:36:55 INFO  dns-sync/ds-node-22 pool resize target=dns-sync-cache max_pool_size=178 prev=210
+2026-11-10T19:36:56 INFO  dns-sync/ds-node-11 cache stats region=ap-ne-2c hit_ratio=69.6% evictions=15019
+2026-11-10T19:37:00 INFO  dns-sync/ds-node-14 request done id=req-b3559c59 route=/dns-sync/v1/verify status=200 latency_ms=143
+2026-11-10T19:37:05 INFO  dns-sync/ds-node-03 request done id=req-9b73627b route=/dns-sync/v1/create status=200 latency_ms=89
+2026-11-10T19:37:09 WARN  dns-sync/ds-node-16 alert fired rule=fd_usage_high value=54% threshold=46%
+2026-11-10T19:37:13 INFO  dns-sync/ds-node-24 request done id=req-518cf6cb route=/dns-sync/v1/list status=429 latency_ms=501
+2026-11-10T19:37:14 INFO  dns-sync/ds-node-12 request done id=req-9c258eee route=/dns-sync/v1/get status=200 latency_ms=209
+2026-11-10T19:37:16 INFO  dns-sync/ds-node-01 request done id=req-a5c87b69 route=/dns-sync/v1/list status=200 latency_ms=91
+2026-11-10T19:37:22 WARN  dns-sync/ds-node-02 alert fired rule=error_ratio_high value=76% threshold=67%
+2026-11-10T19:37:25 INFO  dns-sync/ds-node-20 request done id=req-6c789512 route=/dns-sync/v1/status status=200 latency_ms=140
+2026-11-10T19:37:30 NOTE  dns-sync/ds-node-16 operator=shkim memo="ds-node-16 재기동 후 지표 정상 확인."
+2026-11-10T19:37:34 INFO  dns-sync/ds-node-22 request done id=req-60bf397e route=/dns-sync/v1/cancel status=200 latency_ms=73
+2026-11-10T19:37:37 INFO  dns-sync/ds-node-16 cache stats region=ap-ne-2b hit_ratio=87.4% evictions=33905
+2026-11-10T19:37:41 INFO  dns-sync/ds-node-13 request done id=req-d39d3f5a route=/dns-sync/v1/status status=200 latency_ms=266
+2026-11-10T19:37:44 INFO  dns-sync/ds-node-05 request done id=req-2fd9c4e3 route=/dns-sync/v1/cancel status=204 latency_ms=349
+2026-11-10T19:37:45 WARN  dns-sync/ds-node-01 alert fired rule=conn_pool_saturated value=76% threshold=65%
+2026-11-10T19:37:50 WARN  dns-sync/ds-node-20 alert fired rule=queue_depth_high value=72 threshold=70
+2026-11-10T19:37:55 INFO  dns-sync/ds-node-17 request done id=req-da57b31b route=/dns-sync/v1/list status=200 latency_ms=89
+2026-11-10T19:38:00 INFO  dns-sync/ds-node-02 request done id=req-d7e25d9d route=/dns-sync/v1/update status=200 latency_ms=141
+2026-11-10T19:38:03 ERROR dns-sync/ds-node-04 job failed job=dns-sync-reindex attempt=4 cause=dns_failure
+2026-11-10T19:38:10 INFO  dns-sync/ds-node-10 ticket linked id=OPS-48707 reason=flaky_healthcheck
+2026-11-10T19:38:14 WARN  dns-sync/ds-node-08 alert fired rule=replica_lag_high value=93s threshold=92s
+2026-11-10T19:38:16 INFO  dns-sync/ds-node-19 request done id=req-80283492 route=/dns-sync/v1/cancel status=429 latency_ms=454
+2026-11-10T19:38:17 INFO  dns-sync/ds-node-06 request done id=req-41b8605d route=/dns-sync/v1/update status=200 latency_ms=124
+2026-11-10T19:38:21 INFO  dns-sync/ds-node-09 request done id=req-b45624df route=/dns-sync/v1/verify status=503 latency_ms=87
+2026-11-10T19:38:26 INFO  dns-sync/ds-node-07 request done id=req-25dfe7e9 route=/dns-sync/v1/status status=404 latency_ms=50
+2026-11-10T19:38:31 INFO  dns-sync/ds-node-13 deploy step release=dns-sync-4.18.2 step=shift_traffic_10 result=ok took_s=63
+2026-11-10T19:38:36 INFO  dns-sync/ds-node-17 request done id=req-a11e4f87 route=/dns-sync/v1/status status=204 latency_ms=190
+2026-11-10T19:38:40 INFO  dns-sync/ds-node-11 request done id=req-f613049c route=/dns-sync/v1/sync status=200 latency_ms=350
+2026-11-10T19:38:47 INFO  dns-sync/ds-node-20 config applied key=dns.ttl_s value=26% by=dwjung
+2026-11-10T19:38:48 NOTE  dns-sync/ds-node-16 operator=ejlim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-10T19:38:53 INFO  dns-sync/ds-node-10 request done id=req-a434290d route=/dns-sync/v1/list status=200 latency_ms=98
+2026-11-10T19:38:59 INFO  dns-sync/ds-node-10 deploy step release=dns-sync-4.15.7 step=shift_traffic_50 result=ok took_s=103
+2026-11-10T19:39:03 INFO  dns-sync/ds-node-11 request done id=req-edf43541 route=/dns-sync/v1/create status=200 latency_ms=161
+2026-11-10T19:39:04 INFO  dns-sync/ds-node-22 cache stats region=ap-se-1a hit_ratio=92.3% evictions=36199
+2026-11-10T19:39:05 INFO  dns-sync/ds-node-17 request done id=req-bc4e3d59 route=/dns-sync/v1/create status=200 latency_ms=311
+2026-11-10T19:39:10 INFO  dns-sync/ds-node-18 config applied key=limiter.burst value=true by=shkim
+2026-11-10T19:39:16 INFO  dns-sync/ds-node-02 deploy step release=dns-sync-4.19.9 step=start result=ok took_s=140
+2026-11-10T19:39:17 NOTE  dns-sync/ds-node-12 operator=dwjung memo="로그 보존 기간은 25일로 유지하기로 함."
+2026-11-10T19:39:22 INFO  dns-sync/ds-node-08 request done id=req-9d1cd189 route=/dns-sync/v1/cancel status=204 latency_ms=123
+2026-11-10T19:39:24 INFO  dns-sync/ds-node-10 request done id=req-98bb6ec4 route=/dns-sync/v1/sync status=201 latency_ms=244
+2026-11-10T19:39:27 INFO  dns-sync/ds-node-15 config applied key=worker.concurrency value=7 by=ejlim
+2026-11-10T19:39:34 INFO  dns-sync/ds-node-04 deploy step release=dns-sync-4.10.1 step=healthcheck result=ok took_s=215
+2026-11-10T19:39:37 NOTE  dns-sync/ds-node-14 operator=hbyoon memo="ds-node-14 재기동 후 지표 정상 확인."
+2026-11-10T19:39:39 INFO  dns-sync/ds-node-18 request done id=req-3ddd2b81 route=/dns-sync/v1/get status=200 latency_ms=73
+2026-11-10T19:39:43 INFO  dns-sync/ds-node-13 deploy step release=dns-sync-4.19.6 step=drain result=ok took_s=157
+2026-11-10T19:39:45 INFO  dns-sync/ds-node-05 request done id=req-a8d171d8 route=/dns-sync/v1/create status=200 latency_ms=241
+2026-11-10T19:39:48 INFO  dns-sync/ds-node-16 request done id=req-56183114 route=/dns-sync/v1/verify status=200 latency_ms=454
+2026-11-10T19:39:51 INFO  dns-sync/ds-node-09 request done id=req-d1ff7680 route=/dns-sync/v1/get status=200 latency_ms=58
+2026-11-10T19:39:57 INFO  dns-sync/ds-node-03 request done id=req-52c9b363 route=/dns-sync/v1/get status=200 latency_ms=26
+2026-11-10T19:40:02 INFO  dns-sync/ds-node-12 request done id=req-04b71b48 route=/dns-sync/v1/create status=200 latency_ms=449
+2026-11-10T19:40:04 WARN  dns-sync/ds-node-24 alert fired rule=gc_pause_long value=66ms threshold=65ms
+2026-11-10T19:40:06 INFO  dns-sync/ds-node-07 request done id=req-a6fd4286 route=/dns-sync/v1/get status=200 latency_ms=80
+2026-11-10T19:40:08 INFO  dns-sync/ds-node-21 request done id=req-1d220399 route=/dns-sync/v1/get status=200 latency_ms=162
+2026-11-10T19:40:12 INFO  dns-sync/ds-node-21 request done id=req-010edef4 route=/dns-sync/v1/verify status=400 latency_ms=55
+2026-11-10T19:40:19 WARN  dns-sync/ds-node-21 alert fired rule=replica_lag_high value=66s threshold=59s
+2026-11-10T19:40:25 INFO  dns-sync/ds-node-02 request done id=req-37f89685 route=/dns-sync/v1/create status=500 latency_ms=106
+2026-11-10T19:40:27 INFO  dns-sync/ds-node-06 request done id=req-6753877e route=/dns-sync/v1/update status=200 latency_ms=135
+2026-11-10T19:40:29 INFO  dns-sync/ds-node-13 deploy step release=dns-sync-4.12.4 step=shift_traffic_10 result=ok took_s=63
+2026-11-10T19:40:32 INFO  dns-sync/ds-node-17 ticket linked id=OPS-49677 reason=node_drain
+2026-11-10T19:40:34 INFO  dns-sync/ds-node-19 pool resize target=dns-sync-db max_pool_size=348 prev=390
+2026-11-10T19:40:35 INFO  dns-sync/ds-node-12 request done id=req-7b788f17 route=/dns-sync/v1/verify status=200 latency_ms=215
+2026-11-10T19:40:37 INFO  dns-sync/ds-node-06 config applied key=limiter.burst value=false by=yjchoi
+2026-11-10T19:40:42 INFO  dns-sync/ds-node-09 request done id=req-fd738ded route=/dns-sync/v1/verify status=200 latency_ms=36
+2026-11-10T19:40:47 INFO  dns-sync/ds-node-14 request done id=req-93f8be37 route=/dns-sync/v1/list status=200 latency_ms=63
+2026-11-10T19:40:49 WARN  dns-sync/ds-node-17 alert fired rule=replica_lag_high value=78s threshold=69s
+2026-11-10T19:40:56 INFO  dns-sync/ds-node-09 request done id=req-b9b2c310 route=/dns-sync/v1/sync status=200 latency_ms=17
+2026-11-10T19:41:01 INFO  dns-sync/ds-node-12 pool resize target=dns-sync-cache max_pool_size=16 prev=11
+2026-11-10T19:41:03 INFO  dns-sync/ds-node-14 request done id=req-2033570c route=/dns-sync/v1/create status=200 latency_ms=102
+2026-11-10T19:41:08 NOTE  dns-sync/ds-node-20 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 48일 남음."
+2026-11-10T19:41:09 INFO  dns-sync/ds-node-20 config applied key=breaker.open_ratio value=55% by=jhpark
+2026-11-10T19:41:13 INFO  dns-sync/ds-node-07 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=88303 checksum=4be0ba96
+2026-11-10T19:41:18 INFO  dns-sync/ds-node-06 config applied key=dns.ttl_s value=26 by=ejlim
+2026-11-10T19:41:22 NOTE  dns-sync/ds-node-05 operator=shkim memo="타임아웃을 43ms에서 57ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-10T19:41:29 INFO  dns-sync/ds-node-22 request done id=req-d905e452 route=/dns-sync/v1/list status=200 latency_ms=120
+2026-11-10T19:41:35 INFO  dns-sync/ds-node-20 request done id=req-0a9ba1e1 route=/dns-sync/v1/get status=201 latency_ms=157
+2026-11-10T19:41:41 INFO  dns-sync/ds-node-06 request done id=req-bf2db503 route=/dns-sync/v1/status status=200 latency_ms=201
+2026-11-10T19:41:43 INFO  dns-sync/ds-node-21 deploy step release=dns-sync-4.20.9 step=healthcheck result=ok took_s=141
+2026-11-10T19:41:44 INFO  dns-sync/ds-node-16 request done id=req-fc9672d7 route=/dns-sync/v1/sync status=404 latency_ms=119
+2026-11-10T19:41:45 INFO  dns-sync/ds-node-19 ticket linked id=OPS-47999 reason=oncall_handoff
+2026-11-10T19:41:49 WARN  dns-sync/ds-node-14 alert fired rule=replica_lag_high value=88s threshold=75s
+2026-11-10T19:41:54 INFO  dns-sync/ds-node-22 request done id=req-5fbc87ea route=/dns-sync/v1/create status=400 latency_ms=96
+2026-11-10T19:41:56 INFO  dns-sync/ds-node-12 request done id=req-1bc48e6d route=/dns-sync/v1/get status=200 latency_ms=64
+2026-11-10T19:42:00 INFO  dns-sync/ds-node-23 ticket linked id=OPS-48586 reason=dns_ttl_change
+2026-11-10T19:42:06 INFO  dns-sync/ds-node-01 request done id=req-d8e050af route=/dns-sync/v1/list status=404 latency_ms=270
+2026-11-10T19:42:08 INFO  dns-sync/ds-node-24 request done id=req-58df3991 route=/dns-sync/v1/get status=200 latency_ms=700
+2026-11-10T19:42:11 INFO  dns-sync/ds-node-05 request done id=req-6b0a9452 route=/dns-sync/v1/list status=200 latency_ms=109
+2026-11-10T19:42:17 WARN  dns-sync/ds-node-12 alert fired rule=gc_pause_long value=58ms threshold=50ms
+2026-11-10T19:42:21 WARN  dns-sync/ds-node-06 alert fired rule=queue_depth_high value=98 threshold=90
+2026-11-10T19:42:27 INFO  dns-sync/ds-node-08 request done id=req-9b515850 route=/dns-sync/v1/create status=200 latency_ms=109
+2026-11-10T19:42:33 INFO  dns-sync/ds-node-05 request done id=req-a9ae37fc route=/dns-sync/v1/get status=400 latency_ms=313
+2026-11-10T19:42:38 INFO  dns-sync/ds-node-01 pool resize target=dns-sync-worker max_pool_size=152 prev=125
+2026-11-10T19:42:41 INFO  dns-sync/ds-node-06 config applied key=cache.ttl_s value=2890 by=ejlim
+2026-11-10T19:42:48 NOTE  dns-sync/ds-node-23 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-10T19:42:49 INFO  dns-sync/ds-node-13 request done id=req-134f8748 route=/dns-sync/v1/verify status=500 latency_ms=177
+2026-11-10T19:42:52 INFO  dns-sync/ds-node-09 request done id=req-eb4d56d6 route=/dns-sync/v1/create status=200 latency_ms=38
+2026-11-10T19:42:53 INFO  dns-sync/ds-node-12 request done id=req-70ff10b4 route=/dns-sync/v1/sync status=200 latency_ms=1699
+2026-11-10T19:42:56 INFO  dns-sync/ds-node-12 backup finished file=/vault/daily/audit_20261005.tar.zst size_mb=3070 checksum=16c43dbe
+2026-11-10T19:43:00 INFO  dns-sync/ds-node-14 request done id=req-82691251 route=/dns-sync/v1/sync status=200 latency_ms=196
+2026-11-10T19:43:04 INFO  dns-sync/ds-node-01 request done id=req-308dd43e route=/dns-sync/v1/create status=200 latency_ms=206
+2026-11-10T19:43:06 INFO  dns-sync/ds-node-18 pool resize target=dns-sync-upstream max_pool_size=217 prev=224
+2026-11-10T19:43:11 INFO  dns-sync/ds-node-18 ticket linked id=OPS-49932 reason=cert_rotation
+2026-11-10T19:43:12 INFO  dns-sync/ds-node-20 deploy step release=dns-sync-4.13.0 step=warmup result=ok took_s=168
+2026-11-10T19:43:18 INFO  dns-sync/ds-node-10 request done id=req-dd7682be route=/dns-sync/v1/list status=200 latency_ms=75
+2026-11-10T19:43:20 INFO  dns-sync/ds-node-04 request done id=req-530fd8c4 route=/dns-sync/v1/cancel status=200 latency_ms=737
+2026-11-10T19:43:25 ERROR dns-sync/ds-node-22 job failed job=dns-sync-reindex attempt=5 cause=upstream_timeout
+2026-11-10T19:43:27 INFO  dns-sync/ds-node-23 request done id=req-878743b8 route=/dns-sync/v1/sync status=200 latency_ms=236
+2026-11-10T19:43:28 INFO  dns-sync/ds-node-09 request done id=req-7c274a4a route=/dns-sync/v1/sync status=500 latency_ms=137
+2026-11-10T19:43:31 WARN  dns-sync/ds-node-19 alert fired rule=error_ratio_high value=78% threshold=63%
+2026-11-10T19:43:33 INFO  dns-sync/ds-node-21 request done id=req-d36c8d51 route=/dns-sync/v1/status status=200 latency_ms=71
+2026-11-10T19:43:38 INFO  dns-sync/ds-node-11 pool resize target=dns-sync-queue max_pool_size=92 prev=71
+2026-11-10T19:43:39 INFO  dns-sync/ds-node-02 request done id=req-98086f37 route=/dns-sync/v1/create status=404 latency_ms=156
+2026-11-10T19:43:42 INFO  dns-sync/ds-node-17 deploy step release=dns-sync-4.22.1 step=shift_traffic_10 result=ok took_s=46
+2026-11-10T19:43:46 WARN  dns-sync/ds-node-17 alert fired rule=queue_depth_high value=58 threshold=52
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

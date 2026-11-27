@@ -1,0 +1,424 @@
+참고용 로그 25: 감사 로그(audit-log) 보존 정책 적용 구간. '확인'이라고만 답해 줘.
+
+2026-10-29T06:50:41 INFO  audit-log/al-node-15 request done id=req-b74c2902 route=/audit-log/v1/cancel status=429 latency_ms=265
+2026-10-29T06:50:42 NOTE  audit-log/al-node-18 operator=dwjung memo="임시 증설 14대 추가. 내일 오전 회수 예정."
+2026-10-29T06:50:49 INFO  audit-log/al-node-18 request done id=req-a0571db1 route=/audit-log/v1/create status=200 latency_ms=113
+2026-10-29T06:50:51 INFO  audit-log/al-node-16 request done id=req-fac8d74e route=/audit-log/v1/create status=409 latency_ms=48
+2026-10-29T06:50:55 WARN  audit-log/al-node-23 alert fired rule=fd_usage_high value=56% threshold=41%
+2026-10-29T06:50:56 WARN  audit-log/al-node-24 alert fired rule=disk_usage_warning value=83% threshold=80%
+2026-10-29T06:51:00 INFO  audit-log/al-node-22 cache stats region=ap-ne-2c hit_ratio=97.9% evictions=10415
+2026-10-29T06:51:04 INFO  audit-log/al-node-22 config applied key=limiter.rps value=false by=hbyoon
+2026-10-29T06:51:09 INFO  audit-log/al-node-04 request done id=req-f0be7c3c route=/audit-log/v1/create status=204 latency_ms=123
+2026-10-29T06:51:15 INFO  audit-log/al-node-04 request done id=req-38aedd24 route=/audit-log/v1/get status=200 latency_ms=57
+2026-10-29T06:51:22 INFO  audit-log/al-node-23 config applied key=queue.batch_size value=2578 by=shkim
+2026-10-29T06:51:23 INFO  audit-log/al-node-14 request done id=req-d8881e6a route=/audit-log/v1/update status=404 latency_ms=124
+2026-10-29T06:51:30 INFO  audit-log/al-node-20 request done id=req-f6a49aa2 route=/audit-log/v1/update status=204 latency_ms=62
+2026-10-29T06:51:31 INFO  audit-log/al-node-14 deploy step release=audit-log-4.21.6 step=healthcheck result=ok took_s=159
+2026-10-29T06:51:34 INFO  audit-log/al-node-02 request done id=req-d6598f6b route=/audit-log/v1/update status=200 latency_ms=94
+2026-10-29T06:51:41 INFO  audit-log/al-node-23 request done id=req-ac62f24f route=/audit-log/v1/cancel status=200 latency_ms=595
+2026-10-29T06:51:48 INFO  audit-log/al-node-22 pool resize target=audit-log-upstream max_pool_size=400 prev=378
+2026-10-29T06:51:52 INFO  audit-log/al-node-19 request done id=req-c1803331 route=/audit-log/v1/verify status=400 latency_ms=225
+2026-10-29T06:51:53 INFO  audit-log/al-node-08 request done id=req-875f8120 route=/audit-log/v1/status status=409 latency_ms=160
+2026-10-29T06:51:54 INFO  audit-log/al-node-14 config applied key=flush.interval_ms value=61 by=mjlee
+2026-10-29T06:52:01 INFO  audit-log/al-node-15 request done id=req-e06a3514 route=/audit-log/v1/verify status=503 latency_ms=28
+2026-10-29T06:52:02 INFO  audit-log/al-node-06 request done id=req-139bcb73 route=/audit-log/v1/update status=200 latency_ms=139
+2026-10-29T06:52:03 INFO  audit-log/al-node-12 request done id=req-45c0ff57 route=/audit-log/v1/status status=400 latency_ms=273
+2026-10-29T06:52:05 INFO  audit-log/al-node-09 request done id=req-bf4b817e route=/audit-log/v1/sync status=201 latency_ms=96
+2026-10-29T06:52:08 WARN  audit-log/al-node-06 alert fired rule=heap_used_high value=95% threshold=91%
+2026-10-29T06:52:11 INFO  audit-log/al-node-03 ticket linked id=OPS-49208 reason=oncall_handoff
+2026-10-29T06:52:18 INFO  audit-log/al-node-20 pool resize target=audit-log-db max_pool_size=362 prev=362
+2026-10-29T06:52:21 INFO  audit-log/al-node-19 request done id=req-50c67691 route=/audit-log/v1/list status=204 latency_ms=62
+2026-10-29T06:52:22 INFO  audit-log/al-node-01 deploy step release=audit-log-4.13.1 step=migrate result=ok took_s=106
+2026-10-29T06:52:26 INFO  audit-log/al-node-19 request done id=req-4fe827bd route=/audit-log/v1/get status=503 latency_ms=192
+2026-10-29T06:52:30 INFO  audit-log/al-node-11 request done id=req-6f2c1121 route=/audit-log/v1/create status=200 latency_ms=170
+2026-10-29T06:52:31 NOTE  audit-log/al-node-10 operator=dwjung memo="연동 팀에 변경 공지 완료."
+2026-10-29T06:52:38 INFO  audit-log/al-node-05 deploy step release=audit-log-4.21.3 step=healthcheck result=ok took_s=96
+2026-10-29T06:52:44 INFO  audit-log/al-node-21 request done id=req-dda385b2 route=/audit-log/v1/cancel status=500 latency_ms=55
+2026-10-29T06:52:49 WARN  audit-log/al-node-01 alert fired rule=cpu_steal_high value=95% threshold=82%
+2026-10-29T06:52:51 WARN  audit-log/al-node-23 alert fired rule=error_ratio_high value=77% threshold=76%
+2026-10-29T06:52:55 NOTE  audit-log/al-node-21 operator=mjlee memo="캐시 TTL을 41초로 되돌림. 오래된 응답이 보고됨."
+2026-10-29T06:52:56 INFO  audit-log/al-node-20 cache stats region=us-we-2b hit_ratio=80.8% evictions=18002
+2026-10-29T06:53:02 WARN  audit-log/al-node-01 alert fired rule=error_ratio_high value=98% threshold=87%
+2026-10-29T06:53:04 INFO  audit-log/al-node-05 request done id=req-9b30eece route=/audit-log/v1/sync status=503 latency_ms=146
+2026-10-29T06:53:08 INFO  audit-log/al-node-10 request done id=req-6acf2602 route=/audit-log/v1/create status=400 latency_ms=49
+2026-10-29T06:53:14 INFO  audit-log/al-node-17 request done id=req-87a410a7 route=/audit-log/v1/create status=200 latency_ms=317
+2026-10-29T06:53:20 INFO  audit-log/al-node-22 request done id=req-ba4074ff route=/audit-log/v1/create status=200 latency_ms=564
+2026-10-29T06:53:25 INFO  audit-log/al-node-05 request done id=req-9abfb5b4 route=/audit-log/v1/create status=200 latency_ms=132
+2026-10-29T06:53:32 INFO  audit-log/al-node-05 request done id=req-9862fcc7 route=/audit-log/v1/update status=200 latency_ms=107
+2026-10-29T06:53:37 INFO  audit-log/al-node-09 backup finished file=/vault/daily/inventory_20261001.tar.zst size_mb=57015 checksum=da943b1c
+2026-10-29T06:53:43 INFO  audit-log/al-node-17 request done id=req-0882eab0 route=/audit-log/v1/update status=200 latency_ms=193
+2026-10-29T06:53:49 INFO  audit-log/al-node-21 request done id=req-1eb32731 route=/audit-log/v1/verify status=201 latency_ms=33
+2026-10-29T06:53:53 WARN  audit-log/al-node-22 alert fired rule=p99_latency_high value=53ms threshold=51ms
+2026-10-29T06:53:58 INFO  audit-log/al-node-24 request done id=req-ad77de79 route=/audit-log/v1/verify status=200 latency_ms=131
+2026-10-29T06:54:00 WARN  audit-log/al-node-22 alert fired rule=cpu_steal_high value=80% threshold=69%
+2026-10-29T06:54:06 INFO  audit-log/al-node-22 config applied key=flush.interval_ms value=true by=dwjung
+2026-10-29T06:54:11 INFO  audit-log/al-node-13 request done id=req-05817dde route=/audit-log/v1/create status=200 latency_ms=823
+2026-10-29T06:54:16 INFO  audit-log/al-node-18 cache stats region=ap-ne-2a hit_ratio=86.5% evictions=39023
+2026-10-29T06:54:18 INFO  audit-log/al-node-22 request done id=req-9d9cdcb4 route=/audit-log/v1/get status=400 latency_ms=109
+2026-10-29T06:54:23 INFO  audit-log/al-node-05 request done id=req-cddfbe98 route=/audit-log/v1/cancel status=200 latency_ms=74
+2026-10-29T06:54:24 WARN  audit-log/al-node-21 alert fired rule=cpu_steal_high value=84% threshold=82%
+2026-10-29T06:54:30 INFO  audit-log/al-node-10 pool resize target=audit-log-upstream max_pool_size=155 prev=193
+2026-10-29T06:54:35 WARN  audit-log/al-node-07 alert fired rule=p99_latency_high value=71ms threshold=60ms
+2026-10-29T06:54:42 INFO  audit-log/al-node-03 request done id=req-34351796 route=/audit-log/v1/update status=204 latency_ms=118
+2026-10-29T06:54:49 INFO  audit-log/al-node-07 ticket linked id=OPS-49972 reason=quota_increase
+2026-10-29T06:54:53 ERROR audit-log/al-node-23 job failed job=audit-log-rollup attempt=3 cause=bad_checksum
+2026-10-29T06:54:56 INFO  audit-log/al-node-06 request done id=req-b573e4a1 route=/audit-log/v1/get status=409 latency_ms=179
+2026-10-29T06:54:59 INFO  audit-log/al-node-09 config applied key=http.read_timeout_ms value=12 by=jhpark
+2026-10-29T06:55:03 INFO  audit-log/al-node-07 request done id=req-f11facdd route=/audit-log/v1/cancel status=200 latency_ms=39
+2026-10-29T06:55:10 INFO  audit-log/al-node-02 deploy step release=audit-log-4.15.2 step=healthcheck result=ok took_s=80
+2026-10-29T06:55:13 INFO  audit-log/al-node-18 pool resize target=audit-log-upstream max_pool_size=272 prev=332
+2026-10-29T06:55:19 INFO  audit-log/al-node-07 pool resize target=audit-log-queue max_pool_size=232 prev=191
+2026-10-29T06:55:20 INFO  audit-log/al-node-01 request done id=req-9f66d327 route=/audit-log/v1/get status=200 latency_ms=70
+2026-10-29T06:55:22 INFO  audit-log/al-node-03 pool resize target=audit-log-cache max_pool_size=308 prev=253
+2026-10-29T06:55:26 NOTE  audit-log/al-node-05 operator=hbyoon memo="점검 창을 58분 연장함. 승인: 류태경 팀장."
+2026-10-29T06:55:28 INFO  audit-log/al-node-09 pool resize target=audit-log-worker max_pool_size=323 prev=376
+2026-10-29T06:55:33 INFO  audit-log/al-node-02 request done id=req-7592cc48 route=/audit-log/v1/cancel status=201 latency_ms=62
+2026-10-29T06:55:34 WARN  audit-log/al-node-05 alert fired rule=replica_lag_high value=75s threshold=72s
+2026-10-29T06:55:35 INFO  audit-log/al-node-11 request done id=req-d6797ecc route=/audit-log/v1/get status=200 latency_ms=93
+2026-10-29T06:55:42 INFO  audit-log/al-node-11 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=68749 checksum=cbf2d943
+2026-10-29T06:55:45 INFO  audit-log/al-node-06 request done id=req-d9067aff route=/audit-log/v1/get status=500 latency_ms=46
+2026-10-29T06:55:46 INFO  audit-log/al-node-22 config applied key=flush.interval_ms value=148 by=hbyoon
+2026-10-29T06:55:53 INFO  audit-log/al-node-07 deploy step release=audit-log-4.15.4 step=drain result=ok took_s=149
+2026-10-29T06:55:57 WARN  audit-log/al-node-02 alert fired rule=fd_usage_high value=83% threshold=69%
+2026-10-29T06:56:01 INFO  audit-log/al-node-19 request done id=req-ebc00471 route=/audit-log/v1/verify status=503 latency_ms=71
+2026-10-29T06:56:05 INFO  audit-log/al-node-13 request done id=req-90a66226 route=/audit-log/v1/sync status=200 latency_ms=128
+2026-10-29T06:56:11 INFO  audit-log/al-node-06 request done id=req-1d8e0323 route=/audit-log/v1/get status=200 latency_ms=55
+2026-10-29T06:56:13 INFO  audit-log/al-node-07 request done id=req-78ffb8d6 route=/audit-log/v1/create status=200 latency_ms=100
+2026-10-29T06:56:14 INFO  audit-log/al-node-22 request done id=req-5251be7d route=/audit-log/v1/sync status=200 latency_ms=221
+2026-10-29T06:56:20 WARN  audit-log/al-node-02 alert fired rule=p99_latency_high value=73ms threshold=63ms
+2026-10-29T06:56:21 WARN  audit-log/al-node-15 alert fired rule=heap_used_high value=95% threshold=80%
+2026-10-29T06:56:25 INFO  audit-log/al-node-12 request done id=req-649e816c route=/audit-log/v1/get status=200 latency_ms=15
+2026-10-29T06:56:28 INFO  audit-log/al-node-19 request done id=req-c5fd2337 route=/audit-log/v1/sync status=200 latency_ms=333
+2026-10-29T06:56:34 INFO  audit-log/al-node-11 request done id=req-19eeab7e route=/audit-log/v1/verify status=200 latency_ms=92
+2026-10-29T06:56:35 INFO  audit-log/al-node-13 request done id=req-2f334230 route=/audit-log/v1/list status=500 latency_ms=157
+2026-10-29T06:56:39 INFO  audit-log/al-node-11 request done id=req-46ceb231 route=/audit-log/v1/create status=200 latency_ms=423
+2026-10-29T06:56:40 INFO  audit-log/al-node-07 request done id=req-a42ac6ef route=/audit-log/v1/update status=200 latency_ms=254
+2026-10-29T06:56:47 INFO  audit-log/al-node-13 ticket linked id=OPS-48178 reason=flaky_healthcheck
+2026-10-29T06:56:53 INFO  audit-log/al-node-07 pool resize target=audit-log-queue max_pool_size=305 prev=353
+2026-10-29T06:56:54 INFO  audit-log/al-node-06 request done id=req-5a6f3f3d route=/audit-log/v1/list status=204 latency_ms=102
+2026-10-29T06:56:55 INFO  audit-log/al-node-06 pool resize target=audit-log-cache max_pool_size=157 prev=209
+2026-10-29T06:57:02 INFO  audit-log/al-node-19 config applied key=canary.traffic_percent value=311 by=shkim
+2026-10-29T06:57:09 INFO  audit-log/al-node-19 request done id=req-783a4ac9 route=/audit-log/v1/status status=200 latency_ms=134
+2026-10-29T06:57:16 INFO  audit-log/al-node-11 request done id=req-5559325c route=/audit-log/v1/verify status=200 latency_ms=49
+2026-10-29T06:57:18 WARN  audit-log/al-node-10 alert fired rule=heap_used_high value=52% threshold=51%
+2026-10-29T06:57:21 WARN  audit-log/al-node-12 alert fired rule=conn_pool_saturated value=54% threshold=46%
+2026-10-29T06:57:22 INFO  audit-log/al-node-12 request done id=req-a02c3275 route=/audit-log/v1/create status=200 latency_ms=218
+2026-10-29T06:57:24 INFO  audit-log/al-node-24 config applied key=tls.session_cache value=77% by=sykang
+2026-10-29T06:57:25 NOTE  audit-log/al-node-19 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-29T06:57:29 ERROR audit-log/al-node-21 job failed job=audit-log-export attempt=5 cause=quota_exceeded
+2026-10-29T06:57:32 INFO  audit-log/al-node-23 request done id=req-d505b82c route=/audit-log/v1/list status=204 latency_ms=148
+2026-10-29T06:57:37 ERROR audit-log/al-node-11 job failed job=audit-log-cleanup attempt=3 cause=oom_killed
+2026-10-29T06:57:42 WARN  audit-log/al-node-08 alert fired rule=queue_depth_high value=74 threshold=71
+2026-10-29T06:57:49 INFO  audit-log/al-node-21 deploy step release=audit-log-4.18.0 step=pull_image result=ok took_s=156
+2026-10-29T06:57:54 WARN  audit-log/al-node-10 alert fired rule=cpu_steal_high value=51% threshold=45%
+2026-10-29T06:57:57 INFO  audit-log/al-node-10 config applied key=retry.max_attempts value=4768 by=ejlim
+2026-10-29T06:57:59 INFO  audit-log/al-node-22 ticket linked id=OPS-48559 reason=node_drain
+2026-10-29T06:58:04 INFO  audit-log/al-node-14 cache stats region=ap-ne-2b hit_ratio=60.4% evictions=34552
+2026-10-29T06:58:08 INFO  audit-log/al-node-07 config applied key=worker.concurrency value=1052 by=mjlee
+2026-10-29T06:58:14 WARN  audit-log/al-node-13 alert fired rule=replica_lag_high value=63s threshold=50s
+2026-10-29T06:58:20 INFO  audit-log/al-node-21 request done id=req-d0a2d508 route=/audit-log/v1/list status=404 latency_ms=242
+2026-10-29T06:58:22 NOTE  audit-log/al-node-19 operator=yjchoi memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-29T06:58:27 INFO  audit-log/al-node-12 config applied key=breaker.open_ratio value=8692 by=sykang
+2026-10-29T06:58:31 INFO  audit-log/al-node-03 config applied key=retry.max_attempts value=22 by=ejlim
+2026-10-29T06:58:33 INFO  audit-log/al-node-15 request done id=req-c72ebcf3 route=/audit-log/v1/update status=500 latency_ms=217
+2026-10-29T06:58:35 INFO  audit-log/al-node-17 pool resize target=audit-log-queue max_pool_size=332 prev=302
+2026-10-29T06:58:42 WARN  audit-log/al-node-19 alert fired rule=error_ratio_high value=80% threshold=74%
+2026-10-29T06:58:47 INFO  audit-log/al-node-19 deploy step release=audit-log-4.14.9 step=warmup result=ok took_s=201
+2026-10-29T06:58:53 WARN  audit-log/al-node-03 alert fired rule=gc_pause_long value=93ms threshold=84ms
+2026-10-29T06:58:55 INFO  audit-log/al-node-02 request done id=req-5a515981 route=/audit-log/v1/cancel status=200 latency_ms=25
+2026-10-29T06:58:56 WARN  audit-log/al-node-24 alert fired rule=disk_usage_warning value=55% threshold=46%
+2026-10-29T06:59:03 INFO  audit-log/al-node-21 backup finished file=/vault/daily/payments_20261025.tar.zst size_mb=22108 checksum=5c60bc3c
+2026-10-29T06:59:09 INFO  audit-log/al-node-13 request done id=req-8d33a323 route=/audit-log/v1/update status=503 latency_ms=150
+2026-10-29T06:59:12 INFO  audit-log/al-node-23 pool resize target=audit-log-queue max_pool_size=392 prev=443
+2026-10-29T06:59:16 INFO  audit-log/al-node-10 request done id=req-4c1efd0c route=/audit-log/v1/list status=200 latency_ms=87
+2026-10-29T06:59:17 WARN  audit-log/al-node-22 alert fired rule=conn_pool_saturated value=50% threshold=36%
+2026-10-29T06:59:21 INFO  audit-log/al-node-12 deploy step release=audit-log-4.14.4 step=shift_traffic_10 result=ok took_s=203
+2026-10-29T06:59:22 INFO  audit-log/al-node-10 request done id=req-3402184e route=/audit-log/v1/update status=200 latency_ms=87
+2026-10-29T06:59:24 INFO  audit-log/al-node-03 deploy step release=audit-log-4.20.6 step=start result=ok took_s=97
+2026-10-29T06:59:27 INFO  audit-log/al-node-14 deploy step release=audit-log-4.12.3 step=migrate result=ok took_s=59
+2026-10-29T06:59:28 ERROR audit-log/al-node-19 job failed job=audit-log-cleanup attempt=3 cause=oom_killed
+2026-10-29T06:59:32 INFO  audit-log/al-node-24 cache stats region=ap-se-1a hit_ratio=69.9% evictions=1982
+2026-10-29T06:59:38 WARN  audit-log/al-node-08 alert fired rule=heap_used_high value=53% threshold=48%
+2026-10-29T06:59:41 INFO  audit-log/al-node-09 config applied key=flush.interval_ms value=28 by=shkim
+2026-10-29T06:59:43 INFO  audit-log/al-node-11 request done id=req-a1fa30c1 route=/audit-log/v1/update status=200 latency_ms=146
+2026-10-29T06:59:45 INFO  audit-log/al-node-15 backup finished file=/vault/weekly/inventory_2026w35.tar.zst size_mb=6851 checksum=a6c92a85
+2026-10-29T06:59:49 INFO  audit-log/al-node-04 backup finished file=/vault/weekly/inventory_2026w33.tar.zst size_mb=27150 checksum=af716f74
+2026-10-29T06:59:56 INFO  audit-log/al-node-17 pool resize target=audit-log-upstream max_pool_size=231 prev=175
+2026-10-29T06:59:57 INFO  audit-log/al-node-24 request done id=req-416f8244 route=/audit-log/v1/update status=201 latency_ms=37
+2026-10-29T07:00:00 INFO  audit-log/al-node-14 request done id=req-2ea2e118 route=/audit-log/v1/verify status=404 latency_ms=95
+2026-10-29T07:00:06 INFO  audit-log/al-node-12 request done id=req-a2b544b3 route=/audit-log/v1/verify status=503 latency_ms=207
+2026-10-29T07:00:08 INFO  audit-log/al-node-13 request done id=req-c847b601 route=/audit-log/v1/list status=204 latency_ms=150
+2026-10-29T07:00:11 INFO  audit-log/al-node-14 request done id=req-61e1ae3b route=/audit-log/v1/get status=400 latency_ms=61
+2026-10-29T07:00:17 ERROR audit-log/al-node-21 job failed job=audit-log-cleanup attempt=2 cause=dns_failure
+2026-10-29T07:00:18 INFO  audit-log/al-node-01 config applied key=http.max_conns value=true by=sykang
+2026-10-29T07:00:23 WARN  audit-log/al-node-06 alert fired rule=error_ratio_high value=82% threshold=75%
+2026-10-29T07:00:27 INFO  audit-log/al-node-02 config applied key=retry.backoff_ms value=24 by=sykang
+2026-10-29T07:00:28 INFO  audit-log/al-node-21 config applied key=breaker.half_open_s value=12 by=shkim
+2026-10-29T07:00:29 INFO  audit-log/al-node-03 deploy step release=audit-log-4.13.7 step=healthcheck result=ok took_s=104
+2026-10-29T07:00:30 INFO  audit-log/al-node-18 pool resize target=audit-log-worker max_pool_size=212 prev=264
+2026-10-29T07:00:31 INFO  audit-log/al-node-15 pool resize target=audit-log-cache max_pool_size=264 prev=290
+2026-10-29T07:00:35 INFO  audit-log/al-node-20 request done id=req-d2a52210 route=/audit-log/v1/list status=200 latency_ms=74
+2026-10-29T07:00:41 INFO  audit-log/al-node-08 ticket linked id=OPS-48068 reason=schema_change
+2026-10-29T07:00:46 INFO  audit-log/al-node-20 request done id=req-5e34c8dd route=/audit-log/v1/create status=200 latency_ms=58
+2026-10-29T07:00:47 WARN  audit-log/al-node-07 alert fired rule=error_ratio_high value=79% threshold=65%
+2026-10-29T07:00:49 INFO  audit-log/al-node-17 cache stats region=us-we-2b hit_ratio=87.7% evictions=38385
+2026-10-29T07:00:52 INFO  audit-log/al-node-01 config applied key=canary.traffic_percent value=false by=hbyoon
+2026-10-29T07:00:53 ERROR audit-log/al-node-17 job failed job=audit-log-rollup attempt=3 cause=quota_exceeded
+2026-10-29T07:00:57 NOTE  audit-log/al-node-22 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-29T07:01:01 ERROR audit-log/al-node-20 job failed job=audit-log-cleanup attempt=4 cause=quota_exceeded
+2026-10-29T07:01:04 INFO  audit-log/al-node-10 request done id=req-41e1a12f route=/audit-log/v1/sync status=200 latency_ms=124
+2026-10-29T07:01:05 INFO  audit-log/al-node-01 request done id=req-e8b75250 route=/audit-log/v1/verify status=200 latency_ms=73
+2026-10-29T07:01:11 WARN  audit-log/al-node-20 alert fired rule=fd_usage_high value=96% threshold=82%
+2026-10-29T07:01:16 INFO  audit-log/al-node-07 config applied key=http.read_timeout_ms value=false by=yjchoi
+2026-10-29T07:01:18 INFO  audit-log/al-node-24 deploy step release=audit-log-4.11.1 step=drain result=ok took_s=72
+2026-10-29T07:01:23 INFO  audit-log/al-node-15 config applied key=limiter.rps value=4925 by=sykang
+2026-10-29T07:01:24 INFO  audit-log/al-node-06 request done id=req-c5758485 route=/audit-log/v1/cancel status=200 latency_ms=256
+2026-10-29T07:01:29 INFO  audit-log/al-node-10 deploy step release=audit-log-4.11.2 step=pull_image result=ok took_s=141
+2026-10-29T07:01:32 INFO  audit-log/al-node-13 pool resize target=audit-log-upstream max_pool_size=223 prev=279
+2026-10-29T07:01:38 WARN  audit-log/al-node-02 alert fired rule=error_ratio_high value=90% threshold=89%
+2026-10-29T07:01:43 INFO  audit-log/al-node-17 config applied key=limiter.rps value=78% by=dwjung
+2026-10-29T07:01:46 INFO  audit-log/al-node-15 deploy step release=audit-log-4.18.5 step=verify result=ok took_s=102
+2026-10-29T07:01:48 INFO  audit-log/al-node-13 config applied key=cache.ttl_s value=96% by=dwjung
+2026-10-29T07:01:54 INFO  audit-log/al-node-11 backup finished file=/vault/daily/orders_20261012.tar.zst size_mb=39074 checksum=b90c40da
+2026-10-29T07:01:56 INFO  audit-log/al-node-03 request done id=req-66e19d08 route=/audit-log/v1/cancel status=200 latency_ms=80
+2026-10-29T07:02:01 WARN  audit-log/al-node-05 alert fired rule=conn_pool_saturated value=72% threshold=61%
+2026-10-29T07:02:08 INFO  audit-log/al-node-15 config applied key=http.read_timeout_ms value=true by=yjchoi
+2026-10-29T07:02:10 INFO  audit-log/al-node-16 request done id=req-6d4ccf57 route=/audit-log/v1/list status=200 latency_ms=153
+2026-10-29T07:02:17 NOTE  audit-log/al-node-14 operator=hbyoon memo="동시 처리 수를 40에서 37로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-29T07:02:19 INFO  audit-log/al-node-08 request done id=req-5349e050 route=/audit-log/v1/verify status=500 latency_ms=216
+2026-10-29T07:02:20 INFO  audit-log/al-node-16 deploy step release=audit-log-4.16.7 step=warmup result=ok took_s=234
+2026-10-29T07:02:23 INFO  audit-log/al-node-24 request done id=req-b6f31cc2 route=/audit-log/v1/verify status=429 latency_ms=792
+2026-10-29T07:02:30 WARN  audit-log/al-node-17 alert fired rule=disk_usage_warning value=55% threshold=44%
+2026-10-29T07:02:34 NOTE  audit-log/al-node-20 operator=yjchoi memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-29T07:02:35 INFO  audit-log/al-node-18 pool resize target=audit-log-queue max_pool_size=376 prev=390
+2026-10-29T07:02:41 INFO  audit-log/al-node-14 request done id=req-e4eb6e6f route=/audit-log/v1/list status=200 latency_ms=118
+2026-10-29T07:02:47 INFO  audit-log/al-node-16 request done id=req-f8d8a690 route=/audit-log/v1/list status=200 latency_ms=120
+2026-10-29T07:02:54 INFO  audit-log/al-node-23 request done id=req-9d6628f6 route=/audit-log/v1/list status=503 latency_ms=84
+2026-10-29T07:02:56 INFO  audit-log/al-node-10 request done id=req-63730c4b route=/audit-log/v1/get status=200 latency_ms=236
+2026-10-29T07:02:57 INFO  audit-log/al-node-22 config applied key=retry.max_attempts value=455 by=shkim
+2026-10-29T07:03:02 INFO  audit-log/al-node-01 ticket linked id=OPS-48934 reason=flaky_healthcheck
+2026-10-29T07:03:09 NOTE  audit-log/al-node-03 operator=ejlim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-29T07:03:14 NOTE  audit-log/al-node-17 operator=ejlim memo="캐시 TTL을 14초로 되돌림. 오래된 응답이 보고됨."
+2026-10-29T07:03:21 INFO  audit-log/al-node-21 request done id=req-bc03c46c route=/audit-log/v1/list status=200 latency_ms=97
+2026-10-29T07:03:25 INFO  audit-log/al-node-19 request done id=req-150b38aa route=/audit-log/v1/sync status=200 latency_ms=81
+2026-10-29T07:03:32 INFO  audit-log/al-node-15 config applied key=retry.backoff_ms value=35 by=sykang
+2026-10-29T07:03:36 INFO  audit-log/al-node-08 request done id=req-d785a7fc route=/audit-log/v1/update status=200 latency_ms=52
+2026-10-29T07:03:39 INFO  audit-log/al-node-10 backup finished file=/vault/weekly/users_2026w35.tar.zst size_mb=32636 checksum=8a7228b2
+2026-10-29T07:03:40 INFO  audit-log/al-node-04 ticket linked id=OPS-48337 reason=log_volume_spike
+2026-10-29T07:03:44 INFO  audit-log/al-node-02 request done id=req-f195de27 route=/audit-log/v1/get status=400 latency_ms=33
+2026-10-29T07:03:46 INFO  audit-log/al-node-14 request done id=req-1e22476b route=/audit-log/v1/get status=200 latency_ms=215
+2026-10-29T07:03:53 INFO  audit-log/al-node-03 request done id=req-81e28ce0 route=/audit-log/v1/create status=404 latency_ms=219
+2026-10-29T07:03:59 INFO  audit-log/al-node-21 pool resize target=audit-log-upstream max_pool_size=27 prev=63
+2026-10-29T07:04:00 INFO  audit-log/al-node-02 cache stats region=ap-ne-2b hit_ratio=87.1% evictions=9426
+2026-10-29T07:04:03 INFO  audit-log/al-node-21 deploy step release=audit-log-4.11.8 step=shift_traffic_100 result=ok took_s=116
+2026-10-29T07:04:10 INFO  audit-log/al-node-03 pool resize target=audit-log-worker max_pool_size=176 prev=163
+2026-10-29T07:04:15 INFO  audit-log/al-node-10 request done id=req-80458f3d route=/audit-log/v1/create status=200 latency_ms=65
+2026-10-29T07:04:20 INFO  audit-log/al-node-06 request done id=req-a8b80dc1 route=/audit-log/v1/cancel status=200 latency_ms=129
+2026-10-29T07:04:27 ERROR audit-log/al-node-23 job failed job=audit-log-reindex attempt=4 cause=dns_failure
+2026-10-29T07:04:32 INFO  audit-log/al-node-06 request done id=req-8dfcb7c1 route=/audit-log/v1/create status=200 latency_ms=73
+2026-10-29T07:04:39 INFO  audit-log/al-node-20 request done id=req-f3e9782e route=/audit-log/v1/verify status=200 latency_ms=323
+2026-10-29T07:04:40 NOTE  audit-log/al-node-11 operator=shkim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-29T07:04:44 ERROR audit-log/al-node-05 job failed job=audit-log-export attempt=5 cause=dns_failure
+2026-10-29T07:04:45 INFO  audit-log/al-node-16 deploy step release=audit-log-4.13.0 step=pull_image result=ok took_s=203
+2026-10-29T07:04:51 INFO  audit-log/al-node-16 config applied key=limiter.burst value=26 by=mjlee
+2026-10-29T07:04:57 INFO  audit-log/al-node-03 request done id=req-f60bcea5 route=/audit-log/v1/create status=200 latency_ms=109
+2026-10-29T07:05:00 INFO  audit-log/al-node-02 request done id=req-8152b380 route=/audit-log/v1/create status=409 latency_ms=576
+2026-10-29T07:05:05 INFO  audit-log/al-node-07 request done id=req-0cc09514 route=/audit-log/v1/sync status=409 latency_ms=162
+2026-10-29T07:05:12 INFO  audit-log/al-node-18 backup finished file=/vault/weekly/audit_2026w40.tar.zst size_mb=21302 checksum=54f4fea3
+2026-10-29T07:05:16 INFO  audit-log/al-node-03 request done id=req-752e4530 route=/audit-log/v1/verify status=200 latency_ms=36
+2026-10-29T07:05:21 INFO  audit-log/al-node-17 request done id=req-dc11ffff route=/audit-log/v1/create status=200 latency_ms=45
+2026-10-29T07:05:24 INFO  audit-log/al-node-16 request done id=req-f6e5b788 route=/audit-log/v1/get status=429 latency_ms=102
+2026-10-29T07:05:31 INFO  audit-log/al-node-18 request done id=req-bbdaab21 route=/audit-log/v1/status status=500 latency_ms=182
+2026-10-29T07:05:36 INFO  audit-log/al-node-08 request done id=req-53175536 route=/audit-log/v1/cancel status=200 latency_ms=175
+2026-10-29T07:05:43 WARN  audit-log/al-node-06 alert fired rule=p99_latency_high value=74ms threshold=59ms
+2026-10-29T07:05:45 INFO  audit-log/al-node-21 pool resize target=audit-log-worker max_pool_size=24 prev=24
+2026-10-29T07:05:50 WARN  audit-log/al-node-13 alert fired rule=cpu_steal_high value=56% threshold=50%
+2026-10-29T07:05:51 INFO  audit-log/al-node-08 request done id=req-f9e8fa42 route=/audit-log/v1/status status=200 latency_ms=577
+2026-10-29T07:05:53 INFO  audit-log/al-node-01 request done id=req-77522e11 route=/audit-log/v1/verify status=503 latency_ms=119
+2026-10-29T07:05:57 INFO  audit-log/al-node-13 request done id=req-3fcb72ff route=/audit-log/v1/update status=200 latency_ms=215
+2026-10-29T07:06:01 INFO  audit-log/al-node-02 request done id=req-271859a9 route=/audit-log/v1/cancel status=200 latency_ms=66
+2026-10-29T07:06:06 INFO  audit-log/al-node-14 request done id=req-1a21319f route=/audit-log/v1/sync status=200 latency_ms=48
+2026-10-29T07:06:11 INFO  audit-log/al-node-08 request done id=req-4f7144ca route=/audit-log/v1/update status=200 latency_ms=57
+2026-10-29T07:06:12 WARN  audit-log/al-node-22 alert fired rule=fd_usage_high value=60% threshold=52%
+2026-10-29T07:06:13 INFO  audit-log/al-node-01 config applied key=http.max_conns value=70% by=dwjung
+2026-10-29T07:06:17 INFO  audit-log/al-node-16 request done id=req-4fb1f4e7 route=/audit-log/v1/get status=500 latency_ms=176
+2026-10-29T07:06:24 INFO  audit-log/al-node-12 request done id=req-1eee5f29 route=/audit-log/v1/list status=429 latency_ms=182
+2026-10-29T07:06:25 INFO  audit-log/al-node-04 config applied key=worker.concurrency value=6789 by=mjlee
+2026-10-29T07:06:27 INFO  audit-log/al-node-02 request done id=req-40a0b80f route=/audit-log/v1/cancel status=200 latency_ms=309
+2026-10-29T07:06:31 WARN  audit-log/al-node-21 alert fired rule=disk_usage_warning value=64% threshold=62%
+2026-10-29T07:06:36 INFO  audit-log/al-node-17 request done id=req-f0d03e00 route=/audit-log/v1/get status=201 latency_ms=39
+2026-10-29T07:06:39 NOTE  audit-log/al-node-10 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-29T07:06:43 INFO  audit-log/al-node-05 request done id=req-667b45c3 route=/audit-log/v1/cancel status=409 latency_ms=285
+2026-10-29T07:06:49 INFO  audit-log/al-node-19 request done id=req-41d5ea60 route=/audit-log/v1/create status=400 latency_ms=60
+2026-10-29T07:06:51 INFO  audit-log/al-node-10 request done id=req-760ae983 route=/audit-log/v1/sync status=400 latency_ms=108
+2026-10-29T07:06:53 ERROR audit-log/al-node-10 job failed job=audit-log-cleanup attempt=1 cause=upstream_timeout
+2026-10-29T07:06:57 NOTE  audit-log/al-node-02 operator=dwjung memo="헬스체크 간격을 51초에서 87초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-29T07:07:02 INFO  audit-log/al-node-13 request done id=req-fdf7e0bd route=/audit-log/v1/cancel status=200 latency_ms=374
+2026-10-29T07:07:07 NOTE  audit-log/al-node-07 operator=hbyoon memo="타임아웃을 56ms에서 69ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-29T07:07:12 NOTE  audit-log/al-node-24 operator=mjlee memo="헬스체크 간격을 11초에서 31초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-29T07:07:14 INFO  audit-log/al-node-14 request done id=req-7ff34508 route=/audit-log/v1/cancel status=200 latency_ms=90
+2026-10-29T07:07:18 INFO  audit-log/al-node-03 request done id=req-83db3b17 route=/audit-log/v1/create status=204 latency_ms=391
+2026-10-29T07:07:22 INFO  audit-log/al-node-08 request done id=req-0539f375 route=/audit-log/v1/get status=200 latency_ms=152
+2026-10-29T07:07:28 WARN  audit-log/al-node-02 alert fired rule=heap_used_high value=75% threshold=65%
+2026-10-29T07:07:30 INFO  audit-log/al-node-12 backup finished file=/vault/daily/sessions_20261013.tar.zst size_mb=65207 checksum=0dd20998
+2026-10-29T07:07:31 INFO  audit-log/al-node-23 request done id=req-b6bf60ca route=/audit-log/v1/update status=200 latency_ms=72
+2026-10-29T07:07:33 INFO  audit-log/al-node-09 config applied key=cache.ttl_s value=false by=ejlim
+2026-10-29T07:07:36 INFO  audit-log/al-node-13 request done id=req-13f8a87b route=/audit-log/v1/verify status=200 latency_ms=316
+2026-10-29T07:07:42 INFO  audit-log/al-node-04 request done id=req-ecbada07 route=/audit-log/v1/update status=200 latency_ms=817
+2026-10-29T07:07:49 INFO  audit-log/al-node-24 config applied key=shard.count value=true by=sykang
+2026-10-29T07:07:53 INFO  audit-log/al-node-02 cache stats region=ap-se-1a hit_ratio=73.0% evictions=4279
+2026-10-29T07:07:54 NOTE  audit-log/al-node-01 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-29T07:07:55 ERROR audit-log/al-node-07 job failed job=audit-log-cleanup attempt=4 cause=oom_killed
+2026-10-29T07:07:57 WARN  audit-log/al-node-02 alert fired rule=replica_lag_high value=60s threshold=48s
+2026-10-29T07:08:00 ERROR audit-log/al-node-02 job failed job=audit-log-reindex attempt=1 cause=lock_wait_exceeded
+2026-10-29T07:08:06 INFO  audit-log/al-node-22 request done id=req-00771eb8 route=/audit-log/v1/cancel status=200 latency_ms=66
+2026-10-29T07:08:11 INFO  audit-log/al-node-17 config applied key=queue.batch_size value=true by=sykang
+2026-10-29T07:08:16 INFO  audit-log/al-node-10 config applied key=flush.interval_ms value=false by=yjchoi
+2026-10-29T07:08:19 INFO  audit-log/al-node-04 pool resize target=audit-log-worker max_pool_size=188 prev=130
+2026-10-29T07:08:26 INFO  audit-log/al-node-11 backup finished file=/vault/weekly/orders_2026w35.tar.zst size_mb=35307 checksum=7271396c
+2026-10-29T07:08:33 INFO  audit-log/al-node-02 backup finished file=/vault/weekly/audit_2026w38.tar.zst size_mb=4288 checksum=26be0cf5
+2026-10-29T07:08:39 INFO  audit-log/al-node-07 request done id=req-1d7d6b51 route=/audit-log/v1/update status=200 latency_ms=14
+2026-10-29T07:08:40 INFO  audit-log/al-node-04 request done id=req-8d9d0dc7 route=/audit-log/v1/verify status=200 latency_ms=85
+2026-10-29T07:08:42 INFO  audit-log/al-node-08 request done id=req-e2e51e9c route=/audit-log/v1/get status=204 latency_ms=90
+2026-10-29T07:08:45 INFO  audit-log/al-node-14 request done id=req-260fb195 route=/audit-log/v1/verify status=404 latency_ms=83
+2026-10-29T07:08:47 INFO  audit-log/al-node-02 backup finished file=/vault/daily/payments_20261014.tar.zst size_mb=28150 checksum=f8bc34f8
+2026-10-29T07:08:49 INFO  audit-log/al-node-16 request done id=req-91ddb375 route=/audit-log/v1/update status=200 latency_ms=67
+2026-10-29T07:08:55 INFO  audit-log/al-node-06 pool resize target=audit-log-upstream max_pool_size=129 prev=124
+2026-10-29T07:08:59 INFO  audit-log/al-node-17 config applied key=breaker.open_ratio value=582 by=sykang
+2026-10-29T07:09:04 INFO  audit-log/al-node-18 config applied key=log.sample_rate value=22 by=hbyoon
+2026-10-29T07:09:09 INFO  audit-log/al-node-06 request done id=req-57072305 route=/audit-log/v1/cancel status=200 latency_ms=23
+2026-10-29T07:09:11 INFO  audit-log/al-node-22 cache stats region=us-we-2b hit_ratio=91.5% evictions=32226
+2026-10-29T07:09:15 INFO  audit-log/al-node-06 request done id=req-25304ec5 route=/audit-log/v1/list status=200 latency_ms=145
+2026-10-29T07:09:18 INFO  audit-log/al-node-07 request done id=req-7ae44699 route=/audit-log/v1/list status=409 latency_ms=455
+2026-10-29T07:09:23 INFO  audit-log/al-node-07 request done id=req-72e8b55d route=/audit-log/v1/verify status=200 latency_ms=43
+2026-10-29T07:09:28 INFO  audit-log/al-node-24 request done id=req-01865879 route=/audit-log/v1/create status=200 latency_ms=436
+2026-10-29T07:09:29 INFO  audit-log/al-node-02 config applied key=dns.ttl_s value=false by=ejlim
+2026-10-29T07:09:36 NOTE  audit-log/al-node-02 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 24일 남음."
+2026-10-29T07:09:41 INFO  audit-log/al-node-14 request done id=req-e103f0c3 route=/audit-log/v1/update status=404 latency_ms=84
+2026-10-29T07:09:43 INFO  audit-log/al-node-04 request done id=req-a98eeedc route=/audit-log/v1/list status=409 latency_ms=65
+2026-10-29T07:09:45 INFO  audit-log/al-node-05 request done id=req-75389df0 route=/audit-log/v1/sync status=204 latency_ms=49
+2026-10-29T07:09:52 INFO  audit-log/al-node-17 request done id=req-87a36547 route=/audit-log/v1/cancel status=200 latency_ms=84
+2026-10-29T07:09:59 INFO  audit-log/al-node-02 config applied key=cache.ttl_s value=46 by=shkim
+2026-10-29T07:10:04 INFO  audit-log/al-node-22 deploy step release=audit-log-4.17.1 step=shift_traffic_100 result=ok took_s=51
+2026-10-29T07:10:08 INFO  audit-log/al-node-18 request done id=req-ffa0345a route=/audit-log/v1/sync status=200 latency_ms=180
+2026-10-29T07:10:12 INFO  audit-log/al-node-06 request done id=req-346789be route=/audit-log/v1/sync status=200 latency_ms=236
+2026-10-29T07:10:17 INFO  audit-log/al-node-21 config applied key=http.read_timeout_ms value=3341 by=hbyoon
+2026-10-29T07:10:24 INFO  audit-log/al-node-24 request done id=req-a9275188 route=/audit-log/v1/verify status=200 latency_ms=121
+2026-10-29T07:10:28 INFO  audit-log/al-node-08 deploy step release=audit-log-4.20.8 step=migrate result=ok took_s=41
+2026-10-29T07:10:31 INFO  audit-log/al-node-10 pool resize target=audit-log-cache max_pool_size=335 prev=303
+2026-10-29T07:10:33 INFO  audit-log/al-node-21 request done id=req-82d0fb97 route=/audit-log/v1/cancel status=503 latency_ms=55
+2026-10-29T07:10:35 INFO  audit-log/al-node-18 request done id=req-485b4644 route=/audit-log/v1/create status=200 latency_ms=308
+2026-10-29T07:10:39 INFO  audit-log/al-node-04 pool resize target=audit-log-worker max_pool_size=241 prev=192
+2026-10-29T07:10:41 INFO  audit-log/al-node-02 request done id=req-660f4d5c route=/audit-log/v1/status status=400 latency_ms=315
+2026-10-29T07:10:47 INFO  audit-log/al-node-09 request done id=req-3c613adf route=/audit-log/v1/status status=503 latency_ms=72
+2026-10-29T07:10:50 INFO  audit-log/al-node-10 request done id=req-205b7007 route=/audit-log/v1/list status=409 latency_ms=85
+2026-10-29T07:10:53 INFO  audit-log/al-node-14 request done id=req-ef71a441 route=/audit-log/v1/list status=200 latency_ms=86
+2026-10-29T07:10:54 INFO  audit-log/al-node-01 request done id=req-3e72ed92 route=/audit-log/v1/sync status=200 latency_ms=346
+2026-10-29T07:10:57 INFO  audit-log/al-node-21 deploy step release=audit-log-4.22.8 step=verify result=ok took_s=43
+2026-10-29T07:10:58 INFO  audit-log/al-node-11 request done id=req-0e46255b route=/audit-log/v1/verify status=200 latency_ms=50
+2026-10-29T07:10:59 INFO  audit-log/al-node-07 pool resize target=audit-log-db max_pool_size=211 prev=217
+2026-10-29T07:11:04 INFO  audit-log/al-node-09 cache stats region=us-we-2b hit_ratio=73.0% evictions=7425
+2026-10-29T07:11:06 INFO  audit-log/al-node-24 request done id=req-09b015fa route=/audit-log/v1/create status=200 latency_ms=234
+2026-10-29T07:11:08 INFO  audit-log/al-node-19 request done id=req-917051c0 route=/audit-log/v1/update status=404 latency_ms=150
+2026-10-29T07:11:15 INFO  audit-log/al-node-24 request done id=req-6a66e46c route=/audit-log/v1/verify status=200 latency_ms=214
+2026-10-29T07:11:17 INFO  audit-log/al-node-08 request done id=req-52e958af route=/audit-log/v1/status status=200 latency_ms=31
+2026-10-29T07:11:23 INFO  audit-log/al-node-08 request done id=req-d5a12a4d route=/audit-log/v1/verify status=200 latency_ms=62
+2026-10-29T07:11:24 ERROR audit-log/al-node-21 job failed job=audit-log-cleanup attempt=4 cause=upstream_timeout
+2026-10-29T07:11:29 INFO  audit-log/al-node-16 request done id=req-e4397669 route=/audit-log/v1/sync status=201 latency_ms=141
+2026-10-29T07:11:32 INFO  audit-log/al-node-17 request done id=req-03d207ae route=/audit-log/v1/get status=200 latency_ms=89
+2026-10-29T07:11:33 INFO  audit-log/al-node-21 request done id=req-000fe721 route=/audit-log/v1/cancel status=200 latency_ms=98
+2026-10-29T07:11:36 INFO  audit-log/al-node-01 request done id=req-1f163ec0 route=/audit-log/v1/list status=409 latency_ms=187
+2026-10-29T07:11:40 WARN  audit-log/al-node-21 alert fired rule=cpu_steal_high value=84% threshold=73%
+2026-10-29T07:11:46 WARN  audit-log/al-node-09 alert fired rule=fd_usage_high value=53% threshold=42%
+2026-10-29T07:11:53 INFO  audit-log/al-node-17 pool resize target=audit-log-worker max_pool_size=59 prev=34
+2026-10-29T07:11:59 INFO  audit-log/al-node-15 request done id=req-19134c79 route=/audit-log/v1/cancel status=200 latency_ms=156
+2026-10-29T07:12:04 INFO  audit-log/al-node-10 request done id=req-954d43d8 route=/audit-log/v1/list status=200 latency_ms=56
+2026-10-29T07:12:07 INFO  audit-log/al-node-06 deploy step release=audit-log-4.15.1 step=warmup result=ok took_s=159
+2026-10-29T07:12:12 INFO  audit-log/al-node-15 request done id=req-16460fc8 route=/audit-log/v1/verify status=400 latency_ms=51
+2026-10-29T07:12:13 INFO  audit-log/al-node-06 request done id=req-8a3b62a4 route=/audit-log/v1/status status=200 latency_ms=543
+2026-10-29T07:12:20 INFO  audit-log/al-node-22 request done id=req-c58c24ef route=/audit-log/v1/sync status=200 latency_ms=558
+2026-10-29T07:12:27 INFO  audit-log/al-node-04 request done id=req-37d3b4a7 route=/audit-log/v1/verify status=200 latency_ms=198
+2026-10-29T07:12:29 WARN  audit-log/al-node-03 alert fired rule=cpu_steal_high value=95% threshold=91%
+2026-10-29T07:12:30 INFO  audit-log/al-node-07 request done id=req-56b12ceb route=/audit-log/v1/get status=200 latency_ms=41
+2026-10-29T07:12:37 INFO  audit-log/al-node-14 request done id=req-62047bd4 route=/audit-log/v1/status status=200 latency_ms=120
+2026-10-29T07:12:43 INFO  audit-log/al-node-03 request done id=req-79f6a196 route=/audit-log/v1/sync status=200 latency_ms=43
+2026-10-29T07:12:50 INFO  audit-log/al-node-08 request done id=req-c7dd0774 route=/audit-log/v1/status status=200 latency_ms=56
+2026-10-29T07:12:56 INFO  audit-log/al-node-10 request done id=req-4fd843e9 route=/audit-log/v1/sync status=429 latency_ms=45
+2026-10-29T07:12:57 INFO  audit-log/al-node-22 request done id=req-1fb3d31c route=/audit-log/v1/sync status=200 latency_ms=87
+2026-10-29T07:13:03 INFO  audit-log/al-node-04 request done id=req-c82a6fc5 route=/audit-log/v1/list status=200 latency_ms=187
+2026-10-29T07:13:09 INFO  audit-log/al-node-09 request done id=req-d4bdbd49 route=/audit-log/v1/sync status=200 latency_ms=199
+2026-10-29T07:13:13 INFO  audit-log/al-node-21 request done id=req-b15fb6a9 route=/audit-log/v1/status status=200 latency_ms=636
+2026-10-29T07:13:20 INFO  audit-log/al-node-03 deploy step release=audit-log-4.18.4 step=healthcheck result=ok took_s=168
+2026-10-29T07:13:22 INFO  audit-log/al-node-24 request done id=req-7f5e7085 route=/audit-log/v1/get status=503 latency_ms=79
+2026-10-29T07:13:29 INFO  audit-log/al-node-24 request done id=req-4435112d route=/audit-log/v1/create status=200 latency_ms=150
+2026-10-29T07:13:34 INFO  audit-log/al-node-04 request done id=req-7a400275 route=/audit-log/v1/get status=200 latency_ms=157
+2026-10-29T07:13:41 INFO  audit-log/al-node-10 request done id=req-478b5a6f route=/audit-log/v1/create status=200 latency_ms=116
+2026-10-29T07:13:42 INFO  audit-log/al-node-03 request done id=req-9a0eb096 route=/audit-log/v1/verify status=204 latency_ms=279
+2026-10-29T07:13:45 INFO  audit-log/al-node-03 config applied key=limiter.burst value=false by=hbyoon
+2026-10-29T07:13:52 INFO  audit-log/al-node-15 ticket linked id=OPS-47996 reason=runbook_update
+2026-10-29T07:13:58 INFO  audit-log/al-node-08 cache stats region=ap-ne-2b hit_ratio=76.4% evictions=39228
+2026-10-29T07:14:03 INFO  audit-log/al-node-16 request done id=req-24571b33 route=/audit-log/v1/create status=200 latency_ms=93
+2026-10-29T07:14:05 INFO  audit-log/al-node-06 request done id=req-48eeae51 route=/audit-log/v1/list status=503 latency_ms=262
+2026-10-29T07:14:11 INFO  audit-log/al-node-24 config applied key=cache.ttl_s value=false by=hbyoon
+2026-10-29T07:14:13 INFO  audit-log/al-node-24 request done id=req-48f4adc6 route=/audit-log/v1/update status=200 latency_ms=242
+2026-10-29T07:14:14 NOTE  audit-log/al-node-15 operator=yjchoi memo="점검 창을 8분 연장함. 승인: 민도현 파트장."
+2026-10-29T07:14:20 INFO  audit-log/al-node-02 request done id=req-229a6884 route=/audit-log/v1/update status=200 latency_ms=154
+2026-10-29T07:14:22 WARN  audit-log/al-node-23 alert fired rule=replica_lag_high value=71s threshold=64s
+2026-10-29T07:14:23 INFO  audit-log/al-node-19 request done id=req-8e41ab88 route=/audit-log/v1/verify status=200 latency_ms=83
+2026-10-29T07:14:28 INFO  audit-log/al-node-14 backup finished file=/vault/weekly/orders_2026w42.tar.zst size_mb=38489 checksum=f5a9abb5
+2026-10-29T07:14:33 ERROR audit-log/al-node-05 job failed job=audit-log-rollup attempt=3 cause=upstream_timeout
+2026-10-29T07:14:39 INFO  audit-log/al-node-16 request done id=req-8a4f71bf route=/audit-log/v1/sync status=200 latency_ms=686
+2026-10-29T07:14:43 INFO  audit-log/al-node-20 request done id=req-033b9ab4 route=/audit-log/v1/sync status=200 latency_ms=67
+2026-10-29T07:14:47 INFO  audit-log/al-node-24 pool resize target=audit-log-db max_pool_size=53 prev=4
+2026-10-29T07:14:54 INFO  audit-log/al-node-19 request done id=req-ec0ac445 route=/audit-log/v1/get status=200 latency_ms=63
+2026-10-29T07:15:00 INFO  audit-log/al-node-20 request done id=req-d9f77078 route=/audit-log/v1/update status=200 latency_ms=185
+2026-10-29T07:15:01 INFO  audit-log/al-node-16 cache stats region=ap-ne-2b hit_ratio=61.6% evictions=20240
+2026-10-29T07:15:06 INFO  audit-log/al-node-19 request done id=req-0342b560 route=/audit-log/v1/sync status=200 latency_ms=153
+2026-10-29T07:15:13 INFO  audit-log/al-node-03 request done id=req-ae4108c1 route=/audit-log/v1/create status=200 latency_ms=80
+2026-10-29T07:15:19 INFO  audit-log/al-node-11 request done id=req-6c89234f route=/audit-log/v1/update status=200 latency_ms=94
+2026-10-29T07:15:20 INFO  audit-log/al-node-07 request done id=req-2ba92605 route=/audit-log/v1/verify status=200 latency_ms=69
+2026-10-29T07:15:25 WARN  audit-log/al-node-04 alert fired rule=conn_pool_saturated value=50% threshold=43%
+2026-10-29T07:15:31 INFO  audit-log/al-node-04 request done id=req-e48cebe8 route=/audit-log/v1/sync status=200 latency_ms=38
+2026-10-29T07:15:34 WARN  audit-log/al-node-05 alert fired rule=conn_pool_saturated value=68% threshold=65%
+2026-10-29T07:15:39 INFO  audit-log/al-node-08 ticket linked id=OPS-47884 reason=dependency_upgrade
+2026-10-29T07:15:42 INFO  audit-log/al-node-04 request done id=req-98e40d32 route=/audit-log/v1/sync status=429 latency_ms=40
+2026-10-29T07:15:49 INFO  audit-log/al-node-22 request done id=req-e8f91e18 route=/audit-log/v1/cancel status=200 latency_ms=154
+2026-10-29T07:15:52 INFO  audit-log/al-node-07 request done id=req-fc28d66d route=/audit-log/v1/update status=400 latency_ms=244
+2026-10-29T07:15:55 ERROR audit-log/al-node-13 job failed job=audit-log-export attempt=2 cause=upstream_timeout
+2026-10-29T07:16:01 INFO  audit-log/al-node-03 deploy step release=audit-log-4.15.1 step=verify result=ok took_s=184
+2026-10-29T07:16:02 WARN  audit-log/al-node-08 alert fired rule=cpu_steal_high value=51% threshold=49%
+2026-10-29T07:16:06 INFO  audit-log/al-node-16 request done id=req-41e76c3b route=/audit-log/v1/status status=200 latency_ms=161
+2026-10-29T07:16:07 INFO  audit-log/al-node-24 deploy step release=audit-log-4.11.4 step=verify result=ok took_s=174
+2026-10-29T07:16:08 NOTE  audit-log/al-node-11 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-29T07:16:09 INFO  audit-log/al-node-24 request done id=req-cac18856 route=/audit-log/v1/get status=429 latency_ms=39
+2026-10-29T07:16:10 INFO  audit-log/al-node-15 request done id=req-96651f67 route=/audit-log/v1/sync status=200 latency_ms=279
+2026-10-29T07:16:12 INFO  audit-log/al-node-14 request done id=req-e8c272db route=/audit-log/v1/update status=204 latency_ms=431
+2026-10-29T07:16:16 INFO  audit-log/al-node-05 request done id=req-ae16e77c route=/audit-log/v1/create status=200 latency_ms=76
+2026-10-29T07:16:17 INFO  audit-log/al-node-01 deploy step release=audit-log-4.19.9 step=shift_traffic_100 result=ok took_s=176
+2026-10-29T07:16:20 INFO  audit-log/al-node-13 request done id=req-418231f3 route=/audit-log/v1/list status=200 latency_ms=95
+2026-10-29T07:16:27 INFO  audit-log/al-node-02 request done id=req-06f88679 route=/audit-log/v1/get status=200 latency_ms=251
+2026-10-29T07:16:34 INFO  audit-log/al-node-04 request done id=req-7351a0b5 route=/audit-log/v1/create status=429 latency_ms=96
+2026-10-29T07:16:37 NOTE  audit-log/al-node-01 operator=ejlim memo="점검 창을 26분 연장함. 승인: 오세린 매니저."
+2026-10-29T07:16:41 WARN  audit-log/al-node-12 alert fired rule=cpu_steal_high value=89% threshold=78%
+2026-10-29T07:16:44 WARN  audit-log/al-node-17 alert fired rule=p99_latency_high value=51ms threshold=44ms
+2026-10-29T07:16:51 INFO  audit-log/al-node-01 ticket linked id=OPS-49955 reason=quota_increase
+2026-10-29T07:16:55 ERROR audit-log/al-node-11 job failed job=audit-log-cleanup attempt=3 cause=oom_killed
+2026-10-29T07:16:57 INFO  audit-log/al-node-09 ticket linked id=OPS-49342 reason=cert_rotation
+2026-10-29T07:17:04 NOTE  audit-log/al-node-14 operator=dwjung memo="인증서 갱신 일정 확인. 만료까지 18일 남음."
+2026-10-29T07:17:11 INFO  audit-log/al-node-11 ticket linked id=OPS-48546 reason=node_drain
+2026-10-29T07:17:13 INFO  audit-log/al-node-18 request done id=req-1420eef1 route=/audit-log/v1/status status=200 latency_ms=110
+2026-10-29T07:17:15 INFO  audit-log/al-node-09 config applied key=cache.ttl_s value=6636 by=dwjung
+2026-10-29T07:17:16 INFO  audit-log/al-node-20 request done id=req-459b335f route=/audit-log/v1/update status=500 latency_ms=214
+2026-10-29T07:17:19 INFO  audit-log/al-node-12 request done id=req-a86437a8 route=/audit-log/v1/list status=200 latency_ms=403
+2026-10-29T07:17:23 INFO  audit-log/al-node-20 request done id=req-f151b957 route=/audit-log/v1/get status=204 latency_ms=327
+2026-10-29T07:17:30 INFO  audit-log/al-node-09 deploy step release=audit-log-4.12.3 step=shift_traffic_50 result=ok took_s=234
+2026-10-29T07:17:36 ERROR audit-log/al-node-10 job failed job=audit-log-rollup attempt=2 cause=oom_killed
+2026-10-29T07:17:43 WARN  audit-log/al-node-07 alert fired rule=replica_lag_high value=66s threshold=65s
+2026-10-29T07:17:48 INFO  audit-log/al-node-16 request done id=req-0b046a07 route=/audit-log/v1/update status=201 latency_ms=196
+2026-10-29T07:17:55 INFO  audit-log/al-node-22 config applied key=cache.ttl_s value=true by=hbyoon
+2026-10-29T07:18:01 INFO  audit-log/al-node-17 cache stats region=us-we-2b hit_ratio=64.2% evictions=33775
+2026-10-29T07:18:05 INFO  audit-log/al-node-03 request done id=req-cb60516d route=/audit-log/v1/sync status=200 latency_ms=613
+2026-10-29T07:18:11 INFO  audit-log/al-node-12 request done id=req-495ac67c route=/audit-log/v1/create status=200 latency_ms=120
+2026-10-29T07:18:16 INFO  audit-log/al-node-21 request done id=req-ffe03288 route=/audit-log/v1/verify status=200 latency_ms=80
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

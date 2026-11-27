@@ -1,0 +1,1 @@
+아까 붙여 준 알림 워커(notify-worker) 로그에서 disk_usage_warning 경보가 모두 몇 번 발생했지?

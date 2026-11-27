@@ -1,0 +1,424 @@
+참고용 로그 02: 인증 서비스(auth-svc) 토큰 갱신 장애 구간. '확인'이라고만 답해 줘.
+
+2026-10-06T19:06:46 INFO  auth-svc/as-node-18 config applied key=queue.visibility_s value=false by=hbyoon
+2026-10-06T19:06:50 INFO  auth-svc/as-node-09 pool resize target=auth-svc-queue max_pool_size=31 prev=4
+2026-10-06T19:06:53 INFO  auth-svc/as-node-04 request done id=req-8d90466a route=/auth-svc/v1/update status=200 latency_ms=125
+2026-10-06T19:06:54 INFO  auth-svc/as-node-10 request done id=req-c1f6b783 route=/auth-svc/v1/status status=500 latency_ms=203
+2026-10-06T19:06:57 WARN  auth-svc/as-node-17 alert fired rule=conn_pool_saturated value=87% threshold=73%
+2026-10-06T19:07:03 INFO  auth-svc/as-node-11 request done id=req-e9c908c2 route=/auth-svc/v1/sync status=204 latency_ms=90
+2026-10-06T19:07:07 INFO  auth-svc/as-node-02 ticket linked id=OPS-48280 reason=quota_increase
+2026-10-06T19:07:14 INFO  auth-svc/as-node-09 request done id=req-5fcf4817 route=/auth-svc/v1/cancel status=200 latency_ms=157
+2026-10-06T19:07:17 INFO  auth-svc/as-node-24 request done id=req-1bbbc440 route=/auth-svc/v1/list status=200 latency_ms=122
+2026-10-06T19:07:18 INFO  auth-svc/as-node-22 request done id=req-897447a1 route=/auth-svc/v1/update status=503 latency_ms=136
+2026-10-06T19:07:20 INFO  auth-svc/as-node-01 request done id=req-054410ea route=/auth-svc/v1/sync status=200 latency_ms=172
+2026-10-06T19:07:21 WARN  auth-svc/as-node-23 alert fired rule=queue_depth_high value=55 threshold=48
+2026-10-06T19:07:28 WARN  auth-svc/as-node-05 alert fired rule=p99_latency_high value=99ms threshold=93ms
+2026-10-06T19:07:32 INFO  auth-svc/as-node-03 config applied key=breaker.half_open_s value=false by=jhpark
+2026-10-06T19:07:35 INFO  auth-svc/as-node-22 deploy step release=auth-svc-4.20.7 step=migrate result=ok took_s=106
+2026-10-06T19:07:39 INFO  auth-svc/as-node-15 backup finished file=/vault/weekly/audit_2026w43.tar.zst size_mb=56641 checksum=4871120c
+2026-10-06T19:07:44 INFO  auth-svc/as-node-04 request done id=req-dff28fff route=/auth-svc/v1/status status=200 latency_ms=283
+2026-10-06T19:07:50 INFO  auth-svc/as-node-11 request done id=req-449bbae7 route=/auth-svc/v1/verify status=200 latency_ms=184
+2026-10-06T19:07:51 WARN  auth-svc/as-node-13 alert fired rule=heap_used_high value=91% threshold=86%
+2026-10-06T19:07:57 INFO  auth-svc/as-node-06 request done id=req-f995e2bf route=/auth-svc/v1/status status=200 latency_ms=42
+2026-10-06T19:08:02 INFO  auth-svc/as-node-01 ticket linked id=OPS-47283 reason=oncall_handoff
+2026-10-06T19:08:08 INFO  auth-svc/as-node-09 request done id=req-9ce95139 route=/auth-svc/v1/cancel status=500 latency_ms=285
+2026-10-06T19:08:10 INFO  auth-svc/as-node-19 pool resize target=auth-svc-cache max_pool_size=170 prev=155
+2026-10-06T19:08:15 INFO  auth-svc/as-node-02 request done id=req-e6e90acd route=/auth-svc/v1/status status=409 latency_ms=138
+2026-10-06T19:08:17 INFO  auth-svc/as-node-08 request done id=req-cadd4886 route=/auth-svc/v1/update status=200 latency_ms=83
+2026-10-06T19:08:20 INFO  auth-svc/as-node-16 request done id=req-aba4039c route=/auth-svc/v1/verify status=400 latency_ms=192
+2026-10-06T19:08:23 INFO  auth-svc/as-node-13 request done id=req-da47cbbd route=/auth-svc/v1/cancel status=204 latency_ms=44
+2026-10-06T19:08:25 INFO  auth-svc/as-node-19 deploy step release=auth-svc-4.19.9 step=shift_traffic_50 result=ok took_s=202
+2026-10-06T19:08:29 NOTE  auth-svc/as-node-13 operator=mjlee memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-10-06T19:08:35 INFO  auth-svc/as-node-16 pool resize target=auth-svc-cache max_pool_size=376 prev=377
+2026-10-06T19:08:40 INFO  auth-svc/as-node-23 request done id=req-376d51a7 route=/auth-svc/v1/status status=200 latency_ms=174
+2026-10-06T19:08:44 INFO  auth-svc/as-node-06 request done id=req-2bac7d3c route=/auth-svc/v1/create status=409 latency_ms=46
+2026-10-06T19:08:50 INFO  auth-svc/as-node-01 deploy step release=auth-svc-4.17.8 step=warmup result=ok took_s=104
+2026-10-06T19:08:51 INFO  auth-svc/as-node-14 request done id=req-07beac60 route=/auth-svc/v1/update status=503 latency_ms=177
+2026-10-06T19:08:54 INFO  auth-svc/as-node-18 request done id=req-ecbc67d0 route=/auth-svc/v1/get status=200 latency_ms=621
+2026-10-06T19:08:56 INFO  auth-svc/as-node-07 config applied key=log.sample_rate value=4565 by=yjchoi
+2026-10-06T19:09:01 INFO  auth-svc/as-node-23 request done id=req-72ce51cb route=/auth-svc/v1/update status=200 latency_ms=149
+2026-10-06T19:09:02 INFO  auth-svc/as-node-18 request done id=req-b4b06d62 route=/auth-svc/v1/sync status=400 latency_ms=75
+2026-10-06T19:09:03 INFO  auth-svc/as-node-11 request done id=req-ce96ad69 route=/auth-svc/v1/create status=200 latency_ms=38
+2026-10-06T19:09:08 INFO  auth-svc/as-node-13 request done id=req-cd40ef28 route=/auth-svc/v1/verify status=200 latency_ms=170
+2026-10-06T19:09:12 INFO  auth-svc/as-node-01 deploy step release=auth-svc-4.11.9 step=start result=ok took_s=69
+2026-10-06T19:09:13 INFO  auth-svc/as-node-22 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=27713 checksum=ab59c873
+2026-10-06T19:09:14 INFO  auth-svc/as-node-21 deploy step release=auth-svc-4.11.0 step=healthcheck result=ok took_s=100
+2026-10-06T19:09:21 INFO  auth-svc/as-node-14 request done id=req-5f1d9c5b route=/auth-svc/v1/list status=200 latency_ms=1512
+2026-10-06T19:09:26 INFO  auth-svc/as-node-10 deploy step release=auth-svc-4.11.7 step=warmup result=ok took_s=12
+2026-10-06T19:09:30 INFO  auth-svc/as-node-19 request done id=req-8ec12542 route=/auth-svc/v1/status status=200 latency_ms=67
+2026-10-06T19:09:35 WARN  auth-svc/as-node-16 alert fired rule=heap_used_high value=73% threshold=72%
+2026-10-06T19:09:36 INFO  auth-svc/as-node-15 request done id=req-ea76fc65 route=/auth-svc/v1/list status=200 latency_ms=41
+2026-10-06T19:09:42 INFO  auth-svc/as-node-03 ticket linked id=OPS-49805 reason=oncall_handoff
+2026-10-06T19:09:49 INFO  auth-svc/as-node-24 request done id=req-45c24b6b route=/auth-svc/v1/get status=200 latency_ms=191
+2026-10-06T19:09:54 ERROR auth-svc/as-node-14 job failed job=auth-svc-reindex attempt=3 cause=dns_failure
+2026-10-06T19:09:59 INFO  auth-svc/as-node-10 backup finished file=/vault/daily/payments_20261020.tar.zst size_mb=35651 checksum=23f31cf6
+2026-10-06T19:10:04 INFO  auth-svc/as-node-01 request done id=req-0a6b18e0 route=/auth-svc/v1/list status=200 latency_ms=131
+2026-10-06T19:10:08 NOTE  auth-svc/as-node-24 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-06T19:10:10 INFO  auth-svc/as-node-15 pool resize target=auth-svc-cache max_pool_size=60 prev=28
+2026-10-06T19:10:16 INFO  auth-svc/as-node-13 cache stats region=ap-se-1a hit_ratio=73.7% evictions=20075
+2026-10-06T19:10:23 INFO  auth-svc/as-node-02 request done id=req-8c03ab96 route=/auth-svc/v1/create status=400 latency_ms=210
+2026-10-06T19:10:26 NOTE  auth-svc/as-node-16 operator=ejlim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-06T19:10:28 INFO  auth-svc/as-node-20 request done id=req-26d16644 route=/auth-svc/v1/cancel status=200 latency_ms=87
+2026-10-06T19:10:33 INFO  auth-svc/as-node-18 request done id=req-38b4da7b route=/auth-svc/v1/sync status=200 latency_ms=94
+2026-10-06T19:10:40 INFO  auth-svc/as-node-13 config applied key=cache.ttl_s value=78% by=hbyoon
+2026-10-06T19:10:41 INFO  auth-svc/as-node-03 config applied key=limiter.rps value=42 by=jhpark
+2026-10-06T19:10:45 INFO  auth-svc/as-node-23 deploy step release=auth-svc-4.17.1 step=shift_traffic_10 result=ok took_s=222
+2026-10-06T19:10:47 INFO  auth-svc/as-node-18 request done id=req-e5249c4c route=/auth-svc/v1/update status=200 latency_ms=208
+2026-10-06T19:10:53 INFO  auth-svc/as-node-17 deploy step release=auth-svc-4.15.5 step=start result=ok took_s=5
+2026-10-06T19:10:54 INFO  auth-svc/as-node-24 request done id=req-2123fa83 route=/auth-svc/v1/get status=200 latency_ms=307
+2026-10-06T19:10:59 INFO  auth-svc/as-node-18 deploy step release=auth-svc-4.21.0 step=shift_traffic_100 result=ok took_s=140
+2026-10-06T19:11:00 INFO  auth-svc/as-node-16 pool resize target=auth-svc-cache max_pool_size=182 prev=141
+2026-10-06T19:11:03 INFO  auth-svc/as-node-16 pool resize target=auth-svc-cache max_pool_size=338 prev=349
+2026-10-06T19:11:06 INFO  auth-svc/as-node-16 deploy step release=auth-svc-4.22.4 step=verify result=ok took_s=7
+2026-10-06T19:11:10 WARN  auth-svc/as-node-19 alert fired rule=disk_usage_warning value=90% threshold=89%
+2026-10-06T19:11:14 INFO  auth-svc/as-node-14 request done id=req-54b2da6b route=/auth-svc/v1/sync status=200 latency_ms=40
+2026-10-06T19:11:20 INFO  auth-svc/as-node-11 request done id=req-4f2d6b96 route=/auth-svc/v1/update status=500 latency_ms=199
+2026-10-06T19:11:23 INFO  auth-svc/as-node-20 backup finished file=/vault/weekly/sessions_2026w42.tar.zst size_mb=57259 checksum=b60152f5
+2026-10-06T19:11:26 INFO  auth-svc/as-node-23 request done id=req-2c30fbc8 route=/auth-svc/v1/create status=503 latency_ms=18
+2026-10-06T19:11:33 INFO  auth-svc/as-node-03 request done id=req-7e051a95 route=/auth-svc/v1/status status=200 latency_ms=65
+2026-10-06T19:11:40 ERROR auth-svc/as-node-07 job failed job=auth-svc-cleanup attempt=1 cause=lock_wait_exceeded
+2026-10-06T19:11:47 INFO  auth-svc/as-node-19 request done id=req-4591f729 route=/auth-svc/v1/list status=503 latency_ms=101
+2026-10-06T19:11:51 INFO  auth-svc/as-node-09 pool resize target=auth-svc-db max_pool_size=151 prev=205
+2026-10-06T19:11:52 INFO  auth-svc/as-node-08 backup finished file=/vault/weekly/inventory_2026w40.tar.zst size_mb=28993 checksum=264fa1cc
+2026-10-06T19:11:59 INFO  auth-svc/as-node-11 request done id=req-b70b7a95 route=/auth-svc/v1/update status=503 latency_ms=81
+2026-10-06T19:12:00 INFO  auth-svc/as-node-23 request done id=req-b60b9169 route=/auth-svc/v1/get status=200 latency_ms=594
+2026-10-06T19:12:03 INFO  auth-svc/as-node-16 request done id=req-ee675696 route=/auth-svc/v1/list status=204 latency_ms=141
+2026-10-06T19:12:08 INFO  auth-svc/as-node-02 deploy step release=auth-svc-4.18.0 step=shift_traffic_100 result=ok took_s=101
+2026-10-06T19:12:09 INFO  auth-svc/as-node-07 cache stats region=us-we-2b hit_ratio=64.0% evictions=3733
+2026-10-06T19:12:12 INFO  auth-svc/as-node-17 request done id=req-5a1e9ee1 route=/auth-svc/v1/update status=200 latency_ms=65
+2026-10-06T19:12:18 WARN  auth-svc/as-node-18 alert fired rule=error_ratio_high value=60% threshold=52%
+2026-10-06T19:12:23 INFO  auth-svc/as-node-06 request done id=req-6c9995a4 route=/auth-svc/v1/list status=200 latency_ms=425
+2026-10-06T19:12:30 INFO  auth-svc/as-node-08 ticket linked id=OPS-47862 reason=node_drain
+2026-10-06T19:12:32 INFO  auth-svc/as-node-06 request done id=req-f566f56b route=/auth-svc/v1/verify status=429 latency_ms=163
+2026-10-06T19:12:36 INFO  auth-svc/as-node-10 deploy step release=auth-svc-4.15.7 step=migrate result=ok took_s=122
+2026-10-06T19:12:39 INFO  auth-svc/as-node-02 request done id=req-d19692c0 route=/auth-svc/v1/get status=200 latency_ms=102
+2026-10-06T19:12:42 INFO  auth-svc/as-node-16 request done id=req-9507b678 route=/auth-svc/v1/get status=200 latency_ms=96
+2026-10-06T19:12:49 INFO  auth-svc/as-node-02 deploy step release=auth-svc-4.15.4 step=drain result=ok took_s=229
+2026-10-06T19:12:51 INFO  auth-svc/as-node-17 request done id=req-15c880cc route=/auth-svc/v1/sync status=200 latency_ms=163
+2026-10-06T19:12:52 INFO  auth-svc/as-node-17 request done id=req-5305692b route=/auth-svc/v1/cancel status=200 latency_ms=89
+2026-10-06T19:12:56 INFO  auth-svc/as-node-01 request done id=req-29d57715 route=/auth-svc/v1/get status=200 latency_ms=294
+2026-10-06T19:13:02 INFO  auth-svc/as-node-05 config applied key=retry.backoff_ms value=false by=sykang
+2026-10-06T19:13:08 INFO  auth-svc/as-node-24 pool resize target=auth-svc-upstream max_pool_size=303 prev=288
+2026-10-06T19:13:14 INFO  auth-svc/as-node-11 request done id=req-ddb05c94 route=/auth-svc/v1/verify status=200 latency_ms=55
+2026-10-06T19:13:21 NOTE  auth-svc/as-node-11 operator=mjlee memo="로그 보존 기간은 47일로 유지하기로 함."
+2026-10-06T19:13:24 WARN  auth-svc/as-node-05 alert fired rule=disk_usage_warning value=80% threshold=78%
+2026-10-06T19:13:29 INFO  auth-svc/as-node-18 ticket linked id=OPS-49145 reason=runbook_update
+2026-10-06T19:13:36 INFO  auth-svc/as-node-20 request done id=req-70fbe875 route=/auth-svc/v1/create status=204 latency_ms=148
+2026-10-06T19:13:40 INFO  auth-svc/as-node-11 cache stats region=ap-ne-2b hit_ratio=79.6% evictions=21978
+2026-10-06T19:13:46 INFO  auth-svc/as-node-01 config applied key=canary.latency_p99_threshold_ms value=true by=jhpark
+2026-10-06T19:13:48 INFO  auth-svc/as-node-14 request done id=req-51a0079a route=/auth-svc/v1/cancel status=404 latency_ms=82
+2026-10-06T19:13:49 INFO  auth-svc/as-node-17 config applied key=breaker.open_ratio value=false by=jhpark
+2026-10-06T19:13:55 WARN  auth-svc/as-node-13 alert fired rule=error_ratio_high value=73% threshold=63%
+2026-10-06T19:14:01 INFO  auth-svc/as-node-11 request done id=req-32d6f4c6 route=/auth-svc/v1/cancel status=400 latency_ms=191
+2026-10-06T19:14:04 INFO  auth-svc/as-node-04 ticket linked id=OPS-48338 reason=cert_rotation
+2026-10-06T19:14:09 INFO  auth-svc/as-node-12 request done id=req-cd850768 route=/auth-svc/v1/verify status=200 latency_ms=60
+2026-10-06T19:14:14 ERROR auth-svc/as-node-14 job failed job=auth-svc-rollup attempt=5 cause=quota_exceeded
+2026-10-06T19:14:15 INFO  auth-svc/as-node-07 deploy step release=auth-svc-4.19.1 step=shift_traffic_50 result=ok took_s=158
+2026-10-06T19:14:17 INFO  auth-svc/as-node-13 request done id=req-0a50f8b9 route=/auth-svc/v1/list status=200 latency_ms=45
+2026-10-06T19:14:21 INFO  auth-svc/as-node-07 config applied key=queue.batch_size value=false by=dwjung
+2026-10-06T19:14:27 INFO  auth-svc/as-node-07 request done id=req-496e4fcc route=/auth-svc/v1/create status=400 latency_ms=135
+2026-10-06T19:14:31 INFO  auth-svc/as-node-03 config applied key=http.max_conns value=true by=dwjung
+2026-10-06T19:14:36 INFO  auth-svc/as-node-23 request done id=req-81c17125 route=/auth-svc/v1/list status=200 latency_ms=179
+2026-10-06T19:14:37 INFO  auth-svc/as-node-15 ticket linked id=OPS-48320 reason=log_volume_spike
+2026-10-06T19:14:38 INFO  auth-svc/as-node-19 request done id=req-807253c8 route=/auth-svc/v1/status status=200 latency_ms=37
+2026-10-06T19:14:45 INFO  auth-svc/as-node-03 request done id=req-103f9c9f route=/auth-svc/v1/sync status=200 latency_ms=326
+2026-10-06T19:14:50 INFO  auth-svc/as-node-03 request done id=req-072b4fc6 route=/auth-svc/v1/cancel status=201 latency_ms=210
+2026-10-06T19:14:55 INFO  auth-svc/as-node-16 pool resize target=auth-svc-cache max_pool_size=245 prev=258
+2026-10-06T19:15:02 NOTE  auth-svc/as-node-07 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 31일 남음."
+2026-10-06T19:15:05 INFO  auth-svc/as-node-14 request done id=req-fa969fd6 route=/auth-svc/v1/status status=200 latency_ms=308
+2026-10-06T19:15:10 INFO  auth-svc/as-node-02 deploy step release=auth-svc-4.12.9 step=healthcheck result=ok took_s=34
+2026-10-06T19:15:11 INFO  auth-svc/as-node-24 request done id=req-a3959abb route=/auth-svc/v1/sync status=200 latency_ms=134
+2026-10-06T19:15:18 INFO  auth-svc/as-node-22 request done id=req-41ca1bd3 route=/auth-svc/v1/cancel status=200 latency_ms=125
+2026-10-06T19:15:24 ERROR auth-svc/as-node-23 job failed job=auth-svc-reindex attempt=4 cause=oom_killed
+2026-10-06T19:15:28 ERROR auth-svc/as-node-02 job failed job=auth-svc-reindex attempt=5 cause=quota_exceeded
+2026-10-06T19:15:32 INFO  auth-svc/as-node-07 request done id=req-be9131db route=/auth-svc/v1/status status=429 latency_ms=88
+2026-10-06T19:15:33 INFO  auth-svc/as-node-22 request done id=req-9ee30d63 route=/auth-svc/v1/sync status=200 latency_ms=134
+2026-10-06T19:15:36 ERROR auth-svc/as-node-13 job failed job=auth-svc-rollup attempt=4 cause=quota_exceeded
+2026-10-06T19:15:37 INFO  auth-svc/as-node-09 pool resize target=auth-svc-upstream max_pool_size=322 prev=337
+2026-10-06T19:15:42 INFO  auth-svc/as-node-15 request done id=req-0abca362 route=/auth-svc/v1/status status=503 latency_ms=122
+2026-10-06T19:15:47 INFO  auth-svc/as-node-09 config applied key=canary.latency_p99_threshold_ms value=62 by=sykang
+2026-10-06T19:15:50 INFO  auth-svc/as-node-08 pool resize target=auth-svc-worker max_pool_size=155 prev=134
+2026-10-06T19:15:57 INFO  auth-svc/as-node-05 request done id=req-beecda27 route=/auth-svc/v1/cancel status=200 latency_ms=14
+2026-10-06T19:15:59 INFO  auth-svc/as-node-21 config applied key=dns.ttl_s value=95% by=ejlim
+2026-10-06T19:16:05 INFO  auth-svc/as-node-05 backup finished file=/vault/daily/sessions_20261006.tar.zst size_mb=35747 checksum=2f13a9a6
+2026-10-06T19:16:08 ERROR auth-svc/as-node-22 job failed job=auth-svc-rollup attempt=5 cause=bad_checksum
+2026-10-06T19:16:10 INFO  auth-svc/as-node-09 pool resize target=auth-svc-queue max_pool_size=288 prev=265
+2026-10-06T19:16:12 INFO  auth-svc/as-node-14 backup finished file=/vault/daily/sessions_20261011.tar.zst size_mb=46286 checksum=924729ba
+2026-10-06T19:16:14 INFO  auth-svc/as-node-07 request done id=req-ab41a3d5 route=/auth-svc/v1/cancel status=200 latency_ms=146
+2026-10-06T19:16:19 INFO  auth-svc/as-node-08 ticket linked id=OPS-47373 reason=dns_ttl_change
+2026-10-06T19:16:23 INFO  auth-svc/as-node-06 ticket linked id=OPS-47889 reason=dns_ttl_change
+2026-10-06T19:16:27 INFO  auth-svc/as-node-10 request done id=req-a9c002f2 route=/auth-svc/v1/get status=200 latency_ms=141
+2026-10-06T19:16:30 INFO  auth-svc/as-node-18 pool resize target=auth-svc-cache max_pool_size=36 prev=14
+2026-10-06T19:16:36 NOTE  auth-svc/as-node-09 operator=dwjung memo="임시 증설 17대 추가. 내일 오전 회수 예정."
+2026-10-06T19:16:40 INFO  auth-svc/as-node-01 cache stats region=ap-ne-2b hit_ratio=59.7% evictions=8617
+2026-10-06T19:16:44 INFO  auth-svc/as-node-03 request done id=req-a3dd5bf5 route=/auth-svc/v1/get status=200 latency_ms=138
+2026-10-06T19:16:49 INFO  auth-svc/as-node-23 request done id=req-b1dc9280 route=/auth-svc/v1/verify status=200 latency_ms=38
+2026-10-06T19:16:52 ERROR auth-svc/as-node-21 job failed job=auth-svc-rollup attempt=1 cause=dns_failure
+2026-10-06T19:16:56 INFO  auth-svc/as-node-13 cache stats region=ap-ne-2a hit_ratio=58.7% evictions=16785
+2026-10-06T19:17:02 INFO  auth-svc/as-node-06 cache stats region=ap-se-1a hit_ratio=96.9% evictions=18282
+2026-10-06T19:17:04 ERROR auth-svc/as-node-02 job failed job=auth-svc-cleanup attempt=1 cause=oom_killed
+2026-10-06T19:17:10 WARN  auth-svc/as-node-24 alert fired rule=conn_pool_saturated value=73% threshold=60%
+2026-10-06T19:17:14 INFO  auth-svc/as-node-22 request done id=req-a26e0e79 route=/auth-svc/v1/cancel status=400 latency_ms=77
+2026-10-06T19:17:18 NOTE  auth-svc/as-node-17 operator=yjchoi memo="as-node-17 재기동 후 지표 정상 확인."
+2026-10-06T19:17:22 INFO  auth-svc/as-node-09 config applied key=http.read_timeout_ms value=32 by=ejlim
+2026-10-06T19:17:26 INFO  auth-svc/as-node-18 request done id=req-27bd5070 route=/auth-svc/v1/cancel status=200 latency_ms=255
+2026-10-06T19:17:33 INFO  auth-svc/as-node-10 request done id=req-83e6aeeb route=/auth-svc/v1/list status=500 latency_ms=312
+2026-10-06T19:17:38 INFO  auth-svc/as-node-13 deploy step release=auth-svc-4.10.9 step=healthcheck result=ok took_s=208
+2026-10-06T19:17:40 INFO  auth-svc/as-node-06 backup finished file=/vault/weekly/audit_2026w30.tar.zst size_mb=65445 checksum=61049460
+2026-10-06T19:17:45 INFO  auth-svc/as-node-19 request done id=req-d330652a route=/auth-svc/v1/verify status=200 latency_ms=203
+2026-10-06T19:17:52 INFO  auth-svc/as-node-08 config applied key=queue.batch_size value=false by=jhpark
+2026-10-06T19:17:58 INFO  auth-svc/as-node-07 request done id=req-1168e796 route=/auth-svc/v1/status status=200 latency_ms=104
+2026-10-06T19:17:59 WARN  auth-svc/as-node-03 alert fired rule=p99_latency_high value=80ms threshold=71ms
+2026-10-06T19:18:00 INFO  auth-svc/as-node-11 request done id=req-a85dd667 route=/auth-svc/v1/cancel status=503 latency_ms=48
+2026-10-06T19:18:03 INFO  auth-svc/as-node-16 pool resize target=auth-svc-queue max_pool_size=129 prev=173
+2026-10-06T19:18:05 INFO  auth-svc/as-node-13 deploy step release=auth-svc-4.20.2 step=shift_traffic_50 result=ok took_s=101
+2026-10-06T19:18:07 INFO  auth-svc/as-node-17 request done id=req-2b325242 route=/auth-svc/v1/create status=201 latency_ms=116
+2026-10-06T19:18:12 INFO  auth-svc/as-node-17 deploy step release=auth-svc-4.21.1 step=healthcheck result=ok took_s=32
+2026-10-06T19:18:15 INFO  auth-svc/as-node-24 ticket linked id=OPS-47000 reason=dns_ttl_change
+2026-10-06T19:18:19 INFO  auth-svc/as-node-23 request done id=req-42777831 route=/auth-svc/v1/list status=200 latency_ms=281
+2026-10-06T19:18:21 INFO  auth-svc/as-node-03 pool resize target=auth-svc-queue max_pool_size=354 prev=327
+2026-10-06T19:18:26 INFO  auth-svc/as-node-21 backup finished file=/vault/daily/sessions_20261016.tar.zst size_mb=84867 checksum=58f44257
+2026-10-06T19:18:29 INFO  auth-svc/as-node-07 config applied key=breaker.half_open_s value=false by=shkim
+2026-10-06T19:18:31 INFO  auth-svc/as-node-24 config applied key=dns.ttl_s value=6090 by=shkim
+2026-10-06T19:18:35 INFO  auth-svc/as-node-13 request done id=req-e7d2f5fe route=/auth-svc/v1/create status=200 latency_ms=256
+2026-10-06T19:18:38 INFO  auth-svc/as-node-06 deploy step release=auth-svc-4.18.7 step=start result=ok took_s=153
+2026-10-06T19:18:39 INFO  auth-svc/as-node-13 pool resize target=auth-svc-db max_pool_size=278 prev=331
+2026-10-06T19:18:46 INFO  auth-svc/as-node-24 request done id=req-eed8d994 route=/auth-svc/v1/get status=204 latency_ms=59
+2026-10-06T19:18:47 INFO  auth-svc/as-node-06 request done id=req-7d74f0b7 route=/auth-svc/v1/status status=201 latency_ms=285
+2026-10-06T19:18:51 INFO  auth-svc/as-node-03 request done id=req-cea2edb8 route=/auth-svc/v1/create status=429 latency_ms=83
+2026-10-06T19:18:58 INFO  auth-svc/as-node-20 ticket linked id=OPS-48587 reason=flaky_healthcheck
+2026-10-06T19:19:00 INFO  auth-svc/as-node-01 request done id=req-180b3042 route=/auth-svc/v1/create status=204 latency_ms=31
+2026-10-06T19:19:01 INFO  auth-svc/as-node-14 request done id=req-9cbb6411 route=/auth-svc/v1/verify status=429 latency_ms=111
+2026-10-06T19:19:08 INFO  auth-svc/as-node-17 pool resize target=auth-svc-queue max_pool_size=274 prev=300
+2026-10-06T19:19:11 ERROR auth-svc/as-node-13 job failed job=auth-svc-cleanup attempt=4 cause=bad_checksum
+2026-10-06T19:19:17 INFO  auth-svc/as-node-11 request done id=req-cad83b70 route=/auth-svc/v1/status status=200 latency_ms=269
+2026-10-06T19:19:18 INFO  auth-svc/as-node-12 request done id=req-0e76e74f route=/auth-svc/v1/create status=204 latency_ms=47
+2026-10-06T19:19:24 INFO  auth-svc/as-node-04 request done id=req-e2511c0d route=/auth-svc/v1/list status=200 latency_ms=97
+2026-10-06T19:19:25 ERROR auth-svc/as-node-05 job failed job=auth-svc-cleanup attempt=1 cause=bad_checksum
+2026-10-06T19:19:29 INFO  auth-svc/as-node-14 config applied key=dns.ttl_s value=7487 by=hbyoon
+2026-10-06T19:19:34 INFO  auth-svc/as-node-09 request done id=req-db6594f1 route=/auth-svc/v1/create status=200 latency_ms=67
+2026-10-06T19:19:41 WARN  auth-svc/as-node-20 alert fired rule=replica_lag_high value=72s threshold=61s
+2026-10-06T19:19:42 INFO  auth-svc/as-node-04 ticket linked id=OPS-49730 reason=dns_ttl_change
+2026-10-06T19:19:46 INFO  auth-svc/as-node-08 pool resize target=auth-svc-cache max_pool_size=369 prev=344
+2026-10-06T19:19:48 WARN  auth-svc/as-node-18 alert fired rule=error_ratio_high value=86% threshold=83%
+2026-10-06T19:19:54 INFO  auth-svc/as-node-03 request done id=req-6c03f931 route=/auth-svc/v1/sync status=503 latency_ms=139
+2026-10-06T19:19:59 INFO  auth-svc/as-node-01 request done id=req-64055e28 route=/auth-svc/v1/sync status=503 latency_ms=182
+2026-10-06T19:20:00 INFO  auth-svc/as-node-13 request done id=req-81361308 route=/auth-svc/v1/get status=204 latency_ms=75
+2026-10-06T19:20:05 INFO  auth-svc/as-node-12 deploy step release=auth-svc-4.10.2 step=start result=ok took_s=151
+2026-10-06T19:20:06 INFO  auth-svc/as-node-13 request done id=req-629ce77c route=/auth-svc/v1/list status=200 latency_ms=130
+2026-10-06T19:20:11 INFO  auth-svc/as-node-20 request done id=req-64dd3c24 route=/auth-svc/v1/update status=409 latency_ms=53
+2026-10-06T19:20:14 INFO  auth-svc/as-node-10 config applied key=cache.ttl_s value=33 by=jhpark
+2026-10-06T19:20:18 INFO  auth-svc/as-node-02 request done id=req-7e3d5e41 route=/auth-svc/v1/update status=200 latency_ms=270
+2026-10-06T19:20:23 INFO  auth-svc/as-node-03 request done id=req-a9d48d0c route=/auth-svc/v1/status status=409 latency_ms=101
+2026-10-06T19:20:30 ERROR auth-svc/as-node-14 job failed job=auth-svc-reindex attempt=1 cause=lock_wait_exceeded
+2026-10-06T19:20:34 INFO  auth-svc/as-node-12 request done id=req-adb5f71e route=/auth-svc/v1/sync status=429 latency_ms=82
+2026-10-06T19:20:39 INFO  auth-svc/as-node-22 request done id=req-27d13ec7 route=/auth-svc/v1/cancel status=200 latency_ms=29
+2026-10-06T19:20:45 INFO  auth-svc/as-node-06 request done id=req-fa2d53fe route=/auth-svc/v1/sync status=409 latency_ms=203
+2026-10-06T19:20:48 INFO  auth-svc/as-node-20 pool resize target=auth-svc-worker max_pool_size=111 prev=93
+2026-10-06T19:20:51 INFO  auth-svc/as-node-02 pool resize target=auth-svc-cache max_pool_size=374 prev=380
+2026-10-06T19:20:58 INFO  auth-svc/as-node-22 request done id=req-2b662a5b route=/auth-svc/v1/get status=200 latency_ms=110
+2026-10-06T19:21:00 WARN  auth-svc/as-node-19 alert fired rule=heap_used_high value=69% threshold=57%
+2026-10-06T19:21:03 INFO  auth-svc/as-node-18 request done id=req-2da4cf3b route=/auth-svc/v1/status status=200 latency_ms=72
+2026-10-06T19:21:07 WARN  auth-svc/as-node-22 alert fired rule=fd_usage_high value=95% threshold=83%
+2026-10-06T19:21:13 INFO  auth-svc/as-node-24 request done id=req-ee04d679 route=/auth-svc/v1/sync status=404 latency_ms=337
+2026-10-06T19:21:14 INFO  auth-svc/as-node-20 request done id=req-0dce4530 route=/auth-svc/v1/get status=200 latency_ms=178
+2026-10-06T19:21:17 INFO  auth-svc/as-node-06 pool resize target=auth-svc-worker max_pool_size=238 prev=189
+2026-10-06T19:21:21 WARN  auth-svc/as-node-08 alert fired rule=p99_latency_high value=99ms threshold=86ms
+2026-10-06T19:21:28 INFO  auth-svc/as-node-04 request done id=req-442620e9 route=/auth-svc/v1/verify status=201 latency_ms=49
+2026-10-06T19:21:35 INFO  auth-svc/as-node-04 request done id=req-46824175 route=/auth-svc/v1/cancel status=200 latency_ms=47
+2026-10-06T19:21:40 INFO  auth-svc/as-node-17 request done id=req-f14b14e3 route=/auth-svc/v1/update status=200 latency_ms=85
+2026-10-06T19:21:47 INFO  auth-svc/as-node-22 config applied key=breaker.half_open_s value=59 by=sykang
+2026-10-06T19:21:51 INFO  auth-svc/as-node-08 config applied key=queue.visibility_s value=6654 by=ejlim
+2026-10-06T19:21:54 INFO  auth-svc/as-node-08 request done id=req-c14d2345 route=/auth-svc/v1/get status=204 latency_ms=336
+2026-10-06T19:21:59 INFO  auth-svc/as-node-05 ticket linked id=OPS-47266 reason=schema_change
+2026-10-06T19:22:01 NOTE  auth-svc/as-node-14 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-06T19:22:05 INFO  auth-svc/as-node-16 deploy step release=auth-svc-4.12.5 step=warmup result=ok took_s=185
+2026-10-06T19:22:09 INFO  auth-svc/as-node-08 request done id=req-1f9a2bff route=/auth-svc/v1/sync status=200 latency_ms=323
+2026-10-06T19:22:14 INFO  auth-svc/as-node-12 pool resize target=auth-svc-queue max_pool_size=398 prev=434
+2026-10-06T19:22:21 ERROR auth-svc/as-node-05 job failed job=auth-svc-reindex attempt=1 cause=oom_killed
+2026-10-06T19:22:23 INFO  auth-svc/as-node-17 request done id=req-0129c6c9 route=/auth-svc/v1/status status=200 latency_ms=108
+2026-10-06T19:22:28 INFO  auth-svc/as-node-20 request done id=req-b479aae2 route=/auth-svc/v1/create status=503 latency_ms=97
+2026-10-06T19:22:29 INFO  auth-svc/as-node-20 ticket linked id=OPS-47256 reason=schema_change
+2026-10-06T19:22:36 NOTE  auth-svc/as-node-03 operator=jhpark memo="배치 시작 시각을 47시 85분으로 고정함."
+2026-10-06T19:22:40 WARN  auth-svc/as-node-24 alert fired rule=fd_usage_high value=57% threshold=42%
+2026-10-06T19:22:43 INFO  auth-svc/as-node-09 request done id=req-b5a59156 route=/auth-svc/v1/list status=200 latency_ms=254
+2026-10-06T19:22:50 INFO  auth-svc/as-node-01 request done id=req-24c4fb52 route=/auth-svc/v1/status status=200 latency_ms=235
+2026-10-06T19:22:51 INFO  auth-svc/as-node-06 deploy step release=auth-svc-4.22.8 step=shift_traffic_10 result=ok took_s=165
+2026-10-06T19:22:53 INFO  auth-svc/as-node-17 request done id=req-b7b1b6f4 route=/auth-svc/v1/list status=200 latency_ms=83
+2026-10-06T19:23:00 INFO  auth-svc/as-node-11 request done id=req-1e34f9d8 route=/auth-svc/v1/cancel status=200 latency_ms=36
+2026-10-06T19:23:01 INFO  auth-svc/as-node-13 request done id=req-a2a2c1e7 route=/auth-svc/v1/update status=200 latency_ms=47
+2026-10-06T19:23:02 INFO  auth-svc/as-node-24 request done id=req-bd357daa route=/auth-svc/v1/verify status=200 latency_ms=95
+2026-10-06T19:23:05 WARN  auth-svc/as-node-24 alert fired rule=queue_depth_high value=62 threshold=52
+2026-10-06T19:23:10 INFO  auth-svc/as-node-24 ticket linked id=OPS-48021 reason=flaky_healthcheck
+2026-10-06T19:23:17 INFO  auth-svc/as-node-13 pool resize target=auth-svc-db max_pool_size=109 prev=163
+2026-10-06T19:23:23 INFO  auth-svc/as-node-08 request done id=req-76c9ed0e route=/auth-svc/v1/verify status=200 latency_ms=145
+2026-10-06T19:23:26 INFO  auth-svc/as-node-10 request done id=req-337cc228 route=/auth-svc/v1/update status=503 latency_ms=48
+2026-10-06T19:23:31 INFO  auth-svc/as-node-11 request done id=req-06a207c3 route=/auth-svc/v1/cancel status=200 latency_ms=142
+2026-10-06T19:23:37 WARN  auth-svc/as-node-23 alert fired rule=queue_depth_high value=54 threshold=39
+2026-10-06T19:23:41 INFO  auth-svc/as-node-23 ticket linked id=OPS-48997 reason=schema_change
+2026-10-06T19:23:45 INFO  auth-svc/as-node-10 config applied key=retry.max_attempts value=false by=sykang
+2026-10-06T19:23:48 INFO  auth-svc/as-node-01 config applied key=shard.count value=true by=hbyoon
+2026-10-06T19:23:53 INFO  auth-svc/as-node-13 request done id=req-6fc2e641 route=/auth-svc/v1/get status=404 latency_ms=54
+2026-10-06T19:23:54 ERROR auth-svc/as-node-09 job failed job=auth-svc-export attempt=2 cause=dns_failure
+2026-10-06T19:23:59 INFO  auth-svc/as-node-09 request done id=req-f7f032ed route=/auth-svc/v1/verify status=200 latency_ms=92
+2026-10-06T19:24:02 INFO  auth-svc/as-node-07 request done id=req-f635165e route=/auth-svc/v1/create status=200 latency_ms=161
+2026-10-06T19:24:07 INFO  auth-svc/as-node-23 deploy step release=auth-svc-4.21.2 step=warmup result=ok took_s=64
+2026-10-06T19:24:11 INFO  auth-svc/as-node-16 request done id=req-88ca5ea5 route=/auth-svc/v1/verify status=200 latency_ms=116
+2026-10-06T19:24:14 INFO  auth-svc/as-node-04 request done id=req-25d5e33a route=/auth-svc/v1/list status=200 latency_ms=354
+2026-10-06T19:24:18 INFO  auth-svc/as-node-18 request done id=req-e917485c route=/auth-svc/v1/sync status=503 latency_ms=61
+2026-10-06T19:24:25 ERROR auth-svc/as-node-02 job failed job=auth-svc-reindex attempt=4 cause=lock_wait_exceeded
+2026-10-06T19:24:32 INFO  auth-svc/as-node-15 request done id=req-2c3dd0b9 route=/auth-svc/v1/status status=201 latency_ms=309
+2026-10-06T19:24:37 INFO  auth-svc/as-node-15 config applied key=queue.visibility_s value=7 by=shkim
+2026-10-06T19:24:38 INFO  auth-svc/as-node-09 backup finished file=/vault/weekly/sessions_2026w37.tar.zst size_mb=29418 checksum=c53337a2
+2026-10-06T19:24:44 INFO  auth-svc/as-node-02 request done id=req-10052960 route=/auth-svc/v1/status status=200 latency_ms=14
+2026-10-06T19:24:46 INFO  auth-svc/as-node-16 request done id=req-cafa389f route=/auth-svc/v1/sync status=200 latency_ms=93
+2026-10-06T19:24:50 NOTE  auth-svc/as-node-08 operator=yjchoi memo="임시 증설 41대 추가. 내일 오전 회수 예정."
+2026-10-06T19:24:57 NOTE  auth-svc/as-node-17 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-06T19:25:03 INFO  auth-svc/as-node-05 request done id=req-a9d56c27 route=/auth-svc/v1/status status=200 latency_ms=191
+2026-10-06T19:25:09 INFO  auth-svc/as-node-22 request done id=req-04b9cc29 route=/auth-svc/v1/sync status=200 latency_ms=284
+2026-10-06T19:25:15 INFO  auth-svc/as-node-10 config applied key=cache.ttl_s value=true by=yjchoi
+2026-10-06T19:25:16 INFO  auth-svc/as-node-20 request done id=req-5ad19d2f route=/auth-svc/v1/sync status=200 latency_ms=112
+2026-10-06T19:25:20 INFO  auth-svc/as-node-14 request done id=req-f95e008f route=/auth-svc/v1/list status=200 latency_ms=501
+2026-10-06T19:25:22 INFO  auth-svc/as-node-16 request done id=req-57f60081 route=/auth-svc/v1/status status=201 latency_ms=177
+2026-10-06T19:25:24 INFO  auth-svc/as-node-06 request done id=req-b8dd2c18 route=/auth-svc/v1/create status=204 latency_ms=63
+2026-10-06T19:25:25 INFO  auth-svc/as-node-05 deploy step release=auth-svc-4.15.4 step=pull_image result=ok took_s=69
+2026-10-06T19:25:32 INFO  auth-svc/as-node-03 ticket linked id=OPS-48213 reason=refresh_token_clock_skew
+2026-10-06T19:25:33 INFO  auth-svc/as-node-05 request done id=req-9e5edf3c route=/auth-svc/v1/get status=200 latency_ms=142
+2026-10-06T19:25:35 INFO  auth-svc/as-node-14 request done id=req-a46a1e09 route=/auth-svc/v1/get status=200 latency_ms=167
+2026-10-06T19:25:41 INFO  auth-svc/as-node-17 ticket linked id=OPS-49366 reason=dependency_upgrade
+2026-10-06T19:25:43 INFO  auth-svc/as-node-15 request done id=req-32f71156 route=/auth-svc/v1/cancel status=400 latency_ms=76
+2026-10-06T19:25:48 INFO  auth-svc/as-node-14 config applied key=gc.pause_target_ms value=true by=hbyoon
+2026-10-06T19:25:49 INFO  auth-svc/as-node-05 request done id=req-d01c3a88 route=/auth-svc/v1/cancel status=201 latency_ms=119
+2026-10-06T19:25:56 ERROR auth-svc/as-node-15 job failed job=auth-svc-reindex attempt=3 cause=lock_wait_exceeded
+2026-10-06T19:26:01 NOTE  auth-svc/as-node-04 operator=dwjung memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-06T19:26:05 INFO  auth-svc/as-node-23 request done id=req-ec87b5cd route=/auth-svc/v1/status status=200 latency_ms=422
+2026-10-06T19:26:09 INFO  auth-svc/as-node-04 request done id=req-0942d9e6 route=/auth-svc/v1/update status=200 latency_ms=25
+2026-10-06T19:26:10 INFO  auth-svc/as-node-14 request done id=req-d5df6ecd route=/auth-svc/v1/status status=200 latency_ms=178
+2026-10-06T19:26:14 INFO  auth-svc/as-node-07 request done id=req-50b639d5 route=/auth-svc/v1/list status=200 latency_ms=243
+2026-10-06T19:26:21 INFO  auth-svc/as-node-02 request done id=req-3e0986f3 route=/auth-svc/v1/cancel status=429 latency_ms=133
+2026-10-06T19:26:28 INFO  auth-svc/as-node-04 request done id=req-70df8aba route=/auth-svc/v1/sync status=204 latency_ms=223
+2026-10-06T19:26:32 INFO  auth-svc/as-node-24 config applied key=flush.interval_ms value=4118 by=mjlee
+2026-10-06T19:26:38 INFO  auth-svc/as-node-15 request done id=req-3ea1c539 route=/auth-svc/v1/get status=204 latency_ms=407
+2026-10-06T19:26:39 INFO  auth-svc/as-node-14 deploy step release=auth-svc-4.16.9 step=shift_traffic_100 result=ok took_s=168
+2026-10-06T19:26:41 INFO  auth-svc/as-node-23 request done id=req-d9ec6c4b route=/auth-svc/v1/sync status=200 latency_ms=222
+2026-10-06T19:26:44 INFO  auth-svc/as-node-15 request done id=req-ae513772 route=/auth-svc/v1/status status=200 latency_ms=62
+2026-10-06T19:26:50 INFO  auth-svc/as-node-14 request done id=req-fe2b388a route=/auth-svc/v1/get status=200 latency_ms=98
+2026-10-06T19:26:54 INFO  auth-svc/as-node-13 cache stats region=us-we-2b hit_ratio=87.4% evictions=19521
+2026-10-06T19:26:58 INFO  auth-svc/as-node-17 request done id=req-d0852e33 route=/auth-svc/v1/list status=200 latency_ms=91
+2026-10-06T19:27:05 INFO  auth-svc/as-node-02 ticket linked id=OPS-49023 reason=cert_rotation
+2026-10-06T19:27:11 INFO  auth-svc/as-node-07 request done id=req-9e2efbc5 route=/auth-svc/v1/cancel status=200 latency_ms=123
+2026-10-06T19:27:17 INFO  auth-svc/as-node-14 request done id=req-96f17ad4 route=/auth-svc/v1/update status=200 latency_ms=67
+2026-10-06T19:27:19 INFO  auth-svc/as-node-10 ticket linked id=OPS-48889 reason=schema_change
+2026-10-06T19:27:21 INFO  auth-svc/as-node-03 request done id=req-06ef34dc route=/auth-svc/v1/cancel status=200 latency_ms=70
+2026-10-06T19:27:23 INFO  auth-svc/as-node-10 request done id=req-a92655f4 route=/auth-svc/v1/sync status=200 latency_ms=431
+2026-10-06T19:27:24 INFO  auth-svc/as-node-02 request done id=req-ae74bd36 route=/auth-svc/v1/get status=200 latency_ms=596
+2026-10-06T19:27:27 INFO  auth-svc/as-node-12 request done id=req-fe54860b route=/auth-svc/v1/get status=503 latency_ms=159
+2026-10-06T19:27:34 NOTE  auth-svc/as-node-01 operator=mjlee memo="동시 처리 수를 38에서 9로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-06T19:27:40 INFO  auth-svc/as-node-06 config applied key=retry.backoff_ms value=3231 by=shkim
+2026-10-06T19:27:44 INFO  auth-svc/as-node-18 request done id=req-28392a84 route=/auth-svc/v1/create status=200 latency_ms=311
+2026-10-06T19:27:45 INFO  auth-svc/as-node-05 request done id=req-aabdd5e5 route=/auth-svc/v1/cancel status=200 latency_ms=117
+2026-10-06T19:27:52 NOTE  auth-svc/as-node-22 operator=ejlim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-06T19:27:59 INFO  auth-svc/as-node-22 ticket linked id=OPS-48984 reason=flaky_healthcheck
+2026-10-06T19:28:03 ERROR auth-svc/as-node-08 job failed job=auth-svc-reindex attempt=1 cause=lock_wait_exceeded
+2026-10-06T19:28:09 INFO  auth-svc/as-node-02 request done id=req-8dc8ef29 route=/auth-svc/v1/sync status=200 latency_ms=338
+2026-10-06T19:28:16 WARN  auth-svc/as-node-09 alert fired rule=gc_pause_long value=86ms threshold=84ms
+2026-10-06T19:28:23 INFO  auth-svc/as-node-05 config applied key=http.read_timeout_ms value=true by=yjchoi
+2026-10-06T19:28:27 WARN  auth-svc/as-node-14 alert fired rule=error_ratio_high value=67% threshold=54%
+2026-10-06T19:28:30 INFO  auth-svc/as-node-01 request done id=req-cc4444db route=/auth-svc/v1/update status=200 latency_ms=348
+2026-10-06T19:28:33 INFO  auth-svc/as-node-24 deploy step release=auth-svc-4.17.9 step=verify result=ok took_s=66
+2026-10-06T19:28:37 INFO  auth-svc/as-node-18 ticket linked id=OPS-48471 reason=cert_rotation
+2026-10-06T19:28:40 INFO  auth-svc/as-node-04 request done id=req-ed054b0f route=/auth-svc/v1/verify status=200 latency_ms=85
+2026-10-06T19:28:42 INFO  auth-svc/as-node-14 deploy step release=auth-svc-4.19.1 step=pull_image result=ok took_s=141
+2026-10-06T19:28:47 INFO  auth-svc/as-node-01 request done id=req-3673003b route=/auth-svc/v1/sync status=200 latency_ms=53
+2026-10-06T19:28:53 NOTE  auth-svc/as-node-19 operator=mjlee memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-06T19:28:58 INFO  auth-svc/as-node-23 pool resize target=auth-svc-cache max_pool_size=57 prev=30
+2026-10-06T19:28:59 INFO  auth-svc/as-node-05 request done id=req-5edd3926 route=/auth-svc/v1/list status=201 latency_ms=40
+2026-10-06T19:29:01 INFO  auth-svc/as-node-04 pool resize target=auth-svc-db max_pool_size=257 prev=218
+2026-10-06T19:29:05 INFO  auth-svc/as-node-07 ticket linked id=OPS-49053 reason=dns_ttl_change
+2026-10-06T19:29:12 INFO  auth-svc/as-node-10 request done id=req-df5b6059 route=/auth-svc/v1/status status=200 latency_ms=79
+2026-10-06T19:29:13 INFO  auth-svc/as-node-14 request done id=req-bf6eaebc route=/auth-svc/v1/update status=200 latency_ms=189
+2026-10-06T19:29:18 WARN  auth-svc/as-node-11 alert fired rule=replica_lag_high value=51s threshold=47s
+2026-10-06T19:29:25 INFO  auth-svc/as-node-05 backup finished file=/vault/weekly/orders_2026w36.tar.zst size_mb=53617 checksum=9d43095c
+2026-10-06T19:29:27 INFO  auth-svc/as-node-10 cache stats region=ap-ne-2b hit_ratio=88.7% evictions=14552
+2026-10-06T19:29:30 WARN  auth-svc/as-node-22 alert fired rule=replica_lag_high value=79s threshold=66s
+2026-10-06T19:29:36 INFO  auth-svc/as-node-10 deploy step release=auth-svc-4.13.5 step=pull_image result=ok took_s=4
+2026-10-06T19:29:43 INFO  auth-svc/as-node-15 config applied key=breaker.open_ratio value=3 by=mjlee
+2026-10-06T19:29:44 INFO  auth-svc/as-node-07 request done id=req-60ec4b82 route=/auth-svc/v1/update status=200 latency_ms=70
+2026-10-06T19:29:50 WARN  auth-svc/as-node-24 alert fired rule=cpu_steal_high value=95% threshold=94%
+2026-10-06T19:29:51 INFO  auth-svc/as-node-02 request done id=req-46c42cba route=/auth-svc/v1/create status=200 latency_ms=67
+2026-10-06T19:29:57 NOTE  auth-svc/as-node-14 operator=sykang memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-06T19:30:04 INFO  auth-svc/as-node-06 request done id=req-657c6a4e route=/auth-svc/v1/verify status=201 latency_ms=257
+2026-10-06T19:30:09 INFO  auth-svc/as-node-02 pool resize target=auth-svc-cache max_pool_size=359 prev=358
+2026-10-06T19:30:12 INFO  auth-svc/as-node-19 cache stats region=ap-se-1a hit_ratio=84.1% evictions=14829
+2026-10-06T19:30:17 INFO  auth-svc/as-node-19 config applied key=log.sample_rate value=18 by=hbyoon
+2026-10-06T19:30:22 WARN  auth-svc/as-node-13 alert fired rule=p99_latency_high value=83ms threshold=78ms
+2026-10-06T19:30:25 ERROR auth-svc/as-node-06 job failed job=auth-svc-rollup attempt=2 cause=quota_exceeded
+2026-10-06T19:30:29 INFO  auth-svc/as-node-16 request done id=req-2bbe725c route=/auth-svc/v1/create status=200 latency_ms=190
+2026-10-06T19:30:30 NOTE  auth-svc/as-node-23 operator=hbyoon memo="헬스체크 간격을 56초에서 92초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-06T19:30:31 INFO  auth-svc/as-node-14 deploy step release=auth-svc-4.10.3 step=verify result=ok took_s=64
+2026-10-06T19:30:38 WARN  auth-svc/as-node-06 alert fired rule=disk_usage_warning value=66% threshold=65%
+2026-10-06T19:30:42 INFO  auth-svc/as-node-15 request done id=req-9746321f route=/auth-svc/v1/update status=409 latency_ms=88
+2026-10-06T19:30:47 INFO  auth-svc/as-node-12 request done id=req-70dfd8e7 route=/auth-svc/v1/create status=200 latency_ms=22
+2026-10-06T19:30:54 INFO  auth-svc/as-node-05 pool resize target=auth-svc-cache max_pool_size=250 prev=206
+2026-10-06T19:30:57 WARN  auth-svc/as-node-05 alert fired rule=disk_usage_warning value=98% threshold=94%
+2026-10-06T19:31:01 INFO  auth-svc/as-node-15 request done id=req-bd8aad7d route=/auth-svc/v1/sync status=200 latency_ms=58
+2026-10-06T19:31:05 ERROR auth-svc/as-node-24 job failed job=auth-svc-reindex attempt=4 cause=upstream_timeout
+2026-10-06T19:31:07 INFO  auth-svc/as-node-06 request done id=req-20c94020 route=/auth-svc/v1/status status=200 latency_ms=124
+2026-10-06T19:31:14 INFO  auth-svc/as-node-01 request done id=req-ec10bdb6 route=/auth-svc/v1/sync status=500 latency_ms=438
+2026-10-06T19:31:18 NOTE  auth-svc/as-node-02 operator=shkim memo="헬스체크 간격을 54초에서 69초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-06T19:31:20 WARN  auth-svc/as-node-24 alert fired rule=gc_pause_long value=57ms threshold=48ms
+2026-10-06T19:31:25 INFO  auth-svc/as-node-13 ticket linked id=OPS-48988 reason=runbook_update
+2026-10-06T19:31:29 ERROR auth-svc/as-node-09 job failed job=auth-svc-reindex attempt=4 cause=bad_checksum
+2026-10-06T19:31:35 INFO  auth-svc/as-node-08 deploy step release=auth-svc-4.12.3 step=healthcheck result=ok took_s=39
+2026-10-06T19:31:38 INFO  auth-svc/as-node-09 request done id=req-08b9eb7b route=/auth-svc/v1/create status=200 latency_ms=91
+2026-10-06T19:31:39 INFO  auth-svc/as-node-18 deploy step release=auth-svc-4.12.7 step=shift_traffic_10 result=ok took_s=74
+2026-10-06T19:31:44 INFO  auth-svc/as-node-03 ticket linked id=OPS-49185 reason=dns_ttl_change
+2026-10-06T19:31:49 ERROR auth-svc/as-node-23 job failed job=auth-svc-rollup attempt=2 cause=oom_killed
+2026-10-06T19:31:54 INFO  auth-svc/as-node-03 request done id=req-8bdacb04 route=/auth-svc/v1/update status=200 latency_ms=75
+2026-10-06T19:31:56 INFO  auth-svc/as-node-14 config applied key=queue.visibility_s value=18 by=dwjung
+2026-10-06T19:31:58 INFO  auth-svc/as-node-12 request done id=req-31de085d route=/auth-svc/v1/get status=200 latency_ms=51
+2026-10-06T19:32:04 INFO  auth-svc/as-node-06 pool resize target=auth-svc-cache max_pool_size=286 prev=266
+2026-10-06T19:32:08 INFO  auth-svc/as-node-22 request done id=req-77a20202 route=/auth-svc/v1/create status=409 latency_ms=778
+2026-10-06T19:32:14 INFO  auth-svc/as-node-20 pool resize target=auth-svc-worker max_pool_size=373 prev=334
+2026-10-06T19:32:20 NOTE  auth-svc/as-node-23 operator=shkim memo="로그 보존 기간은 36일로 유지하기로 함."
+2026-10-06T19:32:23 INFO  auth-svc/as-node-20 deploy step release=auth-svc-4.18.1 step=shift_traffic_100 result=ok took_s=145
+2026-10-06T19:32:26 INFO  auth-svc/as-node-12 request done id=req-4cc6a989 route=/auth-svc/v1/list status=200 latency_ms=147
+2026-10-06T19:32:29 INFO  auth-svc/as-node-12 config applied key=retry.backoff_ms value=4 by=shkim
+2026-10-06T19:32:35 INFO  auth-svc/as-node-17 request done id=req-5deb2706 route=/auth-svc/v1/status status=204 latency_ms=149
+2026-10-06T19:32:42 INFO  auth-svc/as-node-13 request done id=req-232480c2 route=/auth-svc/v1/cancel status=200 latency_ms=104
+2026-10-06T19:32:44 INFO  auth-svc/as-node-01 request done id=req-08d3f88f route=/auth-svc/v1/create status=429 latency_ms=181
+2026-10-06T19:32:49 INFO  auth-svc/as-node-01 request done id=req-ef1df242 route=/auth-svc/v1/verify status=200 latency_ms=66
+2026-10-06T19:32:55 INFO  auth-svc/as-node-19 pool resize target=auth-svc-queue max_pool_size=304 prev=331
+2026-10-06T19:32:57 INFO  auth-svc/as-node-21 request done id=req-f3ab530b route=/auth-svc/v1/sync status=200 latency_ms=89
+2026-10-06T19:33:03 INFO  auth-svc/as-node-16 request done id=req-b0f1458c route=/auth-svc/v1/status status=503 latency_ms=96
+2026-10-06T19:33:05 NOTE  auth-svc/as-node-24 operator=sykang memo="로그 보존 기간은 50일로 유지하기로 함."
+2026-10-06T19:33:06 INFO  auth-svc/as-node-15 request done id=req-7764985c route=/auth-svc/v1/create status=200 latency_ms=200
+2026-10-06T19:33:09 INFO  auth-svc/as-node-24 deploy step release=auth-svc-4.22.7 step=shift_traffic_10 result=ok took_s=176
+2026-10-06T19:33:13 INFO  auth-svc/as-node-03 backup finished file=/vault/daily/sessions_20261019.tar.zst size_mb=46534 checksum=2ef611bc
+2026-10-06T19:33:18 NOTE  auth-svc/as-node-19 operator=shkim memo="타임아웃을 49ms에서 61ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-06T19:33:20 INFO  auth-svc/as-node-01 deploy step release=auth-svc-4.14.1 step=drain result=ok took_s=85
+2026-10-06T19:33:23 INFO  auth-svc/as-node-11 request done id=req-e326b7c4 route=/auth-svc/v1/get status=503 latency_ms=112
+2026-10-06T19:33:25 INFO  auth-svc/as-node-04 request done id=req-4af8a79b route=/auth-svc/v1/sync status=200 latency_ms=213
+2026-10-06T19:33:30 INFO  auth-svc/as-node-10 config applied key=tls.session_cache value=58 by=shkim
+2026-10-06T19:33:35 INFO  auth-svc/as-node-13 ticket linked id=OPS-47436 reason=node_drain
+2026-10-06T19:33:36 ERROR auth-svc/as-node-11 job failed job=auth-svc-reindex attempt=2 cause=lock_wait_exceeded
+2026-10-06T19:33:37 INFO  auth-svc/as-node-09 pool resize target=auth-svc-db max_pool_size=273 prev=262
+2026-10-06T19:33:41 WARN  auth-svc/as-node-11 alert fired rule=replica_lag_high value=69s threshold=63s
+2026-10-06T19:33:44 INFO  auth-svc/as-node-16 deploy step release=auth-svc-4.13.9 step=verify result=ok took_s=105
+2026-10-06T19:33:45 INFO  auth-svc/as-node-19 request done id=req-b2245afc route=/auth-svc/v1/verify status=200 latency_ms=666
+2026-10-06T19:33:50 INFO  auth-svc/as-node-14 request done id=req-ee3c70a0 route=/auth-svc/v1/cancel status=200 latency_ms=53
+2026-10-06T19:33:57 INFO  auth-svc/as-node-05 request done id=req-d6dabbc5 route=/auth-svc/v1/cancel status=400 latency_ms=125
+2026-10-06T19:34:01 WARN  auth-svc/as-node-18 alert fired rule=disk_usage_warning value=88% threshold=83%
+2026-10-06T19:34:07 INFO  auth-svc/as-node-17 backup finished file=/vault/daily/audit_20261015.tar.zst size_mb=53510 checksum=21d22e92
+2026-10-06T19:34:12 INFO  auth-svc/as-node-09 request done id=req-81bc0f3b route=/auth-svc/v1/sync status=429 latency_ms=271
+2026-10-06T19:34:15 INFO  auth-svc/as-node-11 request done id=req-a866ea8e route=/auth-svc/v1/list status=204 latency_ms=309
+2026-10-06T19:34:19 INFO  auth-svc/as-node-12 request done id=req-580722c3 route=/auth-svc/v1/get status=200 latency_ms=16
+2026-10-06T19:34:25 INFO  auth-svc/as-node-17 request done id=req-74691cbb route=/auth-svc/v1/cancel status=200 latency_ms=92
+2026-10-06T19:34:26 INFO  auth-svc/as-node-17 request done id=req-5f96226b route=/auth-svc/v1/sync status=200 latency_ms=90
+2026-10-06T19:34:30 INFO  auth-svc/as-node-20 cache stats region=ap-ne-2c hit_ratio=93.8% evictions=35688
+2026-10-06T19:34:31 NOTE  auth-svc/as-node-10 operator=shkim memo="연동 팀에 변경 공지 완료."
+2026-10-06T19:34:33 INFO  auth-svc/as-node-18 request done id=req-226d1c9c route=/auth-svc/v1/sync status=200 latency_ms=139
+2026-10-06T19:34:35 WARN  auth-svc/as-node-10 alert fired rule=fd_usage_high value=56% threshold=51%
+2026-10-06T19:34:38 INFO  auth-svc/as-node-24 deploy step release=auth-svc-4.12.9 step=shift_traffic_10 result=ok took_s=31
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

@@ -248,6 +248,7 @@ python3 -m unittest discover -s tests
 | [`docs/phase4-report.md`](docs/phase4-report.md) | ④ 보고서 — 구현 결과, 검증, 명세 항목 대응 표, 미검증 항목, 역제안 |
 | [`docs/phase3-report.md`](docs/phase3-report.md) | ③ 보고서 — 과제 명세, 실측 이벤트 스키마, 구현 계획, 승인된 역제안 |
 | [`lab/`](lab/README.md) | 사전 검증 자료 — 프로토타입(`lab/proto/`), 실측 캡처(`lab/captures/`), 캡처 도구(`lab/probe/`) |
+| [`lab/ctxeval/`](lab/ctxeval/README.md) | Windows PC에서 한 A/B 평가 기록 — 훅을 끈 세션과 켠 세션에 압축 전 세부를 묻는 같은 질문을 던져 정답 · 도구 호출 · 시간 · 비용을 비교(스크립트 · 프롬프트 · 원본 출력 · 결과표 · 실사용 측정 출력) |
 | [`CLAUDE.md`](CLAUDE.md) | 이 저장소에서 작업하는 Claude Code를 위한 안내 |
 
 `lab/`은 설계의 근거 자료이며 산출물이 아닙니다. `lab/proto/ctx_proto.py`는 설계 검증용 프로토타입으로 남겨 두었고, 테스트가 최종 훅과 프로토타입의 결과가 같은지 비교합니다.

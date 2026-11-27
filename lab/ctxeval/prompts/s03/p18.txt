@@ -1,0 +1,424 @@
+참고용 로그 18: 장바구니(cart-svc) 세션 이관 구간. '확인'이라고만 답해 줘.
+
+2026-10-22T09:59:15 INFO  cart-svc/cs-node-13 deploy step release=cart-svc-4.16.5 step=start result=ok took_s=223
+2026-10-22T09:59:16 INFO  cart-svc/cs-node-11 request done id=req-50ffb5f6 route=/cart-svc/v1/status status=200 latency_ms=84
+2026-10-22T09:59:19 INFO  cart-svc/cs-node-03 backup finished file=/vault/daily/audit_20261022.tar.zst size_mb=80352 checksum=ccf20cc0
+2026-10-22T09:59:25 NOTE  cart-svc/cs-node-13 operator=mjlee memo="연동 팀에 변경 공지 완료."
+2026-10-22T09:59:28 INFO  cart-svc/cs-node-11 request done id=req-38123e7f route=/cart-svc/v1/sync status=200 latency_ms=157
+2026-10-22T09:59:30 INFO  cart-svc/cs-node-07 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=12351 checksum=2855e3d2
+2026-10-22T09:59:33 INFO  cart-svc/cs-node-19 request done id=req-e1cde7ef route=/cart-svc/v1/verify status=200 latency_ms=22
+2026-10-22T09:59:35 INFO  cart-svc/cs-node-19 request done id=req-1e20b844 route=/cart-svc/v1/sync status=200 latency_ms=107
+2026-10-22T09:59:37 INFO  cart-svc/cs-node-18 config applied key=log.sample_rate value=25% by=ejlim
+2026-10-22T09:59:39 INFO  cart-svc/cs-node-04 request done id=req-6a69f61b route=/cart-svc/v1/update status=200 latency_ms=197
+2026-10-22T09:59:43 INFO  cart-svc/cs-node-09 deploy step release=cart-svc-4.16.0 step=start result=ok took_s=230
+2026-10-22T09:59:48 INFO  cart-svc/cs-node-09 request done id=req-9e662ca8 route=/cart-svc/v1/create status=409 latency_ms=297
+2026-10-22T09:59:53 INFO  cart-svc/cs-node-14 request done id=req-eee20410 route=/cart-svc/v1/cancel status=200 latency_ms=69
+2026-10-22T09:59:54 INFO  cart-svc/cs-node-24 request done id=req-718a9837 route=/cart-svc/v1/list status=400 latency_ms=12
+2026-10-22T10:00:00 INFO  cart-svc/cs-node-15 pool resize target=cart-svc-upstream max_pool_size=372 prev=349
+2026-10-22T10:00:03 WARN  cart-svc/cs-node-21 alert fired rule=heap_used_high value=64% threshold=55%
+2026-10-22T10:00:05 INFO  cart-svc/cs-node-15 request done id=req-63b23ced route=/cart-svc/v1/cancel status=200 latency_ms=210
+2026-10-22T10:00:12 INFO  cart-svc/cs-node-18 cache stats region=ap-ne-2b hit_ratio=95.5% evictions=30026
+2026-10-22T10:00:19 INFO  cart-svc/cs-node-10 request done id=req-69d8d50a route=/cart-svc/v1/list status=204 latency_ms=180
+2026-10-22T10:00:21 INFO  cart-svc/cs-node-09 request done id=req-24f8c357 route=/cart-svc/v1/get status=201 latency_ms=136
+2026-10-22T10:00:27 INFO  cart-svc/cs-node-23 request done id=req-95488a5c route=/cart-svc/v1/verify status=500 latency_ms=103
+2026-10-22T10:00:30 INFO  cart-svc/cs-node-13 config applied key=retry.max_attempts value=false by=ejlim
+2026-10-22T10:00:32 INFO  cart-svc/cs-node-21 request done id=req-9a5fcf84 route=/cart-svc/v1/verify status=503 latency_ms=227
+2026-10-22T10:00:37 INFO  cart-svc/cs-node-20 request done id=req-55ac40f7 route=/cart-svc/v1/create status=409 latency_ms=75
+2026-10-22T10:00:42 INFO  cart-svc/cs-node-07 request done id=req-1ed6be55 route=/cart-svc/v1/verify status=200 latency_ms=112
+2026-10-22T10:00:49 INFO  cart-svc/cs-node-17 request done id=req-df03738e route=/cart-svc/v1/list status=400 latency_ms=52
+2026-10-22T10:00:50 ERROR cart-svc/cs-node-03 job failed job=cart-svc-cleanup attempt=1 cause=oom_killed
+2026-10-22T10:00:53 INFO  cart-svc/cs-node-12 request done id=req-a7cdea75 route=/cart-svc/v1/create status=200 latency_ms=97
+2026-10-22T10:01:00 INFO  cart-svc/cs-node-10 request done id=req-aeeaebe8 route=/cart-svc/v1/verify status=503 latency_ms=183
+2026-10-22T10:01:05 INFO  cart-svc/cs-node-04 request done id=req-ce363945 route=/cart-svc/v1/list status=200 latency_ms=96
+2026-10-22T10:01:07 INFO  cart-svc/cs-node-09 request done id=req-fa1c1287 route=/cart-svc/v1/get status=201 latency_ms=616
+2026-10-22T10:01:08 INFO  cart-svc/cs-node-23 backup finished file=/vault/weekly/audit_2026w44.tar.zst size_mb=34053 checksum=0eea0ce4
+2026-10-22T10:01:10 INFO  cart-svc/cs-node-23 request done id=req-9de42ea2 route=/cart-svc/v1/verify status=200 latency_ms=467
+2026-10-22T10:01:15 INFO  cart-svc/cs-node-03 request done id=req-b902ea0b route=/cart-svc/v1/sync status=200 latency_ms=27
+2026-10-22T10:01:18 INFO  cart-svc/cs-node-11 request done id=req-6341de8a route=/cart-svc/v1/cancel status=503 latency_ms=259
+2026-10-22T10:01:20 INFO  cart-svc/cs-node-24 request done id=req-d729a9ed route=/cart-svc/v1/sync status=200 latency_ms=94
+2026-10-22T10:01:21 NOTE  cart-svc/cs-node-13 operator=mjlee memo="로그 보존 기간은 32일로 유지하기로 함."
+2026-10-22T10:01:26 INFO  cart-svc/cs-node-14 config applied key=log.sample_rate value=10 by=sykang
+2026-10-22T10:01:31 INFO  cart-svc/cs-node-18 request done id=req-b3a40301 route=/cart-svc/v1/verify status=200 latency_ms=92
+2026-10-22T10:01:38 INFO  cart-svc/cs-node-07 backup finished file=/vault/daily/payments_20261024.tar.zst size_mb=35715 checksum=dd033851
+2026-10-22T10:01:43 ERROR cart-svc/cs-node-09 job failed job=cart-svc-rollup attempt=3 cause=upstream_timeout
+2026-10-22T10:01:47 NOTE  cart-svc/cs-node-06 operator=jhpark memo="캐시 TTL을 18초로 되돌림. 오래된 응답이 보고됨."
+2026-10-22T10:01:50 INFO  cart-svc/cs-node-04 pool resize target=cart-svc-upstream max_pool_size=371 prev=329
+2026-10-22T10:01:57 INFO  cart-svc/cs-node-13 deploy step release=cart-svc-4.15.7 step=pull_image result=ok took_s=170
+2026-10-22T10:01:59 INFO  cart-svc/cs-node-09 config applied key=shard.count value=34% by=mjlee
+2026-10-22T10:02:02 INFO  cart-svc/cs-node-09 cache stats region=ap-ne-2a hit_ratio=97.7% evictions=22506
+2026-10-22T10:02:05 WARN  cart-svc/cs-node-12 alert fired rule=gc_pause_long value=85ms threshold=75ms
+2026-10-22T10:02:12 INFO  cart-svc/cs-node-20 backup finished file=/vault/daily/orders_20261028.tar.zst size_mb=46604 checksum=6cbca123
+2026-10-22T10:02:14 INFO  cart-svc/cs-node-11 request done id=req-a9d896ca route=/cart-svc/v1/create status=200 latency_ms=24
+2026-10-22T10:02:18 INFO  cart-svc/cs-node-02 request done id=req-2e96d628 route=/cart-svc/v1/verify status=200 latency_ms=42
+2026-10-22T10:02:25 INFO  cart-svc/cs-node-24 request done id=req-2df1eab1 route=/cart-svc/v1/update status=200 latency_ms=136
+2026-10-22T10:02:26 INFO  cart-svc/cs-node-20 deploy step release=cart-svc-4.14.5 step=drain result=ok took_s=63
+2026-10-22T10:02:28 INFO  cart-svc/cs-node-05 request done id=req-c2ec853b route=/cart-svc/v1/create status=200 latency_ms=143
+2026-10-22T10:02:34 WARN  cart-svc/cs-node-01 alert fired rule=fd_usage_high value=66% threshold=54%
+2026-10-22T10:02:39 INFO  cart-svc/cs-node-08 request done id=req-677c2aa3 route=/cart-svc/v1/update status=500 latency_ms=57
+2026-10-22T10:02:41 INFO  cart-svc/cs-node-22 config applied key=flush.interval_ms value=37% by=yjchoi
+2026-10-22T10:02:42 INFO  cart-svc/cs-node-08 pool resize target=cart-svc-db max_pool_size=98 prev=108
+2026-10-22T10:02:44 INFO  cart-svc/cs-node-02 request done id=req-6ea400c6 route=/cart-svc/v1/create status=200 latency_ms=71
+2026-10-22T10:02:49 INFO  cart-svc/cs-node-11 config applied key=canary.latency_p99_threshold_ms value=true by=yjchoi
+2026-10-22T10:02:51 INFO  cart-svc/cs-node-18 request done id=req-817781da route=/cart-svc/v1/cancel status=200 latency_ms=241
+2026-10-22T10:02:52 WARN  cart-svc/cs-node-07 alert fired rule=p99_latency_high value=82ms threshold=75ms
+2026-10-22T10:02:57 INFO  cart-svc/cs-node-01 deploy step release=cart-svc-4.22.9 step=healthcheck result=ok took_s=41
+2026-10-22T10:03:02 INFO  cart-svc/cs-node-23 request done id=req-4c3dd7a5 route=/cart-svc/v1/status status=200 latency_ms=395
+2026-10-22T10:03:09 NOTE  cart-svc/cs-node-22 operator=hbyoon memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-10-22T10:03:16 INFO  cart-svc/cs-node-16 request done id=req-2e1f0e6e route=/cart-svc/v1/status status=200 latency_ms=43
+2026-10-22T10:03:19 INFO  cart-svc/cs-node-05 config applied key=http.max_conns value=true by=shkim
+2026-10-22T10:03:22 INFO  cart-svc/cs-node-03 request done id=req-80069177 route=/cart-svc/v1/status status=200 latency_ms=80
+2026-10-22T10:03:27 INFO  cart-svc/cs-node-03 backup finished file=/vault/weekly/orders_2026w39.tar.zst size_mb=56009 checksum=1af57186
+2026-10-22T10:03:29 INFO  cart-svc/cs-node-14 request done id=req-7652d9af route=/cart-svc/v1/status status=200 latency_ms=202
+2026-10-22T10:03:34 INFO  cart-svc/cs-node-04 deploy step release=cart-svc-4.16.3 step=shift_traffic_10 result=ok took_s=227
+2026-10-22T10:03:39 INFO  cart-svc/cs-node-11 request done id=req-806792b7 route=/cart-svc/v1/verify status=200 latency_ms=90
+2026-10-22T10:03:43 INFO  cart-svc/cs-node-09 pool resize target=cart-svc-queue max_pool_size=169 prev=161
+2026-10-22T10:03:46 INFO  cart-svc/cs-node-04 deploy step release=cart-svc-4.13.3 step=migrate result=ok took_s=194
+2026-10-22T10:03:48 INFO  cart-svc/cs-node-20 deploy step release=cart-svc-4.15.5 step=drain result=ok took_s=27
+2026-10-22T10:03:49 INFO  cart-svc/cs-node-14 request done id=req-bc163623 route=/cart-svc/v1/verify status=404 latency_ms=51
+2026-10-22T10:03:53 WARN  cart-svc/cs-node-01 alert fired rule=p99_latency_high value=68ms threshold=56ms
+2026-10-22T10:03:55 INFO  cart-svc/cs-node-14 request done id=req-5622e6e3 route=/cart-svc/v1/create status=204 latency_ms=613
+2026-10-22T10:03:57 INFO  cart-svc/cs-node-02 request done id=req-e50b5807 route=/cart-svc/v1/verify status=200 latency_ms=225
+2026-10-22T10:04:03 INFO  cart-svc/cs-node-13 deploy step release=cart-svc-4.18.0 step=shift_traffic_10 result=ok took_s=234
+2026-10-22T10:04:05 INFO  cart-svc/cs-node-07 request done id=req-06d3d264 route=/cart-svc/v1/get status=200 latency_ms=58
+2026-10-22T10:04:11 ERROR cart-svc/cs-node-07 job failed job=cart-svc-rollup attempt=1 cause=bad_checksum
+2026-10-22T10:04:14 INFO  cart-svc/cs-node-18 deploy step release=cart-svc-4.22.2 step=shift_traffic_100 result=ok took_s=121
+2026-10-22T10:04:16 INFO  cart-svc/cs-node-24 cache stats region=us-we-2b hit_ratio=71.0% evictions=28088
+2026-10-22T10:04:19 ERROR cart-svc/cs-node-12 job failed job=cart-svc-reindex attempt=5 cause=quota_exceeded
+2026-10-22T10:04:26 WARN  cart-svc/cs-node-12 alert fired rule=fd_usage_high value=81% threshold=69%
+2026-10-22T10:04:28 INFO  cart-svc/cs-node-22 request done id=req-70f88e0a route=/cart-svc/v1/sync status=200 latency_ms=124
+2026-10-22T10:04:34 INFO  cart-svc/cs-node-13 request done id=req-0fb25041 route=/cart-svc/v1/sync status=200 latency_ms=62
+2026-10-22T10:04:40 NOTE  cart-svc/cs-node-14 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-22T10:04:44 INFO  cart-svc/cs-node-13 pool resize target=cart-svc-db max_pool_size=356 prev=341
+2026-10-22T10:04:51 WARN  cart-svc/cs-node-24 alert fired rule=replica_lag_high value=81s threshold=70s
+2026-10-22T10:04:52 INFO  cart-svc/cs-node-17 request done id=req-1e41f371 route=/cart-svc/v1/verify status=200 latency_ms=73
+2026-10-22T10:04:58 INFO  cart-svc/cs-node-22 request done id=req-3b2908a0 route=/cart-svc/v1/update status=200 latency_ms=100
+2026-10-22T10:05:04 INFO  cart-svc/cs-node-23 request done id=req-dbd0bcdf route=/cart-svc/v1/update status=404 latency_ms=23
+2026-10-22T10:05:08 INFO  cart-svc/cs-node-18 request done id=req-c3383e42 route=/cart-svc/v1/update status=200 latency_ms=109
+2026-10-22T10:05:14 WARN  cart-svc/cs-node-22 alert fired rule=p99_latency_high value=62ms threshold=47ms
+2026-10-22T10:05:17 INFO  cart-svc/cs-node-01 request done id=req-ecb62e69 route=/cart-svc/v1/verify status=200 latency_ms=291
+2026-10-22T10:05:21 INFO  cart-svc/cs-node-09 request done id=req-3bbf395d route=/cart-svc/v1/get status=200 latency_ms=57
+2026-10-22T10:05:25 INFO  cart-svc/cs-node-06 request done id=req-43d2e57f route=/cart-svc/v1/list status=400 latency_ms=146
+2026-10-22T10:05:27 INFO  cart-svc/cs-node-14 request done id=req-d2b59a09 route=/cart-svc/v1/update status=409 latency_ms=179
+2026-10-22T10:05:34 INFO  cart-svc/cs-node-17 deploy step release=cart-svc-4.14.5 step=verify result=ok took_s=87
+2026-10-22T10:05:41 NOTE  cart-svc/cs-node-08 operator=ejlim memo="배치 시작 시각을 54시 61분으로 고정함."
+2026-10-22T10:05:45 INFO  cart-svc/cs-node-18 deploy step release=cart-svc-4.13.6 step=pull_image result=ok took_s=201
+2026-10-22T10:05:47 INFO  cart-svc/cs-node-09 config applied key=shard.count value=25% by=dwjung
+2026-10-22T10:05:48 INFO  cart-svc/cs-node-15 request done id=req-2adf3385 route=/cart-svc/v1/get status=200 latency_ms=110
+2026-10-22T10:05:52 NOTE  cart-svc/cs-node-13 operator=hbyoon memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-22T10:05:59 INFO  cart-svc/cs-node-22 request done id=req-395c1ac6 route=/cart-svc/v1/status status=200 latency_ms=23
+2026-10-22T10:06:02 INFO  cart-svc/cs-node-06 request done id=req-c07ef997 route=/cart-svc/v1/sync status=200 latency_ms=191
+2026-10-22T10:06:09 INFO  cart-svc/cs-node-12 deploy step release=cart-svc-4.20.1 step=healthcheck result=ok took_s=144
+2026-10-22T10:06:16 WARN  cart-svc/cs-node-07 alert fired rule=gc_pause_long value=50ms threshold=38ms
+2026-10-22T10:06:21 INFO  cart-svc/cs-node-06 request done id=req-1f31b8db route=/cart-svc/v1/sync status=200 latency_ms=181
+2026-10-22T10:06:27 WARN  cart-svc/cs-node-04 alert fired rule=heap_used_high value=51% threshold=42%
+2026-10-22T10:06:31 INFO  cart-svc/cs-node-09 ticket linked id=OPS-48711 reason=cert_rotation
+2026-10-22T10:06:35 INFO  cart-svc/cs-node-09 cache stats region=ap-ne-2c hit_ratio=68.6% evictions=37343
+2026-10-22T10:06:42 NOTE  cart-svc/cs-node-11 operator=jhpark memo="헬스체크 간격을 57초에서 71초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-22T10:06:46 INFO  cart-svc/cs-node-22 config applied key=limiter.rps value=21 by=dwjung
+2026-10-22T10:06:52 INFO  cart-svc/cs-node-04 pool resize target=cart-svc-upstream max_pool_size=346 prev=310
+2026-10-22T10:06:54 INFO  cart-svc/cs-node-15 request done id=req-88c12e2b route=/cart-svc/v1/list status=200 latency_ms=32
+2026-10-22T10:06:58 INFO  cart-svc/cs-node-12 request done id=req-ab6953c9 route=/cart-svc/v1/update status=200 latency_ms=109
+2026-10-22T10:07:01 INFO  cart-svc/cs-node-14 request done id=req-5bef08dd route=/cart-svc/v1/sync status=200 latency_ms=309
+2026-10-22T10:07:03 WARN  cart-svc/cs-node-16 alert fired rule=replica_lag_high value=65s threshold=60s
+2026-10-22T10:07:09 INFO  cart-svc/cs-node-03 config applied key=http.read_timeout_ms value=4143 by=hbyoon
+2026-10-22T10:07:11 INFO  cart-svc/cs-node-11 request done id=req-790ae881 route=/cart-svc/v1/get status=200 latency_ms=150
+2026-10-22T10:07:17 INFO  cart-svc/cs-node-02 request done id=req-d963132b route=/cart-svc/v1/cancel status=200 latency_ms=737
+2026-10-22T10:07:18 INFO  cart-svc/cs-node-23 request done id=req-7f9fd81e route=/cart-svc/v1/create status=500 latency_ms=70
+2026-10-22T10:07:19 INFO  cart-svc/cs-node-12 config applied key=tls.session_cache value=true by=shkim
+2026-10-22T10:07:22 INFO  cart-svc/cs-node-22 request done id=req-40289639 route=/cart-svc/v1/sync status=400 latency_ms=289
+2026-10-22T10:07:27 INFO  cart-svc/cs-node-21 deploy step release=cart-svc-4.17.6 step=pull_image result=ok took_s=53
+2026-10-22T10:07:33 INFO  cart-svc/cs-node-01 request done id=req-8e1171af route=/cart-svc/v1/create status=503 latency_ms=56
+2026-10-22T10:07:40 INFO  cart-svc/cs-node-07 request done id=req-b004c73d route=/cart-svc/v1/status status=404 latency_ms=82
+2026-10-22T10:07:44 WARN  cart-svc/cs-node-14 alert fired rule=heap_used_high value=77% threshold=74%
+2026-10-22T10:07:48 INFO  cart-svc/cs-node-18 config applied key=http.max_conns value=false by=mjlee
+2026-10-22T10:07:52 INFO  cart-svc/cs-node-04 request done id=req-f210fc0a route=/cart-svc/v1/cancel status=200 latency_ms=428
+2026-10-22T10:07:57 INFO  cart-svc/cs-node-12 request done id=req-6983d160 route=/cart-svc/v1/get status=200 latency_ms=306
+2026-10-22T10:08:04 ERROR cart-svc/cs-node-24 job failed job=cart-svc-rollup attempt=5 cause=oom_killed
+2026-10-22T10:08:10 WARN  cart-svc/cs-node-05 alert fired rule=disk_usage_warning value=85% threshold=80%
+2026-10-22T10:08:16 INFO  cart-svc/cs-node-22 backup finished file=/vault/daily/sessions_20261002.tar.zst size_mb=2138 checksum=5f090119
+2026-10-22T10:08:18 INFO  cart-svc/cs-node-14 request done id=req-ae816687 route=/cart-svc/v1/sync status=200 latency_ms=258
+2026-10-22T10:08:24 INFO  cart-svc/cs-node-03 request done id=req-0b33ecf6 route=/cart-svc/v1/status status=200 latency_ms=109
+2026-10-22T10:08:27 NOTE  cart-svc/cs-node-03 operator=yjchoi memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-22T10:08:33 INFO  cart-svc/cs-node-21 ticket linked id=OPS-47567 reason=cert_rotation
+2026-10-22T10:08:40 INFO  cart-svc/cs-node-21 config applied key=http.read_timeout_ms value=8428 by=yjchoi
+2026-10-22T10:08:45 WARN  cart-svc/cs-node-02 alert fired rule=gc_pause_long value=52ms threshold=44ms
+2026-10-22T10:08:47 INFO  cart-svc/cs-node-04 config applied key=breaker.half_open_s value=false by=ejlim
+2026-10-22T10:08:51 ERROR cart-svc/cs-node-07 job failed job=cart-svc-reindex attempt=5 cause=oom_killed
+2026-10-22T10:08:57 INFO  cart-svc/cs-node-23 pool resize target=cart-svc-queue max_pool_size=260 prev=250
+2026-10-22T10:09:00 INFO  cart-svc/cs-node-20 request done id=req-1acd4a40 route=/cart-svc/v1/cancel status=200 latency_ms=407
+2026-10-22T10:09:01 INFO  cart-svc/cs-node-11 cache stats region=us-we-2b hit_ratio=75.3% evictions=35471
+2026-10-22T10:09:04 WARN  cart-svc/cs-node-02 alert fired rule=heap_used_high value=57% threshold=43%
+2026-10-22T10:09:11 INFO  cart-svc/cs-node-03 request done id=req-fe57ea51 route=/cart-svc/v1/cancel status=200 latency_ms=105
+2026-10-22T10:09:12 INFO  cart-svc/cs-node-03 request done id=req-76d6073f route=/cart-svc/v1/status status=200 latency_ms=95
+2026-10-22T10:09:19 INFO  cart-svc/cs-node-03 cache stats region=us-we-2b hit_ratio=74.1% evictions=11667
+2026-10-22T10:09:20 INFO  cart-svc/cs-node-03 deploy step release=cart-svc-4.21.0 step=shift_traffic_50 result=ok took_s=145
+2026-10-22T10:09:22 INFO  cart-svc/cs-node-10 request done id=req-a8a36265 route=/cart-svc/v1/status status=503 latency_ms=264
+2026-10-22T10:09:27 INFO  cart-svc/cs-node-06 config applied key=tls.session_cache value=true by=dwjung
+2026-10-22T10:09:33 INFO  cart-svc/cs-node-16 ticket linked id=OPS-48206 reason=node_drain
+2026-10-22T10:09:36 INFO  cart-svc/cs-node-18 request done id=req-44f192c5 route=/cart-svc/v1/get status=404 latency_ms=29
+2026-10-22T10:09:39 INFO  cart-svc/cs-node-18 backup finished file=/vault/weekly/audit_2026w34.tar.zst size_mb=69759 checksum=13e22833
+2026-10-22T10:09:40 INFO  cart-svc/cs-node-07 request done id=req-85b4d208 route=/cart-svc/v1/verify status=200 latency_ms=36
+2026-10-22T10:09:42 NOTE  cart-svc/cs-node-17 operator=dwjung memo="동시 처리 수를 51에서 19로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-22T10:09:48 INFO  cart-svc/cs-node-17 pool resize target=cart-svc-queue max_pool_size=245 prev=273
+2026-10-22T10:09:51 INFO  cart-svc/cs-node-05 deploy step release=cart-svc-4.22.5 step=pull_image result=ok took_s=73
+2026-10-22T10:09:56 INFO  cart-svc/cs-node-17 request done id=req-e2e33141 route=/cart-svc/v1/sync status=200 latency_ms=71
+2026-10-22T10:09:58 INFO  cart-svc/cs-node-07 request done id=req-a083838d route=/cart-svc/v1/verify status=200 latency_ms=53
+2026-10-22T10:10:04 INFO  cart-svc/cs-node-24 config applied key=http.max_conns value=5729 by=shkim
+2026-10-22T10:10:11 INFO  cart-svc/cs-node-09 deploy step release=cart-svc-4.13.6 step=drain result=ok took_s=14
+2026-10-22T10:10:18 WARN  cart-svc/cs-node-24 alert fired rule=p99_latency_high value=79ms threshold=73ms
+2026-10-22T10:10:19 INFO  cart-svc/cs-node-17 request done id=req-16ebfe73 route=/cart-svc/v1/update status=200 latency_ms=121
+2026-10-22T10:10:20 INFO  cart-svc/cs-node-23 request done id=req-1e09f0f5 route=/cart-svc/v1/verify status=200 latency_ms=55
+2026-10-22T10:10:25 INFO  cart-svc/cs-node-21 request done id=req-8bb206b5 route=/cart-svc/v1/verify status=200 latency_ms=36
+2026-10-22T10:10:27 INFO  cart-svc/cs-node-11 deploy step release=cart-svc-4.21.4 step=verify result=ok took_s=32
+2026-10-22T10:10:32 INFO  cart-svc/cs-node-16 config applied key=canary.traffic_percent value=false by=shkim
+2026-10-22T10:10:36 ERROR cart-svc/cs-node-09 job failed job=cart-svc-reindex attempt=2 cause=upstream_timeout
+2026-10-22T10:10:41 INFO  cart-svc/cs-node-01 request done id=req-31e190d9 route=/cart-svc/v1/status status=200 latency_ms=655
+2026-10-22T10:10:46 INFO  cart-svc/cs-node-23 request done id=req-c9425321 route=/cart-svc/v1/list status=201 latency_ms=73
+2026-10-22T10:10:51 INFO  cart-svc/cs-node-19 request done id=req-08682a39 route=/cart-svc/v1/verify status=200 latency_ms=33
+2026-10-22T10:10:53 ERROR cart-svc/cs-node-21 job failed job=cart-svc-export attempt=5 cause=dns_failure
+2026-10-22T10:10:56 INFO  cart-svc/cs-node-05 request done id=req-a16c014e route=/cart-svc/v1/verify status=200 latency_ms=28
+2026-10-22T10:10:58 WARN  cart-svc/cs-node-16 alert fired rule=gc_pause_long value=57ms threshold=48ms
+2026-10-22T10:11:02 INFO  cart-svc/cs-node-03 request done id=req-fc888824 route=/cart-svc/v1/update status=200 latency_ms=108
+2026-10-22T10:11:05 INFO  cart-svc/cs-node-11 request done id=req-5eb1601f route=/cart-svc/v1/list status=200 latency_ms=122
+2026-10-22T10:11:10 NOTE  cart-svc/cs-node-05 operator=dwjung memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-22T10:11:17 INFO  cart-svc/cs-node-10 request done id=req-6436d00f route=/cart-svc/v1/update status=200 latency_ms=146
+2026-10-22T10:11:18 NOTE  cart-svc/cs-node-13 operator=hbyoon memo="동시 처리 수를 48에서 14로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-22T10:11:24 INFO  cart-svc/cs-node-19 ticket linked id=OPS-47827 reason=log_volume_spike
+2026-10-22T10:11:28 INFO  cart-svc/cs-node-01 config applied key=shard.count value=522 by=shkim
+2026-10-22T10:11:33 INFO  cart-svc/cs-node-21 request done id=req-1782e80f route=/cart-svc/v1/list status=409 latency_ms=342
+2026-10-22T10:11:35 INFO  cart-svc/cs-node-01 request done id=req-3fca629b route=/cart-svc/v1/cancel status=200 latency_ms=123
+2026-10-22T10:11:39 INFO  cart-svc/cs-node-16 ticket linked id=OPS-49639 reason=dns_ttl_change
+2026-10-22T10:11:43 INFO  cart-svc/cs-node-15 request done id=req-ac166139 route=/cart-svc/v1/cancel status=200 latency_ms=565
+2026-10-22T10:11:48 NOTE  cart-svc/cs-node-10 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-22T10:11:51 INFO  cart-svc/cs-node-24 cache stats region=ap-se-1a hit_ratio=96.5% evictions=18067
+2026-10-22T10:11:58 INFO  cart-svc/cs-node-03 pool resize target=cart-svc-upstream max_pool_size=390 prev=372
+2026-10-22T10:11:59 WARN  cart-svc/cs-node-08 alert fired rule=p99_latency_high value=68ms threshold=53ms
+2026-10-22T10:12:04 INFO  cart-svc/cs-node-13 request done id=req-fcd65cc0 route=/cart-svc/v1/verify status=429 latency_ms=167
+2026-10-22T10:12:07 INFO  cart-svc/cs-node-24 request done id=req-0e4a6987 route=/cart-svc/v1/get status=400 latency_ms=53
+2026-10-22T10:12:08 INFO  cart-svc/cs-node-05 ticket linked id=OPS-49078 reason=quota_increase
+2026-10-22T10:12:10 INFO  cart-svc/cs-node-07 deploy step release=cart-svc-4.10.3 step=warmup result=ok took_s=43
+2026-10-22T10:12:14 INFO  cart-svc/cs-node-06 request done id=req-877993a8 route=/cart-svc/v1/status status=200 latency_ms=17
+2026-10-22T10:12:19 WARN  cart-svc/cs-node-15 alert fired rule=gc_pause_long value=65ms threshold=54ms
+2026-10-22T10:12:24 WARN  cart-svc/cs-node-09 alert fired rule=fd_usage_high value=87% threshold=72%
+2026-10-22T10:12:28 WARN  cart-svc/cs-node-02 alert fired rule=queue_depth_high value=99 threshold=96
+2026-10-22T10:12:30 WARN  cart-svc/cs-node-04 alert fired rule=cpu_steal_high value=87% threshold=79%
+2026-10-22T10:12:32 INFO  cart-svc/cs-node-03 config applied key=canary.traffic_percent value=52 by=mjlee
+2026-10-22T10:12:35 INFO  cart-svc/cs-node-08 config applied key=http.max_conns value=false by=sykang
+2026-10-22T10:12:40 INFO  cart-svc/cs-node-06 deploy step release=cart-svc-4.11.6 step=migrate result=ok took_s=216
+2026-10-22T10:12:44 INFO  cart-svc/cs-node-07 request done id=req-71181e76 route=/cart-svc/v1/sync status=201 latency_ms=114
+2026-10-22T10:12:46 INFO  cart-svc/cs-node-20 request done id=req-eae02b50 route=/cart-svc/v1/sync status=204 latency_ms=196
+2026-10-22T10:12:48 INFO  cart-svc/cs-node-15 ticket linked id=OPS-48475 reason=cert_rotation
+2026-10-22T10:12:51 INFO  cart-svc/cs-node-21 request done id=req-e1655314 route=/cart-svc/v1/verify status=200 latency_ms=68
+2026-10-22T10:12:56 INFO  cart-svc/cs-node-04 config applied key=canary.traffic_percent value=28% by=hbyoon
+2026-10-22T10:13:02 INFO  cart-svc/cs-node-12 config applied key=retry.backoff_ms value=47 by=mjlee
+2026-10-22T10:13:06 INFO  cart-svc/cs-node-05 config applied key=breaker.half_open_s value=85% by=jhpark
+2026-10-22T10:13:08 INFO  cart-svc/cs-node-18 request done id=req-dd510ba0 route=/cart-svc/v1/list status=500 latency_ms=305
+2026-10-22T10:13:13 INFO  cart-svc/cs-node-06 config applied key=retry.max_attempts value=false by=hbyoon
+2026-10-22T10:13:15 NOTE  cart-svc/cs-node-08 operator=yjchoi memo="캐시 TTL을 15초로 되돌림. 오래된 응답이 보고됨."
+2026-10-22T10:13:17 NOTE  cart-svc/cs-node-14 operator=sykang memo="cs-node-14 재기동 후 지표 정상 확인."
+2026-10-22T10:13:19 INFO  cart-svc/cs-node-24 config applied key=cache.ttl_s value=true by=mjlee
+2026-10-22T10:13:21 INFO  cart-svc/cs-node-16 ticket linked id=OPS-49010 reason=cert_rotation
+2026-10-22T10:13:25 INFO  cart-svc/cs-node-20 deploy step release=cart-svc-4.18.1 step=healthcheck result=ok took_s=26
+2026-10-22T10:13:29 INFO  cart-svc/cs-node-20 request done id=req-380331d8 route=/cart-svc/v1/status status=503 latency_ms=60
+2026-10-22T10:13:35 INFO  cart-svc/cs-node-12 request done id=req-9b8a2426 route=/cart-svc/v1/cancel status=200 latency_ms=31
+2026-10-22T10:13:42 INFO  cart-svc/cs-node-08 request done id=req-1698c708 route=/cart-svc/v1/create status=201 latency_ms=72
+2026-10-22T10:13:47 INFO  cart-svc/cs-node-15 request done id=req-0cc77be4 route=/cart-svc/v1/create status=200 latency_ms=198
+2026-10-22T10:13:53 WARN  cart-svc/cs-node-08 alert fired rule=error_ratio_high value=93% threshold=81%
+2026-10-22T10:13:58 INFO  cart-svc/cs-node-01 ticket linked id=OPS-47615 reason=flaky_healthcheck
+2026-10-22T10:14:04 INFO  cart-svc/cs-node-23 ticket linked id=OPS-47445 reason=log_volume_spike
+2026-10-22T10:14:11 INFO  cart-svc/cs-node-21 backup finished file=/vault/daily/orders_20261002.tar.zst size_mb=16906 checksum=fb111ec5
+2026-10-22T10:14:17 WARN  cart-svc/cs-node-19 alert fired rule=queue_depth_high value=63 threshold=48
+2026-10-22T10:14:21 INFO  cart-svc/cs-node-11 config applied key=breaker.half_open_s value=false by=jhpark
+2026-10-22T10:14:23 INFO  cart-svc/cs-node-15 pool resize target=cart-svc-cache max_pool_size=311 prev=302
+2026-10-22T10:14:24 INFO  cart-svc/cs-node-03 config applied key=limiter.burst value=26% by=mjlee
+2026-10-22T10:14:27 INFO  cart-svc/cs-node-07 request done id=req-69279202 route=/cart-svc/v1/create status=400 latency_ms=273
+2026-10-22T10:14:34 INFO  cart-svc/cs-node-04 request done id=req-59d79fe5 route=/cart-svc/v1/verify status=429 latency_ms=295
+2026-10-22T10:14:41 INFO  cart-svc/cs-node-07 request done id=req-40706c5e route=/cart-svc/v1/verify status=200 latency_ms=425
+2026-10-22T10:14:42 INFO  cart-svc/cs-node-03 request done id=req-d5723d74 route=/cart-svc/v1/status status=200 latency_ms=34
+2026-10-22T10:14:43 INFO  cart-svc/cs-node-12 request done id=req-15734d10 route=/cart-svc/v1/update status=200 latency_ms=64
+2026-10-22T10:14:50 INFO  cart-svc/cs-node-03 config applied key=http.read_timeout_ms value=true by=hbyoon
+2026-10-22T10:14:54 INFO  cart-svc/cs-node-11 cache stats region=us-we-2b hit_ratio=91.7% evictions=7749
+2026-10-22T10:14:56 INFO  cart-svc/cs-node-08 deploy step release=cart-svc-4.16.4 step=healthcheck result=ok took_s=134
+2026-10-22T10:15:03 INFO  cart-svc/cs-node-03 deploy step release=cart-svc-4.14.9 step=warmup result=ok took_s=187
+2026-10-22T10:15:08 INFO  cart-svc/cs-node-04 request done id=req-e5e5f882 route=/cart-svc/v1/create status=404 latency_ms=153
+2026-10-22T10:15:14 INFO  cart-svc/cs-node-05 config applied key=queue.visibility_s value=60 by=hbyoon
+2026-10-22T10:15:20 INFO  cart-svc/cs-node-15 request done id=req-888f2413 route=/cart-svc/v1/get status=200 latency_ms=48
+2026-10-22T10:15:21 INFO  cart-svc/cs-node-05 request done id=req-62cafbe7 route=/cart-svc/v1/verify status=200 latency_ms=100
+2026-10-22T10:15:22 INFO  cart-svc/cs-node-05 request done id=req-de2bc9c0 route=/cart-svc/v1/list status=409 latency_ms=241
+2026-10-22T10:15:23 INFO  cart-svc/cs-node-24 cache stats region=us-we-2b hit_ratio=66.9% evictions=2541
+2026-10-22T10:15:29 INFO  cart-svc/cs-node-16 deploy step release=cart-svc-4.12.7 step=shift_traffic_100 result=ok took_s=180
+2026-10-22T10:15:33 INFO  cart-svc/cs-node-19 pool resize target=cart-svc-queue max_pool_size=377 prev=412
+2026-10-22T10:15:35 INFO  cart-svc/cs-node-04 request done id=req-abcae5c8 route=/cart-svc/v1/sync status=200 latency_ms=222
+2026-10-22T10:15:42 INFO  cart-svc/cs-node-06 request done id=req-b35a9c1d route=/cart-svc/v1/cancel status=204 latency_ms=332
+2026-10-22T10:15:46 INFO  cart-svc/cs-node-02 request done id=req-368539f2 route=/cart-svc/v1/get status=200 latency_ms=125
+2026-10-22T10:15:53 INFO  cart-svc/cs-node-23 deploy step release=cart-svc-4.15.9 step=shift_traffic_50 result=ok took_s=158
+2026-10-22T10:16:00 INFO  cart-svc/cs-node-05 request done id=req-5954df95 route=/cart-svc/v1/list status=200 latency_ms=54
+2026-10-22T10:16:06 INFO  cart-svc/cs-node-07 request done id=req-739b722f route=/cart-svc/v1/create status=200 latency_ms=276
+2026-10-22T10:16:12 INFO  cart-svc/cs-node-03 deploy step release=cart-svc-4.10.3 step=migrate result=ok took_s=223
+2026-10-22T10:16:15 INFO  cart-svc/cs-node-18 request done id=req-c585a1db route=/cart-svc/v1/cancel status=200 latency_ms=81
+2026-10-22T10:16:16 INFO  cart-svc/cs-node-14 request done id=req-d4a4a748 route=/cart-svc/v1/update status=200 latency_ms=59
+2026-10-22T10:16:20 ERROR cart-svc/cs-node-18 job failed job=cart-svc-cleanup attempt=3 cause=upstream_timeout
+2026-10-22T10:16:24 NOTE  cart-svc/cs-node-14 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-22T10:16:26 NOTE  cart-svc/cs-node-05 operator=yjchoi memo="배치 시작 시각을 59시 82분으로 고정함."
+2026-10-22T10:16:30 INFO  cart-svc/cs-node-09 request done id=req-e313d283 route=/cart-svc/v1/list status=200 latency_ms=58
+2026-10-22T10:16:35 INFO  cart-svc/cs-node-01 request done id=req-b28270a1 route=/cart-svc/v1/list status=429 latency_ms=298
+2026-10-22T10:16:42 INFO  cart-svc/cs-node-08 ticket linked id=OPS-49284 reason=flaky_healthcheck
+2026-10-22T10:16:47 WARN  cart-svc/cs-node-12 alert fired rule=conn_pool_saturated value=74% threshold=60%
+2026-10-22T10:16:50 INFO  cart-svc/cs-node-10 request done id=req-49e652ab route=/cart-svc/v1/list status=200 latency_ms=55
+2026-10-22T10:16:54 INFO  cart-svc/cs-node-22 config applied key=tls.session_cache value=3462 by=hbyoon
+2026-10-22T10:17:01 INFO  cart-svc/cs-node-21 pool resize target=cart-svc-upstream max_pool_size=226 prev=205
+2026-10-22T10:17:02 INFO  cart-svc/cs-node-12 request done id=req-a2b6960b route=/cart-svc/v1/create status=429 latency_ms=121
+2026-10-22T10:17:04 INFO  cart-svc/cs-node-17 cache stats region=ap-ne-2c hit_ratio=95.5% evictions=27463
+2026-10-22T10:17:06 INFO  cart-svc/cs-node-11 config applied key=queue.visibility_s value=380 by=mjlee
+2026-10-22T10:17:09 INFO  cart-svc/cs-node-06 config applied key=http.max_conns value=true by=jhpark
+2026-10-22T10:17:12 WARN  cart-svc/cs-node-09 alert fired rule=conn_pool_saturated value=92% threshold=84%
+2026-10-22T10:17:13 INFO  cart-svc/cs-node-21 request done id=req-4a184a61 route=/cart-svc/v1/create status=201 latency_ms=126
+2026-10-22T10:17:16 INFO  cart-svc/cs-node-20 deploy step release=cart-svc-4.18.3 step=drain result=ok took_s=111
+2026-10-22T10:17:20 WARN  cart-svc/cs-node-02 alert fired rule=error_ratio_high value=57% threshold=47%
+2026-10-22T10:17:21 INFO  cart-svc/cs-node-16 backup finished file=/vault/daily/audit_20261006.tar.zst size_mb=31998 checksum=461ac9a3
+2026-10-22T10:17:24 INFO  cart-svc/cs-node-11 cache stats region=us-we-2b hit_ratio=90.7% evictions=12132
+2026-10-22T10:17:27 INFO  cart-svc/cs-node-23 deploy step release=cart-svc-4.12.8 step=healthcheck result=ok took_s=43
+2026-10-22T10:17:28 INFO  cart-svc/cs-node-11 request done id=req-6ff3a78f route=/cart-svc/v1/status status=503 latency_ms=41
+2026-10-22T10:17:35 INFO  cart-svc/cs-node-10 request done id=req-7d2dcf3f route=/cart-svc/v1/verify status=429 latency_ms=101
+2026-10-22T10:17:39 INFO  cart-svc/cs-node-15 request done id=req-daef0bb4 route=/cart-svc/v1/verify status=404 latency_ms=38
+2026-10-22T10:17:42 NOTE  cart-svc/cs-node-12 operator=dwjung memo="동시 처리 수를 40에서 10로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-22T10:17:47 INFO  cart-svc/cs-node-18 request done id=req-1b96e5da route=/cart-svc/v1/sync status=200 latency_ms=71
+2026-10-22T10:17:52 INFO  cart-svc/cs-node-04 ticket linked id=OPS-49152 reason=runbook_update
+2026-10-22T10:17:55 INFO  cart-svc/cs-node-21 pool resize target=cart-svc-queue max_pool_size=55 prev=37
+2026-10-22T10:18:00 NOTE  cart-svc/cs-node-12 operator=mjlee memo="점검 창을 53분 연장함. 승인: 한지우 리드."
+2026-10-22T10:18:04 INFO  cart-svc/cs-node-07 pool resize target=cart-svc-cache max_pool_size=201 prev=249
+2026-10-22T10:18:11 INFO  cart-svc/cs-node-11 deploy step release=cart-svc-4.20.3 step=shift_traffic_10 result=ok took_s=32
+2026-10-22T10:18:13 INFO  cart-svc/cs-node-21 deploy step release=cart-svc-4.13.8 step=start result=ok took_s=10
+2026-10-22T10:18:18 INFO  cart-svc/cs-node-11 config applied key=dns.ttl_s value=false by=shkim
+2026-10-22T10:18:22 INFO  cart-svc/cs-node-13 pool resize target=cart-svc-cache max_pool_size=271 prev=216
+2026-10-22T10:18:26 INFO  cart-svc/cs-node-04 deploy step release=cart-svc-4.14.5 step=shift_traffic_100 result=ok took_s=134
+2026-10-22T10:18:30 INFO  cart-svc/cs-node-17 request done id=req-7bfac7bc route=/cart-svc/v1/get status=200 latency_ms=80
+2026-10-22T10:18:36 NOTE  cart-svc/cs-node-08 operator=yjchoi memo="cs-node-08 재기동 후 지표 정상 확인."
+2026-10-22T10:18:38 INFO  cart-svc/cs-node-21 request done id=req-cb7356b0 route=/cart-svc/v1/get status=200 latency_ms=293
+2026-10-22T10:18:40 INFO  cart-svc/cs-node-15 request done id=req-5a941ea7 route=/cart-svc/v1/get status=200 latency_ms=175
+2026-10-22T10:18:42 INFO  cart-svc/cs-node-19 config applied key=http.max_conns value=70% by=ejlim
+2026-10-22T10:18:47 INFO  cart-svc/cs-node-06 cache stats region=ap-ne-2a hit_ratio=65.7% evictions=14087
+2026-10-22T10:18:50 INFO  cart-svc/cs-node-15 pool resize target=cart-svc-queue max_pool_size=27 prev=82
+2026-10-22T10:18:51 INFO  cart-svc/cs-node-01 request done id=req-86409325 route=/cart-svc/v1/verify status=200 latency_ms=595
+2026-10-22T10:18:55 ERROR cart-svc/cs-node-12 job failed job=cart-svc-rollup attempt=5 cause=dns_failure
+2026-10-22T10:19:01 INFO  cart-svc/cs-node-10 request done id=req-d8638bf7 route=/cart-svc/v1/get status=200 latency_ms=69
+2026-10-22T10:19:02 INFO  cart-svc/cs-node-12 request done id=req-d2479750 route=/cart-svc/v1/sync status=200 latency_ms=51
+2026-10-22T10:19:04 INFO  cart-svc/cs-node-11 pool resize target=cart-svc-cache max_pool_size=353 prev=349
+2026-10-22T10:19:08 INFO  cart-svc/cs-node-02 deploy step release=cart-svc-4.19.9 step=migrate result=ok took_s=14
+2026-10-22T10:19:10 INFO  cart-svc/cs-node-06 request done id=req-b8289070 route=/cart-svc/v1/cancel status=404 latency_ms=204
+2026-10-22T10:19:17 INFO  cart-svc/cs-node-18 request done id=req-daafa26c route=/cart-svc/v1/update status=200 latency_ms=137
+2026-10-22T10:19:22 INFO  cart-svc/cs-node-09 request done id=req-b407b5a4 route=/cart-svc/v1/get status=200 latency_ms=122
+2026-10-22T10:19:26 INFO  cart-svc/cs-node-13 request done id=req-d6a8a2ed route=/cart-svc/v1/verify status=204 latency_ms=63
+2026-10-22T10:19:27 NOTE  cart-svc/cs-node-17 operator=ejlim memo="타임아웃을 19ms에서 27ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-22T10:19:28 INFO  cart-svc/cs-node-14 request done id=req-dd41f7fd route=/cart-svc/v1/verify status=500 latency_ms=235
+2026-10-22T10:19:33 INFO  cart-svc/cs-node-12 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=36145 checksum=3fe7bc32
+2026-10-22T10:19:35 INFO  cart-svc/cs-node-13 request done id=req-6605764e route=/cart-svc/v1/create status=404 latency_ms=134
+2026-10-22T10:19:37 INFO  cart-svc/cs-node-14 request done id=req-7b19b019 route=/cart-svc/v1/status status=200 latency_ms=104
+2026-10-22T10:19:39 INFO  cart-svc/cs-node-03 request done id=req-fe37a7e6 route=/cart-svc/v1/list status=200 latency_ms=120
+2026-10-22T10:19:46 INFO  cart-svc/cs-node-06 request done id=req-40bdd208 route=/cart-svc/v1/verify status=503 latency_ms=62
+2026-10-22T10:19:47 INFO  cart-svc/cs-node-05 ticket linked id=OPS-48614 reason=cert_rotation
+2026-10-22T10:19:49 ERROR cart-svc/cs-node-24 job failed job=cart-svc-reindex attempt=1 cause=lock_wait_exceeded
+2026-10-22T10:19:53 INFO  cart-svc/cs-node-16 request done id=req-d6fe79f5 route=/cart-svc/v1/status status=200 latency_ms=177
+2026-10-22T10:19:54 NOTE  cart-svc/cs-node-10 operator=mjlee memo="로그 보존 기간은 37일로 유지하기로 함."
+2026-10-22T10:20:01 INFO  cart-svc/cs-node-22 request done id=req-98116c6e route=/cart-svc/v1/cancel status=200 latency_ms=56
+2026-10-22T10:20:02 WARN  cart-svc/cs-node-17 alert fired rule=p99_latency_high value=62ms threshold=47ms
+2026-10-22T10:20:03 INFO  cart-svc/cs-node-15 request done id=req-a2c7e2d1 route=/cart-svc/v1/update status=200 latency_ms=114
+2026-10-22T10:20:05 INFO  cart-svc/cs-node-01 request done id=req-a5ee4453 route=/cart-svc/v1/status status=429 latency_ms=204
+2026-10-22T10:20:07 INFO  cart-svc/cs-node-06 pool resize target=cart-svc-db max_pool_size=267 prev=315
+2026-10-22T10:20:10 INFO  cart-svc/cs-node-12 request done id=req-bc0ebc5b route=/cart-svc/v1/list status=400 latency_ms=380
+2026-10-22T10:20:17 INFO  cart-svc/cs-node-18 request done id=req-733e5536 route=/cart-svc/v1/create status=200 latency_ms=178
+2026-10-22T10:20:24 INFO  cart-svc/cs-node-07 request done id=req-4d9f0dec route=/cart-svc/v1/sync status=404 latency_ms=153
+2026-10-22T10:20:30 INFO  cart-svc/cs-node-04 request done id=req-ee7cfd01 route=/cart-svc/v1/verify status=200 latency_ms=172
+2026-10-22T10:20:31 INFO  cart-svc/cs-node-19 ticket linked id=OPS-47164 reason=node_drain
+2026-10-22T10:20:38 NOTE  cart-svc/cs-node-10 operator=jhpark memo="cs-node-10 재기동 후 지표 정상 확인."
+2026-10-22T10:20:43 INFO  cart-svc/cs-node-10 cache stats region=ap-se-1a hit_ratio=68.9% evictions=2633
+2026-10-22T10:20:46 INFO  cart-svc/cs-node-07 request done id=req-01b89e8e route=/cart-svc/v1/get status=200 latency_ms=461
+2026-10-22T10:20:48 INFO  cart-svc/cs-node-16 pool resize target=cart-svc-worker max_pool_size=149 prev=139
+2026-10-22T10:20:55 ERROR cart-svc/cs-node-22 job failed job=cart-svc-rollup attempt=3 cause=lock_wait_exceeded
+2026-10-22T10:20:58 INFO  cart-svc/cs-node-05 request done id=req-8aa59cbb route=/cart-svc/v1/update status=200 latency_ms=330
+2026-10-22T10:21:01 INFO  cart-svc/cs-node-07 config applied key=queue.visibility_s value=35% by=jhpark
+2026-10-22T10:21:03 ERROR cart-svc/cs-node-09 job failed job=cart-svc-reindex attempt=2 cause=oom_killed
+2026-10-22T10:21:04 INFO  cart-svc/cs-node-12 deploy step release=cart-svc-4.10.4 step=drain result=ok took_s=60
+2026-10-22T10:21:11 INFO  cart-svc/cs-node-02 request done id=req-f4fc5199 route=/cart-svc/v1/list status=200 latency_ms=59
+2026-10-22T10:21:13 INFO  cart-svc/cs-node-09 pool resize target=cart-svc-queue max_pool_size=218 prev=212
+2026-10-22T10:21:15 INFO  cart-svc/cs-node-17 config applied key=flush.interval_ms value=38 by=jhpark
+2026-10-22T10:21:21 INFO  cart-svc/cs-node-09 request done id=req-f079e530 route=/cart-svc/v1/verify status=200 latency_ms=220
+2026-10-22T10:21:27 WARN  cart-svc/cs-node-18 alert fired rule=cpu_steal_high value=86% threshold=73%
+2026-10-22T10:21:32 INFO  cart-svc/cs-node-17 request done id=req-b6a8f2d7 route=/cart-svc/v1/create status=201 latency_ms=71
+2026-10-22T10:21:36 INFO  cart-svc/cs-node-22 request done id=req-84cac9e2 route=/cart-svc/v1/get status=200 latency_ms=73
+2026-10-22T10:21:37 WARN  cart-svc/cs-node-23 alert fired rule=replica_lag_high value=83s threshold=76s
+2026-10-22T10:21:39 ERROR cart-svc/cs-node-11 job failed job=cart-svc-rollup attempt=5 cause=upstream_timeout
+2026-10-22T10:21:46 INFO  cart-svc/cs-node-04 pool resize target=cart-svc-worker max_pool_size=275 prev=308
+2026-10-22T10:21:51 INFO  cart-svc/cs-node-14 deploy step release=cart-svc-4.14.2 step=healthcheck result=ok took_s=3
+2026-10-22T10:21:57 INFO  cart-svc/cs-node-10 request done id=req-7568c464 route=/cart-svc/v1/update status=200 latency_ms=66
+2026-10-22T10:22:01 INFO  cart-svc/cs-node-15 request done id=req-7423513e route=/cart-svc/v1/create status=201 latency_ms=165
+2026-10-22T10:22:07 ERROR cart-svc/cs-node-11 job failed job=cart-svc-export attempt=4 cause=upstream_timeout
+2026-10-22T10:22:11 INFO  cart-svc/cs-node-16 request done id=req-562a3c67 route=/cart-svc/v1/sync status=500 latency_ms=90
+2026-10-22T10:22:12 INFO  cart-svc/cs-node-13 request done id=req-6f035329 route=/cart-svc/v1/update status=409 latency_ms=182
+2026-10-22T10:22:15 INFO  cart-svc/cs-node-08 backup finished file=/vault/weekly/sessions_2026w40.tar.zst size_mb=69796 checksum=88ee9f28
+2026-10-22T10:22:17 WARN  cart-svc/cs-node-10 alert fired rule=disk_usage_warning value=96% threshold=92%
+2026-10-22T10:22:18 NOTE  cart-svc/cs-node-06 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 28일 남음."
+2026-10-22T10:22:25 INFO  cart-svc/cs-node-20 config applied key=shard.count value=59 by=shkim
+2026-10-22T10:22:28 WARN  cart-svc/cs-node-05 alert fired rule=p99_latency_high value=54ms threshold=42ms
+2026-10-22T10:22:31 INFO  cart-svc/cs-node-22 request done id=req-a721eade route=/cart-svc/v1/update status=200 latency_ms=648
+2026-10-22T10:22:36 INFO  cart-svc/cs-node-02 request done id=req-08b2bdeb route=/cart-svc/v1/list status=200 latency_ms=131
+2026-10-22T10:22:37 INFO  cart-svc/cs-node-22 request done id=req-37dd88b5 route=/cart-svc/v1/update status=200 latency_ms=61
+2026-10-22T10:22:39 INFO  cart-svc/cs-node-02 deploy step release=cart-svc-4.15.8 step=shift_traffic_100 result=ok took_s=217
+2026-10-22T10:22:45 INFO  cart-svc/cs-node-14 request done id=req-cfba932a route=/cart-svc/v1/cancel status=200 latency_ms=166
+2026-10-22T10:22:47 WARN  cart-svc/cs-node-07 alert fired rule=gc_pause_long value=76ms threshold=64ms
+2026-10-22T10:22:50 INFO  cart-svc/cs-node-07 pool resize target=cart-svc-cache max_pool_size=218 prev=275
+2026-10-22T10:22:55 INFO  cart-svc/cs-node-12 request done id=req-599a852d route=/cart-svc/v1/sync status=200 latency_ms=142
+2026-10-22T10:23:02 WARN  cart-svc/cs-node-06 alert fired rule=queue_depth_high value=72 threshold=66
+2026-10-22T10:23:04 INFO  cart-svc/cs-node-12 backup finished file=/vault/weekly/sessions_2026w42.tar.zst size_mb=17054 checksum=791ce9d3
+2026-10-22T10:23:10 ERROR cart-svc/cs-node-20 job failed job=cart-svc-export attempt=2 cause=dns_failure
+2026-10-22T10:23:15 INFO  cart-svc/cs-node-11 backup finished file=/vault/daily/users_20261016.tar.zst size_mb=41298 checksum=3cf05615
+2026-10-22T10:23:22 INFO  cart-svc/cs-node-22 config applied key=shard.count value=true by=sykang
+2026-10-22T10:23:24 INFO  cart-svc/cs-node-09 request done id=req-1cdac4c7 route=/cart-svc/v1/get status=404 latency_ms=103
+2026-10-22T10:23:31 WARN  cart-svc/cs-node-19 alert fired rule=queue_depth_high value=98 threshold=84
+2026-10-22T10:23:34 INFO  cart-svc/cs-node-01 request done id=req-7f4163a3 route=/cart-svc/v1/status status=200 latency_ms=152
+2026-10-22T10:23:41 INFO  cart-svc/cs-node-09 request done id=req-353527f4 route=/cart-svc/v1/get status=200 latency_ms=64
+2026-10-22T10:23:48 NOTE  cart-svc/cs-node-16 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 2일 남음."
+2026-10-22T10:23:49 INFO  cart-svc/cs-node-08 pool resize target=cart-svc-worker max_pool_size=273 prev=301
+2026-10-22T10:23:53 INFO  cart-svc/cs-node-18 cache stats region=us-we-2b hit_ratio=85.1% evictions=5590
+2026-10-22T10:23:58 INFO  cart-svc/cs-node-09 deploy step release=cart-svc-4.20.3 step=shift_traffic_10 result=ok took_s=180
+2026-10-22T10:24:03 INFO  cart-svc/cs-node-05 request done id=req-81c9c6dc route=/cart-svc/v1/status status=200 latency_ms=120
+2026-10-22T10:24:09 INFO  cart-svc/cs-node-22 request done id=req-bad97ffe route=/cart-svc/v1/update status=204 latency_ms=210
+2026-10-22T10:24:13 INFO  cart-svc/cs-node-16 config applied key=http.read_timeout_ms value=85% by=dwjung
+2026-10-22T10:24:18 INFO  cart-svc/cs-node-07 deploy step release=cart-svc-4.12.2 step=verify result=ok took_s=14
+2026-10-22T10:24:21 INFO  cart-svc/cs-node-21 request done id=req-20290bc5 route=/cart-svc/v1/list status=200 latency_ms=70
+2026-10-22T10:24:28 INFO  cart-svc/cs-node-12 request done id=req-4449d4bf route=/cart-svc/v1/cancel status=200 latency_ms=521
+2026-10-22T10:24:34 INFO  cart-svc/cs-node-04 request done id=req-5b9c6bb5 route=/cart-svc/v1/cancel status=200 latency_ms=70
+2026-10-22T10:24:41 INFO  cart-svc/cs-node-17 pool resize target=cart-svc-cache max_pool_size=83 prev=82
+2026-10-22T10:24:42 INFO  cart-svc/cs-node-07 request done id=req-170c8e8a route=/cart-svc/v1/sync status=204 latency_ms=153
+2026-10-22T10:24:48 INFO  cart-svc/cs-node-23 config applied key=canary.traffic_percent value=39 by=yjchoi
+2026-10-22T10:24:54 INFO  cart-svc/cs-node-15 request done id=req-8d9d16e0 route=/cart-svc/v1/list status=500 latency_ms=84
+2026-10-22T10:24:55 INFO  cart-svc/cs-node-09 request done id=req-4e661fd3 route=/cart-svc/v1/update status=500 latency_ms=179
+2026-10-22T10:25:02 INFO  cart-svc/cs-node-01 backup finished file=/vault/daily/inventory_20261011.tar.zst size_mb=29883 checksum=70419bb1
+2026-10-22T10:25:09 INFO  cart-svc/cs-node-23 request done id=req-c7393409 route=/cart-svc/v1/sync status=200 latency_ms=42
+2026-10-22T10:25:13 INFO  cart-svc/cs-node-19 deploy step release=cart-svc-4.16.7 step=warmup result=ok took_s=116
+2026-10-22T10:25:15 WARN  cart-svc/cs-node-02 alert fired rule=error_ratio_high value=76% threshold=70%
+2026-10-22T10:25:22 INFO  cart-svc/cs-node-15 config applied key=shard.count value=4127 by=mjlee
+2026-10-22T10:25:25 INFO  cart-svc/cs-node-19 request done id=req-2464b941 route=/cart-svc/v1/verify status=200 latency_ms=28
+2026-10-22T10:25:32 INFO  cart-svc/cs-node-14 pool resize target=cart-svc-queue max_pool_size=382 prev=335
+2026-10-22T10:25:36 ERROR cart-svc/cs-node-16 job failed job=cart-svc-rollup attempt=4 cause=bad_checksum
+2026-10-22T10:25:41 INFO  cart-svc/cs-node-14 backup finished file=/vault/weekly/inventory_2026w34.tar.zst size_mb=53613 checksum=1bc659f0
+2026-10-22T10:25:48 INFO  cart-svc/cs-node-07 request done id=req-9f714e24 route=/cart-svc/v1/status status=200 latency_ms=33
+2026-10-22T10:25:53 INFO  cart-svc/cs-node-14 request done id=req-571d1af3 route=/cart-svc/v1/get status=429 latency_ms=58
+2026-10-22T10:25:59 INFO  cart-svc/cs-node-20 config applied key=worker.concurrency value=false by=shkim
+2026-10-22T10:26:01 WARN  cart-svc/cs-node-14 alert fired rule=replica_lag_high value=56s threshold=49s
+2026-10-22T10:26:08 INFO  cart-svc/cs-node-02 request done id=req-776f84fd route=/cart-svc/v1/sync status=200 latency_ms=77
+2026-10-22T10:26:14 INFO  cart-svc/cs-node-08 request done id=req-5c570ee9 route=/cart-svc/v1/cancel status=200 latency_ms=312
+2026-10-22T10:26:16 INFO  cart-svc/cs-node-08 config applied key=tls.session_cache value=74% by=shkim
+2026-10-22T10:26:19 INFO  cart-svc/cs-node-02 pool resize target=cart-svc-db max_pool_size=154 prev=113
+2026-10-22T10:26:22 INFO  cart-svc/cs-node-16 request done id=req-a9980c5a route=/cart-svc/v1/verify status=503 latency_ms=38
+2026-10-22T10:26:29 INFO  cart-svc/cs-node-02 pool resize target=cart-svc-worker max_pool_size=280 prev=227
+2026-10-22T10:26:35 INFO  cart-svc/cs-node-05 config applied key=flush.interval_ms value=true by=jhpark
+2026-10-22T10:26:36 WARN  cart-svc/cs-node-22 alert fired rule=gc_pause_long value=59ms threshold=49ms
+2026-10-22T10:26:37 INFO  cart-svc/cs-node-10 deploy step release=cart-svc-4.12.7 step=pull_image result=ok took_s=103
+2026-10-22T10:26:38 ERROR cart-svc/cs-node-16 job failed job=cart-svc-cleanup attempt=5 cause=dns_failure
+2026-10-22T10:26:44 INFO  cart-svc/cs-node-13 config applied key=queue.visibility_s value=3458 by=dwjung
+2026-10-22T10:26:45 INFO  cart-svc/cs-node-10 request done id=req-c1945ddb route=/cart-svc/v1/list status=409 latency_ms=223
+2026-10-22T10:26:52 INFO  cart-svc/cs-node-08 request done id=req-2f988620 route=/cart-svc/v1/status status=200 latency_ms=135
+2026-10-22T10:26:59 INFO  cart-svc/cs-node-11 ticket linked id=OPS-49810 reason=oncall_handoff
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

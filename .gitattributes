@@ -4,3 +4,6 @@
 * text=auto eol=lf
 *.jsonl -text
 *.out -text
+# lab/ctxeval holds experiment records copied as they were from a Windows PC (some outputs have CRLF):
+# store and check them out byte for byte.
+lab/ctxeval/** -text

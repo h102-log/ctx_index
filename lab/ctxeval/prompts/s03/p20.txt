@@ -1,0 +1,424 @@
+참고용 로그 20: 쿠폰 서비스(coupon-svc) 발급 폭주 구간. '확인'이라고만 답해 줘.
+
+2026-10-24T00:52:31 NOTE  coupon-svc/cu-node-06 operator=sykang memo="캐시 TTL을 26초로 되돌림. 오래된 응답이 보고됨."
+2026-10-24T00:52:37 INFO  coupon-svc/cu-node-08 backup finished file=/vault/weekly/inventory_2026w41.tar.zst size_mb=71120 checksum=ddbd9f32
+2026-10-24T00:52:43 INFO  coupon-svc/cu-node-12 request done id=req-92529392 route=/coupon-svc/v1/get status=200 latency_ms=398
+2026-10-24T00:52:45 NOTE  coupon-svc/cu-node-16 operator=shkim memo="로그 보존 기간은 17일로 유지하기로 함."
+2026-10-24T00:52:47 INFO  coupon-svc/cu-node-24 config applied key=canary.traffic_percent value=2087 by=ejlim
+2026-10-24T00:52:50 INFO  coupon-svc/cu-node-07 request done id=req-69949658 route=/coupon-svc/v1/cancel status=200 latency_ms=46
+2026-10-24T00:52:56 NOTE  coupon-svc/cu-node-23 operator=ejlim memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-24T00:53:01 INFO  coupon-svc/cu-node-24 request done id=req-07989c06 route=/coupon-svc/v1/cancel status=201 latency_ms=344
+2026-10-24T00:53:03 WARN  coupon-svc/cu-node-19 alert fired rule=fd_usage_high value=62% threshold=55%
+2026-10-24T00:53:08 INFO  coupon-svc/cu-node-10 ticket linked id=OPS-49052 reason=cert_rotation
+2026-10-24T00:53:13 INFO  coupon-svc/cu-node-11 deploy step release=coupon-svc-4.22.0 step=shift_traffic_10 result=ok took_s=177
+2026-10-24T00:53:15 INFO  coupon-svc/cu-node-01 cache stats region=ap-ne-2c hit_ratio=76.5% evictions=10225
+2026-10-24T00:53:21 WARN  coupon-svc/cu-node-06 alert fired rule=conn_pool_saturated value=57% threshold=51%
+2026-10-24T00:53:28 INFO  coupon-svc/cu-node-04 pool resize target=coupon-svc-queue max_pool_size=336 prev=350
+2026-10-24T00:53:32 INFO  coupon-svc/cu-node-07 request done id=req-88b3e694 route=/coupon-svc/v1/list status=404 latency_ms=246
+2026-10-24T00:53:34 INFO  coupon-svc/cu-node-21 request done id=req-3261ae85 route=/coupon-svc/v1/get status=400 latency_ms=27
+2026-10-24T00:53:37 INFO  coupon-svc/cu-node-18 pool resize target=coupon-svc-cache max_pool_size=73 prev=29
+2026-10-24T00:53:39 INFO  coupon-svc/cu-node-12 ticket linked id=OPS-49876 reason=schema_change
+2026-10-24T00:53:43 INFO  coupon-svc/cu-node-14 deploy step release=coupon-svc-4.12.5 step=healthcheck result=ok took_s=175
+2026-10-24T00:53:48 INFO  coupon-svc/cu-node-21 request done id=req-0d31fefb route=/coupon-svc/v1/verify status=500 latency_ms=303
+2026-10-24T00:53:49 INFO  coupon-svc/cu-node-18 request done id=req-62b521c8 route=/coupon-svc/v1/cancel status=200 latency_ms=411
+2026-10-24T00:53:56 WARN  coupon-svc/cu-node-21 alert fired rule=disk_usage_warning value=99% threshold=92%
+2026-10-24T00:53:58 INFO  coupon-svc/cu-node-03 pool resize target=coupon-svc-queue max_pool_size=161 prev=154
+2026-10-24T00:54:01 INFO  coupon-svc/cu-node-23 request done id=req-c0d408a0 route=/coupon-svc/v1/get status=404 latency_ms=140
+2026-10-24T00:54:05 INFO  coupon-svc/cu-node-20 request done id=req-6547cb60 route=/coupon-svc/v1/list status=200 latency_ms=137
+2026-10-24T00:54:08 INFO  coupon-svc/cu-node-04 request done id=req-0e8eae27 route=/coupon-svc/v1/cancel status=200 latency_ms=8
+2026-10-24T00:54:15 INFO  coupon-svc/cu-node-18 request done id=req-eb3b0a33 route=/coupon-svc/v1/sync status=429 latency_ms=207
+2026-10-24T00:54:22 INFO  coupon-svc/cu-node-16 request done id=req-3d170eb5 route=/coupon-svc/v1/list status=503 latency_ms=127
+2026-10-24T00:54:25 INFO  coupon-svc/cu-node-08 request done id=req-73234321 route=/coupon-svc/v1/create status=200 latency_ms=46
+2026-10-24T00:54:27 INFO  coupon-svc/cu-node-18 request done id=req-a849f557 route=/coupon-svc/v1/sync status=200 latency_ms=122
+2026-10-24T00:54:29 INFO  coupon-svc/cu-node-15 pool resize target=coupon-svc-queue max_pool_size=191 prev=240
+2026-10-24T00:54:31 INFO  coupon-svc/cu-node-22 request done id=req-7987b365 route=/coupon-svc/v1/verify status=200 latency_ms=39
+2026-10-24T00:54:33 INFO  coupon-svc/cu-node-17 request done id=req-0ceaead4 route=/coupon-svc/v1/list status=200 latency_ms=292
+2026-10-24T00:54:39 NOTE  coupon-svc/cu-node-07 operator=hbyoon memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-24T00:54:45 WARN  coupon-svc/cu-node-10 alert fired rule=queue_depth_high value=90 threshold=75
+2026-10-24T00:54:51 ERROR coupon-svc/cu-node-11 job failed job=coupon-svc-export attempt=1 cause=dns_failure
+2026-10-24T00:54:54 INFO  coupon-svc/cu-node-05 config applied key=worker.concurrency value=false by=dwjung
+2026-10-24T00:55:01 INFO  coupon-svc/cu-node-17 request done id=req-debe754c route=/coupon-svc/v1/sync status=200 latency_ms=77
+2026-10-24T00:55:03 INFO  coupon-svc/cu-node-05 request done id=req-243c2fa2 route=/coupon-svc/v1/status status=404 latency_ms=220
+2026-10-24T00:55:09 NOTE  coupon-svc/cu-node-08 operator=dwjung memo="cu-node-08 재기동 후 지표 정상 확인."
+2026-10-24T00:55:14 INFO  coupon-svc/cu-node-18 request done id=req-5ebffc85 route=/coupon-svc/v1/update status=204 latency_ms=346
+2026-10-24T00:55:15 NOTE  coupon-svc/cu-node-13 operator=shkim memo="로그 보존 기간은 48일로 유지하기로 함."
+2026-10-24T00:55:16 INFO  coupon-svc/cu-node-17 request done id=req-b772326c route=/coupon-svc/v1/list status=200 latency_ms=493
+2026-10-24T00:55:22 INFO  coupon-svc/cu-node-07 pool resize target=coupon-svc-upstream max_pool_size=146 prev=142
+2026-10-24T00:55:25 INFO  coupon-svc/cu-node-07 deploy step release=coupon-svc-4.19.1 step=pull_image result=ok took_s=75
+2026-10-24T00:55:30 INFO  coupon-svc/cu-node-04 request done id=req-10b3d6ec route=/coupon-svc/v1/update status=409 latency_ms=115
+2026-10-24T00:55:37 INFO  coupon-svc/cu-node-12 cache stats region=us-we-2b hit_ratio=68.0% evictions=24145
+2026-10-24T00:55:39 INFO  coupon-svc/cu-node-23 request done id=req-6b539a37 route=/coupon-svc/v1/update status=200 latency_ms=61
+2026-10-24T00:55:41 INFO  coupon-svc/cu-node-11 pool resize target=coupon-svc-upstream max_pool_size=396 prev=413
+2026-10-24T00:55:44 INFO  coupon-svc/cu-node-22 deploy step release=coupon-svc-4.11.3 step=warmup result=ok took_s=159
+2026-10-24T00:55:49 INFO  coupon-svc/cu-node-12 config applied key=dns.ttl_s value=7402 by=jhpark
+2026-10-24T00:55:51 ERROR coupon-svc/cu-node-04 job failed job=coupon-svc-rollup attempt=4 cause=oom_killed
+2026-10-24T00:55:55 INFO  coupon-svc/cu-node-15 request done id=req-1734f1dd route=/coupon-svc/v1/get status=200 latency_ms=90
+2026-10-24T00:55:59 WARN  coupon-svc/cu-node-18 alert fired rule=error_ratio_high value=81% threshold=67%
+2026-10-24T00:56:05 INFO  coupon-svc/cu-node-19 request done id=req-2e725cf6 route=/coupon-svc/v1/list status=429 latency_ms=36
+2026-10-24T00:56:12 WARN  coupon-svc/cu-node-14 alert fired rule=gc_pause_long value=92ms threshold=91ms
+2026-10-24T00:56:17 WARN  coupon-svc/cu-node-19 alert fired rule=gc_pause_long value=52ms threshold=49ms
+2026-10-24T00:56:19 INFO  coupon-svc/cu-node-02 request done id=req-a1258c1d route=/coupon-svc/v1/verify status=200 latency_ms=235
+2026-10-24T00:56:26 INFO  coupon-svc/cu-node-04 config applied key=queue.batch_size value=false by=mjlee
+2026-10-24T00:56:33 INFO  coupon-svc/cu-node-07 cache stats region=ap-ne-2a hit_ratio=73.0% evictions=26050
+2026-10-24T00:56:35 ERROR coupon-svc/cu-node-10 job failed job=coupon-svc-reindex attempt=2 cause=oom_killed
+2026-10-24T00:56:38 INFO  coupon-svc/cu-node-18 request done id=req-890d522d route=/coupon-svc/v1/sync status=200 latency_ms=90
+2026-10-24T00:56:43 INFO  coupon-svc/cu-node-18 request done id=req-cf384fe6 route=/coupon-svc/v1/sync status=201 latency_ms=229
+2026-10-24T00:56:48 INFO  coupon-svc/cu-node-23 config applied key=canary.latency_p99_threshold_ms value=85% by=shkim
+2026-10-24T00:56:52 WARN  coupon-svc/cu-node-22 alert fired rule=replica_lag_high value=89s threshold=85s
+2026-10-24T00:56:56 WARN  coupon-svc/cu-node-13 alert fired rule=heap_used_high value=70% threshold=59%
+2026-10-24T00:56:58 INFO  coupon-svc/cu-node-02 config applied key=worker.concurrency value=90% by=mjlee
+2026-10-24T00:57:01 INFO  coupon-svc/cu-node-13 backup finished file=/vault/weekly/sessions_2026w44.tar.zst size_mb=30346 checksum=8d8cabfc
+2026-10-24T00:57:04 INFO  coupon-svc/cu-node-12 request done id=req-95c37140 route=/coupon-svc/v1/status status=200 latency_ms=100
+2026-10-24T00:57:11 INFO  coupon-svc/cu-node-23 ticket linked id=OPS-48951 reason=flaky_healthcheck
+2026-10-24T00:57:14 INFO  coupon-svc/cu-node-15 deploy step release=coupon-svc-4.15.6 step=drain result=ok took_s=80
+2026-10-24T00:57:20 INFO  coupon-svc/cu-node-19 request done id=req-dfdee125 route=/coupon-svc/v1/get status=200 latency_ms=17
+2026-10-24T00:57:27 INFO  coupon-svc/cu-node-14 cache stats region=ap-ne-2b hit_ratio=94.0% evictions=38438
+2026-10-24T00:57:28 INFO  coupon-svc/cu-node-21 request done id=req-39f04b9a route=/coupon-svc/v1/update status=200 latency_ms=321
+2026-10-24T00:57:34 WARN  coupon-svc/cu-node-01 alert fired rule=queue_depth_high value=70 threshold=58
+2026-10-24T00:57:39 INFO  coupon-svc/cu-node-02 request done id=req-78478177 route=/coupon-svc/v1/status status=503 latency_ms=54
+2026-10-24T00:57:43 INFO  coupon-svc/cu-node-05 request done id=req-a8fde660 route=/coupon-svc/v1/update status=404 latency_ms=77
+2026-10-24T00:57:44 INFO  coupon-svc/cu-node-15 request done id=req-a148c312 route=/coupon-svc/v1/list status=503 latency_ms=64
+2026-10-24T00:57:51 INFO  coupon-svc/cu-node-19 ticket linked id=OPS-47650 reason=flaky_healthcheck
+2026-10-24T00:57:53 WARN  coupon-svc/cu-node-15 alert fired rule=heap_used_high value=53% threshold=48%
+2026-10-24T00:57:58 INFO  coupon-svc/cu-node-15 pool resize target=coupon-svc-queue max_pool_size=294 prev=327
+2026-10-24T00:58:02 INFO  coupon-svc/cu-node-09 request done id=req-965a1fe8 route=/coupon-svc/v1/get status=200 latency_ms=271
+2026-10-24T00:58:08 WARN  coupon-svc/cu-node-12 alert fired rule=heap_used_high value=72% threshold=59%
+2026-10-24T00:58:15 WARN  coupon-svc/cu-node-24 alert fired rule=fd_usage_high value=68% threshold=60%
+2026-10-24T00:58:16 INFO  coupon-svc/cu-node-19 pool resize target=coupon-svc-db max_pool_size=348 prev=312
+2026-10-24T00:58:18 INFO  coupon-svc/cu-node-24 request done id=req-ffe3c27e route=/coupon-svc/v1/verify status=200 latency_ms=92
+2026-10-24T00:58:22 INFO  coupon-svc/cu-node-17 request done id=req-75b6f0a1 route=/coupon-svc/v1/get status=500 latency_ms=80
+2026-10-24T00:58:29 INFO  coupon-svc/cu-node-12 request done id=req-e74cd092 route=/coupon-svc/v1/status status=200 latency_ms=194
+2026-10-24T00:58:35 INFO  coupon-svc/cu-node-17 backup finished file=/vault/weekly/users_2026w31.tar.zst size_mb=10865 checksum=e8beb8a5
+2026-10-24T00:58:36 INFO  coupon-svc/cu-node-01 request done id=req-d9317500 route=/coupon-svc/v1/sync status=429 latency_ms=62
+2026-10-24T00:58:38 INFO  coupon-svc/cu-node-06 request done id=req-693776cd route=/coupon-svc/v1/create status=200 latency_ms=222
+2026-10-24T00:58:39 INFO  coupon-svc/cu-node-22 config applied key=dns.ttl_s value=true by=jhpark
+2026-10-24T00:58:41 NOTE  coupon-svc/cu-node-11 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-24T00:58:44 INFO  coupon-svc/cu-node-23 pool resize target=coupon-svc-db max_pool_size=166 prev=202
+2026-10-24T00:58:45 INFO  coupon-svc/cu-node-11 request done id=req-056cc3c3 route=/coupon-svc/v1/get status=204 latency_ms=44
+2026-10-24T00:58:51 INFO  coupon-svc/cu-node-18 deploy step release=coupon-svc-4.14.4 step=migrate result=ok took_s=36
+2026-10-24T00:58:55 INFO  coupon-svc/cu-node-24 request done id=req-099e3bf2 route=/coupon-svc/v1/status status=404 latency_ms=55
+2026-10-24T00:58:56 INFO  coupon-svc/cu-node-16 request done id=req-514ea6f5 route=/coupon-svc/v1/get status=200 latency_ms=95
+2026-10-24T00:59:00 INFO  coupon-svc/cu-node-11 request done id=req-12f58495 route=/coupon-svc/v1/update status=201 latency_ms=213
+2026-10-24T00:59:04 INFO  coupon-svc/cu-node-04 ticket linked id=OPS-49990 reason=log_volume_spike
+2026-10-24T00:59:06 INFO  coupon-svc/cu-node-20 request done id=req-2a764348 route=/coupon-svc/v1/cancel status=200 latency_ms=127
+2026-10-24T00:59:08 INFO  coupon-svc/cu-node-21 deploy step release=coupon-svc-4.17.4 step=warmup result=ok took_s=141
+2026-10-24T00:59:09 INFO  coupon-svc/cu-node-02 request done id=req-dc0b3a67 route=/coupon-svc/v1/cancel status=200 latency_ms=126
+2026-10-24T00:59:12 INFO  coupon-svc/cu-node-02 config applied key=canary.traffic_percent value=false by=yjchoi
+2026-10-24T00:59:19 INFO  coupon-svc/cu-node-07 pool resize target=coupon-svc-queue max_pool_size=48 prev=89
+2026-10-24T00:59:26 NOTE  coupon-svc/cu-node-16 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-24T00:59:32 INFO  coupon-svc/cu-node-15 request done id=req-f2f08897 route=/coupon-svc/v1/get status=500 latency_ms=176
+2026-10-24T00:59:33 INFO  coupon-svc/cu-node-09 backup finished file=/vault/daily/audit_20261003.tar.zst size_mb=31737 checksum=321a9d9c
+2026-10-24T00:59:40 WARN  coupon-svc/cu-node-14 alert fired rule=gc_pause_long value=77ms threshold=70ms
+2026-10-24T00:59:45 INFO  coupon-svc/cu-node-10 request done id=req-a6583d75 route=/coupon-svc/v1/verify status=204 latency_ms=152
+2026-10-24T00:59:47 INFO  coupon-svc/cu-node-05 config applied key=queue.batch_size value=54 by=sykang
+2026-10-24T00:59:48 INFO  coupon-svc/cu-node-20 request done id=req-560274d0 route=/coupon-svc/v1/sync status=503 latency_ms=432
+2026-10-24T00:59:50 INFO  coupon-svc/cu-node-22 request done id=req-d477ecea route=/coupon-svc/v1/create status=409 latency_ms=103
+2026-10-24T00:59:56 INFO  coupon-svc/cu-node-02 pool resize target=coupon-svc-queue max_pool_size=147 prev=129
+2026-10-24T00:59:57 INFO  coupon-svc/cu-node-12 request done id=req-f731c1b1 route=/coupon-svc/v1/cancel status=200 latency_ms=126
+2026-10-24T00:59:59 INFO  coupon-svc/cu-node-01 request done id=req-487012ab route=/coupon-svc/v1/cancel status=200 latency_ms=166
+2026-10-24T01:00:01 INFO  coupon-svc/cu-node-20 deploy step release=coupon-svc-4.16.5 step=verify result=ok took_s=89
+2026-10-24T01:00:08 INFO  coupon-svc/cu-node-01 config applied key=shard.count value=21 by=jhpark
+2026-10-24T01:00:15 NOTE  coupon-svc/cu-node-16 operator=ejlim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-24T01:00:19 INFO  coupon-svc/cu-node-24 request done id=req-5c350c88 route=/coupon-svc/v1/status status=200 latency_ms=144
+2026-10-24T01:00:26 INFO  coupon-svc/cu-node-24 request done id=req-f70bc824 route=/coupon-svc/v1/list status=503 latency_ms=213
+2026-10-24T01:00:30 INFO  coupon-svc/cu-node-20 config applied key=retry.backoff_ms value=false by=mjlee
+2026-10-24T01:00:36 WARN  coupon-svc/cu-node-07 alert fired rule=replica_lag_high value=78s threshold=68s
+2026-10-24T01:00:42 INFO  coupon-svc/cu-node-24 request done id=req-7ef6f991 route=/coupon-svc/v1/get status=429 latency_ms=140
+2026-10-24T01:00:44 WARN  coupon-svc/cu-node-11 alert fired rule=replica_lag_high value=54s threshold=44s
+2026-10-24T01:00:45 INFO  coupon-svc/cu-node-19 request done id=req-e5fcef8d route=/coupon-svc/v1/create status=500 latency_ms=72
+2026-10-24T01:00:46 INFO  coupon-svc/cu-node-03 request done id=req-d68aded9 route=/coupon-svc/v1/cancel status=200 latency_ms=72
+2026-10-24T01:00:53 INFO  coupon-svc/cu-node-20 config applied key=worker.concurrency value=77% by=dwjung
+2026-10-24T01:00:57 INFO  coupon-svc/cu-node-13 request done id=req-f3ddb3ec route=/coupon-svc/v1/status status=200 latency_ms=342
+2026-10-24T01:00:59 ERROR coupon-svc/cu-node-05 job failed job=coupon-svc-export attempt=2 cause=dns_failure
+2026-10-24T01:01:05 INFO  coupon-svc/cu-node-24 request done id=req-d2250016 route=/coupon-svc/v1/list status=200 latency_ms=185
+2026-10-24T01:01:08 INFO  coupon-svc/cu-node-08 request done id=req-33ab6574 route=/coupon-svc/v1/cancel status=200 latency_ms=257
+2026-10-24T01:01:13 INFO  coupon-svc/cu-node-13 config applied key=retry.max_attempts value=true by=shkim
+2026-10-24T01:01:18 INFO  coupon-svc/cu-node-14 request done id=req-8d43bc06 route=/coupon-svc/v1/cancel status=200 latency_ms=37
+2026-10-24T01:01:25 INFO  coupon-svc/cu-node-05 request done id=req-61dd18e1 route=/coupon-svc/v1/verify status=503 latency_ms=228
+2026-10-24T01:01:29 INFO  coupon-svc/cu-node-08 config applied key=tls.session_cache value=39% by=mjlee
+2026-10-24T01:01:36 INFO  coupon-svc/cu-node-06 request done id=req-8a8cc66c route=/coupon-svc/v1/update status=200 latency_ms=260
+2026-10-24T01:01:40 INFO  coupon-svc/cu-node-19 pool resize target=coupon-svc-queue max_pool_size=116 prev=109
+2026-10-24T01:01:41 INFO  coupon-svc/cu-node-10 request done id=req-a6ed3a01 route=/coupon-svc/v1/sync status=200 latency_ms=51
+2026-10-24T01:01:43 INFO  coupon-svc/cu-node-24 request done id=req-8a836412 route=/coupon-svc/v1/cancel status=200 latency_ms=119
+2026-10-24T01:01:48 INFO  coupon-svc/cu-node-12 request done id=req-d243ff0f route=/coupon-svc/v1/verify status=503 latency_ms=133
+2026-10-24T01:01:53 INFO  coupon-svc/cu-node-19 request done id=req-77368e69 route=/coupon-svc/v1/update status=400 latency_ms=172
+2026-10-24T01:01:56 INFO  coupon-svc/cu-node-16 request done id=req-3d2aedc6 route=/coupon-svc/v1/create status=201 latency_ms=274
+2026-10-24T01:02:02 INFO  coupon-svc/cu-node-07 config applied key=retry.backoff_ms value=16% by=shkim
+2026-10-24T01:02:09 INFO  coupon-svc/cu-node-04 request done id=req-2d7a4103 route=/coupon-svc/v1/verify status=400 latency_ms=324
+2026-10-24T01:02:14 INFO  coupon-svc/cu-node-23 request done id=req-63fe8919 route=/coupon-svc/v1/update status=200 latency_ms=122
+2026-10-24T01:02:19 INFO  coupon-svc/cu-node-11 request done id=req-ad7eaf8f route=/coupon-svc/v1/update status=500 latency_ms=308
+2026-10-24T01:02:20 INFO  coupon-svc/cu-node-22 request done id=req-014daaa4 route=/coupon-svc/v1/verify status=404 latency_ms=68
+2026-10-24T01:02:21 WARN  coupon-svc/cu-node-24 alert fired rule=heap_used_high value=50% threshold=47%
+2026-10-24T01:02:24 INFO  coupon-svc/cu-node-11 cache stats region=ap-ne-2c hit_ratio=66.0% evictions=6592
+2026-10-24T01:02:30 INFO  coupon-svc/cu-node-11 request done id=req-d19f8582 route=/coupon-svc/v1/get status=200 latency_ms=30
+2026-10-24T01:02:33 ERROR coupon-svc/cu-node-19 job failed job=coupon-svc-export attempt=1 cause=oom_killed
+2026-10-24T01:02:39 INFO  coupon-svc/cu-node-24 config applied key=canary.latency_p99_threshold_ms value=62% by=sykang
+2026-10-24T01:02:43 WARN  coupon-svc/cu-node-02 alert fired rule=disk_usage_warning value=78% threshold=75%
+2026-10-24T01:02:44 INFO  coupon-svc/cu-node-14 request done id=req-9e632ea9 route=/coupon-svc/v1/list status=200 latency_ms=335
+2026-10-24T01:02:45 NOTE  coupon-svc/cu-node-06 operator=mjlee memo="동시 처리 수를 49에서 33로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-24T01:02:48 NOTE  coupon-svc/cu-node-23 operator=sykang memo="점검 창을 55분 연장함. 승인: 민도현 파트장."
+2026-10-24T01:02:50 WARN  coupon-svc/cu-node-21 alert fired rule=gc_pause_long value=54ms threshold=50ms
+2026-10-24T01:02:54 INFO  coupon-svc/cu-node-12 config applied key=http.max_conns value=5305 by=shkim
+2026-10-24T01:03:00 NOTE  coupon-svc/cu-node-20 operator=dwjung memo="배치 시작 시각을 19시 43분으로 고정함."
+2026-10-24T01:03:02 INFO  coupon-svc/cu-node-23 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=1399 checksum=fc31905d
+2026-10-24T01:03:07 INFO  coupon-svc/cu-node-20 deploy step release=coupon-svc-4.19.7 step=drain result=ok took_s=212
+2026-10-24T01:03:10 ERROR coupon-svc/cu-node-24 job failed job=coupon-svc-export attempt=1 cause=oom_killed
+2026-10-24T01:03:17 INFO  coupon-svc/cu-node-21 request done id=req-e2615bde route=/coupon-svc/v1/verify status=400 latency_ms=139
+2026-10-24T01:03:20 INFO  coupon-svc/cu-node-20 ticket linked id=OPS-49538 reason=log_volume_spike
+2026-10-24T01:03:24 INFO  coupon-svc/cu-node-10 request done id=req-c1e3598a route=/coupon-svc/v1/get status=200 latency_ms=73
+2026-10-24T01:03:31 WARN  coupon-svc/cu-node-12 alert fired rule=conn_pool_saturated value=84% threshold=71%
+2026-10-24T01:03:35 INFO  coupon-svc/cu-node-01 request done id=req-9db002da route=/coupon-svc/v1/status status=200 latency_ms=52
+2026-10-24T01:03:39 INFO  coupon-svc/cu-node-07 pool resize target=coupon-svc-upstream max_pool_size=388 prev=351
+2026-10-24T01:03:42 ERROR coupon-svc/cu-node-05 job failed job=coupon-svc-cleanup attempt=2 cause=quota_exceeded
+2026-10-24T01:03:46 INFO  coupon-svc/cu-node-06 cache stats region=us-we-2b hit_ratio=55.2% evictions=23307
+2026-10-24T01:03:52 INFO  coupon-svc/cu-node-10 request done id=req-01c000aa route=/coupon-svc/v1/status status=200 latency_ms=120
+2026-10-24T01:03:54 INFO  coupon-svc/cu-node-19 request done id=req-65be4235 route=/coupon-svc/v1/cancel status=200 latency_ms=35
+2026-10-24T01:03:55 INFO  coupon-svc/cu-node-09 request done id=req-47b87f66 route=/coupon-svc/v1/sync status=200 latency_ms=61
+2026-10-24T01:03:58 INFO  coupon-svc/cu-node-10 request done id=req-0bbac159 route=/coupon-svc/v1/cancel status=200 latency_ms=40
+2026-10-24T01:04:00 INFO  coupon-svc/cu-node-12 request done id=req-15c3a4f3 route=/coupon-svc/v1/list status=500 latency_ms=30
+2026-10-24T01:04:02 WARN  coupon-svc/cu-node-20 alert fired rule=error_ratio_high value=79% threshold=64%
+2026-10-24T01:04:03 NOTE  coupon-svc/cu-node-17 operator=mjlee memo="로그 보존 기간은 28일로 유지하기로 함."
+2026-10-24T01:04:04 INFO  coupon-svc/cu-node-11 ticket linked id=OPS-48848 reason=oncall_handoff
+2026-10-24T01:04:05 INFO  coupon-svc/cu-node-08 deploy step release=coupon-svc-4.19.7 step=drain result=ok took_s=67
+2026-10-24T01:04:06 INFO  coupon-svc/cu-node-14 deploy step release=coupon-svc-4.11.2 step=pull_image result=ok took_s=216
+2026-10-24T01:04:07 INFO  coupon-svc/cu-node-18 request done id=req-746f5557 route=/coupon-svc/v1/status status=200 latency_ms=133
+2026-10-24T01:04:14 ERROR coupon-svc/cu-node-09 job failed job=coupon-svc-reindex attempt=3 cause=oom_killed
+2026-10-24T01:04:16 INFO  coupon-svc/cu-node-17 request done id=req-e47898b7 route=/coupon-svc/v1/list status=429 latency_ms=23
+2026-10-24T01:04:19 INFO  coupon-svc/cu-node-10 request done id=req-c135c4c3 route=/coupon-svc/v1/verify status=204 latency_ms=281
+2026-10-24T01:04:25 INFO  coupon-svc/cu-node-19 request done id=req-95b72d05 route=/coupon-svc/v1/create status=201 latency_ms=92
+2026-10-24T01:04:30 INFO  coupon-svc/cu-node-01 ticket linked id=OPS-47620 reason=flaky_healthcheck
+2026-10-24T01:04:32 INFO  coupon-svc/cu-node-18 request done id=req-481dcff6 route=/coupon-svc/v1/list status=200 latency_ms=97
+2026-10-24T01:04:38 INFO  coupon-svc/cu-node-21 pool resize target=coupon-svc-cache max_pool_size=286 prev=294
+2026-10-24T01:04:42 INFO  coupon-svc/cu-node-14 request done id=req-5820345b route=/coupon-svc/v1/sync status=204 latency_ms=160
+2026-10-24T01:04:46 INFO  coupon-svc/cu-node-03 deploy step release=coupon-svc-4.11.3 step=verify result=ok took_s=214
+2026-10-24T01:04:51 INFO  coupon-svc/cu-node-05 request done id=req-fda36e13 route=/coupon-svc/v1/status status=200 latency_ms=64
+2026-10-24T01:04:56 INFO  coupon-svc/cu-node-22 request done id=req-85f57a0d route=/coupon-svc/v1/cancel status=503 latency_ms=71
+2026-10-24T01:05:03 INFO  coupon-svc/cu-node-23 request done id=req-af53afd9 route=/coupon-svc/v1/update status=409 latency_ms=371
+2026-10-24T01:05:04 INFO  coupon-svc/cu-node-20 ticket linked id=OPS-49780 reason=dependency_upgrade
+2026-10-24T01:05:08 INFO  coupon-svc/cu-node-12 request done id=req-98429584 route=/coupon-svc/v1/list status=200 latency_ms=106
+2026-10-24T01:05:14 INFO  coupon-svc/cu-node-19 request done id=req-9fad22fe route=/coupon-svc/v1/update status=200 latency_ms=114
+2026-10-24T01:05:21 NOTE  coupon-svc/cu-node-05 operator=dwjung memo="cu-node-05 재기동 후 지표 정상 확인."
+2026-10-24T01:05:28 NOTE  coupon-svc/cu-node-18 operator=mjlee memo="로그 보존 기간은 58일로 유지하기로 함."
+2026-10-24T01:05:32 INFO  coupon-svc/cu-node-05 cache stats region=ap-ne-2a hit_ratio=64.0% evictions=17641
+2026-10-24T01:05:39 INFO  coupon-svc/cu-node-11 ticket linked id=OPS-47682 reason=runbook_update
+2026-10-24T01:05:45 INFO  coupon-svc/cu-node-24 request done id=req-9524eec1 route=/coupon-svc/v1/sync status=200 latency_ms=332
+2026-10-24T01:05:52 INFO  coupon-svc/cu-node-15 request done id=req-3f11eb95 route=/coupon-svc/v1/sync status=200 latency_ms=67
+2026-10-24T01:05:58 NOTE  coupon-svc/cu-node-05 operator=ejlim memo="타임아웃을 9ms에서 38ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-24T01:06:00 INFO  coupon-svc/cu-node-03 config applied key=breaker.half_open_s value=false by=hbyoon
+2026-10-24T01:06:04 INFO  coupon-svc/cu-node-23 deploy step release=coupon-svc-4.18.6 step=healthcheck result=ok took_s=79
+2026-10-24T01:06:05 INFO  coupon-svc/cu-node-17 ticket linked id=OPS-47342 reason=oncall_handoff
+2026-10-24T01:06:10 INFO  coupon-svc/cu-node-10 config applied key=limiter.burst value=true by=hbyoon
+2026-10-24T01:06:15 INFO  coupon-svc/cu-node-11 request done id=req-c91ef55c route=/coupon-svc/v1/update status=200 latency_ms=343
+2026-10-24T01:06:16 ERROR coupon-svc/cu-node-10 job failed job=coupon-svc-cleanup attempt=5 cause=upstream_timeout
+2026-10-24T01:06:19 INFO  coupon-svc/cu-node-18 ticket linked id=OPS-49234 reason=cert_rotation
+2026-10-24T01:06:21 INFO  coupon-svc/cu-node-22 cache stats region=us-we-2b hit_ratio=89.4% evictions=12482
+2026-10-24T01:06:28 INFO  coupon-svc/cu-node-03 ticket linked id=OPS-48236 reason=cert_rotation
+2026-10-24T01:06:31 INFO  coupon-svc/cu-node-19 deploy step release=coupon-svc-4.19.9 step=shift_traffic_100 result=ok took_s=239
+2026-10-24T01:06:35 INFO  coupon-svc/cu-node-04 request done id=req-1604c166 route=/coupon-svc/v1/cancel status=200 latency_ms=362
+2026-10-24T01:06:38 INFO  coupon-svc/cu-node-03 request done id=req-3d1468a2 route=/coupon-svc/v1/cancel status=200 latency_ms=185
+2026-10-24T01:06:39 ERROR coupon-svc/cu-node-18 job failed job=coupon-svc-cleanup attempt=4 cause=dns_failure
+2026-10-24T01:06:42 INFO  coupon-svc/cu-node-01 pool resize target=coupon-svc-cache max_pool_size=68 prev=38
+2026-10-24T01:06:49 INFO  coupon-svc/cu-node-11 ticket linked id=OPS-48177 reason=cert_rotation
+2026-10-24T01:06:52 INFO  coupon-svc/cu-node-24 pool resize target=coupon-svc-upstream max_pool_size=211 prev=241
+2026-10-24T01:06:53 INFO  coupon-svc/cu-node-13 config applied key=canary.traffic_percent value=1390 by=yjchoi
+2026-10-24T01:06:55 WARN  coupon-svc/cu-node-13 alert fired rule=gc_pause_long value=50ms threshold=40ms
+2026-10-24T01:06:58 INFO  coupon-svc/cu-node-09 ticket linked id=OPS-48384 reason=node_drain
+2026-10-24T01:07:00 INFO  coupon-svc/cu-node-13 request done id=req-3a71d0ec route=/coupon-svc/v1/update status=200 latency_ms=54
+2026-10-24T01:07:06 NOTE  coupon-svc/cu-node-20 operator=jhpark memo="cu-node-20 재기동 후 지표 정상 확인."
+2026-10-24T01:07:07 INFO  coupon-svc/cu-node-15 request done id=req-94169701 route=/coupon-svc/v1/list status=503 latency_ms=255
+2026-10-24T01:07:09 INFO  coupon-svc/cu-node-16 request done id=req-70c83d94 route=/coupon-svc/v1/get status=200 latency_ms=33
+2026-10-24T01:07:13 INFO  coupon-svc/cu-node-07 request done id=req-5138beb9 route=/coupon-svc/v1/get status=409 latency_ms=84
+2026-10-24T01:07:18 WARN  coupon-svc/cu-node-24 alert fired rule=conn_pool_saturated value=57% threshold=43%
+2026-10-24T01:07:21 INFO  coupon-svc/cu-node-13 request done id=req-a5687efe route=/coupon-svc/v1/verify status=200 latency_ms=20
+2026-10-24T01:07:26 INFO  coupon-svc/cu-node-03 config applied key=breaker.open_ratio value=57% by=shkim
+2026-10-24T01:07:30 INFO  coupon-svc/cu-node-09 pool resize target=coupon-svc-cache max_pool_size=19 prev=4
+2026-10-24T01:07:34 WARN  coupon-svc/cu-node-20 alert fired rule=replica_lag_high value=83s threshold=73s
+2026-10-24T01:07:35 WARN  coupon-svc/cu-node-06 alert fired rule=queue_depth_high value=90 threshold=81
+2026-10-24T01:07:38 WARN  coupon-svc/cu-node-04 alert fired rule=heap_used_high value=86% threshold=85%
+2026-10-24T01:07:39 INFO  coupon-svc/cu-node-09 pool resize target=coupon-svc-queue max_pool_size=112 prev=69
+2026-10-24T01:07:41 INFO  coupon-svc/cu-node-07 backup finished file=/vault/daily/users_20261019.tar.zst size_mb=10226 checksum=2928f61c
+2026-10-24T01:07:45 INFO  coupon-svc/cu-node-03 request done id=req-40a835e3 route=/coupon-svc/v1/list status=429 latency_ms=297
+2026-10-24T01:07:48 INFO  coupon-svc/cu-node-04 request done id=req-58e80462 route=/coupon-svc/v1/cancel status=500 latency_ms=33
+2026-10-24T01:07:52 INFO  coupon-svc/cu-node-13 request done id=req-a51b2470 route=/coupon-svc/v1/cancel status=200 latency_ms=163
+2026-10-24T01:07:59 WARN  coupon-svc/cu-node-12 alert fired rule=fd_usage_high value=53% threshold=46%
+2026-10-24T01:08:00 INFO  coupon-svc/cu-node-02 request done id=req-f831373b route=/coupon-svc/v1/update status=200 latency_ms=115
+2026-10-24T01:08:06 NOTE  coupon-svc/cu-node-19 operator=mjlee memo="배치 시작 시각을 41시 56분으로 고정함."
+2026-10-24T01:08:10 WARN  coupon-svc/cu-node-24 alert fired rule=cpu_steal_high value=78% threshold=74%
+2026-10-24T01:08:17 INFO  coupon-svc/cu-node-17 deploy step release=coupon-svc-4.13.8 step=drain result=ok took_s=121
+2026-10-24T01:08:19 INFO  coupon-svc/cu-node-03 request done id=req-05e5f485 route=/coupon-svc/v1/cancel status=400 latency_ms=324
+2026-10-24T01:08:24 WARN  coupon-svc/cu-node-10 alert fired rule=fd_usage_high value=69% threshold=54%
+2026-10-24T01:08:30 INFO  coupon-svc/cu-node-07 config applied key=flush.interval_ms value=22 by=jhpark
+2026-10-24T01:08:35 INFO  coupon-svc/cu-node-10 request done id=req-7a410f14 route=/coupon-svc/v1/verify status=500 latency_ms=220
+2026-10-24T01:08:40 INFO  coupon-svc/cu-node-18 request done id=req-fb23919f route=/coupon-svc/v1/cancel status=500 latency_ms=116
+2026-10-24T01:08:46 INFO  coupon-svc/cu-node-06 config applied key=http.max_conns value=25 by=sykang
+2026-10-24T01:08:49 INFO  coupon-svc/cu-node-11 config applied key=flush.interval_ms value=true by=ejlim
+2026-10-24T01:08:54 INFO  coupon-svc/cu-node-04 deploy step release=coupon-svc-4.14.6 step=migrate result=ok took_s=229
+2026-10-24T01:09:01 INFO  coupon-svc/cu-node-02 config applied key=dns.ttl_s value=15 by=hbyoon
+2026-10-24T01:09:06 INFO  coupon-svc/cu-node-11 backup finished file=/vault/daily/inventory_20261028.tar.zst size_mb=46080 checksum=f28909c8
+2026-10-24T01:09:11 NOTE  coupon-svc/cu-node-23 operator=dwjung memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-24T01:09:17 INFO  coupon-svc/cu-node-08 pool resize target=coupon-svc-cache max_pool_size=391 prev=425
+2026-10-24T01:09:22 INFO  coupon-svc/cu-node-11 request done id=req-f551b396 route=/coupon-svc/v1/get status=204 latency_ms=134
+2026-10-24T01:09:23 INFO  coupon-svc/cu-node-21 request done id=req-86800394 route=/coupon-svc/v1/create status=200 latency_ms=119
+2026-10-24T01:09:29 INFO  coupon-svc/cu-node-04 request done id=req-f88027c8 route=/coupon-svc/v1/create status=201 latency_ms=183
+2026-10-24T01:09:34 WARN  coupon-svc/cu-node-03 alert fired rule=heap_used_high value=66% threshold=53%
+2026-10-24T01:09:39 INFO  coupon-svc/cu-node-13 backup finished file=/vault/weekly/users_2026w34.tar.zst size_mb=74824 checksum=2e0b4ef8
+2026-10-24T01:09:41 INFO  coupon-svc/cu-node-12 request done id=req-9856bb6d route=/coupon-svc/v1/list status=200 latency_ms=138
+2026-10-24T01:09:46 INFO  coupon-svc/cu-node-23 request done id=req-b81d32e9 route=/coupon-svc/v1/cancel status=200 latency_ms=69
+2026-10-24T01:09:53 INFO  coupon-svc/cu-node-20 request done id=req-9488f280 route=/coupon-svc/v1/list status=200 latency_ms=81
+2026-10-24T01:10:00 INFO  coupon-svc/cu-node-02 config applied key=breaker.half_open_s value=68% by=sykang
+2026-10-24T01:10:01 NOTE  coupon-svc/cu-node-06 operator=hbyoon memo="임시 증설 37대 추가. 내일 오전 회수 예정."
+2026-10-24T01:10:06 WARN  coupon-svc/cu-node-13 alert fired rule=disk_usage_warning value=67% threshold=52%
+2026-10-24T01:10:07 WARN  coupon-svc/cu-node-10 alert fired rule=conn_pool_saturated value=76% threshold=61%
+2026-10-24T01:10:10 INFO  coupon-svc/cu-node-21 request done id=req-3deacd6c route=/coupon-svc/v1/status status=200 latency_ms=128
+2026-10-24T01:10:14 WARN  coupon-svc/cu-node-10 alert fired rule=queue_depth_high value=62 threshold=50
+2026-10-24T01:10:20 INFO  coupon-svc/cu-node-18 config applied key=http.read_timeout_ms value=13 by=jhpark
+2026-10-24T01:10:27 INFO  coupon-svc/cu-node-22 request done id=req-d8df1588 route=/coupon-svc/v1/verify status=200 latency_ms=74
+2026-10-24T01:10:33 INFO  coupon-svc/cu-node-13 request done id=req-49209b5b route=/coupon-svc/v1/verify status=204 latency_ms=70
+2026-10-24T01:10:36 INFO  coupon-svc/cu-node-15 deploy step release=coupon-svc-4.11.7 step=shift_traffic_100 result=ok took_s=73
+2026-10-24T01:10:43 INFO  coupon-svc/cu-node-14 request done id=req-ada3ab14 route=/coupon-svc/v1/get status=200 latency_ms=48
+2026-10-24T01:10:48 INFO  coupon-svc/cu-node-16 deploy step release=coupon-svc-4.18.3 step=shift_traffic_10 result=ok took_s=123
+2026-10-24T01:10:52 INFO  coupon-svc/cu-node-19 backup finished file=/vault/daily/payments_20261007.tar.zst size_mb=57795 checksum=78045f04
+2026-10-24T01:10:58 INFO  coupon-svc/cu-node-06 request done id=req-20b85815 route=/coupon-svc/v1/get status=200 latency_ms=302
+2026-10-24T01:11:03 INFO  coupon-svc/cu-node-15 request done id=req-ba4b4e3c route=/coupon-svc/v1/sync status=200 latency_ms=20
+2026-10-24T01:11:06 INFO  coupon-svc/cu-node-13 request done id=req-0242eb93 route=/coupon-svc/v1/list status=200 latency_ms=25
+2026-10-24T01:11:10 INFO  coupon-svc/cu-node-22 request done id=req-89f2484f route=/coupon-svc/v1/update status=500 latency_ms=147
+2026-10-24T01:11:13 INFO  coupon-svc/cu-node-06 pool resize target=coupon-svc-upstream max_pool_size=151 prev=139
+2026-10-24T01:11:19 INFO  coupon-svc/cu-node-20 config applied key=tls.session_cache value=3 by=shkim
+2026-10-24T01:11:24 INFO  coupon-svc/cu-node-23 config applied key=retry.backoff_ms value=99% by=sykang
+2026-10-24T01:11:27 INFO  coupon-svc/cu-node-13 request done id=req-4d7496e6 route=/coupon-svc/v1/create status=200 latency_ms=353
+2026-10-24T01:11:32 INFO  coupon-svc/cu-node-23 pool resize target=coupon-svc-worker max_pool_size=375 prev=350
+2026-10-24T01:11:35 INFO  coupon-svc/cu-node-20 deploy step release=coupon-svc-4.16.0 step=healthcheck result=ok took_s=155
+2026-10-24T01:11:42 INFO  coupon-svc/cu-node-06 request done id=req-d571e244 route=/coupon-svc/v1/verify status=200 latency_ms=214
+2026-10-24T01:11:43 INFO  coupon-svc/cu-node-16 ticket linked id=OPS-48445 reason=cert_rotation
+2026-10-24T01:11:46 WARN  coupon-svc/cu-node-06 alert fired rule=gc_pause_long value=66ms threshold=55ms
+2026-10-24T01:11:47 INFO  coupon-svc/cu-node-22 request done id=req-0598cb82 route=/coupon-svc/v1/create status=201 latency_ms=158
+2026-10-24T01:11:48 WARN  coupon-svc/cu-node-17 alert fired rule=gc_pause_long value=79ms threshold=68ms
+2026-10-24T01:11:54 INFO  coupon-svc/cu-node-08 ticket linked id=OPS-48769 reason=dependency_upgrade
+2026-10-24T01:12:00 INFO  coupon-svc/cu-node-11 request done id=req-5620f68b route=/coupon-svc/v1/create status=200 latency_ms=51
+2026-10-24T01:12:03 INFO  coupon-svc/cu-node-10 request done id=req-bd66110b route=/coupon-svc/v1/status status=200 latency_ms=125
+2026-10-24T01:12:07 INFO  coupon-svc/cu-node-04 pool resize target=coupon-svc-queue max_pool_size=400 prev=417
+2026-10-24T01:12:14 INFO  coupon-svc/cu-node-03 request done id=req-0a808c6e route=/coupon-svc/v1/create status=200 latency_ms=253
+2026-10-24T01:12:17 INFO  coupon-svc/cu-node-08 pool resize target=coupon-svc-queue max_pool_size=16 prev=4
+2026-10-24T01:12:18 INFO  coupon-svc/cu-node-23 ticket linked id=OPS-47498 reason=flaky_healthcheck
+2026-10-24T01:12:20 INFO  coupon-svc/cu-node-08 pool resize target=coupon-svc-db max_pool_size=396 prev=371
+2026-10-24T01:12:27 WARN  coupon-svc/cu-node-20 alert fired rule=gc_pause_long value=94ms threshold=83ms
+2026-10-24T01:12:29 INFO  coupon-svc/cu-node-21 request done id=req-1b3d34c4 route=/coupon-svc/v1/cancel status=200 latency_ms=195
+2026-10-24T01:12:33 INFO  coupon-svc/cu-node-13 request done id=req-e68122c5 route=/coupon-svc/v1/sync status=500 latency_ms=87
+2026-10-24T01:12:36 INFO  coupon-svc/cu-node-01 request done id=req-23543e11 route=/coupon-svc/v1/list status=200 latency_ms=321
+2026-10-24T01:12:43 NOTE  coupon-svc/cu-node-23 operator=hbyoon memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-24T01:12:50 INFO  coupon-svc/cu-node-13 deploy step release=coupon-svc-4.15.7 step=warmup result=ok took_s=49
+2026-10-24T01:12:52 INFO  coupon-svc/cu-node-17 deploy step release=coupon-svc-4.20.8 step=shift_traffic_10 result=ok took_s=111
+2026-10-24T01:12:56 INFO  coupon-svc/cu-node-11 backup finished file=/vault/weekly/users_2026w39.tar.zst size_mb=75029 checksum=1e0e9a51
+2026-10-24T01:13:02 INFO  coupon-svc/cu-node-18 ticket linked id=OPS-49060 reason=node_drain
+2026-10-24T01:13:06 INFO  coupon-svc/cu-node-19 request done id=req-d81cc3b7 route=/coupon-svc/v1/get status=503 latency_ms=211
+2026-10-24T01:13:08 INFO  coupon-svc/cu-node-06 pool resize target=coupon-svc-upstream max_pool_size=381 prev=335
+2026-10-24T01:13:09 INFO  coupon-svc/cu-node-05 request done id=req-08dfac86 route=/coupon-svc/v1/verify status=200 latency_ms=56
+2026-10-24T01:13:16 INFO  coupon-svc/cu-node-17 request done id=req-6b9fbdf6 route=/coupon-svc/v1/cancel status=200 latency_ms=54
+2026-10-24T01:13:22 INFO  coupon-svc/cu-node-22 request done id=req-bcc781f6 route=/coupon-svc/v1/update status=200 latency_ms=46
+2026-10-24T01:13:29 INFO  coupon-svc/cu-node-21 config applied key=dns.ttl_s value=false by=hbyoon
+2026-10-24T01:13:32 INFO  coupon-svc/cu-node-22 request done id=req-50c62a17 route=/coupon-svc/v1/cancel status=200 latency_ms=141
+2026-10-24T01:13:33 INFO  coupon-svc/cu-node-17 request done id=req-e5576164 route=/coupon-svc/v1/update status=200 latency_ms=60
+2026-10-24T01:13:38 INFO  coupon-svc/cu-node-16 deploy step release=coupon-svc-4.12.2 step=healthcheck result=ok took_s=57
+2026-10-24T01:13:39 INFO  coupon-svc/cu-node-14 request done id=req-c3b03661 route=/coupon-svc/v1/status status=201 latency_ms=119
+2026-10-24T01:13:42 INFO  coupon-svc/cu-node-07 deploy step release=coupon-svc-4.17.5 step=shift_traffic_50 result=ok took_s=73
+2026-10-24T01:13:47 INFO  coupon-svc/cu-node-04 request done id=req-2020c114 route=/coupon-svc/v1/verify status=200 latency_ms=286
+2026-10-24T01:13:54 INFO  coupon-svc/cu-node-21 pool resize target=coupon-svc-cache max_pool_size=377 prev=436
+2026-10-24T01:13:59 INFO  coupon-svc/cu-node-04 request done id=req-82e60159 route=/coupon-svc/v1/verify status=200 latency_ms=159
+2026-10-24T01:14:00 NOTE  coupon-svc/cu-node-13 operator=shkim memo="타임아웃을 14ms에서 27ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-24T01:14:03 INFO  coupon-svc/cu-node-20 request done id=req-7c8bc381 route=/coupon-svc/v1/sync status=200 latency_ms=151
+2026-10-24T01:14:10 WARN  coupon-svc/cu-node-17 alert fired rule=disk_usage_warning value=89% threshold=82%
+2026-10-24T01:14:12 INFO  coupon-svc/cu-node-17 request done id=req-7746259e route=/coupon-svc/v1/verify status=200 latency_ms=64
+2026-10-24T01:14:15 INFO  coupon-svc/cu-node-13 request done id=req-e5d751f4 route=/coupon-svc/v1/get status=200 latency_ms=148
+2026-10-24T01:14:21 INFO  coupon-svc/cu-node-02 request done id=req-71294321 route=/coupon-svc/v1/sync status=503 latency_ms=43
+2026-10-24T01:14:25 INFO  coupon-svc/cu-node-10 request done id=req-72191d88 route=/coupon-svc/v1/status status=409 latency_ms=53
+2026-10-24T01:14:28 INFO  coupon-svc/cu-node-01 pool resize target=coupon-svc-worker max_pool_size=282 prev=313
+2026-10-24T01:14:35 INFO  coupon-svc/cu-node-01 backup finished file=/vault/weekly/sessions_2026w43.tar.zst size_mb=69640 checksum=26f31c8d
+2026-10-24T01:14:36 WARN  coupon-svc/cu-node-23 alert fired rule=error_ratio_high value=68% threshold=53%
+2026-10-24T01:14:40 INFO  coupon-svc/cu-node-04 ticket linked id=OPS-48183 reason=schema_change
+2026-10-24T01:14:46 NOTE  coupon-svc/cu-node-15 operator=hbyoon memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-24T01:14:48 WARN  coupon-svc/cu-node-24 alert fired rule=p99_latency_high value=76ms threshold=71ms
+2026-10-24T01:14:53 NOTE  coupon-svc/cu-node-21 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-24T01:14:59 INFO  coupon-svc/cu-node-12 pool resize target=coupon-svc-worker max_pool_size=24 prev=5
+2026-10-24T01:15:01 INFO  coupon-svc/cu-node-02 request done id=req-4f12e623 route=/coupon-svc/v1/cancel status=200 latency_ms=179
+2026-10-24T01:15:02 INFO  coupon-svc/cu-node-13 config applied key=gc.pause_target_ms value=60% by=dwjung
+2026-10-24T01:15:07 INFO  coupon-svc/cu-node-12 request done id=req-ebcc5c3b route=/coupon-svc/v1/update status=200 latency_ms=138
+2026-10-24T01:15:11 INFO  coupon-svc/cu-node-08 request done id=req-0d4381c0 route=/coupon-svc/v1/cancel status=503 latency_ms=93
+2026-10-24T01:15:18 INFO  coupon-svc/cu-node-14 config applied key=canary.latency_p99_threshold_ms value=false by=shkim
+2026-10-24T01:15:19 INFO  coupon-svc/cu-node-13 backup finished file=/vault/daily/sessions_20261013.tar.zst size_mb=72242 checksum=41ca13c1
+2026-10-24T01:15:22 INFO  coupon-svc/cu-node-23 deploy step release=coupon-svc-4.13.7 step=shift_traffic_10 result=ok took_s=52
+2026-10-24T01:15:24 NOTE  coupon-svc/cu-node-15 operator=shkim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-24T01:15:30 INFO  coupon-svc/cu-node-02 request done id=req-697c13cc route=/coupon-svc/v1/status status=200 latency_ms=257
+2026-10-24T01:15:33 WARN  coupon-svc/cu-node-21 alert fired rule=heap_used_high value=60% threshold=54%
+2026-10-24T01:15:39 INFO  coupon-svc/cu-node-20 request done id=req-cb156e77 route=/coupon-svc/v1/status status=200 latency_ms=326
+2026-10-24T01:15:45 INFO  coupon-svc/cu-node-05 request done id=req-33a4b9a9 route=/coupon-svc/v1/status status=200 latency_ms=179
+2026-10-24T01:15:47 NOTE  coupon-svc/cu-node-12 operator=ejlim memo="점검 창을 27분 연장함. 승인: 한지우 리드."
+2026-10-24T01:15:53 INFO  coupon-svc/cu-node-01 request done id=req-80af4f5e route=/coupon-svc/v1/status status=404 latency_ms=73
+2026-10-24T01:15:56 INFO  coupon-svc/cu-node-12 request done id=req-c381bf87 route=/coupon-svc/v1/update status=200 latency_ms=93
+2026-10-24T01:16:01 INFO  coupon-svc/cu-node-18 request done id=req-69436f58 route=/coupon-svc/v1/status status=503 latency_ms=83
+2026-10-24T01:16:06 INFO  coupon-svc/cu-node-04 config applied key=canary.latency_p99_threshold_ms value=4% by=mjlee
+2026-10-24T01:16:12 INFO  coupon-svc/cu-node-24 deploy step release=coupon-svc-4.10.3 step=pull_image result=ok took_s=25
+2026-10-24T01:16:19 INFO  coupon-svc/cu-node-04 request done id=req-4b76f1a1 route=/coupon-svc/v1/sync status=409 latency_ms=66
+2026-10-24T01:16:25 INFO  coupon-svc/cu-node-10 request done id=req-b0881d5d route=/coupon-svc/v1/update status=404 latency_ms=59
+2026-10-24T01:16:32 WARN  coupon-svc/cu-node-18 alert fired rule=conn_pool_saturated value=93% threshold=86%
+2026-10-24T01:16:36 INFO  coupon-svc/cu-node-03 request done id=req-d2b63aa4 route=/coupon-svc/v1/verify status=200 latency_ms=893
+2026-10-24T01:16:39 INFO  coupon-svc/cu-node-20 cache stats region=ap-ne-2a hit_ratio=85.2% evictions=19262
+2026-10-24T01:16:41 INFO  coupon-svc/cu-node-24 ticket linked id=OPS-48924 reason=flaky_healthcheck
+2026-10-24T01:16:47 INFO  coupon-svc/cu-node-22 request done id=req-3040dd1b route=/coupon-svc/v1/status status=200 latency_ms=188
+2026-10-24T01:16:54 INFO  coupon-svc/cu-node-24 request done id=req-7351584f route=/coupon-svc/v1/status status=400 latency_ms=47
+2026-10-24T01:16:57 WARN  coupon-svc/cu-node-02 alert fired rule=cpu_steal_high value=90% threshold=82%
+2026-10-24T01:16:58 INFO  coupon-svc/cu-node-05 backup finished file=/vault/weekly/sessions_2026w37.tar.zst size_mb=83586 checksum=d49b7560
+2026-10-24T01:17:01 INFO  coupon-svc/cu-node-13 deploy step release=coupon-svc-4.18.8 step=shift_traffic_50 result=ok took_s=198
+2026-10-24T01:17:04 INFO  coupon-svc/cu-node-06 request done id=req-2df9a70f route=/coupon-svc/v1/create status=204 latency_ms=87
+2026-10-24T01:17:11 INFO  coupon-svc/cu-node-21 request done id=req-74cfc82c route=/coupon-svc/v1/verify status=200 latency_ms=49
+2026-10-24T01:17:17 INFO  coupon-svc/cu-node-11 backup finished file=/vault/weekly/orders_2026w35.tar.zst size_mb=39665 checksum=b49302dd
+2026-10-24T01:17:22 INFO  coupon-svc/cu-node-02 request done id=req-2a66eb8f route=/coupon-svc/v1/cancel status=429 latency_ms=73
+2026-10-24T01:17:29 ERROR coupon-svc/cu-node-23 job failed job=coupon-svc-export attempt=3 cause=oom_killed
+2026-10-24T01:17:35 INFO  coupon-svc/cu-node-12 request done id=req-79d0fc6a route=/coupon-svc/v1/status status=200 latency_ms=34
+2026-10-24T01:17:42 INFO  coupon-svc/cu-node-07 config applied key=dns.ttl_s value=5670 by=shkim
+2026-10-24T01:17:47 INFO  coupon-svc/cu-node-06 request done id=req-c3bf3db0 route=/coupon-svc/v1/sync status=404 latency_ms=121
+2026-10-24T01:17:48 INFO  coupon-svc/cu-node-15 request done id=req-201a3254 route=/coupon-svc/v1/create status=200 latency_ms=94
+2026-10-24T01:17:53 INFO  coupon-svc/cu-node-06 request done id=req-db8c50ca route=/coupon-svc/v1/status status=200 latency_ms=301
+2026-10-24T01:17:59 INFO  coupon-svc/cu-node-02 backup finished file=/vault/daily/orders_20261025.tar.zst size_mb=67172 checksum=f485c78c
+2026-10-24T01:18:02 INFO  coupon-svc/cu-node-08 pool resize target=coupon-svc-upstream max_pool_size=25 prev=4
+2026-10-24T01:18:04 INFO  coupon-svc/cu-node-07 request done id=req-f615d22d route=/coupon-svc/v1/get status=204 latency_ms=145
+2026-10-24T01:18:06 INFO  coupon-svc/cu-node-17 request done id=req-29c93cd3 route=/coupon-svc/v1/list status=200 latency_ms=108
+2026-10-24T01:18:10 INFO  coupon-svc/cu-node-02 request done id=req-2fd36fea route=/coupon-svc/v1/update status=409 latency_ms=209
+2026-10-24T01:18:14 WARN  coupon-svc/cu-node-16 alert fired rule=disk_usage_warning value=52% threshold=51%
+2026-10-24T01:18:17 INFO  coupon-svc/cu-node-17 config applied key=http.read_timeout_ms value=2647 by=mjlee
+2026-10-24T01:18:23 INFO  coupon-svc/cu-node-09 request done id=req-2451f443 route=/coupon-svc/v1/verify status=200 latency_ms=186
+2026-10-24T01:18:27 NOTE  coupon-svc/cu-node-04 operator=dwjung memo="로그 보존 기간은 55일로 유지하기로 함."
+2026-10-24T01:18:28 NOTE  coupon-svc/cu-node-17 operator=dwjung memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-24T01:18:30 INFO  coupon-svc/cu-node-19 request done id=req-588663da route=/coupon-svc/v1/create status=500 latency_ms=189
+2026-10-24T01:18:32 INFO  coupon-svc/cu-node-09 pool resize target=coupon-svc-cache max_pool_size=252 prev=227
+2026-10-24T01:18:39 NOTE  coupon-svc/cu-node-01 operator=shkim memo="헬스체크 간격을 56초에서 90초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-24T01:18:42 INFO  coupon-svc/cu-node-17 request done id=req-d5fef2a1 route=/coupon-svc/v1/get status=200 latency_ms=81
+2026-10-24T01:18:48 ERROR coupon-svc/cu-node-10 job failed job=coupon-svc-reindex attempt=1 cause=bad_checksum
+2026-10-24T01:18:55 WARN  coupon-svc/cu-node-09 alert fired rule=fd_usage_high value=98% threshold=91%
+2026-10-24T01:18:59 INFO  coupon-svc/cu-node-14 request done id=req-42fa2cb0 route=/coupon-svc/v1/update status=200 latency_ms=41
+2026-10-24T01:19:05 INFO  coupon-svc/cu-node-20 cache stats region=ap-ne-2b hit_ratio=91.1% evictions=17598
+2026-10-24T01:19:10 INFO  coupon-svc/cu-node-09 request done id=req-8ba4915c route=/coupon-svc/v1/get status=201 latency_ms=225
+2026-10-24T01:19:11 INFO  coupon-svc/cu-node-03 pool resize target=coupon-svc-worker max_pool_size=72 prev=52
+2026-10-24T01:19:13 INFO  coupon-svc/cu-node-24 request done id=req-0e2ce968 route=/coupon-svc/v1/status status=200 latency_ms=217
+2026-10-24T01:19:20 ERROR coupon-svc/cu-node-07 job failed job=coupon-svc-export attempt=2 cause=upstream_timeout
+2026-10-24T01:19:27 INFO  coupon-svc/cu-node-06 request done id=req-1cac6ca6 route=/coupon-svc/v1/cancel status=200 latency_ms=92
+2026-10-24T01:19:29 INFO  coupon-svc/cu-node-22 pool resize target=coupon-svc-upstream max_pool_size=328 prev=309
+2026-10-24T01:19:31 INFO  coupon-svc/cu-node-23 config applied key=log.sample_rate value=97% by=shkim
+2026-10-24T01:19:37 INFO  coupon-svc/cu-node-06 request done id=req-e5441f05 route=/coupon-svc/v1/get status=200 latency_ms=78
+2026-10-24T01:19:42 WARN  coupon-svc/cu-node-10 alert fired rule=gc_pause_long value=94ms threshold=85ms
+2026-10-24T01:19:47 INFO  coupon-svc/cu-node-03 request done id=req-b215d3fe route=/coupon-svc/v1/status status=404 latency_ms=75
+2026-10-24T01:19:48 INFO  coupon-svc/cu-node-16 request done id=req-3b84e20d route=/coupon-svc/v1/update status=200 latency_ms=162
+2026-10-24T01:19:51 INFO  coupon-svc/cu-node-06 request done id=req-4ba70ce0 route=/coupon-svc/v1/cancel status=404 latency_ms=29
+2026-10-24T01:19:58 INFO  coupon-svc/cu-node-13 config applied key=cache.ttl_s value=13 by=hbyoon
+2026-10-24T01:20:04 INFO  coupon-svc/cu-node-04 request done id=req-91dc8d16 route=/coupon-svc/v1/status status=200 latency_ms=457
+2026-10-24T01:20:09 ERROR coupon-svc/cu-node-01 job failed job=coupon-svc-cleanup attempt=1 cause=quota_exceeded
+2026-10-24T01:20:14 WARN  coupon-svc/cu-node-13 alert fired rule=disk_usage_warning value=75% threshold=69%
+2026-10-24T01:20:20 INFO  coupon-svc/cu-node-09 request done id=req-26d84177 route=/coupon-svc/v1/sync status=200 latency_ms=75
+2026-10-24T01:20:23 INFO  coupon-svc/cu-node-08 request done id=req-762ccfd1 route=/coupon-svc/v1/get status=200 latency_ms=43
+2026-10-24T01:20:24 INFO  coupon-svc/cu-node-14 pool resize target=coupon-svc-db max_pool_size=330 prev=342
+2026-10-24T01:20:30 INFO  coupon-svc/cu-node-02 config applied key=limiter.burst value=false by=yjchoi
+2026-10-24T01:20:36 INFO  coupon-svc/cu-node-08 pool resize target=coupon-svc-worker max_pool_size=335 prev=297
+2026-10-24T01:20:38 INFO  coupon-svc/cu-node-19 request done id=req-fae1fc20 route=/coupon-svc/v1/update status=200 latency_ms=255
+2026-10-24T01:20:39 INFO  coupon-svc/cu-node-22 request done id=req-a3cbb740 route=/coupon-svc/v1/create status=409 latency_ms=369
+2026-10-24T01:20:46 INFO  coupon-svc/cu-node-12 deploy step release=coupon-svc-4.17.5 step=shift_traffic_10 result=ok took_s=45
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

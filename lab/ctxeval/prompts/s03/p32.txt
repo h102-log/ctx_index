@@ -1,0 +1,424 @@
+참고용 로그 32: 지표 집계기(metric-agg) 롤업 구간. '확인'이라고만 답해 줘.
+
+2026-11-05T08:02:55 INFO  metric-agg/ma-node-04 request done id=req-93b56484 route=/metric-agg/v1/sync status=429 latency_ms=123
+2026-11-05T08:02:59 WARN  metric-agg/ma-node-20 alert fired rule=heap_used_high value=57% threshold=53%
+2026-11-05T08:03:01 INFO  metric-agg/ma-node-02 config applied key=http.max_conns value=true by=shkim
+2026-11-05T08:03:04 INFO  metric-agg/ma-node-15 request done id=req-600af105 route=/metric-agg/v1/create status=200 latency_ms=150
+2026-11-05T08:03:11 INFO  metric-agg/ma-node-02 request done id=req-adcc0823 route=/metric-agg/v1/create status=200 latency_ms=281
+2026-11-05T08:03:15 INFO  metric-agg/ma-node-21 request done id=req-6ff8196c route=/metric-agg/v1/cancel status=200 latency_ms=72
+2026-11-05T08:03:17 WARN  metric-agg/ma-node-13 alert fired rule=replica_lag_high value=88s threshold=82s
+2026-11-05T08:03:24 INFO  metric-agg/ma-node-15 config applied key=cache.ttl_s value=26 by=hbyoon
+2026-11-05T08:03:30 INFO  metric-agg/ma-node-04 request done id=req-1c4ce370 route=/metric-agg/v1/list status=200 latency_ms=65
+2026-11-05T08:03:35 INFO  metric-agg/ma-node-06 pool resize target=metric-agg-db max_pool_size=299 prev=342
+2026-11-05T08:03:42 INFO  metric-agg/ma-node-22 deploy step release=metric-agg-4.21.6 step=migrate result=ok took_s=199
+2026-11-05T08:03:47 NOTE  metric-agg/ma-node-18 operator=yjchoi memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-05T08:03:51 INFO  metric-agg/ma-node-24 config applied key=worker.concurrency value=true by=mjlee
+2026-11-05T08:03:55 INFO  metric-agg/ma-node-02 ticket linked id=OPS-49166 reason=log_volume_spike
+2026-11-05T08:03:57 INFO  metric-agg/ma-node-21 config applied key=shard.count value=true by=mjlee
+2026-11-05T08:03:58 INFO  metric-agg/ma-node-24 pool resize target=metric-agg-worker max_pool_size=259 prev=311
+2026-11-05T08:04:03 INFO  metric-agg/ma-node-05 request done id=req-efdaccec route=/metric-agg/v1/list status=200 latency_ms=213
+2026-11-05T08:04:04 INFO  metric-agg/ma-node-03 request done id=req-30d91ae9 route=/metric-agg/v1/sync status=500 latency_ms=41
+2026-11-05T08:04:11 WARN  metric-agg/ma-node-13 alert fired rule=error_ratio_high value=93% threshold=79%
+2026-11-05T08:04:16 INFO  metric-agg/ma-node-22 request done id=req-17b4e0c5 route=/metric-agg/v1/cancel status=409 latency_ms=62
+2026-11-05T08:04:17 INFO  metric-agg/ma-node-19 request done id=req-e8f5107f route=/metric-agg/v1/status status=429 latency_ms=129
+2026-11-05T08:04:23 NOTE  metric-agg/ma-node-14 operator=mjlee memo="ma-node-14 재기동 후 지표 정상 확인."
+2026-11-05T08:04:29 INFO  metric-agg/ma-node-21 request done id=req-865746f2 route=/metric-agg/v1/list status=404 latency_ms=127
+2026-11-05T08:04:34 INFO  metric-agg/ma-node-01 config applied key=retry.max_attempts value=true by=shkim
+2026-11-05T08:04:39 INFO  metric-agg/ma-node-10 request done id=req-7b6eb7c9 route=/metric-agg/v1/sync status=404 latency_ms=56
+2026-11-05T08:04:45 INFO  metric-agg/ma-node-04 config applied key=canary.latency_p99_threshold_ms value=false by=yjchoi
+2026-11-05T08:04:47 INFO  metric-agg/ma-node-11 request done id=req-56928338 route=/metric-agg/v1/get status=200 latency_ms=227
+2026-11-05T08:04:54 INFO  metric-agg/ma-node-10 config applied key=worker.concurrency value=false by=ejlim
+2026-11-05T08:04:55 INFO  metric-agg/ma-node-10 request done id=req-10a0ca8f route=/metric-agg/v1/update status=503 latency_ms=170
+2026-11-05T08:05:00 INFO  metric-agg/ma-node-05 ticket linked id=OPS-49952 reason=node_drain
+2026-11-05T08:05:03 INFO  metric-agg/ma-node-22 request done id=req-f504e8c3 route=/metric-agg/v1/sync status=503 latency_ms=147
+2026-11-05T08:05:10 WARN  metric-agg/ma-node-02 alert fired rule=queue_depth_high value=71 threshold=62
+2026-11-05T08:05:15 INFO  metric-agg/ma-node-18 pool resize target=metric-agg-db max_pool_size=189 prev=234
+2026-11-05T08:05:19 INFO  metric-agg/ma-node-15 request done id=req-ca656601 route=/metric-agg/v1/verify status=429 latency_ms=947
+2026-11-05T08:05:23 INFO  metric-agg/ma-node-07 config applied key=queue.batch_size value=87% by=ejlim
+2026-11-05T08:05:28 INFO  metric-agg/ma-node-08 deploy step release=metric-agg-4.21.5 step=healthcheck result=ok took_s=68
+2026-11-05T08:05:30 NOTE  metric-agg/ma-node-15 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-05T08:05:37 INFO  metric-agg/ma-node-10 request done id=req-bde9b9ef route=/metric-agg/v1/cancel status=204 latency_ms=222
+2026-11-05T08:05:39 INFO  metric-agg/ma-node-21 pool resize target=metric-agg-worker max_pool_size=259 prev=307
+2026-11-05T08:05:40 INFO  metric-agg/ma-node-18 request done id=req-80b307f8 route=/metric-agg/v1/sync status=200 latency_ms=35
+2026-11-05T08:05:42 INFO  metric-agg/ma-node-05 config applied key=canary.latency_p99_threshold_ms value=873 by=ejlim
+2026-11-05T08:05:47 INFO  metric-agg/ma-node-03 request done id=req-5299e0d0 route=/metric-agg/v1/sync status=200 latency_ms=39
+2026-11-05T08:05:51 INFO  metric-agg/ma-node-14 request done id=req-1d5373dc route=/metric-agg/v1/verify status=200 latency_ms=68
+2026-11-05T08:05:52 INFO  metric-agg/ma-node-24 request done id=req-ff21a83d route=/metric-agg/v1/cancel status=200 latency_ms=310
+2026-11-05T08:05:57 INFO  metric-agg/ma-node-22 request done id=req-c66a930a route=/metric-agg/v1/create status=200 latency_ms=248
+2026-11-05T08:06:00 INFO  metric-agg/ma-node-01 request done id=req-636418d9 route=/metric-agg/v1/verify status=200 latency_ms=18
+2026-11-05T08:06:07 WARN  metric-agg/ma-node-12 alert fired rule=cpu_steal_high value=69% threshold=61%
+2026-11-05T08:06:12 INFO  metric-agg/ma-node-22 request done id=req-2098b051 route=/metric-agg/v1/create status=200 latency_ms=635
+2026-11-05T08:06:19 INFO  metric-agg/ma-node-01 config applied key=http.max_conns value=true by=dwjung
+2026-11-05T08:06:20 INFO  metric-agg/ma-node-19 deploy step release=metric-agg-4.13.7 step=start result=ok took_s=98
+2026-11-05T08:06:22 INFO  metric-agg/ma-node-02 backup finished file=/vault/weekly/payments_2026w30.tar.zst size_mb=77610 checksum=0ed47bc6
+2026-11-05T08:06:26 INFO  metric-agg/ma-node-23 deploy step release=metric-agg-4.21.4 step=shift_traffic_100 result=ok took_s=114
+2026-11-05T08:06:32 INFO  metric-agg/ma-node-21 request done id=req-e8c0f00b route=/metric-agg/v1/verify status=200 latency_ms=73
+2026-11-05T08:06:37 INFO  metric-agg/ma-node-04 backup finished file=/vault/weekly/orders_2026w41.tar.zst size_mb=45520 checksum=f00e4f79
+2026-11-05T08:06:43 INFO  metric-agg/ma-node-24 deploy step release=metric-agg-4.19.1 step=start result=ok took_s=201
+2026-11-05T08:06:47 INFO  metric-agg/ma-node-23 request done id=req-628901a4 route=/metric-agg/v1/sync status=200 latency_ms=427
+2026-11-05T08:06:54 INFO  metric-agg/ma-node-14 cache stats region=ap-ne-2a hit_ratio=86.3% evictions=6789
+2026-11-05T08:06:57 INFO  metric-agg/ma-node-19 ticket linked id=OPS-49746 reason=node_drain
+2026-11-05T08:07:03 INFO  metric-agg/ma-node-12 pool resize target=metric-agg-cache max_pool_size=104 prev=96
+2026-11-05T08:07:07 INFO  metric-agg/ma-node-02 request done id=req-1fdea6b2 route=/metric-agg/v1/status status=500 latency_ms=50
+2026-11-05T08:07:12 INFO  metric-agg/ma-node-22 request done id=req-553354fc route=/metric-agg/v1/create status=429 latency_ms=105
+2026-11-05T08:07:17 INFO  metric-agg/ma-node-14 request done id=req-e8ed67be route=/metric-agg/v1/cancel status=200 latency_ms=78
+2026-11-05T08:07:22 WARN  metric-agg/ma-node-07 alert fired rule=queue_depth_high value=94 threshold=91
+2026-11-05T08:07:27 INFO  metric-agg/ma-node-18 request done id=req-b7dea21f route=/metric-agg/v1/cancel status=200 latency_ms=177
+2026-11-05T08:07:31 INFO  metric-agg/ma-node-23 ticket linked id=OPS-49529 reason=dns_ttl_change
+2026-11-05T08:07:37 WARN  metric-agg/ma-node-07 alert fired rule=gc_pause_long value=74ms threshold=59ms
+2026-11-05T08:07:39 INFO  metric-agg/ma-node-15 deploy step release=metric-agg-4.14.3 step=shift_traffic_100 result=ok took_s=230
+2026-11-05T08:07:44 INFO  metric-agg/ma-node-14 deploy step release=metric-agg-4.10.1 step=start result=ok took_s=201
+2026-11-05T08:07:48 INFO  metric-agg/ma-node-08 pool resize target=metric-agg-cache max_pool_size=182 prev=141
+2026-11-05T08:07:54 INFO  metric-agg/ma-node-14 request done id=req-f483ba59 route=/metric-agg/v1/update status=200 latency_ms=77
+2026-11-05T08:07:58 INFO  metric-agg/ma-node-10 config applied key=log.sample_rate value=2136 by=shkim
+2026-11-05T08:08:00 INFO  metric-agg/ma-node-08 request done id=req-ebe52ca7 route=/metric-agg/v1/list status=200 latency_ms=147
+2026-11-05T08:08:05 INFO  metric-agg/ma-node-21 deploy step release=metric-agg-4.15.7 step=drain result=ok took_s=206
+2026-11-05T08:08:10 INFO  metric-agg/ma-node-11 request done id=req-f80383aa route=/metric-agg/v1/list status=200 latency_ms=124
+2026-11-05T08:08:11 INFO  metric-agg/ma-node-20 config applied key=queue.batch_size value=true by=yjchoi
+2026-11-05T08:08:15 INFO  metric-agg/ma-node-08 ticket linked id=OPS-49769 reason=quota_increase
+2026-11-05T08:08:18 INFO  metric-agg/ma-node-07 request done id=req-a24c8f72 route=/metric-agg/v1/list status=200 latency_ms=739
+2026-11-05T08:08:19 INFO  metric-agg/ma-node-20 deploy step release=metric-agg-4.21.4 step=pull_image result=ok took_s=135
+2026-11-05T08:08:20 INFO  metric-agg/ma-node-05 ticket linked id=OPS-48433 reason=dependency_upgrade
+2026-11-05T08:08:27 INFO  metric-agg/ma-node-20 request done id=req-e59dbc0b route=/metric-agg/v1/verify status=404 latency_ms=391
+2026-11-05T08:08:31 INFO  metric-agg/ma-node-19 request done id=req-653680dc route=/metric-agg/v1/status status=404 latency_ms=195
+2026-11-05T08:08:38 INFO  metric-agg/ma-node-22 deploy step release=metric-agg-4.10.0 step=drain result=ok took_s=134
+2026-11-05T08:08:39 INFO  metric-agg/ma-node-10 request done id=req-ddaeaf2a route=/metric-agg/v1/verify status=200 latency_ms=373
+2026-11-05T08:08:46 INFO  metric-agg/ma-node-14 request done id=req-0285f90d route=/metric-agg/v1/verify status=200 latency_ms=231
+2026-11-05T08:08:52 INFO  metric-agg/ma-node-18 request done id=req-5440e82b route=/metric-agg/v1/create status=200 latency_ms=41
+2026-11-05T08:08:58 INFO  metric-agg/ma-node-19 config applied key=flush.interval_ms value=true by=hbyoon
+2026-11-05T08:09:03 INFO  metric-agg/ma-node-11 request done id=req-244a31a5 route=/metric-agg/v1/update status=200 latency_ms=276
+2026-11-05T08:09:09 INFO  metric-agg/ma-node-04 config applied key=retry.backoff_ms value=false by=jhpark
+2026-11-05T08:09:11 NOTE  metric-agg/ma-node-08 operator=mjlee memo="점검 창을 40분 연장함. 승인: 오세린 매니저."
+2026-11-05T08:09:13 INFO  metric-agg/ma-node-20 request done id=req-9c0bc690 route=/metric-agg/v1/status status=201 latency_ms=73
+2026-11-05T08:09:18 INFO  metric-agg/ma-node-03 request done id=req-605f1f97 route=/metric-agg/v1/create status=409 latency_ms=86
+2026-11-05T08:09:24 INFO  metric-agg/ma-node-12 request done id=req-52e578e2 route=/metric-agg/v1/update status=200 latency_ms=355
+2026-11-05T08:09:29 INFO  metric-agg/ma-node-19 request done id=req-c888a56a route=/metric-agg/v1/list status=204 latency_ms=149
+2026-11-05T08:09:34 INFO  metric-agg/ma-node-17 pool resize target=metric-agg-upstream max_pool_size=306 prev=347
+2026-11-05T08:09:41 WARN  metric-agg/ma-node-01 alert fired rule=p99_latency_high value=98ms threshold=96ms
+2026-11-05T08:09:47 INFO  metric-agg/ma-node-20 request done id=req-cdf6c686 route=/metric-agg/v1/status status=404 latency_ms=523
+2026-11-05T08:09:52 INFO  metric-agg/ma-node-05 request done id=req-f520741b route=/metric-agg/v1/cancel status=200 latency_ms=361
+2026-11-05T08:09:53 INFO  metric-agg/ma-node-16 request done id=req-00f24b70 route=/metric-agg/v1/verify status=429 latency_ms=508
+2026-11-05T08:09:54 INFO  metric-agg/ma-node-14 request done id=req-41c60fc0 route=/metric-agg/v1/create status=200 latency_ms=43
+2026-11-05T08:10:00 INFO  metric-agg/ma-node-19 backup finished file=/vault/weekly/inventory_2026w42.tar.zst size_mb=36431 checksum=c7e4d270
+2026-11-05T08:10:03 INFO  metric-agg/ma-node-05 deploy step release=metric-agg-4.21.8 step=drain result=ok took_s=79
+2026-11-05T08:10:08 NOTE  metric-agg/ma-node-10 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-05T08:10:09 NOTE  metric-agg/ma-node-03 operator=dwjung memo="인증서 갱신 일정 확인. 만료까지 49일 남음."
+2026-11-05T08:10:14 INFO  metric-agg/ma-node-23 request done id=req-b539157e route=/metric-agg/v1/sync status=200 latency_ms=100
+2026-11-05T08:10:21 INFO  metric-agg/ma-node-20 request done id=req-9bbb853c route=/metric-agg/v1/cancel status=200 latency_ms=20
+2026-11-05T08:10:26 INFO  metric-agg/ma-node-11 request done id=req-c2c9b357 route=/metric-agg/v1/list status=200 latency_ms=94
+2026-11-05T08:10:27 INFO  metric-agg/ma-node-08 ticket linked id=OPS-48062 reason=node_drain
+2026-11-05T08:10:29 INFO  metric-agg/ma-node-15 ticket linked id=OPS-49138 reason=node_drain
+2026-11-05T08:10:33 INFO  metric-agg/ma-node-22 pool resize target=metric-agg-db max_pool_size=274 prev=233
+2026-11-05T08:10:38 INFO  metric-agg/ma-node-03 ticket linked id=OPS-49796 reason=quota_increase
+2026-11-05T08:10:39 ERROR metric-agg/ma-node-18 job failed job=metric-agg-export attempt=2 cause=quota_exceeded
+2026-11-05T08:10:44 INFO  metric-agg/ma-node-05 request done id=req-d11c05ae route=/metric-agg/v1/list status=200 latency_ms=186
+2026-11-05T08:10:50 INFO  metric-agg/ma-node-15 cache stats region=ap-se-1a hit_ratio=62.7% evictions=9690
+2026-11-05T08:10:52 INFO  metric-agg/ma-node-07 config applied key=retry.backoff_ms value=3364 by=ejlim
+2026-11-05T08:10:59 INFO  metric-agg/ma-node-11 request done id=req-e8c2d145 route=/metric-agg/v1/update status=200 latency_ms=96
+2026-11-05T08:11:00 INFO  metric-agg/ma-node-18 backup finished file=/vault/daily/sessions_20261018.tar.zst size_mb=10001 checksum=746e0958
+2026-11-05T08:11:03 INFO  metric-agg/ma-node-12 request done id=req-b3065c43 route=/metric-agg/v1/status status=200 latency_ms=75
+2026-11-05T08:11:09 INFO  metric-agg/ma-node-09 request done id=req-c38af4d0 route=/metric-agg/v1/create status=200 latency_ms=27
+2026-11-05T08:11:12 INFO  metric-agg/ma-node-05 request done id=req-9fae3bfe route=/metric-agg/v1/create status=200 latency_ms=122
+2026-11-05T08:11:18 INFO  metric-agg/ma-node-13 deploy step release=metric-agg-4.22.5 step=healthcheck result=ok took_s=48
+2026-11-05T08:11:23 NOTE  metric-agg/ma-node-11 operator=mjlee memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-05T08:11:28 WARN  metric-agg/ma-node-02 alert fired rule=heap_used_high value=51% threshold=47%
+2026-11-05T08:11:29 INFO  metric-agg/ma-node-19 config applied key=limiter.rps value=3108 by=jhpark
+2026-11-05T08:11:31 ERROR metric-agg/ma-node-19 job failed job=metric-agg-cleanup attempt=1 cause=dns_failure
+2026-11-05T08:11:37 NOTE  metric-agg/ma-node-09 operator=shkim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-05T08:11:43 INFO  metric-agg/ma-node-22 cache stats region=ap-se-1a hit_ratio=64.6% evictions=12986
+2026-11-05T08:11:50 INFO  metric-agg/ma-node-12 request done id=req-4bf4d69b route=/metric-agg/v1/status status=200 latency_ms=201
+2026-11-05T08:11:52 NOTE  metric-agg/ma-node-21 operator=yjchoi memo="배치 시작 시각을 38시 53분으로 고정함."
+2026-11-05T08:11:56 INFO  metric-agg/ma-node-19 request done id=req-ba2957bc route=/metric-agg/v1/list status=500 latency_ms=143
+2026-11-05T08:11:59 INFO  metric-agg/ma-node-12 request done id=req-af12ad8e route=/metric-agg/v1/sync status=200 latency_ms=125
+2026-11-05T08:12:03 INFO  metric-agg/ma-node-11 request done id=req-60df9b95 route=/metric-agg/v1/cancel status=400 latency_ms=87
+2026-11-05T08:12:04 INFO  metric-agg/ma-node-17 request done id=req-d0346f6b route=/metric-agg/v1/get status=200 latency_ms=129
+2026-11-05T08:12:06 INFO  metric-agg/ma-node-12 backup finished file=/vault/daily/inventory_20261013.tar.zst size_mb=52168 checksum=b3add67f
+2026-11-05T08:12:08 INFO  metric-agg/ma-node-23 request done id=req-02651790 route=/metric-agg/v1/status status=404 latency_ms=77
+2026-11-05T08:12:10 INFO  metric-agg/ma-node-17 pool resize target=metric-agg-upstream max_pool_size=238 prev=190
+2026-11-05T08:12:12 INFO  metric-agg/ma-node-23 request done id=req-37585ad6 route=/metric-agg/v1/list status=200 latency_ms=145
+2026-11-05T08:12:17 INFO  metric-agg/ma-node-07 request done id=req-33d05839 route=/metric-agg/v1/update status=200 latency_ms=80
+2026-11-05T08:12:19 INFO  metric-agg/ma-node-02 ticket linked id=OPS-49768 reason=flaky_healthcheck
+2026-11-05T08:12:22 INFO  metric-agg/ma-node-13 request done id=req-e04de079 route=/metric-agg/v1/sync status=500 latency_ms=156
+2026-11-05T08:12:24 INFO  metric-agg/ma-node-03 backup finished file=/vault/weekly/inventory_2026w40.tar.zst size_mb=53815 checksum=747807ef
+2026-11-05T08:12:30 WARN  metric-agg/ma-node-23 alert fired rule=disk_usage_warning value=50% threshold=38%
+2026-11-05T08:12:34 INFO  metric-agg/ma-node-13 backup finished file=/vault/weekly/users_2026w31.tar.zst size_mb=32160 checksum=7ff01e1c
+2026-11-05T08:12:40 WARN  metric-agg/ma-node-21 alert fired rule=heap_used_high value=80% threshold=68%
+2026-11-05T08:12:42 INFO  metric-agg/ma-node-24 config applied key=retry.max_attempts value=true by=shkim
+2026-11-05T08:12:48 INFO  metric-agg/ma-node-20 backup finished file=/vault/daily/orders_20261008.tar.zst size_mb=38866 checksum=0b066158
+2026-11-05T08:12:50 INFO  metric-agg/ma-node-18 request done id=req-7adacfa1 route=/metric-agg/v1/status status=200 latency_ms=85
+2026-11-05T08:12:53 INFO  metric-agg/ma-node-10 request done id=req-77f41800 route=/metric-agg/v1/create status=200 latency_ms=102
+2026-11-05T08:12:55 INFO  metric-agg/ma-node-09 request done id=req-37e0b07b route=/metric-agg/v1/list status=200 latency_ms=122
+2026-11-05T08:12:56 INFO  metric-agg/ma-node-17 config applied key=breaker.open_ratio value=true by=hbyoon
+2026-11-05T08:13:00 WARN  metric-agg/ma-node-21 alert fired rule=p99_latency_high value=52ms threshold=43ms
+2026-11-05T08:13:07 INFO  metric-agg/ma-node-15 deploy step release=metric-agg-4.11.2 step=healthcheck result=ok took_s=189
+2026-11-05T08:13:10 INFO  metric-agg/ma-node-22 request done id=req-8bd2e2d6 route=/metric-agg/v1/cancel status=204 latency_ms=74
+2026-11-05T08:13:14 INFO  metric-agg/ma-node-17 config applied key=breaker.half_open_s value=8 by=sykang
+2026-11-05T08:13:19 INFO  metric-agg/ma-node-04 request done id=req-c8a13875 route=/metric-agg/v1/cancel status=200 latency_ms=159
+2026-11-05T08:13:22 INFO  metric-agg/ma-node-07 request done id=req-63fc333c route=/metric-agg/v1/status status=200 latency_ms=170
+2026-11-05T08:13:24 INFO  metric-agg/ma-node-16 deploy step release=metric-agg-4.17.6 step=pull_image result=ok took_s=75
+2026-11-05T08:13:29 INFO  metric-agg/ma-node-24 request done id=req-c01a3de1 route=/metric-agg/v1/sync status=200 latency_ms=441
+2026-11-05T08:13:34 INFO  metric-agg/ma-node-18 request done id=req-fb1af6c8 route=/metric-agg/v1/cancel status=200 latency_ms=166
+2026-11-05T08:13:35 INFO  metric-agg/ma-node-16 pool resize target=metric-agg-worker max_pool_size=265 prev=251
+2026-11-05T08:13:40 WARN  metric-agg/ma-node-12 alert fired rule=cpu_steal_high value=73% threshold=71%
+2026-11-05T08:13:41 INFO  metric-agg/ma-node-23 request done id=req-e2583fbf route=/metric-agg/v1/list status=200 latency_ms=71
+2026-11-05T08:13:47 NOTE  metric-agg/ma-node-11 operator=hbyoon memo="캐시 TTL을 44초로 되돌림. 오래된 응답이 보고됨."
+2026-11-05T08:13:48 INFO  metric-agg/ma-node-06 deploy step release=metric-agg-4.18.5 step=start result=ok took_s=33
+2026-11-05T08:13:55 INFO  metric-agg/ma-node-06 request done id=req-e318aeee route=/metric-agg/v1/create status=200 latency_ms=674
+2026-11-05T08:13:59 INFO  metric-agg/ma-node-24 deploy step release=metric-agg-4.19.7 step=shift_traffic_100 result=ok took_s=31
+2026-11-05T08:14:05 INFO  metric-agg/ma-node-16 ticket linked id=OPS-48223 reason=cert_rotation
+2026-11-05T08:14:08 INFO  metric-agg/ma-node-15 request done id=req-148d6aee route=/metric-agg/v1/cancel status=200 latency_ms=228
+2026-11-05T08:14:15 INFO  metric-agg/ma-node-14 deploy step release=metric-agg-4.13.2 step=shift_traffic_50 result=ok took_s=105
+2026-11-05T08:14:20 WARN  metric-agg/ma-node-07 alert fired rule=fd_usage_high value=62% threshold=50%
+2026-11-05T08:14:25 WARN  metric-agg/ma-node-21 alert fired rule=gc_pause_long value=82ms threshold=70ms
+2026-11-05T08:14:31 INFO  metric-agg/ma-node-12 backup finished file=/vault/daily/orders_20261024.tar.zst size_mb=16542 checksum=ed509532
+2026-11-05T08:14:32 INFO  metric-agg/ma-node-21 deploy step release=metric-agg-4.20.3 step=healthcheck result=ok took_s=68
+2026-11-05T08:14:37 INFO  metric-agg/ma-node-02 request done id=req-0ff406e8 route=/metric-agg/v1/update status=200 latency_ms=57
+2026-11-05T08:14:41 INFO  metric-agg/ma-node-19 request done id=req-0c8ecd99 route=/metric-agg/v1/sync status=200 latency_ms=247
+2026-11-05T08:14:44 WARN  metric-agg/ma-node-04 alert fired rule=fd_usage_high value=57% threshold=51%
+2026-11-05T08:14:49 WARN  metric-agg/ma-node-12 alert fired rule=error_ratio_high value=90% threshold=89%
+2026-11-05T08:14:53 NOTE  metric-agg/ma-node-22 operator=yjchoi memo="임시 증설 23대 추가. 내일 오전 회수 예정."
+2026-11-05T08:14:57 INFO  metric-agg/ma-node-24 config applied key=dns.ttl_s value=8197 by=jhpark
+2026-11-05T08:15:01 INFO  metric-agg/ma-node-18 request done id=req-016b8628 route=/metric-agg/v1/update status=204 latency_ms=138
+2026-11-05T08:15:04 INFO  metric-agg/ma-node-24 request done id=req-929aabd3 route=/metric-agg/v1/cancel status=200 latency_ms=103
+2026-11-05T08:15:07 INFO  metric-agg/ma-node-18 request done id=req-1cf02455 route=/metric-agg/v1/status status=429 latency_ms=188
+2026-11-05T08:15:14 INFO  metric-agg/ma-node-08 request done id=req-accb6e1e route=/metric-agg/v1/verify status=200 latency_ms=230
+2026-11-05T08:15:16 INFO  metric-agg/ma-node-11 request done id=req-c2edc332 route=/metric-agg/v1/list status=200 latency_ms=64
+2026-11-05T08:15:20 INFO  metric-agg/ma-node-09 request done id=req-3b0a2007 route=/metric-agg/v1/verify status=200 latency_ms=258
+2026-11-05T08:15:27 INFO  metric-agg/ma-node-19 request done id=req-9901ba24 route=/metric-agg/v1/list status=200 latency_ms=83
+2026-11-05T08:15:30 INFO  metric-agg/ma-node-05 request done id=req-bf2af379 route=/metric-agg/v1/status status=400 latency_ms=163
+2026-11-05T08:15:33 INFO  metric-agg/ma-node-12 ticket linked id=OPS-47694 reason=schema_change
+2026-11-05T08:15:35 INFO  metric-agg/ma-node-16 ticket linked id=OPS-49505 reason=oncall_handoff
+2026-11-05T08:15:42 INFO  metric-agg/ma-node-07 request done id=req-f18dd0b1 route=/metric-agg/v1/update status=400 latency_ms=229
+2026-11-05T08:15:46 INFO  metric-agg/ma-node-24 config applied key=breaker.open_ratio value=true by=shkim
+2026-11-05T08:15:49 ERROR metric-agg/ma-node-01 job failed job=metric-agg-cleanup attempt=1 cause=lock_wait_exceeded
+2026-11-05T08:15:50 ERROR metric-agg/ma-node-14 job failed job=metric-agg-rollup attempt=4 cause=quota_exceeded
+2026-11-05T08:15:56 NOTE  metric-agg/ma-node-07 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-05T08:16:03 NOTE  metric-agg/ma-node-21 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-05T08:16:06 INFO  metric-agg/ma-node-05 config applied key=http.read_timeout_ms value=2668 by=shkim
+2026-11-05T08:16:08 INFO  metric-agg/ma-node-14 pool resize target=metric-agg-upstream max_pool_size=37 prev=90
+2026-11-05T08:16:14 INFO  metric-agg/ma-node-21 ticket linked id=OPS-47434 reason=flaky_healthcheck
+2026-11-05T08:16:16 INFO  metric-agg/ma-node-18 request done id=req-b03e5239 route=/metric-agg/v1/get status=409 latency_ms=78
+2026-11-05T08:16:20 INFO  metric-agg/ma-node-20 request done id=req-ddb3221c route=/metric-agg/v1/verify status=503 latency_ms=43
+2026-11-05T08:16:24 INFO  metric-agg/ma-node-21 config applied key=queue.visibility_s value=81% by=shkim
+2026-11-05T08:16:25 INFO  metric-agg/ma-node-13 request done id=req-8672849e route=/metric-agg/v1/verify status=201 latency_ms=112
+2026-11-05T08:16:27 ERROR metric-agg/ma-node-05 job failed job=metric-agg-rollup attempt=1 cause=oom_killed
+2026-11-05T08:16:29 INFO  metric-agg/ma-node-14 ticket linked id=OPS-47974 reason=runbook_update
+2026-11-05T08:16:31 INFO  metric-agg/ma-node-19 request done id=req-e4376208 route=/metric-agg/v1/list status=200 latency_ms=37
+2026-11-05T08:16:38 NOTE  metric-agg/ma-node-02 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 53일 남음."
+2026-11-05T08:16:42 INFO  metric-agg/ma-node-12 request done id=req-acf716db route=/metric-agg/v1/list status=200 latency_ms=96
+2026-11-05T08:16:47 NOTE  metric-agg/ma-node-03 operator=sykang memo="ma-node-03 재기동 후 지표 정상 확인."
+2026-11-05T08:16:50 ERROR metric-agg/ma-node-23 job failed job=metric-agg-rollup attempt=3 cause=oom_killed
+2026-11-05T08:16:57 INFO  metric-agg/ma-node-19 pool resize target=metric-agg-upstream max_pool_size=380 prev=356
+2026-11-05T08:17:03 INFO  metric-agg/ma-node-11 request done id=req-46b5c433 route=/metric-agg/v1/status status=200 latency_ms=53
+2026-11-05T08:17:10 INFO  metric-agg/ma-node-12 config applied key=retry.backoff_ms value=12 by=hbyoon
+2026-11-05T08:17:11 INFO  metric-agg/ma-node-13 request done id=req-3afb17ea route=/metric-agg/v1/cancel status=200 latency_ms=162
+2026-11-05T08:17:18 INFO  metric-agg/ma-node-09 request done id=req-dc2f9252 route=/metric-agg/v1/cancel status=200 latency_ms=97
+2026-11-05T08:17:20 INFO  metric-agg/ma-node-05 request done id=req-544de040 route=/metric-agg/v1/list status=200 latency_ms=128
+2026-11-05T08:17:21 INFO  metric-agg/ma-node-21 pool resize target=metric-agg-queue max_pool_size=365 prev=313
+2026-11-05T08:17:28 INFO  metric-agg/ma-node-07 config applied key=canary.latency_p99_threshold_ms value=false by=shkim
+2026-11-05T08:17:32 INFO  metric-agg/ma-node-18 config applied key=retry.backoff_ms value=true by=sykang
+2026-11-05T08:17:36 INFO  metric-agg/ma-node-13 ticket linked id=OPS-49375 reason=quota_increase
+2026-11-05T08:17:39 INFO  metric-agg/ma-node-18 request done id=req-26fc9f1e route=/metric-agg/v1/status status=500 latency_ms=54
+2026-11-05T08:17:40 INFO  metric-agg/ma-node-06 request done id=req-12f224bd route=/metric-agg/v1/list status=200 latency_ms=154
+2026-11-05T08:17:46 INFO  metric-agg/ma-node-10 ticket linked id=OPS-49393 reason=quota_increase
+2026-11-05T08:17:53 INFO  metric-agg/ma-node-09 request done id=req-c4eb47e6 route=/metric-agg/v1/get status=200 latency_ms=143
+2026-11-05T08:17:56 INFO  metric-agg/ma-node-21 deploy step release=metric-agg-4.17.2 step=migrate result=ok took_s=165
+2026-11-05T08:17:59 WARN  metric-agg/ma-node-04 alert fired rule=heap_used_high value=63% threshold=61%
+2026-11-05T08:18:06 INFO  metric-agg/ma-node-16 config applied key=tls.session_cache value=true by=dwjung
+2026-11-05T08:18:09 NOTE  metric-agg/ma-node-04 operator=shkim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-05T08:18:10 WARN  metric-agg/ma-node-17 alert fired rule=replica_lag_high value=55s threshold=42s
+2026-11-05T08:18:17 INFO  metric-agg/ma-node-23 request done id=req-ad0a661f route=/metric-agg/v1/sync status=200 latency_ms=109
+2026-11-05T08:18:23 INFO  metric-agg/ma-node-16 backup finished file=/vault/daily/sessions_20261021.tar.zst size_mb=43709 checksum=8c2d7feb
+2026-11-05T08:18:30 INFO  metric-agg/ma-node-02 request done id=req-2d12f10c route=/metric-agg/v1/cancel status=204 latency_ms=47
+2026-11-05T08:18:32 INFO  metric-agg/ma-node-13 pool resize target=metric-agg-queue max_pool_size=380 prev=374
+2026-11-05T08:18:34 INFO  metric-agg/ma-node-08 request done id=req-e43a9651 route=/metric-agg/v1/update status=503 latency_ms=224
+2026-11-05T08:18:40 INFO  metric-agg/ma-node-02 request done id=req-da106f2e route=/metric-agg/v1/list status=200 latency_ms=71
+2026-11-05T08:18:41 INFO  metric-agg/ma-node-08 backup finished file=/vault/weekly/orders_2026w39.tar.zst size_mb=5046 checksum=0de6c460
+2026-11-05T08:18:44 INFO  metric-agg/ma-node-07 request done id=req-330b0a96 route=/metric-agg/v1/verify status=200 latency_ms=89
+2026-11-05T08:18:51 INFO  metric-agg/ma-node-18 cache stats region=us-we-2b hit_ratio=97.6% evictions=22364
+2026-11-05T08:18:58 INFO  metric-agg/ma-node-22 request done id=req-778bc399 route=/metric-agg/v1/create status=200 latency_ms=62
+2026-11-05T08:19:03 INFO  metric-agg/ma-node-05 cache stats region=ap-ne-2b hit_ratio=72.3% evictions=17144
+2026-11-05T08:19:05 INFO  metric-agg/ma-node-05 pool resize target=metric-agg-upstream max_pool_size=180 prev=188
+2026-11-05T08:19:08 INFO  metric-agg/ma-node-08 request done id=req-897143d8 route=/metric-agg/v1/create status=200 latency_ms=127
+2026-11-05T08:19:09 INFO  metric-agg/ma-node-01 request done id=req-1077e255 route=/metric-agg/v1/cancel status=200 latency_ms=750
+2026-11-05T08:19:12 NOTE  metric-agg/ma-node-18 operator=mjlee memo="동시 처리 수를 73에서 53로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-05T08:19:18 NOTE  metric-agg/ma-node-18 operator=hbyoon memo="배치 시작 시각을 4시 29분으로 고정함."
+2026-11-05T08:19:19 INFO  metric-agg/ma-node-10 request done id=req-2562ef62 route=/metric-agg/v1/sync status=204 latency_ms=41
+2026-11-05T08:19:24 INFO  metric-agg/ma-node-03 request done id=req-ed141035 route=/metric-agg/v1/cancel status=200 latency_ms=57
+2026-11-05T08:19:25 INFO  metric-agg/ma-node-21 ticket linked id=OPS-47345 reason=runbook_update
+2026-11-05T08:19:26 INFO  metric-agg/ma-node-12 request done id=req-00db7cc2 route=/metric-agg/v1/cancel status=200 latency_ms=577
+2026-11-05T08:19:27 INFO  metric-agg/ma-node-23 request done id=req-3e7767df route=/metric-agg/v1/cancel status=200 latency_ms=187
+2026-11-05T08:19:34 INFO  metric-agg/ma-node-19 ticket linked id=OPS-48196 reason=log_volume_spike
+2026-11-05T08:19:39 ERROR metric-agg/ma-node-18 job failed job=metric-agg-export attempt=1 cause=quota_exceeded
+2026-11-05T08:19:45 INFO  metric-agg/ma-node-12 request done id=req-ba7ced5e route=/metric-agg/v1/verify status=409 latency_ms=36
+2026-11-05T08:19:50 INFO  metric-agg/ma-node-05 request done id=req-c7d8b812 route=/metric-agg/v1/list status=400 latency_ms=200
+2026-11-05T08:19:55 INFO  metric-agg/ma-node-05 pool resize target=metric-agg-worker max_pool_size=293 prev=331
+2026-11-05T08:19:58 INFO  metric-agg/ma-node-24 request done id=req-a75cc1bf route=/metric-agg/v1/list status=200 latency_ms=91
+2026-11-05T08:20:00 INFO  metric-agg/ma-node-18 request done id=req-945ed46f route=/metric-agg/v1/list status=200 latency_ms=356
+2026-11-05T08:20:06 INFO  metric-agg/ma-node-18 request done id=req-e6a13090 route=/metric-agg/v1/status status=204 latency_ms=182
+2026-11-05T08:20:08 INFO  metric-agg/ma-node-13 ticket linked id=OPS-48550 reason=cert_rotation
+2026-11-05T08:20:11 INFO  metric-agg/ma-node-10 request done id=req-18c91b42 route=/metric-agg/v1/verify status=200 latency_ms=587
+2026-11-05T08:20:12 INFO  metric-agg/ma-node-12 ticket linked id=OPS-47335 reason=dns_ttl_change
+2026-11-05T08:20:16 INFO  metric-agg/ma-node-16 deploy step release=metric-agg-4.22.0 step=shift_traffic_10 result=ok took_s=138
+2026-11-05T08:20:23 INFO  metric-agg/ma-node-12 request done id=req-6e9c8ed0 route=/metric-agg/v1/update status=200 latency_ms=107
+2026-11-05T08:20:30 INFO  metric-agg/ma-node-04 ticket linked id=OPS-49116 reason=node_drain
+2026-11-05T08:20:35 WARN  metric-agg/ma-node-20 alert fired rule=error_ratio_high value=53% threshold=44%
+2026-11-05T08:20:38 INFO  metric-agg/ma-node-17 request done id=req-b156389e route=/metric-agg/v1/get status=409 latency_ms=287
+2026-11-05T08:20:42 INFO  metric-agg/ma-node-12 request done id=req-c7dc9ceb route=/metric-agg/v1/verify status=200 latency_ms=174
+2026-11-05T08:20:47 INFO  metric-agg/ma-node-03 request done id=req-639637d2 route=/metric-agg/v1/update status=204 latency_ms=105
+2026-11-05T08:20:50 INFO  metric-agg/ma-node-15 request done id=req-2f543bfb route=/metric-agg/v1/update status=200 latency_ms=309
+2026-11-05T08:20:55 INFO  metric-agg/ma-node-09 ticket linked id=OPS-49616 reason=quota_increase
+2026-11-05T08:20:58 INFO  metric-agg/ma-node-14 request done id=req-e69a045e route=/metric-agg/v1/sync status=404 latency_ms=35
+2026-11-05T08:21:00 INFO  metric-agg/ma-node-06 ticket linked id=OPS-49742 reason=quota_increase
+2026-11-05T08:21:01 INFO  metric-agg/ma-node-07 request done id=req-e4c5298a route=/metric-agg/v1/cancel status=500 latency_ms=220
+2026-11-05T08:21:08 INFO  metric-agg/ma-node-18 backup finished file=/vault/weekly/payments_2026w40.tar.zst size_mb=46716 checksum=454cdc04
+2026-11-05T08:21:09 INFO  metric-agg/ma-node-03 request done id=req-97c7f800 route=/metric-agg/v1/get status=200 latency_ms=103
+2026-11-05T08:21:14 INFO  metric-agg/ma-node-17 ticket linked id=OPS-49912 reason=dependency_upgrade
+2026-11-05T08:21:20 INFO  metric-agg/ma-node-04 cache stats region=ap-ne-2b hit_ratio=85.6% evictions=34967
+2026-11-05T08:21:25 INFO  metric-agg/ma-node-20 request done id=req-07c59931 route=/metric-agg/v1/verify status=400 latency_ms=667
+2026-11-05T08:21:29 NOTE  metric-agg/ma-node-18 operator=ejlim memo="점검 창을 49분 연장함. 승인: 오세린 매니저."
+2026-11-05T08:21:33 INFO  metric-agg/ma-node-07 request done id=req-b34679be route=/metric-agg/v1/cancel status=200 latency_ms=62
+2026-11-05T08:21:37 INFO  metric-agg/ma-node-16 request done id=req-e927e775 route=/metric-agg/v1/get status=200 latency_ms=153
+2026-11-05T08:21:44 WARN  metric-agg/ma-node-24 alert fired rule=fd_usage_high value=99% threshold=93%
+2026-11-05T08:21:50 INFO  metric-agg/ma-node-06 cache stats region=ap-ne-2b hit_ratio=96.1% evictions=32039
+2026-11-05T08:21:54 INFO  metric-agg/ma-node-21 request done id=req-e9710e72 route=/metric-agg/v1/create status=500 latency_ms=277
+2026-11-05T08:21:56 INFO  metric-agg/ma-node-18 config applied key=retry.max_attempts value=89% by=sykang
+2026-11-05T08:21:59 INFO  metric-agg/ma-node-07 pool resize target=metric-agg-cache max_pool_size=299 prev=248
+2026-11-05T08:22:00 INFO  metric-agg/ma-node-07 backup finished file=/vault/weekly/inventory_2026w37.tar.zst size_mb=78592 checksum=27888e1e
+2026-11-05T08:22:02 INFO  metric-agg/ma-node-13 request done id=req-b5d81fff route=/metric-agg/v1/create status=503 latency_ms=102
+2026-11-05T08:22:03 INFO  metric-agg/ma-node-01 request done id=req-4f402c52 route=/metric-agg/v1/create status=400 latency_ms=143
+2026-11-05T08:22:05 INFO  metric-agg/ma-node-23 ticket linked id=OPS-47206 reason=cert_rotation
+2026-11-05T08:22:10 INFO  metric-agg/ma-node-13 pool resize target=metric-agg-cache max_pool_size=77 prev=117
+2026-11-05T08:22:12 INFO  metric-agg/ma-node-13 pool resize target=metric-agg-upstream max_pool_size=213 prev=223
+2026-11-05T08:22:15 INFO  metric-agg/ma-node-11 request done id=req-5875bb51 route=/metric-agg/v1/create status=201 latency_ms=113
+2026-11-05T08:22:22 INFO  metric-agg/ma-node-04 request done id=req-50d82ccf route=/metric-agg/v1/status status=200 latency_ms=50
+2026-11-05T08:22:24 INFO  metric-agg/ma-node-11 request done id=req-ce0d4677 route=/metric-agg/v1/create status=204 latency_ms=104
+2026-11-05T08:22:25 INFO  metric-agg/ma-node-01 request done id=req-292e61d9 route=/metric-agg/v1/verify status=200 latency_ms=61
+2026-11-05T08:22:31 INFO  metric-agg/ma-node-11 deploy step release=metric-agg-4.14.4 step=start result=ok took_s=229
+2026-11-05T08:22:33 INFO  metric-agg/ma-node-14 ticket linked id=OPS-49836 reason=oncall_handoff
+2026-11-05T08:22:34 INFO  metric-agg/ma-node-15 deploy step release=metric-agg-4.13.7 step=verify result=ok took_s=210
+2026-11-05T08:22:38 INFO  metric-agg/ma-node-19 request done id=req-da95194a route=/metric-agg/v1/sync status=200 latency_ms=331
+2026-11-05T08:22:45 NOTE  metric-agg/ma-node-23 operator=sykang memo="점검 창을 8분 연장함. 승인: 오세린 매니저."
+2026-11-05T08:22:49 INFO  metric-agg/ma-node-24 request done id=req-ab514302 route=/metric-agg/v1/create status=500 latency_ms=97
+2026-11-05T08:22:50 INFO  metric-agg/ma-node-10 ticket linked id=OPS-47616 reason=flaky_healthcheck
+2026-11-05T08:22:56 INFO  metric-agg/ma-node-17 request done id=req-df2995d5 route=/metric-agg/v1/create status=200 latency_ms=128
+2026-11-05T08:22:59 INFO  metric-agg/ma-node-19 request done id=req-4817056d route=/metric-agg/v1/verify status=200 latency_ms=82
+2026-11-05T08:23:03 INFO  metric-agg/ma-node-01 request done id=req-f1a8600a route=/metric-agg/v1/sync status=200 latency_ms=301
+2026-11-05T08:23:10 INFO  metric-agg/ma-node-24 backup finished file=/vault/daily/inventory_20261026.tar.zst size_mb=6916 checksum=46d68c76
+2026-11-05T08:23:11 INFO  metric-agg/ma-node-08 pool resize target=metric-agg-upstream max_pool_size=380 prev=352
+2026-11-05T08:23:15 INFO  metric-agg/ma-node-17 request done id=req-8fad094c route=/metric-agg/v1/cancel status=200 latency_ms=95
+2026-11-05T08:23:18 INFO  metric-agg/ma-node-18 request done id=req-914dfe17 route=/metric-agg/v1/cancel status=200 latency_ms=251
+2026-11-05T08:23:21 INFO  metric-agg/ma-node-17 request done id=req-f3baff0a route=/metric-agg/v1/cancel status=503 latency_ms=78
+2026-11-05T08:23:25 INFO  metric-agg/ma-node-09 request done id=req-27f902af route=/metric-agg/v1/cancel status=200 latency_ms=86
+2026-11-05T08:23:26 INFO  metric-agg/ma-node-04 request done id=req-ecb975c6 route=/metric-agg/v1/status status=200 latency_ms=166
+2026-11-05T08:23:29 INFO  metric-agg/ma-node-07 request done id=req-df708942 route=/metric-agg/v1/get status=200 latency_ms=23
+2026-11-05T08:23:33 INFO  metric-agg/ma-node-07 request done id=req-8d0b7211 route=/metric-agg/v1/status status=400 latency_ms=89
+2026-11-05T08:23:36 WARN  metric-agg/ma-node-19 alert fired rule=cpu_steal_high value=64% threshold=53%
+2026-11-05T08:23:43 WARN  metric-agg/ma-node-21 alert fired rule=disk_usage_warning value=57% threshold=50%
+2026-11-05T08:23:50 INFO  metric-agg/ma-node-19 request done id=req-3ae1c35f route=/metric-agg/v1/create status=200 latency_ms=133
+2026-11-05T08:23:54 INFO  metric-agg/ma-node-07 request done id=req-0dcb2b3d route=/metric-agg/v1/update status=204 latency_ms=198
+2026-11-05T08:23:57 INFO  metric-agg/ma-node-05 request done id=req-cb425d2e route=/metric-agg/v1/status status=200 latency_ms=149
+2026-11-05T08:24:01 ERROR metric-agg/ma-node-02 job failed job=metric-agg-reindex attempt=2 cause=bad_checksum
+2026-11-05T08:24:04 INFO  metric-agg/ma-node-06 deploy step release=metric-agg-4.20.7 step=pull_image result=ok took_s=234
+2026-11-05T08:24:09 INFO  metric-agg/ma-node-07 backup finished file=/vault/daily/users_20261013.tar.zst size_mb=82563 checksum=11488a10
+2026-11-05T08:24:15 INFO  metric-agg/ma-node-06 deploy step release=metric-agg-4.15.6 step=start result=ok took_s=83
+2026-11-05T08:24:19 INFO  metric-agg/ma-node-12 request done id=req-11af53fd route=/metric-agg/v1/cancel status=200 latency_ms=53
+2026-11-05T08:24:22 ERROR metric-agg/ma-node-14 job failed job=metric-agg-cleanup attempt=2 cause=dns_failure
+2026-11-05T08:24:24 INFO  metric-agg/ma-node-05 request done id=req-42c38fe9 route=/metric-agg/v1/update status=200 latency_ms=45
+2026-11-05T08:24:25 INFO  metric-agg/ma-node-05 config applied key=breaker.open_ratio value=49 by=shkim
+2026-11-05T08:24:28 INFO  metric-agg/ma-node-06 request done id=req-3a3b8703 route=/metric-agg/v1/status status=201 latency_ms=250
+2026-11-05T08:24:29 INFO  metric-agg/ma-node-02 config applied key=breaker.half_open_s value=57% by=mjlee
+2026-11-05T08:24:30 INFO  metric-agg/ma-node-06 request done id=req-12652a40 route=/metric-agg/v1/list status=200 latency_ms=165
+2026-11-05T08:24:35 INFO  metric-agg/ma-node-17 request done id=req-d6f45b95 route=/metric-agg/v1/create status=200 latency_ms=95
+2026-11-05T08:24:38 WARN  metric-agg/ma-node-20 alert fired rule=heap_used_high value=92% threshold=87%
+2026-11-05T08:24:41 WARN  metric-agg/ma-node-24 alert fired rule=cpu_steal_high value=89% threshold=88%
+2026-11-05T08:24:47 INFO  metric-agg/ma-node-17 request done id=req-2793b24b route=/metric-agg/v1/update status=400 latency_ms=319
+2026-11-05T08:24:50 INFO  metric-agg/ma-node-09 cache stats region=ap-ne-2b hit_ratio=98.4% evictions=1516
+2026-11-05T08:24:51 INFO  metric-agg/ma-node-13 request done id=req-40054e7b route=/metric-agg/v1/verify status=200 latency_ms=236
+2026-11-05T08:24:54 INFO  metric-agg/ma-node-12 config applied key=breaker.open_ratio value=5335 by=hbyoon
+2026-11-05T08:24:59 INFO  metric-agg/ma-node-20 request done id=req-8ad5f6c6 route=/metric-agg/v1/get status=200 latency_ms=345
+2026-11-05T08:25:05 INFO  metric-agg/ma-node-08 deploy step release=metric-agg-4.17.6 step=shift_traffic_100 result=ok took_s=90
+2026-11-05T08:25:09 INFO  metric-agg/ma-node-17 request done id=req-fded5455 route=/metric-agg/v1/sync status=200 latency_ms=39
+2026-11-05T08:25:10 INFO  metric-agg/ma-node-16 pool resize target=metric-agg-upstream max_pool_size=390 prev=395
+2026-11-05T08:25:13 INFO  metric-agg/ma-node-07 request done id=req-a8b428d4 route=/metric-agg/v1/sync status=200 latency_ms=214
+2026-11-05T08:25:20 INFO  metric-agg/ma-node-06 pool resize target=metric-agg-queue max_pool_size=101 prev=52
+2026-11-05T08:25:23 INFO  metric-agg/ma-node-10 request done id=req-082128fe route=/metric-agg/v1/list status=200 latency_ms=155
+2026-11-05T08:25:30 INFO  metric-agg/ma-node-02 config applied key=log.sample_rate value=3329 by=dwjung
+2026-11-05T08:25:37 INFO  metric-agg/ma-node-02 backup finished file=/vault/daily/payments_20261001.tar.zst size_mb=37778 checksum=008cbc49
+2026-11-05T08:25:41 INFO  metric-agg/ma-node-20 config applied key=gc.pause_target_ms value=true by=hbyoon
+2026-11-05T08:25:47 INFO  metric-agg/ma-node-10 request done id=req-fc5a91ef route=/metric-agg/v1/sync status=201 latency_ms=149
+2026-11-05T08:25:53 INFO  metric-agg/ma-node-04 config applied key=http.max_conns value=6548 by=sykang
+2026-11-05T08:25:59 INFO  metric-agg/ma-node-13 backup finished file=/vault/daily/sessions_20261005.tar.zst size_mb=85027 checksum=83b6c504
+2026-11-05T08:26:00 NOTE  metric-agg/ma-node-17 operator=hbyoon memo="ma-node-17 재기동 후 지표 정상 확인."
+2026-11-05T08:26:06 INFO  metric-agg/ma-node-12 request done id=req-98e4f4f1 route=/metric-agg/v1/cancel status=429 latency_ms=212
+2026-11-05T08:26:10 INFO  metric-agg/ma-node-13 config applied key=limiter.burst value=false by=shkim
+2026-11-05T08:26:11 INFO  metric-agg/ma-node-04 request done id=req-2284ea3f route=/metric-agg/v1/list status=200 latency_ms=56
+2026-11-05T08:26:15 INFO  metric-agg/ma-node-12 cache stats region=ap-ne-2a hit_ratio=76.1% evictions=14341
+2026-11-05T08:26:20 INFO  metric-agg/ma-node-20 request done id=req-f2336ce1 route=/metric-agg/v1/get status=200 latency_ms=30
+2026-11-05T08:26:23 INFO  metric-agg/ma-node-11 request done id=req-a06fd86b route=/metric-agg/v1/create status=503 latency_ms=289
+2026-11-05T08:26:25 INFO  metric-agg/ma-node-14 request done id=req-16bfca30 route=/metric-agg/v1/update status=200 latency_ms=169
+2026-11-05T08:26:30 INFO  metric-agg/ma-node-02 cache stats region=ap-ne-2c hit_ratio=81.4% evictions=14968
+2026-11-05T08:26:36 WARN  metric-agg/ma-node-04 alert fired rule=fd_usage_high value=73% threshold=71%
+2026-11-05T08:26:38 INFO  metric-agg/ma-node-18 deploy step release=metric-agg-4.21.3 step=healthcheck result=ok took_s=148
+2026-11-05T08:26:42 INFO  metric-agg/ma-node-24 request done id=req-e37428a0 route=/metric-agg/v1/status status=200 latency_ms=251
+2026-11-05T08:26:47 INFO  metric-agg/ma-node-06 request done id=req-f2009a86 route=/metric-agg/v1/verify status=200 latency_ms=177
+2026-11-05T08:26:52 ERROR metric-agg/ma-node-16 job failed job=metric-agg-rollup attempt=3 cause=quota_exceeded
+2026-11-05T08:26:56 INFO  metric-agg/ma-node-22 request done id=req-237c82ba route=/metric-agg/v1/cancel status=200 latency_ms=802
+2026-11-05T08:26:58 INFO  metric-agg/ma-node-03 request done id=req-c776a7f2 route=/metric-agg/v1/verify status=200 latency_ms=141
+2026-11-05T08:26:59 INFO  metric-agg/ma-node-18 deploy step release=metric-agg-4.20.8 step=verify result=ok took_s=78
+2026-11-05T08:27:04 INFO  metric-agg/ma-node-04 config applied key=log.sample_rate value=false by=sykang
+2026-11-05T08:27:08 INFO  metric-agg/ma-node-14 request done id=req-06d2f592 route=/metric-agg/v1/sync status=200 latency_ms=65
+2026-11-05T08:27:10 INFO  metric-agg/ma-node-11 ticket linked id=OPS-47117 reason=log_volume_spike
+2026-11-05T08:27:15 INFO  metric-agg/ma-node-22 deploy step release=metric-agg-4.22.6 step=drain result=ok took_s=52
+2026-11-05T08:27:18 INFO  metric-agg/ma-node-16 ticket linked id=OPS-49873 reason=dns_ttl_change
+2026-11-05T08:27:20 INFO  metric-agg/ma-node-08 request done id=req-3c371618 route=/metric-agg/v1/sync status=429 latency_ms=75
+2026-11-05T08:27:21 INFO  metric-agg/ma-node-23 config applied key=breaker.open_ratio value=4% by=yjchoi
+2026-11-05T08:27:22 WARN  metric-agg/ma-node-16 alert fired rule=gc_pause_long value=72ms threshold=63ms
+2026-11-05T08:27:26 INFO  metric-agg/ma-node-17 request done id=req-c561002a route=/metric-agg/v1/get status=200 latency_ms=167
+2026-11-05T08:27:29 INFO  metric-agg/ma-node-03 pool resize target=metric-agg-upstream max_pool_size=124 prev=124
+2026-11-05T08:27:33 INFO  metric-agg/ma-node-02 request done id=req-aa9d8118 route=/metric-agg/v1/update status=200 latency_ms=397
+2026-11-05T08:27:34 INFO  metric-agg/ma-node-15 deploy step release=metric-agg-4.14.7 step=verify result=ok took_s=156
+2026-11-05T08:27:35 INFO  metric-agg/ma-node-04 request done id=req-c963976e route=/metric-agg/v1/status status=503 latency_ms=114
+2026-11-05T08:27:36 INFO  metric-agg/ma-node-15 request done id=req-faf878d6 route=/metric-agg/v1/create status=400 latency_ms=441
+2026-11-05T08:27:41 INFO  metric-agg/ma-node-01 request done id=req-bdf2acb1 route=/metric-agg/v1/get status=503 latency_ms=76
+2026-11-05T08:27:48 INFO  metric-agg/ma-node-05 pool resize target=metric-agg-db max_pool_size=161 prev=136
+2026-11-05T08:27:49 ERROR metric-agg/ma-node-04 job failed job=metric-agg-rollup attempt=2 cause=upstream_timeout
+2026-11-05T08:27:55 INFO  metric-agg/ma-node-20 pool resize target=metric-agg-worker max_pool_size=302 prev=285
+2026-11-05T08:27:56 WARN  metric-agg/ma-node-23 alert fired rule=conn_pool_saturated value=54% threshold=46%
+2026-11-05T08:27:58 INFO  metric-agg/ma-node-16 request done id=req-0b5b7edd route=/metric-agg/v1/create status=503 latency_ms=81
+2026-11-05T08:28:00 NOTE  metric-agg/ma-node-11 operator=ejlim memo="타임아웃을 55ms에서 57ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-05T08:28:04 INFO  metric-agg/ma-node-24 ticket linked id=OPS-48342 reason=quota_increase
+2026-11-05T08:28:11 INFO  metric-agg/ma-node-23 config applied key=dns.ttl_s value=7902 by=yjchoi
+2026-11-05T08:28:12 INFO  metric-agg/ma-node-12 request done id=req-24935cc8 route=/metric-agg/v1/create status=200 latency_ms=53
+2026-11-05T08:28:17 NOTE  metric-agg/ma-node-03 operator=shkim memo="연동 팀에 변경 공지 완료."
+2026-11-05T08:28:21 INFO  metric-agg/ma-node-21 request done id=req-2f2021b5 route=/metric-agg/v1/status status=200 latency_ms=151
+2026-11-05T08:28:28 INFO  metric-agg/ma-node-18 request done id=req-99b8ed58 route=/metric-agg/v1/sync status=400 latency_ms=108
+2026-11-05T08:28:35 INFO  metric-agg/ma-node-05 pool resize target=metric-agg-upstream max_pool_size=213 prev=165
+2026-11-05T08:28:39 INFO  metric-agg/ma-node-21 ticket linked id=OPS-48303 reason=dns_ttl_change
+2026-11-05T08:28:46 INFO  metric-agg/ma-node-07 request done id=req-096184df route=/metric-agg/v1/cancel status=200 latency_ms=103
+2026-11-05T08:28:52 INFO  metric-agg/ma-node-20 config applied key=queue.batch_size value=false by=shkim
+2026-11-05T08:28:58 ERROR metric-agg/ma-node-01 job failed job=metric-agg-export attempt=4 cause=quota_exceeded
+2026-11-05T08:29:00 INFO  metric-agg/ma-node-07 ticket linked id=OPS-48897 reason=flaky_healthcheck
+2026-11-05T08:29:06 INFO  metric-agg/ma-node-05 request done id=req-664b29ff route=/metric-agg/v1/get status=200 latency_ms=146
+2026-11-05T08:29:08 INFO  metric-agg/ma-node-03 request done id=req-29bcb57f route=/metric-agg/v1/sync status=200 latency_ms=79
+2026-11-05T08:29:15 INFO  metric-agg/ma-node-14 cache stats region=ap-ne-2a hit_ratio=64.0% evictions=36899
+2026-11-05T08:29:17 INFO  metric-agg/ma-node-24 pool resize target=metric-agg-queue max_pool_size=159 prev=136
+2026-11-05T08:29:18 INFO  metric-agg/ma-node-09 request done id=req-66ec1ff7 route=/metric-agg/v1/verify status=200 latency_ms=135
+2026-11-05T08:29:24 INFO  metric-agg/ma-node-24 ticket linked id=OPS-48431 reason=quota_increase
+2026-11-05T08:29:29 INFO  metric-agg/ma-node-03 config applied key=canary.latency_p99_threshold_ms value=true by=mjlee
+2026-11-05T08:29:34 INFO  metric-agg/ma-node-20 request done id=req-a62a2cfa route=/metric-agg/v1/get status=200 latency_ms=94
+2026-11-05T08:29:37 INFO  metric-agg/ma-node-02 config applied key=breaker.open_ratio value=47 by=dwjung
+2026-11-05T08:29:42 INFO  metric-agg/ma-node-03 request done id=req-d28a8a84 route=/metric-agg/v1/cancel status=200 latency_ms=56
+2026-11-05T08:29:45 WARN  metric-agg/ma-node-14 alert fired rule=replica_lag_high value=71s threshold=67s
+2026-11-05T08:29:52 INFO  metric-agg/ma-node-07 config applied key=queue.batch_size value=82% by=dwjung
+2026-11-05T08:29:57 INFO  metric-agg/ma-node-02 request done id=req-cae2d3a4 route=/metric-agg/v1/update status=404 latency_ms=176
+2026-11-05T08:30:03 INFO  metric-agg/ma-node-13 request done id=req-a2a3a5ec route=/metric-agg/v1/sync status=429 latency_ms=157
+2026-11-05T08:30:09 INFO  metric-agg/ma-node-22 deploy step release=metric-agg-4.11.4 step=shift_traffic_100 result=ok took_s=63
+2026-11-05T08:30:16 INFO  metric-agg/ma-node-16 config applied key=shard.count value=2 by=sykang
+2026-11-05T08:30:19 INFO  metric-agg/ma-node-05 request done id=req-edd403e8 route=/metric-agg/v1/verify status=500 latency_ms=168
+2026-11-05T08:30:20 INFO  metric-agg/ma-node-14 request done id=req-e27fdb78 route=/metric-agg/v1/get status=200 latency_ms=142
+2026-11-05T08:30:25 NOTE  metric-agg/ma-node-05 operator=ejlim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-05T08:30:32 INFO  metric-agg/ma-node-14 request done id=req-4cf4d9b9 route=/metric-agg/v1/status status=200 latency_ms=69
+2026-11-05T08:30:37 INFO  metric-agg/ma-node-11 request done id=req-6437e317 route=/metric-agg/v1/create status=429 latency_ms=68
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

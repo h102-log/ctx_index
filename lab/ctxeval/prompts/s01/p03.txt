@@ -1,0 +1,424 @@
+참고용 로그 03: 주문 DB(order-db) 스키마 마이그레이션 구간. '확인'이라고만 답해 줘.
+
+2026-10-07T00:49:07 INFO  order-db/od-node-22 backup finished file=/vault/weekly/inventory_2026w37.tar.zst size_mb=7650 checksum=2648c03a
+2026-10-07T00:49:11 INFO  order-db/od-node-21 pool resize target=order-db-cache max_pool_size=282 prev=254
+2026-10-07T00:49:18 INFO  order-db/od-node-09 request done id=req-496d4a7c route=/order-db/v1/create status=200 latency_ms=132
+2026-10-07T00:49:20 NOTE  order-db/od-node-09 operator=ejlim memo="점검 창을 12분 연장함. 승인: 민도현 파트장."
+2026-10-07T00:49:25 INFO  order-db/od-node-17 request done id=req-cac8cb38 route=/order-db/v1/get status=200 latency_ms=95
+2026-10-07T00:49:30 WARN  order-db/od-node-10 alert fired rule=gc_pause_long value=96ms threshold=94ms
+2026-10-07T00:49:35 INFO  order-db/od-node-13 deploy step release=order-db-4.16.0 step=shift_traffic_50 result=ok took_s=68
+2026-10-07T00:49:36 NOTE  order-db/od-node-08 operator=hbyoon memo="로그 보존 기간은 18일로 유지하기로 함."
+2026-10-07T00:49:41 INFO  order-db/od-node-06 deploy step release=order-db-4.13.9 step=healthcheck result=ok took_s=76
+2026-10-07T00:49:43 INFO  order-db/od-node-15 backup finished file=/vault/weekly/users_2026w38.tar.zst size_mb=83763 checksum=b72f55ea
+2026-10-07T00:49:47 WARN  order-db/od-node-21 alert fired rule=conn_pool_saturated value=92% threshold=80%
+2026-10-07T00:49:50 WARN  order-db/od-node-18 alert fired rule=disk_usage_warning value=59% threshold=51%
+2026-10-07T00:49:54 INFO  order-db/od-node-24 deploy step release=order-db-4.11.6 step=shift_traffic_10 result=ok took_s=179
+2026-10-07T00:49:59 INFO  order-db/od-node-16 request done id=req-0b917554 route=/order-db/v1/cancel status=200 latency_ms=171
+2026-10-07T00:50:02 INFO  order-db/od-node-15 cache stats region=us-we-2b hit_ratio=96.6% evictions=30397
+2026-10-07T00:50:06 NOTE  order-db/od-node-01 operator=yjchoi memo="헬스체크 간격을 16초에서 45초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-07T00:50:12 INFO  order-db/od-node-03 request done id=req-57e04fae route=/order-db/v1/sync status=200 latency_ms=154
+2026-10-07T00:50:17 INFO  order-db/od-node-21 request done id=req-bc1f9d2f route=/order-db/v1/get status=200 latency_ms=212
+2026-10-07T00:50:23 INFO  order-db/od-node-18 deploy step release=order-db-4.11.1 step=drain result=ok took_s=37
+2026-10-07T00:50:27 INFO  order-db/od-node-14 request done id=req-1af8a375 route=/order-db/v1/get status=200 latency_ms=215
+2026-10-07T00:50:29 INFO  order-db/od-node-07 request done id=req-05998e26 route=/order-db/v1/update status=500 latency_ms=254
+2026-10-07T00:50:30 INFO  order-db/od-node-16 request done id=req-25a77dc1 route=/order-db/v1/get status=200 latency_ms=201
+2026-10-07T00:50:36 INFO  order-db/od-node-09 request done id=req-e0e0a145 route=/order-db/v1/verify status=503 latency_ms=205
+2026-10-07T00:50:41 INFO  order-db/od-node-04 request done id=req-31973cc1 route=/order-db/v1/update status=200 latency_ms=149
+2026-10-07T00:50:44 INFO  order-db/od-node-14 backup finished file=/vault/weekly/orders_2026w43.tar.zst size_mb=82477 checksum=38f0de89
+2026-10-07T00:50:46 INFO  order-db/od-node-09 request done id=req-23e8f703 route=/order-db/v1/get status=400 latency_ms=586
+2026-10-07T00:50:50 INFO  order-db/od-node-15 request done id=req-dfc47bbb route=/order-db/v1/verify status=200 latency_ms=83
+2026-10-07T00:50:51 INFO  order-db/od-node-09 deploy step release=order-db-4.21.4 step=pull_image result=ok took_s=29
+2026-10-07T00:50:52 INFO  order-db/od-node-22 request done id=req-37e086b3 route=/order-db/v1/create status=409 latency_ms=558
+2026-10-07T00:50:57 INFO  order-db/od-node-04 config applied key=queue.batch_size value=77% by=mjlee
+2026-10-07T00:51:03 WARN  order-db/od-node-17 alert fired rule=replica_lag_high value=59s threshold=45s
+2026-10-07T00:51:04 WARN  order-db/od-node-23 alert fired rule=p99_latency_high value=67ms threshold=65ms
+2026-10-07T00:51:07 INFO  order-db/od-node-20 request done id=req-4c9e3607 route=/order-db/v1/create status=200 latency_ms=26
+2026-10-07T00:51:14 INFO  order-db/od-node-04 config applied key=retry.backoff_ms value=true by=yjchoi
+2026-10-07T00:51:20 INFO  order-db/od-node-22 request done id=req-8ae9845d route=/order-db/v1/cancel status=500 latency_ms=78
+2026-10-07T00:51:27 INFO  order-db/od-node-14 pool resize target=order-db-cache max_pool_size=168 prev=151
+2026-10-07T00:51:30 INFO  order-db/od-node-16 request done id=req-b7ab2ff9 route=/order-db/v1/cancel status=200 latency_ms=34
+2026-10-07T00:51:35 INFO  order-db/od-node-12 request done id=req-d678324b route=/order-db/v1/list status=200 latency_ms=101
+2026-10-07T00:51:37 INFO  order-db/od-node-18 request done id=req-8298a93b route=/order-db/v1/status status=200 latency_ms=49
+2026-10-07T00:51:39 INFO  order-db/od-node-22 deploy step release=order-db-4.10.8 step=warmup result=ok took_s=107
+2026-10-07T00:51:45 INFO  order-db/od-node-04 pool resize target=order-db-db max_pool_size=216 prev=204
+2026-10-07T00:51:52 WARN  order-db/od-node-07 alert fired rule=queue_depth_high value=65 threshold=56
+2026-10-07T00:51:57 INFO  order-db/od-node-18 config applied key=canary.latency_p99_threshold_ms value=7876 by=sykang
+2026-10-07T00:52:03 NOTE  order-db/od-node-10 operator=yjchoi memo="점검 창을 2분 연장함. 승인: 민도현 파트장."
+2026-10-07T00:52:07 NOTE  order-db/od-node-21 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 3일 남음."
+2026-10-07T00:52:14 WARN  order-db/od-node-17 alert fired rule=disk_usage_warning value=70% threshold=57%
+2026-10-07T00:52:16 ERROR order-db/od-node-15 job failed job=order-db-export attempt=4 cause=oom_killed
+2026-10-07T00:52:19 INFO  order-db/od-node-07 request done id=req-af8be0bf route=/order-db/v1/create status=200 latency_ms=154
+2026-10-07T00:52:21 INFO  order-db/od-node-24 request done id=req-2812c85c route=/order-db/v1/sync status=400 latency_ms=145
+2026-10-07T00:52:25 INFO  order-db/od-node-07 config applied key=retry.backoff_ms value=49 by=yjchoi
+2026-10-07T00:52:26 INFO  order-db/od-node-05 config applied key=limiter.rps value=5196 by=hbyoon
+2026-10-07T00:52:27 WARN  order-db/od-node-18 alert fired rule=heap_used_high value=75% threshold=64%
+2026-10-07T00:52:33 INFO  order-db/od-node-22 request done id=req-d8e8ce08 route=/order-db/v1/get status=204 latency_ms=225
+2026-10-07T00:52:34 INFO  order-db/od-node-01 request done id=req-748be0ea route=/order-db/v1/sync status=200 latency_ms=35
+2026-10-07T00:52:41 INFO  order-db/od-node-05 ticket linked id=OPS-49635 reason=schema_change
+2026-10-07T00:52:45 INFO  order-db/od-node-08 request done id=req-6500e3c1 route=/order-db/v1/status status=400 latency_ms=35
+2026-10-07T00:52:47 WARN  order-db/od-node-19 alert fired rule=error_ratio_high value=84% threshold=79%
+2026-10-07T00:52:51 INFO  order-db/od-node-13 request done id=req-f903a14d route=/order-db/v1/get status=200 latency_ms=81
+2026-10-07T00:52:56 INFO  order-db/od-node-11 request done id=req-b32ceec4 route=/order-db/v1/status status=200 latency_ms=37
+2026-10-07T00:53:01 WARN  order-db/od-node-09 alert fired rule=p99_latency_high value=98ms threshold=85ms
+2026-10-07T00:53:05 WARN  order-db/od-node-02 alert fired rule=heap_used_high value=70% threshold=61%
+2026-10-07T00:53:09 INFO  order-db/od-node-07 ticket linked id=OPS-48672 reason=runbook_update
+2026-10-07T00:53:10 INFO  order-db/od-node-01 request done id=req-0691d337 route=/order-db/v1/update status=200 latency_ms=143
+2026-10-07T00:53:11 INFO  order-db/od-node-02 pool resize target=order-db-upstream max_pool_size=69 prev=117
+2026-10-07T00:53:13 NOTE  order-db/od-node-01 operator=jhpark memo="헬스체크 간격을 49초에서 77초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-07T00:53:20 WARN  order-db/od-node-11 alert fired rule=conn_pool_saturated value=70% threshold=55%
+2026-10-07T00:53:21 INFO  order-db/od-node-22 request done id=req-820db6d9 route=/order-db/v1/verify status=200 latency_ms=133
+2026-10-07T00:53:23 INFO  order-db/od-node-10 request done id=req-a7ac7c26 route=/order-db/v1/list status=201 latency_ms=321
+2026-10-07T00:53:29 INFO  order-db/od-node-13 request done id=req-de1493b2 route=/order-db/v1/update status=429 latency_ms=132
+2026-10-07T00:53:30 ERROR order-db/od-node-06 job failed job=order-db-rollup attempt=4 cause=dns_failure
+2026-10-07T00:53:37 NOTE  order-db/od-node-19 operator=dwjung memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-07T00:53:39 INFO  order-db/od-node-10 ticket linked id=OPS-49859 reason=log_volume_spike
+2026-10-07T00:53:45 INFO  order-db/od-node-11 request done id=req-7c71895c route=/order-db/v1/sync status=200 latency_ms=136
+2026-10-07T00:53:47 INFO  order-db/od-node-08 config applied key=retry.max_attempts value=29 by=hbyoon
+2026-10-07T00:53:51 INFO  order-db/od-node-12 request done id=req-63036c8a route=/order-db/v1/get status=200 latency_ms=65
+2026-10-07T00:53:52 INFO  order-db/od-node-14 request done id=req-1b2590b7 route=/order-db/v1/create status=404 latency_ms=181
+2026-10-07T00:53:54 WARN  order-db/od-node-06 alert fired rule=fd_usage_high value=71% threshold=68%
+2026-10-07T00:53:56 INFO  order-db/od-node-16 pool resize target=order-db-worker max_pool_size=296 prev=246
+2026-10-07T00:54:00 INFO  order-db/od-node-09 deploy step release=order-db-4.11.6 step=shift_traffic_10 result=ok took_s=41
+2026-10-07T00:54:04 INFO  order-db/od-node-13 request done id=req-33e5368c route=/order-db/v1/update status=503 latency_ms=27
+2026-10-07T00:54:05 INFO  order-db/od-node-20 backup finished file=/vault/weekly/sessions_2026w34.tar.zst size_mb=89458 checksum=18bdbeac
+2026-10-07T00:54:07 INFO  order-db/od-node-23 cache stats region=ap-ne-2a hit_ratio=72.9% evictions=18098
+2026-10-07T00:54:14 INFO  order-db/od-node-07 config applied key=retry.backoff_ms value=true by=dwjung
+2026-10-07T00:54:20 INFO  order-db/od-node-11 config applied key=breaker.open_ratio value=true by=yjchoi
+2026-10-07T00:54:25 INFO  order-db/od-node-21 backup finished file=/vault/daily/orders_20261014.tar.zst size_mb=11191 checksum=80640fa7
+2026-10-07T00:54:30 INFO  order-db/od-node-14 pool resize target=order-db-db max_pool_size=67 prev=42
+2026-10-07T00:54:36 INFO  order-db/od-node-18 deploy step release=order-db-4.21.5 step=warmup result=ok took_s=215
+2026-10-07T00:54:40 INFO  order-db/od-node-14 config applied key=limiter.burst value=true by=dwjung
+2026-10-07T00:54:43 INFO  order-db/od-node-16 config applied key=retry.max_attempts value=true by=jhpark
+2026-10-07T00:54:50 INFO  order-db/od-node-22 request done id=req-845c9dc0 route=/order-db/v1/cancel status=200 latency_ms=36
+2026-10-07T00:54:52 INFO  order-db/od-node-12 request done id=req-9d193478 route=/order-db/v1/update status=200 latency_ms=59
+2026-10-07T00:54:59 INFO  order-db/od-node-17 request done id=req-a89e3531 route=/order-db/v1/status status=200 latency_ms=100
+2026-10-07T00:55:05 INFO  order-db/od-node-01 request done id=req-81ca2d98 route=/order-db/v1/status status=429 latency_ms=93
+2026-10-07T00:55:08 INFO  order-db/od-node-12 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=63093 checksum=88b20a30
+2026-10-07T00:55:09 INFO  order-db/od-node-12 deploy step release=order-db-4.13.1 step=shift_traffic_100 result=ok took_s=237
+2026-10-07T00:55:16 INFO  order-db/od-node-22 request done id=req-4b12ee90 route=/order-db/v1/verify status=201 latency_ms=322
+2026-10-07T00:55:22 INFO  order-db/od-node-19 config applied key=worker.concurrency value=false by=mjlee
+2026-10-07T00:55:28 NOTE  order-db/od-node-16 operator=jhpark memo="동시 처리 수를 68에서 48로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-07T00:55:33 INFO  order-db/od-node-24 request done id=req-0f3c309b route=/order-db/v1/status status=200 latency_ms=83
+2026-10-07T00:55:40 NOTE  order-db/od-node-11 operator=sykang memo="배치 시작 시각을 32시 45분으로 고정함."
+2026-10-07T00:55:44 WARN  order-db/od-node-05 alert fired rule=disk_usage_warning value=99% threshold=85%
+2026-10-07T00:55:48 INFO  order-db/od-node-01 backup finished file=/vault/daily/users_20261023.tar.zst size_mb=80316 checksum=24c09c12
+2026-10-07T00:55:55 INFO  order-db/od-node-23 request done id=req-9ef3a070 route=/order-db/v1/cancel status=429 latency_ms=254
+2026-10-07T00:55:59 INFO  order-db/od-node-19 request done id=req-2e7111e0 route=/order-db/v1/status status=200 latency_ms=261
+2026-10-07T00:56:06 INFO  order-db/od-node-17 request done id=req-d33dfdf4 route=/order-db/v1/sync status=200 latency_ms=143
+2026-10-07T00:56:13 INFO  order-db/od-node-18 cache stats region=ap-se-1a hit_ratio=76.9% evictions=16537
+2026-10-07T00:56:17 INFO  order-db/od-node-19 backup finished file=/vault/daily/inventory_20261002.tar.zst size_mb=24598 checksum=625ea1ff
+2026-10-07T00:56:23 WARN  order-db/od-node-10 alert fired rule=disk_usage_warning value=88% threshold=84%
+2026-10-07T00:56:28 INFO  order-db/od-node-12 cache stats region=ap-se-1a hit_ratio=85.0% evictions=17096
+2026-10-07T00:56:33 WARN  order-db/od-node-08 alert fired rule=queue_depth_high value=55 threshold=47
+2026-10-07T00:56:36 WARN  order-db/od-node-16 alert fired rule=gc_pause_long value=67ms threshold=59ms
+2026-10-07T00:56:41 INFO  order-db/od-node-24 request done id=req-6b099cb1 route=/order-db/v1/list status=200 latency_ms=373
+2026-10-07T00:56:45 INFO  order-db/od-node-09 config applied key=queue.visibility_s value=58 by=mjlee
+2026-10-07T00:56:49 INFO  order-db/od-node-11 request done id=req-e3daf5b1 route=/order-db/v1/cancel status=200 latency_ms=42
+2026-10-07T00:56:56 INFO  order-db/od-node-22 config applied key=retry.backoff_ms value=38 by=jhpark
+2026-10-07T00:57:03 INFO  order-db/od-node-13 request done id=req-26136866 route=/order-db/v1/cancel status=200 latency_ms=181
+2026-10-07T00:57:05 INFO  order-db/od-node-17 deploy step release=order-db-4.22.4 step=shift_traffic_50 result=ok took_s=239
+2026-10-07T00:57:08 NOTE  order-db/od-node-19 operator=shkim memo="점검 창을 30분 연장함. 승인: 민도현 파트장."
+2026-10-07T00:57:13 INFO  order-db/od-node-07 config applied key=retry.backoff_ms value=35% by=shkim
+2026-10-07T00:57:19 INFO  order-db/od-node-19 request done id=req-0500dcb7 route=/order-db/v1/create status=201 latency_ms=134
+2026-10-07T00:57:24 INFO  order-db/od-node-22 config applied key=breaker.open_ratio value=false by=hbyoon
+2026-10-07T00:57:25 INFO  order-db/od-node-20 config applied key=limiter.rps value=3947 by=yjchoi
+2026-10-07T00:57:30 INFO  order-db/od-node-04 pool resize target=order-db-db max_pool_size=295 prev=325
+2026-10-07T00:57:36 INFO  order-db/od-node-02 request done id=req-7dfb865e route=/order-db/v1/update status=201 latency_ms=100
+2026-10-07T00:57:42 INFO  order-db/od-node-07 request done id=req-5e145ae9 route=/order-db/v1/cancel status=200 latency_ms=158
+2026-10-07T00:57:49 INFO  order-db/od-node-01 request done id=req-2fee9b7b route=/order-db/v1/verify status=500 latency_ms=256
+2026-10-07T00:57:53 INFO  order-db/od-node-24 request done id=req-4f82e55f route=/order-db/v1/get status=503 latency_ms=198
+2026-10-07T00:57:58 INFO  order-db/od-node-21 request done id=req-20fa5ea2 route=/order-db/v1/get status=503 latency_ms=89
+2026-10-07T00:58:00 WARN  order-db/od-node-01 alert fired rule=cpu_steal_high value=56% threshold=49%
+2026-10-07T00:58:05 INFO  order-db/od-node-17 request done id=req-0455dc31 route=/order-db/v1/list status=200 latency_ms=133
+2026-10-07T00:58:08 INFO  order-db/od-node-20 request done id=req-4d17db84 route=/order-db/v1/cancel status=200 latency_ms=149
+2026-10-07T00:58:12 INFO  order-db/od-node-15 deploy step release=order-db-4.21.5 step=warmup result=ok took_s=6
+2026-10-07T00:58:16 INFO  order-db/od-node-08 request done id=req-05aa9af4 route=/order-db/v1/create status=200 latency_ms=162
+2026-10-07T00:58:23 INFO  order-db/od-node-08 request done id=req-011e6a58 route=/order-db/v1/update status=400 latency_ms=30
+2026-10-07T00:58:25 INFO  order-db/od-node-23 request done id=req-a1ecdc8c route=/order-db/v1/status status=400 latency_ms=156
+2026-10-07T00:58:31 INFO  order-db/od-node-09 request done id=req-ffd40a95 route=/order-db/v1/verify status=200 latency_ms=88
+2026-10-07T00:58:38 INFO  order-db/od-node-16 request done id=req-84282b1c route=/order-db/v1/sync status=400 latency_ms=311
+2026-10-07T00:58:43 NOTE  order-db/od-node-10 operator=jhpark memo="배치 시작 시각을 8시 48분으로 고정함."
+2026-10-07T00:58:50 INFO  order-db/od-node-16 request done id=req-b06b11d2 route=/order-db/v1/sync status=500 latency_ms=246
+2026-10-07T00:58:57 INFO  order-db/od-node-24 cache stats region=ap-ne-2b hit_ratio=63.3% evictions=27779
+2026-10-07T00:59:00 INFO  order-db/od-node-06 request done id=req-3f8a57a0 route=/order-db/v1/list status=409 latency_ms=130
+2026-10-07T00:59:07 INFO  order-db/od-node-09 config applied key=limiter.rps value=true by=dwjung
+2026-10-07T00:59:10 INFO  order-db/od-node-05 request done id=req-d24d21a7 route=/order-db/v1/get status=409 latency_ms=39
+2026-10-07T00:59:13 INFO  order-db/od-node-23 ticket linked id=OPS-48130 reason=oncall_handoff
+2026-10-07T00:59:19 INFO  order-db/od-node-23 request done id=req-43a391e0 route=/order-db/v1/sync status=200 latency_ms=71
+2026-10-07T00:59:24 INFO  order-db/od-node-06 request done id=req-4ddea55a route=/order-db/v1/update status=201 latency_ms=60
+2026-10-07T00:59:26 INFO  order-db/od-node-18 request done id=req-5351567f route=/order-db/v1/verify status=500 latency_ms=473
+2026-10-07T00:59:32 INFO  order-db/od-node-12 pool resize target=order-db-queue max_pool_size=372 prev=405
+2026-10-07T00:59:35 INFO  order-db/od-node-03 request done id=req-77fe2d2f route=/order-db/v1/list status=200 latency_ms=26
+2026-10-07T00:59:38 INFO  order-db/od-node-20 request done id=req-af618787 route=/order-db/v1/cancel status=200 latency_ms=76
+2026-10-07T00:59:40 INFO  order-db/od-node-14 request done id=req-fbd9e53c route=/order-db/v1/sync status=200 latency_ms=102
+2026-10-07T00:59:42 INFO  order-db/od-node-11 ticket linked id=OPS-47858 reason=dns_ttl_change
+2026-10-07T00:59:46 WARN  order-db/od-node-01 alert fired rule=disk_usage_warning value=83% threshold=71%
+2026-10-07T00:59:49 INFO  order-db/od-node-15 request done id=req-0237ca83 route=/order-db/v1/update status=201 latency_ms=128
+2026-10-07T00:59:54 INFO  order-db/od-node-20 request done id=req-1d9a3223 route=/order-db/v1/cancel status=404 latency_ms=208
+2026-10-07T00:59:55 INFO  order-db/od-node-06 request done id=req-d927193a route=/order-db/v1/create status=409 latency_ms=125
+2026-10-07T00:59:59 INFO  order-db/od-node-24 deploy step release=order-db-4.20.2 step=verify result=ok took_s=222
+2026-10-07T01:00:02 INFO  order-db/od-node-03 pool resize target=order-db-queue max_pool_size=342 prev=365
+2026-10-07T01:00:07 NOTE  order-db/od-node-02 operator=mjlee memo="연동 팀에 변경 공지 완료."
+2026-10-07T01:00:13 NOTE  order-db/od-node-24 operator=ejlim memo="배치 시작 시각을 30시 51분으로 고정함."
+2026-10-07T01:00:14 INFO  order-db/od-node-19 config applied key=cache.ttl_s value=true by=ejlim
+2026-10-07T01:00:21 INFO  order-db/od-node-14 request done id=req-c142f5c0 route=/order-db/v1/verify status=200 latency_ms=331
+2026-10-07T01:00:23 INFO  order-db/od-node-09 cache stats region=ap-ne-2a hit_ratio=92.1% evictions=7568
+2026-10-07T01:00:29 INFO  order-db/od-node-01 request done id=req-18f2b82e route=/order-db/v1/list status=404 latency_ms=222
+2026-10-07T01:00:31 INFO  order-db/od-node-01 request done id=req-279ca642 route=/order-db/v1/list status=404 latency_ms=72
+2026-10-07T01:00:35 INFO  order-db/od-node-03 backup finished file=/vault/daily/orders_20261024.tar.zst size_mb=35334 checksum=bf5ee2a2
+2026-10-07T01:00:38 INFO  order-db/od-node-21 backup finished file=/vault/weekly/orders_2026w44.tar.zst size_mb=20535 checksum=531d73b7
+2026-10-07T01:00:42 INFO  order-db/od-node-01 backup finished file=/vault/daily/audit_20261019.tar.zst size_mb=36924 checksum=492f8750
+2026-10-07T01:00:48 INFO  order-db/od-node-02 deploy step release=order-db-4.13.8 step=warmup result=ok took_s=8
+2026-10-07T01:00:55 INFO  order-db/od-node-02 deploy step release=order-db-4.17.3 step=migrate result=ok took_s=145
+2026-10-07T01:00:58 INFO  order-db/od-node-11 ticket linked id=OPS-47841 reason=flaky_healthcheck
+2026-10-07T01:01:05 INFO  order-db/od-node-13 pool resize target=order-db-queue max_pool_size=378 prev=364
+2026-10-07T01:01:08 INFO  order-db/od-node-20 request done id=req-b8bf96db route=/order-db/v1/update status=400 latency_ms=339
+2026-10-07T01:01:09 WARN  order-db/od-node-14 alert fired rule=queue_depth_high value=65 threshold=63
+2026-10-07T01:01:14 INFO  order-db/od-node-09 backup finished file=/vault/weekly/audit_2026w41.tar.zst size_mb=37535 checksum=99a7ba51
+2026-10-07T01:01:15 WARN  order-db/od-node-07 alert fired rule=disk_usage_warning value=81% threshold=66%
+2026-10-07T01:01:21 INFO  order-db/od-node-05 request done id=req-441a04ce route=/order-db/v1/list status=200 latency_ms=59
+2026-10-07T01:01:23 NOTE  order-db/od-node-20 operator=mjlee memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-07T01:01:27 INFO  order-db/od-node-17 ticket linked id=OPS-47891 reason=quota_increase
+2026-10-07T01:01:31 INFO  order-db/od-node-08 request done id=req-3fbc959d route=/order-db/v1/sync status=204 latency_ms=243
+2026-10-07T01:01:38 INFO  order-db/od-node-16 request done id=req-83607c72 route=/order-db/v1/sync status=200 latency_ms=73
+2026-10-07T01:01:44 NOTE  order-db/od-node-22 operator=hbyoon memo="점검 창을 55분 연장함. 승인: 한지우 리드."
+2026-10-07T01:01:51 INFO  order-db/od-node-13 deploy step release=order-db-4.12.3 step=shift_traffic_10 result=ok took_s=165
+2026-10-07T01:01:57 INFO  order-db/od-node-20 request done id=req-c024d45e route=/order-db/v1/update status=200 latency_ms=137
+2026-10-07T01:01:58 ERROR order-db/od-node-20 job failed job=order-db-export attempt=2 cause=bad_checksum
+2026-10-07T01:02:05 WARN  order-db/od-node-02 alert fired rule=replica_lag_high value=51s threshold=38s
+2026-10-07T01:02:09 WARN  order-db/od-node-09 alert fired rule=disk_usage_warning value=62% threshold=47%
+2026-10-07T01:02:14 INFO  order-db/od-node-07 request done id=req-a0767d9c route=/order-db/v1/sync status=200 latency_ms=39
+2026-10-07T01:02:20 ERROR order-db/od-node-04 job failed job=order-db-cleanup attempt=4 cause=bad_checksum
+2026-10-07T01:02:21 INFO  order-db/od-node-07 ticket linked id=OPS-47051 reason=schema_change
+2026-10-07T01:02:22 INFO  order-db/od-node-18 request done id=req-97516c6c route=/order-db/v1/status status=200 latency_ms=78
+2026-10-07T01:02:28 INFO  order-db/od-node-12 request done id=req-29e6149b route=/order-db/v1/update status=200 latency_ms=47
+2026-10-07T01:02:30 INFO  order-db/od-node-01 request done id=req-94200647 route=/order-db/v1/get status=404 latency_ms=293
+2026-10-07T01:02:33 INFO  order-db/od-node-15 request done id=req-8a73e249 route=/order-db/v1/status status=429 latency_ms=83
+2026-10-07T01:02:36 WARN  order-db/od-node-23 alert fired rule=heap_used_high value=69% threshold=61%
+2026-10-07T01:02:42 INFO  order-db/od-node-12 request done id=req-419b2df3 route=/order-db/v1/create status=200 latency_ms=301
+2026-10-07T01:02:43 INFO  order-db/od-node-23 config applied key=canary.latency_p99_threshold_ms value=60 by=mjlee
+2026-10-07T01:02:45 INFO  order-db/od-node-06 request done id=req-6766832b route=/order-db/v1/cancel status=204 latency_ms=43
+2026-10-07T01:02:51 INFO  order-db/od-node-09 pool resize target=order-db-db max_pool_size=152 prev=149
+2026-10-07T01:02:52 INFO  order-db/od-node-22 config applied key=breaker.half_open_s value=4% by=hbyoon
+2026-10-07T01:02:57 INFO  order-db/od-node-01 request done id=req-8ac97336 route=/order-db/v1/cancel status=200 latency_ms=170
+2026-10-07T01:03:02 INFO  order-db/od-node-12 request done id=req-eafe6a4e route=/order-db/v1/verify status=200 latency_ms=69
+2026-10-07T01:03:04 INFO  order-db/od-node-17 request done id=req-d47cf2c7 route=/order-db/v1/get status=200 latency_ms=65
+2026-10-07T01:03:10 INFO  order-db/od-node-14 cache stats region=ap-ne-2b hit_ratio=60.8% evictions=39492
+2026-10-07T01:03:14 INFO  order-db/od-node-19 request done id=req-d4814f9d route=/order-db/v1/cancel status=200 latency_ms=625
+2026-10-07T01:03:21 INFO  order-db/od-node-17 request done id=req-4eab5896 route=/order-db/v1/cancel status=409 latency_ms=236
+2026-10-07T01:03:27 INFO  order-db/od-node-09 cache stats region=ap-ne-2a hit_ratio=84.1% evictions=166
+2026-10-07T01:03:29 INFO  order-db/od-node-14 request done id=req-6c45d4e5 route=/order-db/v1/sync status=503 latency_ms=40
+2026-10-07T01:03:30 WARN  order-db/od-node-18 alert fired rule=disk_usage_warning value=81% threshold=78%
+2026-10-07T01:03:31 INFO  order-db/od-node-20 request done id=req-eff0e2f3 route=/order-db/v1/get status=201 latency_ms=227
+2026-10-07T01:03:32 INFO  order-db/od-node-06 pool resize target=order-db-upstream max_pool_size=11 prev=4
+2026-10-07T01:03:35 INFO  order-db/od-node-19 pool resize target=order-db-upstream max_pool_size=355 prev=308
+2026-10-07T01:03:36 INFO  order-db/od-node-22 request done id=req-b67ece56 route=/order-db/v1/verify status=200 latency_ms=30
+2026-10-07T01:03:43 INFO  order-db/od-node-02 cache stats region=ap-ne-2c hit_ratio=82.4% evictions=23979
+2026-10-07T01:03:45 INFO  order-db/od-node-08 request done id=req-930f1626 route=/order-db/v1/create status=429 latency_ms=494
+2026-10-07T01:03:51 WARN  order-db/od-node-09 alert fired rule=replica_lag_high value=50s threshold=38s
+2026-10-07T01:03:58 INFO  order-db/od-node-04 request done id=req-a63e7d79 route=/order-db/v1/cancel status=200 latency_ms=344
+2026-10-07T01:04:03 INFO  order-db/od-node-12 pool resize target=order-db-worker max_pool_size=268 prev=226
+2026-10-07T01:04:09 INFO  order-db/od-node-01 request done id=req-d57c4945 route=/order-db/v1/create status=200 latency_ms=50
+2026-10-07T01:04:10 INFO  order-db/od-node-19 request done id=req-077efc3b route=/order-db/v1/create status=429 latency_ms=61
+2026-10-07T01:04:15 WARN  order-db/od-node-09 alert fired rule=replica_lag_high value=50s threshold=45s
+2026-10-07T01:04:16 INFO  order-db/od-node-18 pool resize target=order-db-upstream max_pool_size=303 prev=270
+2026-10-07T01:04:17 INFO  order-db/od-node-22 deploy step release=order-db-4.17.6 step=shift_traffic_10 result=ok took_s=229
+2026-10-07T01:04:22 INFO  order-db/od-node-17 config applied key=http.read_timeout_ms value=31 by=jhpark
+2026-10-07T01:04:24 INFO  order-db/od-node-22 request done id=req-e60c213b route=/order-db/v1/list status=400 latency_ms=238
+2026-10-07T01:04:26 NOTE  order-db/od-node-04 operator=sykang memo="동시 처리 수를 38에서 3로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-07T01:04:27 INFO  order-db/od-node-12 deploy step release=order-db-4.21.7 step=shift_traffic_10 result=ok took_s=66
+2026-10-07T01:04:29 INFO  order-db/od-node-07 request done id=req-29069e9f route=/order-db/v1/get status=503 latency_ms=154
+2026-10-07T01:04:32 INFO  order-db/od-node-04 request done id=req-e79e411d route=/order-db/v1/verify status=204 latency_ms=101
+2026-10-07T01:04:37 INFO  order-db/od-node-18 backup finished file=/vault/weekly/sessions_2026w38.tar.zst size_mb=3599 checksum=34927e13
+2026-10-07T01:04:43 INFO  order-db/od-node-01 request done id=req-837c1e69 route=/order-db/v1/update status=200 latency_ms=161
+2026-10-07T01:04:45 INFO  order-db/od-node-19 request done id=req-e586718b route=/order-db/v1/sync status=200 latency_ms=16
+2026-10-07T01:04:51 NOTE  order-db/od-node-01 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-07T01:04:56 INFO  order-db/od-node-23 pool resize target=order-db-db max_pool_size=377 prev=412
+2026-10-07T01:05:03 NOTE  order-db/od-node-20 operator=yjchoi memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-07T01:05:10 INFO  order-db/od-node-08 ticket linked id=OPS-47060 reason=flaky_healthcheck
+2026-10-07T01:05:13 NOTE  order-db/od-node-17 operator=mjlee memo="인증서 갱신 일정 확인. 만료까지 7일 남음."
+2026-10-07T01:05:14 INFO  order-db/od-node-01 pool resize target=order-db-queue max_pool_size=111 prev=149
+2026-10-07T01:05:17 INFO  order-db/od-node-01 config applied key=breaker.half_open_s value=false by=ejlim
+2026-10-07T01:05:19 WARN  order-db/od-node-15 alert fired rule=gc_pause_long value=52ms threshold=49ms
+2026-10-07T01:05:23 WARN  order-db/od-node-11 alert fired rule=p99_latency_high value=84ms threshold=79ms
+2026-10-07T01:05:27 WARN  order-db/od-node-20 alert fired rule=fd_usage_high value=56% threshold=54%
+2026-10-07T01:05:28 INFO  order-db/od-node-23 request done id=req-817ab90f route=/order-db/v1/list status=200 latency_ms=336
+2026-10-07T01:05:31 INFO  order-db/od-node-15 deploy step release=order-db-4.18.3 step=shift_traffic_10 result=ok took_s=23
+2026-10-07T01:05:36 INFO  order-db/od-node-08 request done id=req-c8248db7 route=/order-db/v1/status status=201 latency_ms=154
+2026-10-07T01:05:37 WARN  order-db/od-node-06 alert fired rule=p99_latency_high value=80ms threshold=76ms
+2026-10-07T01:05:38 INFO  order-db/od-node-13 request done id=req-f7887767 route=/order-db/v1/create status=200 latency_ms=102
+2026-10-07T01:05:40 INFO  order-db/od-node-18 request done id=req-acc2632a route=/order-db/v1/create status=200 latency_ms=160
+2026-10-07T01:05:41 INFO  order-db/od-node-01 config applied key=flush.interval_ms value=4965 by=sykang
+2026-10-07T01:05:45 INFO  order-db/od-node-07 request done id=req-ad4616c0 route=/order-db/v1/create status=200 latency_ms=184
+2026-10-07T01:05:46 INFO  order-db/od-node-16 request done id=req-ed7e9707 route=/order-db/v1/get status=200 latency_ms=637
+2026-10-07T01:05:51 INFO  order-db/od-node-22 pool resize target=order-db-cache max_pool_size=287 prev=308
+2026-10-07T01:05:53 INFO  order-db/od-node-21 request done id=req-5da450da route=/order-db/v1/create status=200 latency_ms=46
+2026-10-07T01:05:59 INFO  order-db/od-node-08 request done id=req-1ce00189 route=/order-db/v1/create status=200 latency_ms=61
+2026-10-07T01:06:02 INFO  order-db/od-node-12 request done id=req-c0bc0f44 route=/order-db/v1/update status=200 latency_ms=181
+2026-10-07T01:06:09 INFO  order-db/od-node-11 config applied key=canary.traffic_percent value=false by=hbyoon
+2026-10-07T01:06:13 INFO  order-db/od-node-05 config applied key=http.read_timeout_ms value=54 by=ejlim
+2026-10-07T01:06:17 INFO  order-db/od-node-01 request done id=req-d4984342 route=/order-db/v1/list status=200 latency_ms=100
+2026-10-07T01:06:24 INFO  order-db/od-node-09 config applied key=limiter.rps value=7476 by=sykang
+2026-10-07T01:06:29 INFO  order-db/od-node-06 pool resize target=order-db-db max_pool_size=336 prev=311
+2026-10-07T01:06:34 INFO  order-db/od-node-16 request done id=req-9c1a8064 route=/order-db/v1/cancel status=200 latency_ms=88
+2026-10-07T01:06:35 INFO  order-db/od-node-24 cache stats region=ap-ne-2a hit_ratio=77.0% evictions=18446
+2026-10-07T01:06:39 INFO  order-db/od-node-04 request done id=req-29894b45 route=/order-db/v1/get status=201 latency_ms=71
+2026-10-07T01:06:45 INFO  order-db/od-node-07 request done id=req-2bcdf2e0 route=/order-db/v1/get status=200 latency_ms=33
+2026-10-07T01:06:46 INFO  order-db/od-node-03 request done id=req-1a42bfef route=/order-db/v1/sync status=404 latency_ms=135
+2026-10-07T01:06:50 INFO  order-db/od-node-01 cache stats region=ap-ne-2c hit_ratio=79.8% evictions=4245
+2026-10-07T01:06:54 WARN  order-db/od-node-17 alert fired rule=conn_pool_saturated value=89% threshold=87%
+2026-10-07T01:07:00 INFO  order-db/od-node-05 request done id=req-e163a0af route=/order-db/v1/get status=200 latency_ms=80
+2026-10-07T01:07:01 INFO  order-db/od-node-15 request done id=req-0058fb2d route=/order-db/v1/verify status=200 latency_ms=103
+2026-10-07T01:07:05 INFO  order-db/od-node-12 request done id=req-c1112d03 route=/order-db/v1/list status=200 latency_ms=100
+2026-10-07T01:07:09 INFO  order-db/od-node-18 request done id=req-87b17347 route=/order-db/v1/list status=200 latency_ms=42
+2026-10-07T01:07:14 WARN  order-db/od-node-04 alert fired rule=disk_usage_warning value=89% threshold=76%
+2026-10-07T01:07:21 NOTE  order-db/od-node-07 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-07T01:07:23 INFO  order-db/od-node-05 cache stats region=us-we-2b hit_ratio=94.5% evictions=31863
+2026-10-07T01:07:29 INFO  order-db/od-node-08 request done id=req-ea6400d9 route=/order-db/v1/update status=400 latency_ms=116
+2026-10-07T01:07:33 NOTE  order-db/od-node-19 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-07T01:07:35 INFO  order-db/od-node-06 pool resize target=order-db-queue max_pool_size=238 prev=243
+2026-10-07T01:07:42 NOTE  order-db/od-node-16 operator=jhpark memo="헬스체크 간격을 43초에서 74초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-07T01:07:45 ERROR order-db/od-node-12 job failed job=order-db-export attempt=4 cause=oom_killed
+2026-10-07T01:07:51 INFO  order-db/od-node-18 request done id=req-e31159bb route=/order-db/v1/status status=200 latency_ms=126
+2026-10-07T01:07:58 INFO  order-db/od-node-06 pool resize target=order-db-cache max_pool_size=22 prev=18
+2026-10-07T01:08:03 INFO  order-db/od-node-22 request done id=req-337ea520 route=/order-db/v1/sync status=404 latency_ms=50
+2026-10-07T01:08:10 INFO  order-db/od-node-12 request done id=req-de13df5d route=/order-db/v1/verify status=409 latency_ms=59
+2026-10-07T01:08:17 INFO  order-db/od-node-05 pool resize target=order-db-upstream max_pool_size=373 prev=376
+2026-10-07T01:08:24 INFO  order-db/od-node-11 request done id=req-69f286cb route=/order-db/v1/list status=409 latency_ms=293
+2026-10-07T01:08:25 INFO  order-db/od-node-19 request done id=req-7cbc097a route=/order-db/v1/verify status=201 latency_ms=85
+2026-10-07T01:08:26 INFO  order-db/od-node-17 request done id=req-f180d80f route=/order-db/v1/list status=201 latency_ms=57
+2026-10-07T01:08:32 INFO  order-db/od-node-09 request done id=req-7afeadab route=/order-db/v1/cancel status=204 latency_ms=411
+2026-10-07T01:08:37 INFO  order-db/od-node-15 request done id=req-2bfd7c6f route=/order-db/v1/create status=500 latency_ms=80
+2026-10-07T01:08:38 INFO  order-db/od-node-01 request done id=req-2da6edaf route=/order-db/v1/verify status=200 latency_ms=232
+2026-10-07T01:08:40 INFO  order-db/od-node-04 config applied key=breaker.half_open_s value=6750 by=hbyoon
+2026-10-07T01:08:43 INFO  order-db/od-node-22 request done id=req-b9285b90 route=/order-db/v1/status status=200 latency_ms=326
+2026-10-07T01:08:47 INFO  order-db/od-node-14 pool resize target=order-db-db max_pool_size=185 prev=145
+2026-10-07T01:08:48 WARN  order-db/od-node-06 alert fired rule=error_ratio_high value=91% threshold=80%
+2026-10-07T01:08:52 INFO  order-db/od-node-07 request done id=req-e0e36858 route=/order-db/v1/sync status=404 latency_ms=50
+2026-10-07T01:08:57 INFO  order-db/od-node-11 request done id=req-a943a115 route=/order-db/v1/get status=200 latency_ms=56
+2026-10-07T01:08:58 INFO  order-db/od-node-20 cache stats region=ap-ne-2a hit_ratio=65.0% evictions=16487
+2026-10-07T01:09:04 INFO  order-db/od-node-20 pool resize target=order-db-upstream max_pool_size=41 prev=4
+2026-10-07T01:09:05 INFO  order-db/od-node-09 request done id=req-64cacd7d route=/order-db/v1/create status=200 latency_ms=114
+2026-10-07T01:09:08 NOTE  order-db/od-node-16 operator=jhpark memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-07T01:09:09 INFO  order-db/od-node-16 backup finished file=/vault/weekly/payments_2026w36.tar.zst size_mb=80385 checksum=05438387
+2026-10-07T01:09:16 INFO  order-db/od-node-07 request done id=req-22ca6a6a route=/order-db/v1/sync status=200 latency_ms=126
+2026-10-07T01:09:20 INFO  order-db/od-node-18 pool resize target=order-db-queue max_pool_size=72 prev=19
+2026-10-07T01:09:24 INFO  order-db/od-node-14 request done id=req-d7a32040 route=/order-db/v1/create status=200 latency_ms=92
+2026-10-07T01:09:31 INFO  order-db/od-node-14 request done id=req-b4fc7fae route=/order-db/v1/cancel status=200 latency_ms=297
+2026-10-07T01:09:34 INFO  order-db/od-node-12 backup finished file=/vault/daily/inventory_20261025.tar.zst size_mb=54778 checksum=7aacfb5f
+2026-10-07T01:09:37 INFO  order-db/od-node-23 request done id=req-79fcdfe5 route=/order-db/v1/cancel status=200 latency_ms=50
+2026-10-07T01:09:44 NOTE  order-db/od-node-06 operator=mjlee memo="로그 보존 기간은 3일로 유지하기로 함."
+2026-10-07T01:09:49 INFO  order-db/od-node-09 request done id=req-e2eb785e route=/order-db/v1/update status=200 latency_ms=179
+2026-10-07T01:09:50 INFO  order-db/od-node-05 request done id=req-47609c89 route=/order-db/v1/update status=204 latency_ms=217
+2026-10-07T01:09:51 NOTE  order-db/od-node-11 operator=sykang memo="od-node-11 재기동 후 지표 정상 확인."
+2026-10-07T01:09:53 INFO  order-db/od-node-16 deploy step release=order-db-4.18.8 step=shift_traffic_10 result=ok took_s=141
+2026-10-07T01:09:57 INFO  order-db/od-node-03 ticket linked id=OPS-49318 reason=cert_rotation
+2026-10-07T01:10:03 INFO  order-db/od-node-11 request done id=req-f0f573b8 route=/order-db/v1/update status=503 latency_ms=99
+2026-10-07T01:10:07 INFO  order-db/od-node-21 request done id=req-92169ae3 route=/order-db/v1/create status=409 latency_ms=42
+2026-10-07T01:10:12 INFO  order-db/od-node-04 pool resize target=order-db-cache max_pool_size=197 prev=149
+2026-10-07T01:10:19 INFO  order-db/od-node-04 request done id=req-2b036f80 route=/order-db/v1/list status=429 latency_ms=47
+2026-10-07T01:10:23 WARN  order-db/od-node-21 alert fired rule=heap_used_high value=95% threshold=80%
+2026-10-07T01:10:28 INFO  order-db/od-node-02 ticket linked id=OPS-48754 reason=log_volume_spike
+2026-10-07T01:10:29 INFO  order-db/od-node-10 backup finished file=/vault/weekly/sessions_2026w43.tar.zst size_mb=83218 checksum=3af545f8
+2026-10-07T01:10:31 INFO  order-db/od-node-07 config applied key=http.read_timeout_ms value=false by=jhpark
+2026-10-07T01:10:38 INFO  order-db/od-node-17 pool resize target=order-db-cache max_pool_size=74 prev=99
+2026-10-07T01:10:43 INFO  order-db/od-node-03 ticket linked id=OPS-48676 reason=quota_increase
+2026-10-07T01:10:47 INFO  order-db/od-node-06 config applied key=queue.batch_size value=true by=mjlee
+2026-10-07T01:10:54 INFO  order-db/od-node-17 request done id=req-1f3af0ce route=/order-db/v1/get status=201 latency_ms=87
+2026-10-07T01:10:57 ERROR order-db/od-node-07 job failed job=order-db-rollup attempt=1 cause=upstream_timeout
+2026-10-07T01:11:04 INFO  order-db/od-node-22 deploy step release=order-db-4.16.3 step=migrate result=ok took_s=116
+2026-10-07T01:11:06 INFO  order-db/od-node-08 ticket linked id=OPS-49235 reason=quota_increase
+2026-10-07T01:11:10 INFO  order-db/od-node-19 config applied key=limiter.rps value=23% by=sykang
+2026-10-07T01:11:16 INFO  order-db/od-node-19 request done id=req-d19ccb3a route=/order-db/v1/cancel status=204 latency_ms=360
+2026-10-07T01:11:21 INFO  order-db/od-node-21 request done id=req-47b2e73f route=/order-db/v1/verify status=200 latency_ms=37
+2026-10-07T01:11:24 INFO  order-db/od-node-04 deploy step release=order-db-4.18.4 step=shift_traffic_100 result=ok took_s=193
+2026-10-07T01:11:25 INFO  order-db/od-node-16 deploy step release=order-db-4.13.3 step=drain result=ok took_s=11
+2026-10-07T01:11:28 INFO  order-db/od-node-08 deploy step release=order-db-4.16.8 step=warmup result=ok took_s=172
+2026-10-07T01:11:29 INFO  order-db/od-node-03 deploy step release=order-db-4.15.5 step=warmup result=ok took_s=129
+2026-10-07T01:11:30 INFO  order-db/od-node-16 request done id=req-a2c7deda route=/order-db/v1/status status=200 latency_ms=73
+2026-10-07T01:11:35 INFO  order-db/od-node-02 cache stats region=ap-ne-2c hit_ratio=59.5% evictions=12550
+2026-10-07T01:11:42 INFO  order-db/od-node-14 cache stats region=ap-ne-2c hit_ratio=93.1% evictions=16534
+2026-10-07T01:11:48 WARN  order-db/od-node-14 alert fired rule=conn_pool_saturated value=93% threshold=87%
+2026-10-07T01:11:53 INFO  order-db/od-node-22 request done id=req-8f9f1816 route=/order-db/v1/sync status=200 latency_ms=116
+2026-10-07T01:11:57 INFO  order-db/od-node-13 request done id=req-689d7518 route=/order-db/v1/verify status=204 latency_ms=133
+2026-10-07T01:11:58 INFO  order-db/od-node-24 request done id=req-5ac3f4d3 route=/order-db/v1/update status=200 latency_ms=68
+2026-10-07T01:12:00 INFO  order-db/od-node-15 pool resize target=order-db-worker max_pool_size=295 prev=239
+2026-10-07T01:12:04 INFO  order-db/od-node-12 request done id=req-60ed29ac route=/order-db/v1/update status=500 latency_ms=174
+2026-10-07T01:12:09 INFO  order-db/od-node-20 deploy step release=order-db-4.20.0 step=healthcheck result=ok took_s=190
+2026-10-07T01:12:11 WARN  order-db/od-node-12 alert fired rule=queue_depth_high value=83 threshold=78
+2026-10-07T01:12:15 INFO  order-db/od-node-11 request done id=req-58f305cd route=/order-db/v1/status status=201 latency_ms=416
+2026-10-07T01:12:19 INFO  order-db/od-node-14 backup finished file=/vault/daily/orders_20261001.tar.zst size_mb=2587 checksum=1b04fb88
+2026-10-07T01:12:21 INFO  order-db/od-node-01 pool resize target=order-db-cache max_pool_size=12 prev=31
+2026-10-07T01:12:26 INFO  order-db/od-node-14 request done id=req-6cb3ee78 route=/order-db/v1/list status=200 latency_ms=103
+2026-10-07T01:12:31 INFO  order-db/od-node-17 request done id=req-d8bd72b3 route=/order-db/v1/cancel status=200 latency_ms=107
+2026-10-07T01:12:34 ERROR order-db/od-node-18 job failed job=order-db-cleanup attempt=2 cause=oom_killed
+2026-10-07T01:12:35 ERROR order-db/od-node-10 job failed job=order-db-rollup attempt=5 cause=quota_exceeded
+2026-10-07T01:12:40 INFO  order-db/od-node-18 config applied key=queue.batch_size value=true by=mjlee
+2026-10-07T01:12:45 INFO  order-db/od-node-15 request done id=req-0c33899e route=/order-db/v1/verify status=200 latency_ms=130
+2026-10-07T01:12:46 WARN  order-db/od-node-15 alert fired rule=gc_pause_long value=85ms threshold=71ms
+2026-10-07T01:12:53 WARN  order-db/od-node-14 alert fired rule=gc_pause_long value=95ms threshold=80ms
+2026-10-07T01:13:00 INFO  order-db/od-node-03 request done id=req-8e5c67d3 route=/order-db/v1/verify status=404 latency_ms=168
+2026-10-07T01:13:04 ERROR order-db/od-node-13 job failed job=order-db-reindex attempt=3 cause=quota_exceeded
+2026-10-07T01:13:11 INFO  order-db/od-node-18 request done id=req-25ed0ede route=/order-db/v1/cancel status=200 latency_ms=37
+2026-10-07T01:13:15 INFO  order-db/od-node-19 request done id=req-1ec5e95e route=/order-db/v1/sync status=200 latency_ms=102
+2026-10-07T01:13:19 INFO  order-db/od-node-06 request done id=req-bb0624c9 route=/order-db/v1/sync status=200 latency_ms=75
+2026-10-07T01:13:20 INFO  order-db/od-node-16 config applied key=breaker.open_ratio value=12% by=hbyoon
+2026-10-07T01:13:27 INFO  order-db/od-node-19 request done id=req-a7ecea9a route=/order-db/v1/list status=200 latency_ms=63
+2026-10-07T01:13:31 INFO  order-db/od-node-06 request done id=req-e46a49ee route=/order-db/v1/sync status=200 latency_ms=413
+2026-10-07T01:13:32 INFO  order-db/od-node-18 backup finished file=/vault/daily/audit_20261019.tar.zst size_mb=58702 checksum=08ad14b9
+2026-10-07T01:13:37 NOTE  order-db/od-node-18 operator=ejlim memo="동시 처리 수를 52에서 17로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-07T01:13:38 INFO  order-db/od-node-01 request done id=req-3eb52404 route=/order-db/v1/cancel status=200 latency_ms=411
+2026-10-07T01:13:39 INFO  order-db/od-node-24 request done id=req-efd2b39d route=/order-db/v1/status status=200 latency_ms=318
+2026-10-07T01:13:44 WARN  order-db/od-node-15 alert fired rule=queue_depth_high value=70 threshold=65
+2026-10-07T01:13:45 INFO  order-db/od-node-22 backup finished file=/vault/weekly/users_2026w39.tar.zst size_mb=78651 checksum=ce0cc0e8
+2026-10-07T01:13:47 INFO  order-db/od-node-02 request done id=req-cb856b94 route=/order-db/v1/status status=429 latency_ms=38
+2026-10-07T01:13:53 WARN  order-db/od-node-02 alert fired rule=cpu_steal_high value=70% threshold=64%
+2026-10-07T01:13:56 INFO  order-db/od-node-01 request done id=req-59082cdd route=/order-db/v1/update status=404 latency_ms=181
+2026-10-07T01:14:03 INFO  order-db/od-node-19 request done id=req-39abe15f route=/order-db/v1/update status=503 latency_ms=189
+2026-10-07T01:14:06 INFO  order-db/od-node-17 request done id=req-4be0d9e0 route=/order-db/v1/create status=200 latency_ms=109
+2026-10-07T01:14:12 INFO  order-db/od-node-08 request done id=req-124d2d31 route=/order-db/v1/cancel status=200 latency_ms=480
+2026-10-07T01:14:17 INFO  order-db/od-node-19 request done id=req-fae357c6 route=/order-db/v1/status status=500 latency_ms=19
+2026-10-07T01:14:24 INFO  order-db/od-node-12 request done id=req-0aff4550 route=/order-db/v1/list status=404 latency_ms=56
+2026-10-07T01:14:30 INFO  order-db/od-node-18 config applied key=queue.batch_size value=3748 by=dwjung
+2026-10-07T01:14:37 INFO  order-db/od-node-16 request done id=req-c357d1a0 route=/order-db/v1/create status=404 latency_ms=194
+2026-10-07T01:14:44 INFO  order-db/od-node-22 request done id=req-c375e7b1 route=/order-db/v1/sync status=204 latency_ms=202
+2026-10-07T01:14:48 INFO  order-db/od-node-24 backup finished file=/vault/daily/users_20261016.tar.zst size_mb=20323 checksum=2595cbdb
+2026-10-07T01:14:55 INFO  order-db/od-node-04 pool resize target=order-db-db max_pool_size=47 prev=4
+2026-10-07T01:15:00 INFO  order-db/od-node-12 request done id=req-424ae5c5 route=/order-db/v1/verify status=409 latency_ms=253
+2026-10-07T01:15:01 INFO  order-db/od-node-14 request done id=req-c89e0cba route=/order-db/v1/sync status=409 latency_ms=214
+2026-10-07T01:15:05 INFO  order-db/od-node-22 deploy step release=order-db-4.16.6 step=verify result=ok took_s=74
+2026-10-07T01:15:08 INFO  order-db/od-node-12 request done id=req-b648a26f route=/order-db/v1/get status=200 latency_ms=70
+2026-10-07T01:15:09 INFO  order-db/od-node-12 config applied key=http.read_timeout_ms value=true by=yjchoi
+2026-10-07T01:15:10 ERROR order-db/od-node-13 job failed job=order-db-rollup attempt=3 cause=quota_exceeded
+2026-10-07T01:15:17 INFO  order-db/od-node-01 request done id=req-ebe1c93b route=/order-db/v1/get status=409 latency_ms=66
+2026-10-07T01:15:19 INFO  order-db/od-node-20 request done id=req-337436f6 route=/order-db/v1/verify status=404 latency_ms=18
+2026-10-07T01:15:25 INFO  order-db/od-node-02 ticket linked id=OPS-48303 reason=flaky_healthcheck
+2026-10-07T01:15:32 WARN  order-db/od-node-15 alert fired rule=replica_lag_high value=57s threshold=55s
+2026-10-07T01:15:33 INFO  order-db/od-node-24 cache stats region=ap-ne-2c hit_ratio=72.2% evictions=3474
+2026-10-07T01:15:35 INFO  order-db/od-node-01 request done id=req-504de867 route=/order-db/v1/update status=200 latency_ms=544
+2026-10-07T01:15:40 INFO  order-db/od-node-02 config applied key=http.read_timeout_ms value=false by=yjchoi
+2026-10-07T01:15:46 INFO  order-db/od-node-07 pool resize target=order-db-cache max_pool_size=13 prev=4
+2026-10-07T01:15:47 INFO  order-db/od-node-22 pool resize target=order-db-queue max_pool_size=151 prev=138
+2026-10-07T01:15:51 INFO  order-db/od-node-17 config applied key=shard.count value=84% by=jhpark
+2026-10-07T01:15:55 INFO  order-db/od-node-15 request done id=req-a811a184 route=/order-db/v1/list status=400 latency_ms=50
+2026-10-07T01:15:57 INFO  order-db/od-node-22 request done id=req-3f63ab30 route=/order-db/v1/sync status=204 latency_ms=41
+2026-10-07T01:16:02 INFO  order-db/od-node-09 request done id=req-a0b7f5b9 route=/order-db/v1/update status=200 latency_ms=171
+2026-10-07T01:16:04 INFO  order-db/od-node-01 ticket linked id=OPS-49380 reason=cert_rotation
+2026-10-07T01:16:08 INFO  order-db/od-node-23 pool resize target=order-db-worker max_pool_size=310 prev=370
+2026-10-07T01:16:14 INFO  order-db/od-node-13 ticket linked id=OPS-47628 reason=dependency_upgrade
+2026-10-07T01:16:21 INFO  order-db/od-node-23 request done id=req-475a958f route=/order-db/v1/sync status=201 latency_ms=73
+2026-10-07T01:16:25 INFO  order-db/od-node-09 request done id=req-a498fc9d route=/order-db/v1/list status=429 latency_ms=229
+2026-10-07T01:16:30 INFO  order-db/od-node-19 config applied key=log.sample_rate value=true by=jhpark
+2026-10-07T01:16:35 INFO  order-db/od-node-20 config applied key=queue.visibility_s value=56 by=hbyoon
+2026-10-07T01:16:37 INFO  order-db/od-node-04 deploy step release=order-db-4.12.7 step=healthcheck result=ok took_s=67
+2026-10-07T01:16:42 INFO  order-db/od-node-05 request done id=req-5b68f618 route=/order-db/v1/status status=204 latency_ms=150
+2026-10-07T01:16:45 INFO  order-db/od-node-02 backup finished file=/vault/daily/sessions_20261026.tar.zst size_mb=12966 checksum=79fe5bb7
+2026-10-07T01:16:49 INFO  order-db/od-node-18 pool resize target=order-db-upstream max_pool_size=251 prev=209
+2026-10-07T01:16:53 INFO  order-db/od-node-13 request done id=req-7367f31a route=/order-db/v1/sync status=200 latency_ms=13
+2026-10-07T01:16:59 INFO  order-db/od-node-06 config applied key=breaker.half_open_s value=45% by=sykang
+2026-10-07T01:17:05 INFO  order-db/od-node-10 request done id=req-d548f00c route=/order-db/v1/list status=200 latency_ms=81
+2026-10-07T01:17:10 ERROR order-db/od-node-12 job failed job=order-db-reindex attempt=4 cause=lock_wait_exceeded
+2026-10-07T01:17:12 INFO  order-db/od-node-02 backup finished file=/vault/daily/payments_20261011.tar.zst size_mb=37235 checksum=17166478
+2026-10-07T01:17:15 INFO  order-db/od-node-01 config applied key=breaker.open_ratio value=5060 by=shkim
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

@@ -1,0 +1,424 @@
+참고용 로그 21: 배송 추적(ship-track) 연동 점검 구간. '확인'이라고만 답해 줘.
+
+2026-10-25T11:16:32 INFO  ship-track/sk-node-07 ticket linked id=OPS-47191 reason=dependency_upgrade
+2026-10-25T11:16:35 INFO  ship-track/sk-node-17 request done id=req-f0f72807 route=/ship-track/v1/sync status=503 latency_ms=143
+2026-10-25T11:16:39 INFO  ship-track/sk-node-14 config applied key=canary.latency_p99_threshold_ms value=61 by=mjlee
+2026-10-25T11:16:40 WARN  ship-track/sk-node-22 alert fired rule=error_ratio_high value=94% threshold=82%
+2026-10-25T11:16:42 WARN  ship-track/sk-node-13 alert fired rule=gc_pause_long value=67ms threshold=65ms
+2026-10-25T11:16:43 INFO  ship-track/sk-node-02 request done id=req-1fb54b77 route=/ship-track/v1/get status=404 latency_ms=74
+2026-10-25T11:16:46 INFO  ship-track/sk-node-21 config applied key=flush.interval_ms value=true by=yjchoi
+2026-10-25T11:16:50 INFO  ship-track/sk-node-11 config applied key=retry.max_attempts value=false by=dwjung
+2026-10-25T11:16:53 WARN  ship-track/sk-node-18 alert fired rule=error_ratio_high value=71% threshold=69%
+2026-10-25T11:16:57 INFO  ship-track/sk-node-04 request done id=req-768e3e7b route=/ship-track/v1/cancel status=200 latency_ms=117
+2026-10-25T11:17:03 INFO  ship-track/sk-node-03 config applied key=queue.batch_size value=34 by=shkim
+2026-10-25T11:17:04 INFO  ship-track/sk-node-14 request done id=req-aeaa96da route=/ship-track/v1/create status=200 latency_ms=219
+2026-10-25T11:17:08 INFO  ship-track/sk-node-11 request done id=req-10ba5109 route=/ship-track/v1/verify status=200 latency_ms=87
+2026-10-25T11:17:09 INFO  ship-track/sk-node-22 config applied key=worker.concurrency value=8917 by=ejlim
+2026-10-25T11:17:12 INFO  ship-track/sk-node-23 request done id=req-70f4df18 route=/ship-track/v1/status status=200 latency_ms=263
+2026-10-25T11:17:18 INFO  ship-track/sk-node-22 request done id=req-629271b9 route=/ship-track/v1/list status=204 latency_ms=51
+2026-10-25T11:17:22 INFO  ship-track/sk-node-14 request done id=req-6b3f5da5 route=/ship-track/v1/list status=200 latency_ms=101
+2026-10-25T11:17:24 INFO  ship-track/sk-node-03 request done id=req-ebbb2a48 route=/ship-track/v1/status status=200 latency_ms=49
+2026-10-25T11:17:27 WARN  ship-track/sk-node-03 alert fired rule=heap_used_high value=89% threshold=77%
+2026-10-25T11:17:34 INFO  ship-track/sk-node-12 pool resize target=ship-track-upstream max_pool_size=205 prev=173
+2026-10-25T11:17:38 INFO  ship-track/sk-node-24 request done id=req-af856d56 route=/ship-track/v1/cancel status=409 latency_ms=289
+2026-10-25T11:17:39 INFO  ship-track/sk-node-07 pool resize target=ship-track-upstream max_pool_size=162 prev=213
+2026-10-25T11:17:41 INFO  ship-track/sk-node-24 request done id=req-9470b32f route=/ship-track/v1/status status=200 latency_ms=92
+2026-10-25T11:17:45 INFO  ship-track/sk-node-16 config applied key=dns.ttl_s value=59 by=shkim
+2026-10-25T11:17:50 WARN  ship-track/sk-node-08 alert fired rule=queue_depth_high value=85 threshold=77
+2026-10-25T11:17:56 INFO  ship-track/sk-node-12 request done id=req-6efe9d59 route=/ship-track/v1/status status=200 latency_ms=65
+2026-10-25T11:18:03 INFO  ship-track/sk-node-07 config applied key=retry.backoff_ms value=99% by=hbyoon
+2026-10-25T11:18:10 INFO  ship-track/sk-node-14 backup finished file=/vault/weekly/orders_2026w40.tar.zst size_mb=15715 checksum=9d7fda9f
+2026-10-25T11:18:17 WARN  ship-track/sk-node-05 alert fired rule=queue_depth_high value=79 threshold=64
+2026-10-25T11:18:24 INFO  ship-track/sk-node-22 request done id=req-18d5fc1a route=/ship-track/v1/sync status=201 latency_ms=196
+2026-10-25T11:18:29 WARN  ship-track/sk-node-08 alert fired rule=replica_lag_high value=87s threshold=84s
+2026-10-25T11:18:36 INFO  ship-track/sk-node-16 request done id=req-1dc5db3c route=/ship-track/v1/sync status=200 latency_ms=105
+2026-10-25T11:18:42 INFO  ship-track/sk-node-17 config applied key=canary.traffic_percent value=false by=jhpark
+2026-10-25T11:18:47 INFO  ship-track/sk-node-15 backup finished file=/vault/weekly/inventory_2026w41.tar.zst size_mb=75635 checksum=18dcd115
+2026-10-25T11:18:53 INFO  ship-track/sk-node-06 cache stats region=ap-ne-2a hit_ratio=82.6% evictions=39345
+2026-10-25T11:18:57 INFO  ship-track/sk-node-17 deploy step release=ship-track-4.12.3 step=verify result=ok took_s=74
+2026-10-25T11:19:01 INFO  ship-track/sk-node-06 request done id=req-821b266f route=/ship-track/v1/get status=200 latency_ms=115
+2026-10-25T11:19:04 INFO  ship-track/sk-node-19 ticket linked id=OPS-48469 reason=schema_change
+2026-10-25T11:19:05 INFO  ship-track/sk-node-19 request done id=req-58c27f14 route=/ship-track/v1/create status=200 latency_ms=463
+2026-10-25T11:19:12 NOTE  ship-track/sk-node-06 operator=sykang memo="점검 창을 30분 연장함. 승인: 류태경 팀장."
+2026-10-25T11:19:19 INFO  ship-track/sk-node-01 request done id=req-c7183277 route=/ship-track/v1/update status=200 latency_ms=192
+2026-10-25T11:19:23 INFO  ship-track/sk-node-01 request done id=req-e2d31214 route=/ship-track/v1/cancel status=200 latency_ms=53
+2026-10-25T11:19:27 INFO  ship-track/sk-node-14 request done id=req-a5451685 route=/ship-track/v1/create status=200 latency_ms=146
+2026-10-25T11:19:30 ERROR ship-track/sk-node-20 job failed job=ship-track-cleanup attempt=2 cause=oom_killed
+2026-10-25T11:19:35 WARN  ship-track/sk-node-19 alert fired rule=p99_latency_high value=64ms threshold=59ms
+2026-10-25T11:19:36 INFO  ship-track/sk-node-17 request done id=req-6859111a route=/ship-track/v1/create status=200 latency_ms=202
+2026-10-25T11:19:41 INFO  ship-track/sk-node-04 request done id=req-a31f35ef route=/ship-track/v1/status status=409 latency_ms=432
+2026-10-25T11:19:45 INFO  ship-track/sk-node-16 deploy step release=ship-track-4.17.3 step=shift_traffic_100 result=ok took_s=13
+2026-10-25T11:19:46 INFO  ship-track/sk-node-07 request done id=req-779dac33 route=/ship-track/v1/cancel status=200 latency_ms=62
+2026-10-25T11:19:50 INFO  ship-track/sk-node-11 request done id=req-04666a31 route=/ship-track/v1/verify status=200 latency_ms=36
+2026-10-25T11:19:54 INFO  ship-track/sk-node-23 request done id=req-cf835d1c route=/ship-track/v1/status status=400 latency_ms=100
+2026-10-25T11:19:55 INFO  ship-track/sk-node-14 deploy step release=ship-track-4.14.5 step=start result=ok took_s=40
+2026-10-25T11:19:56 INFO  ship-track/sk-node-05 config applied key=breaker.half_open_s value=false by=hbyoon
+2026-10-25T11:20:03 INFO  ship-track/sk-node-21 request done id=req-e484aae1 route=/ship-track/v1/sync status=200 latency_ms=172
+2026-10-25T11:20:07 INFO  ship-track/sk-node-14 request done id=req-a3e1e028 route=/ship-track/v1/status status=500 latency_ms=118
+2026-10-25T11:20:08 INFO  ship-track/sk-node-06 request done id=req-2c569dd5 route=/ship-track/v1/list status=409 latency_ms=138
+2026-10-25T11:20:11 INFO  ship-track/sk-node-07 request done id=req-e5dd8199 route=/ship-track/v1/verify status=409 latency_ms=25
+2026-10-25T11:20:17 INFO  ship-track/sk-node-13 request done id=req-14d64b0e route=/ship-track/v1/create status=204 latency_ms=113
+2026-10-25T11:20:18 NOTE  ship-track/sk-node-03 operator=mjlee memo="sk-node-03 재기동 후 지표 정상 확인."
+2026-10-25T11:20:24 INFO  ship-track/sk-node-20 request done id=req-dd4e8797 route=/ship-track/v1/update status=204 latency_ms=318
+2026-10-25T11:20:27 INFO  ship-track/sk-node-09 ticket linked id=OPS-47968 reason=node_drain
+2026-10-25T11:20:28 INFO  ship-track/sk-node-04 request done id=req-965b5d7b route=/ship-track/v1/get status=200 latency_ms=62
+2026-10-25T11:20:34 INFO  ship-track/sk-node-17 request done id=req-1aeb288a route=/ship-track/v1/update status=200 latency_ms=455
+2026-10-25T11:20:39 INFO  ship-track/sk-node-03 pool resize target=ship-track-queue max_pool_size=77 prev=102
+2026-10-25T11:20:45 INFO  ship-track/sk-node-02 pool resize target=ship-track-queue max_pool_size=294 prev=262
+2026-10-25T11:20:49 INFO  ship-track/sk-node-05 request done id=req-b038f5d3 route=/ship-track/v1/sync status=200 latency_ms=112
+2026-10-25T11:20:55 INFO  ship-track/sk-node-24 request done id=req-3e4e06e4 route=/ship-track/v1/create status=200 latency_ms=529
+2026-10-25T11:20:57 INFO  ship-track/sk-node-17 request done id=req-06ad2cdb route=/ship-track/v1/list status=200 latency_ms=159
+2026-10-25T11:21:04 INFO  ship-track/sk-node-13 request done id=req-e71bbfc5 route=/ship-track/v1/get status=400 latency_ms=233
+2026-10-25T11:21:08 INFO  ship-track/sk-node-02 request done id=req-c1a65c73 route=/ship-track/v1/get status=200 latency_ms=138
+2026-10-25T11:21:10 INFO  ship-track/sk-node-19 request done id=req-7b234530 route=/ship-track/v1/status status=200 latency_ms=49
+2026-10-25T11:21:13 INFO  ship-track/sk-node-04 request done id=req-00f01150 route=/ship-track/v1/verify status=503 latency_ms=178
+2026-10-25T11:21:19 NOTE  ship-track/sk-node-05 operator=yjchoi memo="연동 팀에 변경 공지 완료."
+2026-10-25T11:21:26 INFO  ship-track/sk-node-18 request done id=req-cf9eb911 route=/ship-track/v1/list status=200 latency_ms=75
+2026-10-25T11:21:30 INFO  ship-track/sk-node-01 pool resize target=ship-track-db max_pool_size=170 prev=192
+2026-10-25T11:21:37 INFO  ship-track/sk-node-03 request done id=req-169092f8 route=/ship-track/v1/sync status=200 latency_ms=68
+2026-10-25T11:21:41 INFO  ship-track/sk-node-04 ticket linked id=OPS-48391 reason=quota_increase
+2026-10-25T11:21:45 INFO  ship-track/sk-node-16 request done id=req-8b20e117 route=/ship-track/v1/cancel status=200 latency_ms=76
+2026-10-25T11:21:47 INFO  ship-track/sk-node-17 pool resize target=ship-track-upstream max_pool_size=53 prev=70
+2026-10-25T11:21:49 INFO  ship-track/sk-node-09 request done id=req-fded069a route=/ship-track/v1/sync status=200 latency_ms=187
+2026-10-25T11:21:53 INFO  ship-track/sk-node-09 deploy step release=ship-track-4.21.4 step=shift_traffic_100 result=ok took_s=175
+2026-10-25T11:21:58 INFO  ship-track/sk-node-04 pool resize target=ship-track-worker max_pool_size=292 prev=323
+2026-10-25T11:22:00 WARN  ship-track/sk-node-01 alert fired rule=disk_usage_warning value=99% threshold=96%
+2026-10-25T11:22:06 ERROR ship-track/sk-node-09 job failed job=ship-track-rollup attempt=1 cause=quota_exceeded
+2026-10-25T11:22:07 INFO  ship-track/sk-node-05 request done id=req-774d8b1c route=/ship-track/v1/verify status=409 latency_ms=502
+2026-10-25T11:22:10 INFO  ship-track/sk-node-03 request done id=req-6f05b4d1 route=/ship-track/v1/cancel status=500 latency_ms=209
+2026-10-25T11:22:11 INFO  ship-track/sk-node-16 cache stats region=ap-se-1a hit_ratio=59.7% evictions=36869
+2026-10-25T11:22:15 WARN  ship-track/sk-node-10 alert fired rule=error_ratio_high value=57% threshold=54%
+2026-10-25T11:22:22 INFO  ship-track/sk-node-13 request done id=req-1edd0fc3 route=/ship-track/v1/status status=200 latency_ms=142
+2026-10-25T11:22:24 WARN  ship-track/sk-node-18 alert fired rule=conn_pool_saturated value=95% threshold=82%
+2026-10-25T11:22:28 INFO  ship-track/sk-node-08 backup finished file=/vault/daily/inventory_20261014.tar.zst size_mb=21733 checksum=fba61f2d
+2026-10-25T11:22:33 INFO  ship-track/sk-node-06 deploy step release=ship-track-4.13.7 step=healthcheck result=ok took_s=160
+2026-10-25T11:22:35 INFO  ship-track/sk-node-20 ticket linked id=OPS-48620 reason=cert_rotation
+2026-10-25T11:22:36 INFO  ship-track/sk-node-14 deploy step release=ship-track-4.14.0 step=drain result=ok took_s=231
+2026-10-25T11:22:37 INFO  ship-track/sk-node-19 request done id=req-409c2f74 route=/ship-track/v1/cancel status=200 latency_ms=234
+2026-10-25T11:22:44 INFO  ship-track/sk-node-19 request done id=req-1391369e route=/ship-track/v1/cancel status=200 latency_ms=104
+2026-10-25T11:22:51 INFO  ship-track/sk-node-12 cache stats region=ap-se-1a hit_ratio=59.3% evictions=32049
+2026-10-25T11:22:52 INFO  ship-track/sk-node-16 backup finished file=/vault/weekly/sessions_2026w31.tar.zst size_mb=16210 checksum=6a6bc561
+2026-10-25T11:22:53 INFO  ship-track/sk-node-13 pool resize target=ship-track-upstream max_pool_size=357 prev=350
+2026-10-25T11:22:55 INFO  ship-track/sk-node-01 request done id=req-b2d4cd86 route=/ship-track/v1/cancel status=200 latency_ms=124
+2026-10-25T11:23:01 INFO  ship-track/sk-node-18 config applied key=limiter.rps value=false by=shkim
+2026-10-25T11:23:08 INFO  ship-track/sk-node-15 request done id=req-09867615 route=/ship-track/v1/create status=200 latency_ms=54
+2026-10-25T11:23:12 INFO  ship-track/sk-node-18 request done id=req-d267bdf4 route=/ship-track/v1/list status=200 latency_ms=258
+2026-10-25T11:23:13 WARN  ship-track/sk-node-05 alert fired rule=conn_pool_saturated value=91% threshold=90%
+2026-10-25T11:23:16 ERROR ship-track/sk-node-23 job failed job=ship-track-rollup attempt=4 cause=dns_failure
+2026-10-25T11:23:17 INFO  ship-track/sk-node-22 deploy step release=ship-track-4.22.7 step=migrate result=ok took_s=179
+2026-10-25T11:23:19 WARN  ship-track/sk-node-15 alert fired rule=conn_pool_saturated value=74% threshold=65%
+2026-10-25T11:23:22 NOTE  ship-track/sk-node-19 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-25T11:23:25 INFO  ship-track/sk-node-12 deploy step release=ship-track-4.10.4 step=warmup result=ok took_s=237
+2026-10-25T11:23:29 INFO  ship-track/sk-node-15 request done id=req-bd7b7a44 route=/ship-track/v1/cancel status=429 latency_ms=331
+2026-10-25T11:23:34 INFO  ship-track/sk-node-11 backup finished file=/vault/weekly/orders_2026w33.tar.zst size_mb=19440 checksum=15d3416d
+2026-10-25T11:23:36 NOTE  ship-track/sk-node-16 operator=ejlim memo="임시 증설 59대 추가. 내일 오전 회수 예정."
+2026-10-25T11:23:43 INFO  ship-track/sk-node-01 request done id=req-829a8f65 route=/ship-track/v1/update status=200 latency_ms=56
+2026-10-25T11:23:49 INFO  ship-track/sk-node-05 request done id=req-f74ea754 route=/ship-track/v1/list status=200 latency_ms=170
+2026-10-25T11:23:56 INFO  ship-track/sk-node-05 config applied key=queue.batch_size value=true by=jhpark
+2026-10-25T11:23:57 INFO  ship-track/sk-node-18 pool resize target=ship-track-upstream max_pool_size=272 prev=284
+2026-10-25T11:23:58 INFO  ship-track/sk-node-03 config applied key=tls.session_cache value=57 by=jhpark
+2026-10-25T11:24:05 INFO  ship-track/sk-node-17 pool resize target=ship-track-cache max_pool_size=132 prev=165
+2026-10-25T11:24:11 INFO  ship-track/sk-node-08 request done id=req-dc73fe75 route=/ship-track/v1/sync status=200 latency_ms=152
+2026-10-25T11:24:12 INFO  ship-track/sk-node-13 request done id=req-78414a33 route=/ship-track/v1/create status=204 latency_ms=159
+2026-10-25T11:24:14 WARN  ship-track/sk-node-22 alert fired rule=disk_usage_warning value=77% threshold=69%
+2026-10-25T11:24:19 INFO  ship-track/sk-node-14 request done id=req-b3b373ab route=/ship-track/v1/status status=500 latency_ms=341
+2026-10-25T11:24:24 WARN  ship-track/sk-node-10 alert fired rule=conn_pool_saturated value=98% threshold=93%
+2026-10-25T11:24:26 INFO  ship-track/sk-node-19 pool resize target=ship-track-cache max_pool_size=331 prev=372
+2026-10-25T11:24:31 INFO  ship-track/sk-node-05 deploy step release=ship-track-4.17.7 step=shift_traffic_10 result=ok took_s=18
+2026-10-25T11:24:34 INFO  ship-track/sk-node-23 request done id=req-9e77bd9e route=/ship-track/v1/get status=429 latency_ms=166
+2026-10-25T11:24:38 INFO  ship-track/sk-node-22 request done id=req-d87becf0 route=/ship-track/v1/cancel status=500 latency_ms=124
+2026-10-25T11:24:39 INFO  ship-track/sk-node-23 pool resize target=ship-track-db max_pool_size=67 prev=40
+2026-10-25T11:24:41 WARN  ship-track/sk-node-12 alert fired rule=heap_used_high value=55% threshold=52%
+2026-10-25T11:24:46 INFO  ship-track/sk-node-13 request done id=req-2aabff37 route=/ship-track/v1/sync status=200 latency_ms=125
+2026-10-25T11:24:53 INFO  ship-track/sk-node-14 cache stats region=ap-ne-2c hit_ratio=55.9% evictions=9834
+2026-10-25T11:24:59 INFO  ship-track/sk-node-17 config applied key=breaker.open_ratio value=true by=dwjung
+2026-10-25T11:25:02 NOTE  ship-track/sk-node-08 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-25T11:25:08 INFO  ship-track/sk-node-05 request done id=req-b4b56e7f route=/ship-track/v1/update status=400 latency_ms=134
+2026-10-25T11:25:11 INFO  ship-track/sk-node-16 config applied key=worker.concurrency value=true by=sykang
+2026-10-25T11:25:17 INFO  ship-track/sk-node-12 deploy step release=ship-track-4.12.7 step=pull_image result=ok took_s=207
+2026-10-25T11:25:21 INFO  ship-track/sk-node-10 cache stats region=ap-ne-2b hit_ratio=67.4% evictions=9143
+2026-10-25T11:25:28 INFO  ship-track/sk-node-09 deploy step release=ship-track-4.15.7 step=pull_image result=ok took_s=232
+2026-10-25T11:25:35 INFO  ship-track/sk-node-23 request done id=req-7b154bf3 route=/ship-track/v1/create status=200 latency_ms=30
+2026-10-25T11:25:39 INFO  ship-track/sk-node-20 pool resize target=ship-track-worker max_pool_size=20 prev=5
+2026-10-25T11:25:43 INFO  ship-track/sk-node-24 deploy step release=ship-track-4.18.2 step=pull_image result=ok took_s=146
+2026-10-25T11:25:49 INFO  ship-track/sk-node-21 request done id=req-3522c553 route=/ship-track/v1/cancel status=200 latency_ms=30
+2026-10-25T11:25:56 INFO  ship-track/sk-node-11 config applied key=limiter.burst value=1615 by=mjlee
+2026-10-25T11:26:01 INFO  ship-track/sk-node-03 request done id=req-ccb5ef65 route=/ship-track/v1/verify status=200 latency_ms=152
+2026-10-25T11:26:05 INFO  ship-track/sk-node-14 config applied key=cache.ttl_s value=false by=mjlee
+2026-10-25T11:26:11 INFO  ship-track/sk-node-14 ticket linked id=OPS-49035 reason=oncall_handoff
+2026-10-25T11:26:14 INFO  ship-track/sk-node-12 deploy step release=ship-track-4.17.3 step=shift_traffic_50 result=ok took_s=183
+2026-10-25T11:26:16 INFO  ship-track/sk-node-22 request done id=req-9d31d7bf route=/ship-track/v1/get status=200 latency_ms=115
+2026-10-25T11:26:22 INFO  ship-track/sk-node-10 pool resize target=ship-track-worker max_pool_size=155 prev=175
+2026-10-25T11:26:25 INFO  ship-track/sk-node-06 request done id=req-3a0f0083 route=/ship-track/v1/cancel status=200 latency_ms=45
+2026-10-25T11:26:27 INFO  ship-track/sk-node-12 pool resize target=ship-track-worker max_pool_size=375 prev=420
+2026-10-25T11:26:34 NOTE  ship-track/sk-node-10 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-25T11:26:41 INFO  ship-track/sk-node-13 backup finished file=/vault/daily/users_20261023.tar.zst size_mb=64680 checksum=ac50e333
+2026-10-25T11:26:48 INFO  ship-track/sk-node-18 request done id=req-7c8c1e74 route=/ship-track/v1/update status=400 latency_ms=81
+2026-10-25T11:26:49 INFO  ship-track/sk-node-08 pool resize target=ship-track-queue max_pool_size=397 prev=434
+2026-10-25T11:26:51 ERROR ship-track/sk-node-02 job failed job=ship-track-rollup attempt=5 cause=lock_wait_exceeded
+2026-10-25T11:26:57 INFO  ship-track/sk-node-19 pool resize target=ship-track-worker max_pool_size=292 prev=267
+2026-10-25T11:27:03 INFO  ship-track/sk-node-24 ticket linked id=OPS-48221 reason=quota_increase
+2026-10-25T11:27:06 INFO  ship-track/sk-node-02 cache stats region=ap-ne-2b hit_ratio=82.2% evictions=13390
+2026-10-25T11:27:08 INFO  ship-track/sk-node-06 config applied key=limiter.burst value=18% by=sykang
+2026-10-25T11:27:14 INFO  ship-track/sk-node-09 request done id=req-002f0711 route=/ship-track/v1/update status=500 latency_ms=21
+2026-10-25T11:27:20 NOTE  ship-track/sk-node-11 operator=yjchoi memo="타임아웃을 12ms에서 14ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-25T11:27:26 INFO  ship-track/sk-node-01 deploy step release=ship-track-4.10.4 step=shift_traffic_10 result=ok took_s=63
+2026-10-25T11:27:32 ERROR ship-track/sk-node-19 job failed job=ship-track-reindex attempt=5 cause=oom_killed
+2026-10-25T11:27:39 INFO  ship-track/sk-node-21 request done id=req-9e8c32ce route=/ship-track/v1/sync status=204 latency_ms=107
+2026-10-25T11:27:46 INFO  ship-track/sk-node-06 pool resize target=ship-track-queue max_pool_size=10 prev=13
+2026-10-25T11:27:53 INFO  ship-track/sk-node-07 pool resize target=ship-track-worker max_pool_size=250 prev=220
+2026-10-25T11:27:55 INFO  ship-track/sk-node-03 pool resize target=ship-track-db max_pool_size=397 prev=371
+2026-10-25T11:28:01 INFO  ship-track/sk-node-21 request done id=req-6d4bc9fd route=/ship-track/v1/sync status=200 latency_ms=170
+2026-10-25T11:28:06 INFO  ship-track/sk-node-02 ticket linked id=OPS-49709 reason=cert_rotation
+2026-10-25T11:28:08 WARN  ship-track/sk-node-05 alert fired rule=cpu_steal_high value=95% threshold=84%
+2026-10-25T11:28:09 INFO  ship-track/sk-node-17 request done id=req-01b0dc24 route=/ship-track/v1/list status=200 latency_ms=553
+2026-10-25T11:28:13 WARN  ship-track/sk-node-21 alert fired rule=fd_usage_high value=65% threshold=59%
+2026-10-25T11:28:16 INFO  ship-track/sk-node-23 request done id=req-94da1223 route=/ship-track/v1/get status=200 latency_ms=269
+2026-10-25T11:28:23 INFO  ship-track/sk-node-09 cache stats region=ap-ne-2c hit_ratio=83.0% evictions=26516
+2026-10-25T11:28:24 NOTE  ship-track/sk-node-22 operator=mjlee memo="로그 보존 기간은 13일로 유지하기로 함."
+2026-10-25T11:28:26 INFO  ship-track/sk-node-02 config applied key=limiter.rps value=true by=mjlee
+2026-10-25T11:28:30 WARN  ship-track/sk-node-15 alert fired rule=p99_latency_high value=72ms threshold=58ms
+2026-10-25T11:28:37 INFO  ship-track/sk-node-05 request done id=req-50ebf705 route=/ship-track/v1/cancel status=200 latency_ms=25
+2026-10-25T11:28:41 INFO  ship-track/sk-node-21 request done id=req-45ca72fa route=/ship-track/v1/verify status=200 latency_ms=89
+2026-10-25T11:28:42 INFO  ship-track/sk-node-22 config applied key=flush.interval_ms value=false by=shkim
+2026-10-25T11:28:43 INFO  ship-track/sk-node-23 deploy step release=ship-track-4.16.5 step=warmup result=ok took_s=14
+2026-10-25T11:28:46 INFO  ship-track/sk-node-08 request done id=req-aac8e0ed route=/ship-track/v1/update status=200 latency_ms=50
+2026-10-25T11:28:51 INFO  ship-track/sk-node-20 request done id=req-aacb2cc1 route=/ship-track/v1/create status=200 latency_ms=115
+2026-10-25T11:28:52 INFO  ship-track/sk-node-23 request done id=req-e085397b route=/ship-track/v1/sync status=500 latency_ms=477
+2026-10-25T11:28:56 INFO  ship-track/sk-node-17 request done id=req-557a2b35 route=/ship-track/v1/verify status=200 latency_ms=47
+2026-10-25T11:29:03 INFO  ship-track/sk-node-10 request done id=req-f64b09b3 route=/ship-track/v1/sync status=200 latency_ms=28
+2026-10-25T11:29:07 INFO  ship-track/sk-node-01 request done id=req-bd8eec0f route=/ship-track/v1/get status=404 latency_ms=81
+2026-10-25T11:29:14 WARN  ship-track/sk-node-18 alert fired rule=fd_usage_high value=93% threshold=78%
+2026-10-25T11:29:18 INFO  ship-track/sk-node-18 request done id=req-b0133e65 route=/ship-track/v1/sync status=200 latency_ms=233
+2026-10-25T11:29:22 INFO  ship-track/sk-node-24 request done id=req-08609a14 route=/ship-track/v1/status status=201 latency_ms=200
+2026-10-25T11:29:25 NOTE  ship-track/sk-node-03 operator=yjchoi memo="로그 보존 기간은 2일로 유지하기로 함."
+2026-10-25T11:29:32 INFO  ship-track/sk-node-16 request done id=req-0bd1177b route=/ship-track/v1/cancel status=200 latency_ms=92
+2026-10-25T11:29:34 INFO  ship-track/sk-node-18 request done id=req-b802b0eb route=/ship-track/v1/sync status=200 latency_ms=127
+2026-10-25T11:29:41 INFO  ship-track/sk-node-10 config applied key=http.max_conns value=false by=yjchoi
+2026-10-25T11:29:44 INFO  ship-track/sk-node-06 config applied key=queue.visibility_s value=5352 by=ejlim
+2026-10-25T11:29:51 INFO  ship-track/sk-node-07 config applied key=log.sample_rate value=false by=dwjung
+2026-10-25T11:29:55 INFO  ship-track/sk-node-12 request done id=req-8a7a1a03 route=/ship-track/v1/get status=204 latency_ms=108
+2026-10-25T11:29:59 INFO  ship-track/sk-node-16 request done id=req-4e8e0ee0 route=/ship-track/v1/list status=200 latency_ms=44
+2026-10-25T11:30:00 ERROR ship-track/sk-node-17 job failed job=ship-track-rollup attempt=5 cause=lock_wait_exceeded
+2026-10-25T11:30:03 INFO  ship-track/sk-node-22 request done id=req-3422d0c0 route=/ship-track/v1/verify status=200 latency_ms=110
+2026-10-25T11:30:04 INFO  ship-track/sk-node-18 config applied key=breaker.open_ratio value=56 by=jhpark
+2026-10-25T11:30:11 INFO  ship-track/sk-node-02 config applied key=limiter.rps value=90% by=dwjung
+2026-10-25T11:30:17 INFO  ship-track/sk-node-07 request done id=req-4f74f07e route=/ship-track/v1/create status=500 latency_ms=43
+2026-10-25T11:30:23 NOTE  ship-track/sk-node-19 operator=shkim memo="헬스체크 간격을 55초에서 80초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-25T11:30:24 INFO  ship-track/sk-node-15 request done id=req-b66c03de route=/ship-track/v1/list status=200 latency_ms=106
+2026-10-25T11:30:29 INFO  ship-track/sk-node-12 cache stats region=ap-ne-2b hit_ratio=64.2% evictions=23290
+2026-10-25T11:30:33 INFO  ship-track/sk-node-02 request done id=req-f97f549a route=/ship-track/v1/verify status=409 latency_ms=348
+2026-10-25T11:30:36 NOTE  ship-track/sk-node-01 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-25T11:30:40 INFO  ship-track/sk-node-22 cache stats region=ap-ne-2c hit_ratio=79.1% evictions=19532
+2026-10-25T11:30:46 INFO  ship-track/sk-node-24 request done id=req-4e577152 route=/ship-track/v1/list status=200 latency_ms=135
+2026-10-25T11:30:52 WARN  ship-track/sk-node-07 alert fired rule=heap_used_high value=69% threshold=62%
+2026-10-25T11:30:57 INFO  ship-track/sk-node-03 pool resize target=ship-track-queue max_pool_size=135 prev=172
+2026-10-25T11:31:03 INFO  ship-track/sk-node-01 request done id=req-f49f5694 route=/ship-track/v1/cancel status=200 latency_ms=172
+2026-10-25T11:31:09 INFO  ship-track/sk-node-08 request done id=req-8f622463 route=/ship-track/v1/cancel status=200 latency_ms=42
+2026-10-25T11:31:11 WARN  ship-track/sk-node-12 alert fired rule=heap_used_high value=79% threshold=75%
+2026-10-25T11:31:13 INFO  ship-track/sk-node-18 request done id=req-a2d86418 route=/ship-track/v1/sync status=409 latency_ms=98
+2026-10-25T11:31:15 INFO  ship-track/sk-node-10 request done id=req-fd92fdda route=/ship-track/v1/get status=200 latency_ms=238
+2026-10-25T11:31:22 INFO  ship-track/sk-node-20 cache stats region=ap-ne-2b hit_ratio=61.5% evictions=7257
+2026-10-25T11:31:25 INFO  ship-track/sk-node-15 request done id=req-2fab1be3 route=/ship-track/v1/cancel status=200 latency_ms=123
+2026-10-25T11:31:26 INFO  ship-track/sk-node-16 deploy step release=ship-track-4.11.0 step=shift_traffic_50 result=ok took_s=184
+2026-10-25T11:31:29 INFO  ship-track/sk-node-20 pool resize target=ship-track-upstream max_pool_size=123 prev=149
+2026-10-25T11:31:35 INFO  ship-track/sk-node-10 request done id=req-3c616238 route=/ship-track/v1/cancel status=201 latency_ms=251
+2026-10-25T11:31:37 INFO  ship-track/sk-node-18 request done id=req-1a2db21f route=/ship-track/v1/create status=400 latency_ms=28
+2026-10-25T11:31:42 INFO  ship-track/sk-node-02 deploy step release=ship-track-4.19.6 step=verify result=ok took_s=58
+2026-10-25T11:31:43 INFO  ship-track/sk-node-10 deploy step release=ship-track-4.15.0 step=start result=ok took_s=219
+2026-10-25T11:31:44 INFO  ship-track/sk-node-19 request done id=req-235615de route=/ship-track/v1/verify status=200 latency_ms=94
+2026-10-25T11:31:48 NOTE  ship-track/sk-node-08 operator=hbyoon memo="점검 창을 51분 연장함. 승인: 류태경 팀장."
+2026-10-25T11:31:54 INFO  ship-track/sk-node-09 request done id=req-d1fbf55f route=/ship-track/v1/update status=200 latency_ms=285
+2026-10-25T11:31:59 INFO  ship-track/sk-node-14 request done id=req-79d184fb route=/ship-track/v1/update status=503 latency_ms=170
+2026-10-25T11:32:05 INFO  ship-track/sk-node-16 deploy step release=ship-track-4.20.7 step=shift_traffic_100 result=ok took_s=43
+2026-10-25T11:32:07 NOTE  ship-track/sk-node-17 operator=shkim memo="헬스체크 간격을 34초에서 72초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-25T11:32:13 INFO  ship-track/sk-node-01 request done id=req-6b62832a route=/ship-track/v1/cancel status=200 latency_ms=196
+2026-10-25T11:32:19 NOTE  ship-track/sk-node-09 operator=sykang memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-25T11:32:23 INFO  ship-track/sk-node-06 deploy step release=ship-track-4.21.5 step=migrate result=ok took_s=216
+2026-10-25T11:32:28 INFO  ship-track/sk-node-08 request done id=req-38372df0 route=/ship-track/v1/status status=200 latency_ms=83
+2026-10-25T11:32:34 INFO  ship-track/sk-node-13 config applied key=tls.session_cache value=1205 by=jhpark
+2026-10-25T11:32:35 INFO  ship-track/sk-node-07 request done id=req-4fdd866a route=/ship-track/v1/sync status=200 latency_ms=289
+2026-10-25T11:32:42 WARN  ship-track/sk-node-06 alert fired rule=conn_pool_saturated value=66% threshold=65%
+2026-10-25T11:32:45 INFO  ship-track/sk-node-07 request done id=req-cd8f7f25 route=/ship-track/v1/status status=200 latency_ms=133
+2026-10-25T11:32:47 INFO  ship-track/sk-node-05 request done id=req-5972b0b3 route=/ship-track/v1/get status=204 latency_ms=116
+2026-10-25T11:32:52 INFO  ship-track/sk-node-23 ticket linked id=OPS-47919 reason=schema_change
+2026-10-25T11:32:58 INFO  ship-track/sk-node-22 request done id=req-4ba01c11 route=/ship-track/v1/create status=500 latency_ms=625
+2026-10-25T11:33:04 INFO  ship-track/sk-node-07 request done id=req-5632c5b8 route=/ship-track/v1/create status=200 latency_ms=252
+2026-10-25T11:33:07 INFO  ship-track/sk-node-08 request done id=req-0ff87b42 route=/ship-track/v1/list status=200 latency_ms=462
+2026-10-25T11:33:10 INFO  ship-track/sk-node-16 backup finished file=/vault/weekly/sessions_2026w31.tar.zst size_mb=16784 checksum=1fc4d4af
+2026-10-25T11:33:16 INFO  ship-track/sk-node-08 request done id=req-71960acb route=/ship-track/v1/sync status=200 latency_ms=173
+2026-10-25T11:33:22 INFO  ship-track/sk-node-11 request done id=req-51b5b865 route=/ship-track/v1/verify status=201 latency_ms=43
+2026-10-25T11:33:23 INFO  ship-track/sk-node-03 request done id=req-3500c980 route=/ship-track/v1/get status=200 latency_ms=550
+2026-10-25T11:33:24 INFO  ship-track/sk-node-19 config applied key=canary.latency_p99_threshold_ms value=false by=yjchoi
+2026-10-25T11:33:25 INFO  ship-track/sk-node-11 request done id=req-6514861a route=/ship-track/v1/list status=400 latency_ms=53
+2026-10-25T11:33:29 INFO  ship-track/sk-node-17 request done id=req-3e2f2694 route=/ship-track/v1/sync status=204 latency_ms=82
+2026-10-25T11:33:33 INFO  ship-track/sk-node-07 config applied key=queue.batch_size value=27 by=ejlim
+2026-10-25T11:33:35 INFO  ship-track/sk-node-08 request done id=req-77b7a237 route=/ship-track/v1/status status=400 latency_ms=143
+2026-10-25T11:33:41 INFO  ship-track/sk-node-23 request done id=req-1f8e4c66 route=/ship-track/v1/create status=200 latency_ms=103
+2026-10-25T11:33:48 INFO  ship-track/sk-node-13 request done id=req-e9d81c0a route=/ship-track/v1/sync status=409 latency_ms=217
+2026-10-25T11:33:55 INFO  ship-track/sk-node-12 request done id=req-d9f35c38 route=/ship-track/v1/status status=404 latency_ms=159
+2026-10-25T11:33:59 NOTE  ship-track/sk-node-17 operator=shkim memo="캐시 TTL을 18초로 되돌림. 오래된 응답이 보고됨."
+2026-10-25T11:34:03 WARN  ship-track/sk-node-19 alert fired rule=heap_used_high value=92% threshold=86%
+2026-10-25T11:34:04 INFO  ship-track/sk-node-21 request done id=req-7d1aeb15 route=/ship-track/v1/get status=200 latency_ms=70
+2026-10-25T11:34:08 INFO  ship-track/sk-node-02 request done id=req-eec67e25 route=/ship-track/v1/cancel status=200 latency_ms=66
+2026-10-25T11:34:13 NOTE  ship-track/sk-node-10 operator=dwjung memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-25T11:34:18 INFO  ship-track/sk-node-20 config applied key=http.max_conns value=false by=ejlim
+2026-10-25T11:34:23 INFO  ship-track/sk-node-23 request done id=req-d5f196b3 route=/ship-track/v1/sync status=200 latency_ms=75
+2026-10-25T11:34:30 INFO  ship-track/sk-node-11 deploy step release=ship-track-4.16.0 step=verify result=ok took_s=123
+2026-10-25T11:34:32 INFO  ship-track/sk-node-16 request done id=req-d3803dff route=/ship-track/v1/create status=200 latency_ms=152
+2026-10-25T11:34:36 INFO  ship-track/sk-node-11 ticket linked id=OPS-49110 reason=quota_increase
+2026-10-25T11:34:43 NOTE  ship-track/sk-node-13 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-25T11:34:46 INFO  ship-track/sk-node-02 request done id=req-c6cc31f2 route=/ship-track/v1/update status=200 latency_ms=48
+2026-10-25T11:34:48 INFO  ship-track/sk-node-24 request done id=req-8b37ad1f route=/ship-track/v1/status status=200 latency_ms=264
+2026-10-25T11:34:49 INFO  ship-track/sk-node-11 request done id=req-5b19278a route=/ship-track/v1/cancel status=200 latency_ms=452
+2026-10-25T11:34:55 INFO  ship-track/sk-node-23 deploy step release=ship-track-4.12.0 step=healthcheck result=ok took_s=142
+2026-10-25T11:35:00 INFO  ship-track/sk-node-14 backup finished file=/vault/weekly/audit_2026w30.tar.zst size_mb=85155 checksum=c2c6d5ce
+2026-10-25T11:35:04 INFO  ship-track/sk-node-03 ticket linked id=OPS-48848 reason=dns_ttl_change
+2026-10-25T11:35:08 INFO  ship-track/sk-node-05 request done id=req-9e7e0feb route=/ship-track/v1/create status=429 latency_ms=96
+2026-10-25T11:35:14 WARN  ship-track/sk-node-08 alert fired rule=heap_used_high value=54% threshold=45%
+2026-10-25T11:35:15 NOTE  ship-track/sk-node-11 operator=dwjung memo="로그 보존 기간은 59일로 유지하기로 함."
+2026-10-25T11:35:16 ERROR ship-track/sk-node-03 job failed job=ship-track-export attempt=2 cause=bad_checksum
+2026-10-25T11:35:17 INFO  ship-track/sk-node-17 cache stats region=ap-ne-2b hit_ratio=71.3% evictions=7523
+2026-10-25T11:35:23 INFO  ship-track/sk-node-18 request done id=req-f180d957 route=/ship-track/v1/cancel status=200 latency_ms=374
+2026-10-25T11:35:25 INFO  ship-track/sk-node-11 pool resize target=ship-track-cache max_pool_size=46 prev=100
+2026-10-25T11:35:28 INFO  ship-track/sk-node-13 request done id=req-da994014 route=/ship-track/v1/sync status=200 latency_ms=165
+2026-10-25T11:35:33 INFO  ship-track/sk-node-10 config applied key=dns.ttl_s value=18% by=sykang
+2026-10-25T11:35:38 INFO  ship-track/sk-node-01 request done id=req-087b3967 route=/ship-track/v1/verify status=200 latency_ms=35
+2026-10-25T11:35:42 INFO  ship-track/sk-node-20 pool resize target=ship-track-upstream max_pool_size=349 prev=401
+2026-10-25T11:35:47 INFO  ship-track/sk-node-23 request done id=req-d4ae807e route=/ship-track/v1/get status=200 latency_ms=36
+2026-10-25T11:35:51 INFO  ship-track/sk-node-20 request done id=req-39639fc2 route=/ship-track/v1/create status=200 latency_ms=172
+2026-10-25T11:35:54 INFO  ship-track/sk-node-09 ticket linked id=OPS-48997 reason=dns_ttl_change
+2026-10-25T11:35:55 INFO  ship-track/sk-node-17 request done id=req-5f5938a3 route=/ship-track/v1/create status=200 latency_ms=171
+2026-10-25T11:36:01 INFO  ship-track/sk-node-13 cache stats region=ap-ne-2b hit_ratio=88.7% evictions=6931
+2026-10-25T11:36:08 INFO  ship-track/sk-node-09 request done id=req-5820df80 route=/ship-track/v1/sync status=200 latency_ms=109
+2026-10-25T11:36:11 WARN  ship-track/sk-node-02 alert fired rule=queue_depth_high value=64 threshold=56
+2026-10-25T11:36:16 INFO  ship-track/sk-node-10 request done id=req-bb5ce37e route=/ship-track/v1/sync status=500 latency_ms=84
+2026-10-25T11:36:21 ERROR ship-track/sk-node-11 job failed job=ship-track-cleanup attempt=2 cause=lock_wait_exceeded
+2026-10-25T11:36:27 INFO  ship-track/sk-node-17 request done id=req-ee06da87 route=/ship-track/v1/sync status=200 latency_ms=166
+2026-10-25T11:36:31 NOTE  ship-track/sk-node-08 operator=yjchoi memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-25T11:36:35 INFO  ship-track/sk-node-08 request done id=req-e69649fe route=/ship-track/v1/create status=200 latency_ms=351
+2026-10-25T11:36:41 INFO  ship-track/sk-node-14 request done id=req-da3f8673 route=/ship-track/v1/status status=404 latency_ms=142
+2026-10-25T11:36:43 NOTE  ship-track/sk-node-04 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-25T11:36:44 INFO  ship-track/sk-node-05 pool resize target=ship-track-db max_pool_size=199 prev=142
+2026-10-25T11:36:50 INFO  ship-track/sk-node-21 backup finished file=/vault/daily/users_20261022.tar.zst size_mb=82307 checksum=60efdfd5
+2026-10-25T11:36:56 WARN  ship-track/sk-node-02 alert fired rule=queue_depth_high value=74 threshold=70
+2026-10-25T11:37:03 INFO  ship-track/sk-node-01 request done id=req-98e36d9a route=/ship-track/v1/verify status=200 latency_ms=47
+2026-10-25T11:37:04 INFO  ship-track/sk-node-21 request done id=req-b926c8d9 route=/ship-track/v1/create status=200 latency_ms=63
+2026-10-25T11:37:11 INFO  ship-track/sk-node-03 request done id=req-639ffbe3 route=/ship-track/v1/sync status=400 latency_ms=45
+2026-10-25T11:37:13 WARN  ship-track/sk-node-19 alert fired rule=disk_usage_warning value=98% threshold=97%
+2026-10-25T11:37:20 NOTE  ship-track/sk-node-02 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-25T11:37:21 INFO  ship-track/sk-node-06 pool resize target=ship-track-queue max_pool_size=184 prev=128
+2026-10-25T11:37:28 INFO  ship-track/sk-node-12 request done id=req-f8aa892b route=/ship-track/v1/verify status=201 latency_ms=182
+2026-10-25T11:37:31 INFO  ship-track/sk-node-16 deploy step release=ship-track-4.13.3 step=warmup result=ok took_s=17
+2026-10-25T11:37:35 NOTE  ship-track/sk-node-11 operator=sykang memo="점검 창을 46분 연장함. 승인: 오세린 매니저."
+2026-10-25T11:37:37 INFO  ship-track/sk-node-09 request done id=req-a20993f2 route=/ship-track/v1/verify status=409 latency_ms=96
+2026-10-25T11:37:41 INFO  ship-track/sk-node-07 config applied key=breaker.open_ratio value=true by=yjchoi
+2026-10-25T11:37:43 NOTE  ship-track/sk-node-15 operator=shkim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-25T11:37:44 INFO  ship-track/sk-node-17 backup finished file=/vault/daily/sessions_20261015.tar.zst size_mb=2255 checksum=ceb11aa3
+2026-10-25T11:37:48 INFO  ship-track/sk-node-21 pool resize target=ship-track-upstream max_pool_size=400 prev=457
+2026-10-25T11:37:54 INFO  ship-track/sk-node-24 request done id=req-ef778415 route=/ship-track/v1/verify status=200 latency_ms=201
+2026-10-25T11:37:59 INFO  ship-track/sk-node-09 cache stats region=ap-ne-2a hit_ratio=89.5% evictions=9756
+2026-10-25T11:38:01 NOTE  ship-track/sk-node-07 operator=yjchoi memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-25T11:38:08 INFO  ship-track/sk-node-15 request done id=req-abce8a45 route=/ship-track/v1/cancel status=200 latency_ms=427
+2026-10-25T11:38:10 ERROR ship-track/sk-node-24 job failed job=ship-track-rollup attempt=2 cause=lock_wait_exceeded
+2026-10-25T11:38:15 INFO  ship-track/sk-node-15 request done id=req-a8ed6029 route=/ship-track/v1/cancel status=200 latency_ms=33
+2026-10-25T11:38:21 INFO  ship-track/sk-node-07 request done id=req-46be2bc4 route=/ship-track/v1/update status=200 latency_ms=124
+2026-10-25T11:38:22 WARN  ship-track/sk-node-08 alert fired rule=heap_used_high value=82% threshold=69%
+2026-10-25T11:38:28 INFO  ship-track/sk-node-11 request done id=req-768908be route=/ship-track/v1/verify status=200 latency_ms=41
+2026-10-25T11:38:35 WARN  ship-track/sk-node-12 alert fired rule=disk_usage_warning value=79% threshold=67%
+2026-10-25T11:38:39 INFO  ship-track/sk-node-17 pool resize target=ship-track-queue max_pool_size=318 prev=304
+2026-10-25T11:38:42 INFO  ship-track/sk-node-21 request done id=req-6cf8f4cf route=/ship-track/v1/sync status=200 latency_ms=149
+2026-10-25T11:38:49 ERROR ship-track/sk-node-04 job failed job=ship-track-reindex attempt=2 cause=upstream_timeout
+2026-10-25T11:38:51 NOTE  ship-track/sk-node-12 operator=dwjung memo="동시 처리 수를 48에서 20로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-25T11:38:53 INFO  ship-track/sk-node-22 backup finished file=/vault/weekly/orders_2026w39.tar.zst size_mb=85257 checksum=a379b923
+2026-10-25T11:39:00 INFO  ship-track/sk-node-05 request done id=req-8e1e0986 route=/ship-track/v1/update status=200 latency_ms=466
+2026-10-25T11:39:03 INFO  ship-track/sk-node-09 pool resize target=ship-track-worker max_pool_size=322 prev=336
+2026-10-25T11:39:08 WARN  ship-track/sk-node-01 alert fired rule=fd_usage_high value=62% threshold=48%
+2026-10-25T11:39:15 INFO  ship-track/sk-node-23 request done id=req-e641a21a route=/ship-track/v1/list status=200 latency_ms=114
+2026-10-25T11:39:19 INFO  ship-track/sk-node-06 config applied key=gc.pause_target_ms value=7140 by=dwjung
+2026-10-25T11:39:25 INFO  ship-track/sk-node-10 pool resize target=ship-track-worker max_pool_size=199 prev=175
+2026-10-25T11:39:27 INFO  ship-track/sk-node-13 request done id=req-48b16eb5 route=/ship-track/v1/verify status=200 latency_ms=21
+2026-10-25T11:39:32 INFO  ship-track/sk-node-01 ticket linked id=OPS-47557 reason=flaky_healthcheck
+2026-10-25T11:39:35 WARN  ship-track/sk-node-19 alert fired rule=error_ratio_high value=53% threshold=51%
+2026-10-25T11:39:37 INFO  ship-track/sk-node-14 request done id=req-fd2e484a route=/ship-track/v1/cancel status=429 latency_ms=120
+2026-10-25T11:39:40 ERROR ship-track/sk-node-24 job failed job=ship-track-reindex attempt=5 cause=dns_failure
+2026-10-25T11:39:43 INFO  ship-track/sk-node-22 request done id=req-fd8ff1de route=/ship-track/v1/list status=409 latency_ms=489
+2026-10-25T11:39:48 WARN  ship-track/sk-node-14 alert fired rule=p99_latency_high value=83ms threshold=73ms
+2026-10-25T11:39:52 INFO  ship-track/sk-node-16 ticket linked id=OPS-48827 reason=flaky_healthcheck
+2026-10-25T11:39:53 WARN  ship-track/sk-node-06 alert fired rule=p99_latency_high value=96ms threshold=91ms
+2026-10-25T11:39:57 INFO  ship-track/sk-node-19 request done id=req-1dfd94d9 route=/ship-track/v1/get status=200 latency_ms=406
+2026-10-25T11:40:03 INFO  ship-track/sk-node-13 request done id=req-9f939569 route=/ship-track/v1/cancel status=200 latency_ms=72
+2026-10-25T11:40:07 INFO  ship-track/sk-node-24 request done id=req-01c2ab00 route=/ship-track/v1/cancel status=200 latency_ms=63
+2026-10-25T11:40:14 INFO  ship-track/sk-node-03 deploy step release=ship-track-4.15.5 step=healthcheck result=ok took_s=51
+2026-10-25T11:40:20 INFO  ship-track/sk-node-06 request done id=req-21bc3cf9 route=/ship-track/v1/update status=200 latency_ms=127
+2026-10-25T11:40:22 INFO  ship-track/sk-node-08 request done id=req-f26c8488 route=/ship-track/v1/status status=200 latency_ms=77
+2026-10-25T11:40:25 INFO  ship-track/sk-node-20 backup finished file=/vault/weekly/orders_2026w43.tar.zst size_mb=25922 checksum=42c1ac44
+2026-10-25T11:40:26 INFO  ship-track/sk-node-22 request done id=req-d2ddf2af route=/ship-track/v1/create status=503 latency_ms=137
+2026-10-25T11:40:27 INFO  ship-track/sk-node-03 ticket linked id=OPS-48567 reason=runbook_update
+2026-10-25T11:40:31 INFO  ship-track/sk-node-06 deploy step release=ship-track-4.21.6 step=pull_image result=ok took_s=157
+2026-10-25T11:40:34 WARN  ship-track/sk-node-19 alert fired rule=conn_pool_saturated value=78% threshold=63%
+2026-10-25T11:40:40 INFO  ship-track/sk-node-07 config applied key=log.sample_rate value=true by=shkim
+2026-10-25T11:40:41 INFO  ship-track/sk-node-06 ticket linked id=OPS-48135 reason=runbook_update
+2026-10-25T11:40:43 INFO  ship-track/sk-node-14 pool resize target=ship-track-queue max_pool_size=245 prev=273
+2026-10-25T11:40:48 INFO  ship-track/sk-node-20 request done id=req-73de5f2d route=/ship-track/v1/create status=200 latency_ms=106
+2026-10-25T11:40:49 INFO  ship-track/sk-node-23 request done id=req-62e69819 route=/ship-track/v1/verify status=200 latency_ms=118
+2026-10-25T11:40:52 INFO  ship-track/sk-node-05 request done id=req-b8edc997 route=/ship-track/v1/list status=204 latency_ms=236
+2026-10-25T11:40:55 WARN  ship-track/sk-node-16 alert fired rule=conn_pool_saturated value=95% threshold=92%
+2026-10-25T11:40:56 NOTE  ship-track/sk-node-14 operator=jhpark memo="캐시 TTL을 12초로 되돌림. 오래된 응답이 보고됨."
+2026-10-25T11:40:59 WARN  ship-track/sk-node-24 alert fired rule=cpu_steal_high value=65% threshold=64%
+2026-10-25T11:41:04 INFO  ship-track/sk-node-20 request done id=req-be9428c0 route=/ship-track/v1/create status=200 latency_ms=280
+2026-10-25T11:41:06 INFO  ship-track/sk-node-02 request done id=req-5f3b7878 route=/ship-track/v1/update status=200 latency_ms=60
+2026-10-25T11:41:11 INFO  ship-track/sk-node-07 request done id=req-5c57a766 route=/ship-track/v1/status status=404 latency_ms=238
+2026-10-25T11:41:15 INFO  ship-track/sk-node-19 ticket linked id=OPS-49798 reason=dns_ttl_change
+2026-10-25T11:41:22 INFO  ship-track/sk-node-05 request done id=req-21224895 route=/ship-track/v1/get status=200 latency_ms=213
+2026-10-25T11:41:25 INFO  ship-track/sk-node-17 pool resize target=ship-track-upstream max_pool_size=357 prev=321
+2026-10-25T11:41:30 INFO  ship-track/sk-node-13 request done id=req-046e6270 route=/ship-track/v1/get status=200 latency_ms=100
+2026-10-25T11:41:31 INFO  ship-track/sk-node-14 backup finished file=/vault/weekly/payments_2026w40.tar.zst size_mb=63474 checksum=d5697ba9
+2026-10-25T11:41:32 INFO  ship-track/sk-node-13 backup finished file=/vault/daily/inventory_20261020.tar.zst size_mb=63449 checksum=53310bef
+2026-10-25T11:41:34 INFO  ship-track/sk-node-24 config applied key=retry.backoff_ms value=true by=ejlim
+2026-10-25T11:41:35 INFO  ship-track/sk-node-20 request done id=req-389b0b5f route=/ship-track/v1/status status=200 latency_ms=79
+2026-10-25T11:41:36 WARN  ship-track/sk-node-19 alert fired rule=conn_pool_saturated value=74% threshold=73%
+2026-10-25T11:41:39 INFO  ship-track/sk-node-10 backup finished file=/vault/weekly/audit_2026w38.tar.zst size_mb=44054 checksum=71f2fec4
+2026-10-25T11:41:42 INFO  ship-track/sk-node-13 request done id=req-e9ab988b route=/ship-track/v1/list status=200 latency_ms=682
+2026-10-25T11:41:44 INFO  ship-track/sk-node-03 config applied key=tls.session_cache value=57 by=jhpark
+2026-10-25T11:41:49 INFO  ship-track/sk-node-19 request done id=req-50052b64 route=/ship-track/v1/status status=200 latency_ms=140
+2026-10-25T11:41:56 INFO  ship-track/sk-node-08 backup finished file=/vault/daily/payments_20261018.tar.zst size_mb=27844 checksum=246ab445
+2026-10-25T11:42:01 INFO  ship-track/sk-node-11 backup finished file=/vault/daily/sessions_20261017.tar.zst size_mb=25265 checksum=8303c474
+2026-10-25T11:42:06 INFO  ship-track/sk-node-01 config applied key=cache.ttl_s value=true by=shkim
+2026-10-25T11:42:09 INFO  ship-track/sk-node-07 config applied key=breaker.open_ratio value=false by=yjchoi
+2026-10-25T11:42:10 INFO  ship-track/sk-node-09 request done id=req-3f42cfd7 route=/ship-track/v1/sync status=404 latency_ms=211
+2026-10-25T11:42:14 INFO  ship-track/sk-node-07 ticket linked id=OPS-49345 reason=dns_ttl_change
+2026-10-25T11:42:15 INFO  ship-track/sk-node-11 pool resize target=ship-track-queue max_pool_size=280 prev=307
+2026-10-25T11:42:20 WARN  ship-track/sk-node-04 alert fired rule=disk_usage_warning value=59% threshold=53%
+2026-10-25T11:42:23 INFO  ship-track/sk-node-08 request done id=req-d7f2385f route=/ship-track/v1/create status=200 latency_ms=21
+2026-10-25T11:42:30 WARN  ship-track/sk-node-18 alert fired rule=conn_pool_saturated value=89% threshold=74%
+2026-10-25T11:42:31 INFO  ship-track/sk-node-05 request done id=req-6f7170d8 route=/ship-track/v1/cancel status=200 latency_ms=510
+2026-10-25T11:42:33 INFO  ship-track/sk-node-19 request done id=req-c131f479 route=/ship-track/v1/update status=429 latency_ms=51
+2026-10-25T11:42:39 INFO  ship-track/sk-node-04 request done id=req-659599d8 route=/ship-track/v1/list status=404 latency_ms=86
+2026-10-25T11:42:43 ERROR ship-track/sk-node-08 job failed job=ship-track-export attempt=3 cause=upstream_timeout
+2026-10-25T11:42:48 WARN  ship-track/sk-node-23 alert fired rule=p99_latency_high value=95ms threshold=86ms
+2026-10-25T11:42:55 NOTE  ship-track/sk-node-20 operator=mjlee memo="임시 증설 54대 추가. 내일 오전 회수 예정."
+2026-10-25T11:42:58 INFO  ship-track/sk-node-04 request done id=req-ede81ed8 route=/ship-track/v1/list status=200 latency_ms=35
+2026-10-25T11:43:05 INFO  ship-track/sk-node-19 deploy step release=ship-track-4.20.9 step=migrate result=ok took_s=161
+2026-10-25T11:43:09 INFO  ship-track/sk-node-07 request done id=req-aef6ada0 route=/ship-track/v1/status status=200 latency_ms=162
+2026-10-25T11:43:14 INFO  ship-track/sk-node-20 request done id=req-9e7a15fc route=/ship-track/v1/sync status=200 latency_ms=262
+2026-10-25T11:43:21 INFO  ship-track/sk-node-08 config applied key=retry.backoff_ms value=7446 by=yjchoi
+2026-10-25T11:43:24 ERROR ship-track/sk-node-04 job failed job=ship-track-export attempt=1 cause=quota_exceeded
+2026-10-25T11:43:26 INFO  ship-track/sk-node-09 deploy step release=ship-track-4.16.5 step=start result=ok took_s=208
+2026-10-25T11:43:33 INFO  ship-track/sk-node-01 request done id=req-a44bb383 route=/ship-track/v1/update status=204 latency_ms=685
+2026-10-25T11:43:34 INFO  ship-track/sk-node-01 request done id=req-d80f0bc3 route=/ship-track/v1/create status=200 latency_ms=547
+2026-10-25T11:43:41 INFO  ship-track/sk-node-20 pool resize target=ship-track-queue max_pool_size=378 prev=426
+2026-10-25T11:43:42 INFO  ship-track/sk-node-03 deploy step release=ship-track-4.20.9 step=start result=ok took_s=208
+2026-10-25T11:43:43 INFO  ship-track/sk-node-19 request done id=req-bea78a1e route=/ship-track/v1/status status=201 latency_ms=344
+2026-10-25T11:43:48 INFO  ship-track/sk-node-10 request done id=req-49e41347 route=/ship-track/v1/verify status=200 latency_ms=142
+2026-10-25T11:43:52 INFO  ship-track/sk-node-22 cache stats region=ap-ne-2c hit_ratio=70.1% evictions=13856
+2026-10-25T11:43:54 ERROR ship-track/sk-node-23 job failed job=ship-track-rollup attempt=3 cause=quota_exceeded
+2026-10-25T11:43:57 INFO  ship-track/sk-node-08 pool resize target=ship-track-db max_pool_size=122 prev=168
+2026-10-25T11:44:03 INFO  ship-track/sk-node-02 backup finished file=/vault/daily/audit_20261022.tar.zst size_mb=84690 checksum=f3a214eb
+2026-10-25T11:44:10 INFO  ship-track/sk-node-03 pool resize target=ship-track-cache max_pool_size=96 prev=86
+2026-10-25T11:44:11 INFO  ship-track/sk-node-12 config applied key=dns.ttl_s value=false by=yjchoi
+2026-10-25T11:44:14 INFO  ship-track/sk-node-13 request done id=req-118beb92 route=/ship-track/v1/cancel status=200 latency_ms=246
+2026-10-25T11:44:18 WARN  ship-track/sk-node-06 alert fired rule=conn_pool_saturated value=62% threshold=50%
+2026-10-25T11:44:19 INFO  ship-track/sk-node-01 request done id=req-c14b5434 route=/ship-track/v1/sync status=200 latency_ms=30
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

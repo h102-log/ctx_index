@@ -1,0 +1,424 @@
+참고용 로그 41: 문자 게이트웨이(sms-gate) 통신사 전환 구간. '확인'이라고만 답해 줘.
+
+2026-11-14T10:19:38 WARN  sms-gate/sg-node-18 alert fired rule=cpu_steal_high value=69% threshold=54%
+2026-11-14T10:19:42 INFO  sms-gate/sg-node-06 backup finished file=/vault/weekly/orders_2026w35.tar.zst size_mb=22361 checksum=1cfc6f2b
+2026-11-14T10:19:44 INFO  sms-gate/sg-node-01 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=27944 checksum=f1968682
+2026-11-14T10:19:46 INFO  sms-gate/sg-node-15 request done id=req-d2a87ffe route=/sms-gate/v1/update status=201 latency_ms=212
+2026-11-14T10:19:52 INFO  sms-gate/sg-node-01 deploy step release=sms-gate-4.18.9 step=shift_traffic_10 result=ok took_s=198
+2026-11-14T10:19:55 INFO  sms-gate/sg-node-13 request done id=req-23d16b40 route=/sms-gate/v1/cancel status=500 latency_ms=38
+2026-11-14T10:20:00 INFO  sms-gate/sg-node-20 request done id=req-c62d3a65 route=/sms-gate/v1/create status=409 latency_ms=99
+2026-11-14T10:20:01 INFO  sms-gate/sg-node-11 request done id=req-cb9cb6c5 route=/sms-gate/v1/verify status=409 latency_ms=70
+2026-11-14T10:20:02 INFO  sms-gate/sg-node-14 request done id=req-298ec555 route=/sms-gate/v1/cancel status=200 latency_ms=21
+2026-11-14T10:20:08 INFO  sms-gate/sg-node-03 request done id=req-86c9926a route=/sms-gate/v1/list status=503 latency_ms=224
+2026-11-14T10:20:13 INFO  sms-gate/sg-node-01 request done id=req-9548dc70 route=/sms-gate/v1/sync status=200 latency_ms=94
+2026-11-14T10:20:19 INFO  sms-gate/sg-node-10 request done id=req-9f3d3484 route=/sms-gate/v1/list status=200 latency_ms=89
+2026-11-14T10:20:22 WARN  sms-gate/sg-node-23 alert fired rule=p99_latency_high value=96ms threshold=84ms
+2026-11-14T10:20:25 INFO  sms-gate/sg-node-12 request done id=req-8ef2f9db route=/sms-gate/v1/update status=200 latency_ms=76
+2026-11-14T10:20:32 INFO  sms-gate/sg-node-11 request done id=req-3537bd8d route=/sms-gate/v1/get status=204 latency_ms=128
+2026-11-14T10:20:35 INFO  sms-gate/sg-node-02 request done id=req-af8aa395 route=/sms-gate/v1/create status=500 latency_ms=105
+2026-11-14T10:20:40 INFO  sms-gate/sg-node-11 request done id=req-6b86169b route=/sms-gate/v1/update status=503 latency_ms=170
+2026-11-14T10:20:42 INFO  sms-gate/sg-node-04 config applied key=tls.session_cache value=true by=yjchoi
+2026-11-14T10:20:48 INFO  sms-gate/sg-node-17 request done id=req-7f46a146 route=/sms-gate/v1/sync status=200 latency_ms=161
+2026-11-14T10:20:49 INFO  sms-gate/sg-node-12 ticket linked id=OPS-48876 reason=node_drain
+2026-11-14T10:20:51 INFO  sms-gate/sg-node-18 request done id=req-e2fd32ce route=/sms-gate/v1/get status=200 latency_ms=70
+2026-11-14T10:20:55 INFO  sms-gate/sg-node-01 deploy step release=sms-gate-4.16.2 step=shift_traffic_100 result=ok took_s=8
+2026-11-14T10:20:59 INFO  sms-gate/sg-node-02 request done id=req-5b05d80c route=/sms-gate/v1/get status=200 latency_ms=59
+2026-11-14T10:21:01 INFO  sms-gate/sg-node-24 request done id=req-836e91c7 route=/sms-gate/v1/get status=201 latency_ms=224
+2026-11-14T10:21:05 INFO  sms-gate/sg-node-03 deploy step release=sms-gate-4.13.6 step=drain result=ok took_s=162
+2026-11-14T10:21:06 INFO  sms-gate/sg-node-03 request done id=req-ecebf4bd route=/sms-gate/v1/status status=204 latency_ms=121
+2026-11-14T10:21:12 INFO  sms-gate/sg-node-04 request done id=req-df7f0411 route=/sms-gate/v1/create status=200 latency_ms=161
+2026-11-14T10:21:15 INFO  sms-gate/sg-node-19 config applied key=tls.session_cache value=62% by=shkim
+2026-11-14T10:21:22 INFO  sms-gate/sg-node-13 config applied key=retry.max_attempts value=43 by=ejlim
+2026-11-14T10:21:29 INFO  sms-gate/sg-node-06 request done id=req-0b333e28 route=/sms-gate/v1/update status=200 latency_ms=69
+2026-11-14T10:21:36 INFO  sms-gate/sg-node-19 ticket linked id=OPS-48615 reason=quota_increase
+2026-11-14T10:21:38 INFO  sms-gate/sg-node-18 deploy step release=sms-gate-4.21.3 step=shift_traffic_100 result=ok took_s=29
+2026-11-14T10:21:40 INFO  sms-gate/sg-node-11 ticket linked id=OPS-47013 reason=flaky_healthcheck
+2026-11-14T10:21:45 INFO  sms-gate/sg-node-22 request done id=req-ffba7be9 route=/sms-gate/v1/verify status=200 latency_ms=46
+2026-11-14T10:21:48 NOTE  sms-gate/sg-node-20 operator=yjchoi memo="임시 증설 48대 추가. 내일 오전 회수 예정."
+2026-11-14T10:21:52 INFO  sms-gate/sg-node-06 request done id=req-39f41ccc route=/sms-gate/v1/create status=204 latency_ms=23
+2026-11-14T10:21:59 INFO  sms-gate/sg-node-17 config applied key=cache.ttl_s value=true by=yjchoi
+2026-11-14T10:22:01 INFO  sms-gate/sg-node-06 request done id=req-c9228310 route=/sms-gate/v1/list status=503 latency_ms=365
+2026-11-14T10:22:07 INFO  sms-gate/sg-node-20 request done id=req-df46572d route=/sms-gate/v1/create status=200 latency_ms=67
+2026-11-14T10:22:14 INFO  sms-gate/sg-node-06 deploy step release=sms-gate-4.20.9 step=healthcheck result=ok took_s=57
+2026-11-14T10:22:18 INFO  sms-gate/sg-node-04 request done id=req-b505aa19 route=/sms-gate/v1/sync status=400 latency_ms=133
+2026-11-14T10:22:20 INFO  sms-gate/sg-node-09 request done id=req-7348f6c3 route=/sms-gate/v1/list status=204 latency_ms=76
+2026-11-14T10:22:26 INFO  sms-gate/sg-node-14 deploy step release=sms-gate-4.17.0 step=start result=ok took_s=191
+2026-11-14T10:22:28 WARN  sms-gate/sg-node-10 alert fired rule=queue_depth_high value=62 threshold=56
+2026-11-14T10:22:29 INFO  sms-gate/sg-node-10 ticket linked id=OPS-47389 reason=node_drain
+2026-11-14T10:22:33 INFO  sms-gate/sg-node-10 request done id=req-c6055c9d route=/sms-gate/v1/sync status=200 latency_ms=232
+2026-11-14T10:22:37 INFO  sms-gate/sg-node-01 config applied key=tls.session_cache value=3% by=mjlee
+2026-11-14T10:22:41 INFO  sms-gate/sg-node-22 request done id=req-b6f7eb88 route=/sms-gate/v1/get status=200 latency_ms=61
+2026-11-14T10:22:46 INFO  sms-gate/sg-node-16 config applied key=queue.visibility_s value=50% by=mjlee
+2026-11-14T10:22:49 INFO  sms-gate/sg-node-09 request done id=req-a9fcebe3 route=/sms-gate/v1/list status=204 latency_ms=260
+2026-11-14T10:22:56 INFO  sms-gate/sg-node-23 config applied key=canary.latency_p99_threshold_ms value=true by=shkim
+2026-11-14T10:23:00 INFO  sms-gate/sg-node-09 backup finished file=/vault/weekly/audit_2026w35.tar.zst size_mb=64744 checksum=90318bf3
+2026-11-14T10:23:05 INFO  sms-gate/sg-node-13 request done id=req-0553c370 route=/sms-gate/v1/sync status=200 latency_ms=408
+2026-11-14T10:23:06 INFO  sms-gate/sg-node-06 deploy step release=sms-gate-4.15.7 step=pull_image result=ok took_s=5
+2026-11-14T10:23:07 NOTE  sms-gate/sg-node-21 operator=dwjung memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-11-14T10:23:11 INFO  sms-gate/sg-node-18 backup finished file=/vault/daily/inventory_20261025.tar.zst size_mb=38676 checksum=7363a00c
+2026-11-14T10:23:15 INFO  sms-gate/sg-node-18 request done id=req-d0305cc7 route=/sms-gate/v1/status status=200 latency_ms=155
+2026-11-14T10:23:22 INFO  sms-gate/sg-node-21 deploy step release=sms-gate-4.15.6 step=shift_traffic_50 result=ok took_s=11
+2026-11-14T10:23:23 WARN  sms-gate/sg-node-05 alert fired rule=disk_usage_warning value=95% threshold=91%
+2026-11-14T10:23:29 INFO  sms-gate/sg-node-23 request done id=req-bf61d820 route=/sms-gate/v1/cancel status=200 latency_ms=317
+2026-11-14T10:23:31 INFO  sms-gate/sg-node-09 request done id=req-374de78e route=/sms-gate/v1/get status=200 latency_ms=126
+2026-11-14T10:23:33 WARN  sms-gate/sg-node-22 alert fired rule=replica_lag_high value=61s threshold=54s
+2026-11-14T10:23:39 INFO  sms-gate/sg-node-16 cache stats region=ap-se-1a hit_ratio=83.0% evictions=13315
+2026-11-14T10:23:45 INFO  sms-gate/sg-node-21 request done id=req-6a0b001a route=/sms-gate/v1/list status=200 latency_ms=108
+2026-11-14T10:23:51 INFO  sms-gate/sg-node-03 request done id=req-61d2e7a7 route=/sms-gate/v1/status status=409 latency_ms=46
+2026-11-14T10:23:54 INFO  sms-gate/sg-node-11 config applied key=breaker.half_open_s value=4168 by=ejlim
+2026-11-14T10:24:01 INFO  sms-gate/sg-node-08 request done id=req-3e5255d0 route=/sms-gate/v1/sync status=200 latency_ms=39
+2026-11-14T10:24:03 INFO  sms-gate/sg-node-08 pool resize target=sms-gate-upstream max_pool_size=219 prev=179
+2026-11-14T10:24:07 INFO  sms-gate/sg-node-08 request done id=req-7b05838d route=/sms-gate/v1/list status=200 latency_ms=295
+2026-11-14T10:24:09 INFO  sms-gate/sg-node-01 config applied key=canary.traffic_percent value=false by=yjchoi
+2026-11-14T10:24:10 INFO  sms-gate/sg-node-21 request done id=req-9b1c23b5 route=/sms-gate/v1/list status=204 latency_ms=102
+2026-11-14T10:24:15 WARN  sms-gate/sg-node-09 alert fired rule=gc_pause_long value=50ms threshold=43ms
+2026-11-14T10:24:17 WARN  sms-gate/sg-node-14 alert fired rule=queue_depth_high value=94 threshold=82
+2026-11-14T10:24:21 INFO  sms-gate/sg-node-22 request done id=req-7d50773e route=/sms-gate/v1/cancel status=200 latency_ms=182
+2026-11-14T10:24:28 WARN  sms-gate/sg-node-03 alert fired rule=replica_lag_high value=84s threshold=75s
+2026-11-14T10:24:35 INFO  sms-gate/sg-node-15 request done id=req-f1307ca7 route=/sms-gate/v1/verify status=404 latency_ms=41
+2026-11-14T10:24:40 WARN  sms-gate/sg-node-17 alert fired rule=p99_latency_high value=61ms threshold=58ms
+2026-11-14T10:24:45 INFO  sms-gate/sg-node-10 request done id=req-906e378c route=/sms-gate/v1/verify status=200 latency_ms=27
+2026-11-14T10:24:52 INFO  sms-gate/sg-node-13 request done id=req-b7baa29e route=/sms-gate/v1/update status=200 latency_ms=65
+2026-11-14T10:24:59 INFO  sms-gate/sg-node-01 ticket linked id=OPS-47603 reason=oncall_handoff
+2026-11-14T10:25:03 INFO  sms-gate/sg-node-24 request done id=req-cc823372 route=/sms-gate/v1/create status=400 latency_ms=52
+2026-11-14T10:25:07 WARN  sms-gate/sg-node-24 alert fired rule=queue_depth_high value=85 threshold=73
+2026-11-14T10:25:08 ERROR sms-gate/sg-node-22 job failed job=sms-gate-reindex attempt=3 cause=quota_exceeded
+2026-11-14T10:25:12 NOTE  sms-gate/sg-node-08 operator=sykang memo="배치 시작 시각을 41시 68분으로 고정함."
+2026-11-14T10:25:19 INFO  sms-gate/sg-node-02 deploy step release=sms-gate-4.11.4 step=healthcheck result=ok took_s=150
+2026-11-14T10:25:25 INFO  sms-gate/sg-node-06 request done id=req-cd242320 route=/sms-gate/v1/cancel status=200 latency_ms=95
+2026-11-14T10:25:32 WARN  sms-gate/sg-node-24 alert fired rule=fd_usage_high value=67% threshold=53%
+2026-11-14T10:25:37 INFO  sms-gate/sg-node-20 pool resize target=sms-gate-worker max_pool_size=100 prev=56
+2026-11-14T10:25:39 INFO  sms-gate/sg-node-03 config applied key=http.max_conns value=false by=shkim
+2026-11-14T10:25:43 INFO  sms-gate/sg-node-16 request done id=req-4f3b2bb2 route=/sms-gate/v1/get status=200 latency_ms=237
+2026-11-14T10:25:44 INFO  sms-gate/sg-node-02 request done id=req-8eb4bb7f route=/sms-gate/v1/list status=200 latency_ms=104
+2026-11-14T10:25:46 INFO  sms-gate/sg-node-02 request done id=req-4444b59a route=/sms-gate/v1/sync status=200 latency_ms=138
+2026-11-14T10:25:48 INFO  sms-gate/sg-node-10 request done id=req-48de3962 route=/sms-gate/v1/update status=200 latency_ms=59
+2026-11-14T10:25:50 INFO  sms-gate/sg-node-11 request done id=req-354501ac route=/sms-gate/v1/cancel status=200 latency_ms=77
+2026-11-14T10:25:56 WARN  sms-gate/sg-node-10 alert fired rule=queue_depth_high value=58 threshold=50
+2026-11-14T10:26:02 INFO  sms-gate/sg-node-04 request done id=req-45119855 route=/sms-gate/v1/get status=500 latency_ms=42
+2026-11-14T10:26:07 INFO  sms-gate/sg-node-16 deploy step release=sms-gate-4.22.7 step=migrate result=ok took_s=145
+2026-11-14T10:26:14 ERROR sms-gate/sg-node-05 job failed job=sms-gate-export attempt=5 cause=dns_failure
+2026-11-14T10:26:15 INFO  sms-gate/sg-node-16 config applied key=queue.visibility_s value=4674 by=mjlee
+2026-11-14T10:26:21 INFO  sms-gate/sg-node-24 backup finished file=/vault/daily/payments_20261018.tar.zst size_mb=32710 checksum=93bd5ca6
+2026-11-14T10:26:24 INFO  sms-gate/sg-node-10 config applied key=http.max_conns value=13 by=sykang
+2026-11-14T10:26:31 INFO  sms-gate/sg-node-03 request done id=req-a6a56917 route=/sms-gate/v1/get status=200 latency_ms=820
+2026-11-14T10:26:35 INFO  sms-gate/sg-node-20 request done id=req-df7aefae route=/sms-gate/v1/get status=200 latency_ms=62
+2026-11-14T10:26:40 NOTE  sms-gate/sg-node-09 operator=ejlim memo="배치 시작 시각을 21시 24분으로 고정함."
+2026-11-14T10:26:43 INFO  sms-gate/sg-node-02 deploy step release=sms-gate-4.14.3 step=start result=ok took_s=190
+2026-11-14T10:26:50 INFO  sms-gate/sg-node-21 deploy step release=sms-gate-4.22.4 step=shift_traffic_100 result=ok took_s=73
+2026-11-14T10:26:56 INFO  sms-gate/sg-node-13 cache stats region=ap-ne-2a hit_ratio=73.2% evictions=16210
+2026-11-14T10:27:03 INFO  sms-gate/sg-node-05 request done id=req-5c02b2d3 route=/sms-gate/v1/update status=200 latency_ms=61
+2026-11-14T10:27:06 INFO  sms-gate/sg-node-11 request done id=req-b15371b0 route=/sms-gate/v1/sync status=200 latency_ms=38
+2026-11-14T10:27:10 INFO  sms-gate/sg-node-24 config applied key=log.sample_rate value=42 by=yjchoi
+2026-11-14T10:27:11 NOTE  sms-gate/sg-node-06 operator=shkim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-14T10:27:17 INFO  sms-gate/sg-node-08 deploy step release=sms-gate-4.19.7 step=warmup result=ok took_s=200
+2026-11-14T10:27:21 INFO  sms-gate/sg-node-07 backup finished file=/vault/weekly/users_2026w35.tar.zst size_mb=40220 checksum=7f16b710
+2026-11-14T10:27:26 INFO  sms-gate/sg-node-01 request done id=req-b927f98a route=/sms-gate/v1/cancel status=503 latency_ms=103
+2026-11-14T10:27:29 INFO  sms-gate/sg-node-08 request done id=req-deea07a1 route=/sms-gate/v1/get status=200 latency_ms=399
+2026-11-14T10:27:31 INFO  sms-gate/sg-node-08 request done id=req-e8b3d21c route=/sms-gate/v1/update status=200 latency_ms=168
+2026-11-14T10:27:37 NOTE  sms-gate/sg-node-10 operator=mjlee memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-11-14T10:27:43 NOTE  sms-gate/sg-node-10 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-14T10:27:46 INFO  sms-gate/sg-node-01 request done id=req-4f3604bc route=/sms-gate/v1/create status=204 latency_ms=106
+2026-11-14T10:27:47 INFO  sms-gate/sg-node-08 request done id=req-e4a22a83 route=/sms-gate/v1/create status=429 latency_ms=227
+2026-11-14T10:27:51 WARN  sms-gate/sg-node-12 alert fired rule=conn_pool_saturated value=50% threshold=40%
+2026-11-14T10:27:54 INFO  sms-gate/sg-node-18 config applied key=canary.traffic_percent value=37 by=hbyoon
+2026-11-14T10:28:01 INFO  sms-gate/sg-node-05 request done id=req-3680bd18 route=/sms-gate/v1/create status=200 latency_ms=64
+2026-11-14T10:28:07 INFO  sms-gate/sg-node-05 request done id=req-9bd08582 route=/sms-gate/v1/get status=200 latency_ms=139
+2026-11-14T10:28:14 INFO  sms-gate/sg-node-11 ticket linked id=OPS-48149 reason=flaky_healthcheck
+2026-11-14T10:28:18 INFO  sms-gate/sg-node-09 ticket linked id=OPS-49962 reason=dns_ttl_change
+2026-11-14T10:28:20 INFO  sms-gate/sg-node-04 config applied key=retry.max_attempts value=false by=yjchoi
+2026-11-14T10:28:24 INFO  sms-gate/sg-node-23 pool resize target=sms-gate-worker max_pool_size=358 prev=300
+2026-11-14T10:28:30 INFO  sms-gate/sg-node-16 request done id=req-a4f6d1f5 route=/sms-gate/v1/verify status=400 latency_ms=298
+2026-11-14T10:28:34 INFO  sms-gate/sg-node-06 request done id=req-41a267ec route=/sms-gate/v1/sync status=409 latency_ms=654
+2026-11-14T10:28:37 WARN  sms-gate/sg-node-16 alert fired rule=queue_depth_high value=69 threshold=55
+2026-11-14T10:28:41 INFO  sms-gate/sg-node-12 deploy step release=sms-gate-4.18.9 step=healthcheck result=ok took_s=226
+2026-11-14T10:28:42 WARN  sms-gate/sg-node-13 alert fired rule=conn_pool_saturated value=54% threshold=49%
+2026-11-14T10:28:45 INFO  sms-gate/sg-node-13 request done id=req-b50d5714 route=/sms-gate/v1/get status=429 latency_ms=195
+2026-11-14T10:28:51 INFO  sms-gate/sg-node-15 config applied key=canary.latency_p99_threshold_ms value=33 by=ejlim
+2026-11-14T10:28:53 INFO  sms-gate/sg-node-01 request done id=req-8e4b081f route=/sms-gate/v1/status status=200 latency_ms=179
+2026-11-14T10:28:55 INFO  sms-gate/sg-node-01 ticket linked id=OPS-47168 reason=log_volume_spike
+2026-11-14T10:28:56 INFO  sms-gate/sg-node-13 deploy step release=sms-gate-4.19.1 step=verify result=ok took_s=26
+2026-11-14T10:28:58 INFO  sms-gate/sg-node-10 pool resize target=sms-gate-queue max_pool_size=54 prev=78
+2026-11-14T10:29:04 INFO  sms-gate/sg-node-13 request done id=req-b907f651 route=/sms-gate/v1/get status=200 latency_ms=287
+2026-11-14T10:29:06 INFO  sms-gate/sg-node-07 request done id=req-52017ba2 route=/sms-gate/v1/list status=200 latency_ms=444
+2026-11-14T10:29:13 INFO  sms-gate/sg-node-12 ticket linked id=OPS-49174 reason=quota_increase
+2026-11-14T10:29:15 INFO  sms-gate/sg-node-08 request done id=req-f7ba67ad route=/sms-gate/v1/verify status=200 latency_ms=255
+2026-11-14T10:29:19 INFO  sms-gate/sg-node-19 request done id=req-4d55fed0 route=/sms-gate/v1/create status=200 latency_ms=196
+2026-11-14T10:29:24 INFO  sms-gate/sg-node-10 config applied key=worker.concurrency value=40% by=shkim
+2026-11-14T10:29:25 INFO  sms-gate/sg-node-21 request done id=req-a3d567ab route=/sms-gate/v1/list status=500 latency_ms=70
+2026-11-14T10:29:26 INFO  sms-gate/sg-node-22 request done id=req-d2feca23 route=/sms-gate/v1/sync status=200 latency_ms=152
+2026-11-14T10:29:29 INFO  sms-gate/sg-node-10 request done id=req-06365634 route=/sms-gate/v1/get status=409 latency_ms=42
+2026-11-14T10:29:32 NOTE  sms-gate/sg-node-21 operator=dwjung memo="로그 보존 기간은 54일로 유지하기로 함."
+2026-11-14T10:29:36 INFO  sms-gate/sg-node-17 request done id=req-07908d4d route=/sms-gate/v1/list status=200 latency_ms=117
+2026-11-14T10:29:37 INFO  sms-gate/sg-node-22 pool resize target=sms-gate-upstream max_pool_size=16 prev=51
+2026-11-14T10:29:42 INFO  sms-gate/sg-node-11 request done id=req-1e140cdc route=/sms-gate/v1/update status=429 latency_ms=66
+2026-11-14T10:29:46 INFO  sms-gate/sg-node-16 cache stats region=ap-ne-2a hit_ratio=77.8% evictions=22661
+2026-11-14T10:29:48 INFO  sms-gate/sg-node-02 cache stats region=ap-ne-2c hit_ratio=97.4% evictions=11901
+2026-11-14T10:29:51 INFO  sms-gate/sg-node-08 config applied key=log.sample_rate value=92% by=ejlim
+2026-11-14T10:29:58 INFO  sms-gate/sg-node-11 request done id=req-e4862768 route=/sms-gate/v1/get status=200 latency_ms=66
+2026-11-14T10:30:02 INFO  sms-gate/sg-node-20 deploy step release=sms-gate-4.17.1 step=start result=ok took_s=230
+2026-11-14T10:30:03 INFO  sms-gate/sg-node-16 deploy step release=sms-gate-4.17.0 step=warmup result=ok took_s=199
+2026-11-14T10:30:05 INFO  sms-gate/sg-node-12 backup finished file=/vault/daily/users_20261006.tar.zst size_mb=35726 checksum=888e2e67
+2026-11-14T10:30:09 INFO  sms-gate/sg-node-10 pool resize target=sms-gate-upstream max_pool_size=144 prev=109
+2026-11-14T10:30:10 INFO  sms-gate/sg-node-09 config applied key=http.read_timeout_ms value=678 by=hbyoon
+2026-11-14T10:30:16 INFO  sms-gate/sg-node-05 cache stats region=ap-ne-2b hit_ratio=81.4% evictions=20091
+2026-11-14T10:30:18 INFO  sms-gate/sg-node-14 request done id=req-332068d5 route=/sms-gate/v1/create status=200 latency_ms=174
+2026-11-14T10:30:20 INFO  sms-gate/sg-node-16 pool resize target=sms-gate-upstream max_pool_size=79 prev=66
+2026-11-14T10:30:23 INFO  sms-gate/sg-node-01 pool resize target=sms-gate-upstream max_pool_size=68 prev=26
+2026-11-14T10:30:27 INFO  sms-gate/sg-node-22 ticket linked id=OPS-49948 reason=flaky_healthcheck
+2026-11-14T10:30:34 INFO  sms-gate/sg-node-07 backup finished file=/vault/daily/orders_20261002.tar.zst size_mb=30526 checksum=c18474e1
+2026-11-14T10:30:40 INFO  sms-gate/sg-node-17 pool resize target=sms-gate-cache max_pool_size=65 prev=17
+2026-11-14T10:30:47 INFO  sms-gate/sg-node-22 request done id=req-393bf417 route=/sms-gate/v1/status status=201 latency_ms=43
+2026-11-14T10:30:50 INFO  sms-gate/sg-node-12 request done id=req-cca0a2d8 route=/sms-gate/v1/update status=204 latency_ms=46
+2026-11-14T10:30:55 INFO  sms-gate/sg-node-16 deploy step release=sms-gate-4.13.8 step=start result=ok took_s=75
+2026-11-14T10:30:56 WARN  sms-gate/sg-node-03 alert fired rule=queue_depth_high value=72 threshold=65
+2026-11-14T10:31:02 WARN  sms-gate/sg-node-07 alert fired rule=gc_pause_long value=74ms threshold=60ms
+2026-11-14T10:31:07 WARN  sms-gate/sg-node-07 alert fired rule=queue_depth_high value=93 threshold=83
+2026-11-14T10:31:08 INFO  sms-gate/sg-node-20 request done id=req-271dcd50 route=/sms-gate/v1/create status=503 latency_ms=102
+2026-11-14T10:31:15 INFO  sms-gate/sg-node-09 config applied key=retry.max_attempts value=20 by=mjlee
+2026-11-14T10:31:19 ERROR sms-gate/sg-node-07 job failed job=sms-gate-rollup attempt=4 cause=quota_exceeded
+2026-11-14T10:31:20 INFO  sms-gate/sg-node-12 request done id=req-74d493fc route=/sms-gate/v1/get status=200 latency_ms=59
+2026-11-14T10:31:22 INFO  sms-gate/sg-node-13 cache stats region=ap-se-1a hit_ratio=63.0% evictions=8658
+2026-11-14T10:31:24 INFO  sms-gate/sg-node-24 config applied key=http.read_timeout_ms value=8640 by=dwjung
+2026-11-14T10:31:30 INFO  sms-gate/sg-node-16 request done id=req-9ada7801 route=/sms-gate/v1/verify status=200 latency_ms=72
+2026-11-14T10:31:35 INFO  sms-gate/sg-node-08 pool resize target=sms-gate-db max_pool_size=104 prev=111
+2026-11-14T10:31:36 INFO  sms-gate/sg-node-04 pool resize target=sms-gate-upstream max_pool_size=371 prev=404
+2026-11-14T10:31:37 INFO  sms-gate/sg-node-15 pool resize target=sms-gate-db max_pool_size=135 prev=76
+2026-11-14T10:31:41 INFO  sms-gate/sg-node-04 cache stats region=ap-ne-2c hit_ratio=80.6% evictions=15392
+2026-11-14T10:31:47 ERROR sms-gate/sg-node-11 job failed job=sms-gate-reindex attempt=5 cause=dns_failure
+2026-11-14T10:31:53 INFO  sms-gate/sg-node-04 deploy step release=sms-gate-4.21.9 step=pull_image result=ok took_s=64
+2026-11-14T10:31:55 INFO  sms-gate/sg-node-15 request done id=req-04bcf24d route=/sms-gate/v1/list status=200 latency_ms=163
+2026-11-14T10:32:01 INFO  sms-gate/sg-node-22 config applied key=dns.ttl_s value=false by=mjlee
+2026-11-14T10:32:03 INFO  sms-gate/sg-node-20 deploy step release=sms-gate-4.17.0 step=shift_traffic_100 result=ok took_s=104
+2026-11-14T10:32:10 NOTE  sms-gate/sg-node-24 operator=mjlee memo="연동 팀에 변경 공지 완료."
+2026-11-14T10:32:14 INFO  sms-gate/sg-node-03 deploy step release=sms-gate-4.18.0 step=start result=ok took_s=228
+2026-11-14T10:32:21 INFO  sms-gate/sg-node-23 request done id=req-1fce9513 route=/sms-gate/v1/status status=200 latency_ms=88
+2026-11-14T10:32:24 INFO  sms-gate/sg-node-07 request done id=req-8922793d route=/sms-gate/v1/list status=200 latency_ms=255
+2026-11-14T10:32:25 ERROR sms-gate/sg-node-18 job failed job=sms-gate-rollup attempt=1 cause=upstream_timeout
+2026-11-14T10:32:32 INFO  sms-gate/sg-node-16 config applied key=cache.ttl_s value=2658 by=shkim
+2026-11-14T10:32:35 INFO  sms-gate/sg-node-01 deploy step release=sms-gate-4.16.1 step=shift_traffic_100 result=ok took_s=71
+2026-11-14T10:32:42 INFO  sms-gate/sg-node-12 request done id=req-3eacac03 route=/sms-gate/v1/sync status=409 latency_ms=34
+2026-11-14T10:32:48 INFO  sms-gate/sg-node-13 request done id=req-703c96a2 route=/sms-gate/v1/list status=429 latency_ms=98
+2026-11-14T10:32:52 INFO  sms-gate/sg-node-03 config applied key=breaker.open_ratio value=true by=dwjung
+2026-11-14T10:32:59 INFO  sms-gate/sg-node-22 request done id=req-a879f519 route=/sms-gate/v1/get status=200 latency_ms=212
+2026-11-14T10:33:04 WARN  sms-gate/sg-node-22 alert fired rule=queue_depth_high value=79 threshold=68
+2026-11-14T10:33:07 INFO  sms-gate/sg-node-23 config applied key=canary.traffic_percent value=true by=jhpark
+2026-11-14T10:33:14 INFO  sms-gate/sg-node-02 pool resize target=sms-gate-upstream max_pool_size=46 prev=82
+2026-11-14T10:33:20 INFO  sms-gate/sg-node-01 request done id=req-ab10fa32 route=/sms-gate/v1/list status=200 latency_ms=150
+2026-11-14T10:33:24 INFO  sms-gate/sg-node-04 request done id=req-96f30459 route=/sms-gate/v1/status status=200 latency_ms=675
+2026-11-14T10:33:31 INFO  sms-gate/sg-node-08 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=17942 checksum=7e126fdc
+2026-11-14T10:33:38 INFO  sms-gate/sg-node-21 request done id=req-83a40fb0 route=/sms-gate/v1/status status=200 latency_ms=166
+2026-11-14T10:33:39 NOTE  sms-gate/sg-node-01 operator=sykang memo="연동 팀에 변경 공지 완료."
+2026-11-14T10:33:43 INFO  sms-gate/sg-node-10 request done id=req-86ec84b6 route=/sms-gate/v1/sync status=200 latency_ms=181
+2026-11-14T10:33:46 WARN  sms-gate/sg-node-14 alert fired rule=fd_usage_high value=90% threshold=80%
+2026-11-14T10:33:48 INFO  sms-gate/sg-node-17 request done id=req-4bbc813b route=/sms-gate/v1/list status=200 latency_ms=533
+2026-11-14T10:33:49 NOTE  sms-gate/sg-node-22 operator=dwjung memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-14T10:33:50 INFO  sms-gate/sg-node-05 request done id=req-0078eb30 route=/sms-gate/v1/create status=200 latency_ms=940
+2026-11-14T10:33:57 WARN  sms-gate/sg-node-12 alert fired rule=disk_usage_warning value=69% threshold=57%
+2026-11-14T10:34:04 NOTE  sms-gate/sg-node-15 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-14T10:34:06 INFO  sms-gate/sg-node-24 pool resize target=sms-gate-db max_pool_size=194 prev=222
+2026-11-14T10:34:12 INFO  sms-gate/sg-node-11 backup finished file=/vault/daily/audit_20261012.tar.zst size_mb=23663 checksum=241a9912
+2026-11-14T10:34:13 INFO  sms-gate/sg-node-13 ticket linked id=OPS-48051 reason=oncall_handoff
+2026-11-14T10:34:18 WARN  sms-gate/sg-node-21 alert fired rule=heap_used_high value=65% threshold=55%
+2026-11-14T10:34:19 INFO  sms-gate/sg-node-19 request done id=req-0bb756d5 route=/sms-gate/v1/get status=200 latency_ms=58
+2026-11-14T10:34:23 INFO  sms-gate/sg-node-19 request done id=req-e70936e1 route=/sms-gate/v1/get status=200 latency_ms=84
+2026-11-14T10:34:28 INFO  sms-gate/sg-node-24 request done id=req-8067a989 route=/sms-gate/v1/sync status=200 latency_ms=79
+2026-11-14T10:34:29 WARN  sms-gate/sg-node-12 alert fired rule=queue_depth_high value=79 threshold=72
+2026-11-14T10:34:32 INFO  sms-gate/sg-node-17 request done id=req-7ce0104b route=/sms-gate/v1/get status=200 latency_ms=129
+2026-11-14T10:34:39 INFO  sms-gate/sg-node-08 pool resize target=sms-gate-db max_pool_size=298 prev=352
+2026-11-14T10:34:40 INFO  sms-gate/sg-node-03 request done id=req-1e4d5a60 route=/sms-gate/v1/create status=200 latency_ms=361
+2026-11-14T10:34:47 INFO  sms-gate/sg-node-14 request done id=req-bc15b021 route=/sms-gate/v1/list status=200 latency_ms=57
+2026-11-14T10:34:53 INFO  sms-gate/sg-node-17 request done id=req-f0e2c772 route=/sms-gate/v1/status status=200 latency_ms=76
+2026-11-14T10:34:56 INFO  sms-gate/sg-node-03 config applied key=worker.concurrency value=32% by=sykang
+2026-11-14T10:35:03 INFO  sms-gate/sg-node-04 request done id=req-4e04624b route=/sms-gate/v1/cancel status=400 latency_ms=137
+2026-11-14T10:35:08 INFO  sms-gate/sg-node-16 config applied key=gc.pause_target_ms value=true by=shkim
+2026-11-14T10:35:11 INFO  sms-gate/sg-node-16 backup finished file=/vault/daily/audit_20261015.tar.zst size_mb=30742 checksum=4c7d2a20
+2026-11-14T10:35:13 INFO  sms-gate/sg-node-20 config applied key=flush.interval_ms value=88% by=shkim
+2026-11-14T10:35:15 INFO  sms-gate/sg-node-03 request done id=req-149c4ab2 route=/sms-gate/v1/update status=200 latency_ms=216
+2026-11-14T10:35:21 INFO  sms-gate/sg-node-03 request done id=req-f9dc4a27 route=/sms-gate/v1/update status=200 latency_ms=103
+2026-11-14T10:35:23 INFO  sms-gate/sg-node-01 request done id=req-30e990b0 route=/sms-gate/v1/get status=201 latency_ms=151
+2026-11-14T10:35:26 INFO  sms-gate/sg-node-03 config applied key=cache.ttl_s value=true by=jhpark
+2026-11-14T10:35:31 INFO  sms-gate/sg-node-15 ticket linked id=OPS-49226 reason=schema_change
+2026-11-14T10:35:32 INFO  sms-gate/sg-node-20 backup finished file=/vault/weekly/orders_2026w44.tar.zst size_mb=4976 checksum=74d28ae5
+2026-11-14T10:35:37 INFO  sms-gate/sg-node-12 deploy step release=sms-gate-4.20.6 step=warmup result=ok took_s=66
+2026-11-14T10:35:43 INFO  sms-gate/sg-node-02 request done id=req-262cb0b4 route=/sms-gate/v1/status status=200 latency_ms=87
+2026-11-14T10:35:45 INFO  sms-gate/sg-node-14 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=3488 checksum=717505f3
+2026-11-14T10:35:49 INFO  sms-gate/sg-node-16 request done id=req-2fc18db1 route=/sms-gate/v1/get status=200 latency_ms=62
+2026-11-14T10:35:56 INFO  sms-gate/sg-node-21 request done id=req-a6dab6ee route=/sms-gate/v1/sync status=200 latency_ms=108
+2026-11-14T10:36:02 INFO  sms-gate/sg-node-21 request done id=req-c8942d27 route=/sms-gate/v1/cancel status=200 latency_ms=137
+2026-11-14T10:36:08 INFO  sms-gate/sg-node-05 deploy step release=sms-gate-4.16.3 step=healthcheck result=ok took_s=187
+2026-11-14T10:36:15 ERROR sms-gate/sg-node-06 job failed job=sms-gate-cleanup attempt=1 cause=dns_failure
+2026-11-14T10:36:16 INFO  sms-gate/sg-node-02 request done id=req-b1f8505a route=/sms-gate/v1/get status=429 latency_ms=204
+2026-11-14T10:36:23 INFO  sms-gate/sg-node-10 request done id=req-4910c79a route=/sms-gate/v1/status status=503 latency_ms=80
+2026-11-14T10:36:25 INFO  sms-gate/sg-node-11 request done id=req-cf7a34d2 route=/sms-gate/v1/sync status=200 latency_ms=33
+2026-11-14T10:36:31 INFO  sms-gate/sg-node-01 request done id=req-5b1e29fa route=/sms-gate/v1/verify status=500 latency_ms=223
+2026-11-14T10:36:38 WARN  sms-gate/sg-node-09 alert fired rule=heap_used_high value=97% threshold=96%
+2026-11-14T10:36:43 INFO  sms-gate/sg-node-24 request done id=req-57dbfb0a route=/sms-gate/v1/status status=404 latency_ms=54
+2026-11-14T10:36:46 ERROR sms-gate/sg-node-20 job failed job=sms-gate-rollup attempt=5 cause=upstream_timeout
+2026-11-14T10:36:50 INFO  sms-gate/sg-node-12 request done id=req-45e8afcc route=/sms-gate/v1/cancel status=200 latency_ms=75
+2026-11-14T10:36:57 INFO  sms-gate/sg-node-12 request done id=req-38285bf0 route=/sms-gate/v1/status status=200 latency_ms=374
+2026-11-14T10:37:04 INFO  sms-gate/sg-node-19 request done id=req-886b64e0 route=/sms-gate/v1/update status=204 latency_ms=183
+2026-11-14T10:37:11 INFO  sms-gate/sg-node-18 config applied key=dns.ttl_s value=false by=hbyoon
+2026-11-14T10:37:12 INFO  sms-gate/sg-node-14 ticket linked id=OPS-49915 reason=schema_change
+2026-11-14T10:37:19 INFO  sms-gate/sg-node-02 deploy step release=sms-gate-4.19.0 step=shift_traffic_10 result=ok took_s=174
+2026-11-14T10:37:20 INFO  sms-gate/sg-node-10 pool resize target=sms-gate-worker max_pool_size=93 prev=90
+2026-11-14T10:37:23 WARN  sms-gate/sg-node-23 alert fired rule=heap_used_high value=56% threshold=49%
+2026-11-14T10:37:28 INFO  sms-gate/sg-node-19 backup finished file=/vault/daily/users_20261008.tar.zst size_mb=47447 checksum=cd537892
+2026-11-14T10:37:35 INFO  sms-gate/sg-node-19 cache stats region=ap-ne-2a hit_ratio=91.8% evictions=25849
+2026-11-14T10:37:37 WARN  sms-gate/sg-node-16 alert fired rule=error_ratio_high value=94% threshold=82%
+2026-11-14T10:37:40 INFO  sms-gate/sg-node-05 deploy step release=sms-gate-4.19.1 step=migrate result=ok took_s=96
+2026-11-14T10:37:43 INFO  sms-gate/sg-node-09 request done id=req-9f94c233 route=/sms-gate/v1/get status=204 latency_ms=83
+2026-11-14T10:37:45 INFO  sms-gate/sg-node-10 request done id=req-bccbb896 route=/sms-gate/v1/status status=503 latency_ms=242
+2026-11-14T10:37:49 INFO  sms-gate/sg-node-17 backup finished file=/vault/daily/audit_20261004.tar.zst size_mb=84531 checksum=497332fb
+2026-11-14T10:37:55 INFO  sms-gate/sg-node-11 request done id=req-e612f0d6 route=/sms-gate/v1/get status=500 latency_ms=150
+2026-11-14T10:38:02 INFO  sms-gate/sg-node-16 pool resize target=sms-gate-cache max_pool_size=91 prev=94
+2026-11-14T10:38:06 INFO  sms-gate/sg-node-15 request done id=req-87e3575f route=/sms-gate/v1/cancel status=200 latency_ms=78
+2026-11-14T10:38:10 INFO  sms-gate/sg-node-07 config applied key=gc.pause_target_ms value=true by=yjchoi
+2026-11-14T10:38:14 WARN  sms-gate/sg-node-02 alert fired rule=gc_pause_long value=86ms threshold=74ms
+2026-11-14T10:38:19 INFO  sms-gate/sg-node-12 request done id=req-2a8ed439 route=/sms-gate/v1/verify status=201 latency_ms=36
+2026-11-14T10:38:23 INFO  sms-gate/sg-node-13 request done id=req-704096cb route=/sms-gate/v1/create status=400 latency_ms=184
+2026-11-14T10:38:30 INFO  sms-gate/sg-node-04 deploy step release=sms-gate-4.11.2 step=shift_traffic_10 result=ok took_s=31
+2026-11-14T10:38:32 INFO  sms-gate/sg-node-17 request done id=req-0ade210a route=/sms-gate/v1/verify status=201 latency_ms=307
+2026-11-14T10:38:34 INFO  sms-gate/sg-node-09 request done id=req-09b49b81 route=/sms-gate/v1/sync status=429 latency_ms=113
+2026-11-14T10:38:37 INFO  sms-gate/sg-node-05 deploy step release=sms-gate-4.20.3 step=pull_image result=ok took_s=13
+2026-11-14T10:38:40 INFO  sms-gate/sg-node-06 request done id=req-0bf96b33 route=/sms-gate/v1/list status=400 latency_ms=97
+2026-11-14T10:38:41 INFO  sms-gate/sg-node-21 request done id=req-b13b95a1 route=/sms-gate/v1/cancel status=200 latency_ms=70
+2026-11-14T10:38:44 INFO  sms-gate/sg-node-19 deploy step release=sms-gate-4.14.8 step=shift_traffic_50 result=ok took_s=76
+2026-11-14T10:38:48 INFO  sms-gate/sg-node-24 backup finished file=/vault/daily/users_20261012.tar.zst size_mb=30661 checksum=15f7393f
+2026-11-14T10:38:50 INFO  sms-gate/sg-node-02 request done id=req-f1366bd8 route=/sms-gate/v1/update status=200 latency_ms=253
+2026-11-14T10:38:54 WARN  sms-gate/sg-node-23 alert fired rule=cpu_steal_high value=61% threshold=60%
+2026-11-14T10:39:00 INFO  sms-gate/sg-node-20 backup finished file=/vault/weekly/payments_2026w32.tar.zst size_mb=40738 checksum=4683597a
+2026-11-14T10:39:06 NOTE  sms-gate/sg-node-11 operator=mjlee memo="sg-node-11 재기동 후 지표 정상 확인."
+2026-11-14T10:39:12 INFO  sms-gate/sg-node-21 backup finished file=/vault/weekly/sessions_2026w35.tar.zst size_mb=30635 checksum=4a3725c4
+2026-11-14T10:39:17 INFO  sms-gate/sg-node-06 request done id=req-8a436dae route=/sms-gate/v1/list status=200 latency_ms=180
+2026-11-14T10:39:20 INFO  sms-gate/sg-node-13 deploy step release=sms-gate-4.17.5 step=shift_traffic_100 result=ok took_s=223
+2026-11-14T10:39:27 INFO  sms-gate/sg-node-10 request done id=req-a722a577 route=/sms-gate/v1/verify status=404 latency_ms=27
+2026-11-14T10:39:28 WARN  sms-gate/sg-node-10 alert fired rule=gc_pause_long value=50ms threshold=36ms
+2026-11-14T10:39:33 WARN  sms-gate/sg-node-11 alert fired rule=heap_used_high value=92% threshold=85%
+2026-11-14T10:39:34 NOTE  sms-gate/sg-node-03 operator=yjchoi memo="sg-node-03 재기동 후 지표 정상 확인."
+2026-11-14T10:39:36 INFO  sms-gate/sg-node-03 deploy step release=sms-gate-4.21.4 step=pull_image result=ok took_s=84
+2026-11-14T10:39:38 INFO  sms-gate/sg-node-01 pool resize target=sms-gate-worker max_pool_size=197 prev=209
+2026-11-14T10:39:40 INFO  sms-gate/sg-node-04 request done id=req-75043cc8 route=/sms-gate/v1/verify status=200 latency_ms=302
+2026-11-14T10:39:44 INFO  sms-gate/sg-node-15 request done id=req-dd623609 route=/sms-gate/v1/sync status=200 latency_ms=71
+2026-11-14T10:39:48 INFO  sms-gate/sg-node-19 backup finished file=/vault/daily/audit_20261013.tar.zst size_mb=30881 checksum=fd6a29de
+2026-11-14T10:39:55 INFO  sms-gate/sg-node-23 request done id=req-2066238c route=/sms-gate/v1/verify status=200 latency_ms=254
+2026-11-14T10:40:00 INFO  sms-gate/sg-node-01 request done id=req-3da66ba5 route=/sms-gate/v1/cancel status=200 latency_ms=54
+2026-11-14T10:40:02 INFO  sms-gate/sg-node-07 config applied key=limiter.rps value=49 by=shkim
+2026-11-14T10:40:04 INFO  sms-gate/sg-node-15 request done id=req-53f455a0 route=/sms-gate/v1/update status=503 latency_ms=68
+2026-11-14T10:40:06 INFO  sms-gate/sg-node-12 request done id=req-a93bc325 route=/sms-gate/v1/sync status=200 latency_ms=105
+2026-11-14T10:40:07 INFO  sms-gate/sg-node-14 request done id=req-3bd22c73 route=/sms-gate/v1/update status=200 latency_ms=29
+2026-11-14T10:40:14 INFO  sms-gate/sg-node-18 backup finished file=/vault/daily/users_20261008.tar.zst size_mb=42950 checksum=c1fc21ef
+2026-11-14T10:40:16 NOTE  sms-gate/sg-node-05 operator=jhpark memo="헬스체크 간격을 44초에서 54초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-14T10:40:23 ERROR sms-gate/sg-node-08 job failed job=sms-gate-reindex attempt=2 cause=dns_failure
+2026-11-14T10:40:27 WARN  sms-gate/sg-node-12 alert fired rule=replica_lag_high value=63s threshold=52s
+2026-11-14T10:40:32 INFO  sms-gate/sg-node-20 request done id=req-f95c9309 route=/sms-gate/v1/cancel status=200 latency_ms=109
+2026-11-14T10:40:38 ERROR sms-gate/sg-node-05 job failed job=sms-gate-reindex attempt=5 cause=lock_wait_exceeded
+2026-11-14T10:40:44 INFO  sms-gate/sg-node-22 ticket linked id=OPS-48440 reason=dns_ttl_change
+2026-11-14T10:40:51 INFO  sms-gate/sg-node-03 request done id=req-f5964e45 route=/sms-gate/v1/cancel status=200 latency_ms=516
+2026-11-14T10:40:52 INFO  sms-gate/sg-node-15 request done id=req-88e73f72 route=/sms-gate/v1/cancel status=409 latency_ms=42
+2026-11-14T10:40:58 INFO  sms-gate/sg-node-20 ticket linked id=OPS-49767 reason=cert_rotation
+2026-11-14T10:41:02 WARN  sms-gate/sg-node-19 alert fired rule=fd_usage_high value=99% threshold=93%
+2026-11-14T10:41:09 INFO  sms-gate/sg-node-07 request done id=req-324b7963 route=/sms-gate/v1/create status=409 latency_ms=66
+2026-11-14T10:41:12 INFO  sms-gate/sg-node-06 deploy step release=sms-gate-4.22.9 step=warmup result=ok took_s=194
+2026-11-14T10:41:13 INFO  sms-gate/sg-node-09 request done id=req-a2eb747a route=/sms-gate/v1/status status=200 latency_ms=22
+2026-11-14T10:41:14 INFO  sms-gate/sg-node-15 request done id=req-69974847 route=/sms-gate/v1/sync status=500 latency_ms=48
+2026-11-14T10:41:20 INFO  sms-gate/sg-node-02 request done id=req-1c0b0a90 route=/sms-gate/v1/update status=200 latency_ms=213
+2026-11-14T10:41:21 INFO  sms-gate/sg-node-16 request done id=req-e98e50d5 route=/sms-gate/v1/list status=200 latency_ms=95
+2026-11-14T10:41:26 INFO  sms-gate/sg-node-22 pool resize target=sms-gate-queue max_pool_size=169 prev=145
+2026-11-14T10:41:28 INFO  sms-gate/sg-node-20 config applied key=canary.latency_p99_threshold_ms value=false by=shkim
+2026-11-14T10:41:29 INFO  sms-gate/sg-node-02 request done id=req-8265dff9 route=/sms-gate/v1/sync status=400 latency_ms=49
+2026-11-14T10:41:30 INFO  sms-gate/sg-node-05 deploy step release=sms-gate-4.17.0 step=healthcheck result=ok took_s=63
+2026-11-14T10:41:36 INFO  sms-gate/sg-node-01 ticket linked id=OPS-48666 reason=log_volume_spike
+2026-11-14T10:41:39 WARN  sms-gate/sg-node-19 alert fired rule=p99_latency_high value=65ms threshold=62ms
+2026-11-14T10:41:45 INFO  sms-gate/sg-node-13 request done id=req-3d424fce route=/sms-gate/v1/list status=200 latency_ms=135
+2026-11-14T10:41:47 INFO  sms-gate/sg-node-24 deploy step release=sms-gate-4.15.9 step=warmup result=ok took_s=100
+2026-11-14T10:41:51 INFO  sms-gate/sg-node-22 config applied key=canary.latency_p99_threshold_ms value=24 by=jhpark
+2026-11-14T10:41:58 NOTE  sms-gate/sg-node-16 operator=shkim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-14T10:42:00 INFO  sms-gate/sg-node-21 backup finished file=/vault/weekly/users_2026w40.tar.zst size_mb=32416 checksum=1cb39482
+2026-11-14T10:42:05 ERROR sms-gate/sg-node-08 job failed job=sms-gate-export attempt=5 cause=lock_wait_exceeded
+2026-11-14T10:42:08 INFO  sms-gate/sg-node-02 pool resize target=sms-gate-queue max_pool_size=211 prev=233
+2026-11-14T10:42:11 INFO  sms-gate/sg-node-06 config applied key=limiter.rps value=false by=hbyoon
+2026-11-14T10:42:16 INFO  sms-gate/sg-node-20 ticket linked id=OPS-49795 reason=runbook_update
+2026-11-14T10:42:19 INFO  sms-gate/sg-node-09 pool resize target=sms-gate-cache max_pool_size=335 prev=339
+2026-11-14T10:42:25 INFO  sms-gate/sg-node-04 request done id=req-19d0b4c4 route=/sms-gate/v1/sync status=201 latency_ms=184
+2026-11-14T10:42:26 INFO  sms-gate/sg-node-18 request done id=req-27e02cb7 route=/sms-gate/v1/cancel status=200 latency_ms=348
+2026-11-14T10:42:33 INFO  sms-gate/sg-node-18 request done id=req-e55fb279 route=/sms-gate/v1/list status=200 latency_ms=175
+2026-11-14T10:42:39 INFO  sms-gate/sg-node-23 request done id=req-ef09ece6 route=/sms-gate/v1/sync status=503 latency_ms=182
+2026-11-14T10:42:43 INFO  sms-gate/sg-node-10 request done id=req-574ed8e3 route=/sms-gate/v1/get status=200 latency_ms=71
+2026-11-14T10:42:44 INFO  sms-gate/sg-node-14 pool resize target=sms-gate-queue max_pool_size=9 prev=48
+2026-11-14T10:42:45 INFO  sms-gate/sg-node-06 request done id=req-99715ed9 route=/sms-gate/v1/sync status=201 latency_ms=75
+2026-11-14T10:42:51 INFO  sms-gate/sg-node-24 request done id=req-8076cac3 route=/sms-gate/v1/get status=200 latency_ms=371
+2026-11-14T10:42:53 INFO  sms-gate/sg-node-14 deploy step release=sms-gate-4.12.6 step=verify result=ok took_s=114
+2026-11-14T10:42:59 INFO  sms-gate/sg-node-04 request done id=req-28380ab4 route=/sms-gate/v1/list status=200 latency_ms=35
+2026-11-14T10:43:05 NOTE  sms-gate/sg-node-10 operator=yjchoi memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-14T10:43:12 INFO  sms-gate/sg-node-15 request done id=req-4fc3a421 route=/sms-gate/v1/list status=200 latency_ms=91
+2026-11-14T10:43:14 INFO  sms-gate/sg-node-09 request done id=req-9c7ecefb route=/sms-gate/v1/get status=200 latency_ms=51
+2026-11-14T10:43:21 INFO  sms-gate/sg-node-12 ticket linked id=OPS-49758 reason=flaky_healthcheck
+2026-11-14T10:43:27 INFO  sms-gate/sg-node-07 request done id=req-daf3d960 route=/sms-gate/v1/status status=200 latency_ms=217
+2026-11-14T10:43:29 INFO  sms-gate/sg-node-15 deploy step release=sms-gate-4.17.6 step=shift_traffic_100 result=ok took_s=96
+2026-11-14T10:43:34 INFO  sms-gate/sg-node-04 request done id=req-31ec4643 route=/sms-gate/v1/get status=200 latency_ms=188
+2026-11-14T10:43:39 INFO  sms-gate/sg-node-04 request done id=req-f33873f2 route=/sms-gate/v1/create status=200 latency_ms=166
+2026-11-14T10:43:40 INFO  sms-gate/sg-node-01 request done id=req-388d53a8 route=/sms-gate/v1/update status=200 latency_ms=52
+2026-11-14T10:43:42 INFO  sms-gate/sg-node-10 deploy step release=sms-gate-4.21.0 step=drain result=ok took_s=33
+2026-11-14T10:43:49 NOTE  sms-gate/sg-node-06 operator=sykang memo="헬스체크 간격을 2초에서 15초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-14T10:43:56 INFO  sms-gate/sg-node-04 deploy step release=sms-gate-4.14.0 step=start result=ok took_s=220
+2026-11-14T10:44:01 INFO  sms-gate/sg-node-08 request done id=req-e97004d0 route=/sms-gate/v1/update status=204 latency_ms=155
+2026-11-14T10:44:04 INFO  sms-gate/sg-node-03 request done id=req-22866051 route=/sms-gate/v1/verify status=200 latency_ms=98
+2026-11-14T10:44:05 INFO  sms-gate/sg-node-24 pool resize target=sms-gate-cache max_pool_size=149 prev=136
+2026-11-14T10:44:12 WARN  sms-gate/sg-node-13 alert fired rule=conn_pool_saturated value=95% threshold=84%
+2026-11-14T10:44:15 INFO  sms-gate/sg-node-08 request done id=req-1c69fd82 route=/sms-gate/v1/create status=200 latency_ms=123
+2026-11-14T10:44:16 INFO  sms-gate/sg-node-10 request done id=req-a970bf0f route=/sms-gate/v1/status status=200 latency_ms=98
+2026-11-14T10:44:23 WARN  sms-gate/sg-node-07 alert fired rule=p99_latency_high value=59ms threshold=45ms
+2026-11-14T10:44:25 INFO  sms-gate/sg-node-15 request done id=req-aed68c6a route=/sms-gate/v1/verify status=200 latency_ms=65
+2026-11-14T10:44:32 INFO  sms-gate/sg-node-16 request done id=req-fcfd516e route=/sms-gate/v1/verify status=503 latency_ms=159
+2026-11-14T10:44:38 INFO  sms-gate/sg-node-15 request done id=req-2d3f9e6a route=/sms-gate/v1/update status=200 latency_ms=170
+2026-11-14T10:44:45 ERROR sms-gate/sg-node-12 job failed job=sms-gate-rollup attempt=5 cause=oom_killed
+2026-11-14T10:44:49 ERROR sms-gate/sg-node-19 job failed job=sms-gate-cleanup attempt=2 cause=upstream_timeout
+2026-11-14T10:44:51 INFO  sms-gate/sg-node-24 request done id=req-f696a1a3 route=/sms-gate/v1/create status=404 latency_ms=54
+2026-11-14T10:44:56 INFO  sms-gate/sg-node-19 request done id=req-45cc2885 route=/sms-gate/v1/create status=201 latency_ms=135
+2026-11-14T10:44:59 ERROR sms-gate/sg-node-08 job failed job=sms-gate-rollup attempt=5 cause=lock_wait_exceeded
+2026-11-14T10:45:02 INFO  sms-gate/sg-node-14 request done id=req-ba042a21 route=/sms-gate/v1/sync status=200 latency_ms=114
+2026-11-14T10:45:06 INFO  sms-gate/sg-node-06 config applied key=canary.latency_p99_threshold_ms value=3581 by=yjchoi
+2026-11-14T10:45:10 INFO  sms-gate/sg-node-11 request done id=req-cd40b25a route=/sms-gate/v1/list status=201 latency_ms=133
+2026-11-14T10:45:15 WARN  sms-gate/sg-node-18 alert fired rule=p99_latency_high value=61ms threshold=48ms
+2026-11-14T10:45:17 INFO  sms-gate/sg-node-09 request done id=req-a5b41fc3 route=/sms-gate/v1/update status=200 latency_ms=175
+2026-11-14T10:45:18 INFO  sms-gate/sg-node-14 request done id=req-dd1ed4b0 route=/sms-gate/v1/list status=200 latency_ms=99
+2026-11-14T10:45:21 INFO  sms-gate/sg-node-05 deploy step release=sms-gate-4.10.7 step=start result=ok took_s=46
+2026-11-14T10:45:27 INFO  sms-gate/sg-node-21 ticket linked id=OPS-48036 reason=oncall_handoff
+2026-11-14T10:45:28 ERROR sms-gate/sg-node-24 job failed job=sms-gate-reindex attempt=4 cause=quota_exceeded
+2026-11-14T10:45:32 INFO  sms-gate/sg-node-23 request done id=req-53a1d1b6 route=/sms-gate/v1/status status=200 latency_ms=213
+2026-11-14T10:45:36 INFO  sms-gate/sg-node-24 request done id=req-1fc5ef00 route=/sms-gate/v1/update status=200 latency_ms=50
+2026-11-14T10:45:37 WARN  sms-gate/sg-node-01 alert fired rule=gc_pause_long value=69ms threshold=67ms
+2026-11-14T10:45:40 INFO  sms-gate/sg-node-06 backup finished file=/vault/weekly/orders_2026w33.tar.zst size_mb=17404 checksum=9447f8a8
+2026-11-14T10:45:42 INFO  sms-gate/sg-node-23 pool resize target=sms-gate-queue max_pool_size=38 prev=4
+2026-11-14T10:45:46 INFO  sms-gate/sg-node-03 request done id=req-74a2bfe5 route=/sms-gate/v1/update status=200 latency_ms=291
+2026-11-14T10:45:47 INFO  sms-gate/sg-node-12 pool resize target=sms-gate-queue max_pool_size=122 prev=153
+2026-11-14T10:45:53 NOTE  sms-gate/sg-node-10 operator=dwjung memo="동시 처리 수를 26에서 17로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-14T10:45:55 INFO  sms-gate/sg-node-06 request done id=req-236ac7ac route=/sms-gate/v1/get status=204 latency_ms=126
+2026-11-14T10:45:57 INFO  sms-gate/sg-node-12 request done id=req-83153684 route=/sms-gate/v1/list status=503 latency_ms=404
+2026-11-14T10:45:58 INFO  sms-gate/sg-node-24 config applied key=limiter.burst value=15 by=hbyoon
+2026-11-14T10:46:02 ERROR sms-gate/sg-node-11 job failed job=sms-gate-cleanup attempt=3 cause=upstream_timeout
+2026-11-14T10:46:06 INFO  sms-gate/sg-node-04 request done id=req-ff9279fe route=/sms-gate/v1/list status=404 latency_ms=113
+2026-11-14T10:46:07 INFO  sms-gate/sg-node-02 request done id=req-81ef0ec1 route=/sms-gate/v1/get status=200 latency_ms=175
+2026-11-14T10:46:09 ERROR sms-gate/sg-node-19 job failed job=sms-gate-export attempt=3 cause=quota_exceeded
+2026-11-14T10:46:12 INFO  sms-gate/sg-node-17 pool resize target=sms-gate-queue max_pool_size=135 prev=165
+2026-11-14T10:46:14 INFO  sms-gate/sg-node-18 request done id=req-fd43ce0e route=/sms-gate/v1/sync status=429 latency_ms=211
+2026-11-14T10:46:18 INFO  sms-gate/sg-node-08 ticket linked id=OPS-49767 reason=runbook_update
+2026-11-14T10:46:23 INFO  sms-gate/sg-node-01 pool resize target=sms-gate-db max_pool_size=245 prev=242
+2026-11-14T10:46:26 INFO  sms-gate/sg-node-22 request done id=req-a2ba65ba route=/sms-gate/v1/list status=200 latency_ms=124
+2026-11-14T10:46:27 ERROR sms-gate/sg-node-22 job failed job=sms-gate-export attempt=5 cause=dns_failure
+2026-11-14T10:46:33 INFO  sms-gate/sg-node-11 request done id=req-5a16697d route=/sms-gate/v1/list status=200 latency_ms=35
+2026-11-14T10:46:36 INFO  sms-gate/sg-node-12 request done id=req-a4e713b7 route=/sms-gate/v1/sync status=200 latency_ms=145
+2026-11-14T10:46:40 ERROR sms-gate/sg-node-16 job failed job=sms-gate-rollup attempt=2 cause=quota_exceeded
+2026-11-14T10:46:46 INFO  sms-gate/sg-node-08 pool resize target=sms-gate-db max_pool_size=182 prev=122
+2026-11-14T10:46:49 ERROR sms-gate/sg-node-19 job failed job=sms-gate-reindex attempt=2 cause=oom_killed
+2026-11-14T10:46:50 INFO  sms-gate/sg-node-01 deploy step release=sms-gate-4.20.1 step=pull_image result=ok took_s=151
+2026-11-14T10:46:55 INFO  sms-gate/sg-node-19 config applied key=queue.visibility_s value=false by=sykang
+2026-11-14T10:46:57 INFO  sms-gate/sg-node-14 backup finished file=/vault/daily/sessions_20261011.tar.zst size_mb=4630 checksum=ad2e7291
+2026-11-14T10:47:03 INFO  sms-gate/sg-node-03 request done id=req-b476df78 route=/sms-gate/v1/sync status=404 latency_ms=157
+2026-11-14T10:47:09 INFO  sms-gate/sg-node-11 request done id=req-c940293f route=/sms-gate/v1/sync status=429 latency_ms=247
+2026-11-14T10:47:10 WARN  sms-gate/sg-node-11 alert fired rule=disk_usage_warning value=85% threshold=78%
+2026-11-14T10:47:17 INFO  sms-gate/sg-node-18 config applied key=dns.ttl_s value=54% by=dwjung
+2026-11-14T10:47:19 INFO  sms-gate/sg-node-24 request done id=req-acb55924 route=/sms-gate/v1/sync status=200 latency_ms=101
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

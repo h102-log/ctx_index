@@ -1,0 +1,424 @@
+참고용 로그 13: 세션 저장소(session-store) 페일오버 구간. '확인'이라고만 답해 줘.
+
+2026-10-17T19:01:33 INFO  session-store/st-node-11 pool resize target=session-store-worker max_pool_size=377 prev=383
+2026-10-17T19:01:34 INFO  session-store/st-node-21 request done id=req-6c52debf route=/session-store/v1/update status=200 latency_ms=155
+2026-10-17T19:01:36 INFO  session-store/st-node-17 ticket linked id=OPS-47913 reason=node_drain
+2026-10-17T19:01:41 NOTE  session-store/st-node-09 operator=jhpark memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-17T19:01:48 INFO  session-store/st-node-04 request done id=req-75bb6ba0 route=/session-store/v1/get status=200 latency_ms=440
+2026-10-17T19:01:50 INFO  session-store/st-node-23 pool resize target=session-store-cache max_pool_size=235 prev=185
+2026-10-17T19:01:57 INFO  session-store/st-node-04 request done id=req-00bc9c8f route=/session-store/v1/update status=200 latency_ms=172
+2026-10-17T19:02:00 INFO  session-store/st-node-05 request done id=req-b25f64fc route=/session-store/v1/status status=200 latency_ms=342
+2026-10-17T19:02:06 INFO  session-store/st-node-21 request done id=req-a1ed3ebc route=/session-store/v1/update status=200 latency_ms=209
+2026-10-17T19:02:09 INFO  session-store/st-node-07 ticket linked id=OPS-47622 reason=runbook_update
+2026-10-17T19:02:13 INFO  session-store/st-node-20 request done id=req-3f97ce23 route=/session-store/v1/sync status=200 latency_ms=62
+2026-10-17T19:02:19 INFO  session-store/st-node-15 request done id=req-28c400b9 route=/session-store/v1/get status=201 latency_ms=254
+2026-10-17T19:02:25 INFO  session-store/st-node-12 request done id=req-27f1fba1 route=/session-store/v1/update status=200 latency_ms=188
+2026-10-17T19:02:29 INFO  session-store/st-node-01 request done id=req-8c084333 route=/session-store/v1/status status=200 latency_ms=79
+2026-10-17T19:02:33 INFO  session-store/st-node-15 request done id=req-26fd8a50 route=/session-store/v1/status status=200 latency_ms=272
+2026-10-17T19:02:38 INFO  session-store/st-node-23 request done id=req-c09445af route=/session-store/v1/update status=200 latency_ms=153
+2026-10-17T19:02:44 INFO  session-store/st-node-14 deploy step release=session-store-4.17.6 step=shift_traffic_10 result=ok took_s=27
+2026-10-17T19:02:47 WARN  session-store/st-node-14 alert fired rule=cpu_steal_high value=68% threshold=55%
+2026-10-17T19:02:53 INFO  session-store/st-node-16 pool resize target=session-store-worker max_pool_size=97 prev=47
+2026-10-17T19:02:56 INFO  session-store/st-node-10 request done id=req-a4cad1c3 route=/session-store/v1/list status=400 latency_ms=76
+2026-10-17T19:03:02 ERROR session-store/st-node-13 job failed job=session-store-reindex attempt=4 cause=quota_exceeded
+2026-10-17T19:03:04 INFO  session-store/st-node-17 request done id=req-d09191f5 route=/session-store/v1/sync status=200 latency_ms=128
+2026-10-17T19:03:08 INFO  session-store/st-node-18 config applied key=canary.latency_p99_threshold_ms value=false by=yjchoi
+2026-10-17T19:03:15 INFO  session-store/st-node-08 config applied key=canary.latency_p99_threshold_ms value=true by=jhpark
+2026-10-17T19:03:17 WARN  session-store/st-node-07 alert fired rule=error_ratio_high value=83% threshold=76%
+2026-10-17T19:03:24 INFO  session-store/st-node-14 deploy step release=session-store-4.13.6 step=shift_traffic_10 result=ok took_s=85
+2026-10-17T19:03:31 INFO  session-store/st-node-18 request done id=req-ac528354 route=/session-store/v1/cancel status=429 latency_ms=132
+2026-10-17T19:03:35 ERROR session-store/st-node-18 job failed job=session-store-cleanup attempt=1 cause=oom_killed
+2026-10-17T19:03:41 INFO  session-store/st-node-22 cache stats region=ap-ne-2a hit_ratio=63.8% evictions=37886
+2026-10-17T19:03:47 INFO  session-store/st-node-17 config applied key=log.sample_rate value=75% by=yjchoi
+2026-10-17T19:03:48 INFO  session-store/st-node-23 backup finished file=/vault/weekly/inventory_2026w39.tar.zst size_mb=60712 checksum=63d99a8a
+2026-10-17T19:03:53 INFO  session-store/st-node-18 config applied key=retry.max_attempts value=99% by=sykang
+2026-10-17T19:03:58 INFO  session-store/st-node-12 pool resize target=session-store-db max_pool_size=121 prev=109
+2026-10-17T19:04:04 INFO  session-store/st-node-03 request done id=req-d9038fed route=/session-store/v1/cancel status=200 latency_ms=95
+2026-10-17T19:04:07 INFO  session-store/st-node-02 request done id=req-16d125f5 route=/session-store/v1/list status=200 latency_ms=108
+2026-10-17T19:04:12 INFO  session-store/st-node-11 config applied key=limiter.rps value=19 by=shkim
+2026-10-17T19:04:17 INFO  session-store/st-node-02 request done id=req-f6548c34 route=/session-store/v1/status status=200 latency_ms=241
+2026-10-17T19:04:23 INFO  session-store/st-node-23 ticket linked id=OPS-48072 reason=runbook_update
+2026-10-17T19:04:26 INFO  session-store/st-node-15 request done id=req-cc0a9e36 route=/session-store/v1/get status=200 latency_ms=79
+2026-10-17T19:04:33 INFO  session-store/st-node-14 config applied key=queue.batch_size value=false by=jhpark
+2026-10-17T19:04:36 INFO  session-store/st-node-01 request done id=req-3c4642c7 route=/session-store/v1/update status=200 latency_ms=71
+2026-10-17T19:04:38 INFO  session-store/st-node-09 ticket linked id=OPS-48010 reason=dependency_upgrade
+2026-10-17T19:04:39 INFO  session-store/st-node-13 request done id=req-aec2821d route=/session-store/v1/get status=429 latency_ms=143
+2026-10-17T19:04:45 INFO  session-store/st-node-07 request done id=req-95765d56 route=/session-store/v1/get status=200 latency_ms=83
+2026-10-17T19:04:52 INFO  session-store/st-node-20 deploy step release=session-store-4.18.1 step=shift_traffic_50 result=ok took_s=179
+2026-10-17T19:04:53 INFO  session-store/st-node-18 request done id=req-9511e57b route=/session-store/v1/status status=200 latency_ms=220
+2026-10-17T19:04:54 WARN  session-store/st-node-16 alert fired rule=gc_pause_long value=73ms threshold=60ms
+2026-10-17T19:04:59 ERROR session-store/st-node-07 job failed job=session-store-cleanup attempt=3 cause=oom_killed
+2026-10-17T19:05:06 NOTE  session-store/st-node-13 operator=dwjung memo="동시 처리 수를 46에서 44로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-17T19:05:07 INFO  session-store/st-node-09 request done id=req-b1288f65 route=/session-store/v1/cancel status=201 latency_ms=76
+2026-10-17T19:05:14 INFO  session-store/st-node-01 request done id=req-f36adee5 route=/session-store/v1/list status=200 latency_ms=138
+2026-10-17T19:05:19 INFO  session-store/st-node-07 request done id=req-01f2e8b2 route=/session-store/v1/status status=200 latency_ms=124
+2026-10-17T19:05:20 INFO  session-store/st-node-21 request done id=req-6bc8358c route=/session-store/v1/update status=200 latency_ms=135
+2026-10-17T19:05:24 INFO  session-store/st-node-08 pool resize target=session-store-queue max_pool_size=175 prev=121
+2026-10-17T19:05:26 INFO  session-store/st-node-08 request done id=req-ca187e84 route=/session-store/v1/cancel status=200 latency_ms=327
+2026-10-17T19:05:28 INFO  session-store/st-node-20 pool resize target=session-store-queue max_pool_size=307 prev=285
+2026-10-17T19:05:29 INFO  session-store/st-node-16 request done id=req-70a42e65 route=/session-store/v1/verify status=200 latency_ms=21
+2026-10-17T19:05:30 INFO  session-store/st-node-11 request done id=req-793d0601 route=/session-store/v1/status status=200 latency_ms=280
+2026-10-17T19:05:32 INFO  session-store/st-node-23 deploy step release=session-store-4.14.5 step=shift_traffic_10 result=ok took_s=205
+2026-10-17T19:05:34 INFO  session-store/st-node-05 request done id=req-fcc3827c route=/session-store/v1/update status=409 latency_ms=61
+2026-10-17T19:05:36 INFO  session-store/st-node-08 pool resize target=session-store-db max_pool_size=25 prev=4
+2026-10-17T19:05:37 ERROR session-store/st-node-21 job failed job=session-store-export attempt=2 cause=oom_killed
+2026-10-17T19:05:42 ERROR session-store/st-node-11 job failed job=session-store-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-17T19:05:43 ERROR session-store/st-node-14 job failed job=session-store-reindex attempt=2 cause=oom_killed
+2026-10-17T19:05:44 INFO  session-store/st-node-04 request done id=req-612aaa0c route=/session-store/v1/get status=200 latency_ms=86
+2026-10-17T19:05:46 INFO  session-store/st-node-17 request done id=req-a8ebb165 route=/session-store/v1/verify status=503 latency_ms=238
+2026-10-17T19:05:52 INFO  session-store/st-node-08 backup finished file=/vault/daily/audit_20261021.tar.zst size_mb=13028 checksum=f9a2ed40
+2026-10-17T19:05:59 INFO  session-store/st-node-13 pool resize target=session-store-db max_pool_size=297 prev=286
+2026-10-17T19:06:00 INFO  session-store/st-node-02 request done id=req-28d83ce3 route=/session-store/v1/update status=200 latency_ms=109
+2026-10-17T19:06:06 INFO  session-store/st-node-07 request done id=req-1adadcee route=/session-store/v1/list status=200 latency_ms=811
+2026-10-17T19:06:10 INFO  session-store/st-node-18 request done id=req-dcd59e1d route=/session-store/v1/cancel status=200 latency_ms=124
+2026-10-17T19:06:17 INFO  session-store/st-node-21 request done id=req-a6bcf5ec route=/session-store/v1/status status=200 latency_ms=310
+2026-10-17T19:06:21 INFO  session-store/st-node-18 request done id=req-72290e86 route=/session-store/v1/create status=200 latency_ms=152
+2026-10-17T19:06:26 INFO  session-store/st-node-18 request done id=req-438a58b9 route=/session-store/v1/sync status=200 latency_ms=65
+2026-10-17T19:06:32 INFO  session-store/st-node-20 ticket linked id=OPS-48509 reason=runbook_update
+2026-10-17T19:06:36 INFO  session-store/st-node-11 ticket linked id=OPS-47194 reason=log_volume_spike
+2026-10-17T19:06:39 INFO  session-store/st-node-24 deploy step release=session-store-4.19.1 step=shift_traffic_10 result=ok took_s=123
+2026-10-17T19:06:44 INFO  session-store/st-node-16 config applied key=gc.pause_target_ms value=false by=yjchoi
+2026-10-17T19:06:49 WARN  session-store/st-node-04 alert fired rule=gc_pause_long value=62ms threshold=49ms
+2026-10-17T19:06:51 INFO  session-store/st-node-23 request done id=req-8fc45965 route=/session-store/v1/status status=201 latency_ms=176
+2026-10-17T19:06:52 WARN  session-store/st-node-17 alert fired rule=replica_lag_high value=58s threshold=49s
+2026-10-17T19:06:54 INFO  session-store/st-node-08 request done id=req-f65669d0 route=/session-store/v1/get status=200 latency_ms=851
+2026-10-17T19:06:59 INFO  session-store/st-node-21 request done id=req-0b1757f0 route=/session-store/v1/update status=200 latency_ms=106
+2026-10-17T19:07:00 INFO  session-store/st-node-22 config applied key=dns.ttl_s value=false by=yjchoi
+2026-10-17T19:07:06 INFO  session-store/st-node-08 request done id=req-50fbb51d route=/session-store/v1/update status=404 latency_ms=122
+2026-10-17T19:07:10 NOTE  session-store/st-node-06 operator=dwjung memo="로그 보존 기간은 38일로 유지하기로 함."
+2026-10-17T19:07:12 INFO  session-store/st-node-21 request done id=req-c4a029a8 route=/session-store/v1/status status=200 latency_ms=25
+2026-10-17T19:07:19 INFO  session-store/st-node-17 request done id=req-a63943d2 route=/session-store/v1/get status=200 latency_ms=193
+2026-10-17T19:07:23 INFO  session-store/st-node-17 ticket linked id=OPS-48948 reason=cert_rotation
+2026-10-17T19:07:24 INFO  session-store/st-node-22 request done id=req-1639dd48 route=/session-store/v1/status status=200 latency_ms=68
+2026-10-17T19:07:29 WARN  session-store/st-node-19 alert fired rule=disk_usage_warning value=57% threshold=52%
+2026-10-17T19:07:34 INFO  session-store/st-node-05 request done id=req-9327c80f route=/session-store/v1/list status=200 latency_ms=84
+2026-10-17T19:07:37 INFO  session-store/st-node-16 cache stats region=ap-ne-2c hit_ratio=91.4% evictions=29648
+2026-10-17T19:07:40 INFO  session-store/st-node-14 request done id=req-4ec983ae route=/session-store/v1/list status=200 latency_ms=81
+2026-10-17T19:07:47 INFO  session-store/st-node-11 request done id=req-e2b6b6c9 route=/session-store/v1/cancel status=200 latency_ms=118
+2026-10-17T19:07:51 INFO  session-store/st-node-24 request done id=req-9070dbaa route=/session-store/v1/sync status=200 latency_ms=123
+2026-10-17T19:07:54 WARN  session-store/st-node-15 alert fired rule=cpu_steal_high value=96% threshold=93%
+2026-10-17T19:08:00 INFO  session-store/st-node-10 pool resize target=session-store-cache max_pool_size=138 prev=130
+2026-10-17T19:08:06 INFO  session-store/st-node-11 backup finished file=/vault/daily/inventory_20261005.tar.zst size_mb=31434 checksum=38f40b47
+2026-10-17T19:08:08 WARN  session-store/st-node-20 alert fired rule=disk_usage_warning value=51% threshold=50%
+2026-10-17T19:08:11 INFO  session-store/st-node-11 deploy step release=session-store-4.21.2 step=migrate result=ok took_s=144
+2026-10-17T19:08:14 INFO  session-store/st-node-08 request done id=req-f296bf78 route=/session-store/v1/update status=400 latency_ms=49
+2026-10-17T19:08:17 WARN  session-store/st-node-16 alert fired rule=queue_depth_high value=82 threshold=79
+2026-10-17T19:08:24 INFO  session-store/st-node-18 config applied key=limiter.burst value=false by=ejlim
+2026-10-17T19:08:29 WARN  session-store/st-node-07 alert fired rule=p99_latency_high value=97ms threshold=82ms
+2026-10-17T19:08:34 ERROR session-store/st-node-04 job failed job=session-store-cleanup attempt=2 cause=dns_failure
+2026-10-17T19:08:39 INFO  session-store/st-node-20 request done id=req-b2af0ebc route=/session-store/v1/cancel status=200 latency_ms=107
+2026-10-17T19:08:45 INFO  session-store/st-node-16 request done id=req-1c408774 route=/session-store/v1/verify status=500 latency_ms=151
+2026-10-17T19:08:48 INFO  session-store/st-node-15 request done id=req-5529831d route=/session-store/v1/get status=204 latency_ms=51
+2026-10-17T19:08:55 INFO  session-store/st-node-07 request done id=req-27e8aa62 route=/session-store/v1/sync status=201 latency_ms=126
+2026-10-17T19:08:58 INFO  session-store/st-node-13 config applied key=worker.concurrency value=31 by=jhpark
+2026-10-17T19:09:01 INFO  session-store/st-node-09 ticket linked id=OPS-49819 reason=oncall_handoff
+2026-10-17T19:09:07 INFO  session-store/st-node-08 request done id=req-05bf25e1 route=/session-store/v1/cancel status=204 latency_ms=51
+2026-10-17T19:09:12 INFO  session-store/st-node-06 config applied key=worker.concurrency value=10 by=dwjung
+2026-10-17T19:09:13 INFO  session-store/st-node-04 request done id=req-32b3d021 route=/session-store/v1/update status=200 latency_ms=80
+2026-10-17T19:09:16 INFO  session-store/st-node-09 config applied key=worker.concurrency value=true by=shkim
+2026-10-17T19:09:18 WARN  session-store/st-node-13 alert fired rule=gc_pause_long value=86ms threshold=74ms
+2026-10-17T19:09:19 INFO  session-store/st-node-22 request done id=req-dd4cf636 route=/session-store/v1/list status=200 latency_ms=165
+2026-10-17T19:09:22 INFO  session-store/st-node-17 ticket linked id=OPS-47511 reason=cert_rotation
+2026-10-17T19:09:24 INFO  session-store/st-node-03 config applied key=gc.pause_target_ms value=true by=hbyoon
+2026-10-17T19:09:28 INFO  session-store/st-node-11 deploy step release=session-store-4.11.9 step=start result=ok took_s=169
+2026-10-17T19:09:32 NOTE  session-store/st-node-20 operator=sykang memo="임시 증설 57대 추가. 내일 오전 회수 예정."
+2026-10-17T19:09:36 INFO  session-store/st-node-04 request done id=req-7d32b715 route=/session-store/v1/verify status=200 latency_ms=79
+2026-10-17T19:09:43 INFO  session-store/st-node-11 deploy step release=session-store-4.19.0 step=shift_traffic_50 result=ok took_s=52
+2026-10-17T19:09:47 WARN  session-store/st-node-24 alert fired rule=replica_lag_high value=64s threshold=55s
+2026-10-17T19:09:49 INFO  session-store/st-node-09 ticket linked id=OPS-48990 reason=flaky_healthcheck
+2026-10-17T19:09:50 INFO  session-store/st-node-22 request done id=req-839c3877 route=/session-store/v1/create status=200 latency_ms=123
+2026-10-17T19:09:53 INFO  session-store/st-node-20 request done id=req-ac45655e route=/session-store/v1/cancel status=200 latency_ms=58
+2026-10-17T19:09:54 INFO  session-store/st-node-16 request done id=req-0b8c14c8 route=/session-store/v1/cancel status=200 latency_ms=108
+2026-10-17T19:09:59 INFO  session-store/st-node-12 request done id=req-a79cdbf9 route=/session-store/v1/verify status=200 latency_ms=148
+2026-10-17T19:10:04 INFO  session-store/st-node-20 request done id=req-5bce01e8 route=/session-store/v1/update status=200 latency_ms=550
+2026-10-17T19:10:05 INFO  session-store/st-node-01 request done id=req-d278f45a route=/session-store/v1/get status=503 latency_ms=41
+2026-10-17T19:10:09 INFO  session-store/st-node-24 ticket linked id=OPS-49561 reason=cert_rotation
+2026-10-17T19:10:13 INFO  session-store/st-node-16 cache stats region=ap-ne-2c hit_ratio=65.3% evictions=10876
+2026-10-17T19:10:14 INFO  session-store/st-node-14 request done id=req-759216a8 route=/session-store/v1/status status=200 latency_ms=113
+2026-10-17T19:10:15 INFO  session-store/st-node-05 ticket linked id=OPS-48479 reason=dependency_upgrade
+2026-10-17T19:10:17 ERROR session-store/st-node-23 job failed job=session-store-reindex attempt=3 cause=oom_killed
+2026-10-17T19:10:18 INFO  session-store/st-node-09 request done id=req-d33dcd18 route=/session-store/v1/create status=409 latency_ms=48
+2026-10-17T19:10:19 INFO  session-store/st-node-20 deploy step release=session-store-4.19.6 step=shift_traffic_50 result=ok took_s=129
+2026-10-17T19:10:24 INFO  session-store/st-node-12 request done id=req-3dcf1679 route=/session-store/v1/cancel status=204 latency_ms=147
+2026-10-17T19:10:28 INFO  session-store/st-node-17 request done id=req-a9a28669 route=/session-store/v1/update status=200 latency_ms=122
+2026-10-17T19:10:33 INFO  session-store/st-node-01 config applied key=http.max_conns value=true by=shkim
+2026-10-17T19:10:34 INFO  session-store/st-node-23 pool resize target=session-store-cache max_pool_size=397 prev=401
+2026-10-17T19:10:35 INFO  session-store/st-node-07 backup finished file=/vault/weekly/users_2026w38.tar.zst size_mb=53734 checksum=6b0fc027
+2026-10-17T19:10:40 INFO  session-store/st-node-09 request done id=req-f0a8ce89 route=/session-store/v1/create status=200 latency_ms=243
+2026-10-17T19:10:42 INFO  session-store/st-node-20 request done id=req-5f604e2c route=/session-store/v1/list status=503 latency_ms=216
+2026-10-17T19:10:46 INFO  session-store/st-node-10 request done id=req-403416e8 route=/session-store/v1/get status=500 latency_ms=205
+2026-10-17T19:10:49 INFO  session-store/st-node-23 ticket linked id=OPS-47402 reason=flaky_healthcheck
+2026-10-17T19:10:54 ERROR session-store/st-node-06 job failed job=session-store-rollup attempt=5 cause=oom_killed
+2026-10-17T19:10:57 INFO  session-store/st-node-08 request done id=req-4604fe22 route=/session-store/v1/verify status=404 latency_ms=1095
+2026-10-17T19:11:04 ERROR session-store/st-node-09 job failed job=session-store-rollup attempt=2 cause=upstream_timeout
+2026-10-17T19:11:11 INFO  session-store/st-node-05 ticket linked id=OPS-49124 reason=dependency_upgrade
+2026-10-17T19:11:17 NOTE  session-store/st-node-11 operator=shkim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-17T19:11:22 INFO  session-store/st-node-03 cache stats region=ap-se-1a hit_ratio=58.6% evictions=13360
+2026-10-17T19:11:27 INFO  session-store/st-node-02 request done id=req-3021a2c8 route=/session-store/v1/verify status=400 latency_ms=51
+2026-10-17T19:11:33 INFO  session-store/st-node-04 request done id=req-9e1ff254 route=/session-store/v1/cancel status=503 latency_ms=142
+2026-10-17T19:11:36 ERROR session-store/st-node-13 job failed job=session-store-reindex attempt=3 cause=lock_wait_exceeded
+2026-10-17T19:11:43 INFO  session-store/st-node-19 request done id=req-e84e55ff route=/session-store/v1/list status=200 latency_ms=65
+2026-10-17T19:11:46 INFO  session-store/st-node-22 request done id=req-66993b94 route=/session-store/v1/create status=500 latency_ms=146
+2026-10-17T19:11:47 WARN  session-store/st-node-05 alert fired rule=gc_pause_long value=56ms threshold=55ms
+2026-10-17T19:11:53 INFO  session-store/st-node-12 request done id=req-f757fd00 route=/session-store/v1/cancel status=201 latency_ms=120
+2026-10-17T19:11:59 INFO  session-store/st-node-18 ticket linked id=OPS-49819 reason=schema_change
+2026-10-17T19:12:02 INFO  session-store/st-node-24 request done id=req-de2f1373 route=/session-store/v1/update status=204 latency_ms=214
+2026-10-17T19:12:09 NOTE  session-store/st-node-13 operator=shkim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-17T19:12:16 WARN  session-store/st-node-10 alert fired rule=gc_pause_long value=75ms threshold=72ms
+2026-10-17T19:12:20 INFO  session-store/st-node-18 request done id=req-72753024 route=/session-store/v1/get status=200 latency_ms=85
+2026-10-17T19:12:24 INFO  session-store/st-node-21 cache stats region=ap-se-1a hit_ratio=89.5% evictions=29746
+2026-10-17T19:12:26 INFO  session-store/st-node-08 request done id=req-39afb37e route=/session-store/v1/create status=200 latency_ms=134
+2026-10-17T19:12:32 INFO  session-store/st-node-12 request done id=req-6ec2c969 route=/session-store/v1/update status=400 latency_ms=79
+2026-10-17T19:12:39 INFO  session-store/st-node-16 request done id=req-90653805 route=/session-store/v1/sync status=204 latency_ms=105
+2026-10-17T19:12:44 WARN  session-store/st-node-05 alert fired rule=queue_depth_high value=83 threshold=79
+2026-10-17T19:12:50 WARN  session-store/st-node-21 alert fired rule=fd_usage_high value=79% threshold=66%
+2026-10-17T19:12:52 INFO  session-store/st-node-04 request done id=req-1dba6c79 route=/session-store/v1/sync status=200 latency_ms=70
+2026-10-17T19:12:55 INFO  session-store/st-node-10 config applied key=breaker.open_ratio value=true by=mjlee
+2026-10-17T19:12:59 INFO  session-store/st-node-20 request done id=req-f5c9e165 route=/session-store/v1/update status=200 latency_ms=272
+2026-10-17T19:13:02 INFO  session-store/st-node-18 request done id=req-8edfd03a route=/session-store/v1/list status=200 latency_ms=118
+2026-10-17T19:13:08 INFO  session-store/st-node-01 request done id=req-fe53e105 route=/session-store/v1/status status=400 latency_ms=91
+2026-10-17T19:13:12 INFO  session-store/st-node-06 deploy step release=session-store-4.14.1 step=shift_traffic_50 result=ok took_s=155
+2026-10-17T19:13:17 INFO  session-store/st-node-01 deploy step release=session-store-4.20.1 step=pull_image result=ok took_s=54
+2026-10-17T19:13:21 INFO  session-store/st-node-15 deploy step release=session-store-4.12.0 step=healthcheck result=ok took_s=15
+2026-10-17T19:13:22 ERROR session-store/st-node-03 job failed job=session-store-reindex attempt=1 cause=bad_checksum
+2026-10-17T19:13:26 NOTE  session-store/st-node-14 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-17T19:13:33 ERROR session-store/st-node-22 job failed job=session-store-cleanup attempt=2 cause=quota_exceeded
+2026-10-17T19:13:37 INFO  session-store/st-node-02 request done id=req-141f0120 route=/session-store/v1/get status=200 latency_ms=125
+2026-10-17T19:13:38 ERROR session-store/st-node-06 job failed job=session-store-rollup attempt=4 cause=bad_checksum
+2026-10-17T19:13:43 INFO  session-store/st-node-02 deploy step release=session-store-4.22.0 step=drain result=ok took_s=168
+2026-10-17T19:13:48 INFO  session-store/st-node-24 request done id=req-541c9e6b route=/session-store/v1/update status=429 latency_ms=58
+2026-10-17T19:13:55 INFO  session-store/st-node-07 request done id=req-0bfb10bd route=/session-store/v1/status status=200 latency_ms=163
+2026-10-17T19:13:59 INFO  session-store/st-node-18 deploy step release=session-store-4.16.6 step=warmup result=ok took_s=27
+2026-10-17T19:14:01 WARN  session-store/st-node-06 alert fired rule=cpu_steal_high value=60% threshold=56%
+2026-10-17T19:14:03 INFO  session-store/st-node-07 request done id=req-721954ec route=/session-store/v1/status status=200 latency_ms=40
+2026-10-17T19:14:07 INFO  session-store/st-node-18 request done id=req-e872ab11 route=/session-store/v1/list status=204 latency_ms=275
+2026-10-17T19:14:12 INFO  session-store/st-node-06 deploy step release=session-store-4.11.3 step=pull_image result=ok took_s=25
+2026-10-17T19:14:19 INFO  session-store/st-node-19 pool resize target=session-store-upstream max_pool_size=47 prev=4
+2026-10-17T19:14:20 INFO  session-store/st-node-19 deploy step release=session-store-4.21.3 step=healthcheck result=ok took_s=221
+2026-10-17T19:14:21 INFO  session-store/st-node-24 request done id=req-0d2be5f3 route=/session-store/v1/list status=429 latency_ms=111
+2026-10-17T19:14:26 INFO  session-store/st-node-09 request done id=req-041d014e route=/session-store/v1/list status=200 latency_ms=110
+2026-10-17T19:14:27 INFO  session-store/st-node-24 request done id=req-760aa484 route=/session-store/v1/create status=200 latency_ms=200
+2026-10-17T19:14:28 WARN  session-store/st-node-03 alert fired rule=disk_usage_warning value=90% threshold=77%
+2026-10-17T19:14:34 INFO  session-store/st-node-10 config applied key=retry.backoff_ms value=false by=dwjung
+2026-10-17T19:14:37 INFO  session-store/st-node-04 request done id=req-cbe12576 route=/session-store/v1/get status=200 latency_ms=85
+2026-10-17T19:14:44 INFO  session-store/st-node-05 request done id=req-40a7ccbe route=/session-store/v1/sync status=200 latency_ms=145
+2026-10-17T19:14:49 INFO  session-store/st-node-09 deploy step release=session-store-4.10.1 step=warmup result=ok took_s=234
+2026-10-17T19:14:54 WARN  session-store/st-node-17 alert fired rule=error_ratio_high value=77% threshold=62%
+2026-10-17T19:14:59 INFO  session-store/st-node-09 request done id=req-c91b183c route=/session-store/v1/update status=204 latency_ms=90
+2026-10-17T19:15:00 INFO  session-store/st-node-18 deploy step release=session-store-4.14.1 step=shift_traffic_10 result=ok took_s=182
+2026-10-17T19:15:04 NOTE  session-store/st-node-08 operator=shkim memo="동시 처리 수를 38에서 10로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-17T19:15:07 INFO  session-store/st-node-08 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=16016 checksum=93701c80
+2026-10-17T19:15:14 INFO  session-store/st-node-04 request done id=req-512eedc6 route=/session-store/v1/list status=200 latency_ms=238
+2026-10-17T19:15:21 INFO  session-store/st-node-05 request done id=req-d71df93a route=/session-store/v1/list status=200 latency_ms=852
+2026-10-17T19:15:27 INFO  session-store/st-node-21 deploy step release=session-store-4.14.5 step=shift_traffic_100 result=ok took_s=40
+2026-10-17T19:15:28 INFO  session-store/st-node-18 config applied key=breaker.half_open_s value=7344 by=hbyoon
+2026-10-17T19:15:34 WARN  session-store/st-node-18 alert fired rule=error_ratio_high value=93% threshold=78%
+2026-10-17T19:15:35 WARN  session-store/st-node-21 alert fired rule=disk_usage_warning value=73% threshold=59%
+2026-10-17T19:15:39 INFO  session-store/st-node-02 request done id=req-963e1eee route=/session-store/v1/verify status=400 latency_ms=231
+2026-10-17T19:15:41 NOTE  session-store/st-node-17 operator=dwjung memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-17T19:15:44 INFO  session-store/st-node-16 pool resize target=session-store-db max_pool_size=150 prev=204
+2026-10-17T19:15:51 INFO  session-store/st-node-05 cache stats region=ap-ne-2a hit_ratio=78.6% evictions=25601
+2026-10-17T19:15:58 INFO  session-store/st-node-23 request done id=req-973e5461 route=/session-store/v1/create status=200 latency_ms=1375
+2026-10-17T19:16:04 INFO  session-store/st-node-21 ticket linked id=OPS-48819 reason=oncall_handoff
+2026-10-17T19:16:08 NOTE  session-store/st-node-12 operator=hbyoon memo="임시 증설 35대 추가. 내일 오전 회수 예정."
+2026-10-17T19:16:15 ERROR session-store/st-node-17 job failed job=session-store-rollup attempt=2 cause=upstream_timeout
+2026-10-17T19:16:22 WARN  session-store/st-node-05 alert fired rule=disk_usage_warning value=81% threshold=75%
+2026-10-17T19:16:29 ERROR session-store/st-node-15 job failed job=session-store-rollup attempt=2 cause=upstream_timeout
+2026-10-17T19:16:30 INFO  session-store/st-node-20 request done id=req-9c3763eb route=/session-store/v1/cancel status=200 latency_ms=114
+2026-10-17T19:16:36 WARN  session-store/st-node-07 alert fired rule=heap_used_high value=90% threshold=80%
+2026-10-17T19:16:39 INFO  session-store/st-node-05 request done id=req-63336da9 route=/session-store/v1/get status=200 latency_ms=155
+2026-10-17T19:16:43 INFO  session-store/st-node-15 request done id=req-0a3cbe96 route=/session-store/v1/cancel status=404 latency_ms=159
+2026-10-17T19:16:50 INFO  session-store/st-node-03 request done id=req-18ea2938 route=/session-store/v1/status status=200 latency_ms=74
+2026-10-17T19:16:54 INFO  session-store/st-node-04 request done id=req-840a72d3 route=/session-store/v1/list status=200 latency_ms=189
+2026-10-17T19:16:58 INFO  session-store/st-node-17 cache stats region=ap-ne-2a hit_ratio=62.2% evictions=38928
+2026-10-17T19:17:01 INFO  session-store/st-node-20 request done id=req-3783453e route=/session-store/v1/create status=200 latency_ms=249
+2026-10-17T19:17:02 WARN  session-store/st-node-07 alert fired rule=replica_lag_high value=98s threshold=83s
+2026-10-17T19:17:03 INFO  session-store/st-node-12 pool resize target=session-store-upstream max_pool_size=370 prev=366
+2026-10-17T19:17:08 INFO  session-store/st-node-16 backup finished file=/vault/weekly/audit_2026w34.tar.zst size_mb=19441 checksum=d0a67609
+2026-10-17T19:17:13 ERROR session-store/st-node-23 job failed job=session-store-reindex attempt=1 cause=bad_checksum
+2026-10-17T19:17:15 INFO  session-store/st-node-09 request done id=req-4f7e48a0 route=/session-store/v1/status status=200 latency_ms=59
+2026-10-17T19:17:20 INFO  session-store/st-node-09 request done id=req-4996ec3b route=/session-store/v1/list status=200 latency_ms=134
+2026-10-17T19:17:21 WARN  session-store/st-node-13 alert fired rule=disk_usage_warning value=66% threshold=51%
+2026-10-17T19:17:26 INFO  session-store/st-node-16 config applied key=log.sample_rate value=39 by=shkim
+2026-10-17T19:17:33 INFO  session-store/st-node-06 pool resize target=session-store-db max_pool_size=313 prev=369
+2026-10-17T19:17:38 INFO  session-store/st-node-17 deploy step release=session-store-4.14.9 step=shift_traffic_50 result=ok took_s=61
+2026-10-17T19:17:39 INFO  session-store/st-node-23 deploy step release=session-store-4.15.9 step=start result=ok took_s=237
+2026-10-17T19:17:45 INFO  session-store/st-node-12 cache stats region=us-we-2b hit_ratio=60.2% evictions=15989
+2026-10-17T19:17:51 WARN  session-store/st-node-24 alert fired rule=fd_usage_high value=67% threshold=52%
+2026-10-17T19:17:58 INFO  session-store/st-node-01 request done id=req-76554d5d route=/session-store/v1/sync status=200 latency_ms=171
+2026-10-17T19:18:00 ERROR session-store/st-node-16 job failed job=session-store-reindex attempt=4 cause=quota_exceeded
+2026-10-17T19:18:06 INFO  session-store/st-node-14 request done id=req-67de0624 route=/session-store/v1/create status=429 latency_ms=49
+2026-10-17T19:18:09 INFO  session-store/st-node-11 request done id=req-450f0e56 route=/session-store/v1/sync status=204 latency_ms=181
+2026-10-17T19:18:15 INFO  session-store/st-node-05 request done id=req-5d8f26ae route=/session-store/v1/update status=200 latency_ms=655
+2026-10-17T19:18:21 INFO  session-store/st-node-07 config applied key=log.sample_rate value=false by=yjchoi
+2026-10-17T19:18:25 INFO  session-store/st-node-03 request done id=req-07692059 route=/session-store/v1/status status=200 latency_ms=326
+2026-10-17T19:18:26 INFO  session-store/st-node-09 request done id=req-63193cb3 route=/session-store/v1/cancel status=500 latency_ms=168
+2026-10-17T19:18:31 ERROR session-store/st-node-18 job failed job=session-store-export attempt=2 cause=dns_failure
+2026-10-17T19:18:32 WARN  session-store/st-node-22 alert fired rule=p99_latency_high value=55ms threshold=52ms
+2026-10-17T19:18:38 INFO  session-store/st-node-04 config applied key=cache.ttl_s value=33% by=ejlim
+2026-10-17T19:18:43 INFO  session-store/st-node-22 pool resize target=session-store-upstream max_pool_size=109 prev=75
+2026-10-17T19:18:49 NOTE  session-store/st-node-01 operator=jhpark memo="캐시 TTL을 26초로 되돌림. 오래된 응답이 보고됨."
+2026-10-17T19:18:55 INFO  session-store/st-node-11 request done id=req-62553dcc route=/session-store/v1/cancel status=503 latency_ms=142
+2026-10-17T19:19:00 INFO  session-store/st-node-08 request done id=req-27c4451c route=/session-store/v1/list status=200 latency_ms=98
+2026-10-17T19:19:03 INFO  session-store/st-node-09 request done id=req-98cd24bf route=/session-store/v1/list status=200 latency_ms=1319
+2026-10-17T19:19:08 NOTE  session-store/st-node-05 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-17T19:19:15 INFO  session-store/st-node-23 request done id=req-f8d89b99 route=/session-store/v1/update status=200 latency_ms=477
+2026-10-17T19:19:18 INFO  session-store/st-node-11 request done id=req-a0462052 route=/session-store/v1/list status=503 latency_ms=111
+2026-10-17T19:19:24 INFO  session-store/st-node-08 request done id=req-0f27df19 route=/session-store/v1/sync status=200 latency_ms=212
+2026-10-17T19:19:27 INFO  session-store/st-node-18 request done id=req-780cdff6 route=/session-store/v1/list status=200 latency_ms=84
+2026-10-17T19:19:32 INFO  session-store/st-node-09 deploy step release=session-store-4.11.6 step=shift_traffic_100 result=ok took_s=78
+2026-10-17T19:19:38 INFO  session-store/st-node-21 request done id=req-7f7bc8a5 route=/session-store/v1/create status=200 latency_ms=47
+2026-10-17T19:19:45 WARN  session-store/st-node-01 alert fired rule=gc_pause_long value=55ms threshold=53ms
+2026-10-17T19:19:50 INFO  session-store/st-node-20 request done id=req-943f0678 route=/session-store/v1/sync status=200 latency_ms=190
+2026-10-17T19:19:54 INFO  session-store/st-node-01 request done id=req-dbc8d5fa route=/session-store/v1/sync status=200 latency_ms=404
+2026-10-17T19:19:55 INFO  session-store/st-node-08 pool resize target=session-store-queue max_pool_size=60 prev=100
+2026-10-17T19:19:59 INFO  session-store/st-node-06 deploy step release=session-store-4.18.6 step=drain result=ok took_s=195
+2026-10-17T19:20:02 INFO  session-store/st-node-20 request done id=req-8f69173b route=/session-store/v1/sync status=409 latency_ms=183
+2026-10-17T19:20:09 INFO  session-store/st-node-09 request done id=req-178193f5 route=/session-store/v1/verify status=200 latency_ms=28
+2026-10-17T19:20:16 INFO  session-store/st-node-17 request done id=req-2d6022ad route=/session-store/v1/sync status=500 latency_ms=166
+2026-10-17T19:20:21 INFO  session-store/st-node-09 request done id=req-3c02fbe7 route=/session-store/v1/list status=200 latency_ms=320
+2026-10-17T19:20:23 INFO  session-store/st-node-08 deploy step release=session-store-4.22.1 step=pull_image result=ok took_s=108
+2026-10-17T19:20:26 INFO  session-store/st-node-17 request done id=req-7c69ba09 route=/session-store/v1/sync status=503 latency_ms=113
+2026-10-17T19:20:27 INFO  session-store/st-node-24 request done id=req-270875bf route=/session-store/v1/create status=503 latency_ms=177
+2026-10-17T19:20:32 INFO  session-store/st-node-23 request done id=req-85dca89f route=/session-store/v1/verify status=200 latency_ms=179
+2026-10-17T19:20:38 NOTE  session-store/st-node-13 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-17T19:20:41 INFO  session-store/st-node-07 request done id=req-a4e3ad52 route=/session-store/v1/status status=500 latency_ms=20
+2026-10-17T19:20:44 INFO  session-store/st-node-10 request done id=req-e057270e route=/session-store/v1/create status=500 latency_ms=303
+2026-10-17T19:20:51 INFO  session-store/st-node-06 ticket linked id=OPS-49814 reason=node_drain
+2026-10-17T19:20:55 INFO  session-store/st-node-03 request done id=req-63a43f5a route=/session-store/v1/create status=200 latency_ms=126
+2026-10-17T19:21:00 NOTE  session-store/st-node-19 operator=yjchoi memo="임시 증설 53대 추가. 내일 오전 회수 예정."
+2026-10-17T19:21:03 INFO  session-store/st-node-20 ticket linked id=OPS-47023 reason=schema_change
+2026-10-17T19:21:06 INFO  session-store/st-node-21 deploy step release=session-store-4.10.2 step=migrate result=ok took_s=113
+2026-10-17T19:21:09 INFO  session-store/st-node-09 deploy step release=session-store-4.10.3 step=healthcheck result=ok took_s=183
+2026-10-17T19:21:13 INFO  session-store/st-node-05 request done id=req-7ad115e5 route=/session-store/v1/cancel status=201 latency_ms=140
+2026-10-17T19:21:17 WARN  session-store/st-node-21 alert fired rule=error_ratio_high value=54% threshold=44%
+2026-10-17T19:21:23 INFO  session-store/st-node-07 request done id=req-df21d95c route=/session-store/v1/status status=200 latency_ms=199
+2026-10-17T19:21:30 INFO  session-store/st-node-08 request done id=req-01fe9eb2 route=/session-store/v1/cancel status=429 latency_ms=249
+2026-10-17T19:21:35 INFO  session-store/st-node-05 deploy step release=session-store-4.18.4 step=shift_traffic_100 result=ok took_s=195
+2026-10-17T19:21:42 INFO  session-store/st-node-19 backup finished file=/vault/daily/payments_20261009.tar.zst size_mb=81642 checksum=a7b24ad1
+2026-10-17T19:21:48 INFO  session-store/st-node-01 backup finished file=/vault/weekly/audit_2026w30.tar.zst size_mb=39293 checksum=df04f140
+2026-10-17T19:21:54 NOTE  session-store/st-node-04 operator=yjchoi memo="타임아웃을 54ms에서 63ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-17T19:21:56 WARN  session-store/st-node-02 alert fired rule=queue_depth_high value=71 threshold=65
+2026-10-17T19:22:01 WARN  session-store/st-node-23 alert fired rule=conn_pool_saturated value=88% threshold=83%
+2026-10-17T19:22:05 INFO  session-store/st-node-21 config applied key=http.max_conns value=34% by=shkim
+2026-10-17T19:22:12 WARN  session-store/st-node-23 alert fired rule=fd_usage_high value=70% threshold=66%
+2026-10-17T19:22:16 INFO  session-store/st-node-01 ticket linked id=OPS-48108 reason=runbook_update
+2026-10-17T19:22:21 INFO  session-store/st-node-21 request done id=req-8ff8e343 route=/session-store/v1/sync status=200 latency_ms=69
+2026-10-17T19:22:26 INFO  session-store/st-node-09 request done id=req-67358d13 route=/session-store/v1/sync status=200 latency_ms=192
+2026-10-17T19:22:27 INFO  session-store/st-node-20 request done id=req-a58a3c56 route=/session-store/v1/verify status=200 latency_ms=51
+2026-10-17T19:22:31 INFO  session-store/st-node-03 request done id=req-04798cb9 route=/session-store/v1/status status=404 latency_ms=53
+2026-10-17T19:22:32 INFO  session-store/st-node-16 config applied key=limiter.rps value=49 by=mjlee
+2026-10-17T19:22:39 INFO  session-store/st-node-01 request done id=req-dd25da51 route=/session-store/v1/sync status=200 latency_ms=133
+2026-10-17T19:22:46 NOTE  session-store/st-node-01 operator=mjlee memo="타임아웃을 45ms에서 57ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-17T19:22:50 INFO  session-store/st-node-19 request done id=req-fbfe9349 route=/session-store/v1/verify status=404 latency_ms=89
+2026-10-17T19:22:54 INFO  session-store/st-node-19 deploy step release=session-store-4.20.2 step=healthcheck result=ok took_s=232
+2026-10-17T19:22:57 INFO  session-store/st-node-18 ticket linked id=OPS-47155 reason=dns_ttl_change
+2026-10-17T19:23:02 INFO  session-store/st-node-24 request done id=req-793cf5c0 route=/session-store/v1/get status=200 latency_ms=151
+2026-10-17T19:23:09 WARN  session-store/st-node-04 alert fired rule=cpu_steal_high value=92% threshold=77%
+2026-10-17T19:23:15 INFO  session-store/st-node-10 request done id=req-d967d25e route=/session-store/v1/create status=503 latency_ms=65
+2026-10-17T19:23:16 INFO  session-store/st-node-18 request done id=req-30e181a3 route=/session-store/v1/sync status=200 latency_ms=189
+2026-10-17T19:23:17 INFO  session-store/st-node-04 deploy step release=session-store-4.16.6 step=start result=ok took_s=219
+2026-10-17T19:23:22 INFO  session-store/st-node-14 request done id=req-1b616b70 route=/session-store/v1/verify status=200 latency_ms=609
+2026-10-17T19:23:29 ERROR session-store/st-node-23 job failed job=session-store-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-17T19:23:35 ERROR session-store/st-node-08 job failed job=session-store-export attempt=2 cause=lock_wait_exceeded
+2026-10-17T19:23:38 INFO  session-store/st-node-14 deploy step release=session-store-4.14.5 step=shift_traffic_50 result=ok took_s=103
+2026-10-17T19:23:44 INFO  session-store/st-node-05 request done id=req-cf28b671 route=/session-store/v1/create status=200 latency_ms=130
+2026-10-17T19:23:46 INFO  session-store/st-node-24 request done id=req-f90bb2e9 route=/session-store/v1/get status=500 latency_ms=118
+2026-10-17T19:23:47 INFO  session-store/st-node-05 request done id=req-d087dcbf route=/session-store/v1/create status=200 latency_ms=94
+2026-10-17T19:23:51 INFO  session-store/st-node-01 config applied key=retry.max_attempts value=true by=shkim
+2026-10-17T19:23:55 INFO  session-store/st-node-05 pool resize target=session-store-upstream max_pool_size=82 prev=141
+2026-10-17T19:23:56 INFO  session-store/st-node-03 cache stats region=us-we-2b hit_ratio=83.7% evictions=4938
+2026-10-17T19:24:01 INFO  session-store/st-node-04 cache stats region=ap-se-1a hit_ratio=61.3% evictions=9971
+2026-10-17T19:24:08 NOTE  session-store/st-node-14 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-17T19:24:11 INFO  session-store/st-node-05 request done id=req-ef1b4600 route=/session-store/v1/cancel status=503 latency_ms=146
+2026-10-17T19:24:16 INFO  session-store/st-node-03 request done id=req-dffaa747 route=/session-store/v1/list status=500 latency_ms=57
+2026-10-17T19:24:20 INFO  session-store/st-node-24 ticket linked id=OPS-48311 reason=flaky_healthcheck
+2026-10-17T19:24:25 INFO  session-store/st-node-08 config applied key=log.sample_rate value=36% by=dwjung
+2026-10-17T19:24:26 INFO  session-store/st-node-09 config applied key=limiter.rps value=7% by=yjchoi
+2026-10-17T19:24:29 WARN  session-store/st-node-10 alert fired rule=replica_lag_high value=65s threshold=64s
+2026-10-17T19:24:36 INFO  session-store/st-node-20 deploy step release=session-store-4.17.2 step=migrate result=ok took_s=225
+2026-10-17T19:24:37 INFO  session-store/st-node-14 request done id=req-0a690938 route=/session-store/v1/cancel status=200 latency_ms=122
+2026-10-17T19:24:39 INFO  session-store/st-node-21 ticket linked id=OPS-48629 reason=runbook_update
+2026-10-17T19:24:42 WARN  session-store/st-node-05 alert fired rule=cpu_steal_high value=88% threshold=73%
+2026-10-17T19:24:44 INFO  session-store/st-node-07 request done id=req-09a93b2e route=/session-store/v1/list status=429 latency_ms=209
+2026-10-17T19:24:46 INFO  session-store/st-node-12 request done id=req-0e7027ca route=/session-store/v1/update status=200 latency_ms=133
+2026-10-17T19:24:51 INFO  session-store/st-node-05 request done id=req-8ea7dfe2 route=/session-store/v1/sync status=200 latency_ms=122
+2026-10-17T19:24:57 ERROR session-store/st-node-19 job failed job=session-store-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-17T19:25:03 INFO  session-store/st-node-12 request done id=req-642f5156 route=/session-store/v1/list status=200 latency_ms=103
+2026-10-17T19:25:09 INFO  session-store/st-node-01 request done id=req-2c597270 route=/session-store/v1/list status=200 latency_ms=266
+2026-10-17T19:25:10 INFO  session-store/st-node-22 deploy step release=session-store-4.10.6 step=shift_traffic_50 result=ok took_s=186
+2026-10-17T19:25:17 INFO  session-store/st-node-11 request done id=req-3ba9bba7 route=/session-store/v1/cancel status=200 latency_ms=52
+2026-10-17T19:25:19 INFO  session-store/st-node-02 pool resize target=session-store-worker max_pool_size=393 prev=429
+2026-10-17T19:25:22 INFO  session-store/st-node-09 request done id=req-1d0e3ca5 route=/session-store/v1/get status=200 latency_ms=137
+2026-10-17T19:25:24 INFO  session-store/st-node-10 pool resize target=session-store-upstream max_pool_size=98 prev=39
+2026-10-17T19:25:26 WARN  session-store/st-node-22 alert fired rule=p99_latency_high value=82ms threshold=75ms
+2026-10-17T19:25:31 ERROR session-store/st-node-11 job failed job=session-store-export attempt=2 cause=lock_wait_exceeded
+2026-10-17T19:25:34 INFO  session-store/st-node-23 request done id=req-53b1990c route=/session-store/v1/cancel status=200 latency_ms=48
+2026-10-17T19:25:39 INFO  session-store/st-node-09 request done id=req-f77dcd3a route=/session-store/v1/sync status=201 latency_ms=95
+2026-10-17T19:25:41 INFO  session-store/st-node-18 request done id=req-98081557 route=/session-store/v1/verify status=200 latency_ms=479
+2026-10-17T19:25:44 NOTE  session-store/st-node-03 operator=hbyoon memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-17T19:25:47 INFO  session-store/st-node-13 request done id=req-bc48ebe3 route=/session-store/v1/get status=204 latency_ms=27
+2026-10-17T19:25:50 INFO  session-store/st-node-05 deploy step release=session-store-4.19.1 step=start result=ok took_s=88
+2026-10-17T19:25:55 INFO  session-store/st-node-09 request done id=req-19d169be route=/session-store/v1/verify status=404 latency_ms=96
+2026-10-17T19:26:00 INFO  session-store/st-node-05 config applied key=breaker.open_ratio value=61 by=sykang
+2026-10-17T19:26:07 INFO  session-store/st-node-18 backup finished file=/vault/daily/sessions_20261020.tar.zst size_mb=4630 checksum=92cfaced
+2026-10-17T19:26:10 WARN  session-store/st-node-23 alert fired rule=error_ratio_high value=86% threshold=82%
+2026-10-17T19:26:14 INFO  session-store/st-node-02 request done id=req-79266758 route=/session-store/v1/verify status=200 latency_ms=159
+2026-10-17T19:26:21 INFO  session-store/st-node-02 ticket linked id=OPS-48396 reason=cert_rotation
+2026-10-17T19:26:23 INFO  session-store/st-node-01 config applied key=limiter.burst value=true by=dwjung
+2026-10-17T19:26:28 INFO  session-store/st-node-09 request done id=req-8ad6147a route=/session-store/v1/create status=500 latency_ms=98
+2026-10-17T19:26:32 INFO  session-store/st-node-16 cache stats region=ap-se-1a hit_ratio=59.6% evictions=24302
+2026-10-17T19:26:39 INFO  session-store/st-node-12 pool resize target=session-store-worker max_pool_size=13 prev=4
+2026-10-17T19:26:46 INFO  session-store/st-node-23 request done id=req-f9c5de79 route=/session-store/v1/cancel status=200 latency_ms=227
+2026-10-17T19:26:48 ERROR session-store/st-node-01 job failed job=session-store-export attempt=3 cause=dns_failure
+2026-10-17T19:26:52 INFO  session-store/st-node-12 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=76746 checksum=4b3432c0
+2026-10-17T19:26:55 INFO  session-store/st-node-23 request done id=req-59499dd8 route=/session-store/v1/create status=201 latency_ms=93
+2026-10-17T19:27:02 INFO  session-store/st-node-20 backup finished file=/vault/weekly/sessions_2026w37.tar.zst size_mb=50478 checksum=5c212c99
+2026-10-17T19:27:05 INFO  session-store/st-node-02 request done id=req-2cb90357 route=/session-store/v1/create status=200 latency_ms=264
+2026-10-17T19:27:08 INFO  session-store/st-node-08 ticket linked id=OPS-49560 reason=log_volume_spike
+2026-10-17T19:27:14 INFO  session-store/st-node-20 deploy step release=session-store-4.20.6 step=shift_traffic_50 result=ok took_s=192
+2026-10-17T19:27:21 INFO  session-store/st-node-11 backup finished file=/vault/weekly/orders_2026w32.tar.zst size_mb=63907 checksum=45beb3e0
+2026-10-17T19:27:28 INFO  session-store/st-node-14 cache stats region=ap-ne-2b hit_ratio=81.9% evictions=24326
+2026-10-17T19:27:35 INFO  session-store/st-node-04 pool resize target=session-store-cache max_pool_size=273 prev=251
+2026-10-17T19:27:36 INFO  session-store/st-node-15 request done id=req-33fb0daf route=/session-store/v1/verify status=429 latency_ms=88
+2026-10-17T19:27:38 WARN  session-store/st-node-09 alert fired rule=error_ratio_high value=62% threshold=51%
+2026-10-17T19:27:42 INFO  session-store/st-node-02 backup finished file=/vault/weekly/payments_2026w40.tar.zst size_mb=66938 checksum=0084eed7
+2026-10-17T19:27:49 INFO  session-store/st-node-13 request done id=req-2018d40c route=/session-store/v1/update status=200 latency_ms=133
+2026-10-17T19:27:50 INFO  session-store/st-node-09 request done id=req-38498a73 route=/session-store/v1/create status=200 latency_ms=81
+2026-10-17T19:27:51 ERROR session-store/st-node-18 job failed job=session-store-export attempt=5 cause=dns_failure
+2026-10-17T19:27:58 INFO  session-store/st-node-14 request done id=req-bb7c57f4 route=/session-store/v1/create status=200 latency_ms=233
+2026-10-17T19:27:59 INFO  session-store/st-node-15 request done id=req-c5405da1 route=/session-store/v1/status status=200 latency_ms=202
+2026-10-17T19:28:02 WARN  session-store/st-node-02 alert fired rule=p99_latency_high value=93ms threshold=82ms
+2026-10-17T19:28:06 INFO  session-store/st-node-24 request done id=req-91096585 route=/session-store/v1/sync status=200 latency_ms=84
+2026-10-17T19:28:12 INFO  session-store/st-node-15 request done id=req-b105ec2f route=/session-store/v1/list status=200 latency_ms=352
+2026-10-17T19:28:17 INFO  session-store/st-node-06 request done id=req-c3307a7a route=/session-store/v1/get status=200 latency_ms=115
+2026-10-17T19:28:19 INFO  session-store/st-node-01 deploy step release=session-store-4.19.4 step=verify result=ok took_s=49
+2026-10-17T19:28:24 ERROR session-store/st-node-17 job failed job=session-store-rollup attempt=5 cause=quota_exceeded
+2026-10-17T19:28:27 INFO  session-store/st-node-05 request done id=req-d14950f7 route=/session-store/v1/cancel status=200 latency_ms=108
+2026-10-17T19:28:28 ERROR session-store/st-node-18 job failed job=session-store-export attempt=1 cause=bad_checksum
+2026-10-17T19:28:30 INFO  session-store/st-node-09 request done id=req-8f6b68d2 route=/session-store/v1/get status=200 latency_ms=76
+2026-10-17T19:28:33 INFO  session-store/st-node-14 request done id=req-22bb7253 route=/session-store/v1/get status=201 latency_ms=101
+2026-10-17T19:28:39 INFO  session-store/st-node-16 request done id=req-5d817f2b route=/session-store/v1/cancel status=200 latency_ms=54
+2026-10-17T19:28:43 INFO  session-store/st-node-07 pool resize target=session-store-db max_pool_size=235 prev=224
+2026-10-17T19:28:45 NOTE  session-store/st-node-23 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 10일 남음."
+2026-10-17T19:28:51 INFO  session-store/st-node-23 request done id=req-bb9cd544 route=/session-store/v1/list status=409 latency_ms=467
+2026-10-17T19:28:54 INFO  session-store/st-node-08 request done id=req-3170ef76 route=/session-store/v1/update status=200 latency_ms=71
+2026-10-17T19:28:59 INFO  session-store/st-node-14 request done id=req-a50fd471 route=/session-store/v1/verify status=200 latency_ms=65
+2026-10-17T19:29:05 INFO  session-store/st-node-09 request done id=req-a788ec7e route=/session-store/v1/create status=200 latency_ms=915
+2026-10-17T19:29:06 INFO  session-store/st-node-17 ticket linked id=OPS-48409 reason=dependency_upgrade
+2026-10-17T19:29:12 INFO  session-store/st-node-13 request done id=req-af00b202 route=/session-store/v1/status status=200 latency_ms=137
+2026-10-17T19:29:17 INFO  session-store/st-node-10 request done id=req-40595a73 route=/session-store/v1/create status=200 latency_ms=114
+2026-10-17T19:29:19 WARN  session-store/st-node-20 alert fired rule=gc_pause_long value=78ms threshold=71ms
+2026-10-17T19:29:26 INFO  session-store/st-node-04 deploy step release=session-store-4.12.2 step=warmup result=ok took_s=54
+2026-10-17T19:29:33 INFO  session-store/st-node-17 request done id=req-687c2398 route=/session-store/v1/get status=200 latency_ms=160
+2026-10-17T19:29:34 INFO  session-store/st-node-03 deploy step release=session-store-4.17.3 step=start result=ok took_s=238
+2026-10-17T19:29:37 INFO  session-store/st-node-04 cache stats region=us-we-2b hit_ratio=91.8% evictions=3422
+2026-10-17T19:29:39 INFO  session-store/st-node-19 request done id=req-a93da434 route=/session-store/v1/status status=500 latency_ms=109
+2026-10-17T19:29:44 NOTE  session-store/st-node-02 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-17T19:29:48 INFO  session-store/st-node-18 request done id=req-1ab1aa33 route=/session-store/v1/update status=200 latency_ms=257
+2026-10-17T19:29:50 INFO  session-store/st-node-14 request done id=req-f6cb7465 route=/session-store/v1/cancel status=200 latency_ms=248
+2026-10-17T19:29:56 NOTE  session-store/st-node-04 operator=sykang memo="동시 처리 수를 55에서 41로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-17T19:30:02 INFO  session-store/st-node-18 request done id=req-63f19260 route=/session-store/v1/sync status=200 latency_ms=85
+2026-10-17T19:30:09 INFO  session-store/st-node-18 request done id=req-343f0414 route=/session-store/v1/list status=200 latency_ms=161
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

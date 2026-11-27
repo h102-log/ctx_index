@@ -1,0 +1,1 @@
+아까 붙여 준 로그에서 ranker.candidate_pool_size 를 얼마로 적용했지?

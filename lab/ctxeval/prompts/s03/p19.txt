@@ -1,0 +1,424 @@
+참고용 로그 19: 가격 엔진(price-engine) 룰 배포 구간. '확인'이라고만 답해 줘.
+
+2026-10-23T15:50:24 INFO  price-engine/pe-node-12 config applied key=http.read_timeout_ms value=610 by=yjchoi
+2026-10-23T15:50:28 INFO  price-engine/pe-node-11 request done id=req-8aaea1be route=/price-engine/v1/sync status=200 latency_ms=140
+2026-10-23T15:50:32 INFO  price-engine/pe-node-19 request done id=req-82eac15b route=/price-engine/v1/verify status=200 latency_ms=233
+2026-10-23T15:50:34 INFO  price-engine/pe-node-02 request done id=req-2f732b65 route=/price-engine/v1/list status=201 latency_ms=34
+2026-10-23T15:50:41 INFO  price-engine/pe-node-01 request done id=req-ec0ae4fa route=/price-engine/v1/list status=200 latency_ms=51
+2026-10-23T15:50:46 INFO  price-engine/pe-node-06 config applied key=tls.session_cache value=69% by=hbyoon
+2026-10-23T15:50:52 INFO  price-engine/pe-node-21 request done id=req-cee71755 route=/price-engine/v1/sync status=404 latency_ms=17
+2026-10-23T15:50:58 INFO  price-engine/pe-node-08 request done id=req-6984c4fa route=/price-engine/v1/list status=200 latency_ms=163
+2026-10-23T15:51:05 INFO  price-engine/pe-node-16 cache stats region=ap-ne-2a hit_ratio=72.4% evictions=17343
+2026-10-23T15:51:12 INFO  price-engine/pe-node-06 request done id=req-8c8df7be route=/price-engine/v1/sync status=200 latency_ms=447
+2026-10-23T15:51:15 INFO  price-engine/pe-node-05 request done id=req-08bb7d94 route=/price-engine/v1/sync status=200 latency_ms=187
+2026-10-23T15:51:17 INFO  price-engine/pe-node-18 request done id=req-934dbabc route=/price-engine/v1/cancel status=200 latency_ms=34
+2026-10-23T15:51:19 WARN  price-engine/pe-node-23 alert fired rule=disk_usage_warning value=98% threshold=96%
+2026-10-23T15:51:21 INFO  price-engine/pe-node-13 backup finished file=/vault/weekly/inventory_2026w36.tar.zst size_mb=16694 checksum=440921be
+2026-10-23T15:51:22 INFO  price-engine/pe-node-15 deploy step release=price-engine-4.13.7 step=verify result=ok took_s=115
+2026-10-23T15:51:27 INFO  price-engine/pe-node-22 request done id=req-b346be01 route=/price-engine/v1/status status=200 latency_ms=264
+2026-10-23T15:51:31 INFO  price-engine/pe-node-08 request done id=req-582e4132 route=/price-engine/v1/create status=400 latency_ms=163
+2026-10-23T15:51:37 INFO  price-engine/pe-node-01 config applied key=limiter.rps value=7% by=sykang
+2026-10-23T15:51:38 WARN  price-engine/pe-node-15 alert fired rule=cpu_steal_high value=92% threshold=88%
+2026-10-23T15:51:39 WARN  price-engine/pe-node-11 alert fired rule=cpu_steal_high value=64% threshold=63%
+2026-10-23T15:51:45 INFO  price-engine/pe-node-24 request done id=req-958a137e route=/price-engine/v1/get status=200 latency_ms=134
+2026-10-23T15:51:46 INFO  price-engine/pe-node-21 request done id=req-286b0565 route=/price-engine/v1/sync status=200 latency_ms=63
+2026-10-23T15:51:48 INFO  price-engine/pe-node-20 config applied key=tls.session_cache value=50 by=jhpark
+2026-10-23T15:51:50 INFO  price-engine/pe-node-20 backup finished file=/vault/daily/users_20261002.tar.zst size_mb=20680 checksum=883b9ccb
+2026-10-23T15:51:52 INFO  price-engine/pe-node-04 ticket linked id=OPS-47707 reason=dns_ttl_change
+2026-10-23T15:51:57 WARN  price-engine/pe-node-09 alert fired rule=p99_latency_high value=82ms threshold=81ms
+2026-10-23T15:52:04 INFO  price-engine/pe-node-18 request done id=req-3cc87ebb route=/price-engine/v1/verify status=404 latency_ms=395
+2026-10-23T15:52:05 INFO  price-engine/pe-node-09 request done id=req-9eddf612 route=/price-engine/v1/verify status=409 latency_ms=62
+2026-10-23T15:52:12 WARN  price-engine/pe-node-09 alert fired rule=queue_depth_high value=92 threshold=87
+2026-10-23T15:52:14 WARN  price-engine/pe-node-09 alert fired rule=heap_used_high value=88% threshold=85%
+2026-10-23T15:52:16 INFO  price-engine/pe-node-01 request done id=req-5c64dbe8 route=/price-engine/v1/status status=200 latency_ms=133
+2026-10-23T15:52:23 WARN  price-engine/pe-node-05 alert fired rule=gc_pause_long value=84ms threshold=78ms
+2026-10-23T15:52:25 INFO  price-engine/pe-node-17 deploy step release=price-engine-4.22.3 step=pull_image result=ok took_s=29
+2026-10-23T15:52:32 INFO  price-engine/pe-node-11 config applied key=http.max_conns value=true by=yjchoi
+2026-10-23T15:52:37 INFO  price-engine/pe-node-04 request done id=req-17693967 route=/price-engine/v1/create status=429 latency_ms=95
+2026-10-23T15:52:40 INFO  price-engine/pe-node-10 request done id=req-f5ca8e76 route=/price-engine/v1/create status=400 latency_ms=123
+2026-10-23T15:52:46 INFO  price-engine/pe-node-24 deploy step release=price-engine-4.16.9 step=shift_traffic_10 result=ok took_s=9
+2026-10-23T15:52:49 INFO  price-engine/pe-node-10 backup finished file=/vault/daily/orders_20261017.tar.zst size_mb=68328 checksum=61b747ca
+2026-10-23T15:52:51 INFO  price-engine/pe-node-08 cache stats region=ap-ne-2b hit_ratio=97.5% evictions=23633
+2026-10-23T15:52:55 INFO  price-engine/pe-node-18 config applied key=http.max_conns value=false by=ejlim
+2026-10-23T15:52:58 INFO  price-engine/pe-node-06 request done id=req-a592514f route=/price-engine/v1/create status=400 latency_ms=76
+2026-10-23T15:53:02 INFO  price-engine/pe-node-14 pool resize target=price-engine-worker max_pool_size=87 prev=123
+2026-10-23T15:53:07 INFO  price-engine/pe-node-17 request done id=req-abad8292 route=/price-engine/v1/verify status=429 latency_ms=153
+2026-10-23T15:53:13 INFO  price-engine/pe-node-01 request done id=req-22f8b366 route=/price-engine/v1/update status=200 latency_ms=178
+2026-10-23T15:53:14 INFO  price-engine/pe-node-15 request done id=req-e545becb route=/price-engine/v1/cancel status=200 latency_ms=34
+2026-10-23T15:53:17 INFO  price-engine/pe-node-15 request done id=req-7e83cf5c route=/price-engine/v1/update status=201 latency_ms=25
+2026-10-23T15:53:18 INFO  price-engine/pe-node-22 request done id=req-9770af26 route=/price-engine/v1/verify status=200 latency_ms=89
+2026-10-23T15:53:20 INFO  price-engine/pe-node-07 request done id=req-81fbca27 route=/price-engine/v1/cancel status=200 latency_ms=121
+2026-10-23T15:53:22 INFO  price-engine/pe-node-11 request done id=req-0db5a704 route=/price-engine/v1/get status=503 latency_ms=177
+2026-10-23T15:53:26 INFO  price-engine/pe-node-19 request done id=req-53341ea4 route=/price-engine/v1/update status=200 latency_ms=325
+2026-10-23T15:53:29 ERROR price-engine/pe-node-06 job failed job=price-engine-rollup attempt=4 cause=upstream_timeout
+2026-10-23T15:53:36 WARN  price-engine/pe-node-17 alert fired rule=fd_usage_high value=63% threshold=54%
+2026-10-23T15:53:37 INFO  price-engine/pe-node-23 cache stats region=ap-ne-2a hit_ratio=71.1% evictions=39563
+2026-10-23T15:53:44 INFO  price-engine/pe-node-13 deploy step release=price-engine-4.10.9 step=healthcheck result=ok took_s=193
+2026-10-23T15:53:48 ERROR price-engine/pe-node-05 job failed job=price-engine-reindex attempt=5 cause=dns_failure
+2026-10-23T15:53:52 INFO  price-engine/pe-node-03 pool resize target=price-engine-db max_pool_size=30 prev=9
+2026-10-23T15:53:54 INFO  price-engine/pe-node-09 deploy step release=price-engine-4.12.6 step=verify result=ok took_s=15
+2026-10-23T15:54:00 ERROR price-engine/pe-node-12 job failed job=price-engine-rollup attempt=2 cause=lock_wait_exceeded
+2026-10-23T15:54:06 INFO  price-engine/pe-node-24 request done id=req-46a23d5d route=/price-engine/v1/update status=200 latency_ms=121
+2026-10-23T15:54:09 INFO  price-engine/pe-node-19 request done id=req-1d396c36 route=/price-engine/v1/status status=200 latency_ms=570
+2026-10-23T15:54:12 INFO  price-engine/pe-node-17 ticket linked id=OPS-48962 reason=log_volume_spike
+2026-10-23T15:54:14 INFO  price-engine/pe-node-09 config applied key=gc.pause_target_ms value=1 by=jhpark
+2026-10-23T15:54:16 INFO  price-engine/pe-node-04 cache stats region=ap-se-1a hit_ratio=67.7% evictions=14990
+2026-10-23T15:54:18 INFO  price-engine/pe-node-17 request done id=req-e3de9a04 route=/price-engine/v1/create status=200 latency_ms=79
+2026-10-23T15:54:23 INFO  price-engine/pe-node-15 pool resize target=price-engine-db max_pool_size=285 prev=298
+2026-10-23T15:54:30 INFO  price-engine/pe-node-23 request done id=req-1f54ed04 route=/price-engine/v1/cancel status=409 latency_ms=28
+2026-10-23T15:54:32 INFO  price-engine/pe-node-23 request done id=req-9a8939d4 route=/price-engine/v1/verify status=200 latency_ms=87
+2026-10-23T15:54:35 INFO  price-engine/pe-node-08 request done id=req-eda9fd8f route=/price-engine/v1/status status=503 latency_ms=98
+2026-10-23T15:54:40 INFO  price-engine/pe-node-03 pool resize target=price-engine-upstream max_pool_size=228 prev=230
+2026-10-23T15:54:47 INFO  price-engine/pe-node-04 request done id=req-f4b2c89d route=/price-engine/v1/create status=500 latency_ms=86
+2026-10-23T15:54:54 INFO  price-engine/pe-node-22 request done id=req-4c7857dc route=/price-engine/v1/create status=200 latency_ms=244
+2026-10-23T15:55:01 NOTE  price-engine/pe-node-22 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-23T15:55:08 INFO  price-engine/pe-node-14 request done id=req-a3bdf5ce route=/price-engine/v1/verify status=500 latency_ms=89
+2026-10-23T15:55:11 INFO  price-engine/pe-node-06 request done id=req-a2dd0a60 route=/price-engine/v1/list status=200 latency_ms=66
+2026-10-23T15:55:13 INFO  price-engine/pe-node-06 config applied key=retry.backoff_ms value=50% by=yjchoi
+2026-10-23T15:55:15 INFO  price-engine/pe-node-11 request done id=req-d5cd799d route=/price-engine/v1/cancel status=404 latency_ms=34
+2026-10-23T15:55:17 INFO  price-engine/pe-node-17 pool resize target=price-engine-cache max_pool_size=129 prev=105
+2026-10-23T15:55:18 WARN  price-engine/pe-node-24 alert fired rule=cpu_steal_high value=94% threshold=91%
+2026-10-23T15:55:25 INFO  price-engine/pe-node-23 request done id=req-739cbbd2 route=/price-engine/v1/cancel status=400 latency_ms=45
+2026-10-23T15:55:28 WARN  price-engine/pe-node-17 alert fired rule=heap_used_high value=98% threshold=93%
+2026-10-23T15:55:33 INFO  price-engine/pe-node-23 request done id=req-e73c13dc route=/price-engine/v1/get status=200 latency_ms=58
+2026-10-23T15:55:36 INFO  price-engine/pe-node-09 ticket linked id=OPS-47325 reason=quota_increase
+2026-10-23T15:55:42 INFO  price-engine/pe-node-11 request done id=req-49191a82 route=/price-engine/v1/update status=201 latency_ms=318
+2026-10-23T15:55:49 WARN  price-engine/pe-node-06 alert fired rule=fd_usage_high value=59% threshold=48%
+2026-10-23T15:55:54 INFO  price-engine/pe-node-22 config applied key=limiter.rps value=true by=yjchoi
+2026-10-23T15:55:55 WARN  price-engine/pe-node-20 alert fired rule=gc_pause_long value=90ms threshold=79ms
+2026-10-23T15:55:59 ERROR price-engine/pe-node-17 job failed job=price-engine-rollup attempt=5 cause=lock_wait_exceeded
+2026-10-23T15:56:05 INFO  price-engine/pe-node-04 request done id=req-84bad927 route=/price-engine/v1/sync status=200 latency_ms=112
+2026-10-23T15:56:09 INFO  price-engine/pe-node-02 pool resize target=price-engine-worker max_pool_size=292 prev=330
+2026-10-23T15:56:11 INFO  price-engine/pe-node-04 request done id=req-afc3e074 route=/price-engine/v1/get status=200 latency_ms=126
+2026-10-23T15:56:12 ERROR price-engine/pe-node-11 job failed job=price-engine-rollup attempt=3 cause=bad_checksum
+2026-10-23T15:56:16 INFO  price-engine/pe-node-15 backup finished file=/vault/daily/payments_20261027.tar.zst size_mb=75358 checksum=7c8a5b40
+2026-10-23T15:56:23 INFO  price-engine/pe-node-16 request done id=req-c19e83b3 route=/price-engine/v1/get status=200 latency_ms=68
+2026-10-23T15:56:30 WARN  price-engine/pe-node-07 alert fired rule=gc_pause_long value=81ms threshold=74ms
+2026-10-23T15:56:33 INFO  price-engine/pe-node-02 request done id=req-ae0a3dd3 route=/price-engine/v1/get status=200 latency_ms=62
+2026-10-23T15:56:38 INFO  price-engine/pe-node-21 backup finished file=/vault/daily/inventory_20261012.tar.zst size_mb=5964 checksum=c0d6cc37
+2026-10-23T15:56:42 INFO  price-engine/pe-node-22 cache stats region=ap-ne-2c hit_ratio=63.2% evictions=2268
+2026-10-23T15:56:44 INFO  price-engine/pe-node-09 request done id=req-be56edf4 route=/price-engine/v1/update status=500 latency_ms=141
+2026-10-23T15:56:48 INFO  price-engine/pe-node-07 request done id=req-4cd52009 route=/price-engine/v1/list status=200 latency_ms=129
+2026-10-23T15:56:50 INFO  price-engine/pe-node-19 config applied key=flush.interval_ms value=false by=ejlim
+2026-10-23T15:56:56 INFO  price-engine/pe-node-16 config applied key=dns.ttl_s value=false by=yjchoi
+2026-10-23T15:56:59 INFO  price-engine/pe-node-19 request done id=req-107594fe route=/price-engine/v1/verify status=200 latency_ms=58
+2026-10-23T15:57:03 NOTE  price-engine/pe-node-14 operator=hbyoon memo="점검 창을 52분 연장함. 승인: 류태경 팀장."
+2026-10-23T15:57:08 INFO  price-engine/pe-node-06 backup finished file=/vault/weekly/payments_2026w30.tar.zst size_mb=61909 checksum=907a8051
+2026-10-23T15:57:14 INFO  price-engine/pe-node-06 config applied key=http.read_timeout_ms value=false by=shkim
+2026-10-23T15:57:17 INFO  price-engine/pe-node-17 ticket linked id=OPS-49945 reason=dependency_upgrade
+2026-10-23T15:57:21 ERROR price-engine/pe-node-24 job failed job=price-engine-rollup attempt=4 cause=upstream_timeout
+2026-10-23T15:57:25 INFO  price-engine/pe-node-01 request done id=req-f59b2670 route=/price-engine/v1/create status=404 latency_ms=186
+2026-10-23T15:57:27 NOTE  price-engine/pe-node-17 operator=mjlee memo="로그 보존 기간은 58일로 유지하기로 함."
+2026-10-23T15:57:29 INFO  price-engine/pe-node-04 pool resize target=price-engine-db max_pool_size=20 prev=4
+2026-10-23T15:57:36 INFO  price-engine/pe-node-06 config applied key=limiter.burst value=false by=sykang
+2026-10-23T15:57:37 INFO  price-engine/pe-node-02 request done id=req-cd4ddf2e route=/price-engine/v1/get status=200 latency_ms=110
+2026-10-23T15:57:40 INFO  price-engine/pe-node-19 request done id=req-075b59d2 route=/price-engine/v1/verify status=200 latency_ms=46
+2026-10-23T15:57:42 INFO  price-engine/pe-node-05 request done id=req-02ae05e2 route=/price-engine/v1/sync status=200 latency_ms=131
+2026-10-23T15:57:47 INFO  price-engine/pe-node-08 request done id=req-01197a75 route=/price-engine/v1/sync status=500 latency_ms=125
+2026-10-23T15:57:53 INFO  price-engine/pe-node-09 deploy step release=price-engine-4.16.8 step=healthcheck result=ok took_s=118
+2026-10-23T15:57:59 WARN  price-engine/pe-node-24 alert fired rule=fd_usage_high value=86% threshold=79%
+2026-10-23T15:58:01 INFO  price-engine/pe-node-16 request done id=req-c13a6a36 route=/price-engine/v1/update status=201 latency_ms=58
+2026-10-23T15:58:08 INFO  price-engine/pe-node-09 config applied key=gc.pause_target_ms value=8667 by=yjchoi
+2026-10-23T15:58:11 INFO  price-engine/pe-node-23 deploy step release=price-engine-4.11.3 step=pull_image result=ok took_s=121
+2026-10-23T15:58:14 INFO  price-engine/pe-node-21 pool resize target=price-engine-worker max_pool_size=382 prev=442
+2026-10-23T15:58:21 ERROR price-engine/pe-node-21 job failed job=price-engine-cleanup attempt=4 cause=lock_wait_exceeded
+2026-10-23T15:58:22 INFO  price-engine/pe-node-14 request done id=req-1f03efe4 route=/price-engine/v1/sync status=200 latency_ms=48
+2026-10-23T15:58:26 INFO  price-engine/pe-node-04 pool resize target=price-engine-db max_pool_size=125 prev=91
+2026-10-23T15:58:30 ERROR price-engine/pe-node-17 job failed job=price-engine-cleanup attempt=4 cause=quota_exceeded
+2026-10-23T15:58:31 INFO  price-engine/pe-node-13 ticket linked id=OPS-49752 reason=schema_change
+2026-10-23T15:58:33 INFO  price-engine/pe-node-05 config applied key=canary.traffic_percent value=55 by=shkim
+2026-10-23T15:58:37 INFO  price-engine/pe-node-08 request done id=req-1d2c4bfb route=/price-engine/v1/get status=200 latency_ms=158
+2026-10-23T15:58:40 WARN  price-engine/pe-node-12 alert fired rule=disk_usage_warning value=98% threshold=95%
+2026-10-23T15:58:46 INFO  price-engine/pe-node-09 request done id=req-d1824093 route=/price-engine/v1/verify status=429 latency_ms=45
+2026-10-23T15:58:51 INFO  price-engine/pe-node-05 request done id=req-6c321e43 route=/price-engine/v1/cancel status=429 latency_ms=59
+2026-10-23T15:58:56 INFO  price-engine/pe-node-21 pool resize target=price-engine-db max_pool_size=115 prev=146
+2026-10-23T15:59:02 WARN  price-engine/pe-node-18 alert fired rule=p99_latency_high value=89ms threshold=85ms
+2026-10-23T15:59:04 ERROR price-engine/pe-node-18 job failed job=price-engine-export attempt=1 cause=oom_killed
+2026-10-23T15:59:06 INFO  price-engine/pe-node-17 deploy step release=price-engine-4.15.4 step=start result=ok took_s=104
+2026-10-23T15:59:08 INFO  price-engine/pe-node-08 request done id=req-55b65520 route=/price-engine/v1/list status=200 latency_ms=55
+2026-10-23T15:59:12 INFO  price-engine/pe-node-06 request done id=req-ce6db4d5 route=/price-engine/v1/update status=200 latency_ms=750
+2026-10-23T15:59:16 INFO  price-engine/pe-node-21 request done id=req-c509f1bb route=/price-engine/v1/create status=200 latency_ms=161
+2026-10-23T15:59:19 INFO  price-engine/pe-node-16 request done id=req-8408ab22 route=/price-engine/v1/status status=204 latency_ms=38
+2026-10-23T15:59:21 INFO  price-engine/pe-node-05 request done id=req-5d4919bf route=/price-engine/v1/update status=200 latency_ms=35
+2026-10-23T15:59:27 INFO  price-engine/pe-node-24 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=21637 checksum=76b18a8d
+2026-10-23T15:59:34 INFO  price-engine/pe-node-12 request done id=req-28b847cb route=/price-engine/v1/cancel status=200 latency_ms=65
+2026-10-23T15:59:37 INFO  price-engine/pe-node-13 pool resize target=price-engine-worker max_pool_size=92 prev=44
+2026-10-23T15:59:38 WARN  price-engine/pe-node-07 alert fired rule=cpu_steal_high value=85% threshold=75%
+2026-10-23T15:59:41 INFO  price-engine/pe-node-06 config applied key=canary.latency_p99_threshold_ms value=6694 by=hbyoon
+2026-10-23T15:59:47 NOTE  price-engine/pe-node-22 operator=shkim memo="pe-node-22 재기동 후 지표 정상 확인."
+2026-10-23T15:59:53 INFO  price-engine/pe-node-11 request done id=req-de61986c route=/price-engine/v1/cancel status=204 latency_ms=101
+2026-10-23T15:59:56 INFO  price-engine/pe-node-02 pool resize target=price-engine-db max_pool_size=253 prev=246
+2026-10-23T15:59:58 WARN  price-engine/pe-node-12 alert fired rule=cpu_steal_high value=55% threshold=47%
+2026-10-23T16:00:04 INFO  price-engine/pe-node-16 request done id=req-03c5f1a2 route=/price-engine/v1/update status=200 latency_ms=18
+2026-10-23T16:00:05 INFO  price-engine/pe-node-14 pool resize target=price-engine-upstream max_pool_size=13 prev=62
+2026-10-23T16:00:11 INFO  price-engine/pe-node-08 request done id=req-5cfb67f6 route=/price-engine/v1/sync status=400 latency_ms=37
+2026-10-23T16:00:16 INFO  price-engine/pe-node-11 deploy step release=price-engine-4.13.2 step=drain result=ok took_s=133
+2026-10-23T16:00:17 NOTE  price-engine/pe-node-23 operator=hbyoon memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-10-23T16:00:22 INFO  price-engine/pe-node-17 cache stats region=ap-ne-2b hit_ratio=70.2% evictions=14416
+2026-10-23T16:00:29 INFO  price-engine/pe-node-12 request done id=req-ae782047 route=/price-engine/v1/list status=200 latency_ms=95
+2026-10-23T16:00:33 INFO  price-engine/pe-node-17 request done id=req-347ac87d route=/price-engine/v1/create status=400 latency_ms=158
+2026-10-23T16:00:39 ERROR price-engine/pe-node-16 job failed job=price-engine-rollup attempt=5 cause=upstream_timeout
+2026-10-23T16:00:42 INFO  price-engine/pe-node-23 deploy step release=price-engine-4.21.0 step=healthcheck result=ok took_s=106
+2026-10-23T16:00:49 NOTE  price-engine/pe-node-17 operator=ejlim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-23T16:00:50 INFO  price-engine/pe-node-23 request done id=req-5c88c91d route=/price-engine/v1/update status=200 latency_ms=108
+2026-10-23T16:00:57 INFO  price-engine/pe-node-09 request done id=req-9554e231 route=/price-engine/v1/get status=200 latency_ms=189
+2026-10-23T16:00:59 INFO  price-engine/pe-node-06 ticket linked id=OPS-48276 reason=quota_increase
+2026-10-23T16:01:00 INFO  price-engine/pe-node-24 request done id=req-f02287f0 route=/price-engine/v1/create status=429 latency_ms=233
+2026-10-23T16:01:04 INFO  price-engine/pe-node-20 config applied key=retry.backoff_ms value=49 by=ejlim
+2026-10-23T16:01:07 NOTE  price-engine/pe-node-10 operator=shkim memo="pe-node-10 재기동 후 지표 정상 확인."
+2026-10-23T16:01:09 INFO  price-engine/pe-node-06 config applied key=tls.session_cache value=false by=yjchoi
+2026-10-23T16:01:10 INFO  price-engine/pe-node-19 request done id=req-b3165c20 route=/price-engine/v1/create status=429 latency_ms=685
+2026-10-23T16:01:11 INFO  price-engine/pe-node-19 request done id=req-6274abe4 route=/price-engine/v1/status status=200 latency_ms=264
+2026-10-23T16:01:12 INFO  price-engine/pe-node-16 pool resize target=price-engine-upstream max_pool_size=190 prev=213
+2026-10-23T16:01:17 INFO  price-engine/pe-node-09 request done id=req-369cce20 route=/price-engine/v1/create status=200 latency_ms=49
+2026-10-23T16:01:24 INFO  price-engine/pe-node-19 config applied key=tls.session_cache value=5224 by=shkim
+2026-10-23T16:01:31 INFO  price-engine/pe-node-12 request done id=req-7b94b0fe route=/price-engine/v1/verify status=200 latency_ms=235
+2026-10-23T16:01:36 INFO  price-engine/pe-node-23 config applied key=limiter.rps value=true by=ejlim
+2026-10-23T16:01:43 INFO  price-engine/pe-node-03 request done id=req-b884e402 route=/price-engine/v1/verify status=400 latency_ms=107
+2026-10-23T16:01:48 INFO  price-engine/pe-node-23 config applied key=worker.concurrency value=7 by=jhpark
+2026-10-23T16:01:55 INFO  price-engine/pe-node-02 request done id=req-6a8ca097 route=/price-engine/v1/cancel status=404 latency_ms=655
+2026-10-23T16:01:57 INFO  price-engine/pe-node-10 deploy step release=price-engine-4.16.9 step=drain result=ok took_s=150
+2026-10-23T16:02:01 INFO  price-engine/pe-node-23 config applied key=worker.concurrency value=16 by=jhpark
+2026-10-23T16:02:06 INFO  price-engine/pe-node-23 request done id=req-8bd750c7 route=/price-engine/v1/get status=429 latency_ms=48
+2026-10-23T16:02:12 INFO  price-engine/pe-node-17 config applied key=retry.backoff_ms value=false by=jhpark
+2026-10-23T16:02:18 INFO  price-engine/pe-node-21 request done id=req-82028476 route=/price-engine/v1/create status=429 latency_ms=125
+2026-10-23T16:02:20 INFO  price-engine/pe-node-07 pool resize target=price-engine-worker max_pool_size=221 prev=202
+2026-10-23T16:02:26 NOTE  price-engine/pe-node-15 operator=dwjung memo="인증서 갱신 일정 확인. 만료까지 39일 남음."
+2026-10-23T16:02:32 INFO  price-engine/pe-node-02 deploy step release=price-engine-4.21.4 step=healthcheck result=ok took_s=144
+2026-10-23T16:02:37 INFO  price-engine/pe-node-24 cache stats region=us-we-2b hit_ratio=67.9% evictions=30351
+2026-10-23T16:02:40 WARN  price-engine/pe-node-05 alert fired rule=conn_pool_saturated value=87% threshold=78%
+2026-10-23T16:02:45 INFO  price-engine/pe-node-23 request done id=req-263c97d9 route=/price-engine/v1/sync status=200 latency_ms=37
+2026-10-23T16:02:49 WARN  price-engine/pe-node-24 alert fired rule=fd_usage_high value=52% threshold=49%
+2026-10-23T16:02:56 INFO  price-engine/pe-node-18 config applied key=cache.ttl_s value=8696 by=dwjung
+2026-10-23T16:03:01 WARN  price-engine/pe-node-19 alert fired rule=replica_lag_high value=54s threshold=45s
+2026-10-23T16:03:02 INFO  price-engine/pe-node-11 request done id=req-d03ad97b route=/price-engine/v1/list status=200 latency_ms=15
+2026-10-23T16:03:08 INFO  price-engine/pe-node-17 backup finished file=/vault/weekly/audit_2026w44.tar.zst size_mb=41376 checksum=2f54d8e0
+2026-10-23T16:03:13 NOTE  price-engine/pe-node-08 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-23T16:03:20 INFO  price-engine/pe-node-19 deploy step release=price-engine-4.19.4 step=drain result=ok took_s=211
+2026-10-23T16:03:24 INFO  price-engine/pe-node-13 request done id=req-57f3e752 route=/price-engine/v1/create status=200 latency_ms=16
+2026-10-23T16:03:29 INFO  price-engine/pe-node-05 ticket linked id=OPS-49218 reason=schema_change
+2026-10-23T16:03:31 INFO  price-engine/pe-node-01 request done id=req-5fdd029f route=/price-engine/v1/cancel status=409 latency_ms=176
+2026-10-23T16:03:38 WARN  price-engine/pe-node-06 alert fired rule=error_ratio_high value=87% threshold=80%
+2026-10-23T16:03:45 INFO  price-engine/pe-node-19 deploy step release=price-engine-4.22.7 step=start result=ok took_s=118
+2026-10-23T16:03:47 INFO  price-engine/pe-node-10 request done id=req-e8dd8d48 route=/price-engine/v1/list status=500 latency_ms=30
+2026-10-23T16:03:54 INFO  price-engine/pe-node-17 request done id=req-03108bce route=/price-engine/v1/list status=200 latency_ms=176
+2026-10-23T16:03:56 INFO  price-engine/pe-node-22 request done id=req-62cafb97 route=/price-engine/v1/verify status=201 latency_ms=412
+2026-10-23T16:04:03 WARN  price-engine/pe-node-11 alert fired rule=disk_usage_warning value=99% threshold=93%
+2026-10-23T16:04:04 INFO  price-engine/pe-node-13 request done id=req-2a16b246 route=/price-engine/v1/sync status=200 latency_ms=67
+2026-10-23T16:04:06 INFO  price-engine/pe-node-09 request done id=req-063ababe route=/price-engine/v1/verify status=409 latency_ms=87
+2026-10-23T16:04:10 INFO  price-engine/pe-node-13 request done id=req-04f02cd6 route=/price-engine/v1/verify status=200 latency_ms=253
+2026-10-23T16:04:17 INFO  price-engine/pe-node-20 request done id=req-0c1cba4c route=/price-engine/v1/update status=429 latency_ms=161
+2026-10-23T16:04:23 INFO  price-engine/pe-node-06 request done id=req-29330861 route=/price-engine/v1/status status=200 latency_ms=108
+2026-10-23T16:04:28 INFO  price-engine/pe-node-03 request done id=req-d2069023 route=/price-engine/v1/create status=201 latency_ms=72
+2026-10-23T16:04:34 INFO  price-engine/pe-node-02 request done id=req-8bd45898 route=/price-engine/v1/status status=200 latency_ms=122
+2026-10-23T16:04:39 INFO  price-engine/pe-node-21 ticket linked id=OPS-49321 reason=schema_change
+2026-10-23T16:04:45 NOTE  price-engine/pe-node-15 operator=ejlim memo="타임아웃을 14ms에서 46ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-23T16:04:47 INFO  price-engine/pe-node-09 request done id=req-4dabece8 route=/price-engine/v1/sync status=409 latency_ms=212
+2026-10-23T16:04:48 NOTE  price-engine/pe-node-19 operator=yjchoi memo="임시 증설 43대 추가. 내일 오전 회수 예정."
+2026-10-23T16:04:49 INFO  price-engine/pe-node-01 request done id=req-481d8045 route=/price-engine/v1/status status=200 latency_ms=51
+2026-10-23T16:04:53 INFO  price-engine/pe-node-23 deploy step release=price-engine-4.10.1 step=healthcheck result=ok took_s=166
+2026-10-23T16:05:00 WARN  price-engine/pe-node-24 alert fired rule=error_ratio_high value=85% threshold=74%
+2026-10-23T16:05:05 WARN  price-engine/pe-node-14 alert fired rule=gc_pause_long value=82ms threshold=79ms
+2026-10-23T16:05:11 INFO  price-engine/pe-node-24 deploy step release=price-engine-4.17.0 step=drain result=ok took_s=91
+2026-10-23T16:05:12 NOTE  price-engine/pe-node-01 operator=hbyoon memo="타임아웃을 20ms에서 50ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-23T16:05:17 INFO  price-engine/pe-node-15 pool resize target=price-engine-db max_pool_size=163 prev=198
+2026-10-23T16:05:24 INFO  price-engine/pe-node-12 request done id=req-5bd516c1 route=/price-engine/v1/update status=200 latency_ms=369
+2026-10-23T16:05:27 INFO  price-engine/pe-node-06 request done id=req-67ee0bc2 route=/price-engine/v1/sync status=400 latency_ms=420
+2026-10-23T16:05:31 ERROR price-engine/pe-node-03 job failed job=price-engine-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-23T16:05:35 INFO  price-engine/pe-node-02 request done id=req-e0419d38 route=/price-engine/v1/list status=400 latency_ms=110
+2026-10-23T16:05:36 INFO  price-engine/pe-node-07 request done id=req-3ded3f33 route=/price-engine/v1/cancel status=200 latency_ms=204
+2026-10-23T16:05:40 INFO  price-engine/pe-node-06 request done id=req-f91787fe route=/price-engine/v1/get status=200 latency_ms=47
+2026-10-23T16:05:47 INFO  price-engine/pe-node-14 request done id=req-41615166 route=/price-engine/v1/status status=201 latency_ms=206
+2026-10-23T16:05:54 INFO  price-engine/pe-node-11 request done id=req-a9ffde17 route=/price-engine/v1/update status=200 latency_ms=130
+2026-10-23T16:05:58 INFO  price-engine/pe-node-24 request done id=req-5cf9ab4e route=/price-engine/v1/verify status=200 latency_ms=37
+2026-10-23T16:06:04 INFO  price-engine/pe-node-18 backup finished file=/vault/weekly/sessions_2026w39.tar.zst size_mb=60027 checksum=d8e000d7
+2026-10-23T16:06:11 NOTE  price-engine/pe-node-18 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-23T16:06:17 INFO  price-engine/pe-node-04 request done id=req-405ec886 route=/price-engine/v1/status status=200 latency_ms=65
+2026-10-23T16:06:23 INFO  price-engine/pe-node-06 request done id=req-667ab47f route=/price-engine/v1/update status=500 latency_ms=58
+2026-10-23T16:06:24 INFO  price-engine/pe-node-20 request done id=req-e8553e81 route=/price-engine/v1/sync status=429 latency_ms=191
+2026-10-23T16:06:29 INFO  price-engine/pe-node-06 deploy step release=price-engine-4.11.1 step=pull_image result=ok took_s=27
+2026-10-23T16:06:33 INFO  price-engine/pe-node-24 config applied key=canary.traffic_percent value=50% by=mjlee
+2026-10-23T16:06:40 INFO  price-engine/pe-node-19 ticket linked id=OPS-47453 reason=log_volume_spike
+2026-10-23T16:06:45 ERROR price-engine/pe-node-03 job failed job=price-engine-rollup attempt=3 cause=oom_killed
+2026-10-23T16:06:46 INFO  price-engine/pe-node-16 backup finished file=/vault/daily/inventory_20261020.tar.zst size_mb=30249 checksum=f0962966
+2026-10-23T16:06:51 INFO  price-engine/pe-node-01 request done id=req-38f0f93f route=/price-engine/v1/create status=200 latency_ms=26
+2026-10-23T16:06:56 INFO  price-engine/pe-node-06 request done id=req-80d24d9e route=/price-engine/v1/status status=200 latency_ms=73
+2026-10-23T16:07:02 INFO  price-engine/pe-node-02 backup finished file=/vault/daily/payments_20261008.tar.zst size_mb=70227 checksum=7ff01785
+2026-10-23T16:07:04 INFO  price-engine/pe-node-08 ticket linked id=OPS-49967 reason=dependency_upgrade
+2026-10-23T16:07:10 INFO  price-engine/pe-node-14 pool resize target=price-engine-queue max_pool_size=193 prev=171
+2026-10-23T16:07:14 INFO  price-engine/pe-node-06 request done id=req-6dd81ac2 route=/price-engine/v1/status status=200 latency_ms=191
+2026-10-23T16:07:16 INFO  price-engine/pe-node-04 request done id=req-e2a97de3 route=/price-engine/v1/cancel status=200 latency_ms=319
+2026-10-23T16:07:21 INFO  price-engine/pe-node-01 backup finished file=/vault/daily/orders_20261021.tar.zst size_mb=26483 checksum=db133930
+2026-10-23T16:07:22 ERROR price-engine/pe-node-06 job failed job=price-engine-cleanup attempt=1 cause=dns_failure
+2026-10-23T16:07:27 INFO  price-engine/pe-node-23 ticket linked id=OPS-48567 reason=schema_change
+2026-10-23T16:07:28 INFO  price-engine/pe-node-12 ticket linked id=OPS-47784 reason=runbook_update
+2026-10-23T16:07:29 INFO  price-engine/pe-node-21 deploy step release=price-engine-4.17.7 step=shift_traffic_10 result=ok took_s=39
+2026-10-23T16:07:34 INFO  price-engine/pe-node-18 backup finished file=/vault/weekly/audit_2026w33.tar.zst size_mb=48664 checksum=9803308a
+2026-10-23T16:07:38 ERROR price-engine/pe-node-03 job failed job=price-engine-rollup attempt=3 cause=oom_killed
+2026-10-23T16:07:41 INFO  price-engine/pe-node-11 request done id=req-f0e7b4df route=/price-engine/v1/sync status=503 latency_ms=92
+2026-10-23T16:07:45 INFO  price-engine/pe-node-09 deploy step release=price-engine-4.20.5 step=drain result=ok took_s=202
+2026-10-23T16:07:50 INFO  price-engine/pe-node-05 request done id=req-acdf6e78 route=/price-engine/v1/status status=200 latency_ms=112
+2026-10-23T16:07:55 INFO  price-engine/pe-node-14 pool resize target=price-engine-db max_pool_size=235 prev=257
+2026-10-23T16:08:00 INFO  price-engine/pe-node-02 config applied key=log.sample_rate value=false by=shkim
+2026-10-23T16:08:03 INFO  price-engine/pe-node-13 request done id=req-04c111c4 route=/price-engine/v1/sync status=500 latency_ms=180
+2026-10-23T16:08:06 INFO  price-engine/pe-node-09 request done id=req-3bd6cfd5 route=/price-engine/v1/verify status=200 latency_ms=38
+2026-10-23T16:08:12 INFO  price-engine/pe-node-22 config applied key=retry.backoff_ms value=6914 by=shkim
+2026-10-23T16:08:18 INFO  price-engine/pe-node-01 request done id=req-76aed533 route=/price-engine/v1/sync status=200 latency_ms=47
+2026-10-23T16:08:22 WARN  price-engine/pe-node-01 alert fired rule=gc_pause_long value=82ms threshold=70ms
+2026-10-23T16:08:27 INFO  price-engine/pe-node-12 request done id=req-e3f0d9d1 route=/price-engine/v1/status status=200 latency_ms=915
+2026-10-23T16:08:33 INFO  price-engine/pe-node-17 request done id=req-88f0a5f4 route=/price-engine/v1/get status=200 latency_ms=131
+2026-10-23T16:08:38 INFO  price-engine/pe-node-17 request done id=req-b7f7d24b route=/price-engine/v1/verify status=200 latency_ms=92
+2026-10-23T16:08:44 INFO  price-engine/pe-node-20 request done id=req-a1feb0ee route=/price-engine/v1/verify status=200 latency_ms=135
+2026-10-23T16:08:46 INFO  price-engine/pe-node-04 request done id=req-a3afc028 route=/price-engine/v1/cancel status=200 latency_ms=1546
+2026-10-23T16:08:53 INFO  price-engine/pe-node-13 request done id=req-b9753351 route=/price-engine/v1/sync status=200 latency_ms=61
+2026-10-23T16:08:58 INFO  price-engine/pe-node-15 pool resize target=price-engine-queue max_pool_size=151 prev=164
+2026-10-23T16:09:02 INFO  price-engine/pe-node-01 pool resize target=price-engine-cache max_pool_size=231 prev=183
+2026-10-23T16:09:03 WARN  price-engine/pe-node-05 alert fired rule=queue_depth_high value=59 threshold=49
+2026-10-23T16:09:08 INFO  price-engine/pe-node-18 deploy step release=price-engine-4.14.2 step=migrate result=ok took_s=202
+2026-10-23T16:09:11 INFO  price-engine/pe-node-22 request done id=req-fea4d406 route=/price-engine/v1/sync status=400 latency_ms=79
+2026-10-23T16:09:14 INFO  price-engine/pe-node-22 config applied key=canary.latency_p99_threshold_ms value=true by=shkim
+2026-10-23T16:09:21 ERROR price-engine/pe-node-11 job failed job=price-engine-export attempt=5 cause=bad_checksum
+2026-10-23T16:09:25 INFO  price-engine/pe-node-22 request done id=req-c1bad558 route=/price-engine/v1/verify status=404 latency_ms=110
+2026-10-23T16:09:26 INFO  price-engine/pe-node-21 request done id=req-624b193d route=/price-engine/v1/list status=200 latency_ms=65
+2026-10-23T16:09:30 INFO  price-engine/pe-node-13 request done id=req-12fe7376 route=/price-engine/v1/sync status=404 latency_ms=109
+2026-10-23T16:09:34 INFO  price-engine/pe-node-03 cache stats region=us-we-2b hit_ratio=71.7% evictions=24920
+2026-10-23T16:09:36 INFO  price-engine/pe-node-10 pool resize target=price-engine-queue max_pool_size=85 prev=32
+2026-10-23T16:09:38 INFO  price-engine/pe-node-18 request done id=req-cc626634 route=/price-engine/v1/create status=200 latency_ms=164
+2026-10-23T16:09:45 INFO  price-engine/pe-node-12 request done id=req-b51d778b route=/price-engine/v1/create status=200 latency_ms=117
+2026-10-23T16:09:50 WARN  price-engine/pe-node-12 alert fired rule=queue_depth_high value=98 threshold=91
+2026-10-23T16:09:54 INFO  price-engine/pe-node-02 deploy step release=price-engine-4.22.5 step=pull_image result=ok took_s=41
+2026-10-23T16:09:56 INFO  price-engine/pe-node-05 request done id=req-d60e4c8a route=/price-engine/v1/update status=500 latency_ms=77
+2026-10-23T16:09:57 INFO  price-engine/pe-node-04 request done id=req-853f54e4 route=/price-engine/v1/update status=201 latency_ms=100
+2026-10-23T16:10:00 INFO  price-engine/pe-node-20 request done id=req-3a0c3260 route=/price-engine/v1/list status=200 latency_ms=49
+2026-10-23T16:10:03 INFO  price-engine/pe-node-16 request done id=req-52704351 route=/price-engine/v1/cancel status=200 latency_ms=367
+2026-10-23T16:10:05 INFO  price-engine/pe-node-07 request done id=req-6b0e4ad6 route=/price-engine/v1/create status=200 latency_ms=101
+2026-10-23T16:10:06 INFO  price-engine/pe-node-15 config applied key=queue.batch_size value=65% by=jhpark
+2026-10-23T16:10:12 INFO  price-engine/pe-node-07 config applied key=http.max_conns value=13 by=hbyoon
+2026-10-23T16:10:19 ERROR price-engine/pe-node-20 job failed job=price-engine-cleanup attempt=3 cause=lock_wait_exceeded
+2026-10-23T16:10:21 INFO  price-engine/pe-node-18 pool resize target=price-engine-db max_pool_size=378 prev=392
+2026-10-23T16:10:22 INFO  price-engine/pe-node-06 request done id=req-d7af1b50 route=/price-engine/v1/sync status=200 latency_ms=85
+2026-10-23T16:10:23 INFO  price-engine/pe-node-04 request done id=req-7d009f0e route=/price-engine/v1/list status=409 latency_ms=130
+2026-10-23T16:10:24 INFO  price-engine/pe-node-24 cache stats region=us-we-2b hit_ratio=78.7% evictions=26532
+2026-10-23T16:10:25 INFO  price-engine/pe-node-23 ticket linked id=OPS-47287 reason=dns_ttl_change
+2026-10-23T16:10:32 INFO  price-engine/pe-node-21 request done id=req-32a2d02c route=/price-engine/v1/list status=200 latency_ms=277
+2026-10-23T16:10:36 WARN  price-engine/pe-node-04 alert fired rule=queue_depth_high value=61 threshold=46
+2026-10-23T16:10:37 INFO  price-engine/pe-node-09 pool resize target=price-engine-upstream max_pool_size=314 prev=303
+2026-10-23T16:10:42 INFO  price-engine/pe-node-22 deploy step release=price-engine-4.19.0 step=drain result=ok took_s=171
+2026-10-23T16:10:43 INFO  price-engine/pe-node-03 request done id=req-6d3172c5 route=/price-engine/v1/verify status=409 latency_ms=53
+2026-10-23T16:10:44 INFO  price-engine/pe-node-21 request done id=req-ec02b9f3 route=/price-engine/v1/create status=200 latency_ms=206
+2026-10-23T16:10:45 INFO  price-engine/pe-node-07 request done id=req-99d3a795 route=/price-engine/v1/status status=204 latency_ms=80
+2026-10-23T16:10:46 INFO  price-engine/pe-node-17 request done id=req-8fb0dad6 route=/price-engine/v1/cancel status=200 latency_ms=51
+2026-10-23T16:10:50 INFO  price-engine/pe-node-04 request done id=req-f0f90a8b route=/price-engine/v1/update status=200 latency_ms=191
+2026-10-23T16:10:55 INFO  price-engine/pe-node-01 request done id=req-c8b0279c route=/price-engine/v1/cancel status=200 latency_ms=193
+2026-10-23T16:11:00 INFO  price-engine/pe-node-13 request done id=req-693c582f route=/price-engine/v1/list status=200 latency_ms=41
+2026-10-23T16:11:03 INFO  price-engine/pe-node-01 config applied key=queue.batch_size value=90% by=sykang
+2026-10-23T16:11:05 INFO  price-engine/pe-node-19 config applied key=shard.count value=false by=hbyoon
+2026-10-23T16:11:08 INFO  price-engine/pe-node-04 request done id=req-ccfdc9ee route=/price-engine/v1/create status=500 latency_ms=80
+2026-10-23T16:11:14 INFO  price-engine/pe-node-10 request done id=req-bba687fb route=/price-engine/v1/verify status=200 latency_ms=112
+2026-10-23T16:11:19 INFO  price-engine/pe-node-20 config applied key=flush.interval_ms value=57% by=jhpark
+2026-10-23T16:11:26 WARN  price-engine/pe-node-01 alert fired rule=p99_latency_high value=81ms threshold=76ms
+2026-10-23T16:11:31 INFO  price-engine/pe-node-04 pool resize target=price-engine-worker max_pool_size=65 prev=57
+2026-10-23T16:11:37 INFO  price-engine/pe-node-05 request done id=req-addf3f76 route=/price-engine/v1/cancel status=409 latency_ms=100
+2026-10-23T16:11:41 INFO  price-engine/pe-node-08 config applied key=log.sample_rate value=28 by=mjlee
+2026-10-23T16:11:43 INFO  price-engine/pe-node-03 request done id=req-a244b0de route=/price-engine/v1/get status=200 latency_ms=95
+2026-10-23T16:11:47 INFO  price-engine/pe-node-09 ticket linked id=OPS-48018 reason=dns_ttl_change
+2026-10-23T16:11:54 INFO  price-engine/pe-node-21 request done id=req-5c2f8b1f route=/price-engine/v1/verify status=200 latency_ms=112
+2026-10-23T16:11:56 INFO  price-engine/pe-node-16 deploy step release=price-engine-4.18.9 step=warmup result=ok took_s=198
+2026-10-23T16:12:02 INFO  price-engine/pe-node-09 request done id=req-c5882453 route=/price-engine/v1/cancel status=503 latency_ms=210
+2026-10-23T16:12:04 INFO  price-engine/pe-node-09 backup finished file=/vault/weekly/orders_2026w39.tar.zst size_mb=64240 checksum=21a50fc8
+2026-10-23T16:12:05 INFO  price-engine/pe-node-24 pool resize target=price-engine-upstream max_pool_size=96 prev=70
+2026-10-23T16:12:07 INFO  price-engine/pe-node-07 backup finished file=/vault/daily/sessions_20261011.tar.zst size_mb=80158 checksum=38bce16b
+2026-10-23T16:12:12 NOTE  price-engine/pe-node-20 operator=dwjung memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-23T16:12:15 INFO  price-engine/pe-node-19 ticket linked id=OPS-49670 reason=log_volume_spike
+2026-10-23T16:12:19 INFO  price-engine/pe-node-12 request done id=req-1580f65f route=/price-engine/v1/status status=400 latency_ms=124
+2026-10-23T16:12:26 WARN  price-engine/pe-node-17 alert fired rule=p99_latency_high value=75ms threshold=63ms
+2026-10-23T16:12:30 WARN  price-engine/pe-node-06 alert fired rule=disk_usage_warning value=77% threshold=64%
+2026-10-23T16:12:31 INFO  price-engine/pe-node-19 backup finished file=/vault/weekly/audit_2026w36.tar.zst size_mb=47240 checksum=c3411cb0
+2026-10-23T16:12:32 INFO  price-engine/pe-node-02 request done id=req-847c550d route=/price-engine/v1/sync status=200 latency_ms=219
+2026-10-23T16:12:33 INFO  price-engine/pe-node-07 backup finished file=/vault/weekly/audit_2026w39.tar.zst size_mb=29104 checksum=6e9e8f37
+2026-10-23T16:12:37 INFO  price-engine/pe-node-08 request done id=req-10d66dab route=/price-engine/v1/create status=200 latency_ms=115
+2026-10-23T16:12:43 INFO  price-engine/pe-node-01 request done id=req-2fdf3816 route=/price-engine/v1/create status=204 latency_ms=80
+2026-10-23T16:12:45 INFO  price-engine/pe-node-23 request done id=req-de4a85a9 route=/price-engine/v1/verify status=200 latency_ms=73
+2026-10-23T16:12:50 INFO  price-engine/pe-node-07 deploy step release=price-engine-4.21.3 step=start result=ok took_s=201
+2026-10-23T16:12:55 INFO  price-engine/pe-node-08 request done id=req-80a54151 route=/price-engine/v1/create status=200 latency_ms=147
+2026-10-23T16:12:56 INFO  price-engine/pe-node-08 request done id=req-37d54eeb route=/price-engine/v1/create status=200 latency_ms=114
+2026-10-23T16:12:59 INFO  price-engine/pe-node-13 deploy step release=price-engine-4.15.8 step=verify result=ok took_s=2
+2026-10-23T16:13:01 INFO  price-engine/pe-node-23 pool resize target=price-engine-cache max_pool_size=53 prev=18
+2026-10-23T16:13:07 INFO  price-engine/pe-node-21 ticket linked id=OPS-48960 reason=oncall_handoff
+2026-10-23T16:13:12 INFO  price-engine/pe-node-10 ticket linked id=OPS-48372 reason=node_drain
+2026-10-23T16:13:19 INFO  price-engine/pe-node-21 deploy step release=price-engine-4.12.2 step=shift_traffic_10 result=ok took_s=29
+2026-10-23T16:13:26 NOTE  price-engine/pe-node-01 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-23T16:13:29 INFO  price-engine/pe-node-02 request done id=req-605ad3b2 route=/price-engine/v1/verify status=201 latency_ms=155
+2026-10-23T16:13:36 NOTE  price-engine/pe-node-01 operator=dwjung memo="캐시 TTL을 44초로 되돌림. 오래된 응답이 보고됨."
+2026-10-23T16:13:40 INFO  price-engine/pe-node-19 request done id=req-e7867c96 route=/price-engine/v1/verify status=404 latency_ms=101
+2026-10-23T16:13:43 INFO  price-engine/pe-node-01 request done id=req-de964b13 route=/price-engine/v1/cancel status=200 latency_ms=191
+2026-10-23T16:13:50 INFO  price-engine/pe-node-14 request done id=req-0deedeaa route=/price-engine/v1/create status=200 latency_ms=118
+2026-10-23T16:13:57 INFO  price-engine/pe-node-23 request done id=req-52ab13ef route=/price-engine/v1/cancel status=400 latency_ms=116
+2026-10-23T16:14:01 NOTE  price-engine/pe-node-23 operator=ejlim memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-23T16:14:03 INFO  price-engine/pe-node-11 backup finished file=/vault/weekly/audit_2026w35.tar.zst size_mb=85153 checksum=2e3c3197
+2026-10-23T16:14:06 INFO  price-engine/pe-node-10 request done id=req-a5b39390 route=/price-engine/v1/list status=200 latency_ms=270
+2026-10-23T16:14:10 INFO  price-engine/pe-node-02 ticket linked id=OPS-47930 reason=oncall_handoff
+2026-10-23T16:14:17 INFO  price-engine/pe-node-09 pool resize target=price-engine-upstream max_pool_size=92 prev=138
+2026-10-23T16:14:22 WARN  price-engine/pe-node-04 alert fired rule=p99_latency_high value=80ms threshold=71ms
+2026-10-23T16:14:27 WARN  price-engine/pe-node-05 alert fired rule=conn_pool_saturated value=50% threshold=46%
+2026-10-23T16:14:30 INFO  price-engine/pe-node-03 request done id=req-96017db6 route=/price-engine/v1/create status=503 latency_ms=114
+2026-10-23T16:14:37 INFO  price-engine/pe-node-23 request done id=req-8f878bcd route=/price-engine/v1/cancel status=200 latency_ms=145
+2026-10-23T16:14:40 INFO  price-engine/pe-node-08 request done id=req-905a2e59 route=/price-engine/v1/status status=200 latency_ms=569
+2026-10-23T16:14:41 INFO  price-engine/pe-node-08 request done id=req-5464a99a route=/price-engine/v1/verify status=500 latency_ms=148
+2026-10-23T16:14:45 INFO  price-engine/pe-node-14 request done id=req-8ff3ab8e route=/price-engine/v1/list status=204 latency_ms=21
+2026-10-23T16:14:51 INFO  price-engine/pe-node-01 request done id=req-34ac2b17 route=/price-engine/v1/update status=200 latency_ms=63
+2026-10-23T16:14:58 INFO  price-engine/pe-node-20 request done id=req-67211e3e route=/price-engine/v1/list status=404 latency_ms=169
+2026-10-23T16:15:04 NOTE  price-engine/pe-node-22 operator=jhpark memo="pe-node-22 재기동 후 지표 정상 확인."
+2026-10-23T16:15:06 INFO  price-engine/pe-node-24 request done id=req-75d7f677 route=/price-engine/v1/sync status=200 latency_ms=31
+2026-10-23T16:15:09 INFO  price-engine/pe-node-03 request done id=req-da798634 route=/price-engine/v1/list status=404 latency_ms=225
+2026-10-23T16:15:11 INFO  price-engine/pe-node-13 request done id=req-5f8ba854 route=/price-engine/v1/create status=429 latency_ms=51
+2026-10-23T16:15:14 INFO  price-engine/pe-node-13 request done id=req-04bd9e57 route=/price-engine/v1/cancel status=204 latency_ms=46
+2026-10-23T16:15:19 INFO  price-engine/pe-node-07 request done id=req-2cddc2f5 route=/price-engine/v1/sync status=200 latency_ms=103
+2026-10-23T16:15:21 INFO  price-engine/pe-node-17 request done id=req-3c51040e route=/price-engine/v1/create status=200 latency_ms=687
+2026-10-23T16:15:25 WARN  price-engine/pe-node-05 alert fired rule=heap_used_high value=67% threshold=62%
+2026-10-23T16:15:29 INFO  price-engine/pe-node-11 request done id=req-9615e48e route=/price-engine/v1/sync status=201 latency_ms=435
+2026-10-23T16:15:31 INFO  price-engine/pe-node-12 request done id=req-9b6f77dc route=/price-engine/v1/create status=200 latency_ms=104
+2026-10-23T16:15:38 INFO  price-engine/pe-node-19 request done id=req-7e4a128f route=/price-engine/v1/verify status=204 latency_ms=217
+2026-10-23T16:15:45 INFO  price-engine/pe-node-22 request done id=req-43eed9cf route=/price-engine/v1/get status=200 latency_ms=87
+2026-10-23T16:15:49 NOTE  price-engine/pe-node-15 operator=sykang memo="점검 창을 51분 연장함. 승인: 류태경 팀장."
+2026-10-23T16:15:51 INFO  price-engine/pe-node-18 pool resize target=price-engine-db max_pool_size=373 prev=333
+2026-10-23T16:15:56 INFO  price-engine/pe-node-24 request done id=req-cc8c2e4a route=/price-engine/v1/status status=500 latency_ms=325
+2026-10-23T16:16:01 INFO  price-engine/pe-node-23 ticket linked id=OPS-47627 reason=node_drain
+2026-10-23T16:16:08 INFO  price-engine/pe-node-09 request done id=req-988f4cf7 route=/price-engine/v1/create status=503 latency_ms=107
+2026-10-23T16:16:13 INFO  price-engine/pe-node-01 request done id=req-51124757 route=/price-engine/v1/sync status=200 latency_ms=108
+2026-10-23T16:16:16 NOTE  price-engine/pe-node-17 operator=shkim memo="로그 보존 기간은 32일로 유지하기로 함."
+2026-10-23T16:16:20 INFO  price-engine/pe-node-24 request done id=req-1000093a route=/price-engine/v1/status status=201 latency_ms=111
+2026-10-23T16:16:26 INFO  price-engine/pe-node-16 request done id=req-eff3502a route=/price-engine/v1/sync status=200 latency_ms=53
+2026-10-23T16:16:32 INFO  price-engine/pe-node-08 request done id=req-ea9efc33 route=/price-engine/v1/create status=200 latency_ms=814
+2026-10-23T16:16:35 INFO  price-engine/pe-node-08 config applied key=worker.concurrency value=true by=yjchoi
+2026-10-23T16:16:37 INFO  price-engine/pe-node-23 config applied key=canary.latency_p99_threshold_ms value=4974 by=sykang
+2026-10-23T16:16:43 ERROR price-engine/pe-node-20 job failed job=price-engine-reindex attempt=1 cause=oom_killed
+2026-10-23T16:16:45 INFO  price-engine/pe-node-18 config applied key=flush.interval_ms value=false by=yjchoi
+2026-10-23T16:16:51 INFO  price-engine/pe-node-15 request done id=req-772416cf route=/price-engine/v1/sync status=409 latency_ms=417
+2026-10-23T16:16:58 ERROR price-engine/pe-node-11 job failed job=price-engine-cleanup attempt=3 cause=bad_checksum
+2026-10-23T16:17:01 INFO  price-engine/pe-node-15 request done id=req-f08692fd route=/price-engine/v1/update status=200 latency_ms=392
+2026-10-23T16:17:03 INFO  price-engine/pe-node-05 request done id=req-326a1f41 route=/price-engine/v1/update status=200 latency_ms=366
+2026-10-23T16:17:10 INFO  price-engine/pe-node-20 request done id=req-65f61efd route=/price-engine/v1/list status=200 latency_ms=476
+2026-10-23T16:17:17 INFO  price-engine/pe-node-10 deploy step release=price-engine-4.10.5 step=pull_image result=ok took_s=124
+2026-10-23T16:17:19 INFO  price-engine/pe-node-14 request done id=req-74acb27e route=/price-engine/v1/status status=200 latency_ms=103
+2026-10-23T16:17:21 INFO  price-engine/pe-node-03 cache stats region=ap-ne-2a hit_ratio=95.7% evictions=12363
+2026-10-23T16:17:23 INFO  price-engine/pe-node-12 request done id=req-64b9cd03 route=/price-engine/v1/list status=409 latency_ms=310
+2026-10-23T16:17:24 INFO  price-engine/pe-node-04 request done id=req-52ef87f9 route=/price-engine/v1/list status=200 latency_ms=59
+2026-10-23T16:17:30 WARN  price-engine/pe-node-22 alert fired rule=heap_used_high value=97% threshold=88%
+2026-10-23T16:17:34 INFO  price-engine/pe-node-17 config applied key=shard.count value=29 by=jhpark
+2026-10-23T16:17:40 INFO  price-engine/pe-node-20 deploy step release=price-engine-4.17.5 step=shift_traffic_100 result=ok took_s=78
+2026-10-23T16:17:41 INFO  price-engine/pe-node-16 request done id=req-5d95987d route=/price-engine/v1/get status=200 latency_ms=135
+2026-10-23T16:17:47 WARN  price-engine/pe-node-18 alert fired rule=gc_pause_long value=79ms threshold=70ms
+2026-10-23T16:17:50 NOTE  price-engine/pe-node-24 operator=hbyoon memo="캐시 TTL을 4초로 되돌림. 오래된 응답이 보고됨."
+2026-10-23T16:17:56 INFO  price-engine/pe-node-18 request done id=req-3726256b route=/price-engine/v1/list status=409 latency_ms=44
+2026-10-23T16:17:57 INFO  price-engine/pe-node-19 request done id=req-6d7ad2be route=/price-engine/v1/status status=200 latency_ms=262
+2026-10-23T16:17:59 INFO  price-engine/pe-node-06 config applied key=queue.visibility_s value=false by=shkim
+2026-10-23T16:18:03 ERROR price-engine/pe-node-08 job failed job=price-engine-cleanup attempt=2 cause=quota_exceeded
+2026-10-23T16:18:04 INFO  price-engine/pe-node-23 request done id=req-6a3b7f0e route=/price-engine/v1/create status=409 latency_ms=57
+2026-10-23T16:18:11 INFO  price-engine/pe-node-08 request done id=req-d14c4780 route=/price-engine/v1/get status=200 latency_ms=54
+2026-10-23T16:18:14 INFO  price-engine/pe-node-01 request done id=req-ff6b8beb route=/price-engine/v1/create status=409 latency_ms=46
+2026-10-23T16:18:18 INFO  price-engine/pe-node-01 deploy step release=price-engine-4.20.6 step=start result=ok took_s=215
+2026-10-23T16:18:25 INFO  price-engine/pe-node-05 ticket linked id=OPS-47142 reason=log_volume_spike
+2026-10-23T16:18:26 INFO  price-engine/pe-node-19 request done id=req-6410d8ff route=/price-engine/v1/list status=204 latency_ms=208
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

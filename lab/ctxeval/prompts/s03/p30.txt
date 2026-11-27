@@ -1,0 +1,424 @@
+참고용 로그 30: 실험 라우터(ab-router) 트래픽 분할 구간. '확인'이라고만 답해 줘.
+
+2026-11-03T10:28:18 INFO  ab-router/ar-node-23 ticket linked id=OPS-49715 reason=dependency_upgrade
+2026-11-03T10:28:19 INFO  ab-router/ar-node-17 request done id=req-e633bbcf route=/ab-router/v1/verify status=200 latency_ms=206
+2026-11-03T10:28:25 INFO  ab-router/ar-node-24 ticket linked id=OPS-49718 reason=cert_rotation
+2026-11-03T10:28:26 INFO  ab-router/ar-node-02 request done id=req-360ffe2c route=/ab-router/v1/cancel status=200 latency_ms=1105
+2026-11-03T10:28:32 INFO  ab-router/ar-node-07 deploy step release=ab-router-4.11.2 step=verify result=ok took_s=133
+2026-11-03T10:28:39 INFO  ab-router/ar-node-08 ticket linked id=OPS-47100 reason=dependency_upgrade
+2026-11-03T10:28:45 INFO  ab-router/ar-node-11 request done id=req-2c0b1a51 route=/ab-router/v1/status status=400 latency_ms=114
+2026-11-03T10:28:47 WARN  ab-router/ar-node-11 alert fired rule=gc_pause_long value=72ms threshold=63ms
+2026-11-03T10:28:49 WARN  ab-router/ar-node-06 alert fired rule=conn_pool_saturated value=52% threshold=46%
+2026-11-03T10:28:56 INFO  ab-router/ar-node-14 pool resize target=ab-router-db max_pool_size=154 prev=199
+2026-11-03T10:29:03 INFO  ab-router/ar-node-14 request done id=req-94a85183 route=/ab-router/v1/status status=200 latency_ms=150
+2026-11-03T10:29:08 INFO  ab-router/ar-node-23 request done id=req-69d8d17e route=/ab-router/v1/verify status=429 latency_ms=334
+2026-11-03T10:29:10 INFO  ab-router/ar-node-07 deploy step release=ab-router-4.18.4 step=shift_traffic_100 result=ok took_s=221
+2026-11-03T10:29:15 INFO  ab-router/ar-node-07 request done id=req-875ff347 route=/ab-router/v1/list status=200 latency_ms=119
+2026-11-03T10:29:17 INFO  ab-router/ar-node-19 backup finished file=/vault/weekly/inventory_2026w42.tar.zst size_mb=73110 checksum=6b71ef9d
+2026-11-03T10:29:21 INFO  ab-router/ar-node-04 config applied key=queue.batch_size value=false by=hbyoon
+2026-11-03T10:29:27 INFO  ab-router/ar-node-20 request done id=req-ca915927 route=/ab-router/v1/create status=200 latency_ms=105
+2026-11-03T10:29:32 INFO  ab-router/ar-node-08 backup finished file=/vault/weekly/orders_2026w35.tar.zst size_mb=72180 checksum=e5a9689d
+2026-11-03T10:29:39 INFO  ab-router/ar-node-21 request done id=req-42273ffa route=/ab-router/v1/status status=201 latency_ms=146
+2026-11-03T10:29:42 INFO  ab-router/ar-node-24 deploy step release=ab-router-4.11.1 step=shift_traffic_50 result=ok took_s=135
+2026-11-03T10:29:45 WARN  ab-router/ar-node-19 alert fired rule=error_ratio_high value=60% threshold=53%
+2026-11-03T10:29:47 INFO  ab-router/ar-node-11 backup finished file=/vault/daily/orders_20261010.tar.zst size_mb=37796 checksum=1d4b7359
+2026-11-03T10:29:53 ERROR ab-router/ar-node-03 job failed job=ab-router-reindex attempt=4 cause=quota_exceeded
+2026-11-03T10:30:00 INFO  ab-router/ar-node-21 request done id=req-9d5b7b53 route=/ab-router/v1/verify status=201 latency_ms=97
+2026-11-03T10:30:01 INFO  ab-router/ar-node-12 request done id=req-047806e3 route=/ab-router/v1/get status=404 latency_ms=115
+2026-11-03T10:30:05 INFO  ab-router/ar-node-05 request done id=req-6bbf0a55 route=/ab-router/v1/list status=404 latency_ms=47
+2026-11-03T10:30:06 INFO  ab-router/ar-node-03 pool resize target=ab-router-worker max_pool_size=95 prev=77
+2026-11-03T10:30:12 INFO  ab-router/ar-node-03 request done id=req-13f0e58f route=/ab-router/v1/verify status=204 latency_ms=153
+2026-11-03T10:30:13 INFO  ab-router/ar-node-12 request done id=req-8b6146af route=/ab-router/v1/status status=200 latency_ms=150
+2026-11-03T10:30:17 INFO  ab-router/ar-node-10 request done id=req-af72fe03 route=/ab-router/v1/sync status=200 latency_ms=260
+2026-11-03T10:30:20 INFO  ab-router/ar-node-09 request done id=req-8924171f route=/ab-router/v1/create status=409 latency_ms=115
+2026-11-03T10:30:27 WARN  ab-router/ar-node-01 alert fired rule=gc_pause_long value=53ms threshold=50ms
+2026-11-03T10:30:33 INFO  ab-router/ar-node-01 request done id=req-ddabf91b route=/ab-router/v1/get status=204 latency_ms=223
+2026-11-03T10:30:36 INFO  ab-router/ar-node-09 request done id=req-7d6dbb3c route=/ab-router/v1/verify status=404 latency_ms=88
+2026-11-03T10:30:43 INFO  ab-router/ar-node-10 deploy step release=ab-router-4.19.4 step=pull_image result=ok took_s=144
+2026-11-03T10:30:45 WARN  ab-router/ar-node-21 alert fired rule=conn_pool_saturated value=64% threshold=50%
+2026-11-03T10:30:50 INFO  ab-router/ar-node-01 backup finished file=/vault/weekly/payments_2026w39.tar.zst size_mb=47528 checksum=3650895f
+2026-11-03T10:30:54 INFO  ab-router/ar-node-21 config applied key=gc.pause_target_ms value=true by=mjlee
+2026-11-03T10:30:57 INFO  ab-router/ar-node-16 request done id=req-3faea894 route=/ab-router/v1/status status=200 latency_ms=148
+2026-11-03T10:31:04 WARN  ab-router/ar-node-05 alert fired rule=disk_usage_warning value=55% threshold=52%
+2026-11-03T10:31:08 INFO  ab-router/ar-node-12 pool resize target=ab-router-worker max_pool_size=228 prev=232
+2026-11-03T10:31:09 ERROR ab-router/ar-node-03 job failed job=ab-router-reindex attempt=5 cause=upstream_timeout
+2026-11-03T10:31:11 INFO  ab-router/ar-node-22 request done id=req-11db7632 route=/ab-router/v1/create status=200 latency_ms=206
+2026-11-03T10:31:13 NOTE  ab-router/ar-node-08 operator=yjchoi memo="타임아웃을 34ms에서 48ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-03T10:31:17 ERROR ab-router/ar-node-19 job failed job=ab-router-rollup attempt=1 cause=upstream_timeout
+2026-11-03T10:31:21 INFO  ab-router/ar-node-09 request done id=req-b001899c route=/ab-router/v1/get status=400 latency_ms=382
+2026-11-03T10:31:23 WARN  ab-router/ar-node-20 alert fired rule=heap_used_high value=62% threshold=49%
+2026-11-03T10:31:24 INFO  ab-router/ar-node-02 request done id=req-74a83cf9 route=/ab-router/v1/list status=200 latency_ms=128
+2026-11-03T10:31:27 INFO  ab-router/ar-node-12 request done id=req-f4e8d711 route=/ab-router/v1/create status=400 latency_ms=201
+2026-11-03T10:31:31 INFO  ab-router/ar-node-18 deploy step release=ab-router-4.10.1 step=start result=ok took_s=146
+2026-11-03T10:31:34 INFO  ab-router/ar-node-18 config applied key=retry.backoff_ms value=1677 by=jhpark
+2026-11-03T10:31:36 INFO  ab-router/ar-node-09 cache stats region=ap-ne-2c hit_ratio=60.9% evictions=100
+2026-11-03T10:31:37 ERROR ab-router/ar-node-22 job failed job=ab-router-reindex attempt=4 cause=quota_exceeded
+2026-11-03T10:31:40 INFO  ab-router/ar-node-17 pool resize target=ab-router-upstream max_pool_size=323 prev=286
+2026-11-03T10:31:42 INFO  ab-router/ar-node-23 cache stats region=ap-ne-2c hit_ratio=69.8% evictions=16053
+2026-11-03T10:31:47 INFO  ab-router/ar-node-08 request done id=req-dea533db route=/ab-router/v1/update status=200 latency_ms=290
+2026-11-03T10:31:48 INFO  ab-router/ar-node-18 request done id=req-5412c81b route=/ab-router/v1/verify status=409 latency_ms=75
+2026-11-03T10:31:53 INFO  ab-router/ar-node-03 pool resize target=ab-router-queue max_pool_size=340 prev=374
+2026-11-03T10:31:58 INFO  ab-router/ar-node-14 deploy step release=ab-router-4.21.0 step=start result=ok took_s=227
+2026-11-03T10:32:03 INFO  ab-router/ar-node-11 request done id=req-c279fc5d route=/ab-router/v1/sync status=200 latency_ms=66
+2026-11-03T10:32:10 NOTE  ab-router/ar-node-24 operator=hbyoon memo="점검 창을 57분 연장함. 승인: 민도현 파트장."
+2026-11-03T10:32:17 INFO  ab-router/ar-node-12 request done id=req-2c315639 route=/ab-router/v1/update status=200 latency_ms=88
+2026-11-03T10:32:23 INFO  ab-router/ar-node-21 request done id=req-f5e68efb route=/ab-router/v1/verify status=200 latency_ms=150
+2026-11-03T10:32:28 INFO  ab-router/ar-node-01 deploy step release=ab-router-4.21.0 step=shift_traffic_100 result=ok took_s=164
+2026-11-03T10:32:35 ERROR ab-router/ar-node-18 job failed job=ab-router-export attempt=5 cause=quota_exceeded
+2026-11-03T10:32:36 INFO  ab-router/ar-node-15 request done id=req-7f70d3bd route=/ab-router/v1/cancel status=200 latency_ms=79
+2026-11-03T10:32:41 INFO  ab-router/ar-node-09 deploy step release=ab-router-4.16.9 step=drain result=ok took_s=67
+2026-11-03T10:32:46 ERROR ab-router/ar-node-20 job failed job=ab-router-cleanup attempt=3 cause=upstream_timeout
+2026-11-03T10:32:48 INFO  ab-router/ar-node-11 request done id=req-12f62d6f route=/ab-router/v1/update status=200 latency_ms=35
+2026-11-03T10:32:55 INFO  ab-router/ar-node-16 request done id=req-bb35fd18 route=/ab-router/v1/verify status=409 latency_ms=192
+2026-11-03T10:32:59 NOTE  ab-router/ar-node-11 operator=dwjung memo="헬스체크 간격을 56초에서 73초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-03T10:33:03 INFO  ab-router/ar-node-02 request done id=req-0ba07b5e route=/ab-router/v1/update status=201 latency_ms=34
+2026-11-03T10:33:06 WARN  ab-router/ar-node-04 alert fired rule=conn_pool_saturated value=57% threshold=42%
+2026-11-03T10:33:11 INFO  ab-router/ar-node-07 request done id=req-159a7044 route=/ab-router/v1/get status=500 latency_ms=77
+2026-11-03T10:33:15 INFO  ab-router/ar-node-24 ticket linked id=OPS-49143 reason=schema_change
+2026-11-03T10:33:22 INFO  ab-router/ar-node-05 request done id=req-3c9f8267 route=/ab-router/v1/verify status=200 latency_ms=273
+2026-11-03T10:33:23 ERROR ab-router/ar-node-22 job failed job=ab-router-rollup attempt=3 cause=oom_killed
+2026-11-03T10:33:25 INFO  ab-router/ar-node-06 pool resize target=ab-router-worker max_pool_size=208 prev=237
+2026-11-03T10:33:30 INFO  ab-router/ar-node-04 request done id=req-5cbc6318 route=/ab-router/v1/verify status=200 latency_ms=189
+2026-11-03T10:33:33 INFO  ab-router/ar-node-08 pool resize target=ab-router-cache max_pool_size=350 prev=351
+2026-11-03T10:33:36 INFO  ab-router/ar-node-17 config applied key=cache.ttl_s value=17 by=jhpark
+2026-11-03T10:33:39 ERROR ab-router/ar-node-08 job failed job=ab-router-cleanup attempt=4 cause=dns_failure
+2026-11-03T10:33:41 WARN  ab-router/ar-node-03 alert fired rule=disk_usage_warning value=60% threshold=49%
+2026-11-03T10:33:42 INFO  ab-router/ar-node-10 request done id=req-e75b8d79 route=/ab-router/v1/status status=200 latency_ms=236
+2026-11-03T10:33:48 INFO  ab-router/ar-node-21 config applied key=retry.max_attempts value=false by=yjchoi
+2026-11-03T10:33:53 WARN  ab-router/ar-node-09 alert fired rule=p99_latency_high value=57ms threshold=43ms
+2026-11-03T10:33:58 INFO  ab-router/ar-node-13 ticket linked id=OPS-47715 reason=runbook_update
+2026-11-03T10:34:03 INFO  ab-router/ar-node-21 request done id=req-33312416 route=/ab-router/v1/list status=500 latency_ms=126
+2026-11-03T10:34:04 WARN  ab-router/ar-node-17 alert fired rule=heap_used_high value=52% threshold=43%
+2026-11-03T10:34:10 WARN  ab-router/ar-node-01 alert fired rule=cpu_steal_high value=55% threshold=49%
+2026-11-03T10:34:15 INFO  ab-router/ar-node-01 config applied key=cache.ttl_s value=false by=hbyoon
+2026-11-03T10:34:21 INFO  ab-router/ar-node-02 request done id=req-01ae844b route=/ab-router/v1/list status=200 latency_ms=201
+2026-11-03T10:34:26 INFO  ab-router/ar-node-18 deploy step release=ab-router-4.11.4 step=shift_traffic_10 result=ok took_s=109
+2026-11-03T10:34:29 WARN  ab-router/ar-node-08 alert fired rule=heap_used_high value=93% threshold=80%
+2026-11-03T10:34:33 INFO  ab-router/ar-node-15 pool resize target=ab-router-queue max_pool_size=363 prev=383
+2026-11-03T10:34:34 INFO  ab-router/ar-node-24 request done id=req-41370b6f route=/ab-router/v1/cancel status=200 latency_ms=190
+2026-11-03T10:34:41 INFO  ab-router/ar-node-14 config applied key=queue.visibility_s value=false by=sykang
+2026-11-03T10:34:48 INFO  ab-router/ar-node-20 deploy step release=ab-router-4.19.4 step=shift_traffic_50 result=ok took_s=29
+2026-11-03T10:34:55 INFO  ab-router/ar-node-23 request done id=req-2a9566f7 route=/ab-router/v1/status status=204 latency_ms=89
+2026-11-03T10:34:58 INFO  ab-router/ar-node-15 request done id=req-81880974 route=/ab-router/v1/update status=200 latency_ms=155
+2026-11-03T10:35:00 INFO  ab-router/ar-node-11 ticket linked id=OPS-49022 reason=log_volume_spike
+2026-11-03T10:35:04 WARN  ab-router/ar-node-06 alert fired rule=heap_used_high value=89% threshold=87%
+2026-11-03T10:35:06 INFO  ab-router/ar-node-08 deploy step release=ab-router-4.20.7 step=pull_image result=ok took_s=8
+2026-11-03T10:35:13 INFO  ab-router/ar-node-01 pool resize target=ab-router-db max_pool_size=357 prev=325
+2026-11-03T10:35:14 INFO  ab-router/ar-node-24 request done id=req-62260f65 route=/ab-router/v1/sync status=200 latency_ms=72
+2026-11-03T10:35:18 NOTE  ab-router/ar-node-14 operator=jhpark memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-11-03T10:35:22 ERROR ab-router/ar-node-11 job failed job=ab-router-export attempt=1 cause=oom_killed
+2026-11-03T10:35:25 INFO  ab-router/ar-node-23 config applied key=canary.latency_p99_threshold_ms value=true by=mjlee
+2026-11-03T10:35:28 INFO  ab-router/ar-node-13 backup finished file=/vault/weekly/payments_2026w40.tar.zst size_mb=88799 checksum=9f2b2447
+2026-11-03T10:35:34 NOTE  ab-router/ar-node-20 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-03T10:35:39 INFO  ab-router/ar-node-05 request done id=req-136796ee route=/ab-router/v1/get status=201 latency_ms=184
+2026-11-03T10:35:43 INFO  ab-router/ar-node-20 request done id=req-444a0aee route=/ab-router/v1/cancel status=500 latency_ms=124
+2026-11-03T10:35:44 INFO  ab-router/ar-node-16 request done id=req-116f2e34 route=/ab-router/v1/verify status=200 latency_ms=27
+2026-11-03T10:35:47 WARN  ab-router/ar-node-07 alert fired rule=fd_usage_high value=86% threshold=76%
+2026-11-03T10:35:51 INFO  ab-router/ar-node-05 deploy step release=ab-router-4.16.4 step=healthcheck result=ok took_s=122
+2026-11-03T10:35:58 WARN  ab-router/ar-node-13 alert fired rule=gc_pause_long value=86ms threshold=80ms
+2026-11-03T10:36:04 INFO  ab-router/ar-node-22 request done id=req-71654dcc route=/ab-router/v1/sync status=204 latency_ms=288
+2026-11-03T10:36:05 INFO  ab-router/ar-node-01 config applied key=breaker.open_ratio value=24 by=yjchoi
+2026-11-03T10:36:12 INFO  ab-router/ar-node-14 deploy step release=ab-router-4.14.0 step=start result=ok took_s=186
+2026-11-03T10:36:13 ERROR ab-router/ar-node-14 job failed job=ab-router-rollup attempt=3 cause=quota_exceeded
+2026-11-03T10:36:17 INFO  ab-router/ar-node-04 pool resize target=ab-router-queue max_pool_size=362 prev=395
+2026-11-03T10:36:19 INFO  ab-router/ar-node-05 request done id=req-8fc41547 route=/ab-router/v1/update status=200 latency_ms=64
+2026-11-03T10:36:20 INFO  ab-router/ar-node-19 request done id=req-56f61d94 route=/ab-router/v1/get status=204 latency_ms=122
+2026-11-03T10:36:24 WARN  ab-router/ar-node-16 alert fired rule=conn_pool_saturated value=50% threshold=49%
+2026-11-03T10:36:25 INFO  ab-router/ar-node-09 backup finished file=/vault/weekly/orders_2026w32.tar.zst size_mb=71323 checksum=73a68117
+2026-11-03T10:36:32 INFO  ab-router/ar-node-04 request done id=req-41b400e9 route=/ab-router/v1/list status=200 latency_ms=65
+2026-11-03T10:36:37 INFO  ab-router/ar-node-08 pool resize target=ab-router-db max_pool_size=139 prev=196
+2026-11-03T10:36:43 INFO  ab-router/ar-node-15 request done id=req-83cfbd38 route=/ab-router/v1/status status=200 latency_ms=328
+2026-11-03T10:36:44 NOTE  ab-router/ar-node-14 operator=hbyoon memo="ar-node-14 재기동 후 지표 정상 확인."
+2026-11-03T10:36:49 INFO  ab-router/ar-node-06 request done id=req-80a6ed02 route=/ab-router/v1/list status=200 latency_ms=464
+2026-11-03T10:36:55 INFO  ab-router/ar-node-23 request done id=req-f3a7c27b route=/ab-router/v1/create status=409 latency_ms=105
+2026-11-03T10:36:57 INFO  ab-router/ar-node-18 deploy step release=ab-router-4.17.9 step=warmup result=ok took_s=182
+2026-11-03T10:37:04 INFO  ab-router/ar-node-08 config applied key=http.read_timeout_ms value=58 by=shkim
+2026-11-03T10:37:07 INFO  ab-router/ar-node-02 request done id=req-116975bc route=/ab-router/v1/cancel status=200 latency_ms=153
+2026-11-03T10:37:10 INFO  ab-router/ar-node-10 deploy step release=ab-router-4.17.3 step=drain result=ok took_s=4
+2026-11-03T10:37:15 INFO  ab-router/ar-node-02 request done id=req-a6b9a981 route=/ab-router/v1/update status=200 latency_ms=25
+2026-11-03T10:37:20 NOTE  ab-router/ar-node-12 operator=sykang memo="동시 처리 수를 70에서 45로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-03T10:37:22 INFO  ab-router/ar-node-22 pool resize target=ab-router-queue max_pool_size=95 prev=106
+2026-11-03T10:37:24 INFO  ab-router/ar-node-21 request done id=req-f94f7193 route=/ab-router/v1/create status=200 latency_ms=193
+2026-11-03T10:37:31 INFO  ab-router/ar-node-21 deploy step release=ab-router-4.12.1 step=drain result=ok took_s=110
+2026-11-03T10:37:37 INFO  ab-router/ar-node-01 deploy step release=ab-router-4.15.2 step=verify result=ok took_s=218
+2026-11-03T10:37:38 INFO  ab-router/ar-node-08 request done id=req-e96f7e39 route=/ab-router/v1/status status=200 latency_ms=86
+2026-11-03T10:37:39 INFO  ab-router/ar-node-14 request done id=req-89ca7c21 route=/ab-router/v1/sync status=200 latency_ms=374
+2026-11-03T10:37:42 ERROR ab-router/ar-node-22 job failed job=ab-router-reindex attempt=3 cause=lock_wait_exceeded
+2026-11-03T10:37:47 INFO  ab-router/ar-node-05 request done id=req-d8a0163a route=/ab-router/v1/list status=201 latency_ms=18
+2026-11-03T10:37:51 INFO  ab-router/ar-node-18 request done id=req-08aa1f86 route=/ab-router/v1/sync status=200 latency_ms=93
+2026-11-03T10:37:54 INFO  ab-router/ar-node-23 pool resize target=ab-router-queue max_pool_size=170 prev=186
+2026-11-03T10:38:01 INFO  ab-router/ar-node-20 request done id=req-1fc06c5e route=/ab-router/v1/update status=200 latency_ms=25
+2026-11-03T10:38:07 INFO  ab-router/ar-node-05 config applied key=retry.max_attempts value=80% by=jhpark
+2026-11-03T10:38:09 INFO  ab-router/ar-node-19 request done id=req-84e4d6d4 route=/ab-router/v1/list status=200 latency_ms=171
+2026-11-03T10:38:14 NOTE  ab-router/ar-node-02 operator=ejlim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-03T10:38:17 INFO  ab-router/ar-node-19 config applied key=http.max_conns value=629 by=mjlee
+2026-11-03T10:38:21 INFO  ab-router/ar-node-18 request done id=req-3f9896ac route=/ab-router/v1/list status=200 latency_ms=87
+2026-11-03T10:38:25 INFO  ab-router/ar-node-19 config applied key=cache.ttl_s value=53% by=mjlee
+2026-11-03T10:38:29 INFO  ab-router/ar-node-15 request done id=req-d583118b route=/ab-router/v1/update status=200 latency_ms=106
+2026-11-03T10:38:33 INFO  ab-router/ar-node-20 request done id=req-89646fd8 route=/ab-router/v1/cancel status=200 latency_ms=153
+2026-11-03T10:38:34 INFO  ab-router/ar-node-06 cache stats region=ap-ne-2a hit_ratio=73.6% evictions=28737
+2026-11-03T10:38:40 INFO  ab-router/ar-node-05 request done id=req-0fa434ee route=/ab-router/v1/update status=200 latency_ms=50
+2026-11-03T10:38:47 INFO  ab-router/ar-node-22 deploy step release=ab-router-4.19.0 step=migrate result=ok took_s=49
+2026-11-03T10:38:48 INFO  ab-router/ar-node-02 request done id=req-53e2d269 route=/ab-router/v1/cancel status=409 latency_ms=86
+2026-11-03T10:38:49 INFO  ab-router/ar-node-23 config applied key=dns.ttl_s value=9% by=yjchoi
+2026-11-03T10:38:53 INFO  ab-router/ar-node-09 request done id=req-0bb28813 route=/ab-router/v1/status status=201 latency_ms=91
+2026-11-03T10:38:57 WARN  ab-router/ar-node-15 alert fired rule=fd_usage_high value=61% threshold=51%
+2026-11-03T10:39:01 INFO  ab-router/ar-node-19 request done id=req-8a1c6b8b route=/ab-router/v1/cancel status=200 latency_ms=155
+2026-11-03T10:39:02 WARN  ab-router/ar-node-09 alert fired rule=p99_latency_high value=60ms threshold=50ms
+2026-11-03T10:39:03 INFO  ab-router/ar-node-13 request done id=req-be58c972 route=/ab-router/v1/update status=500 latency_ms=102
+2026-11-03T10:39:04 INFO  ab-router/ar-node-15 pool resize target=ab-router-db max_pool_size=273 prev=263
+2026-11-03T10:39:11 INFO  ab-router/ar-node-04 request done id=req-268469ff route=/ab-router/v1/verify status=200 latency_ms=98
+2026-11-03T10:39:13 WARN  ab-router/ar-node-13 alert fired rule=p99_latency_high value=84ms threshold=69ms
+2026-11-03T10:39:19 INFO  ab-router/ar-node-10 request done id=req-c06ce935 route=/ab-router/v1/update status=200 latency_ms=251
+2026-11-03T10:39:21 INFO  ab-router/ar-node-20 request done id=req-7e511909 route=/ab-router/v1/list status=200 latency_ms=112
+2026-11-03T10:39:27 INFO  ab-router/ar-node-02 request done id=req-3dc38b7e route=/ab-router/v1/status status=500 latency_ms=150
+2026-11-03T10:39:29 INFO  ab-router/ar-node-04 request done id=req-35bbe5a5 route=/ab-router/v1/status status=201 latency_ms=64
+2026-11-03T10:39:33 INFO  ab-router/ar-node-17 pool resize target=ab-router-upstream max_pool_size=67 prev=78
+2026-11-03T10:39:36 INFO  ab-router/ar-node-22 request done id=req-976d4688 route=/ab-router/v1/update status=200 latency_ms=124
+2026-11-03T10:39:43 WARN  ab-router/ar-node-21 alert fired rule=error_ratio_high value=95% threshold=87%
+2026-11-03T10:39:44 INFO  ab-router/ar-node-03 request done id=req-9b2acf4a route=/ab-router/v1/get status=500 latency_ms=65
+2026-11-03T10:39:50 INFO  ab-router/ar-node-15 backup finished file=/vault/weekly/inventory_2026w37.tar.zst size_mb=3192 checksum=899a37ef
+2026-11-03T10:39:51 NOTE  ab-router/ar-node-22 operator=jhpark memo="ar-node-22 재기동 후 지표 정상 확인."
+2026-11-03T10:39:53 NOTE  ab-router/ar-node-11 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-03T10:40:00 NOTE  ab-router/ar-node-03 operator=hbyoon memo="인증서 갱신 일정 확인. 만료까지 3일 남음."
+2026-11-03T10:40:07 INFO  ab-router/ar-node-16 pool resize target=ab-router-worker max_pool_size=47 prev=48
+2026-11-03T10:40:11 INFO  ab-router/ar-node-07 deploy step release=ab-router-4.12.0 step=shift_traffic_10 result=ok took_s=185
+2026-11-03T10:40:18 INFO  ab-router/ar-node-02 config applied key=canary.latency_p99_threshold_ms value=true by=jhpark
+2026-11-03T10:40:23 INFO  ab-router/ar-node-04 request done id=req-eead0a09 route=/ab-router/v1/sync status=200 latency_ms=364
+2026-11-03T10:40:28 INFO  ab-router/ar-node-02 request done id=req-23710d28 route=/ab-router/v1/update status=409 latency_ms=289
+2026-11-03T10:40:35 ERROR ab-router/ar-node-04 job failed job=ab-router-cleanup attempt=1 cause=upstream_timeout
+2026-11-03T10:40:39 INFO  ab-router/ar-node-08 request done id=req-62101561 route=/ab-router/v1/verify status=204 latency_ms=64
+2026-11-03T10:40:41 INFO  ab-router/ar-node-09 request done id=req-3aca6981 route=/ab-router/v1/status status=200 latency_ms=27
+2026-11-03T10:40:44 INFO  ab-router/ar-node-23 pool resize target=ab-router-db max_pool_size=333 prev=273
+2026-11-03T10:40:50 NOTE  ab-router/ar-node-04 operator=shkim memo="임시 증설 4대 추가. 내일 오전 회수 예정."
+2026-11-03T10:40:52 INFO  ab-router/ar-node-04 request done id=req-b79dca4f route=/ab-router/v1/update status=200 latency_ms=248
+2026-11-03T10:40:54 INFO  ab-router/ar-node-10 request done id=req-46bd2742 route=/ab-router/v1/update status=200 latency_ms=193
+2026-11-03T10:40:55 INFO  ab-router/ar-node-10 deploy step release=ab-router-4.14.5 step=drain result=ok took_s=30
+2026-11-03T10:41:02 INFO  ab-router/ar-node-24 request done id=req-f680c857 route=/ab-router/v1/create status=200 latency_ms=18
+2026-11-03T10:41:05 WARN  ab-router/ar-node-11 alert fired rule=disk_usage_warning value=93% threshold=92%
+2026-11-03T10:41:07 INFO  ab-router/ar-node-15 request done id=req-433c2304 route=/ab-router/v1/status status=200 latency_ms=276
+2026-11-03T10:41:14 WARN  ab-router/ar-node-17 alert fired rule=queue_depth_high value=75 threshold=66
+2026-11-03T10:41:19 INFO  ab-router/ar-node-06 request done id=req-38ff77d8 route=/ab-router/v1/create status=404 latency_ms=243
+2026-11-03T10:41:22 INFO  ab-router/ar-node-05 ticket linked id=OPS-49713 reason=schema_change
+2026-11-03T10:41:24 INFO  ab-router/ar-node-01 request done id=req-edfdcc48 route=/ab-router/v1/sync status=200 latency_ms=371
+2026-11-03T10:41:27 INFO  ab-router/ar-node-06 request done id=req-8dece4be route=/ab-router/v1/create status=201 latency_ms=101
+2026-11-03T10:41:28 INFO  ab-router/ar-node-06 deploy step release=ab-router-4.12.7 step=verify result=ok took_s=154
+2026-11-03T10:41:30 NOTE  ab-router/ar-node-23 operator=mjlee memo="인증서 갱신 일정 확인. 만료까지 48일 남음."
+2026-11-03T10:41:33 INFO  ab-router/ar-node-02 config applied key=limiter.burst value=false by=ejlim
+2026-11-03T10:41:37 WARN  ab-router/ar-node-22 alert fired rule=queue_depth_high value=96 threshold=85
+2026-11-03T10:41:41 INFO  ab-router/ar-node-23 pool resize target=ab-router-db max_pool_size=131 prev=156
+2026-11-03T10:41:46 INFO  ab-router/ar-node-11 request done id=req-6c639049 route=/ab-router/v1/sync status=200 latency_ms=232
+2026-11-03T10:41:52 NOTE  ab-router/ar-node-13 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-03T10:41:55 WARN  ab-router/ar-node-16 alert fired rule=heap_used_high value=54% threshold=52%
+2026-11-03T10:42:02 INFO  ab-router/ar-node-11 request done id=req-97cc2473 route=/ab-router/v1/create status=200 latency_ms=61
+2026-11-03T10:42:03 INFO  ab-router/ar-node-12 request done id=req-525f6b71 route=/ab-router/v1/status status=200 latency_ms=64
+2026-11-03T10:42:06 INFO  ab-router/ar-node-24 cache stats region=ap-se-1a hit_ratio=83.4% evictions=38546
+2026-11-03T10:42:09 INFO  ab-router/ar-node-23 request done id=req-c605d38f route=/ab-router/v1/create status=200 latency_ms=172
+2026-11-03T10:42:16 INFO  ab-router/ar-node-05 deploy step release=ab-router-4.22.7 step=shift_traffic_10 result=ok took_s=149
+2026-11-03T10:42:18 INFO  ab-router/ar-node-11 request done id=req-c1f16d20 route=/ab-router/v1/cancel status=500 latency_ms=95
+2026-11-03T10:42:21 INFO  ab-router/ar-node-21 pool resize target=ab-router-worker max_pool_size=20 prev=4
+2026-11-03T10:42:23 INFO  ab-router/ar-node-08 request done id=req-f6f05ef0 route=/ab-router/v1/cancel status=200 latency_ms=184
+2026-11-03T10:42:24 WARN  ab-router/ar-node-12 alert fired rule=error_ratio_high value=50% threshold=43%
+2026-11-03T10:42:28 INFO  ab-router/ar-node-14 request done id=req-efabe098 route=/ab-router/v1/create status=429 latency_ms=217
+2026-11-03T10:42:32 INFO  ab-router/ar-node-18 request done id=req-f6255894 route=/ab-router/v1/verify status=200 latency_ms=335
+2026-11-03T10:42:34 INFO  ab-router/ar-node-14 request done id=req-d722e160 route=/ab-router/v1/sync status=200 latency_ms=52
+2026-11-03T10:42:37 INFO  ab-router/ar-node-23 request done id=req-5e0a29e0 route=/ab-router/v1/verify status=500 latency_ms=187
+2026-11-03T10:42:41 INFO  ab-router/ar-node-15 request done id=req-3f4f20a6 route=/ab-router/v1/verify status=200 latency_ms=69
+2026-11-03T10:42:48 NOTE  ab-router/ar-node-02 operator=dwjung memo="동시 처리 수를 15에서 7로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-03T10:42:50 INFO  ab-router/ar-node-09 deploy step release=ab-router-4.21.4 step=shift_traffic_100 result=ok took_s=199
+2026-11-03T10:42:51 ERROR ab-router/ar-node-10 job failed job=ab-router-rollup attempt=4 cause=quota_exceeded
+2026-11-03T10:42:53 NOTE  ab-router/ar-node-01 operator=shkim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-03T10:42:54 INFO  ab-router/ar-node-12 deploy step release=ab-router-4.14.3 step=migrate result=ok took_s=66
+2026-11-03T10:42:56 NOTE  ab-router/ar-node-06 operator=shkim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-03T10:42:59 INFO  ab-router/ar-node-15 ticket linked id=OPS-47011 reason=node_drain
+2026-11-03T10:43:06 INFO  ab-router/ar-node-22 request done id=req-62012c22 route=/ab-router/v1/create status=200 latency_ms=39
+2026-11-03T10:43:09 INFO  ab-router/ar-node-24 ticket linked id=OPS-49550 reason=dns_ttl_change
+2026-11-03T10:43:12 INFO  ab-router/ar-node-02 request done id=req-71be8c73 route=/ab-router/v1/get status=200 latency_ms=560
+2026-11-03T10:43:19 INFO  ab-router/ar-node-06 config applied key=worker.concurrency value=true by=dwjung
+2026-11-03T10:43:25 INFO  ab-router/ar-node-08 request done id=req-d545944a route=/ab-router/v1/verify status=201 latency_ms=67
+2026-11-03T10:43:29 INFO  ab-router/ar-node-17 request done id=req-84071c5e route=/ab-router/v1/get status=201 latency_ms=194
+2026-11-03T10:43:35 INFO  ab-router/ar-node-09 request done id=req-14f35c46 route=/ab-router/v1/sync status=200 latency_ms=61
+2026-11-03T10:43:40 INFO  ab-router/ar-node-24 request done id=req-3d814f3e route=/ab-router/v1/verify status=503 latency_ms=130
+2026-11-03T10:43:44 INFO  ab-router/ar-node-10 cache stats region=ap-ne-2a hit_ratio=90.4% evictions=36730
+2026-11-03T10:43:50 INFO  ab-router/ar-node-21 request done id=req-a80f3f1c route=/ab-router/v1/create status=503 latency_ms=343
+2026-11-03T10:43:53 INFO  ab-router/ar-node-03 request done id=req-ca2c8865 route=/ab-router/v1/sync status=200 latency_ms=195
+2026-11-03T10:43:58 INFO  ab-router/ar-node-20 deploy step release=ab-router-4.15.4 step=pull_image result=ok took_s=68
+2026-11-03T10:44:02 INFO  ab-router/ar-node-05 config applied key=limiter.rps value=401 by=yjchoi
+2026-11-03T10:44:04 WARN  ab-router/ar-node-24 alert fired rule=heap_used_high value=68% threshold=53%
+2026-11-03T10:44:10 INFO  ab-router/ar-node-22 deploy step release=ab-router-4.10.0 step=healthcheck result=ok took_s=180
+2026-11-03T10:44:12 NOTE  ab-router/ar-node-24 operator=mjlee memo="캐시 TTL을 46초로 되돌림. 오래된 응답이 보고됨."
+2026-11-03T10:44:13 INFO  ab-router/ar-node-16 request done id=req-dd240581 route=/ab-router/v1/verify status=200 latency_ms=60
+2026-11-03T10:44:16 WARN  ab-router/ar-node-04 alert fired rule=conn_pool_saturated value=79% threshold=67%
+2026-11-03T10:44:17 INFO  ab-router/ar-node-17 request done id=req-cfcc6416 route=/ab-router/v1/list status=200 latency_ms=17
+2026-11-03T10:44:22 INFO  ab-router/ar-node-07 request done id=req-3b278c8a route=/ab-router/v1/update status=200 latency_ms=60
+2026-11-03T10:44:27 INFO  ab-router/ar-node-15 request done id=req-7b1c08e5 route=/ab-router/v1/sync status=201 latency_ms=111
+2026-11-03T10:44:33 INFO  ab-router/ar-node-14 ticket linked id=OPS-49610 reason=node_drain
+2026-11-03T10:44:37 WARN  ab-router/ar-node-15 alert fired rule=error_ratio_high value=64% threshold=62%
+2026-11-03T10:44:42 INFO  ab-router/ar-node-20 config applied key=cache.ttl_s value=false by=sykang
+2026-11-03T10:44:43 INFO  ab-router/ar-node-19 deploy step release=ab-router-4.18.9 step=drain result=ok took_s=164
+2026-11-03T10:44:45 INFO  ab-router/ar-node-14 deploy step release=ab-router-4.10.1 step=warmup result=ok took_s=161
+2026-11-03T10:44:46 ERROR ab-router/ar-node-16 job failed job=ab-router-rollup attempt=3 cause=oom_killed
+2026-11-03T10:44:47 INFO  ab-router/ar-node-04 request done id=req-14995450 route=/ab-router/v1/sync status=200 latency_ms=28
+2026-11-03T10:44:51 INFO  ab-router/ar-node-01 request done id=req-b21af13a route=/ab-router/v1/get status=200 latency_ms=128
+2026-11-03T10:44:57 WARN  ab-router/ar-node-14 alert fired rule=disk_usage_warning value=82% threshold=79%
+2026-11-03T10:45:02 INFO  ab-router/ar-node-17 deploy step release=ab-router-4.14.6 step=drain result=ok took_s=218
+2026-11-03T10:45:06 WARN  ab-router/ar-node-23 alert fired rule=disk_usage_warning value=76% threshold=69%
+2026-11-03T10:45:10 WARN  ab-router/ar-node-08 alert fired rule=conn_pool_saturated value=52% threshold=47%
+2026-11-03T10:45:17 INFO  ab-router/ar-node-03 request done id=req-1b466578 route=/ab-router/v1/cancel status=204 latency_ms=94
+2026-11-03T10:45:23 INFO  ab-router/ar-node-05 request done id=req-c99b4b15 route=/ab-router/v1/sync status=200 latency_ms=138
+2026-11-03T10:45:27 WARN  ab-router/ar-node-11 alert fired rule=gc_pause_long value=88ms threshold=85ms
+2026-11-03T10:45:31 INFO  ab-router/ar-node-06 request done id=req-5c6bae30 route=/ab-router/v1/verify status=200 latency_ms=64
+2026-11-03T10:45:34 INFO  ab-router/ar-node-23 request done id=req-71670051 route=/ab-router/v1/cancel status=200 latency_ms=88
+2026-11-03T10:45:41 INFO  ab-router/ar-node-18 request done id=req-3ea5c317 route=/ab-router/v1/status status=409 latency_ms=259
+2026-11-03T10:45:44 WARN  ab-router/ar-node-15 alert fired rule=error_ratio_high value=57% threshold=51%
+2026-11-03T10:45:50 ERROR ab-router/ar-node-19 job failed job=ab-router-cleanup attempt=1 cause=quota_exceeded
+2026-11-03T10:45:52 INFO  ab-router/ar-node-03 pool resize target=ab-router-db max_pool_size=284 prev=227
+2026-11-03T10:45:59 INFO  ab-router/ar-node-17 request done id=req-f9a1a772 route=/ab-router/v1/cancel status=200 latency_ms=167
+2026-11-03T10:46:06 INFO  ab-router/ar-node-11 request done id=req-a17ebfe4 route=/ab-router/v1/status status=200 latency_ms=218
+2026-11-03T10:46:12 INFO  ab-router/ar-node-10 ticket linked id=OPS-47583 reason=dependency_upgrade
+2026-11-03T10:46:17 WARN  ab-router/ar-node-24 alert fired rule=error_ratio_high value=81% threshold=71%
+2026-11-03T10:46:19 INFO  ab-router/ar-node-12 request done id=req-a168a131 route=/ab-router/v1/status status=429 latency_ms=189
+2026-11-03T10:46:25 ERROR ab-router/ar-node-10 job failed job=ab-router-cleanup attempt=2 cause=upstream_timeout
+2026-11-03T10:46:31 INFO  ab-router/ar-node-06 request done id=req-749f71c3 route=/ab-router/v1/get status=200 latency_ms=137
+2026-11-03T10:46:38 INFO  ab-router/ar-node-16 deploy step release=ab-router-4.17.0 step=shift_traffic_10 result=ok took_s=65
+2026-11-03T10:46:43 INFO  ab-router/ar-node-01 ticket linked id=OPS-47507 reason=flaky_healthcheck
+2026-11-03T10:46:48 INFO  ab-router/ar-node-23 request done id=req-fd3cc682 route=/ab-router/v1/list status=200 latency_ms=74
+2026-11-03T10:46:49 INFO  ab-router/ar-node-20 request done id=req-ebd464ef route=/ab-router/v1/status status=204 latency_ms=404
+2026-11-03T10:46:51 INFO  ab-router/ar-node-01 config applied key=canary.traffic_percent value=22 by=sykang
+2026-11-03T10:46:54 INFO  ab-router/ar-node-16 config applied key=breaker.half_open_s value=false by=hbyoon
+2026-11-03T10:46:59 INFO  ab-router/ar-node-24 config applied key=queue.visibility_s value=40% by=sykang
+2026-11-03T10:47:01 INFO  ab-router/ar-node-01 request done id=req-1c01905e route=/ab-router/v1/list status=200 latency_ms=117
+2026-11-03T10:47:07 WARN  ab-router/ar-node-01 alert fired rule=fd_usage_high value=89% threshold=74%
+2026-11-03T10:47:08 INFO  ab-router/ar-node-12 request done id=req-b808d58c route=/ab-router/v1/cancel status=400 latency_ms=178
+2026-11-03T10:47:13 INFO  ab-router/ar-node-04 request done id=req-f9a68d39 route=/ab-router/v1/sync status=500 latency_ms=155
+2026-11-03T10:47:14 INFO  ab-router/ar-node-24 backup finished file=/vault/weekly/audit_2026w37.tar.zst size_mb=53371 checksum=782b71e2
+2026-11-03T10:47:16 INFO  ab-router/ar-node-03 config applied key=breaker.half_open_s value=55 by=shkim
+2026-11-03T10:47:17 INFO  ab-router/ar-node-17 request done id=req-9b04b44e route=/ab-router/v1/create status=200 latency_ms=78
+2026-11-03T10:47:22 WARN  ab-router/ar-node-05 alert fired rule=conn_pool_saturated value=66% threshold=60%
+2026-11-03T10:47:29 INFO  ab-router/ar-node-02 deploy step release=ab-router-4.14.9 step=verify result=ok took_s=27
+2026-11-03T10:47:33 INFO  ab-router/ar-node-03 config applied key=http.max_conns value=4832 by=dwjung
+2026-11-03T10:47:38 INFO  ab-router/ar-node-16 request done id=req-6687526c route=/ab-router/v1/cancel status=204 latency_ms=230
+2026-11-03T10:47:40 INFO  ab-router/ar-node-01 request done id=req-9113198b route=/ab-router/v1/list status=200 latency_ms=362
+2026-11-03T10:47:45 INFO  ab-router/ar-node-06 config applied key=http.max_conns value=false by=dwjung
+2026-11-03T10:47:50 INFO  ab-router/ar-node-09 pool resize target=ab-router-db max_pool_size=38 prev=30
+2026-11-03T10:47:56 INFO  ab-router/ar-node-12 backup finished file=/vault/weekly/inventory_2026w30.tar.zst size_mb=75132 checksum=c1f784e5
+2026-11-03T10:47:57 INFO  ab-router/ar-node-05 request done id=req-363de895 route=/ab-router/v1/verify status=400 latency_ms=175
+2026-11-03T10:48:03 INFO  ab-router/ar-node-06 config applied key=worker.concurrency value=3947 by=dwjung
+2026-11-03T10:48:07 INFO  ab-router/ar-node-17 config applied key=gc.pause_target_ms value=54 by=jhpark
+2026-11-03T10:48:11 INFO  ab-router/ar-node-01 request done id=req-75d27921 route=/ab-router/v1/sync status=200 latency_ms=122
+2026-11-03T10:48:12 INFO  ab-router/ar-node-18 config applied key=limiter.burst value=true by=mjlee
+2026-11-03T10:48:15 INFO  ab-router/ar-node-11 ticket linked id=OPS-49297 reason=dependency_upgrade
+2026-11-03T10:48:17 INFO  ab-router/ar-node-07 pool resize target=ab-router-worker max_pool_size=231 prev=243
+2026-11-03T10:48:22 INFO  ab-router/ar-node-02 request done id=req-50e8336f route=/ab-router/v1/update status=200 latency_ms=128
+2026-11-03T10:48:26 INFO  ab-router/ar-node-15 request done id=req-d6d98de9 route=/ab-router/v1/get status=200 latency_ms=246
+2026-11-03T10:48:31 INFO  ab-router/ar-node-17 request done id=req-f7ff7498 route=/ab-router/v1/create status=200 latency_ms=1030
+2026-11-03T10:48:37 INFO  ab-router/ar-node-12 cache stats region=us-we-2b hit_ratio=71.2% evictions=717
+2026-11-03T10:48:39 INFO  ab-router/ar-node-07 cache stats region=ap-ne-2a hit_ratio=87.0% evictions=11629
+2026-11-03T10:48:41 INFO  ab-router/ar-node-06 request done id=req-ebdaefd8 route=/ab-router/v1/status status=200 latency_ms=114
+2026-11-03T10:48:43 INFO  ab-router/ar-node-20 deploy step release=ab-router-4.22.2 step=pull_image result=ok took_s=197
+2026-11-03T10:48:45 INFO  ab-router/ar-node-19 config applied key=retry.backoff_ms value=false by=jhpark
+2026-11-03T10:48:51 NOTE  ab-router/ar-node-13 operator=jhpark memo="배치 시작 시각을 38시 66분으로 고정함."
+2026-11-03T10:48:58 INFO  ab-router/ar-node-02 deploy step release=ab-router-4.19.4 step=shift_traffic_50 result=ok took_s=27
+2026-11-03T10:49:03 INFO  ab-router/ar-node-09 deploy step release=ab-router-4.20.4 step=warmup result=ok took_s=147
+2026-11-03T10:49:10 INFO  ab-router/ar-node-17 request done id=req-87ec5f1f route=/ab-router/v1/sync status=200 latency_ms=137
+2026-11-03T10:49:16 INFO  ab-router/ar-node-09 request done id=req-9319875d route=/ab-router/v1/update status=200 latency_ms=102
+2026-11-03T10:49:20 NOTE  ab-router/ar-node-12 operator=hbyoon memo="타임아웃을 48ms에서 83ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-03T10:49:27 INFO  ab-router/ar-node-07 request done id=req-b1e7c0eb route=/ab-router/v1/cancel status=204 latency_ms=84
+2026-11-03T10:49:32 INFO  ab-router/ar-node-17 request done id=req-172d4fe6 route=/ab-router/v1/update status=200 latency_ms=67
+2026-11-03T10:49:36 INFO  ab-router/ar-node-11 deploy step release=ab-router-4.16.4 step=shift_traffic_100 result=ok took_s=220
+2026-11-03T10:49:37 INFO  ab-router/ar-node-11 config applied key=worker.concurrency value=true by=mjlee
+2026-11-03T10:49:42 INFO  ab-router/ar-node-20 backup finished file=/vault/weekly/payments_2026w41.tar.zst size_mb=25032 checksum=a73e1a8c
+2026-11-03T10:49:47 INFO  ab-router/ar-node-08 request done id=req-b111b692 route=/ab-router/v1/sync status=200 latency_ms=48
+2026-11-03T10:49:50 INFO  ab-router/ar-node-16 request done id=req-a84cb996 route=/ab-router/v1/update status=503 latency_ms=30
+2026-11-03T10:49:56 INFO  ab-router/ar-node-01 ticket linked id=OPS-47038 reason=flaky_healthcheck
+2026-11-03T10:50:00 INFO  ab-router/ar-node-13 request done id=req-a2eadcc3 route=/ab-router/v1/update status=429 latency_ms=33
+2026-11-03T10:50:05 INFO  ab-router/ar-node-24 request done id=req-0d247656 route=/ab-router/v1/cancel status=503 latency_ms=43
+2026-11-03T10:50:08 INFO  ab-router/ar-node-05 deploy step release=ab-router-4.12.3 step=shift_traffic_50 result=ok took_s=149
+2026-11-03T10:50:14 INFO  ab-router/ar-node-04 request done id=req-1e59d50f route=/ab-router/v1/get status=200 latency_ms=65
+2026-11-03T10:50:19 INFO  ab-router/ar-node-07 ticket linked id=OPS-47890 reason=runbook_update
+2026-11-03T10:50:21 INFO  ab-router/ar-node-23 config applied key=queue.visibility_s value=36 by=shkim
+2026-11-03T10:50:24 INFO  ab-router/ar-node-04 request done id=req-354a532b route=/ab-router/v1/list status=429 latency_ms=327
+2026-11-03T10:50:31 INFO  ab-router/ar-node-10 request done id=req-cbf49fcc route=/ab-router/v1/list status=200 latency_ms=293
+2026-11-03T10:50:36 NOTE  ab-router/ar-node-15 operator=hbyoon memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-03T10:50:43 INFO  ab-router/ar-node-04 request done id=req-344f715a route=/ab-router/v1/list status=200 latency_ms=184
+2026-11-03T10:50:46 NOTE  ab-router/ar-node-06 operator=ejlim memo="캐시 TTL을 40초로 되돌림. 오래된 응답이 보고됨."
+2026-11-03T10:50:52 INFO  ab-router/ar-node-19 request done id=req-6818af93 route=/ab-router/v1/cancel status=200 latency_ms=108
+2026-11-03T10:50:54 INFO  ab-router/ar-node-03 ticket linked id=OPS-49036 reason=dependency_upgrade
+2026-11-03T10:51:01 INFO  ab-router/ar-node-02 config applied key=retry.max_attempts value=19% by=shkim
+2026-11-03T10:51:04 INFO  ab-router/ar-node-01 backup finished file=/vault/daily/audit_20261021.tar.zst size_mb=2400 checksum=9b7e4976
+2026-11-03T10:51:11 INFO  ab-router/ar-node-11 request done id=req-f8ead8c1 route=/ab-router/v1/cancel status=200 latency_ms=112
+2026-11-03T10:51:16 INFO  ab-router/ar-node-06 request done id=req-3ca559d6 route=/ab-router/v1/cancel status=404 latency_ms=94
+2026-11-03T10:51:17 INFO  ab-router/ar-node-13 config applied key=breaker.open_ratio value=true by=shkim
+2026-11-03T10:51:18 INFO  ab-router/ar-node-10 request done id=req-6684da58 route=/ab-router/v1/status status=200 latency_ms=52
+2026-11-03T10:51:20 INFO  ab-router/ar-node-08 cache stats region=ap-ne-2c hit_ratio=61.3% evictions=13326
+2026-11-03T10:51:23 INFO  ab-router/ar-node-08 request done id=req-fcef9157 route=/ab-router/v1/update status=409 latency_ms=103
+2026-11-03T10:51:25 INFO  ab-router/ar-node-05 request done id=req-d6f2e2c0 route=/ab-router/v1/cancel status=200 latency_ms=73
+2026-11-03T10:51:28 INFO  ab-router/ar-node-18 config applied key=cache.ttl_s value=1172 by=hbyoon
+2026-11-03T10:51:34 INFO  ab-router/ar-node-14 request done id=req-b9499be4 route=/ab-router/v1/verify status=200 latency_ms=149
+2026-11-03T10:51:36 INFO  ab-router/ar-node-23 request done id=req-1b2338d7 route=/ab-router/v1/get status=200 latency_ms=212
+2026-11-03T10:51:39 INFO  ab-router/ar-node-14 config applied key=worker.concurrency value=90% by=hbyoon
+2026-11-03T10:51:43 NOTE  ab-router/ar-node-01 operator=sykang memo="타임아웃을 28ms에서 68ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-03T10:51:49 INFO  ab-router/ar-node-15 request done id=req-f9e4e186 route=/ab-router/v1/status status=200 latency_ms=616
+2026-11-03T10:51:53 INFO  ab-router/ar-node-09 config applied key=http.max_conns value=true by=jhpark
+2026-11-03T10:51:54 INFO  ab-router/ar-node-23 pool resize target=ab-router-worker max_pool_size=86 prev=135
+2026-11-03T10:51:56 ERROR ab-router/ar-node-04 job failed job=ab-router-cleanup attempt=3 cause=bad_checksum
+2026-11-03T10:51:58 INFO  ab-router/ar-node-10 request done id=req-c2a00854 route=/ab-router/v1/list status=503 latency_ms=135
+2026-11-03T10:52:00 INFO  ab-router/ar-node-12 deploy step release=ab-router-4.11.3 step=healthcheck result=ok took_s=213
+2026-11-03T10:52:06 INFO  ab-router/ar-node-23 cache stats region=ap-ne-2b hit_ratio=82.0% evictions=17156
+2026-11-03T10:52:09 INFO  ab-router/ar-node-22 request done id=req-b637b1f8 route=/ab-router/v1/create status=201 latency_ms=100
+2026-11-03T10:52:13 ERROR ab-router/ar-node-19 job failed job=ab-router-rollup attempt=2 cause=lock_wait_exceeded
+2026-11-03T10:52:19 INFO  ab-router/ar-node-09 request done id=req-467037c1 route=/ab-router/v1/get status=200 latency_ms=327
+2026-11-03T10:52:20 INFO  ab-router/ar-node-21 deploy step release=ab-router-4.21.0 step=shift_traffic_50 result=ok took_s=207
+2026-11-03T10:52:25 INFO  ab-router/ar-node-17 request done id=req-11d6e0bb route=/ab-router/v1/verify status=200 latency_ms=45
+2026-11-03T10:52:30 INFO  ab-router/ar-node-19 pool resize target=ab-router-cache max_pool_size=231 prev=256
+2026-11-03T10:52:37 INFO  ab-router/ar-node-21 request done id=req-c221e0f4 route=/ab-router/v1/list status=200 latency_ms=118
+2026-11-03T10:52:38 INFO  ab-router/ar-node-12 ticket linked id=OPS-49481 reason=flaky_healthcheck
+2026-11-03T10:52:45 INFO  ab-router/ar-node-19 request done id=req-350d0191 route=/ab-router/v1/status status=503 latency_ms=106
+2026-11-03T10:52:47 INFO  ab-router/ar-node-21 request done id=req-785de176 route=/ab-router/v1/cancel status=200 latency_ms=190
+2026-11-03T10:52:51 INFO  ab-router/ar-node-19 config applied key=http.read_timeout_ms value=13% by=mjlee
+2026-11-03T10:52:52 ERROR ab-router/ar-node-22 job failed job=ab-router-reindex attempt=4 cause=oom_killed
+2026-11-03T10:52:57 INFO  ab-router/ar-node-02 deploy step release=ab-router-4.21.0 step=drain result=ok took_s=66
+2026-11-03T10:53:03 INFO  ab-router/ar-node-12 request done id=req-4a22d316 route=/ab-router/v1/verify status=404 latency_ms=161
+2026-11-03T10:53:06 INFO  ab-router/ar-node-17 request done id=req-63bdc20d route=/ab-router/v1/update status=200 latency_ms=120
+2026-11-03T10:53:10 INFO  ab-router/ar-node-03 deploy step release=ab-router-4.13.2 step=shift_traffic_10 result=ok took_s=136
+2026-11-03T10:53:12 INFO  ab-router/ar-node-09 request done id=req-79f462b3 route=/ab-router/v1/list status=200 latency_ms=147
+2026-11-03T10:53:15 WARN  ab-router/ar-node-18 alert fired rule=gc_pause_long value=98ms threshold=96ms
+2026-11-03T10:53:20 INFO  ab-router/ar-node-04 pool resize target=ab-router-cache max_pool_size=251 prev=253
+2026-11-03T10:53:23 INFO  ab-router/ar-node-13 request done id=req-ae3eb70e route=/ab-router/v1/cancel status=200 latency_ms=302
+2026-11-03T10:53:30 INFO  ab-router/ar-node-06 request done id=req-980ebabc route=/ab-router/v1/sync status=200 latency_ms=238
+2026-11-03T10:53:31 INFO  ab-router/ar-node-19 request done id=req-112b3894 route=/ab-router/v1/status status=200 latency_ms=43
+2026-11-03T10:53:35 INFO  ab-router/ar-node-23 request done id=req-1709ac0c route=/ab-router/v1/list status=429 latency_ms=73
+2026-11-03T10:53:36 INFO  ab-router/ar-node-16 deploy step release=ab-router-4.12.4 step=pull_image result=ok took_s=154
+2026-11-03T10:53:42 INFO  ab-router/ar-node-22 request done id=req-06211006 route=/ab-router/v1/verify status=200 latency_ms=169
+2026-11-03T10:53:43 INFO  ab-router/ar-node-23 request done id=req-ae59e593 route=/ab-router/v1/sync status=400 latency_ms=21
+2026-11-03T10:53:44 INFO  ab-router/ar-node-18 pool resize target=ab-router-cache max_pool_size=107 prev=125
+2026-11-03T10:53:46 INFO  ab-router/ar-node-16 ticket linked id=OPS-47894 reason=quota_increase
+2026-11-03T10:53:52 INFO  ab-router/ar-node-24 cache stats region=ap-se-1a hit_ratio=74.4% evictions=24908
+2026-11-03T10:53:56 INFO  ab-router/ar-node-10 request done id=req-0dc67aa5 route=/ab-router/v1/sync status=200 latency_ms=93
+2026-11-03T10:54:01 INFO  ab-router/ar-node-08 request done id=req-0a7d416d route=/ab-router/v1/verify status=200 latency_ms=59
+2026-11-03T10:54:03 INFO  ab-router/ar-node-07 cache stats region=ap-ne-2b hit_ratio=87.4% evictions=9180
+2026-11-03T10:54:10 INFO  ab-router/ar-node-21 pool resize target=ab-router-queue max_pool_size=218 prev=275
+2026-11-03T10:54:14 INFO  ab-router/ar-node-14 request done id=req-1d8fc066 route=/ab-router/v1/get status=429 latency_ms=219
+2026-11-03T10:54:21 INFO  ab-router/ar-node-17 ticket linked id=OPS-48553 reason=schema_change
+2026-11-03T10:54:24 INFO  ab-router/ar-node-08 request done id=req-561aca79 route=/ab-router/v1/list status=200 latency_ms=175
+2026-11-03T10:54:26 INFO  ab-router/ar-node-04 config applied key=breaker.half_open_s value=29 by=jhpark
+2026-11-03T10:54:29 INFO  ab-router/ar-node-04 pool resize target=ab-router-worker max_pool_size=193 prev=158
+2026-11-03T10:54:32 INFO  ab-router/ar-node-05 pool resize target=ab-router-cache max_pool_size=162 prev=173
+2026-11-03T10:54:37 INFO  ab-router/ar-node-10 cache stats region=ap-ne-2b hit_ratio=69.8% evictions=33514
+2026-11-03T10:54:41 INFO  ab-router/ar-node-16 config applied key=http.read_timeout_ms value=false by=dwjung
+2026-11-03T10:54:42 INFO  ab-router/ar-node-12 config applied key=gc.pause_target_ms value=11 by=mjlee
+2026-11-03T10:54:43 NOTE  ab-router/ar-node-14 operator=ejlim memo="캐시 TTL을 47초로 되돌림. 오래된 응답이 보고됨."
+2026-11-03T10:54:47 INFO  ab-router/ar-node-12 request done id=req-e944918c route=/ab-router/v1/verify status=404 latency_ms=226
+2026-11-03T10:54:53 NOTE  ab-router/ar-node-12 operator=dwjung memo="로그 보존 기간은 38일로 유지하기로 함."
+2026-11-03T10:54:55 WARN  ab-router/ar-node-15 alert fired rule=cpu_steal_high value=94% threshold=82%
+2026-11-03T10:54:58 WARN  ab-router/ar-node-14 alert fired rule=replica_lag_high value=61s threshold=48s
+2026-11-03T10:55:02 INFO  ab-router/ar-node-20 config applied key=gc.pause_target_ms value=49 by=yjchoi
+2026-11-03T10:55:06 INFO  ab-router/ar-node-10 config applied key=canary.latency_p99_threshold_ms value=true by=jhpark
+2026-11-03T10:55:12 INFO  ab-router/ar-node-04 request done id=req-e05c28f5 route=/ab-router/v1/create status=400 latency_ms=42
+2026-11-03T10:55:17 WARN  ab-router/ar-node-18 alert fired rule=gc_pause_long value=56ms threshold=41ms
+2026-11-03T10:55:22 INFO  ab-router/ar-node-16 request done id=req-f5e31dab route=/ab-router/v1/cancel status=200 latency_ms=70
+2026-11-03T10:55:24 INFO  ab-router/ar-node-14 request done id=req-a2ec2f79 route=/ab-router/v1/cancel status=200 latency_ms=161
+2026-11-03T10:55:28 WARN  ab-router/ar-node-17 alert fired rule=queue_depth_high value=54 threshold=46
+2026-11-03T10:55:33 INFO  ab-router/ar-node-09 request done id=req-6735d678 route=/ab-router/v1/sync status=200 latency_ms=152
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

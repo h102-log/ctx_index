@@ -1,0 +1,424 @@
+참고용 로그 27: 청구 API(billing-api) 월말 마감 구간. '확인'이라고만 답해 줘.
+
+2026-10-31T06:40:11 INFO  billing-api/ba-node-23 request done id=req-a62b1860 route=/billing-api/v1/get status=201 latency_ms=69
+2026-10-31T06:40:17 INFO  billing-api/ba-node-10 request done id=req-a40a1013 route=/billing-api/v1/status status=200 latency_ms=85
+2026-10-31T06:40:23 INFO  billing-api/ba-node-19 deploy step release=billing-api-4.13.4 step=shift_traffic_50 result=ok took_s=130
+2026-10-31T06:40:26 INFO  billing-api/ba-node-15 deploy step release=billing-api-4.22.3 step=drain result=ok took_s=216
+2026-10-31T06:40:33 WARN  billing-api/ba-node-18 alert fired rule=conn_pool_saturated value=59% threshold=50%
+2026-10-31T06:40:34 INFO  billing-api/ba-node-21 request done id=req-64d02d75 route=/billing-api/v1/cancel status=200 latency_ms=111
+2026-10-31T06:40:35 INFO  billing-api/ba-node-09 request done id=req-0666f775 route=/billing-api/v1/list status=200 latency_ms=94
+2026-10-31T06:40:38 INFO  billing-api/ba-node-15 request done id=req-ec41dc58 route=/billing-api/v1/get status=200 latency_ms=184
+2026-10-31T06:40:40 INFO  billing-api/ba-node-17 request done id=req-e1672b3b route=/billing-api/v1/status status=503 latency_ms=517
+2026-10-31T06:40:41 INFO  billing-api/ba-node-08 pool resize target=billing-api-db max_pool_size=310 prev=325
+2026-10-31T06:40:45 INFO  billing-api/ba-node-06 config applied key=breaker.half_open_s value=true by=yjchoi
+2026-10-31T06:40:47 INFO  billing-api/ba-node-15 request done id=req-2b760317 route=/billing-api/v1/sync status=200 latency_ms=40
+2026-10-31T06:40:52 INFO  billing-api/ba-node-09 ticket linked id=OPS-47867 reason=log_volume_spike
+2026-10-31T06:40:55 INFO  billing-api/ba-node-08 pool resize target=billing-api-worker max_pool_size=293 prev=340
+2026-10-31T06:40:57 INFO  billing-api/ba-node-17 deploy step release=billing-api-4.21.4 step=healthcheck result=ok took_s=102
+2026-10-31T06:41:04 NOTE  billing-api/ba-node-14 operator=dwjung memo="점검 창을 18분 연장함. 승인: 오세린 매니저."
+2026-10-31T06:41:05 ERROR billing-api/ba-node-17 job failed job=billing-api-rollup attempt=2 cause=quota_exceeded
+2026-10-31T06:41:07 WARN  billing-api/ba-node-20 alert fired rule=conn_pool_saturated value=96% threshold=81%
+2026-10-31T06:41:08 INFO  billing-api/ba-node-03 request done id=req-72bd443c route=/billing-api/v1/sync status=409 latency_ms=160
+2026-10-31T06:41:10 NOTE  billing-api/ba-node-21 operator=dwjung memo="캐시 TTL을 13초로 되돌림. 오래된 응답이 보고됨."
+2026-10-31T06:41:13 INFO  billing-api/ba-node-22 request done id=req-e06bf997 route=/billing-api/v1/verify status=200 latency_ms=54
+2026-10-31T06:41:14 NOTE  billing-api/ba-node-09 operator=shkim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-31T06:41:16 INFO  billing-api/ba-node-12 config applied key=canary.traffic_percent value=false by=hbyoon
+2026-10-31T06:41:23 INFO  billing-api/ba-node-05 pool resize target=billing-api-worker max_pool_size=217 prev=179
+2026-10-31T06:41:25 INFO  billing-api/ba-node-23 deploy step release=billing-api-4.10.2 step=drain result=ok took_s=225
+2026-10-31T06:41:29 INFO  billing-api/ba-node-24 request done id=req-2708ec95 route=/billing-api/v1/cancel status=404 latency_ms=426
+2026-10-31T06:41:35 INFO  billing-api/ba-node-20 request done id=req-5918c981 route=/billing-api/v1/list status=200 latency_ms=61
+2026-10-31T06:41:40 INFO  billing-api/ba-node-01 backup finished file=/vault/weekly/payments_2026w38.tar.zst size_mb=50224 checksum=b2eef133
+2026-10-31T06:41:43 WARN  billing-api/ba-node-01 alert fired rule=queue_depth_high value=62 threshold=54
+2026-10-31T06:41:50 WARN  billing-api/ba-node-20 alert fired rule=conn_pool_saturated value=55% threshold=52%
+2026-10-31T06:41:51 INFO  billing-api/ba-node-19 pool resize target=billing-api-upstream max_pool_size=144 prev=122
+2026-10-31T06:41:54 INFO  billing-api/ba-node-12 request done id=req-aee023e5 route=/billing-api/v1/get status=503 latency_ms=172
+2026-10-31T06:41:59 INFO  billing-api/ba-node-06 request done id=req-5d561550 route=/billing-api/v1/create status=404 latency_ms=665
+2026-10-31T06:42:05 WARN  billing-api/ba-node-22 alert fired rule=heap_used_high value=66% threshold=60%
+2026-10-31T06:42:10 INFO  billing-api/ba-node-23 request done id=req-daa1bcde route=/billing-api/v1/cancel status=200 latency_ms=131
+2026-10-31T06:42:13 INFO  billing-api/ba-node-17 config applied key=breaker.open_ratio value=5581 by=hbyoon
+2026-10-31T06:42:20 INFO  billing-api/ba-node-23 request done id=req-a49401f0 route=/billing-api/v1/create status=200 latency_ms=117
+2026-10-31T06:42:25 INFO  billing-api/ba-node-05 cache stats region=ap-ne-2c hit_ratio=87.6% evictions=3281
+2026-10-31T06:42:30 INFO  billing-api/ba-node-10 cache stats region=ap-ne-2a hit_ratio=80.4% evictions=29581
+2026-10-31T06:42:36 NOTE  billing-api/ba-node-16 operator=dwjung memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-31T06:42:40 INFO  billing-api/ba-node-12 request done id=req-e338c4ee route=/billing-api/v1/create status=200 latency_ms=73
+2026-10-31T06:42:42 WARN  billing-api/ba-node-12 alert fired rule=disk_usage_warning value=62% threshold=53%
+2026-10-31T06:42:48 NOTE  billing-api/ba-node-05 operator=sykang memo="점검 창을 42분 연장함. 승인: 민도현 파트장."
+2026-10-31T06:42:53 INFO  billing-api/ba-node-13 deploy step release=billing-api-4.20.5 step=healthcheck result=ok took_s=154
+2026-10-31T06:43:00 INFO  billing-api/ba-node-03 ticket linked id=OPS-49193 reason=flaky_healthcheck
+2026-10-31T06:43:06 INFO  billing-api/ba-node-22 request done id=req-e18684d2 route=/billing-api/v1/get status=200 latency_ms=277
+2026-10-31T06:43:08 INFO  billing-api/ba-node-04 pool resize target=billing-api-cache max_pool_size=273 prev=332
+2026-10-31T06:43:12 INFO  billing-api/ba-node-08 request done id=req-58f1baf6 route=/billing-api/v1/status status=503 latency_ms=20
+2026-10-31T06:43:15 INFO  billing-api/ba-node-08 request done id=req-37084173 route=/billing-api/v1/get status=500 latency_ms=210
+2026-10-31T06:43:21 INFO  billing-api/ba-node-17 ticket linked id=OPS-47522 reason=node_drain
+2026-10-31T06:43:26 INFO  billing-api/ba-node-05 request done id=req-bc0e0ab9 route=/billing-api/v1/get status=200 latency_ms=160
+2026-10-31T06:43:32 NOTE  billing-api/ba-node-14 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-31T06:43:38 INFO  billing-api/ba-node-02 request done id=req-2d621d53 route=/billing-api/v1/sync status=400 latency_ms=94
+2026-10-31T06:43:40 NOTE  billing-api/ba-node-02 operator=dwjung memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-31T06:43:47 INFO  billing-api/ba-node-13 request done id=req-8c8d0f91 route=/billing-api/v1/get status=200 latency_ms=133
+2026-10-31T06:43:49 INFO  billing-api/ba-node-14 deploy step release=billing-api-4.10.0 step=shift_traffic_50 result=ok took_s=74
+2026-10-31T06:43:56 INFO  billing-api/ba-node-17 deploy step release=billing-api-4.12.3 step=shift_traffic_100 result=ok took_s=65
+2026-10-31T06:43:57 INFO  billing-api/ba-node-14 request done id=req-5e458352 route=/billing-api/v1/sync status=200 latency_ms=136
+2026-10-31T06:44:03 INFO  billing-api/ba-node-16 request done id=req-11917a6d route=/billing-api/v1/create status=200 latency_ms=35
+2026-10-31T06:44:04 INFO  billing-api/ba-node-04 request done id=req-d2ae4aea route=/billing-api/v1/verify status=200 latency_ms=27
+2026-10-31T06:44:10 INFO  billing-api/ba-node-23 request done id=req-6040394b route=/billing-api/v1/update status=404 latency_ms=36
+2026-10-31T06:44:17 INFO  billing-api/ba-node-14 request done id=req-84bf8c99 route=/billing-api/v1/get status=200 latency_ms=11
+2026-10-31T06:44:22 INFO  billing-api/ba-node-10 request done id=req-4a5f0ddb route=/billing-api/v1/create status=400 latency_ms=157
+2026-10-31T06:44:23 INFO  billing-api/ba-node-03 ticket linked id=OPS-48075 reason=log_volume_spike
+2026-10-31T06:44:25 INFO  billing-api/ba-node-01 request done id=req-710020b8 route=/billing-api/v1/verify status=200 latency_ms=97
+2026-10-31T06:44:28 INFO  billing-api/ba-node-17 request done id=req-07f88cf4 route=/billing-api/v1/verify status=200 latency_ms=112
+2026-10-31T06:44:32 INFO  billing-api/ba-node-14 request done id=req-10c3961e route=/billing-api/v1/sync status=404 latency_ms=352
+2026-10-31T06:44:38 INFO  billing-api/ba-node-14 deploy step release=billing-api-4.16.3 step=shift_traffic_100 result=ok took_s=43
+2026-10-31T06:44:39 WARN  billing-api/ba-node-07 alert fired rule=heap_used_high value=56% threshold=51%
+2026-10-31T06:44:41 INFO  billing-api/ba-node-05 config applied key=retry.max_attempts value=false by=sykang
+2026-10-31T06:44:43 INFO  billing-api/ba-node-09 request done id=req-8018521f route=/billing-api/v1/update status=200 latency_ms=61
+2026-10-31T06:44:46 WARN  billing-api/ba-node-06 alert fired rule=p99_latency_high value=97ms threshold=85ms
+2026-10-31T06:44:49 INFO  billing-api/ba-node-09 request done id=req-2426c3ec route=/billing-api/v1/create status=503 latency_ms=570
+2026-10-31T06:44:56 INFO  billing-api/ba-node-10 deploy step release=billing-api-4.15.9 step=drain result=ok took_s=130
+2026-10-31T06:45:02 INFO  billing-api/ba-node-24 request done id=req-f71b9eca route=/billing-api/v1/status status=400 latency_ms=117
+2026-10-31T06:45:07 INFO  billing-api/ba-node-24 deploy step release=billing-api-4.20.0 step=start result=ok took_s=26
+2026-10-31T06:45:10 INFO  billing-api/ba-node-05 request done id=req-83b885b4 route=/billing-api/v1/status status=409 latency_ms=38
+2026-10-31T06:45:14 INFO  billing-api/ba-node-23 request done id=req-cd579afa route=/billing-api/v1/status status=204 latency_ms=192
+2026-10-31T06:45:21 ERROR billing-api/ba-node-07 job failed job=billing-api-cleanup attempt=2 cause=quota_exceeded
+2026-10-31T06:45:24 INFO  billing-api/ba-node-22 request done id=req-f23d1f75 route=/billing-api/v1/get status=200 latency_ms=318
+2026-10-31T06:45:29 INFO  billing-api/ba-node-11 request done id=req-9676a363 route=/billing-api/v1/status status=429 latency_ms=87
+2026-10-31T06:45:32 INFO  billing-api/ba-node-01 pool resize target=billing-api-db max_pool_size=65 prev=115
+2026-10-31T06:45:38 INFO  billing-api/ba-node-03 pool resize target=billing-api-queue max_pool_size=22 prev=60
+2026-10-31T06:45:44 INFO  billing-api/ba-node-24 pool resize target=billing-api-worker max_pool_size=33 prev=4
+2026-10-31T06:45:47 INFO  billing-api/ba-node-24 request done id=req-ad3650c2 route=/billing-api/v1/verify status=200 latency_ms=84
+2026-10-31T06:45:54 INFO  billing-api/ba-node-18 deploy step release=billing-api-4.18.2 step=shift_traffic_50 result=ok took_s=58
+2026-10-31T06:46:00 INFO  billing-api/ba-node-24 request done id=req-4c2a19e5 route=/billing-api/v1/cancel status=200 latency_ms=167
+2026-10-31T06:46:06 NOTE  billing-api/ba-node-10 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 3일 남음."
+2026-10-31T06:46:12 INFO  billing-api/ba-node-06 pool resize target=billing-api-worker max_pool_size=325 prev=359
+2026-10-31T06:46:19 INFO  billing-api/ba-node-09 config applied key=limiter.rps value=22 by=yjchoi
+2026-10-31T06:46:26 INFO  billing-api/ba-node-20 request done id=req-c16ee815 route=/billing-api/v1/cancel status=200 latency_ms=114
+2026-10-31T06:46:33 INFO  billing-api/ba-node-18 request done id=req-26f5fdae route=/billing-api/v1/verify status=200 latency_ms=929
+2026-10-31T06:46:38 INFO  billing-api/ba-node-23 request done id=req-6ea245c1 route=/billing-api/v1/get status=429 latency_ms=27
+2026-10-31T06:46:40 INFO  billing-api/ba-node-14 ticket linked id=OPS-48201 reason=schema_change
+2026-10-31T06:46:46 NOTE  billing-api/ba-node-16 operator=sykang memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-10-31T06:46:51 INFO  billing-api/ba-node-08 request done id=req-90d3898e route=/billing-api/v1/list status=200 latency_ms=39
+2026-10-31T06:46:57 INFO  billing-api/ba-node-09 request done id=req-1a25d9d4 route=/billing-api/v1/list status=409 latency_ms=400
+2026-10-31T06:47:04 INFO  billing-api/ba-node-13 request done id=req-2c784566 route=/billing-api/v1/create status=500 latency_ms=162
+2026-10-31T06:47:10 WARN  billing-api/ba-node-11 alert fired rule=gc_pause_long value=74ms threshold=69ms
+2026-10-31T06:47:13 NOTE  billing-api/ba-node-21 operator=ejlim memo="캐시 TTL을 23초로 되돌림. 오래된 응답이 보고됨."
+2026-10-31T06:47:18 INFO  billing-api/ba-node-23 request done id=req-9d1b569b route=/billing-api/v1/get status=200 latency_ms=133
+2026-10-31T06:47:22 INFO  billing-api/ba-node-10 request done id=req-93930f01 route=/billing-api/v1/list status=201 latency_ms=288
+2026-10-31T06:47:27 NOTE  billing-api/ba-node-12 operator=dwjung memo="동시 처리 수를 86에서 57로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-31T06:47:28 INFO  billing-api/ba-node-17 backup finished file=/vault/weekly/payments_2026w37.tar.zst size_mb=17560 checksum=ae12cad5
+2026-10-31T06:47:29 INFO  billing-api/ba-node-03 request done id=req-2ea6037d route=/billing-api/v1/list status=429 latency_ms=329
+2026-10-31T06:47:33 INFO  billing-api/ba-node-07 backup finished file=/vault/daily/orders_20261015.tar.zst size_mb=50833 checksum=c7055186
+2026-10-31T06:47:36 INFO  billing-api/ba-node-17 request done id=req-9ede11ab route=/billing-api/v1/verify status=200 latency_ms=237
+2026-10-31T06:47:42 INFO  billing-api/ba-node-11 backup finished file=/vault/daily/orders_20261019.tar.zst size_mb=86414 checksum=ff0f9fe0
+2026-10-31T06:47:44 INFO  billing-api/ba-node-09 deploy step release=billing-api-4.12.1 step=shift_traffic_10 result=ok took_s=38
+2026-10-31T06:47:50 INFO  billing-api/ba-node-21 backup finished file=/vault/daily/payments_20261025.tar.zst size_mb=65228 checksum=a4d8d65a
+2026-10-31T06:47:54 WARN  billing-api/ba-node-11 alert fired rule=disk_usage_warning value=75% threshold=72%
+2026-10-31T06:48:00 INFO  billing-api/ba-node-06 request done id=req-5b822d7b route=/billing-api/v1/get status=200 latency_ms=33
+2026-10-31T06:48:02 INFO  billing-api/ba-node-02 request done id=req-8e8b01d3 route=/billing-api/v1/cancel status=200 latency_ms=197
+2026-10-31T06:48:08 INFO  billing-api/ba-node-20 config applied key=flush.interval_ms value=2562 by=hbyoon
+2026-10-31T06:48:14 INFO  billing-api/ba-node-08 pool resize target=billing-api-db max_pool_size=121 prev=101
+2026-10-31T06:48:15 INFO  billing-api/ba-node-08 request done id=req-d6144208 route=/billing-api/v1/status status=429 latency_ms=125
+2026-10-31T06:48:17 INFO  billing-api/ba-node-17 pool resize target=billing-api-cache max_pool_size=26 prev=4
+2026-10-31T06:48:18 INFO  billing-api/ba-node-10 deploy step release=billing-api-4.12.1 step=drain result=ok took_s=11
+2026-10-31T06:48:24 INFO  billing-api/ba-node-09 deploy step release=billing-api-4.20.6 step=shift_traffic_50 result=ok took_s=106
+2026-10-31T06:48:27 INFO  billing-api/ba-node-15 request done id=req-9ee637d5 route=/billing-api/v1/verify status=200 latency_ms=281
+2026-10-31T06:48:33 INFO  billing-api/ba-node-23 request done id=req-d37326e2 route=/billing-api/v1/list status=429 latency_ms=97
+2026-10-31T06:48:37 INFO  billing-api/ba-node-16 cache stats region=ap-ne-2b hit_ratio=97.2% evictions=36187
+2026-10-31T06:48:43 INFO  billing-api/ba-node-02 request done id=req-25f789a1 route=/billing-api/v1/status status=200 latency_ms=84
+2026-10-31T06:48:46 NOTE  billing-api/ba-node-04 operator=dwjung memo="점검 창을 46분 연장함. 승인: 민도현 파트장."
+2026-10-31T06:48:53 INFO  billing-api/ba-node-19 request done id=req-dd7bcd6d route=/billing-api/v1/status status=200 latency_ms=250
+2026-10-31T06:48:57 INFO  billing-api/ba-node-09 request done id=req-b0728387 route=/billing-api/v1/sync status=200 latency_ms=116
+2026-10-31T06:49:02 INFO  billing-api/ba-node-04 config applied key=tls.session_cache value=86% by=mjlee
+2026-10-31T06:49:06 INFO  billing-api/ba-node-03 backup finished file=/vault/daily/orders_20261001.tar.zst size_mb=58694 checksum=6a83f40e
+2026-10-31T06:49:08 INFO  billing-api/ba-node-14 cache stats region=ap-ne-2b hit_ratio=80.7% evictions=484
+2026-10-31T06:49:11 INFO  billing-api/ba-node-12 config applied key=breaker.open_ratio value=true by=mjlee
+2026-10-31T06:49:18 INFO  billing-api/ba-node-10 config applied key=canary.latency_p99_threshold_ms value=true by=hbyoon
+2026-10-31T06:49:21 WARN  billing-api/ba-node-17 alert fired rule=disk_usage_warning value=94% threshold=90%
+2026-10-31T06:49:24 INFO  billing-api/ba-node-21 ticket linked id=OPS-49890 reason=flaky_healthcheck
+2026-10-31T06:49:30 INFO  billing-api/ba-node-05 request done id=req-087feac6 route=/billing-api/v1/cancel status=400 latency_ms=99
+2026-10-31T06:49:31 INFO  billing-api/ba-node-24 request done id=req-cdffc5b1 route=/billing-api/v1/get status=200 latency_ms=29
+2026-10-31T06:49:36 INFO  billing-api/ba-node-10 request done id=req-40fdf6c7 route=/billing-api/v1/cancel status=200 latency_ms=98
+2026-10-31T06:49:40 INFO  billing-api/ba-node-04 pool resize target=billing-api-cache max_pool_size=150 prev=142
+2026-10-31T06:49:42 INFO  billing-api/ba-node-09 request done id=req-7dc93ea4 route=/billing-api/v1/update status=200 latency_ms=136
+2026-10-31T06:49:46 WARN  billing-api/ba-node-07 alert fired rule=fd_usage_high value=74% threshold=69%
+2026-10-31T06:49:48 INFO  billing-api/ba-node-04 request done id=req-f35782b6 route=/billing-api/v1/sync status=200 latency_ms=77
+2026-10-31T06:49:54 INFO  billing-api/ba-node-17 config applied key=limiter.burst value=52% by=shkim
+2026-10-31T06:49:57 INFO  billing-api/ba-node-03 config applied key=http.read_timeout_ms value=3724 by=ejlim
+2026-10-31T06:49:58 INFO  billing-api/ba-node-22 ticket linked id=OPS-47850 reason=schema_change
+2026-10-31T06:49:59 INFO  billing-api/ba-node-06 request done id=req-6ce2f108 route=/billing-api/v1/create status=200 latency_ms=88
+2026-10-31T06:50:04 INFO  billing-api/ba-node-18 ticket linked id=OPS-49397 reason=oncall_handoff
+2026-10-31T06:50:08 NOTE  billing-api/ba-node-18 operator=sykang memo="ba-node-18 재기동 후 지표 정상 확인."
+2026-10-31T06:50:09 INFO  billing-api/ba-node-14 request done id=req-e8d3fd4a route=/billing-api/v1/update status=404 latency_ms=17
+2026-10-31T06:50:16 WARN  billing-api/ba-node-06 alert fired rule=cpu_steal_high value=59% threshold=51%
+2026-10-31T06:50:20 INFO  billing-api/ba-node-14 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=87649 checksum=3125a459
+2026-10-31T06:50:22 WARN  billing-api/ba-node-19 alert fired rule=disk_usage_warning value=97% threshold=82%
+2026-10-31T06:50:29 INFO  billing-api/ba-node-05 request done id=req-57a4594d route=/billing-api/v1/sync status=200 latency_ms=58
+2026-10-31T06:50:34 INFO  billing-api/ba-node-05 cache stats region=ap-ne-2c hit_ratio=89.9% evictions=9147
+2026-10-31T06:50:35 ERROR billing-api/ba-node-04 job failed job=billing-api-export attempt=4 cause=dns_failure
+2026-10-31T06:50:36 INFO  billing-api/ba-node-03 pool resize target=billing-api-queue max_pool_size=272 prev=225
+2026-10-31T06:50:39 INFO  billing-api/ba-node-09 request done id=req-77dc5e08 route=/billing-api/v1/verify status=200 latency_ms=28
+2026-10-31T06:50:44 INFO  billing-api/ba-node-02 request done id=req-fb013ce9 route=/billing-api/v1/get status=200 latency_ms=149
+2026-10-31T06:50:45 INFO  billing-api/ba-node-02 request done id=req-ac524505 route=/billing-api/v1/cancel status=500 latency_ms=235
+2026-10-31T06:50:49 INFO  billing-api/ba-node-24 request done id=req-2af1001a route=/billing-api/v1/cancel status=200 latency_ms=209
+2026-10-31T06:50:54 INFO  billing-api/ba-node-17 request done id=req-f4a1c455 route=/billing-api/v1/get status=500 latency_ms=134
+2026-10-31T06:50:56 INFO  billing-api/ba-node-24 request done id=req-1c581d20 route=/billing-api/v1/cancel status=503 latency_ms=57
+2026-10-31T06:51:03 INFO  billing-api/ba-node-13 config applied key=queue.visibility_s value=false by=mjlee
+2026-10-31T06:51:04 NOTE  billing-api/ba-node-17 operator=sykang memo="헬스체크 간격을 26초에서 53초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-31T06:51:09 NOTE  billing-api/ba-node-12 operator=dwjung memo="인증서 갱신 일정 확인. 만료까지 41일 남음."
+2026-10-31T06:51:10 INFO  billing-api/ba-node-24 request done id=req-1f0b9c51 route=/billing-api/v1/list status=204 latency_ms=104
+2026-10-31T06:51:15 WARN  billing-api/ba-node-13 alert fired rule=error_ratio_high value=75% threshold=68%
+2026-10-31T06:51:16 INFO  billing-api/ba-node-06 request done id=req-206e579a route=/billing-api/v1/get status=200 latency_ms=93
+2026-10-31T06:51:23 INFO  billing-api/ba-node-22 request done id=req-f3c66d49 route=/billing-api/v1/status status=503 latency_ms=167
+2026-10-31T06:51:24 INFO  billing-api/ba-node-10 request done id=req-5814edb3 route=/billing-api/v1/sync status=200 latency_ms=150
+2026-10-31T06:51:31 INFO  billing-api/ba-node-22 request done id=req-a0b37b3b route=/billing-api/v1/sync status=500 latency_ms=28
+2026-10-31T06:51:35 INFO  billing-api/ba-node-17 pool resize target=billing-api-worker max_pool_size=117 prev=175
+2026-10-31T06:51:41 INFO  billing-api/ba-node-17 request done id=req-c8d0fdbd route=/billing-api/v1/status status=200 latency_ms=155
+2026-10-31T06:51:42 ERROR billing-api/ba-node-21 job failed job=billing-api-rollup attempt=3 cause=bad_checksum
+2026-10-31T06:51:47 INFO  billing-api/ba-node-13 ticket linked id=OPS-48187 reason=flaky_healthcheck
+2026-10-31T06:51:49 INFO  billing-api/ba-node-20 deploy step release=billing-api-4.10.7 step=shift_traffic_50 result=ok took_s=45
+2026-10-31T06:51:54 INFO  billing-api/ba-node-01 pool resize target=billing-api-upstream max_pool_size=47 prev=43
+2026-10-31T06:51:58 INFO  billing-api/ba-node-05 deploy step release=billing-api-4.17.0 step=migrate result=ok took_s=211
+2026-10-31T06:52:02 INFO  billing-api/ba-node-20 request done id=req-6aff738a route=/billing-api/v1/get status=503 latency_ms=233
+2026-10-31T06:52:07 NOTE  billing-api/ba-node-08 operator=shkim memo="헬스체크 간격을 32초에서 45초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-31T06:52:14 INFO  billing-api/ba-node-07 ticket linked id=OPS-48336 reason=schema_change
+2026-10-31T06:52:15 INFO  billing-api/ba-node-08 config applied key=retry.backoff_ms value=true by=shkim
+2026-10-31T06:52:18 INFO  billing-api/ba-node-07 request done id=req-54c01580 route=/billing-api/v1/update status=500 latency_ms=323
+2026-10-31T06:52:24 INFO  billing-api/ba-node-14 pool resize target=billing-api-db max_pool_size=64 prev=67
+2026-10-31T06:52:30 INFO  billing-api/ba-node-01 request done id=req-2c690570 route=/billing-api/v1/cancel status=200 latency_ms=308
+2026-10-31T06:52:32 INFO  billing-api/ba-node-06 request done id=req-75928540 route=/billing-api/v1/sync status=200 latency_ms=291
+2026-10-31T06:52:39 INFO  billing-api/ba-node-03 request done id=req-a80d021d route=/billing-api/v1/cancel status=409 latency_ms=40
+2026-10-31T06:52:45 INFO  billing-api/ba-node-23 request done id=req-e502238e route=/billing-api/v1/status status=429 latency_ms=156
+2026-10-31T06:52:50 INFO  billing-api/ba-node-17 request done id=req-1592631b route=/billing-api/v1/status status=409 latency_ms=199
+2026-10-31T06:52:56 INFO  billing-api/ba-node-09 deploy step release=billing-api-4.12.0 step=verify result=ok took_s=194
+2026-10-31T06:53:01 INFO  billing-api/ba-node-24 request done id=req-bac5c278 route=/billing-api/v1/sync status=200 latency_ms=160
+2026-10-31T06:53:02 INFO  billing-api/ba-node-15 request done id=req-859bc0bf route=/billing-api/v1/get status=200 latency_ms=338
+2026-10-31T06:53:08 WARN  billing-api/ba-node-22 alert fired rule=p99_latency_high value=67ms threshold=53ms
+2026-10-31T06:53:12 INFO  billing-api/ba-node-16 backup finished file=/vault/weekly/payments_2026w30.tar.zst size_mb=74640 checksum=fb063c84
+2026-10-31T06:53:18 INFO  billing-api/ba-node-01 request done id=req-cfc62d19 route=/billing-api/v1/update status=200 latency_ms=637
+2026-10-31T06:53:25 INFO  billing-api/ba-node-15 request done id=req-9f3137cc route=/billing-api/v1/update status=200 latency_ms=111
+2026-10-31T06:53:28 INFO  billing-api/ba-node-10 cache stats region=ap-se-1a hit_ratio=95.2% evictions=15756
+2026-10-31T06:53:35 INFO  billing-api/ba-node-02 request done id=req-70e6a924 route=/billing-api/v1/create status=200 latency_ms=64
+2026-10-31T06:53:39 INFO  billing-api/ba-node-05 backup finished file=/vault/weekly/audit_2026w32.tar.zst size_mb=23416 checksum=5f12174f
+2026-10-31T06:53:44 INFO  billing-api/ba-node-02 request done id=req-cb0add86 route=/billing-api/v1/create status=404 latency_ms=66
+2026-10-31T06:53:46 INFO  billing-api/ba-node-11 cache stats region=ap-ne-2c hit_ratio=67.7% evictions=22409
+2026-10-31T06:53:52 WARN  billing-api/ba-node-14 alert fired rule=p99_latency_high value=85ms threshold=71ms
+2026-10-31T06:53:55 INFO  billing-api/ba-node-23 config applied key=queue.batch_size value=93% by=mjlee
+2026-10-31T06:53:58 INFO  billing-api/ba-node-06 request done id=req-a66e0bea route=/billing-api/v1/get status=200 latency_ms=93
+2026-10-31T06:54:02 INFO  billing-api/ba-node-11 deploy step release=billing-api-4.16.9 step=healthcheck result=ok took_s=94
+2026-10-31T06:54:09 INFO  billing-api/ba-node-10 request done id=req-b41f7305 route=/billing-api/v1/update status=200 latency_ms=117
+2026-10-31T06:54:11 INFO  billing-api/ba-node-13 request done id=req-86625dec route=/billing-api/v1/verify status=200 latency_ms=111
+2026-10-31T06:54:18 INFO  billing-api/ba-node-02 ticket linked id=OPS-47871 reason=quota_increase
+2026-10-31T06:54:21 INFO  billing-api/ba-node-04 pool resize target=billing-api-worker max_pool_size=377 prev=434
+2026-10-31T06:54:26 INFO  billing-api/ba-node-11 request done id=req-240993b0 route=/billing-api/v1/list status=200 latency_ms=179
+2026-10-31T06:54:33 INFO  billing-api/ba-node-05 cache stats region=ap-ne-2b hit_ratio=91.3% evictions=37228
+2026-10-31T06:54:34 WARN  billing-api/ba-node-06 alert fired rule=replica_lag_high value=60s threshold=48s
+2026-10-31T06:54:35 INFO  billing-api/ba-node-09 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=81740 checksum=5adf3e62
+2026-10-31T06:54:39 INFO  billing-api/ba-node-13 request done id=req-7b4683bd route=/billing-api/v1/verify status=429 latency_ms=155
+2026-10-31T06:54:43 INFO  billing-api/ba-node-01 request done id=req-430d6eb7 route=/billing-api/v1/sync status=404 latency_ms=71
+2026-10-31T06:54:49 INFO  billing-api/ba-node-10 request done id=req-275b16eb route=/billing-api/v1/create status=200 latency_ms=330
+2026-10-31T06:54:52 INFO  billing-api/ba-node-12 backup finished file=/vault/weekly/payments_2026w32.tar.zst size_mb=15093 checksum=ff9f96f6
+2026-10-31T06:54:56 INFO  billing-api/ba-node-22 backup finished file=/vault/daily/payments_20261005.tar.zst size_mb=25175 checksum=110076d2
+2026-10-31T06:55:02 INFO  billing-api/ba-node-12 config applied key=dns.ttl_s value=49% by=dwjung
+2026-10-31T06:55:03 INFO  billing-api/ba-node-19 backup finished file=/vault/weekly/payments_2026w37.tar.zst size_mb=39580 checksum=aef90219
+2026-10-31T06:55:09 WARN  billing-api/ba-node-04 alert fired rule=disk_usage_warning value=58% threshold=45%
+2026-10-31T06:55:16 INFO  billing-api/ba-node-22 config applied key=log.sample_rate value=true by=hbyoon
+2026-10-31T06:55:22 INFO  billing-api/ba-node-04 request done id=req-e8d6514f route=/billing-api/v1/verify status=200 latency_ms=202
+2026-10-31T06:55:27 INFO  billing-api/ba-node-23 config applied key=cache.ttl_s value=34% by=ejlim
+2026-10-31T06:55:32 WARN  billing-api/ba-node-16 alert fired rule=heap_used_high value=57% threshold=49%
+2026-10-31T06:55:36 INFO  billing-api/ba-node-12 request done id=req-8e9844a1 route=/billing-api/v1/sync status=204 latency_ms=188
+2026-10-31T06:55:42 ERROR billing-api/ba-node-23 job failed job=billing-api-export attempt=4 cause=bad_checksum
+2026-10-31T06:55:49 INFO  billing-api/ba-node-09 request done id=req-b18e9691 route=/billing-api/v1/list status=200 latency_ms=82
+2026-10-31T06:55:53 INFO  billing-api/ba-node-02 request done id=req-b9e1a74e route=/billing-api/v1/status status=200 latency_ms=46
+2026-10-31T06:55:54 INFO  billing-api/ba-node-20 ticket linked id=OPS-49192 reason=flaky_healthcheck
+2026-10-31T06:55:58 INFO  billing-api/ba-node-17 pool resize target=billing-api-db max_pool_size=334 prev=300
+2026-10-31T06:56:05 WARN  billing-api/ba-node-21 alert fired rule=fd_usage_high value=52% threshold=51%
+2026-10-31T06:56:08 INFO  billing-api/ba-node-24 cache stats region=us-we-2b hit_ratio=61.3% evictions=2081
+2026-10-31T06:56:09 INFO  billing-api/ba-node-08 backup finished file=/vault/daily/users_20261026.tar.zst size_mb=35554 checksum=b9da9c6b
+2026-10-31T06:56:16 INFO  billing-api/ba-node-23 request done id=req-dc3a685e route=/billing-api/v1/update status=200 latency_ms=95
+2026-10-31T06:56:19 NOTE  billing-api/ba-node-10 operator=dwjung memo="캐시 TTL을 31초로 되돌림. 오래된 응답이 보고됨."
+2026-10-31T06:56:24 INFO  billing-api/ba-node-05 backup finished file=/vault/daily/users_20261027.tar.zst size_mb=80341 checksum=16175aa0
+2026-10-31T06:56:27 INFO  billing-api/ba-node-21 config applied key=queue.visibility_s value=false by=shkim
+2026-10-31T06:56:33 INFO  billing-api/ba-node-07 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=62277 checksum=f91e6a8d
+2026-10-31T06:56:38 INFO  billing-api/ba-node-07 config applied key=flush.interval_ms value=false by=dwjung
+2026-10-31T06:56:43 INFO  billing-api/ba-node-01 request done id=req-b175cbac route=/billing-api/v1/create status=200 latency_ms=42
+2026-10-31T06:56:44 INFO  billing-api/ba-node-13 request done id=req-4b47e2b5 route=/billing-api/v1/get status=200 latency_ms=108
+2026-10-31T06:56:49 INFO  billing-api/ba-node-07 request done id=req-75b5ba07 route=/billing-api/v1/update status=201 latency_ms=59
+2026-10-31T06:56:50 INFO  billing-api/ba-node-04 config applied key=limiter.rps value=true by=sykang
+2026-10-31T06:56:51 NOTE  billing-api/ba-node-03 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-31T06:56:55 INFO  billing-api/ba-node-24 request done id=req-154e8b4b route=/billing-api/v1/update status=200 latency_ms=105
+2026-10-31T06:57:00 INFO  billing-api/ba-node-11 request done id=req-2218e8dd route=/billing-api/v1/list status=200 latency_ms=108
+2026-10-31T06:57:03 INFO  billing-api/ba-node-10 request done id=req-66928570 route=/billing-api/v1/status status=200 latency_ms=110
+2026-10-31T06:57:10 INFO  billing-api/ba-node-02 request done id=req-ef470139 route=/billing-api/v1/create status=200 latency_ms=54
+2026-10-31T06:57:15 INFO  billing-api/ba-node-20 ticket linked id=OPS-49920 reason=schema_change
+2026-10-31T06:57:21 INFO  billing-api/ba-node-03 pool resize target=billing-api-db max_pool_size=112 prev=73
+2026-10-31T06:57:22 INFO  billing-api/ba-node-01 request done id=req-003dfd0d route=/billing-api/v1/create status=200 latency_ms=109
+2026-10-31T06:57:26 INFO  billing-api/ba-node-06 pool resize target=billing-api-worker max_pool_size=342 prev=314
+2026-10-31T06:57:29 INFO  billing-api/ba-node-09 request done id=req-68cfcf6e route=/billing-api/v1/sync status=200 latency_ms=52
+2026-10-31T06:57:35 INFO  billing-api/ba-node-09 request done id=req-7d7364c3 route=/billing-api/v1/cancel status=404 latency_ms=170
+2026-10-31T06:57:40 INFO  billing-api/ba-node-08 request done id=req-bf094bca route=/billing-api/v1/status status=200 latency_ms=527
+2026-10-31T06:57:45 INFO  billing-api/ba-node-13 backup finished file=/vault/weekly/payments_2026w41.tar.zst size_mb=37547 checksum=193abcc6
+2026-10-31T06:57:48 WARN  billing-api/ba-node-08 alert fired rule=queue_depth_high value=68 threshold=59
+2026-10-31T06:57:52 WARN  billing-api/ba-node-18 alert fired rule=conn_pool_saturated value=71% threshold=68%
+2026-10-31T06:57:53 WARN  billing-api/ba-node-04 alert fired rule=replica_lag_high value=63s threshold=61s
+2026-10-31T06:57:54 INFO  billing-api/ba-node-07 config applied key=retry.backoff_ms value=47 by=mjlee
+2026-10-31T06:58:00 INFO  billing-api/ba-node-19 request done id=req-820a1a1e route=/billing-api/v1/status status=500 latency_ms=142
+2026-10-31T06:58:07 INFO  billing-api/ba-node-18 pool resize target=billing-api-cache max_pool_size=21 prev=56
+2026-10-31T06:58:09 INFO  billing-api/ba-node-08 request done id=req-9e44171e route=/billing-api/v1/sync status=429 latency_ms=434
+2026-10-31T06:58:15 INFO  billing-api/ba-node-06 request done id=req-91324863 route=/billing-api/v1/cancel status=200 latency_ms=334
+2026-10-31T06:58:21 INFO  billing-api/ba-node-15 backup finished file=/vault/daily/users_20261019.tar.zst size_mb=28272 checksum=0cccc6a7
+2026-10-31T06:58:27 INFO  billing-api/ba-node-05 request done id=req-56cb0b4d route=/billing-api/v1/list status=200 latency_ms=102
+2026-10-31T06:58:31 INFO  billing-api/ba-node-24 pool resize target=billing-api-upstream max_pool_size=310 prev=308
+2026-10-31T06:58:36 INFO  billing-api/ba-node-18 ticket linked id=OPS-49022 reason=cert_rotation
+2026-10-31T06:58:41 INFO  billing-api/ba-node-03 config applied key=shard.count value=false by=shkim
+2026-10-31T06:58:46 INFO  billing-api/ba-node-22 request done id=req-9f53f501 route=/billing-api/v1/sync status=200 latency_ms=338
+2026-10-31T06:58:51 WARN  billing-api/ba-node-24 alert fired rule=cpu_steal_high value=61% threshold=54%
+2026-10-31T06:58:57 WARN  billing-api/ba-node-12 alert fired rule=p99_latency_high value=67ms threshold=64ms
+2026-10-31T06:58:58 INFO  billing-api/ba-node-24 request done id=req-a39ae038 route=/billing-api/v1/verify status=200 latency_ms=158
+2026-10-31T06:59:04 INFO  billing-api/ba-node-16 request done id=req-662ab019 route=/billing-api/v1/create status=200 latency_ms=93
+2026-10-31T06:59:09 INFO  billing-api/ba-node-09 request done id=req-8122cb97 route=/billing-api/v1/list status=200 latency_ms=44
+2026-10-31T06:59:12 INFO  billing-api/ba-node-14 pool resize target=billing-api-cache max_pool_size=69 prev=33
+2026-10-31T06:59:17 INFO  billing-api/ba-node-17 request done id=req-156e028a route=/billing-api/v1/cancel status=500 latency_ms=42
+2026-10-31T06:59:19 INFO  billing-api/ba-node-05 request done id=req-b0c35e0f route=/billing-api/v1/create status=200 latency_ms=155
+2026-10-31T06:59:24 WARN  billing-api/ba-node-05 alert fired rule=queue_depth_high value=98 threshold=92
+2026-10-31T06:59:26 INFO  billing-api/ba-node-05 config applied key=flush.interval_ms value=true by=mjlee
+2026-10-31T06:59:32 ERROR billing-api/ba-node-10 job failed job=billing-api-rollup attempt=1 cause=upstream_timeout
+2026-10-31T06:59:39 INFO  billing-api/ba-node-21 cache stats region=ap-ne-2b hit_ratio=92.8% evictions=39139
+2026-10-31T06:59:45 INFO  billing-api/ba-node-24 request done id=req-0f3c01cc route=/billing-api/v1/cancel status=204 latency_ms=76
+2026-10-31T06:59:46 INFO  billing-api/ba-node-08 ticket linked id=OPS-47433 reason=cert_rotation
+2026-10-31T06:59:52 INFO  billing-api/ba-node-02 request done id=req-80d7f7d4 route=/billing-api/v1/cancel status=409 latency_ms=103
+2026-10-31T06:59:59 INFO  billing-api/ba-node-15 request done id=req-13f5a2c7 route=/billing-api/v1/list status=200 latency_ms=283
+2026-10-31T07:00:03 INFO  billing-api/ba-node-11 deploy step release=billing-api-4.19.2 step=shift_traffic_100 result=ok took_s=204
+2026-10-31T07:00:10 INFO  billing-api/ba-node-03 request done id=req-9910d11e route=/billing-api/v1/create status=200 latency_ms=38
+2026-10-31T07:00:11 INFO  billing-api/ba-node-15 deploy step release=billing-api-4.12.8 step=start result=ok took_s=20
+2026-10-31T07:00:14 INFO  billing-api/ba-node-06 request done id=req-56498916 route=/billing-api/v1/status status=201 latency_ms=205
+2026-10-31T07:00:15 NOTE  billing-api/ba-node-21 operator=ejlim memo="동시 처리 수를 63에서 43로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-31T07:00:17 INFO  billing-api/ba-node-14 request done id=req-0685fc59 route=/billing-api/v1/update status=200 latency_ms=225
+2026-10-31T07:00:24 INFO  billing-api/ba-node-23 config applied key=dns.ttl_s value=true by=ejlim
+2026-10-31T07:00:27 ERROR billing-api/ba-node-03 job failed job=billing-api-export attempt=1 cause=dns_failure
+2026-10-31T07:00:34 INFO  billing-api/ba-node-03 cache stats region=ap-ne-2c hit_ratio=85.8% evictions=36754
+2026-10-31T07:00:41 INFO  billing-api/ba-node-24 config applied key=limiter.burst value=false by=shkim
+2026-10-31T07:00:46 INFO  billing-api/ba-node-06 backup finished file=/vault/daily/inventory_20261011.tar.zst size_mb=88906 checksum=cf190313
+2026-10-31T07:00:48 WARN  billing-api/ba-node-19 alert fired rule=disk_usage_warning value=67% threshold=54%
+2026-10-31T07:00:54 INFO  billing-api/ba-node-22 request done id=req-1201bbfd route=/billing-api/v1/list status=204 latency_ms=189
+2026-10-31T07:00:59 INFO  billing-api/ba-node-04 config applied key=dns.ttl_s value=25% by=mjlee
+2026-10-31T07:01:05 INFO  billing-api/ba-node-22 pool resize target=billing-api-cache max_pool_size=366 prev=425
+2026-10-31T07:01:12 INFO  billing-api/ba-node-24 request done id=req-8370a8ff route=/billing-api/v1/list status=201 latency_ms=50
+2026-10-31T07:01:13 INFO  billing-api/ba-node-09 request done id=req-c9fdb575 route=/billing-api/v1/list status=200 latency_ms=60
+2026-10-31T07:01:19 INFO  billing-api/ba-node-06 deploy step release=billing-api-4.15.4 step=drain result=ok took_s=24
+2026-10-31T07:01:25 INFO  billing-api/ba-node-01 request done id=req-bb0b507a route=/billing-api/v1/cancel status=200 latency_ms=150
+2026-10-31T07:01:31 INFO  billing-api/ba-node-02 config applied key=breaker.open_ratio value=false by=sykang
+2026-10-31T07:01:38 INFO  billing-api/ba-node-05 request done id=req-2bad5e0a route=/billing-api/v1/update status=429 latency_ms=222
+2026-10-31T07:01:43 WARN  billing-api/ba-node-15 alert fired rule=disk_usage_warning value=98% threshold=96%
+2026-10-31T07:01:45 INFO  billing-api/ba-node-18 request done id=req-d2cda797 route=/billing-api/v1/update status=200 latency_ms=217
+2026-10-31T07:01:51 INFO  billing-api/ba-node-16 config applied key=worker.concurrency value=63 by=shkim
+2026-10-31T07:01:54 INFO  billing-api/ba-node-17 request done id=req-95cd0505 route=/billing-api/v1/create status=200 latency_ms=92
+2026-10-31T07:01:55 INFO  billing-api/ba-node-22 config applied key=breaker.open_ratio value=false by=dwjung
+2026-10-31T07:01:56 INFO  billing-api/ba-node-10 request done id=req-42cdaba7 route=/billing-api/v1/update status=500 latency_ms=112
+2026-10-31T07:02:03 INFO  billing-api/ba-node-20 ticket linked id=OPS-48888 reason=flaky_healthcheck
+2026-10-31T07:02:08 INFO  billing-api/ba-node-11 deploy step release=billing-api-4.16.3 step=healthcheck result=ok took_s=228
+2026-10-31T07:02:10 INFO  billing-api/ba-node-09 request done id=req-10d6c59a route=/billing-api/v1/status status=500 latency_ms=164
+2026-10-31T07:02:11 INFO  billing-api/ba-node-12 request done id=req-5b6ebdce route=/billing-api/v1/verify status=200 latency_ms=140
+2026-10-31T07:02:13 INFO  billing-api/ba-node-15 request done id=req-d3e49161 route=/billing-api/v1/status status=200 latency_ms=149
+2026-10-31T07:02:15 INFO  billing-api/ba-node-02 request done id=req-0fcfa9d0 route=/billing-api/v1/cancel status=200 latency_ms=241
+2026-10-31T07:02:19 INFO  billing-api/ba-node-10 ticket linked id=OPS-47468 reason=quota_increase
+2026-10-31T07:02:21 INFO  billing-api/ba-node-09 ticket linked id=OPS-47334 reason=quota_increase
+2026-10-31T07:02:28 INFO  billing-api/ba-node-03 request done id=req-96e3fc8f route=/billing-api/v1/verify status=200 latency_ms=148
+2026-10-31T07:02:35 INFO  billing-api/ba-node-15 deploy step release=billing-api-4.17.5 step=pull_image result=ok took_s=198
+2026-10-31T07:02:40 INFO  billing-api/ba-node-09 pool resize target=billing-api-cache max_pool_size=226 prev=275
+2026-10-31T07:02:46 INFO  billing-api/ba-node-21 request done id=req-ff59779d route=/billing-api/v1/create status=201 latency_ms=69
+2026-10-31T07:02:47 INFO  billing-api/ba-node-17 request done id=req-5b54e59e route=/billing-api/v1/verify status=200 latency_ms=294
+2026-10-31T07:02:52 INFO  billing-api/ba-node-23 request done id=req-a515d2a3 route=/billing-api/v1/get status=200 latency_ms=238
+2026-10-31T07:02:53 INFO  billing-api/ba-node-01 request done id=req-8970414a route=/billing-api/v1/update status=409 latency_ms=129
+2026-10-31T07:02:54 INFO  billing-api/ba-node-15 request done id=req-f47b7578 route=/billing-api/v1/get status=200 latency_ms=79
+2026-10-31T07:02:55 INFO  billing-api/ba-node-16 config applied key=tls.session_cache value=true by=shkim
+2026-10-31T07:02:56 ERROR billing-api/ba-node-02 job failed job=billing-api-reindex attempt=1 cause=quota_exceeded
+2026-10-31T07:02:59 INFO  billing-api/ba-node-14 request done id=req-7d9fccfb route=/billing-api/v1/cancel status=200 latency_ms=168
+2026-10-31T07:03:06 INFO  billing-api/ba-node-12 request done id=req-cec40707 route=/billing-api/v1/update status=200 latency_ms=17
+2026-10-31T07:03:07 INFO  billing-api/ba-node-02 request done id=req-9c469152 route=/billing-api/v1/sync status=200 latency_ms=230
+2026-10-31T07:03:14 INFO  billing-api/ba-node-12 request done id=req-82a3516a route=/billing-api/v1/create status=201 latency_ms=120
+2026-10-31T07:03:15 INFO  billing-api/ba-node-20 request done id=req-f7ed2f4e route=/billing-api/v1/cancel status=200 latency_ms=109
+2026-10-31T07:03:17 INFO  billing-api/ba-node-08 ticket linked id=OPS-48961 reason=cert_rotation
+2026-10-31T07:03:22 INFO  billing-api/ba-node-18 config applied key=retry.max_attempts value=false by=ejlim
+2026-10-31T07:03:25 INFO  billing-api/ba-node-24 request done id=req-c3f4bc0d route=/billing-api/v1/create status=200 latency_ms=57
+2026-10-31T07:03:32 INFO  billing-api/ba-node-15 request done id=req-d94ac422 route=/billing-api/v1/create status=404 latency_ms=196
+2026-10-31T07:03:37 INFO  billing-api/ba-node-24 pool resize target=billing-api-queue max_pool_size=162 prev=154
+2026-10-31T07:03:41 INFO  billing-api/ba-node-18 request done id=req-9cb7bf39 route=/billing-api/v1/cancel status=200 latency_ms=207
+2026-10-31T07:03:45 INFO  billing-api/ba-node-20 pool resize target=billing-api-upstream max_pool_size=71 prev=52
+2026-10-31T07:03:51 NOTE  billing-api/ba-node-23 operator=hbyoon memo="연동 팀에 변경 공지 완료."
+2026-10-31T07:03:53 INFO  billing-api/ba-node-08 pool resize target=billing-api-cache max_pool_size=8 prev=41
+2026-10-31T07:03:59 INFO  billing-api/ba-node-07 deploy step release=billing-api-4.10.2 step=shift_traffic_100 result=ok took_s=131
+2026-10-31T07:04:04 INFO  billing-api/ba-node-18 request done id=req-3343a91d route=/billing-api/v1/update status=500 latency_ms=22
+2026-10-31T07:04:06 INFO  billing-api/ba-node-22 pool resize target=billing-api-worker max_pool_size=367 prev=325
+2026-10-31T07:04:11 INFO  billing-api/ba-node-09 request done id=req-bcaceceb route=/billing-api/v1/verify status=200 latency_ms=521
+2026-10-31T07:04:16 INFO  billing-api/ba-node-01 request done id=req-ce5a50e1 route=/billing-api/v1/sync status=200 latency_ms=120
+2026-10-31T07:04:22 INFO  billing-api/ba-node-23 request done id=req-fe6775ce route=/billing-api/v1/update status=200 latency_ms=106
+2026-10-31T07:04:28 NOTE  billing-api/ba-node-16 operator=ejlim memo="ba-node-16 재기동 후 지표 정상 확인."
+2026-10-31T07:04:30 INFO  billing-api/ba-node-06 request done id=req-bfa1b8a6 route=/billing-api/v1/sync status=503 latency_ms=190
+2026-10-31T07:04:33 INFO  billing-api/ba-node-17 ticket linked id=OPS-48640 reason=schema_change
+2026-10-31T07:04:37 WARN  billing-api/ba-node-03 alert fired rule=fd_usage_high value=54% threshold=46%
+2026-10-31T07:04:39 INFO  billing-api/ba-node-07 request done id=req-bbfffd49 route=/billing-api/v1/sync status=404 latency_ms=229
+2026-10-31T07:04:40 INFO  billing-api/ba-node-18 request done id=req-d6891609 route=/billing-api/v1/get status=200 latency_ms=131
+2026-10-31T07:04:47 INFO  billing-api/ba-node-03 request done id=req-320e14d3 route=/billing-api/v1/create status=200 latency_ms=55
+2026-10-31T07:04:54 INFO  billing-api/ba-node-12 request done id=req-e23b50c5 route=/billing-api/v1/cancel status=200 latency_ms=419
+2026-10-31T07:04:59 INFO  billing-api/ba-node-07 backup finished file=/vault/daily/payments_20261009.tar.zst size_mb=36753 checksum=157863ec
+2026-10-31T07:05:06 WARN  billing-api/ba-node-12 alert fired rule=replica_lag_high value=94s threshold=86s
+2026-10-31T07:05:11 INFO  billing-api/ba-node-24 request done id=req-313ea254 route=/billing-api/v1/create status=200 latency_ms=147
+2026-10-31T07:05:14 NOTE  billing-api/ba-node-07 operator=hbyoon memo="동시 처리 수를 33에서 25로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-31T07:05:20 INFO  billing-api/ba-node-04 config applied key=http.read_timeout_ms value=4300 by=hbyoon
+2026-10-31T07:05:25 INFO  billing-api/ba-node-09 config applied key=log.sample_rate value=false by=ejlim
+2026-10-31T07:05:30 INFO  billing-api/ba-node-16 request done id=req-af2e7204 route=/billing-api/v1/sync status=200 latency_ms=67
+2026-10-31T07:05:37 WARN  billing-api/ba-node-07 alert fired rule=queue_depth_high value=66 threshold=58
+2026-10-31T07:05:38 WARN  billing-api/ba-node-03 alert fired rule=conn_pool_saturated value=93% threshold=89%
+2026-10-31T07:05:40 ERROR billing-api/ba-node-19 job failed job=billing-api-export attempt=4 cause=oom_killed
+2026-10-31T07:05:42 INFO  billing-api/ba-node-06 ticket linked id=OPS-47575 reason=log_volume_spike
+2026-10-31T07:05:47 INFO  billing-api/ba-node-24 request done id=req-5bed7434 route=/billing-api/v1/status status=200 latency_ms=537
+2026-10-31T07:05:49 INFO  billing-api/ba-node-03 request done id=req-5ad12352 route=/billing-api/v1/create status=200 latency_ms=32
+2026-10-31T07:05:53 INFO  billing-api/ba-node-01 pool resize target=billing-api-upstream max_pool_size=357 prev=356
+2026-10-31T07:05:58 INFO  billing-api/ba-node-11 request done id=req-458e6fb7 route=/billing-api/v1/list status=404 latency_ms=71
+2026-10-31T07:06:00 WARN  billing-api/ba-node-23 alert fired rule=gc_pause_long value=82ms threshold=78ms
+2026-10-31T07:06:05 INFO  billing-api/ba-node-20 request done id=req-a5c690dd route=/billing-api/v1/verify status=200 latency_ms=76
+2026-10-31T07:06:06 INFO  billing-api/ba-node-24 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=50530 checksum=eceae099
+2026-10-31T07:06:12 INFO  billing-api/ba-node-22 request done id=req-444b733d route=/billing-api/v1/cancel status=200 latency_ms=63
+2026-10-31T07:06:19 INFO  billing-api/ba-node-22 deploy step release=billing-api-4.13.9 step=warmup result=ok took_s=52
+2026-10-31T07:06:24 INFO  billing-api/ba-node-16 request done id=req-3b2b362a route=/billing-api/v1/get status=200 latency_ms=31
+2026-10-31T07:06:26 WARN  billing-api/ba-node-07 alert fired rule=gc_pause_long value=89ms threshold=80ms
+2026-10-31T07:06:27 INFO  billing-api/ba-node-19 cache stats region=us-we-2b hit_ratio=72.2% evictions=33721
+2026-10-31T07:06:34 WARN  billing-api/ba-node-11 alert fired rule=p99_latency_high value=63ms threshold=48ms
+2026-10-31T07:06:38 INFO  billing-api/ba-node-09 request done id=req-485e34cc route=/billing-api/v1/create status=200 latency_ms=78
+2026-10-31T07:06:43 INFO  billing-api/ba-node-15 request done id=req-eada405b route=/billing-api/v1/get status=200 latency_ms=74
+2026-10-31T07:06:47 INFO  billing-api/ba-node-09 deploy step release=billing-api-4.15.7 step=shift_traffic_10 result=ok took_s=193
+2026-10-31T07:06:52 INFO  billing-api/ba-node-03 request done id=req-0090ad48 route=/billing-api/v1/get status=204 latency_ms=96
+2026-10-31T07:06:59 INFO  billing-api/ba-node-10 request done id=req-994e652a route=/billing-api/v1/status status=200 latency_ms=109
+2026-10-31T07:07:06 INFO  billing-api/ba-node-22 backup finished file=/vault/daily/inventory_20261026.tar.zst size_mb=86007 checksum=e08771da
+2026-10-31T07:07:13 WARN  billing-api/ba-node-04 alert fired rule=p99_latency_high value=96ms threshold=93ms
+2026-10-31T07:07:17 INFO  billing-api/ba-node-07 request done id=req-3adb57c7 route=/billing-api/v1/cancel status=204 latency_ms=139
+2026-10-31T07:07:18 INFO  billing-api/ba-node-21 request done id=req-80b0fef0 route=/billing-api/v1/status status=200 latency_ms=88
+2026-10-31T07:07:19 INFO  billing-api/ba-node-23 request done id=req-2c04386c route=/billing-api/v1/update status=200 latency_ms=60
+2026-10-31T07:07:25 NOTE  billing-api/ba-node-13 operator=shkim memo="배치 시작 시각을 6시 11분으로 고정함."
+2026-10-31T07:07:26 INFO  billing-api/ba-node-18 backup finished file=/vault/daily/orders_20261025.tar.zst size_mb=21994 checksum=1c81db42
+2026-10-31T07:07:32 INFO  billing-api/ba-node-10 backup finished file=/vault/weekly/sessions_2026w42.tar.zst size_mb=22301 checksum=cd0b83f5
+2026-10-31T07:07:39 INFO  billing-api/ba-node-20 request done id=req-6dc34a9e route=/billing-api/v1/sync status=400 latency_ms=50
+2026-10-31T07:07:46 INFO  billing-api/ba-node-02 request done id=req-76027034 route=/billing-api/v1/get status=200 latency_ms=264
+2026-10-31T07:07:48 INFO  billing-api/ba-node-03 request done id=req-4f6e3c74 route=/billing-api/v1/get status=200 latency_ms=123
+2026-10-31T07:07:52 INFO  billing-api/ba-node-02 request done id=req-c7a09391 route=/billing-api/v1/sync status=429 latency_ms=115
+2026-10-31T07:07:58 INFO  billing-api/ba-node-19 request done id=req-58cb9c0f route=/billing-api/v1/verify status=200 latency_ms=372
+2026-10-31T07:08:02 INFO  billing-api/ba-node-07 request done id=req-9716e1f8 route=/billing-api/v1/list status=404 latency_ms=201
+2026-10-31T07:08:09 INFO  billing-api/ba-node-18 config applied key=log.sample_rate value=2% by=dwjung
+2026-10-31T07:08:11 INFO  billing-api/ba-node-07 request done id=req-eaf7afb3 route=/billing-api/v1/create status=200 latency_ms=107
+2026-10-31T07:08:14 WARN  billing-api/ba-node-23 alert fired rule=replica_lag_high value=54s threshold=49s
+2026-10-31T07:08:18 INFO  billing-api/ba-node-09 request done id=req-d31e5874 route=/billing-api/v1/create status=200 latency_ms=243
+2026-10-31T07:08:22 INFO  billing-api/ba-node-24 request done id=req-44c97067 route=/billing-api/v1/verify status=200 latency_ms=128
+2026-10-31T07:08:27 WARN  billing-api/ba-node-11 alert fired rule=fd_usage_high value=91% threshold=90%
+2026-10-31T07:08:32 NOTE  billing-api/ba-node-17 operator=hbyoon memo="로그 보존 기간은 52일로 유지하기로 함."
+2026-10-31T07:08:36 WARN  billing-api/ba-node-06 alert fired rule=conn_pool_saturated value=87% threshold=73%
+2026-10-31T07:08:39 INFO  billing-api/ba-node-21 request done id=req-55a09ced route=/billing-api/v1/verify status=200 latency_ms=185
+2026-10-31T07:08:46 INFO  billing-api/ba-node-05 pool resize target=billing-api-queue max_pool_size=254 prev=256
+2026-10-31T07:08:48 INFO  billing-api/ba-node-15 request done id=req-7f463b7b route=/billing-api/v1/update status=204 latency_ms=13
+2026-10-31T07:08:49 INFO  billing-api/ba-node-12 backup finished file=/vault/daily/inventory_20261003.tar.zst size_mb=11693 checksum=053b2ef9
+2026-10-31T07:08:53 INFO  billing-api/ba-node-12 request done id=req-cf4790d3 route=/billing-api/v1/create status=200 latency_ms=40
+2026-10-31T07:09:00 INFO  billing-api/ba-node-09 request done id=req-8f68caaf route=/billing-api/v1/create status=200 latency_ms=91
+2026-10-31T07:09:03 INFO  billing-api/ba-node-19 config applied key=limiter.burst value=true by=jhpark
+2026-10-31T07:09:07 INFO  billing-api/ba-node-22 request done id=req-f35ba9db route=/billing-api/v1/list status=201 latency_ms=37
+2026-10-31T07:09:14 INFO  billing-api/ba-node-01 deploy step release=billing-api-4.11.0 step=shift_traffic_10 result=ok took_s=164
+2026-10-31T07:09:20 INFO  billing-api/ba-node-14 request done id=req-230659ba route=/billing-api/v1/cancel status=200 latency_ms=138
+2026-10-31T07:09:24 INFO  billing-api/ba-node-24 ticket linked id=OPS-48421 reason=dependency_upgrade
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

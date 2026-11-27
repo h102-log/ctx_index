@@ -1,0 +1,424 @@
+참고용 로그 11: 백업 작업(backup-job) 주간 실행 구간. '확인'이라고만 답해 줘.
+
+2026-10-15T00:40:11 INFO  backup-job/bj-node-20 backup finished file=/vault/weekly/sessions_2026w33.tar.zst size_mb=34342 checksum=4352d0f3
+2026-10-15T00:40:14 INFO  backup-job/bj-node-08 request done id=req-17bef9c2 route=/backup-job/v1/sync status=204 latency_ms=198
+2026-10-15T00:40:18 INFO  backup-job/bj-node-22 request done id=req-682fdb00 route=/backup-job/v1/create status=200 latency_ms=75
+2026-10-15T00:40:25 INFO  backup-job/bj-node-15 request done id=req-78fc6a63 route=/backup-job/v1/update status=204 latency_ms=60
+2026-10-15T00:40:27 INFO  backup-job/bj-node-03 request done id=req-5ae3f7f8 route=/backup-job/v1/list status=200 latency_ms=82
+2026-10-15T00:40:31 INFO  backup-job/bj-node-21 request done id=req-e97495f6 route=/backup-job/v1/list status=404 latency_ms=136
+2026-10-15T00:40:33 INFO  backup-job/bj-node-24 request done id=req-3d08759c route=/backup-job/v1/status status=200 latency_ms=469
+2026-10-15T00:40:37 INFO  backup-job/bj-node-18 backup finished file=/vault/weekly/audit_2026w33.tar.zst size_mb=34175 checksum=ba7e228c
+2026-10-15T00:40:38 INFO  backup-job/bj-node-04 cache stats region=us-we-2b hit_ratio=96.6% evictions=35930
+2026-10-15T00:40:45 INFO  backup-job/bj-node-09 request done id=req-01d58e2f route=/backup-job/v1/verify status=200 latency_ms=274
+2026-10-15T00:40:49 INFO  backup-job/bj-node-12 request done id=req-0d6be213 route=/backup-job/v1/status status=200 latency_ms=25
+2026-10-15T00:40:52 INFO  backup-job/bj-node-17 config applied key=canary.traffic_percent value=true by=yjchoi
+2026-10-15T00:40:59 NOTE  backup-job/bj-node-18 operator=hbyoon memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-15T00:41:06 WARN  backup-job/bj-node-18 alert fired rule=cpu_steal_high value=78% threshold=71%
+2026-10-15T00:41:11 INFO  backup-job/bj-node-13 config applied key=tls.session_cache value=29% by=hbyoon
+2026-10-15T00:41:15 INFO  backup-job/bj-node-23 request done id=req-85ed795b route=/backup-job/v1/get status=201 latency_ms=74
+2026-10-15T00:41:20 INFO  backup-job/bj-node-01 request done id=req-4ca169b5 route=/backup-job/v1/verify status=200 latency_ms=214
+2026-10-15T00:41:21 INFO  backup-job/bj-node-09 request done id=req-4df4ef46 route=/backup-job/v1/status status=500 latency_ms=194
+2026-10-15T00:41:27 INFO  backup-job/bj-node-16 request done id=req-935c94f0 route=/backup-job/v1/get status=200 latency_ms=412
+2026-10-15T00:41:32 INFO  backup-job/bj-node-14 request done id=req-8da4d7d9 route=/backup-job/v1/cancel status=400 latency_ms=27
+2026-10-15T00:41:34 INFO  backup-job/bj-node-02 request done id=req-d0cd0767 route=/backup-job/v1/cancel status=200 latency_ms=274
+2026-10-15T00:41:39 INFO  backup-job/bj-node-18 request done id=req-f5253675 route=/backup-job/v1/verify status=500 latency_ms=105
+2026-10-15T00:41:42 INFO  backup-job/bj-node-04 request done id=req-d75da178 route=/backup-job/v1/list status=200 latency_ms=244
+2026-10-15T00:41:45 INFO  backup-job/bj-node-11 pool resize target=backup-job-worker max_pool_size=333 prev=277
+2026-10-15T00:41:52 INFO  backup-job/bj-node-22 request done id=req-514501a1 route=/backup-job/v1/verify status=200 latency_ms=66
+2026-10-15T00:41:55 INFO  backup-job/bj-node-11 request done id=req-18970849 route=/backup-job/v1/status status=200 latency_ms=148
+2026-10-15T00:42:02 INFO  backup-job/bj-node-16 request done id=req-690cf517 route=/backup-job/v1/update status=200 latency_ms=384
+2026-10-15T00:42:04 INFO  backup-job/bj-node-10 request done id=req-53003c5c route=/backup-job/v1/status status=200 latency_ms=276
+2026-10-15T00:42:11 INFO  backup-job/bj-node-09 request done id=req-1dc7851c route=/backup-job/v1/verify status=200 latency_ms=135
+2026-10-15T00:42:17 INFO  backup-job/bj-node-05 request done id=req-23b795a7 route=/backup-job/v1/create status=200 latency_ms=417
+2026-10-15T00:42:22 INFO  backup-job/bj-node-12 request done id=req-06bcaf55 route=/backup-job/v1/create status=500 latency_ms=189
+2026-10-15T00:42:28 INFO  backup-job/bj-node-19 request done id=req-7b80fb47 route=/backup-job/v1/get status=404 latency_ms=84
+2026-10-15T00:42:34 INFO  backup-job/bj-node-13 request done id=req-0ef6424e route=/backup-job/v1/create status=200 latency_ms=132
+2026-10-15T00:42:39 INFO  backup-job/bj-node-07 request done id=req-d1c30a55 route=/backup-job/v1/create status=404 latency_ms=121
+2026-10-15T00:42:44 NOTE  backup-job/bj-node-16 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-15T00:42:50 WARN  backup-job/bj-node-06 alert fired rule=gc_pause_long value=72ms threshold=59ms
+2026-10-15T00:42:51 INFO  backup-job/bj-node-14 request done id=req-96a254d0 route=/backup-job/v1/cancel status=200 latency_ms=106
+2026-10-15T00:42:56 INFO  backup-job/bj-node-06 request done id=req-c91a3750 route=/backup-job/v1/verify status=503 latency_ms=24
+2026-10-15T00:42:59 INFO  backup-job/bj-node-07 backup finished file=/vault/daily/users_20261016.tar.zst size_mb=70237 checksum=1a8fdb40
+2026-10-15T00:43:04 NOTE  backup-job/bj-node-20 operator=mjlee memo="bj-node-20 재기동 후 지표 정상 확인."
+2026-10-15T00:43:05 INFO  backup-job/bj-node-12 request done id=req-9e8aadf2 route=/backup-job/v1/status status=200 latency_ms=98
+2026-10-15T00:43:07 WARN  backup-job/bj-node-01 alert fired rule=heap_used_high value=52% threshold=43%
+2026-10-15T00:43:09 ERROR backup-job/bj-node-22 job failed job=backup-job-reindex attempt=3 cause=quota_exceeded
+2026-10-15T00:43:14 INFO  backup-job/bj-node-01 ticket linked id=OPS-48859 reason=flaky_healthcheck
+2026-10-15T00:43:18 INFO  backup-job/bj-node-04 request done id=req-a043112a route=/backup-job/v1/cancel status=200 latency_ms=223
+2026-10-15T00:43:24 INFO  backup-job/bj-node-06 request done id=req-be67d6fb route=/backup-job/v1/update status=200 latency_ms=188
+2026-10-15T00:43:30 INFO  backup-job/bj-node-12 request done id=req-f418921d route=/backup-job/v1/sync status=200 latency_ms=93
+2026-10-15T00:43:35 INFO  backup-job/bj-node-24 request done id=req-28861efe route=/backup-job/v1/list status=503 latency_ms=192
+2026-10-15T00:43:42 NOTE  backup-job/bj-node-17 operator=jhpark memo="인증서 갱신 일정 확인. 만료까지 54일 남음."
+2026-10-15T00:43:48 INFO  backup-job/bj-node-15 request done id=req-c3639d9e route=/backup-job/v1/create status=200 latency_ms=85
+2026-10-15T00:43:54 WARN  backup-job/bj-node-15 alert fired rule=heap_used_high value=83% threshold=82%
+2026-10-15T00:43:57 INFO  backup-job/bj-node-01 pool resize target=backup-job-cache max_pool_size=44 prev=86
+2026-10-15T00:44:03 INFO  backup-job/bj-node-22 pool resize target=backup-job-upstream max_pool_size=387 prev=429
+2026-10-15T00:44:07 INFO  backup-job/bj-node-04 config applied key=breaker.half_open_s value=true by=yjchoi
+2026-10-15T00:44:14 INFO  backup-job/bj-node-03 request done id=req-12488832 route=/backup-job/v1/list status=200 latency_ms=397
+2026-10-15T00:44:21 INFO  backup-job/bj-node-01 request done id=req-b28955d3 route=/backup-job/v1/cancel status=200 latency_ms=106
+2026-10-15T00:44:22 INFO  backup-job/bj-node-24 request done id=req-504b64f3 route=/backup-job/v1/status status=200 latency_ms=59
+2026-10-15T00:44:28 INFO  backup-job/bj-node-24 request done id=req-ce4e4949 route=/backup-job/v1/sync status=204 latency_ms=69
+2026-10-15T00:44:33 INFO  backup-job/bj-node-24 deploy step release=backup-job-4.12.4 step=shift_traffic_100 result=ok took_s=141
+2026-10-15T00:44:39 INFO  backup-job/bj-node-20 request done id=req-d6e1db87 route=/backup-job/v1/create status=200 latency_ms=90
+2026-10-15T00:44:40 INFO  backup-job/bj-node-08 request done id=req-2e62db6b route=/backup-job/v1/verify status=503 latency_ms=78
+2026-10-15T00:44:45 WARN  backup-job/bj-node-05 alert fired rule=disk_usage_warning value=55% threshold=50%
+2026-10-15T00:44:48 NOTE  backup-job/bj-node-12 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-15T00:44:55 INFO  backup-job/bj-node-12 request done id=req-e4a5ab36 route=/backup-job/v1/verify status=500 latency_ms=598
+2026-10-15T00:44:57 INFO  backup-job/bj-node-17 request done id=req-cccd7a89 route=/backup-job/v1/get status=429 latency_ms=287
+2026-10-15T00:45:04 INFO  backup-job/bj-node-07 request done id=req-c9068f3d route=/backup-job/v1/status status=201 latency_ms=61
+2026-10-15T00:45:09 INFO  backup-job/bj-node-02 config applied key=limiter.burst value=37 by=ejlim
+2026-10-15T00:45:14 INFO  backup-job/bj-node-13 deploy step release=backup-job-4.18.8 step=warmup result=ok took_s=107
+2026-10-15T00:45:18 INFO  backup-job/bj-node-21 request done id=req-20358a00 route=/backup-job/v1/verify status=201 latency_ms=182
+2026-10-15T00:45:24 INFO  backup-job/bj-node-23 request done id=req-d6203184 route=/backup-job/v1/get status=200 latency_ms=430
+2026-10-15T00:45:31 INFO  backup-job/bj-node-23 request done id=req-f8d0b2e6 route=/backup-job/v1/update status=200 latency_ms=91
+2026-10-15T00:45:36 INFO  backup-job/bj-node-17 ticket linked id=OPS-49068 reason=runbook_update
+2026-10-15T00:45:37 INFO  backup-job/bj-node-04 request done id=req-a6d898db route=/backup-job/v1/sync status=500 latency_ms=253
+2026-10-15T00:45:40 INFO  backup-job/bj-node-14 config applied key=breaker.open_ratio value=false by=jhpark
+2026-10-15T00:45:46 INFO  backup-job/bj-node-22 ticket linked id=OPS-47189 reason=dns_ttl_change
+2026-10-15T00:45:53 INFO  backup-job/bj-node-12 config applied key=http.read_timeout_ms value=57% by=shkim
+2026-10-15T00:45:57 INFO  backup-job/bj-node-18 ticket linked id=OPS-49882 reason=dns_ttl_change
+2026-10-15T00:46:00 INFO  backup-job/bj-node-04 request done id=req-9285de6a route=/backup-job/v1/update status=200 latency_ms=118
+2026-10-15T00:46:05 INFO  backup-job/bj-node-07 backup finished file=/vault/daily/audit_20261006.tar.zst size_mb=16772 checksum=ef72abb2
+2026-10-15T00:46:08 NOTE  backup-job/bj-node-20 operator=sykang memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-15T00:46:14 INFO  backup-job/bj-node-09 pool resize target=backup-job-db max_pool_size=237 prev=190
+2026-10-15T00:46:16 INFO  backup-job/bj-node-16 request done id=req-963af800 route=/backup-job/v1/sync status=200 latency_ms=39
+2026-10-15T00:46:18 INFO  backup-job/bj-node-22 backup finished file=/vault/daily/payments_20261002.tar.zst size_mb=39453 checksum=612082f7
+2026-10-15T00:46:22 INFO  backup-job/bj-node-18 request done id=req-26d78420 route=/backup-job/v1/cancel status=200 latency_ms=95
+2026-10-15T00:46:27 INFO  backup-job/bj-node-05 request done id=req-0f0f0215 route=/backup-job/v1/verify status=409 latency_ms=38
+2026-10-15T00:46:32 INFO  backup-job/bj-node-15 request done id=req-16d90f7d route=/backup-job/v1/cancel status=500 latency_ms=123
+2026-10-15T00:46:39 INFO  backup-job/bj-node-12 request done id=req-143321fb route=/backup-job/v1/status status=409 latency_ms=327
+2026-10-15T00:46:45 INFO  backup-job/bj-node-11 request done id=req-7af50be0 route=/backup-job/v1/create status=409 latency_ms=33
+2026-10-15T00:46:52 INFO  backup-job/bj-node-14 request done id=req-fc6f4d79 route=/backup-job/v1/status status=400 latency_ms=180
+2026-10-15T00:46:56 WARN  backup-job/bj-node-10 alert fired rule=cpu_steal_high value=52% threshold=37%
+2026-10-15T00:47:01 INFO  backup-job/bj-node-09 cache stats region=ap-ne-2a hit_ratio=81.8% evictions=37543
+2026-10-15T00:47:06 INFO  backup-job/bj-node-22 request done id=req-aa6c901f route=/backup-job/v1/verify status=200 latency_ms=58
+2026-10-15T00:47:09 INFO  backup-job/bj-node-04 pool resize target=backup-job-db max_pool_size=204 prev=258
+2026-10-15T00:47:13 INFO  backup-job/bj-node-11 ticket linked id=OPS-48575 reason=schema_change
+2026-10-15T00:47:15 ERROR backup-job/bj-node-21 job failed job=backup-job-cleanup attempt=3 cause=lock_wait_exceeded
+2026-10-15T00:47:16 INFO  backup-job/bj-node-12 request done id=req-79d28dd1 route=/backup-job/v1/verify status=201 latency_ms=80
+2026-10-15T00:47:19 INFO  backup-job/bj-node-04 request done id=req-d24f2344 route=/backup-job/v1/get status=500 latency_ms=135
+2026-10-15T00:47:25 ERROR backup-job/bj-node-24 job failed job=backup-job-cleanup attempt=5 cause=bad_checksum
+2026-10-15T00:47:29 INFO  backup-job/bj-node-07 request done id=req-84eea9fe route=/backup-job/v1/verify status=201 latency_ms=37
+2026-10-15T00:47:32 INFO  backup-job/bj-node-04 request done id=req-3839d99d route=/backup-job/v1/update status=200 latency_ms=69
+2026-10-15T00:47:34 INFO  backup-job/bj-node-06 request done id=req-be5612b9 route=/backup-job/v1/get status=200 latency_ms=52
+2026-10-15T00:47:37 INFO  backup-job/bj-node-22 request done id=req-48b8969c route=/backup-job/v1/cancel status=201 latency_ms=354
+2026-10-15T00:47:41 WARN  backup-job/bj-node-19 alert fired rule=error_ratio_high value=54% threshold=39%
+2026-10-15T00:47:44 INFO  backup-job/bj-node-01 ticket linked id=OPS-48109 reason=log_volume_spike
+2026-10-15T00:47:50 INFO  backup-job/bj-node-09 deploy step release=backup-job-4.20.6 step=drain result=ok took_s=97
+2026-10-15T00:47:55 INFO  backup-job/bj-node-16 request done id=req-8b3837ae route=/backup-job/v1/create status=200 latency_ms=118
+2026-10-15T00:48:00 WARN  backup-job/bj-node-03 alert fired rule=queue_depth_high value=83 threshold=73
+2026-10-15T00:48:07 NOTE  backup-job/bj-node-08 operator=yjchoi memo="인증서 갱신 일정 확인. 만료까지 24일 남음."
+2026-10-15T00:48:09 INFO  backup-job/bj-node-06 request done id=req-feb051e0 route=/backup-job/v1/cancel status=400 latency_ms=266
+2026-10-15T00:48:16 INFO  backup-job/bj-node-17 request done id=req-b904d765 route=/backup-job/v1/verify status=200 latency_ms=8
+2026-10-15T00:48:21 INFO  backup-job/bj-node-21 request done id=req-46b39001 route=/backup-job/v1/verify status=200 latency_ms=178
+2026-10-15T00:48:28 INFO  backup-job/bj-node-01 config applied key=http.read_timeout_ms value=92% by=jhpark
+2026-10-15T00:48:35 ERROR backup-job/bj-node-07 job failed job=backup-job-export attempt=1 cause=upstream_timeout
+2026-10-15T00:48:42 ERROR backup-job/bj-node-20 job failed job=backup-job-cleanup attempt=1 cause=upstream_timeout
+2026-10-15T00:48:44 INFO  backup-job/bj-node-14 config applied key=queue.batch_size value=62% by=sykang
+2026-10-15T00:48:46 INFO  backup-job/bj-node-20 deploy step release=backup-job-4.14.0 step=warmup result=ok took_s=134
+2026-10-15T00:48:47 INFO  backup-job/bj-node-04 request done id=req-8af9ff5c route=/backup-job/v1/create status=200 latency_ms=169
+2026-10-15T00:48:49 INFO  backup-job/bj-node-17 ticket linked id=OPS-47566 reason=runbook_update
+2026-10-15T00:48:51 INFO  backup-job/bj-node-16 config applied key=cache.ttl_s value=true by=shkim
+2026-10-15T00:48:53 INFO  backup-job/bj-node-11 cache stats region=ap-se-1a hit_ratio=88.5% evictions=24618
+2026-10-15T00:48:59 INFO  backup-job/bj-node-15 request done id=req-271acfbb route=/backup-job/v1/sync status=404 latency_ms=21
+2026-10-15T00:49:04 INFO  backup-job/bj-node-22 request done id=req-88b2032b route=/backup-job/v1/sync status=200 latency_ms=135
+2026-10-15T00:49:06 INFO  backup-job/bj-node-03 request done id=req-30ac44e2 route=/backup-job/v1/update status=200 latency_ms=179
+2026-10-15T00:49:12 INFO  backup-job/bj-node-05 config applied key=dns.ttl_s value=44% by=yjchoi
+2026-10-15T00:49:14 INFO  backup-job/bj-node-04 ticket linked id=OPS-47705 reason=log_volume_spike
+2026-10-15T00:49:18 INFO  backup-job/bj-node-13 request done id=req-ce6b18f1 route=/backup-job/v1/sync status=200 latency_ms=50
+2026-10-15T00:49:19 INFO  backup-job/bj-node-19 deploy step release=backup-job-4.21.7 step=shift_traffic_10 result=ok took_s=41
+2026-10-15T00:49:26 INFO  backup-job/bj-node-06 request done id=req-6adcdc82 route=/backup-job/v1/status status=200 latency_ms=318
+2026-10-15T00:49:30 INFO  backup-job/bj-node-17 request done id=req-c8338baf route=/backup-job/v1/verify status=409 latency_ms=194
+2026-10-15T00:49:37 NOTE  backup-job/bj-node-17 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-15T00:49:40 INFO  backup-job/bj-node-20 deploy step release=backup-job-4.10.4 step=migrate result=ok took_s=113
+2026-10-15T00:49:44 NOTE  backup-job/bj-node-24 operator=dwjung memo="bj-node-24 재기동 후 지표 정상 확인."
+2026-10-15T00:49:50 NOTE  backup-job/bj-node-23 operator=sykang memo="캐시 TTL을 25초로 되돌림. 오래된 응답이 보고됨."
+2026-10-15T00:49:56 WARN  backup-job/bj-node-20 alert fired rule=disk_usage_warning value=99% threshold=91%
+2026-10-15T00:50:02 INFO  backup-job/bj-node-13 request done id=req-41c657fa route=/backup-job/v1/status status=200 latency_ms=83
+2026-10-15T00:50:05 INFO  backup-job/bj-node-02 request done id=req-6d16c979 route=/backup-job/v1/list status=200 latency_ms=99
+2026-10-15T00:50:07 INFO  backup-job/bj-node-08 pool resize target=backup-job-cache max_pool_size=276 prev=248
+2026-10-15T00:50:08 INFO  backup-job/bj-node-05 request done id=req-79600eda route=/backup-job/v1/status status=200 latency_ms=129
+2026-10-15T00:50:14 INFO  backup-job/bj-node-12 config applied key=worker.concurrency value=true by=ejlim
+2026-10-15T00:50:18 INFO  backup-job/bj-node-10 request done id=req-ba8f487f route=/backup-job/v1/sync status=200 latency_ms=41
+2026-10-15T00:50:20 INFO  backup-job/bj-node-19 request done id=req-2afe92c9 route=/backup-job/v1/update status=429 latency_ms=105
+2026-10-15T00:50:23 INFO  backup-job/bj-node-21 deploy step release=backup-job-4.20.0 step=shift_traffic_50 result=ok took_s=156
+2026-10-15T00:50:24 INFO  backup-job/bj-node-06 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=26405 checksum=06169e49
+2026-10-15T00:50:28 INFO  backup-job/bj-node-21 request done id=req-43c4cdcf route=/backup-job/v1/sync status=503 latency_ms=400
+2026-10-15T00:50:32 INFO  backup-job/bj-node-07 config applied key=tls.session_cache value=true by=ejlim
+2026-10-15T00:50:37 INFO  backup-job/bj-node-11 request done id=req-2319e972 route=/backup-job/v1/cancel status=200 latency_ms=203
+2026-10-15T00:50:42 WARN  backup-job/bj-node-05 alert fired rule=error_ratio_high value=99% threshold=89%
+2026-10-15T00:50:49 INFO  backup-job/bj-node-02 request done id=req-99b49656 route=/backup-job/v1/sync status=200 latency_ms=124
+2026-10-15T00:50:54 INFO  backup-job/bj-node-18 request done id=req-287b9bc9 route=/backup-job/v1/cancel status=204 latency_ms=49
+2026-10-15T00:50:58 WARN  backup-job/bj-node-24 alert fired rule=replica_lag_high value=52s threshold=40s
+2026-10-15T00:51:01 INFO  backup-job/bj-node-03 pool resize target=backup-job-queue max_pool_size=23 prev=4
+2026-10-15T00:51:08 INFO  backup-job/bj-node-02 request done id=req-b2838130 route=/backup-job/v1/get status=201 latency_ms=344
+2026-10-15T00:51:10 ERROR backup-job/bj-node-17 job failed job=backup-job-cleanup attempt=1 cause=upstream_timeout
+2026-10-15T00:51:12 INFO  backup-job/bj-node-19 request done id=req-538c300b route=/backup-job/v1/status status=200 latency_ms=56
+2026-10-15T00:51:14 NOTE  backup-job/bj-node-14 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-15T00:51:17 INFO  backup-job/bj-node-01 request done id=req-20030031 route=/backup-job/v1/get status=503 latency_ms=50
+2026-10-15T00:51:21 NOTE  backup-job/bj-node-20 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-15T00:51:28 INFO  backup-job/bj-node-02 config applied key=worker.concurrency value=84% by=sykang
+2026-10-15T00:51:34 INFO  backup-job/bj-node-14 request done id=req-d0ca5fcf route=/backup-job/v1/create status=201 latency_ms=247
+2026-10-15T00:51:36 INFO  backup-job/bj-node-19 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=47029 checksum=51d5efe6
+2026-10-15T00:51:39 INFO  backup-job/bj-node-15 request done id=req-dda33663 route=/backup-job/v1/verify status=409 latency_ms=89
+2026-10-15T00:51:41 ERROR backup-job/bj-node-23 job failed job=backup-job-export attempt=2 cause=quota_exceeded
+2026-10-15T00:51:42 INFO  backup-job/bj-node-13 request done id=req-c18be5d9 route=/backup-job/v1/create status=200 latency_ms=71
+2026-10-15T00:51:43 INFO  backup-job/bj-node-24 deploy step release=backup-job-4.16.2 step=verify result=ok took_s=76
+2026-10-15T00:51:48 ERROR backup-job/bj-node-11 job failed job=backup-job-reindex attempt=5 cause=upstream_timeout
+2026-10-15T00:51:52 NOTE  backup-job/bj-node-09 operator=jhpark memo="인증서 갱신 일정 확인. 만료까지 36일 남음."
+2026-10-15T00:51:56 INFO  backup-job/bj-node-08 pool resize target=backup-job-queue max_pool_size=30 prev=61
+2026-10-15T00:51:59 INFO  backup-job/bj-node-10 request done id=req-6a6a249e route=/backup-job/v1/cancel status=200 latency_ms=133
+2026-10-15T00:52:06 INFO  backup-job/bj-node-22 cache stats region=ap-ne-2a hit_ratio=81.0% evictions=19865
+2026-10-15T00:52:09 INFO  backup-job/bj-node-15 pool resize target=backup-job-cache max_pool_size=142 prev=117
+2026-10-15T00:52:11 INFO  backup-job/bj-node-09 pool resize target=backup-job-db max_pool_size=217 prev=277
+2026-10-15T00:52:12 INFO  backup-job/bj-node-01 pool resize target=backup-job-db max_pool_size=164 prev=120
+2026-10-15T00:52:16 INFO  backup-job/bj-node-10 backup finished file=/vault/weekly/payments_2026w34.tar.zst size_mb=61330 checksum=b3b2a128
+2026-10-15T00:52:21 NOTE  backup-job/bj-node-16 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-15T00:52:24 INFO  backup-job/bj-node-24 deploy step release=backup-job-4.19.0 step=migrate result=ok took_s=33
+2026-10-15T00:52:28 INFO  backup-job/bj-node-24 request done id=req-ef2bf4f7 route=/backup-job/v1/list status=200 latency_ms=34
+2026-10-15T00:52:30 INFO  backup-job/bj-node-17 ticket linked id=OPS-49542 reason=dependency_upgrade
+2026-10-15T00:52:35 WARN  backup-job/bj-node-11 alert fired rule=disk_usage_warning value=57% threshold=53%
+2026-10-15T00:52:37 ERROR backup-job/bj-node-14 job failed job=backup-job-rollup attempt=2 cause=quota_exceeded
+2026-10-15T00:52:40 INFO  backup-job/bj-node-05 request done id=req-cd784aa9 route=/backup-job/v1/get status=200 latency_ms=163
+2026-10-15T00:52:42 INFO  backup-job/bj-node-11 request done id=req-c735e4a6 route=/backup-job/v1/status status=200 latency_ms=219
+2026-10-15T00:52:46 INFO  backup-job/bj-node-04 ticket linked id=OPS-47919 reason=schema_change
+2026-10-15T00:52:51 INFO  backup-job/bj-node-07 request done id=req-42e3a36d route=/backup-job/v1/status status=200 latency_ms=101
+2026-10-15T00:52:57 INFO  backup-job/bj-node-16 request done id=req-b3ca2048 route=/backup-job/v1/status status=404 latency_ms=153
+2026-10-15T00:52:58 INFO  backup-job/bj-node-17 request done id=req-4d970d92 route=/backup-job/v1/sync status=200 latency_ms=408
+2026-10-15T00:53:05 INFO  backup-job/bj-node-04 config applied key=limiter.rps value=13 by=hbyoon
+2026-10-15T00:53:08 INFO  backup-job/bj-node-02 request done id=req-343951d4 route=/backup-job/v1/status status=404 latency_ms=370
+2026-10-15T00:53:12 INFO  backup-job/bj-node-03 request done id=req-129e3b79 route=/backup-job/v1/status status=200 latency_ms=235
+2026-10-15T00:53:15 INFO  backup-job/bj-node-11 deploy step release=backup-job-4.22.3 step=start result=ok took_s=106
+2026-10-15T00:53:19 ERROR backup-job/bj-node-23 job failed job=backup-job-cleanup attempt=3 cause=dns_failure
+2026-10-15T00:53:23 INFO  backup-job/bj-node-20 config applied key=http.max_conns value=false by=sykang
+2026-10-15T00:53:25 WARN  backup-job/bj-node-09 alert fired rule=replica_lag_high value=59s threshold=46s
+2026-10-15T00:53:26 INFO  backup-job/bj-node-08 request done id=req-e434929f route=/backup-job/v1/create status=200 latency_ms=559
+2026-10-15T00:53:29 INFO  backup-job/bj-node-10 request done id=req-082f46db route=/backup-job/v1/create status=200 latency_ms=44
+2026-10-15T00:53:36 NOTE  backup-job/bj-node-03 operator=shkim memo="배치 시작 시각을 44시 61분으로 고정함."
+2026-10-15T00:53:37 INFO  backup-job/bj-node-19 deploy step release=backup-job-4.21.7 step=migrate result=ok took_s=130
+2026-10-15T00:53:40 INFO  backup-job/bj-node-19 cache stats region=us-we-2b hit_ratio=69.5% evictions=25346
+2026-10-15T00:53:47 INFO  backup-job/bj-node-01 request done id=req-07c09e11 route=/backup-job/v1/create status=200 latency_ms=492
+2026-10-15T00:53:48 INFO  backup-job/bj-node-20 pool resize target=backup-job-upstream max_pool_size=51 prev=36
+2026-10-15T00:53:50 NOTE  backup-job/bj-node-15 operator=yjchoi memo="동시 처리 수를 48에서 31로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-15T00:53:53 INFO  backup-job/bj-node-24 cache stats region=ap-ne-2a hit_ratio=94.7% evictions=400
+2026-10-15T00:53:58 INFO  backup-job/bj-node-17 request done id=req-ec238be6 route=/backup-job/v1/verify status=200 latency_ms=279
+2026-10-15T00:54:00 INFO  backup-job/bj-node-15 deploy step release=backup-job-4.13.5 step=verify result=ok took_s=64
+2026-10-15T00:54:07 INFO  backup-job/bj-node-09 request done id=req-bb398a4c route=/backup-job/v1/list status=200 latency_ms=317
+2026-10-15T00:54:13 INFO  backup-job/bj-node-10 deploy step release=backup-job-4.20.7 step=verify result=ok took_s=204
+2026-10-15T00:54:14 INFO  backup-job/bj-node-09 request done id=req-aed464bf route=/backup-job/v1/status status=404 latency_ms=138
+2026-10-15T00:54:18 INFO  backup-job/bj-node-19 request done id=req-0f0d08db route=/backup-job/v1/create status=200 latency_ms=126
+2026-10-15T00:54:19 INFO  backup-job/bj-node-03 request done id=req-841223c0 route=/backup-job/v1/sync status=200 latency_ms=219
+2026-10-15T00:54:22 INFO  backup-job/bj-node-13 pool resize target=backup-job-queue max_pool_size=22 prev=4
+2026-10-15T00:54:25 INFO  backup-job/bj-node-07 deploy step release=backup-job-4.20.4 step=start result=ok took_s=130
+2026-10-15T00:54:28 ERROR backup-job/bj-node-03 job failed job=backup-job-export attempt=1 cause=bad_checksum
+2026-10-15T00:54:31 INFO  backup-job/bj-node-12 request done id=req-683bb7a1 route=/backup-job/v1/status status=200 latency_ms=63
+2026-10-15T00:54:37 INFO  backup-job/bj-node-18 deploy step release=backup-job-4.16.5 step=start result=ok took_s=6
+2026-10-15T00:54:43 INFO  backup-job/bj-node-04 request done id=req-7c0176f0 route=/backup-job/v1/list status=200 latency_ms=45
+2026-10-15T00:54:49 INFO  backup-job/bj-node-04 request done id=req-6951a24d route=/backup-job/v1/update status=429 latency_ms=58
+2026-10-15T00:54:54 INFO  backup-job/bj-node-24 request done id=req-91c607ba route=/backup-job/v1/list status=429 latency_ms=229
+2026-10-15T00:55:00 INFO  backup-job/bj-node-06 request done id=req-07f4131b route=/backup-job/v1/get status=200 latency_ms=79
+2026-10-15T00:55:05 INFO  backup-job/bj-node-11 request done id=req-c78e9ae4 route=/backup-job/v1/status status=204 latency_ms=66
+2026-10-15T00:55:07 INFO  backup-job/bj-node-13 request done id=req-373e76c8 route=/backup-job/v1/sync status=200 latency_ms=194
+2026-10-15T00:55:10 INFO  backup-job/bj-node-09 request done id=req-c2796953 route=/backup-job/v1/status status=200 latency_ms=285
+2026-10-15T00:55:12 INFO  backup-job/bj-node-05 request done id=req-d3b276d2 route=/backup-job/v1/sync status=200 latency_ms=137
+2026-10-15T00:55:19 INFO  backup-job/bj-node-23 request done id=req-cb3e1bfe route=/backup-job/v1/verify status=500 latency_ms=262
+2026-10-15T00:55:20 INFO  backup-job/bj-node-13 request done id=req-43a9ffc7 route=/backup-job/v1/create status=200 latency_ms=60
+2026-10-15T00:55:26 INFO  backup-job/bj-node-05 request done id=req-77cfe914 route=/backup-job/v1/verify status=409 latency_ms=126
+2026-10-15T00:55:33 INFO  backup-job/bj-node-09 backup finished file=/vault/weekly/audit_2026w34.tar.zst size_mb=20310 checksum=b83581dd
+2026-10-15T00:55:35 INFO  backup-job/bj-node-15 request done id=req-aa921a2d route=/backup-job/v1/cancel status=200 latency_ms=103
+2026-10-15T00:55:37 INFO  backup-job/bj-node-08 request done id=req-5ee6563e route=/backup-job/v1/cancel status=200 latency_ms=43
+2026-10-15T00:55:43 INFO  backup-job/bj-node-24 deploy step release=backup-job-4.16.6 step=migrate result=ok took_s=224
+2026-10-15T00:55:46 WARN  backup-job/bj-node-18 alert fired rule=fd_usage_high value=93% threshold=78%
+2026-10-15T00:55:48 INFO  backup-job/bj-node-14 config applied key=tls.session_cache value=true by=sykang
+2026-10-15T00:55:49 INFO  backup-job/bj-node-09 request done id=req-6e59954d route=/backup-job/v1/list status=200 latency_ms=371
+2026-10-15T00:55:52 INFO  backup-job/bj-node-20 request done id=req-f100efe3 route=/backup-job/v1/update status=200 latency_ms=239
+2026-10-15T00:55:53 INFO  backup-job/bj-node-20 deploy step release=backup-job-4.14.7 step=pull_image result=ok took_s=226
+2026-10-15T00:55:57 INFO  backup-job/bj-node-22 request done id=req-38cfedbe route=/backup-job/v1/verify status=200 latency_ms=216
+2026-10-15T00:56:02 WARN  backup-job/bj-node-12 alert fired rule=conn_pool_saturated value=77% threshold=76%
+2026-10-15T00:56:06 INFO  backup-job/bj-node-02 config applied key=dns.ttl_s value=1581 by=dwjung
+2026-10-15T00:56:10 INFO  backup-job/bj-node-07 request done id=req-c8d4426a route=/backup-job/v1/create status=409 latency_ms=423
+2026-10-15T00:56:17 INFO  backup-job/bj-node-10 request done id=req-591f74be route=/backup-job/v1/list status=204 latency_ms=251
+2026-10-15T00:56:20 INFO  backup-job/bj-node-08 ticket linked id=OPS-49297 reason=schema_change
+2026-10-15T00:56:22 WARN  backup-job/bj-node-07 alert fired rule=replica_lag_high value=61s threshold=60s
+2026-10-15T00:56:27 INFO  backup-job/bj-node-12 deploy step release=backup-job-4.13.8 step=warmup result=ok took_s=26
+2026-10-15T00:56:34 INFO  backup-job/bj-node-12 ticket linked id=OPS-49065 reason=dependency_upgrade
+2026-10-15T00:56:37 INFO  backup-job/bj-node-21 request done id=req-5fd9b12d route=/backup-job/v1/cancel status=200 latency_ms=48
+2026-10-15T00:56:44 INFO  backup-job/bj-node-03 config applied key=log.sample_rate value=52% by=ejlim
+2026-10-15T00:56:49 ERROR backup-job/bj-node-02 job failed job=backup-job-export attempt=3 cause=bad_checksum
+2026-10-15T00:56:51 INFO  backup-job/bj-node-05 request done id=req-aee0a643 route=/backup-job/v1/verify status=200 latency_ms=224
+2026-10-15T00:56:57 INFO  backup-job/bj-node-01 config applied key=breaker.half_open_s value=33 by=dwjung
+2026-10-15T00:57:04 INFO  backup-job/bj-node-20 request done id=req-3dc3fc48 route=/backup-job/v1/cancel status=200 latency_ms=178
+2026-10-15T00:57:06 INFO  backup-job/bj-node-16 config applied key=breaker.open_ratio value=true by=mjlee
+2026-10-15T00:57:11 INFO  backup-job/bj-node-23 request done id=req-fbc96675 route=/backup-job/v1/sync status=429 latency_ms=53
+2026-10-15T00:57:13 INFO  backup-job/bj-node-21 backup finished file=/vault/daily/inventory_20261005.tar.zst size_mb=78314 checksum=06d35d0a
+2026-10-15T00:57:14 INFO  backup-job/bj-node-08 request done id=req-098f1c72 route=/backup-job/v1/status status=200 latency_ms=138
+2026-10-15T00:57:21 INFO  backup-job/bj-node-03 pool resize target=backup-job-cache max_pool_size=337 prev=348
+2026-10-15T00:57:27 INFO  backup-job/bj-node-17 request done id=req-37d0c70c route=/backup-job/v1/get status=200 latency_ms=162
+2026-10-15T00:57:30 INFO  backup-job/bj-node-24 deploy step release=backup-job-4.19.8 step=pull_image result=ok took_s=136
+2026-10-15T00:57:37 INFO  backup-job/bj-node-05 request done id=req-97f1f22a route=/backup-job/v1/verify status=500 latency_ms=38
+2026-10-15T00:57:44 INFO  backup-job/bj-node-12 request done id=req-ace68106 route=/backup-job/v1/create status=200 latency_ms=104
+2026-10-15T00:57:45 INFO  backup-job/bj-node-04 deploy step release=backup-job-4.18.9 step=drain result=ok took_s=73
+2026-10-15T00:57:49 INFO  backup-job/bj-node-04 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=20523 checksum=b36a90c4
+2026-10-15T00:57:54 WARN  backup-job/bj-node-16 alert fired rule=replica_lag_high value=91s threshold=77s
+2026-10-15T00:57:56 WARN  backup-job/bj-node-07 alert fired rule=disk_usage_warning value=84% threshold=72%
+2026-10-15T00:58:02 INFO  backup-job/bj-node-20 request done id=req-c557f177 route=/backup-job/v1/verify status=503 latency_ms=105
+2026-10-15T00:58:08 INFO  backup-job/bj-node-10 request done id=req-f224ee36 route=/backup-job/v1/verify status=400 latency_ms=64
+2026-10-15T00:58:13 INFO  backup-job/bj-node-14 request done id=req-cef7f4ac route=/backup-job/v1/update status=200 latency_ms=76
+2026-10-15T00:58:14 INFO  backup-job/bj-node-01 deploy step release=backup-job-4.11.2 step=pull_image result=ok took_s=19
+2026-10-15T00:58:21 INFO  backup-job/bj-node-05 request done id=req-6db39708 route=/backup-job/v1/sync status=400 latency_ms=73
+2026-10-15T00:58:25 INFO  backup-job/bj-node-22 deploy step release=backup-job-4.20.5 step=pull_image result=ok took_s=239
+2026-10-15T00:58:29 WARN  backup-job/bj-node-19 alert fired rule=cpu_steal_high value=88% threshold=82%
+2026-10-15T00:58:32 INFO  backup-job/bj-node-03 request done id=req-d7f32e74 route=/backup-job/v1/list status=200 latency_ms=42
+2026-10-15T00:58:34 INFO  backup-job/bj-node-05 ticket linked id=OPS-49878 reason=quota_increase
+2026-10-15T00:58:35 INFO  backup-job/bj-node-07 pool resize target=backup-job-db max_pool_size=231 prev=271
+2026-10-15T00:58:36 NOTE  backup-job/bj-node-07 operator=yjchoi memo="캐시 TTL을 44초로 되돌림. 오래된 응답이 보고됨."
+2026-10-15T00:58:42 INFO  backup-job/bj-node-12 request done id=req-6182e348 route=/backup-job/v1/list status=503 latency_ms=40
+2026-10-15T00:58:49 INFO  backup-job/bj-node-04 pool resize target=backup-job-worker max_pool_size=194 prev=170
+2026-10-15T00:58:56 INFO  backup-job/bj-node-03 deploy step release=backup-job-4.19.7 step=pull_image result=ok took_s=85
+2026-10-15T00:58:59 INFO  backup-job/bj-node-09 request done id=req-bc348e2a route=/backup-job/v1/list status=204 latency_ms=312
+2026-10-15T00:59:01 INFO  backup-job/bj-node-11 request done id=req-9613112d route=/backup-job/v1/list status=409 latency_ms=172
+2026-10-15T00:59:07 NOTE  backup-job/bj-node-20 operator=sykang memo="캐시 TTL을 9초로 되돌림. 오래된 응답이 보고됨."
+2026-10-15T00:59:12 INFO  backup-job/bj-node-03 ticket linked id=OPS-47215 reason=runbook_update
+2026-10-15T00:59:18 INFO  backup-job/bj-node-16 request done id=req-ef864d21 route=/backup-job/v1/get status=200 latency_ms=56
+2026-10-15T00:59:24 INFO  backup-job/bj-node-01 request done id=req-35f1fc2f route=/backup-job/v1/create status=200 latency_ms=132
+2026-10-15T00:59:28 INFO  backup-job/bj-node-14 pool resize target=backup-job-cache max_pool_size=80 prev=56
+2026-10-15T00:59:30 INFO  backup-job/bj-node-10 request done id=req-5aaab09d route=/backup-job/v1/cancel status=200 latency_ms=48
+2026-10-15T00:59:33 INFO  backup-job/bj-node-11 request done id=req-8c09f373 route=/backup-job/v1/cancel status=409 latency_ms=491
+2026-10-15T00:59:34 INFO  backup-job/bj-node-03 request done id=req-a92a9937 route=/backup-job/v1/create status=200 latency_ms=202
+2026-10-15T00:59:39 INFO  backup-job/bj-node-18 config applied key=retry.max_attempts value=8128 by=jhpark
+2026-10-15T00:59:41 INFO  backup-job/bj-node-20 config applied key=breaker.half_open_s value=false by=yjchoi
+2026-10-15T00:59:45 INFO  backup-job/bj-node-02 config applied key=log.sample_rate value=true by=ejlim
+2026-10-15T00:59:51 ERROR backup-job/bj-node-08 job failed job=backup-job-reindex attempt=5 cause=bad_checksum
+2026-10-15T00:59:56 INFO  backup-job/bj-node-06 request done id=req-9497740f route=/backup-job/v1/get status=200 latency_ms=89
+2026-10-15T01:00:02 WARN  backup-job/bj-node-09 alert fired rule=gc_pause_long value=86ms threshold=76ms
+2026-10-15T01:00:09 INFO  backup-job/bj-node-24 request done id=req-bee3fc20 route=/backup-job/v1/list status=404 latency_ms=23
+2026-10-15T01:00:10 INFO  backup-job/bj-node-05 ticket linked id=OPS-49884 reason=cert_rotation
+2026-10-15T01:00:16 NOTE  backup-job/bj-node-02 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-15T01:00:21 WARN  backup-job/bj-node-14 alert fired rule=error_ratio_high value=53% threshold=48%
+2026-10-15T01:00:23 INFO  backup-job/bj-node-09 deploy step release=backup-job-4.10.9 step=warmup result=ok took_s=57
+2026-10-15T01:00:25 INFO  backup-job/bj-node-04 cache stats region=us-we-2b hit_ratio=67.0% evictions=12228
+2026-10-15T01:00:30 WARN  backup-job/bj-node-02 alert fired rule=conn_pool_saturated value=71% threshold=66%
+2026-10-15T01:00:31 INFO  backup-job/bj-node-05 request done id=req-105a23e1 route=/backup-job/v1/sync status=200 latency_ms=16
+2026-10-15T01:00:38 INFO  backup-job/bj-node-16 request done id=req-8fa249c5 route=/backup-job/v1/get status=200 latency_ms=131
+2026-10-15T01:00:42 INFO  backup-job/bj-node-16 ticket linked id=OPS-47009 reason=quota_increase
+2026-10-15T01:00:43 INFO  backup-job/bj-node-22 request done id=req-667bbe95 route=/backup-job/v1/sync status=200 latency_ms=131
+2026-10-15T01:00:45 INFO  backup-job/bj-node-16 request done id=req-7307d0e4 route=/backup-job/v1/update status=400 latency_ms=97
+2026-10-15T01:00:51 INFO  backup-job/bj-node-21 request done id=req-abf2aee5 route=/backup-job/v1/sync status=404 latency_ms=94
+2026-10-15T01:00:54 INFO  backup-job/bj-node-06 request done id=req-60c06a9b route=/backup-job/v1/list status=200 latency_ms=36
+2026-10-15T01:00:56 WARN  backup-job/bj-node-17 alert fired rule=gc_pause_long value=69ms threshold=54ms
+2026-10-15T01:00:59 INFO  backup-job/bj-node-04 request done id=req-a0c97c31 route=/backup-job/v1/update status=200 latency_ms=86
+2026-10-15T01:01:01 INFO  backup-job/bj-node-12 pool resize target=backup-job-cache max_pool_size=47 prev=65
+2026-10-15T01:01:08 INFO  backup-job/bj-node-07 ticket linked id=OPS-47152 reason=flaky_healthcheck
+2026-10-15T01:01:10 INFO  backup-job/bj-node-23 request done id=req-bb5f024a route=/backup-job/v1/get status=200 latency_ms=201
+2026-10-15T01:01:11 INFO  backup-job/bj-node-03 deploy step release=backup-job-4.21.9 step=drain result=ok took_s=236
+2026-10-15T01:01:12 INFO  backup-job/bj-node-24 request done id=req-13ef88bc route=/backup-job/v1/get status=200 latency_ms=25
+2026-10-15T01:01:15 INFO  backup-job/bj-node-14 config applied key=dns.ttl_s value=19 by=ejlim
+2026-10-15T01:01:16 INFO  backup-job/bj-node-14 deploy step release=backup-job-4.15.2 step=warmup result=ok took_s=191
+2026-10-15T01:01:22 INFO  backup-job/bj-node-09 request done id=req-50c462ec route=/backup-job/v1/sync status=429 latency_ms=175
+2026-10-15T01:01:28 INFO  backup-job/bj-node-21 pool resize target=backup-job-db max_pool_size=293 prev=236
+2026-10-15T01:01:29 NOTE  backup-job/bj-node-04 operator=yjchoi memo="임시 증설 59대 추가. 내일 오전 회수 예정."
+2026-10-15T01:01:36 INFO  backup-job/bj-node-07 deploy step release=backup-job-4.12.6 step=verify result=ok took_s=188
+2026-10-15T01:01:41 INFO  backup-job/bj-node-16 cache stats region=ap-ne-2c hit_ratio=63.4% evictions=4626
+2026-10-15T01:01:45 INFO  backup-job/bj-node-01 deploy step release=backup-job-4.10.2 step=verify result=ok took_s=190
+2026-10-15T01:01:50 INFO  backup-job/bj-node-11 request done id=req-07e33ef5 route=/backup-job/v1/sync status=503 latency_ms=259
+2026-10-15T01:01:53 INFO  backup-job/bj-node-19 request done id=req-6eed0cf1 route=/backup-job/v1/verify status=503 latency_ms=534
+2026-10-15T01:01:59 INFO  backup-job/bj-node-18 request done id=req-e3e7421e route=/backup-job/v1/verify status=200 latency_ms=117
+2026-10-15T01:02:01 INFO  backup-job/bj-node-09 ticket linked id=OPS-49179 reason=runbook_update
+2026-10-15T01:02:05 INFO  backup-job/bj-node-19 request done id=req-42e63149 route=/backup-job/v1/cancel status=409 latency_ms=147
+2026-10-15T01:02:09 INFO  backup-job/bj-node-24 request done id=req-3eb9379b route=/backup-job/v1/status status=503 latency_ms=402
+2026-10-15T01:02:16 INFO  backup-job/bj-node-07 request done id=req-961ae800 route=/backup-job/v1/sync status=409 latency_ms=28
+2026-10-15T01:02:22 INFO  backup-job/bj-node-21 request done id=req-c0cbe845 route=/backup-job/v1/verify status=200 latency_ms=81
+2026-10-15T01:02:29 INFO  backup-job/bj-node-18 deploy step release=backup-job-4.16.8 step=drain result=ok took_s=92
+2026-10-15T01:02:35 INFO  backup-job/bj-node-02 backup finished file=/vault/weekly/users_2026w33.tar.zst size_mb=67193 checksum=51e8ff52
+2026-10-15T01:02:36 INFO  backup-job/bj-node-23 request done id=req-bcb9a210 route=/backup-job/v1/get status=200 latency_ms=480
+2026-10-15T01:02:40 INFO  backup-job/bj-node-02 cache stats region=ap-ne-2b hit_ratio=97.4% evictions=13300
+2026-10-15T01:02:43 INFO  backup-job/bj-node-01 deploy step release=backup-job-4.13.6 step=shift_traffic_50 result=ok took_s=11
+2026-10-15T01:02:49 NOTE  backup-job/bj-node-09 operator=dwjung memo="연동 팀에 변경 공지 완료."
+2026-10-15T01:02:56 INFO  backup-job/bj-node-13 request done id=req-5f0738b2 route=/backup-job/v1/get status=200 latency_ms=88
+2026-10-15T01:02:57 INFO  backup-job/bj-node-23 pool resize target=backup-job-queue max_pool_size=338 prev=341
+2026-10-15T01:02:58 INFO  backup-job/bj-node-02 request done id=req-6efc9760 route=/backup-job/v1/sync status=200 latency_ms=155
+2026-10-15T01:03:03 INFO  backup-job/bj-node-03 pool resize target=backup-job-db max_pool_size=42 prev=11
+2026-10-15T01:03:09 INFO  backup-job/bj-node-05 pool resize target=backup-job-cache max_pool_size=298 prev=289
+2026-10-15T01:03:14 INFO  backup-job/bj-node-10 cache stats region=ap-se-1a hit_ratio=67.8% evictions=36575
+2026-10-15T01:03:21 INFO  backup-job/bj-node-17 backup finished file=/vault/weekly/inventory_2026w41.tar.zst size_mb=84056 checksum=c11a96ae
+2026-10-15T01:03:23 INFO  backup-job/bj-node-01 config applied key=http.max_conns value=4522 by=shkim
+2026-10-15T01:03:25 INFO  backup-job/bj-node-13 ticket linked id=OPS-49598 reason=cert_rotation
+2026-10-15T01:03:27 ERROR backup-job/bj-node-04 job failed job=backup-job-rollup attempt=2 cause=dns_failure
+2026-10-15T01:03:29 INFO  backup-job/bj-node-16 pool resize target=backup-job-worker max_pool_size=265 prev=284
+2026-10-15T01:03:32 INFO  backup-job/bj-node-13 request done id=req-e597f9a7 route=/backup-job/v1/update status=400 latency_ms=205
+2026-10-15T01:03:34 INFO  backup-job/bj-node-21 request done id=req-44220017 route=/backup-job/v1/get status=204 latency_ms=250
+2026-10-15T01:03:35 INFO  backup-job/bj-node-12 request done id=req-ed0d5eb3 route=/backup-job/v1/create status=409 latency_ms=378
+2026-10-15T01:03:38 INFO  backup-job/bj-node-23 request done id=req-6252536c route=/backup-job/v1/cancel status=200 latency_ms=404
+2026-10-15T01:03:40 NOTE  backup-job/bj-node-02 operator=hbyoon memo="로그 보존 기간은 50일로 유지하기로 함."
+2026-10-15T01:03:45 INFO  backup-job/bj-node-09 request done id=req-841f0126 route=/backup-job/v1/update status=200 latency_ms=352
+2026-10-15T01:03:51 INFO  backup-job/bj-node-22 deploy step release=backup-job-4.11.5 step=shift_traffic_100 result=ok took_s=14
+2026-10-15T01:03:55 INFO  backup-job/bj-node-08 request done id=req-c521632b route=/backup-job/v1/get status=200 latency_ms=553
+2026-10-15T01:04:01 INFO  backup-job/bj-node-03 request done id=req-fa49304c route=/backup-job/v1/list status=200 latency_ms=124
+2026-10-15T01:04:07 INFO  backup-job/bj-node-03 request done id=req-5c6a7036 route=/backup-job/v1/verify status=200 latency_ms=151
+2026-10-15T01:04:11 INFO  backup-job/bj-node-21 request done id=req-ab320ef8 route=/backup-job/v1/create status=201 latency_ms=293
+2026-10-15T01:04:12 WARN  backup-job/bj-node-04 alert fired rule=disk_usage_warning value=85% threshold=71%
+2026-10-15T01:04:15 INFO  backup-job/bj-node-17 config applied key=canary.latency_p99_threshold_ms value=false by=yjchoi
+2026-10-15T01:04:18 INFO  backup-job/bj-node-05 config applied key=shard.count value=true by=mjlee
+2026-10-15T01:04:22 INFO  backup-job/bj-node-19 pool resize target=backup-job-queue max_pool_size=294 prev=242
+2026-10-15T01:04:24 INFO  backup-job/bj-node-03 pool resize target=backup-job-db max_pool_size=310 prev=288
+2026-10-15T01:04:26 WARN  backup-job/bj-node-15 alert fired rule=queue_depth_high value=50 threshold=42
+2026-10-15T01:04:27 INFO  backup-job/bj-node-08 request done id=req-5d3e9258 route=/backup-job/v1/status status=200 latency_ms=328
+2026-10-15T01:04:29 INFO  backup-job/bj-node-01 request done id=req-770bede6 route=/backup-job/v1/update status=400 latency_ms=51
+2026-10-15T01:04:30 INFO  backup-job/bj-node-23 request done id=req-be930609 route=/backup-job/v1/status status=200 latency_ms=73
+2026-10-15T01:04:36 WARN  backup-job/bj-node-07 alert fired rule=error_ratio_high value=55% threshold=49%
+2026-10-15T01:04:39 INFO  backup-job/bj-node-21 request done id=req-19188596 route=/backup-job/v1/sync status=200 latency_ms=151
+2026-10-15T01:04:46 INFO  backup-job/bj-node-23 ticket linked id=OPS-47050 reason=dependency_upgrade
+2026-10-15T01:04:47 INFO  backup-job/bj-node-09 backup finished file=/vault/weekly/payments_2026w34.tar.zst size_mb=50198 checksum=fc71c9fc
+2026-10-15T01:04:51 INFO  backup-job/bj-node-13 request done id=req-3fb8e6eb route=/backup-job/v1/status status=200 latency_ms=97
+2026-10-15T01:04:58 INFO  backup-job/bj-node-03 request done id=req-a1d080c0 route=/backup-job/v1/get status=200 latency_ms=103
+2026-10-15T01:05:05 ERROR backup-job/bj-node-13 job failed job=backup-job-rollup attempt=1 cause=lock_wait_exceeded
+2026-10-15T01:05:07 ERROR backup-job/bj-node-18 job failed job=backup-job-reindex attempt=5 cause=upstream_timeout
+2026-10-15T01:05:08 INFO  backup-job/bj-node-10 request done id=req-4cfc90bb route=/backup-job/v1/update status=500 latency_ms=91
+2026-10-15T01:05:14 INFO  backup-job/bj-node-14 ticket linked id=OPS-47232 reason=dns_ttl_change
+2026-10-15T01:05:21 INFO  backup-job/bj-node-20 pool resize target=backup-job-worker max_pool_size=287 prev=230
+2026-10-15T01:05:23 NOTE  backup-job/bj-node-20 operator=mjlee memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-15T01:05:25 INFO  backup-job/bj-node-21 cache stats region=ap-se-1a hit_ratio=96.7% evictions=36235
+2026-10-15T01:05:29 INFO  backup-job/bj-node-16 request done id=req-34d3b2f0 route=/backup-job/v1/sync status=200 latency_ms=73
+2026-10-15T01:05:32 INFO  backup-job/bj-node-19 deploy step release=backup-job-4.12.5 step=shift_traffic_50 result=ok took_s=115
+2026-10-15T01:05:38 ERROR backup-job/bj-node-15 job failed job=backup-job-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-15T01:05:39 INFO  backup-job/bj-node-06 request done id=req-5bbf63b1 route=/backup-job/v1/sync status=200 latency_ms=186
+2026-10-15T01:05:45 INFO  backup-job/bj-node-04 pool resize target=backup-job-cache max_pool_size=25 prev=4
+2026-10-15T01:05:48 INFO  backup-job/bj-node-07 request done id=req-346c8318 route=/backup-job/v1/sync status=204 latency_ms=194
+2026-10-15T01:05:55 INFO  backup-job/bj-node-02 request done id=req-a400980d route=/backup-job/v1/verify status=200 latency_ms=162
+2026-10-15T01:06:01 INFO  backup-job/bj-node-22 backup finished file=/vault/weekly/audit_2026w32.tar.zst size_mb=65806 checksum=2c8b6b45
+2026-10-15T01:06:03 INFO  backup-job/bj-node-01 cache stats region=us-we-2b hit_ratio=82.5% evictions=16564
+2026-10-15T01:06:08 INFO  backup-job/bj-node-11 request done id=req-a411b5b9 route=/backup-job/v1/update status=200 latency_ms=23
+2026-10-15T01:06:12 NOTE  backup-job/bj-node-08 operator=mjlee memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-15T01:06:16 INFO  backup-job/bj-node-02 request done id=req-30cf36c9 route=/backup-job/v1/sync status=200 latency_ms=50
+2026-10-15T01:06:22 INFO  backup-job/bj-node-09 request done id=req-b3d02ec9 route=/backup-job/v1/status status=200 latency_ms=378
+2026-10-15T01:06:24 INFO  backup-job/bj-node-16 request done id=req-54f9d158 route=/backup-job/v1/list status=500 latency_ms=144
+2026-10-15T01:06:30 INFO  backup-job/bj-node-05 request done id=req-2623f34a route=/backup-job/v1/list status=429 latency_ms=182
+2026-10-15T01:06:33 INFO  backup-job/bj-node-12 backup finished file=/vault/daily/users_20261010.tar.zst size_mb=14255 checksum=87c003fa
+2026-10-15T01:06:34 INFO  backup-job/bj-node-24 request done id=req-d87c4913 route=/backup-job/v1/status status=500 latency_ms=76
+2026-10-15T01:06:38 WARN  backup-job/bj-node-15 alert fired rule=conn_pool_saturated value=81% threshold=80%
+2026-10-15T01:06:40 INFO  backup-job/bj-node-09 config applied key=breaker.half_open_s value=false by=yjchoi
+2026-10-15T01:06:47 ERROR backup-job/bj-node-06 job failed job=backup-job-rollup attempt=5 cause=dns_failure
+2026-10-15T01:06:54 WARN  backup-job/bj-node-11 alert fired rule=error_ratio_high value=68% threshold=63%
+2026-10-15T01:06:59 INFO  backup-job/bj-node-08 request done id=req-a68c4255 route=/backup-job/v1/get status=503 latency_ms=143
+2026-10-15T01:07:03 WARN  backup-job/bj-node-13 alert fired rule=fd_usage_high value=95% threshold=89%
+2026-10-15T01:07:10 WARN  backup-job/bj-node-23 alert fired rule=replica_lag_high value=60s threshold=45s
+2026-10-15T01:07:17 INFO  backup-job/bj-node-15 request done id=req-216316bb route=/backup-job/v1/get status=404 latency_ms=103
+2026-10-15T01:07:22 INFO  backup-job/bj-node-15 request done id=req-99665e7f route=/backup-job/v1/sync status=429 latency_ms=534
+2026-10-15T01:07:27 INFO  backup-job/bj-node-11 request done id=req-8a139898 route=/backup-job/v1/cancel status=409 latency_ms=107
+2026-10-15T01:07:30 INFO  backup-job/bj-node-24 request done id=req-2aaf73cb route=/backup-job/v1/get status=404 latency_ms=51
+2026-10-15T01:07:35 INFO  backup-job/bj-node-13 request done id=req-5eea0ae4 route=/backup-job/v1/sync status=200 latency_ms=40
+2026-10-15T01:07:36 INFO  backup-job/bj-node-11 request done id=req-51b845c6 route=/backup-job/v1/sync status=204 latency_ms=122
+2026-10-15T01:07:38 INFO  backup-job/bj-node-08 request done id=req-ab9a9fd6 route=/backup-job/v1/create status=400 latency_ms=346
+2026-10-15T01:07:40 INFO  backup-job/bj-node-06 deploy step release=backup-job-4.12.3 step=migrate result=ok took_s=235
+2026-10-15T01:07:46 INFO  backup-job/bj-node-18 pool resize target=backup-job-queue max_pool_size=128 prev=135
+2026-10-15T01:07:51 WARN  backup-job/bj-node-04 alert fired rule=p99_latency_high value=78ms threshold=66ms
+2026-10-15T01:07:57 INFO  backup-job/bj-node-08 pool resize target=backup-job-worker max_pool_size=72 prev=20
+2026-10-15T01:08:01 INFO  backup-job/bj-node-13 request done id=req-aa47c40d route=/backup-job/v1/verify status=204 latency_ms=126
+2026-10-15T01:08:02 INFO  backup-job/bj-node-06 request done id=req-c8b5d24d route=/backup-job/v1/status status=200 latency_ms=219
+2026-10-15T01:08:06 NOTE  backup-job/bj-node-11 operator=hbyoon memo="bj-node-11 재기동 후 지표 정상 확인."
+2026-10-15T01:08:08 INFO  backup-job/bj-node-07 pool resize target=backup-job-db max_pool_size=147 prev=196
+2026-10-15T01:08:12 INFO  backup-job/bj-node-05 request done id=req-cd0efa64 route=/backup-job/v1/update status=200 latency_ms=191
+2026-10-15T01:08:15 INFO  backup-job/bj-node-18 request done id=req-678eba43 route=/backup-job/v1/verify status=400 latency_ms=42
+2026-10-15T01:08:19 WARN  backup-job/bj-node-21 alert fired rule=disk_usage_warning value=67% threshold=60%
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)
