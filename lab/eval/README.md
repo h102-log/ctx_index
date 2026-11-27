@@ -71,7 +71,7 @@ python3 lab/eval/run_eval.py --api real --scenarios s01 --out lab/eval/.run/pilo
 python3 lab/eval/analyze.py lab/eval/.run/pilot
 ```
 
-- 이 컨테이너에서는 환경에 저장한 API 키를 에이전트 프록시가 요청에 넣어 줍니다(`run_cli_eval.sh`는 형식만 맞춘 자리 표시자 키를 보냅니다). 다른 컴퓨터에서는 `CTX_EVAL_API_KEY`에 키를 두면 그 키를 씁니다. bash와 `env -i`를 쓰므로 Linux/macOS 전용입니다.
+- API 키는 `CTX_EVAL_API_KEY` 환경 변수에서 읽어 격리된 CLI에만 `ANTHROPIC_API_KEY`로 넘깁니다. 작업 중인 세션의 인증을 건드리지 않도록 `ANTHROPIC_API_KEY`라는 이름은 쓰지 않습니다. 클라우드 세션에서는 환경 설정의 환경 변수로만 넣을 수 있고(그 환경을 쓰는 모든 세션과 명령이 읽을 수 있으므로 사용 한도를 건 실험용 키를 쓰고 끝나면 지웁니다), 새 세션부터 적용됩니다. bash와 `env -i`를 쓰므로 Linux/macOS(Windows는 WSL) 전용입니다.
 - 결과는 `--out` 아래 `report/{baseline,v1}/results.jsonl`(질문 1개에 한 줄), `traces/`(질문별 전체 대화), `units/<유닛>/unit.json`(빌드 · 압축 · 요약 세부)에 쌓입니다. 중단된 뒤 같은 명령을 다시 실행하면 이어서 합니다. `lab/eval/.run/`은 커밋하지 않습니다(모델 답과 트랜스크립트가 들어 있습니다).
 
 ## 2.1.332에서 확인한 것

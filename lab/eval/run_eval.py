@@ -228,8 +228,11 @@ class Eval(object):
         for args in (["init", "-q", "-b", "main"], ["add", "-A"], ["commit", "-q", "-m", "init"]):
             subprocess.run(["git", "-C", proj, "-c", "user.name=eval", "-c", "user.email=eval@example.invalid",
                             "-c", "commit.gpgsign=false"] + args, check=True, capture_output=True)
+        approved = [PLACEHOLDER[-20:]]
+        if self.a.api == "real" and os.environ.get("CTX_EVAL_API_KEY"):
+            approved.append(os.environ["CTX_EVAL_API_KEY"][-20:])     # what the CLI itself records for an approved key
         jdump(os.path.join(home, ".claude.json"), {"hasCompletedOnboarding": True,
-                                                   "customApiKeyResponses": {"approved": [PLACEHOLDER[-20:]], "rejected": []},
+                                                   "customApiKeyResponses": {"approved": approved, "rejected": []},
                                                    "projects": {proj: {"allowedTools": [], "hasTrustDialogAccepted": True}}})
         cp = subprocess.run([sys.executable, INSTALL], env=dict(os.environ, HOME=home), capture_output=True)
         if cp.returncode != 0:
