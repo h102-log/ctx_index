@@ -1,0 +1,424 @@
+참고용 로그 14: API 게이트웨이(edge-gw) 레이트 리밋 구간. '확인'이라고만 답해 줘.
+
+2026-10-18T13:17:48 WARN  edge-gw/eg-node-22 alert fired rule=cpu_steal_high value=51% threshold=41%
+2026-10-18T13:17:54 INFO  edge-gw/eg-node-21 request done id=req-5d23299f route=/edge-gw/v1/status status=429 latency_ms=65
+2026-10-18T13:17:58 WARN  edge-gw/eg-node-15 alert fired rule=conn_pool_saturated value=85% threshold=83%
+2026-10-18T13:18:04 ERROR edge-gw/eg-node-03 job failed job=edge-gw-export attempt=2 cause=lock_wait_exceeded
+2026-10-18T13:18:11 WARN  edge-gw/eg-node-24 alert fired rule=conn_pool_saturated value=54% threshold=53%
+2026-10-18T13:18:12 NOTE  edge-gw/eg-node-05 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-18T13:18:17 INFO  edge-gw/eg-node-05 request done id=req-e14f59be route=/edge-gw/v1/list status=500 latency_ms=185
+2026-10-18T13:18:22 INFO  edge-gw/eg-node-10 request done id=req-0f404c34 route=/edge-gw/v1/create status=200 latency_ms=70
+2026-10-18T13:18:23 ERROR edge-gw/eg-node-04 job failed job=edge-gw-export attempt=3 cause=bad_checksum
+2026-10-18T13:18:29 INFO  edge-gw/eg-node-05 deploy step release=edge-gw-4.16.4 step=drain result=ok took_s=30
+2026-10-18T13:18:34 INFO  edge-gw/eg-node-01 config applied key=http.max_conns value=3687 by=yjchoi
+2026-10-18T13:18:35 INFO  edge-gw/eg-node-21 request done id=req-34797a12 route=/edge-gw/v1/status status=404 latency_ms=39
+2026-10-18T13:18:40 INFO  edge-gw/eg-node-09 config applied key=retry.max_attempts value=44% by=jhpark
+2026-10-18T13:18:47 ERROR edge-gw/eg-node-05 job failed job=edge-gw-reindex attempt=3 cause=oom_killed
+2026-10-18T13:18:49 INFO  edge-gw/eg-node-21 request done id=req-f4c0a7ab route=/edge-gw/v1/verify status=503 latency_ms=376
+2026-10-18T13:18:54 ERROR edge-gw/eg-node-05 job failed job=edge-gw-export attempt=4 cause=lock_wait_exceeded
+2026-10-18T13:18:58 INFO  edge-gw/eg-node-17 backup finished file=/vault/weekly/audit_2026w31.tar.zst size_mb=69844 checksum=e27f2691
+2026-10-18T13:18:59 INFO  edge-gw/eg-node-17 request done id=req-502d789c route=/edge-gw/v1/status status=200 latency_ms=26
+2026-10-18T13:19:03 INFO  edge-gw/eg-node-23 request done id=req-47a479b4 route=/edge-gw/v1/sync status=400 latency_ms=230
+2026-10-18T13:19:06 INFO  edge-gw/eg-node-12 ticket linked id=OPS-47599 reason=flaky_healthcheck
+2026-10-18T13:19:12 ERROR edge-gw/eg-node-20 job failed job=edge-gw-rollup attempt=3 cause=dns_failure
+2026-10-18T13:19:13 INFO  edge-gw/eg-node-20 request done id=req-8e549717 route=/edge-gw/v1/list status=200 latency_ms=69
+2026-10-18T13:19:17 NOTE  edge-gw/eg-node-20 operator=jhpark memo="동시 처리 수를 17에서 2로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-18T13:19:19 INFO  edge-gw/eg-node-02 request done id=req-07d1c260 route=/edge-gw/v1/status status=201 latency_ms=158
+2026-10-18T13:19:26 WARN  edge-gw/eg-node-05 alert fired rule=replica_lag_high value=51s threshold=39s
+2026-10-18T13:19:32 WARN  edge-gw/eg-node-17 alert fired rule=heap_used_high value=54% threshold=49%
+2026-10-18T13:19:39 INFO  edge-gw/eg-node-13 config applied key=shard.count value=9 by=shkim
+2026-10-18T13:19:40 WARN  edge-gw/eg-node-24 alert fired rule=conn_pool_saturated value=59% threshold=48%
+2026-10-18T13:19:47 WARN  edge-gw/eg-node-03 alert fired rule=p99_latency_high value=65ms threshold=54ms
+2026-10-18T13:19:51 INFO  edge-gw/eg-node-13 request done id=req-aa118050 route=/edge-gw/v1/update status=404 latency_ms=266
+2026-10-18T13:19:52 INFO  edge-gw/eg-node-03 request done id=req-58fcd909 route=/edge-gw/v1/verify status=200 latency_ms=270
+2026-10-18T13:19:56 WARN  edge-gw/eg-node-03 alert fired rule=replica_lag_high value=97s threshold=91s
+2026-10-18T13:20:03 INFO  edge-gw/eg-node-04 cache stats region=us-we-2b hit_ratio=85.7% evictions=17172
+2026-10-18T13:20:10 INFO  edge-gw/eg-node-02 ticket linked id=OPS-48228 reason=schema_change
+2026-10-18T13:20:12 NOTE  edge-gw/eg-node-19 operator=yjchoi memo="배치 시작 시각을 13시 38분으로 고정함."
+2026-10-18T13:20:17 WARN  edge-gw/eg-node-09 alert fired rule=gc_pause_long value=92ms threshold=86ms
+2026-10-18T13:20:24 INFO  edge-gw/eg-node-13 config applied key=breaker.open_ratio value=5 by=yjchoi
+2026-10-18T13:20:26 INFO  edge-gw/eg-node-12 request done id=req-1f030e95 route=/edge-gw/v1/cancel status=404 latency_ms=66
+2026-10-18T13:20:32 INFO  edge-gw/eg-node-20 request done id=req-6bb895f6 route=/edge-gw/v1/status status=200 latency_ms=177
+2026-10-18T13:20:37 INFO  edge-gw/eg-node-09 config applied key=limiter.rps value=false by=yjchoi
+2026-10-18T13:20:41 INFO  edge-gw/eg-node-02 backup finished file=/vault/daily/orders_20261012.tar.zst size_mb=11052 checksum=a5fca288
+2026-10-18T13:20:48 INFO  edge-gw/eg-node-22 config applied key=breaker.half_open_s value=1624 by=shkim
+2026-10-18T13:20:49 NOTE  edge-gw/eg-node-02 operator=mjlee memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-18T13:20:54 INFO  edge-gw/eg-node-08 deploy step release=edge-gw-4.20.2 step=shift_traffic_100 result=ok took_s=240
+2026-10-18T13:20:57 INFO  edge-gw/eg-node-15 deploy step release=edge-gw-4.14.6 step=verify result=ok took_s=70
+2026-10-18T13:21:02 INFO  edge-gw/eg-node-04 pool resize target=edge-gw-worker max_pool_size=391 prev=411
+2026-10-18T13:21:07 INFO  edge-gw/eg-node-20 deploy step release=edge-gw-4.20.6 step=pull_image result=ok took_s=45
+2026-10-18T13:21:14 NOTE  edge-gw/eg-node-04 operator=ejlim memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-18T13:21:15 INFO  edge-gw/eg-node-18 config applied key=http.max_conns value=41 by=dwjung
+2026-10-18T13:21:17 INFO  edge-gw/eg-node-20 request done id=req-2ea049cb route=/edge-gw/v1/sync status=500 latency_ms=242
+2026-10-18T13:21:23 INFO  edge-gw/eg-node-20 deploy step release=edge-gw-4.13.8 step=shift_traffic_10 result=ok took_s=236
+2026-10-18T13:21:27 INFO  edge-gw/eg-node-06 request done id=req-1cfe13d9 route=/edge-gw/v1/cancel status=500 latency_ms=255
+2026-10-18T13:21:31 INFO  edge-gw/eg-node-06 request done id=req-4bfad19d route=/edge-gw/v1/verify status=200 latency_ms=119
+2026-10-18T13:21:37 INFO  edge-gw/eg-node-16 pool resize target=edge-gw-upstream max_pool_size=347 prev=404
+2026-10-18T13:21:43 INFO  edge-gw/eg-node-17 pool resize target=edge-gw-worker max_pool_size=213 prev=226
+2026-10-18T13:21:47 INFO  edge-gw/eg-node-02 pool resize target=edge-gw-cache max_pool_size=162 prev=186
+2026-10-18T13:21:49 INFO  edge-gw/eg-node-15 request done id=req-201ae74f route=/edge-gw/v1/verify status=200 latency_ms=67
+2026-10-18T13:21:56 INFO  edge-gw/eg-node-18 request done id=req-e2276894 route=/edge-gw/v1/sync status=201 latency_ms=42
+2026-10-18T13:21:58 WARN  edge-gw/eg-node-22 alert fired rule=queue_depth_high value=64 threshold=49
+2026-10-18T13:22:01 INFO  edge-gw/eg-node-14 cache stats region=ap-ne-2b hit_ratio=85.5% evictions=10112
+2026-10-18T13:22:03 INFO  edge-gw/eg-node-08 request done id=req-0d697fa5 route=/edge-gw/v1/status status=200 latency_ms=100
+2026-10-18T13:22:10 INFO  edge-gw/eg-node-21 config applied key=limiter.burst value=false by=dwjung
+2026-10-18T13:22:15 INFO  edge-gw/eg-node-13 request done id=req-b479d86f route=/edge-gw/v1/cancel status=200 latency_ms=33
+2026-10-18T13:22:19 INFO  edge-gw/eg-node-13 request done id=req-6fef4fda route=/edge-gw/v1/list status=201 latency_ms=932
+2026-10-18T13:22:25 INFO  edge-gw/eg-node-14 cache stats region=ap-ne-2a hit_ratio=75.7% evictions=22083
+2026-10-18T13:22:32 INFO  edge-gw/eg-node-10 request done id=req-747e710e route=/edge-gw/v1/verify status=200 latency_ms=152
+2026-10-18T13:22:38 INFO  edge-gw/eg-node-17 request done id=req-108f68ac route=/edge-gw/v1/sync status=200 latency_ms=211
+2026-10-18T13:22:39 NOTE  edge-gw/eg-node-01 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-18T13:22:43 WARN  edge-gw/eg-node-05 alert fired rule=disk_usage_warning value=86% threshold=81%
+2026-10-18T13:22:48 INFO  edge-gw/eg-node-04 backup finished file=/vault/daily/inventory_20261005.tar.zst size_mb=71604 checksum=b022216b
+2026-10-18T13:22:55 INFO  edge-gw/eg-node-20 request done id=req-a003312c route=/edge-gw/v1/sync status=200 latency_ms=59
+2026-10-18T13:23:01 WARN  edge-gw/eg-node-06 alert fired rule=error_ratio_high value=63% threshold=50%
+2026-10-18T13:23:03 WARN  edge-gw/eg-node-09 alert fired rule=queue_depth_high value=91 threshold=89
+2026-10-18T13:23:05 INFO  edge-gw/eg-node-14 request done id=req-443b8970 route=/edge-gw/v1/verify status=201 latency_ms=402
+2026-10-18T13:23:06 ERROR edge-gw/eg-node-19 job failed job=edge-gw-export attempt=3 cause=oom_killed
+2026-10-18T13:23:13 INFO  edge-gw/eg-node-03 backup finished file=/vault/weekly/users_2026w38.tar.zst size_mb=74765 checksum=4e8c365e
+2026-10-18T13:23:14 INFO  edge-gw/eg-node-22 request done id=req-9342a1e5 route=/edge-gw/v1/cancel status=200 latency_ms=242
+2026-10-18T13:23:21 INFO  edge-gw/eg-node-17 backup finished file=/vault/weekly/payments_2026w30.tar.zst size_mb=89947 checksum=6a751f12
+2026-10-18T13:23:25 WARN  edge-gw/eg-node-13 alert fired rule=replica_lag_high value=98s threshold=83s
+2026-10-18T13:23:26 INFO  edge-gw/eg-node-03 request done id=req-376deac7 route=/edge-gw/v1/get status=200 latency_ms=228
+2026-10-18T13:23:29 INFO  edge-gw/eg-node-04 request done id=req-5ea809db route=/edge-gw/v1/list status=200 latency_ms=31
+2026-10-18T13:23:34 INFO  edge-gw/eg-node-12 request done id=req-3a54ad88 route=/edge-gw/v1/update status=200 latency_ms=397
+2026-10-18T13:23:41 INFO  edge-gw/eg-node-19 request done id=req-3cb0faec route=/edge-gw/v1/update status=200 latency_ms=211
+2026-10-18T13:23:45 INFO  edge-gw/eg-node-09 ticket linked id=OPS-47076 reason=dns_ttl_change
+2026-10-18T13:23:51 INFO  edge-gw/eg-node-13 request done id=req-4336d15f route=/edge-gw/v1/update status=429 latency_ms=176
+2026-10-18T13:23:56 INFO  edge-gw/eg-node-05 request done id=req-cc1c4f55 route=/edge-gw/v1/status status=200 latency_ms=308
+2026-10-18T13:24:02 INFO  edge-gw/eg-node-08 request done id=req-0e6dedb8 route=/edge-gw/v1/cancel status=200 latency_ms=92
+2026-10-18T13:24:03 INFO  edge-gw/eg-node-22 request done id=req-6b488594 route=/edge-gw/v1/sync status=200 latency_ms=55
+2026-10-18T13:24:09 WARN  edge-gw/eg-node-14 alert fired rule=p99_latency_high value=63ms threshold=60ms
+2026-10-18T13:24:13 INFO  edge-gw/eg-node-09 request done id=req-06e99279 route=/edge-gw/v1/get status=500 latency_ms=79
+2026-10-18T13:24:19 NOTE  edge-gw/eg-node-03 operator=shkim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-18T13:24:24 INFO  edge-gw/eg-node-16 request done id=req-adaf0d55 route=/edge-gw/v1/cancel status=200 latency_ms=71
+2026-10-18T13:24:28 INFO  edge-gw/eg-node-23 request done id=req-7e5c1711 route=/edge-gw/v1/status status=200 latency_ms=255
+2026-10-18T13:24:31 WARN  edge-gw/eg-node-15 alert fired rule=heap_used_high value=74% threshold=59%
+2026-10-18T13:24:35 INFO  edge-gw/eg-node-13 request done id=req-67660773 route=/edge-gw/v1/create status=200 latency_ms=211
+2026-10-18T13:24:37 INFO  edge-gw/eg-node-24 ticket linked id=OPS-47640 reason=schema_change
+2026-10-18T13:24:40 INFO  edge-gw/eg-node-23 request done id=req-84ca508d route=/edge-gw/v1/sync status=200 latency_ms=78
+2026-10-18T13:24:45 INFO  edge-gw/eg-node-07 cache stats region=ap-se-1a hit_ratio=62.3% evictions=4229
+2026-10-18T13:24:51 INFO  edge-gw/eg-node-04 deploy step release=edge-gw-4.19.8 step=migrate result=ok took_s=87
+2026-10-18T13:24:57 INFO  edge-gw/eg-node-04 config applied key=cache.ttl_s value=1429 by=ejlim
+2026-10-18T13:25:00 INFO  edge-gw/eg-node-14 request done id=req-02bc89d0 route=/edge-gw/v1/status status=200 latency_ms=31
+2026-10-18T13:25:03 INFO  edge-gw/eg-node-10 config applied key=limiter.rps value=67% by=mjlee
+2026-10-18T13:25:05 INFO  edge-gw/eg-node-09 request done id=req-32a0cb91 route=/edge-gw/v1/sync status=200 latency_ms=421
+2026-10-18T13:25:09 INFO  edge-gw/eg-node-18 request done id=req-ff94e8e0 route=/edge-gw/v1/sync status=204 latency_ms=26
+2026-10-18T13:25:10 NOTE  edge-gw/eg-node-17 operator=dwjung memo="헬스체크 간격을 51초에서 82초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-18T13:25:13 INFO  edge-gw/eg-node-23 request done id=req-5ce76f22 route=/edge-gw/v1/list status=503 latency_ms=90
+2026-10-18T13:25:18 INFO  edge-gw/eg-node-06 request done id=req-2898906f route=/edge-gw/v1/get status=200 latency_ms=101
+2026-10-18T13:25:24 INFO  edge-gw/eg-node-14 config applied key=breaker.open_ratio value=4 by=ejlim
+2026-10-18T13:25:27 INFO  edge-gw/eg-node-02 pool resize target=edge-gw-worker max_pool_size=334 prev=333
+2026-10-18T13:25:30 INFO  edge-gw/eg-node-02 request done id=req-f1a49ea5 route=/edge-gw/v1/sync status=200 latency_ms=60
+2026-10-18T13:25:36 INFO  edge-gw/eg-node-02 ticket linked id=OPS-49124 reason=quota_increase
+2026-10-18T13:25:38 INFO  edge-gw/eg-node-08 request done id=req-1d74e7b8 route=/edge-gw/v1/sync status=400 latency_ms=157
+2026-10-18T13:25:42 INFO  edge-gw/eg-node-11 request done id=req-8e69f84c route=/edge-gw/v1/cancel status=409 latency_ms=120
+2026-10-18T13:25:49 INFO  edge-gw/eg-node-13 request done id=req-61da00a8 route=/edge-gw/v1/create status=200 latency_ms=234
+2026-10-18T13:25:55 NOTE  edge-gw/eg-node-19 operator=yjchoi memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-18T13:25:59 INFO  edge-gw/eg-node-02 request done id=req-644560eb route=/edge-gw/v1/list status=200 latency_ms=46
+2026-10-18T13:26:00 NOTE  edge-gw/eg-node-23 operator=ejlim memo="eg-node-23 재기동 후 지표 정상 확인."
+2026-10-18T13:26:07 INFO  edge-gw/eg-node-10 cache stats region=ap-ne-2a hit_ratio=80.9% evictions=18380
+2026-10-18T13:26:13 INFO  edge-gw/eg-node-08 request done id=req-6db1842f route=/edge-gw/v1/update status=200 latency_ms=202
+2026-10-18T13:26:19 INFO  edge-gw/eg-node-09 request done id=req-435212d9 route=/edge-gw/v1/get status=200 latency_ms=186
+2026-10-18T13:26:26 INFO  edge-gw/eg-node-15 pool resize target=edge-gw-db max_pool_size=164 prev=121
+2026-10-18T13:26:32 NOTE  edge-gw/eg-node-21 operator=hbyoon memo="동시 처리 수를 58에서 42로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-18T13:26:39 INFO  edge-gw/eg-node-02 ticket linked id=OPS-49380 reason=dns_ttl_change
+2026-10-18T13:26:41 INFO  edge-gw/eg-node-23 request done id=req-bb7d45e9 route=/edge-gw/v1/update status=400 latency_ms=55
+2026-10-18T13:26:46 INFO  edge-gw/eg-node-23 request done id=req-11a6e257 route=/edge-gw/v1/verify status=503 latency_ms=159
+2026-10-18T13:26:48 INFO  edge-gw/eg-node-23 ticket linked id=OPS-48633 reason=runbook_update
+2026-10-18T13:26:52 INFO  edge-gw/eg-node-09 config applied key=tls.session_cache value=3361 by=shkim
+2026-10-18T13:26:56 INFO  edge-gw/eg-node-06 request done id=req-538ac643 route=/edge-gw/v1/status status=200 latency_ms=317
+2026-10-18T13:27:02 INFO  edge-gw/eg-node-23 ticket linked id=OPS-49258 reason=dns_ttl_change
+2026-10-18T13:27:03 INFO  edge-gw/eg-node-23 request done id=req-03a6fd59 route=/edge-gw/v1/status status=200 latency_ms=60
+2026-10-18T13:27:05 NOTE  edge-gw/eg-node-15 operator=dwjung memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-18T13:27:09 INFO  edge-gw/eg-node-24 deploy step release=edge-gw-4.10.0 step=drain result=ok took_s=61
+2026-10-18T13:27:14 INFO  edge-gw/eg-node-19 request done id=req-06cd558d route=/edge-gw/v1/create status=200 latency_ms=952
+2026-10-18T13:27:21 INFO  edge-gw/eg-node-01 request done id=req-e43d2ace route=/edge-gw/v1/update status=200 latency_ms=86
+2026-10-18T13:27:23 INFO  edge-gw/eg-node-11 deploy step release=edge-gw-4.15.9 step=shift_traffic_10 result=ok took_s=199
+2026-10-18T13:27:28 INFO  edge-gw/eg-node-20 backup finished file=/vault/weekly/orders_2026w34.tar.zst size_mb=56682 checksum=82cdfe29
+2026-10-18T13:27:32 INFO  edge-gw/eg-node-05 request done id=req-c1536d53 route=/edge-gw/v1/status status=200 latency_ms=220
+2026-10-18T13:27:35 WARN  edge-gw/eg-node-10 alert fired rule=gc_pause_long value=84ms threshold=71ms
+2026-10-18T13:27:40 INFO  edge-gw/eg-node-14 request done id=req-46e26372 route=/edge-gw/v1/cancel status=200 latency_ms=224
+2026-10-18T13:27:47 INFO  edge-gw/eg-node-09 request done id=req-9976ab4c route=/edge-gw/v1/update status=500 latency_ms=96
+2026-10-18T13:27:54 NOTE  edge-gw/eg-node-02 operator=ejlim memo="배치 시작 시각을 9시 15분으로 고정함."
+2026-10-18T13:27:56 INFO  edge-gw/eg-node-04 config applied key=limiter.burst value=24% by=jhpark
+2026-10-18T13:28:01 INFO  edge-gw/eg-node-24 request done id=req-aa4ca127 route=/edge-gw/v1/create status=200 latency_ms=76
+2026-10-18T13:28:03 ERROR edge-gw/eg-node-17 job failed job=edge-gw-export attempt=4 cause=oom_killed
+2026-10-18T13:28:07 INFO  edge-gw/eg-node-10 request done id=req-d34fe445 route=/edge-gw/v1/status status=204 latency_ms=37
+2026-10-18T13:28:11 INFO  edge-gw/eg-node-03 backup finished file=/vault/daily/orders_20261022.tar.zst size_mb=37737 checksum=a00fa2cd
+2026-10-18T13:28:18 INFO  edge-gw/eg-node-09 request done id=req-7547bd8c route=/edge-gw/v1/get status=409 latency_ms=42
+2026-10-18T13:28:20 INFO  edge-gw/eg-node-23 ticket linked id=OPS-48041 reason=dependency_upgrade
+2026-10-18T13:28:25 INFO  edge-gw/eg-node-14 config applied key=cache.ttl_s value=28% by=sykang
+2026-10-18T13:28:29 INFO  edge-gw/eg-node-06 ticket linked id=OPS-48888 reason=log_volume_spike
+2026-10-18T13:28:34 INFO  edge-gw/eg-node-02 request done id=req-234489d0 route=/edge-gw/v1/update status=404 latency_ms=203
+2026-10-18T13:28:41 INFO  edge-gw/eg-node-23 request done id=req-6fd019da route=/edge-gw/v1/status status=200 latency_ms=110
+2026-10-18T13:28:43 INFO  edge-gw/eg-node-14 request done id=req-e1dba5e8 route=/edge-gw/v1/verify status=201 latency_ms=75
+2026-10-18T13:28:48 INFO  edge-gw/eg-node-11 pool resize target=edge-gw-upstream max_pool_size=303 prev=252
+2026-10-18T13:28:53 ERROR edge-gw/eg-node-10 job failed job=edge-gw-export attempt=1 cause=oom_killed
+2026-10-18T13:28:56 INFO  edge-gw/eg-node-22 request done id=req-b42c4f05 route=/edge-gw/v1/create status=200 latency_ms=66
+2026-10-18T13:28:59 INFO  edge-gw/eg-node-08 config applied key=http.max_conns value=36 by=hbyoon
+2026-10-18T13:29:00 WARN  edge-gw/eg-node-23 alert fired rule=error_ratio_high value=95% threshold=80%
+2026-10-18T13:29:02 INFO  edge-gw/eg-node-06 config applied key=http.read_timeout_ms value=true by=ejlim
+2026-10-18T13:29:03 ERROR edge-gw/eg-node-24 job failed job=edge-gw-cleanup attempt=1 cause=bad_checksum
+2026-10-18T13:29:07 INFO  edge-gw/eg-node-05 request done id=req-be722caa route=/edge-gw/v1/update status=200 latency_ms=103
+2026-10-18T13:29:11 INFO  edge-gw/eg-node-19 ticket linked id=OPS-48035 reason=flaky_healthcheck
+2026-10-18T13:29:13 ERROR edge-gw/eg-node-11 job failed job=edge-gw-export attempt=5 cause=upstream_timeout
+2026-10-18T13:29:14 INFO  edge-gw/eg-node-06 request done id=req-ed58db72 route=/edge-gw/v1/create status=400 latency_ms=78
+2026-10-18T13:29:21 INFO  edge-gw/eg-node-12 request done id=req-3e99f80c route=/edge-gw/v1/verify status=201 latency_ms=204
+2026-10-18T13:29:25 INFO  edge-gw/eg-node-04 request done id=req-01fc6c04 route=/edge-gw/v1/cancel status=200 latency_ms=41
+2026-10-18T13:29:31 INFO  edge-gw/eg-node-13 request done id=req-aebf7af8 route=/edge-gw/v1/sync status=429 latency_ms=85
+2026-10-18T13:29:35 INFO  edge-gw/eg-node-09 config applied key=queue.batch_size value=true by=shkim
+2026-10-18T13:29:39 NOTE  edge-gw/eg-node-03 operator=jhpark memo="임시 증설 43대 추가. 내일 오전 회수 예정."
+2026-10-18T13:29:42 INFO  edge-gw/eg-node-22 deploy step release=edge-gw-4.11.6 step=verify result=ok took_s=20
+2026-10-18T13:29:44 NOTE  edge-gw/eg-node-01 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-18T13:29:50 INFO  edge-gw/eg-node-02 request done id=req-0272b7ba route=/edge-gw/v1/update status=200 latency_ms=40
+2026-10-18T13:29:52 NOTE  edge-gw/eg-node-02 operator=dwjung memo="인증서 갱신 일정 확인. 만료까지 23일 남음."
+2026-10-18T13:29:56 INFO  edge-gw/eg-node-12 request done id=req-b5855d47 route=/edge-gw/v1/status status=200 latency_ms=56
+2026-10-18T13:30:02 INFO  edge-gw/eg-node-08 backup finished file=/vault/daily/payments_20261008.tar.zst size_mb=11616 checksum=9efca470
+2026-10-18T13:30:07 INFO  edge-gw/eg-node-14 request done id=req-078c3b0a route=/edge-gw/v1/update status=200 latency_ms=67
+2026-10-18T13:30:10 INFO  edge-gw/eg-node-14 pool resize target=edge-gw-db max_pool_size=353 prev=378
+2026-10-18T13:30:17 INFO  edge-gw/eg-node-16 deploy step release=edge-gw-4.14.9 step=healthcheck result=ok took_s=152
+2026-10-18T13:30:18 WARN  edge-gw/eg-node-24 alert fired rule=disk_usage_warning value=97% threshold=87%
+2026-10-18T13:30:19 INFO  edge-gw/eg-node-23 deploy step release=edge-gw-4.14.3 step=start result=ok took_s=196
+2026-10-18T13:30:23 INFO  edge-gw/eg-node-24 request done id=req-99e3cf4d route=/edge-gw/v1/status status=400 latency_ms=58
+2026-10-18T13:30:29 NOTE  edge-gw/eg-node-17 operator=hbyoon memo="연동 팀에 변경 공지 완료."
+2026-10-18T13:30:32 INFO  edge-gw/eg-node-03 request done id=req-b1aa11de route=/edge-gw/v1/sync status=204 latency_ms=136
+2026-10-18T13:30:37 INFO  edge-gw/eg-node-13 request done id=req-f0ee2653 route=/edge-gw/v1/list status=200 latency_ms=859
+2026-10-18T13:30:41 INFO  edge-gw/eg-node-01 pool resize target=edge-gw-queue max_pool_size=312 prev=326
+2026-10-18T13:30:47 INFO  edge-gw/eg-node-13 deploy step release=edge-gw-4.10.3 step=shift_traffic_50 result=ok took_s=206
+2026-10-18T13:30:49 INFO  edge-gw/eg-node-10 ticket linked id=OPS-49645 reason=runbook_update
+2026-10-18T13:30:53 INFO  edge-gw/eg-node-24 request done id=req-8364148b route=/edge-gw/v1/cancel status=200 latency_ms=420
+2026-10-18T13:30:59 INFO  edge-gw/eg-node-01 config applied key=canary.latency_p99_threshold_ms value=23 by=hbyoon
+2026-10-18T13:31:06 INFO  edge-gw/eg-node-02 request done id=req-1258fd9e route=/edge-gw/v1/get status=200 latency_ms=211
+2026-10-18T13:31:13 INFO  edge-gw/eg-node-04 ticket linked id=OPS-48332 reason=schema_change
+2026-10-18T13:31:19 INFO  edge-gw/eg-node-02 request done id=req-bde483fb route=/edge-gw/v1/verify status=429 latency_ms=290
+2026-10-18T13:31:26 INFO  edge-gw/eg-node-09 ticket linked id=OPS-48033 reason=dependency_upgrade
+2026-10-18T13:31:28 INFO  edge-gw/eg-node-09 config applied key=retry.max_attempts value=7784 by=ejlim
+2026-10-18T13:31:31 ERROR edge-gw/eg-node-11 job failed job=edge-gw-export attempt=3 cause=oom_killed
+2026-10-18T13:31:33 INFO  edge-gw/eg-node-10 deploy step release=edge-gw-4.17.5 step=drain result=ok took_s=159
+2026-10-18T13:31:40 INFO  edge-gw/eg-node-04 request done id=req-e08bde8a route=/edge-gw/v1/create status=200 latency_ms=68
+2026-10-18T13:31:45 INFO  edge-gw/eg-node-24 deploy step release=edge-gw-4.14.7 step=healthcheck result=ok took_s=225
+2026-10-18T13:31:49 INFO  edge-gw/eg-node-11 deploy step release=edge-gw-4.19.0 step=pull_image result=ok took_s=5
+2026-10-18T13:31:54 INFO  edge-gw/eg-node-09 config applied key=canary.traffic_percent value=19 by=yjchoi
+2026-10-18T13:31:57 INFO  edge-gw/eg-node-20 request done id=req-1bae64d7 route=/edge-gw/v1/create status=201 latency_ms=320
+2026-10-18T13:32:00 INFO  edge-gw/eg-node-12 request done id=req-1f249d50 route=/edge-gw/v1/list status=200 latency_ms=125
+2026-10-18T13:32:04 INFO  edge-gw/eg-node-17 request done id=req-39906afb route=/edge-gw/v1/status status=200 latency_ms=543
+2026-10-18T13:32:08 WARN  edge-gw/eg-node-11 alert fired rule=disk_usage_warning value=97% threshold=84%
+2026-10-18T13:32:13 INFO  edge-gw/eg-node-18 request done id=req-60609f5d route=/edge-gw/v1/create status=200 latency_ms=268
+2026-10-18T13:32:15 INFO  edge-gw/eg-node-03 cache stats region=us-we-2b hit_ratio=63.9% evictions=39961
+2026-10-18T13:32:16 INFO  edge-gw/eg-node-22 request done id=req-4a026cd0 route=/edge-gw/v1/status status=200 latency_ms=94
+2026-10-18T13:32:17 ERROR edge-gw/eg-node-24 job failed job=edge-gw-export attempt=3 cause=bad_checksum
+2026-10-18T13:32:18 INFO  edge-gw/eg-node-13 request done id=req-db29bf80 route=/edge-gw/v1/create status=200 latency_ms=520
+2026-10-18T13:32:24 INFO  edge-gw/eg-node-08 request done id=req-486f3950 route=/edge-gw/v1/cancel status=503 latency_ms=188
+2026-10-18T13:32:30 INFO  edge-gw/eg-node-19 config applied key=retry.backoff_ms value=49% by=ejlim
+2026-10-18T13:32:32 INFO  edge-gw/eg-node-04 config applied key=queue.visibility_s value=true by=mjlee
+2026-10-18T13:32:37 INFO  edge-gw/eg-node-21 request done id=req-8e2eafe6 route=/edge-gw/v1/update status=200 latency_ms=95
+2026-10-18T13:32:38 INFO  edge-gw/eg-node-09 config applied key=gc.pause_target_ms value=false by=hbyoon
+2026-10-18T13:32:39 NOTE  edge-gw/eg-node-07 operator=hbyoon memo="로그 보존 기간은 6일로 유지하기로 함."
+2026-10-18T13:32:45 INFO  edge-gw/eg-node-20 request done id=req-a2fceac7 route=/edge-gw/v1/get status=200 latency_ms=24
+2026-10-18T13:32:48 INFO  edge-gw/eg-node-11 request done id=req-1889aa6d route=/edge-gw/v1/status status=200 latency_ms=329
+2026-10-18T13:32:51 INFO  edge-gw/eg-node-22 request done id=req-b1b488a3 route=/edge-gw/v1/list status=200 latency_ms=1543
+2026-10-18T13:32:55 INFO  edge-gw/eg-node-07 request done id=req-093673b4 route=/edge-gw/v1/status status=200 latency_ms=38
+2026-10-18T13:32:58 INFO  edge-gw/eg-node-05 request done id=req-19353a53 route=/edge-gw/v1/status status=200 latency_ms=81
+2026-10-18T13:33:02 INFO  edge-gw/eg-node-04 request done id=req-47edab71 route=/edge-gw/v1/get status=200 latency_ms=95
+2026-10-18T13:33:03 INFO  edge-gw/eg-node-10 backup finished file=/vault/daily/payments_20261007.tar.zst size_mb=30088 checksum=cb13720e
+2026-10-18T13:33:05 INFO  edge-gw/eg-node-18 request done id=req-18a3594b route=/edge-gw/v1/list status=500 latency_ms=222
+2026-10-18T13:33:12 INFO  edge-gw/eg-node-02 cache stats region=ap-ne-2c hit_ratio=95.8% evictions=27377
+2026-10-18T13:33:19 INFO  edge-gw/eg-node-21 request done id=req-9eaa6a36 route=/edge-gw/v1/list status=200 latency_ms=128
+2026-10-18T13:33:26 INFO  edge-gw/eg-node-14 backup finished file=/vault/daily/inventory_20261027.tar.zst size_mb=65860 checksum=6853dbd1
+2026-10-18T13:33:29 INFO  edge-gw/eg-node-16 request done id=req-a917e731 route=/edge-gw/v1/sync status=429 latency_ms=95
+2026-10-18T13:33:36 ERROR edge-gw/eg-node-18 job failed job=edge-gw-rollup attempt=5 cause=lock_wait_exceeded
+2026-10-18T13:33:40 INFO  edge-gw/eg-node-14 request done id=req-6fdb6927 route=/edge-gw/v1/list status=200 latency_ms=106
+2026-10-18T13:33:46 INFO  edge-gw/eg-node-23 request done id=req-6f523ee8 route=/edge-gw/v1/create status=200 latency_ms=92
+2026-10-18T13:33:51 INFO  edge-gw/eg-node-13 deploy step release=edge-gw-4.15.8 step=shift_traffic_100 result=ok took_s=104
+2026-10-18T13:33:56 INFO  edge-gw/eg-node-03 request done id=req-e61467a1 route=/edge-gw/v1/sync status=503 latency_ms=110
+2026-10-18T13:34:03 INFO  edge-gw/eg-node-09 config applied key=queue.visibility_s value=true by=dwjung
+2026-10-18T13:34:09 INFO  edge-gw/eg-node-23 cache stats region=us-we-2b hit_ratio=95.3% evictions=22625
+2026-10-18T13:34:15 NOTE  edge-gw/eg-node-20 operator=sykang memo="점검 창을 39분 연장함. 승인: 오세린 매니저."
+2026-10-18T13:34:17 INFO  edge-gw/eg-node-08 request done id=req-2e70ea12 route=/edge-gw/v1/cancel status=429 latency_ms=124
+2026-10-18T13:34:19 INFO  edge-gw/eg-node-23 ticket linked id=OPS-47495 reason=node_drain
+2026-10-18T13:34:25 INFO  edge-gw/eg-node-04 request done id=req-09356b7c route=/edge-gw/v1/get status=503 latency_ms=384
+2026-10-18T13:34:31 INFO  edge-gw/eg-node-20 request done id=req-8e29235a route=/edge-gw/v1/update status=404 latency_ms=62
+2026-10-18T13:34:37 WARN  edge-gw/eg-node-23 alert fired rule=heap_used_high value=76% threshold=72%
+2026-10-18T13:34:39 WARN  edge-gw/eg-node-07 alert fired rule=gc_pause_long value=53ms threshold=51ms
+2026-10-18T13:34:42 INFO  edge-gw/eg-node-19 deploy step release=edge-gw-4.21.1 step=shift_traffic_50 result=ok took_s=231
+2026-10-18T13:34:46 NOTE  edge-gw/eg-node-11 operator=dwjung memo="연동 팀에 변경 공지 완료."
+2026-10-18T13:34:49 INFO  edge-gw/eg-node-20 cache stats region=ap-ne-2a hit_ratio=88.7% evictions=3285
+2026-10-18T13:34:50 INFO  edge-gw/eg-node-01 pool resize target=edge-gw-cache max_pool_size=133 prev=96
+2026-10-18T13:34:56 ERROR edge-gw/eg-node-19 job failed job=edge-gw-rollup attempt=3 cause=bad_checksum
+2026-10-18T13:34:58 INFO  edge-gw/eg-node-12 ticket linked id=OPS-48265 reason=dns_ttl_change
+2026-10-18T13:35:03 INFO  edge-gw/eg-node-01 deploy step release=edge-gw-4.10.7 step=shift_traffic_50 result=ok took_s=154
+2026-10-18T13:35:10 INFO  edge-gw/eg-node-02 config applied key=retry.max_attempts value=true by=ejlim
+2026-10-18T13:35:15 INFO  edge-gw/eg-node-23 request done id=req-21442982 route=/edge-gw/v1/update status=200 latency_ms=62
+2026-10-18T13:35:18 INFO  edge-gw/eg-node-17 request done id=req-16e2ac1f route=/edge-gw/v1/get status=404 latency_ms=515
+2026-10-18T13:35:20 INFO  edge-gw/eg-node-14 request done id=req-0e65cb4c route=/edge-gw/v1/get status=200 latency_ms=129
+2026-10-18T13:35:22 INFO  edge-gw/eg-node-18 deploy step release=edge-gw-4.21.3 step=verify result=ok took_s=50
+2026-10-18T13:35:24 WARN  edge-gw/eg-node-20 alert fired rule=cpu_steal_high value=65% threshold=62%
+2026-10-18T13:35:28 INFO  edge-gw/eg-node-18 request done id=req-2c86e0ea route=/edge-gw/v1/cancel status=200 latency_ms=168
+2026-10-18T13:35:31 INFO  edge-gw/eg-node-10 request done id=req-18d7fc4a route=/edge-gw/v1/cancel status=200 latency_ms=591
+2026-10-18T13:35:36 INFO  edge-gw/eg-node-11 ticket linked id=OPS-49791 reason=dependency_upgrade
+2026-10-18T13:35:39 INFO  edge-gw/eg-node-24 request done id=req-ff677c2a route=/edge-gw/v1/sync status=409 latency_ms=36
+2026-10-18T13:35:41 INFO  edge-gw/eg-node-10 deploy step release=edge-gw-4.14.0 step=verify result=ok took_s=151
+2026-10-18T13:35:42 WARN  edge-gw/eg-node-16 alert fired rule=fd_usage_high value=50% threshold=48%
+2026-10-18T13:35:45 INFO  edge-gw/eg-node-13 deploy step release=edge-gw-4.10.4 step=shift_traffic_10 result=ok took_s=103
+2026-10-18T13:35:46 INFO  edge-gw/eg-node-18 config applied key=retry.backoff_ms value=true by=yjchoi
+2026-10-18T13:35:49 INFO  edge-gw/eg-node-22 request done id=req-4af13595 route=/edge-gw/v1/create status=503 latency_ms=110
+2026-10-18T13:35:55 INFO  edge-gw/eg-node-16 request done id=req-48329160 route=/edge-gw/v1/update status=200 latency_ms=294
+2026-10-18T13:35:57 INFO  edge-gw/eg-node-03 request done id=req-df8227a6 route=/edge-gw/v1/sync status=200 latency_ms=65
+2026-10-18T13:36:04 INFO  edge-gw/eg-node-09 request done id=req-e02a8c27 route=/edge-gw/v1/get status=200 latency_ms=21
+2026-10-18T13:36:10 WARN  edge-gw/eg-node-22 alert fired rule=cpu_steal_high value=55% threshold=42%
+2026-10-18T13:36:14 INFO  edge-gw/eg-node-06 request done id=req-cc2de079 route=/edge-gw/v1/verify status=201 latency_ms=163
+2026-10-18T13:36:16 INFO  edge-gw/eg-node-09 request done id=req-4dfa9d05 route=/edge-gw/v1/sync status=200 latency_ms=252
+2026-10-18T13:36:18 INFO  edge-gw/eg-node-08 request done id=req-719a2405 route=/edge-gw/v1/get status=503 latency_ms=155
+2026-10-18T13:36:25 INFO  edge-gw/eg-node-10 ticket linked id=OPS-49124 reason=node_drain
+2026-10-18T13:36:28 WARN  edge-gw/eg-node-11 alert fired rule=heap_used_high value=59% threshold=47%
+2026-10-18T13:36:33 NOTE  edge-gw/eg-node-13 operator=ejlim memo="임시 증설 39대 추가. 내일 오전 회수 예정."
+2026-10-18T13:36:34 WARN  edge-gw/eg-node-24 alert fired rule=disk_usage_warning value=77% threshold=62%
+2026-10-18T13:36:36 NOTE  edge-gw/eg-node-07 operator=dwjung memo="배치 시작 시각을 41시 50분으로 고정함."
+2026-10-18T13:36:38 WARN  edge-gw/eg-node-09 alert fired rule=disk_usage_warning value=65% threshold=51%
+2026-10-18T13:36:39 INFO  edge-gw/eg-node-14 request done id=req-d8c346da route=/edge-gw/v1/update status=204 latency_ms=298
+2026-10-18T13:36:41 INFO  edge-gw/eg-node-12 request done id=req-67122336 route=/edge-gw/v1/get status=204 latency_ms=294
+2026-10-18T13:36:45 INFO  edge-gw/eg-node-03 ticket linked id=OPS-47924 reason=schema_change
+2026-10-18T13:36:50 INFO  edge-gw/eg-node-06 request done id=req-9e9d7027 route=/edge-gw/v1/create status=404 latency_ms=285
+2026-10-18T13:36:57 INFO  edge-gw/eg-node-04 cache stats region=ap-ne-2c hit_ratio=63.2% evictions=1481
+2026-10-18T13:37:01 INFO  edge-gw/eg-node-23 deploy step release=edge-gw-4.18.0 step=migrate result=ok took_s=101
+2026-10-18T13:37:08 INFO  edge-gw/eg-node-02 cache stats region=ap-ne-2b hit_ratio=57.4% evictions=17565
+2026-10-18T13:37:13 INFO  edge-gw/eg-node-11 deploy step release=edge-gw-4.16.2 step=shift_traffic_100 result=ok took_s=216
+2026-10-18T13:37:16 INFO  edge-gw/eg-node-23 request done id=req-49143636 route=/edge-gw/v1/status status=200 latency_ms=143
+2026-10-18T13:37:22 INFO  edge-gw/eg-node-21 backup finished file=/vault/daily/inventory_20261001.tar.zst size_mb=65108 checksum=00453c23
+2026-10-18T13:37:26 INFO  edge-gw/eg-node-18 request done id=req-cf69fe25 route=/edge-gw/v1/cancel status=200 latency_ms=101
+2026-10-18T13:37:30 INFO  edge-gw/eg-node-24 request done id=req-6d552e4c route=/edge-gw/v1/get status=200 latency_ms=121
+2026-10-18T13:37:36 INFO  edge-gw/eg-node-05 request done id=req-bd8db0b1 route=/edge-gw/v1/get status=201 latency_ms=251
+2026-10-18T13:37:43 INFO  edge-gw/eg-node-05 request done id=req-4b4d1888 route=/edge-gw/v1/status status=200 latency_ms=466
+2026-10-18T13:37:47 INFO  edge-gw/eg-node-01 backup finished file=/vault/daily/users_20261006.tar.zst size_mb=74949 checksum=52f57bcf
+2026-10-18T13:37:48 INFO  edge-gw/eg-node-08 config applied key=gc.pause_target_ms value=61% by=ejlim
+2026-10-18T13:37:55 INFO  edge-gw/eg-node-07 request done id=req-b8ec5d1e route=/edge-gw/v1/status status=200 latency_ms=96
+2026-10-18T13:38:02 WARN  edge-gw/eg-node-03 alert fired rule=gc_pause_long value=52ms threshold=45ms
+2026-10-18T13:38:08 INFO  edge-gw/eg-node-16 request done id=req-5ae02b9b route=/edge-gw/v1/status status=200 latency_ms=79
+2026-10-18T13:38:12 INFO  edge-gw/eg-node-24 backup finished file=/vault/daily/orders_20261015.tar.zst size_mb=28282 checksum=bc508f8f
+2026-10-18T13:38:17 INFO  edge-gw/eg-node-01 cache stats region=us-we-2b hit_ratio=85.1% evictions=31008
+2026-10-18T13:38:24 INFO  edge-gw/eg-node-01 request done id=req-4f935847 route=/edge-gw/v1/cancel status=503 latency_ms=100
+2026-10-18T13:38:25 INFO  edge-gw/eg-node-05 request done id=req-a337d261 route=/edge-gw/v1/cancel status=409 latency_ms=114
+2026-10-18T13:38:27 INFO  edge-gw/eg-node-22 request done id=req-7d4bcd04 route=/edge-gw/v1/cancel status=200 latency_ms=218
+2026-10-18T13:38:33 INFO  edge-gw/eg-node-13 request done id=req-6a856be4 route=/edge-gw/v1/verify status=500 latency_ms=210
+2026-10-18T13:38:34 INFO  edge-gw/eg-node-06 pool resize target=edge-gw-queue max_pool_size=315 prev=256
+2026-10-18T13:38:39 ERROR edge-gw/eg-node-12 job failed job=edge-gw-export attempt=4 cause=oom_killed
+2026-10-18T13:38:42 INFO  edge-gw/eg-node-08 request done id=req-db096a79 route=/edge-gw/v1/verify status=200 latency_ms=219
+2026-10-18T13:38:44 INFO  edge-gw/eg-node-17 request done id=req-d174bc48 route=/edge-gw/v1/get status=204 latency_ms=90
+2026-10-18T13:38:47 WARN  edge-gw/eg-node-10 alert fired rule=conn_pool_saturated value=64% threshold=55%
+2026-10-18T13:38:54 INFO  edge-gw/eg-node-02 request done id=req-2262ef37 route=/edge-gw/v1/status status=503 latency_ms=212
+2026-10-18T13:38:58 INFO  edge-gw/eg-node-19 deploy step release=edge-gw-4.14.3 step=start result=ok took_s=240
+2026-10-18T13:39:00 INFO  edge-gw/eg-node-07 deploy step release=edge-gw-4.10.5 step=verify result=ok took_s=191
+2026-10-18T13:39:01 NOTE  edge-gw/eg-node-12 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-18T13:39:02 INFO  edge-gw/eg-node-13 ticket linked id=OPS-47624 reason=cert_rotation
+2026-10-18T13:39:09 ERROR edge-gw/eg-node-23 job failed job=edge-gw-reindex attempt=2 cause=upstream_timeout
+2026-10-18T13:39:10 INFO  edge-gw/eg-node-16 request done id=req-e42c19a0 route=/edge-gw/v1/list status=200 latency_ms=51
+2026-10-18T13:39:15 INFO  edge-gw/eg-node-12 request done id=req-dd3b54e0 route=/edge-gw/v1/status status=200 latency_ms=120
+2026-10-18T13:39:20 NOTE  edge-gw/eg-node-09 operator=hbyoon memo="연동 팀에 변경 공지 완료."
+2026-10-18T13:39:24 NOTE  edge-gw/eg-node-02 operator=yjchoi memo="배치 시작 시각을 58시 69분으로 고정함."
+2026-10-18T13:39:30 INFO  edge-gw/eg-node-02 request done id=req-fb613654 route=/edge-gw/v1/sync status=200 latency_ms=192
+2026-10-18T13:39:34 INFO  edge-gw/eg-node-24 deploy step release=edge-gw-4.19.8 step=shift_traffic_10 result=ok took_s=231
+2026-10-18T13:39:39 INFO  edge-gw/eg-node-12 request done id=req-c53b90df route=/edge-gw/v1/list status=200 latency_ms=45
+2026-10-18T13:39:41 INFO  edge-gw/eg-node-01 ticket linked id=OPS-48435 reason=node_drain
+2026-10-18T13:39:44 INFO  edge-gw/eg-node-17 request done id=req-651227e5 route=/edge-gw/v1/get status=200 latency_ms=71
+2026-10-18T13:39:51 INFO  edge-gw/eg-node-17 deploy step release=edge-gw-4.14.1 step=pull_image result=ok took_s=125
+2026-10-18T13:39:58 INFO  edge-gw/eg-node-22 request done id=req-1d6b0178 route=/edge-gw/v1/cancel status=200 latency_ms=166
+2026-10-18T13:40:05 INFO  edge-gw/eg-node-24 backup finished file=/vault/weekly/users_2026w35.tar.zst size_mb=77194 checksum=d1d7bbca
+2026-10-18T13:40:06 INFO  edge-gw/eg-node-01 request done id=req-78f57259 route=/edge-gw/v1/verify status=200 latency_ms=109
+2026-10-18T13:40:09 INFO  edge-gw/eg-node-13 request done id=req-29ebfd9d route=/edge-gw/v1/update status=200 latency_ms=186
+2026-10-18T13:40:10 INFO  edge-gw/eg-node-08 request done id=req-88140fe1 route=/edge-gw/v1/create status=200 latency_ms=197
+2026-10-18T13:40:11 NOTE  edge-gw/eg-node-17 operator=ejlim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-18T13:40:13 INFO  edge-gw/eg-node-05 backup finished file=/vault/weekly/users_2026w30.tar.zst size_mb=29923 checksum=0477235f
+2026-10-18T13:40:16 INFO  edge-gw/eg-node-11 deploy step release=edge-gw-4.11.3 step=shift_traffic_50 result=ok took_s=66
+2026-10-18T13:40:22 INFO  edge-gw/eg-node-22 request done id=req-502675a4 route=/edge-gw/v1/get status=200 latency_ms=92
+2026-10-18T13:40:26 INFO  edge-gw/eg-node-22 backup finished file=/vault/weekly/payments_2026w35.tar.zst size_mb=1738 checksum=bccc6448
+2026-10-18T13:40:32 INFO  edge-gw/eg-node-02 request done id=req-3f839766 route=/edge-gw/v1/sync status=201 latency_ms=86
+2026-10-18T13:40:39 INFO  edge-gw/eg-node-22 request done id=req-cb310446 route=/edge-gw/v1/sync status=200 latency_ms=136
+2026-10-18T13:40:40 INFO  edge-gw/eg-node-24 cache stats region=ap-ne-2b hit_ratio=89.2% evictions=20044
+2026-10-18T13:40:45 INFO  edge-gw/eg-node-06 deploy step release=edge-gw-4.11.0 step=migrate result=ok took_s=196
+2026-10-18T13:40:51 INFO  edge-gw/eg-node-22 request done id=req-ea2cdc4c route=/edge-gw/v1/verify status=503 latency_ms=178
+2026-10-18T13:40:58 WARN  edge-gw/eg-node-02 alert fired rule=conn_pool_saturated value=57% threshold=46%
+2026-10-18T13:41:03 WARN  edge-gw/eg-node-04 alert fired rule=conn_pool_saturated value=82% threshold=75%
+2026-10-18T13:41:07 INFO  edge-gw/eg-node-13 request done id=req-5e227648 route=/edge-gw/v1/cancel status=200 latency_ms=55
+2026-10-18T13:41:09 INFO  edge-gw/eg-node-02 request done id=req-155df8dc route=/edge-gw/v1/status status=200 latency_ms=90
+2026-10-18T13:41:14 INFO  edge-gw/eg-node-06 request done id=req-48e4d53f route=/edge-gw/v1/verify status=500 latency_ms=60
+2026-10-18T13:41:17 INFO  edge-gw/eg-node-22 request done id=req-baaf448a route=/edge-gw/v1/verify status=200 latency_ms=94
+2026-10-18T13:41:19 INFO  edge-gw/eg-node-24 backup finished file=/vault/daily/orders_20261023.tar.zst size_mb=12714 checksum=4dd054ee
+2026-10-18T13:41:26 INFO  edge-gw/eg-node-18 request done id=req-d936f6bf route=/edge-gw/v1/list status=200 latency_ms=46
+2026-10-18T13:41:31 INFO  edge-gw/eg-node-05 deploy step release=edge-gw-4.18.9 step=migrate result=ok took_s=12
+2026-10-18T13:41:38 INFO  edge-gw/eg-node-10 request done id=req-1ffb000e route=/edge-gw/v1/sync status=503 latency_ms=403
+2026-10-18T13:41:39 INFO  edge-gw/eg-node-14 config applied key=limiter.burst value=false by=jhpark
+2026-10-18T13:41:44 INFO  edge-gw/eg-node-01 request done id=req-11150cf5 route=/edge-gw/v1/verify status=500 latency_ms=134
+2026-10-18T13:41:46 INFO  edge-gw/eg-node-01 backup finished file=/vault/weekly/orders_2026w37.tar.zst size_mb=67786 checksum=35a9b034
+2026-10-18T13:41:48 INFO  edge-gw/eg-node-24 request done id=req-8f333946 route=/edge-gw/v1/sync status=503 latency_ms=60
+2026-10-18T13:41:53 INFO  edge-gw/eg-node-07 backup finished file=/vault/weekly/users_2026w34.tar.zst size_mb=55413 checksum=6eb500e3
+2026-10-18T13:41:57 ERROR edge-gw/eg-node-05 job failed job=edge-gw-reindex attempt=3 cause=oom_killed
+2026-10-18T13:42:01 INFO  edge-gw/eg-node-17 request done id=req-f179f65e route=/edge-gw/v1/sync status=200 latency_ms=31
+2026-10-18T13:42:03 INFO  edge-gw/eg-node-12 request done id=req-4d7d8fa7 route=/edge-gw/v1/status status=200 latency_ms=99
+2026-10-18T13:42:08 WARN  edge-gw/eg-node-19 alert fired rule=p99_latency_high value=74ms threshold=73ms
+2026-10-18T13:42:10 ERROR edge-gw/eg-node-15 job failed job=edge-gw-cleanup attempt=4 cause=bad_checksum
+2026-10-18T13:42:15 INFO  edge-gw/eg-node-07 deploy step release=edge-gw-4.18.5 step=warmup result=ok took_s=33
+2026-10-18T13:42:19 INFO  edge-gw/eg-node-13 request done id=req-67dfb5ab route=/edge-gw/v1/cancel status=429 latency_ms=86
+2026-10-18T13:42:26 INFO  edge-gw/eg-node-20 pool resize target=edge-gw-cache max_pool_size=301 prev=346
+2026-10-18T13:42:28 INFO  edge-gw/eg-node-18 request done id=req-ac0e2f4c route=/edge-gw/v1/cancel status=404 latency_ms=126
+2026-10-18T13:42:34 INFO  edge-gw/eg-node-22 request done id=req-b0beace6 route=/edge-gw/v1/get status=200 latency_ms=73
+2026-10-18T13:42:40 WARN  edge-gw/eg-node-19 alert fired rule=p99_latency_high value=74ms threshold=65ms
+2026-10-18T13:42:47 INFO  edge-gw/eg-node-15 deploy step release=edge-gw-4.16.6 step=healthcheck result=ok took_s=216
+2026-10-18T13:42:49 INFO  edge-gw/eg-node-14 request done id=req-5fdaa4b4 route=/edge-gw/v1/get status=200 latency_ms=184
+2026-10-18T13:42:56 INFO  edge-gw/eg-node-05 request done id=req-eeb789df route=/edge-gw/v1/cancel status=400 latency_ms=72
+2026-10-18T13:43:03 WARN  edge-gw/eg-node-17 alert fired rule=fd_usage_high value=60% threshold=58%
+2026-10-18T13:43:09 INFO  edge-gw/eg-node-08 request done id=req-f9932df5 route=/edge-gw/v1/get status=200 latency_ms=28
+2026-10-18T13:43:11 ERROR edge-gw/eg-node-15 job failed job=edge-gw-rollup attempt=5 cause=upstream_timeout
+2026-10-18T13:43:12 INFO  edge-gw/eg-node-17 request done id=req-5c66db0c route=/edge-gw/v1/create status=201 latency_ms=144
+2026-10-18T13:43:17 INFO  edge-gw/eg-node-01 request done id=req-8d9c9ba6 route=/edge-gw/v1/update status=200 latency_ms=76
+2026-10-18T13:43:22 INFO  edge-gw/eg-node-14 cache stats region=ap-ne-2a hit_ratio=56.2% evictions=10111
+2026-10-18T13:43:23 WARN  edge-gw/eg-node-05 alert fired rule=cpu_steal_high value=97% threshold=85%
+2026-10-18T13:43:26 INFO  edge-gw/eg-node-19 pool resize target=edge-gw-cache max_pool_size=136 prev=77
+2026-10-18T13:43:27 INFO  edge-gw/eg-node-07 backup finished file=/vault/daily/sessions_20261001.tar.zst size_mb=39934 checksum=9058f61f
+2026-10-18T13:43:30 INFO  edge-gw/eg-node-15 request done id=req-ee6f3551 route=/edge-gw/v1/verify status=200 latency_ms=839
+2026-10-18T13:43:37 INFO  edge-gw/eg-node-17 pool resize target=edge-gw-queue max_pool_size=154 prev=182
+2026-10-18T13:43:40 INFO  edge-gw/eg-node-13 request done id=req-ae80ef3f route=/edge-gw/v1/create status=200 latency_ms=207
+2026-10-18T13:43:42 INFO  edge-gw/eg-node-16 config applied key=canary.latency_p99_threshold_ms value=64 by=dwjung
+2026-10-18T13:43:49 INFO  edge-gw/eg-node-24 request done id=req-35087674 route=/edge-gw/v1/get status=200 latency_ms=76
+2026-10-18T13:43:54 INFO  edge-gw/eg-node-23 request done id=req-b645eca5 route=/edge-gw/v1/verify status=204 latency_ms=137
+2026-10-18T13:43:58 INFO  edge-gw/eg-node-19 cache stats region=ap-se-1a hit_ratio=94.3% evictions=27930
+2026-10-18T13:44:02 INFO  edge-gw/eg-node-20 deploy step release=edge-gw-4.10.0 step=verify result=ok took_s=31
+2026-10-18T13:44:03 INFO  edge-gw/eg-node-20 request done id=req-74313b4d route=/edge-gw/v1/sync status=200 latency_ms=98
+2026-10-18T13:44:05 INFO  edge-gw/eg-node-22 request done id=req-7cc0fe9e route=/edge-gw/v1/create status=200 latency_ms=170
+2026-10-18T13:44:10 INFO  edge-gw/eg-node-17 request done id=req-a5bc2006 route=/edge-gw/v1/create status=200 latency_ms=89
+2026-10-18T13:44:17 INFO  edge-gw/eg-node-21 request done id=req-d3d837aa route=/edge-gw/v1/verify status=200 latency_ms=61
+2026-10-18T13:44:24 INFO  edge-gw/eg-node-20 request done id=req-68846e10 route=/edge-gw/v1/update status=404 latency_ms=247
+2026-10-18T13:44:29 INFO  edge-gw/eg-node-20 request done id=req-247cad02 route=/edge-gw/v1/cancel status=200 latency_ms=76
+2026-10-18T13:44:35 INFO  edge-gw/eg-node-12 request done id=req-4e2f34c0 route=/edge-gw/v1/list status=409 latency_ms=135
+2026-10-18T13:44:36 INFO  edge-gw/eg-node-12 request done id=req-716312d4 route=/edge-gw/v1/list status=404 latency_ms=423
+2026-10-18T13:44:39 INFO  edge-gw/eg-node-06 request done id=req-0adfa661 route=/edge-gw/v1/status status=200 latency_ms=194
+2026-10-18T13:44:40 INFO  edge-gw/eg-node-08 cache stats region=ap-se-1a hit_ratio=55.9% evictions=13784
+2026-10-18T13:44:41 INFO  edge-gw/eg-node-20 request done id=req-06e2b886 route=/edge-gw/v1/cancel status=400 latency_ms=174
+2026-10-18T13:44:48 INFO  edge-gw/eg-node-15 request done id=req-4c98aee0 route=/edge-gw/v1/get status=201 latency_ms=230
+2026-10-18T13:44:49 INFO  edge-gw/eg-node-08 request done id=req-d8c2e65b route=/edge-gw/v1/get status=200 latency_ms=244
+2026-10-18T13:44:56 INFO  edge-gw/eg-node-19 pool resize target=edge-gw-cache max_pool_size=218 prev=167
+2026-10-18T13:44:59 WARN  edge-gw/eg-node-19 alert fired rule=fd_usage_high value=72% threshold=58%
+2026-10-18T13:45:02 INFO  edge-gw/eg-node-18 request done id=req-d7768198 route=/edge-gw/v1/cancel status=200 latency_ms=114
+2026-10-18T13:45:06 INFO  edge-gw/eg-node-15 config applied key=dns.ttl_s value=53 by=shkim
+2026-10-18T13:45:13 INFO  edge-gw/eg-node-23 request done id=req-808a848f route=/edge-gw/v1/cancel status=200 latency_ms=72
+2026-10-18T13:45:14 INFO  edge-gw/eg-node-05 deploy step release=edge-gw-4.19.3 step=migrate result=ok took_s=228
+2026-10-18T13:45:17 INFO  edge-gw/eg-node-05 deploy step release=edge-gw-4.15.7 step=healthcheck result=ok took_s=94
+2026-10-18T13:45:20 INFO  edge-gw/eg-node-19 ticket linked id=OPS-49955 reason=dependency_upgrade
+2026-10-18T13:45:26 INFO  edge-gw/eg-node-16 deploy step release=edge-gw-4.10.8 step=shift_traffic_50 result=ok took_s=103
+2026-10-18T13:45:31 INFO  edge-gw/eg-node-15 request done id=req-93e9601a route=/edge-gw/v1/update status=429 latency_ms=52
+2026-10-18T13:45:36 WARN  edge-gw/eg-node-07 alert fired rule=disk_usage_warning value=77% threshold=67%
+2026-10-18T13:45:39 NOTE  edge-gw/eg-node-01 operator=jhpark memo="캐시 TTL을 29초로 되돌림. 오래된 응답이 보고됨."
+2026-10-18T13:45:42 INFO  edge-gw/eg-node-03 request done id=req-b9f81615 route=/edge-gw/v1/update status=429 latency_ms=82
+2026-10-18T13:45:48 INFO  edge-gw/eg-node-07 request done id=req-46936857 route=/edge-gw/v1/verify status=200 latency_ms=144
+2026-10-18T13:45:51 INFO  edge-gw/eg-node-18 pool resize target=edge-gw-worker max_pool_size=57 prev=12
+2026-10-18T13:45:55 INFO  edge-gw/eg-node-02 request done id=req-ee34effb route=/edge-gw/v1/update status=200 latency_ms=28
+2026-10-18T13:45:56 INFO  edge-gw/eg-node-09 backup finished file=/vault/daily/payments_20261014.tar.zst size_mb=1951 checksum=ae2d6101
+2026-10-18T13:46:03 INFO  edge-gw/eg-node-23 request done id=req-b4c084f9 route=/edge-gw/v1/sync status=201 latency_ms=78
+2026-10-18T13:46:09 INFO  edge-gw/eg-node-13 backup finished file=/vault/weekly/sessions_2026w31.tar.zst size_mb=34027 checksum=0f85bd2f
+2026-10-18T13:46:15 NOTE  edge-gw/eg-node-02 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-18T13:46:19 INFO  edge-gw/eg-node-18 request done id=req-fb68fd5c route=/edge-gw/v1/list status=503 latency_ms=209
+2026-10-18T13:46:23 INFO  edge-gw/eg-node-03 request done id=req-e3abab17 route=/edge-gw/v1/status status=200 latency_ms=98
+2026-10-18T13:46:24 INFO  edge-gw/eg-node-10 request done id=req-ca69d02a route=/edge-gw/v1/status status=200 latency_ms=108
+2026-10-18T13:46:25 INFO  edge-gw/eg-node-08 config applied key=queue.visibility_s value=58 by=shkim
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

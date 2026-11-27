@@ -1,0 +1,1 @@
+아까 붙여 준 주문 DB(order-db) 로그에서 요청 req-7d3e91a4 의 latency_ms 가 얼마였지?

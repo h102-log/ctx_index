@@ -1,0 +1,1 @@
+아까 붙여 준 인증 서비스(auth-svc) 로그에 ticket linked 줄이 모두 몇 건 있었지?

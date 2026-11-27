@@ -1,0 +1,424 @@
+참고용 로그 29: 리뷰 서비스(review-svc) 스팸 필터 구간. '확인'이라고만 답해 줘.
+
+2026-11-02T04:46:01 INFO  review-svc/rv-node-06 pool resize target=review-svc-queue max_pool_size=370 prev=354
+2026-11-02T04:46:08 WARN  review-svc/rv-node-01 alert fired rule=p99_latency_high value=57ms threshold=48ms
+2026-11-02T04:46:14 INFO  review-svc/rv-node-12 deploy step release=review-svc-4.14.9 step=warmup result=ok took_s=222
+2026-11-02T04:46:21 INFO  review-svc/rv-node-09 request done id=req-8bd4df3c route=/review-svc/v1/create status=200 latency_ms=170
+2026-11-02T04:46:22 INFO  review-svc/rv-node-12 deploy step release=review-svc-4.13.5 step=shift_traffic_50 result=ok took_s=214
+2026-11-02T04:46:28 WARN  review-svc/rv-node-22 alert fired rule=conn_pool_saturated value=82% threshold=71%
+2026-11-02T04:46:29 ERROR review-svc/rv-node-18 job failed job=review-svc-reindex attempt=2 cause=dns_failure
+2026-11-02T04:46:36 INFO  review-svc/rv-node-01 request done id=req-cac40948 route=/review-svc/v1/status status=500 latency_ms=304
+2026-11-02T04:46:39 INFO  review-svc/rv-node-11 cache stats region=us-we-2b hit_ratio=62.2% evictions=35454
+2026-11-02T04:46:43 INFO  review-svc/rv-node-16 request done id=req-71a767d6 route=/review-svc/v1/list status=200 latency_ms=133
+2026-11-02T04:46:49 INFO  review-svc/rv-node-22 request done id=req-49386896 route=/review-svc/v1/create status=429 latency_ms=102
+2026-11-02T04:46:54 NOTE  review-svc/rv-node-09 operator=dwjung memo="인증서 갱신 일정 확인. 만료까지 43일 남음."
+2026-11-02T04:46:56 INFO  review-svc/rv-node-11 request done id=req-29dbb137 route=/review-svc/v1/update status=400 latency_ms=88
+2026-11-02T04:47:01 INFO  review-svc/rv-node-18 request done id=req-7f6a1821 route=/review-svc/v1/get status=200 latency_ms=24
+2026-11-02T04:47:02 INFO  review-svc/rv-node-23 deploy step release=review-svc-4.13.7 step=shift_traffic_50 result=ok took_s=134
+2026-11-02T04:47:08 WARN  review-svc/rv-node-18 alert fired rule=gc_pause_long value=77ms threshold=63ms
+2026-11-02T04:47:14 INFO  review-svc/rv-node-12 request done id=req-6dd4b1c6 route=/review-svc/v1/get status=200 latency_ms=70
+2026-11-02T04:47:18 INFO  review-svc/rv-node-12 request done id=req-d8f1f75a route=/review-svc/v1/create status=200 latency_ms=777
+2026-11-02T04:47:19 INFO  review-svc/rv-node-09 request done id=req-5a035c43 route=/review-svc/v1/create status=200 latency_ms=168
+2026-11-02T04:47:21 INFO  review-svc/rv-node-02 pool resize target=review-svc-db max_pool_size=350 prev=361
+2026-11-02T04:47:26 INFO  review-svc/rv-node-10 request done id=req-ba7a9da3 route=/review-svc/v1/create status=200 latency_ms=64
+2026-11-02T04:47:33 ERROR review-svc/rv-node-19 job failed job=review-svc-reindex attempt=5 cause=lock_wait_exceeded
+2026-11-02T04:47:37 INFO  review-svc/rv-node-20 request done id=req-9e3b916d route=/review-svc/v1/status status=200 latency_ms=81
+2026-11-02T04:47:39 WARN  review-svc/rv-node-04 alert fired rule=conn_pool_saturated value=88% threshold=73%
+2026-11-02T04:47:42 INFO  review-svc/rv-node-03 request done id=req-cf3b9188 route=/review-svc/v1/list status=204 latency_ms=123
+2026-11-02T04:47:49 INFO  review-svc/rv-node-23 ticket linked id=OPS-47386 reason=runbook_update
+2026-11-02T04:47:56 INFO  review-svc/rv-node-03 request done id=req-48b5a683 route=/review-svc/v1/update status=200 latency_ms=140
+2026-11-02T04:47:57 INFO  review-svc/rv-node-24 pool resize target=review-svc-upstream max_pool_size=379 prev=393
+2026-11-02T04:47:58 INFO  review-svc/rv-node-15 ticket linked id=OPS-49735 reason=node_drain
+2026-11-02T04:48:05 INFO  review-svc/rv-node-03 request done id=req-91c0617f route=/review-svc/v1/cancel status=404 latency_ms=61
+2026-11-02T04:48:07 INFO  review-svc/rv-node-12 ticket linked id=OPS-49797 reason=node_drain
+2026-11-02T04:48:08 INFO  review-svc/rv-node-16 request done id=req-53504b77 route=/review-svc/v1/create status=200 latency_ms=224
+2026-11-02T04:48:10 INFO  review-svc/rv-node-13 request done id=req-c9bd4e79 route=/review-svc/v1/verify status=429 latency_ms=80
+2026-11-02T04:48:12 ERROR review-svc/rv-node-18 job failed job=review-svc-cleanup attempt=4 cause=bad_checksum
+2026-11-02T04:48:15 INFO  review-svc/rv-node-23 pool resize target=review-svc-worker max_pool_size=197 prev=251
+2026-11-02T04:48:22 INFO  review-svc/rv-node-12 request done id=req-4f6cc810 route=/review-svc/v1/verify status=200 latency_ms=61
+2026-11-02T04:48:24 INFO  review-svc/rv-node-22 request done id=req-265a082f route=/review-svc/v1/cancel status=200 latency_ms=83
+2026-11-02T04:48:25 INFO  review-svc/rv-node-04 request done id=req-e7556664 route=/review-svc/v1/verify status=200 latency_ms=303
+2026-11-02T04:48:26 INFO  review-svc/rv-node-20 request done id=req-e4a7a008 route=/review-svc/v1/create status=200 latency_ms=109
+2026-11-02T04:48:29 INFO  review-svc/rv-node-02 request done id=req-b8cec0b1 route=/review-svc/v1/sync status=201 latency_ms=48
+2026-11-02T04:48:30 INFO  review-svc/rv-node-15 ticket linked id=OPS-48370 reason=dns_ttl_change
+2026-11-02T04:48:34 INFO  review-svc/rv-node-15 backup finished file=/vault/daily/payments_20261003.tar.zst size_mb=85852 checksum=43cd1035
+2026-11-02T04:48:41 INFO  review-svc/rv-node-19 backup finished file=/vault/weekly/audit_2026w40.tar.zst size_mb=72098 checksum=791a9f31
+2026-11-02T04:48:47 INFO  review-svc/rv-node-24 config applied key=dns.ttl_s value=true by=shkim
+2026-11-02T04:48:54 INFO  review-svc/rv-node-01 request done id=req-e79d1997 route=/review-svc/v1/cancel status=429 latency_ms=175
+2026-11-02T04:49:00 INFO  review-svc/rv-node-05 request done id=req-6415c488 route=/review-svc/v1/create status=200 latency_ms=180
+2026-11-02T04:49:02 ERROR review-svc/rv-node-02 job failed job=review-svc-reindex attempt=1 cause=quota_exceeded
+2026-11-02T04:49:09 INFO  review-svc/rv-node-10 backup finished file=/vault/weekly/audit_2026w30.tar.zst size_mb=88661 checksum=5fffe2ab
+2026-11-02T04:49:15 INFO  review-svc/rv-node-01 request done id=req-a00d8922 route=/review-svc/v1/status status=500 latency_ms=85
+2026-11-02T04:49:21 INFO  review-svc/rv-node-03 request done id=req-be8bd084 route=/review-svc/v1/update status=200 latency_ms=78
+2026-11-02T04:49:28 INFO  review-svc/rv-node-19 request done id=req-495c77e9 route=/review-svc/v1/status status=404 latency_ms=42
+2026-11-02T04:49:33 INFO  review-svc/rv-node-10 request done id=req-6d12affe route=/review-svc/v1/create status=200 latency_ms=59
+2026-11-02T04:49:38 INFO  review-svc/rv-node-09 config applied key=queue.batch_size value=90% by=hbyoon
+2026-11-02T04:49:41 INFO  review-svc/rv-node-08 pool resize target=review-svc-cache max_pool_size=61 prev=45
+2026-11-02T04:49:44 INFO  review-svc/rv-node-21 request done id=req-add57cd5 route=/review-svc/v1/status status=200 latency_ms=27
+2026-11-02T04:49:49 INFO  review-svc/rv-node-18 request done id=req-cb561543 route=/review-svc/v1/get status=500 latency_ms=254
+2026-11-02T04:49:50 INFO  review-svc/rv-node-02 request done id=req-3885ccaf route=/review-svc/v1/cancel status=200 latency_ms=558
+2026-11-02T04:49:56 INFO  review-svc/rv-node-14 request done id=req-6e5bbdea route=/review-svc/v1/get status=200 latency_ms=36
+2026-11-02T04:49:58 INFO  review-svc/rv-node-02 cache stats region=ap-ne-2b hit_ratio=92.9% evictions=4733
+2026-11-02T04:50:00 INFO  review-svc/rv-node-02 request done id=req-acf0d2cd route=/review-svc/v1/status status=200 latency_ms=137
+2026-11-02T04:50:05 INFO  review-svc/rv-node-14 request done id=req-20d39f94 route=/review-svc/v1/verify status=204 latency_ms=180
+2026-11-02T04:50:06 INFO  review-svc/rv-node-08 config applied key=gc.pause_target_ms value=3439 by=hbyoon
+2026-11-02T04:50:08 INFO  review-svc/rv-node-18 request done id=req-0163da3b route=/review-svc/v1/cancel status=200 latency_ms=148
+2026-11-02T04:50:15 WARN  review-svc/rv-node-03 alert fired rule=conn_pool_saturated value=66% threshold=65%
+2026-11-02T04:50:18 INFO  review-svc/rv-node-17 config applied key=log.sample_rate value=true by=mjlee
+2026-11-02T04:50:22 INFO  review-svc/rv-node-16 config applied key=worker.concurrency value=true by=yjchoi
+2026-11-02T04:50:23 NOTE  review-svc/rv-node-03 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-02T04:50:28 INFO  review-svc/rv-node-23 request done id=req-18bb0d94 route=/review-svc/v1/create status=200 latency_ms=390
+2026-11-02T04:50:29 INFO  review-svc/rv-node-12 request done id=req-4dd5e411 route=/review-svc/v1/create status=200 latency_ms=157
+2026-11-02T04:50:35 INFO  review-svc/rv-node-23 request done id=req-0ab88a07 route=/review-svc/v1/get status=409 latency_ms=262
+2026-11-02T04:50:42 INFO  review-svc/rv-node-11 request done id=req-fb9bc6d1 route=/review-svc/v1/status status=200 latency_ms=150
+2026-11-02T04:50:45 INFO  review-svc/rv-node-04 request done id=req-68f71b6a route=/review-svc/v1/list status=200 latency_ms=168
+2026-11-02T04:50:49 INFO  review-svc/rv-node-21 pool resize target=review-svc-queue max_pool_size=169 prev=203
+2026-11-02T04:50:51 INFO  review-svc/rv-node-07 request done id=req-aaa85dc2 route=/review-svc/v1/get status=200 latency_ms=95
+2026-11-02T04:50:54 INFO  review-svc/rv-node-24 deploy step release=review-svc-4.20.2 step=shift_traffic_10 result=ok took_s=190
+2026-11-02T04:50:59 INFO  review-svc/rv-node-16 config applied key=retry.backoff_ms value=true by=sykang
+2026-11-02T04:51:05 INFO  review-svc/rv-node-22 request done id=req-db351b9f route=/review-svc/v1/create status=200 latency_ms=127
+2026-11-02T04:51:08 INFO  review-svc/rv-node-13 config applied key=breaker.open_ratio value=7% by=mjlee
+2026-11-02T04:51:11 INFO  review-svc/rv-node-05 deploy step release=review-svc-4.20.5 step=shift_traffic_100 result=ok took_s=50
+2026-11-02T04:51:15 INFO  review-svc/rv-node-13 request done id=req-e9ded712 route=/review-svc/v1/sync status=429 latency_ms=159
+2026-11-02T04:51:18 INFO  review-svc/rv-node-08 request done id=req-19a5e92a route=/review-svc/v1/update status=200 latency_ms=120
+2026-11-02T04:51:19 INFO  review-svc/rv-node-12 request done id=req-6a6ba630 route=/review-svc/v1/sync status=400 latency_ms=190
+2026-11-02T04:51:25 WARN  review-svc/rv-node-01 alert fired rule=cpu_steal_high value=89% threshold=80%
+2026-11-02T04:51:32 INFO  review-svc/rv-node-23 request done id=req-76522dce route=/review-svc/v1/status status=200 latency_ms=47
+2026-11-02T04:51:35 INFO  review-svc/rv-node-01 request done id=req-1f23453c route=/review-svc/v1/cancel status=200 latency_ms=187
+2026-11-02T04:51:40 INFO  review-svc/rv-node-09 backup finished file=/vault/daily/inventory_20261008.tar.zst size_mb=14264 checksum=7ba24405
+2026-11-02T04:51:47 INFO  review-svc/rv-node-19 cache stats region=ap-ne-2b hit_ratio=71.4% evictions=26871
+2026-11-02T04:51:52 INFO  review-svc/rv-node-24 request done id=req-aa64f0a9 route=/review-svc/v1/sync status=200 latency_ms=389
+2026-11-02T04:51:57 INFO  review-svc/rv-node-13 request done id=req-b7b91f7d route=/review-svc/v1/status status=200 latency_ms=65
+2026-11-02T04:51:58 INFO  review-svc/rv-node-12 config applied key=canary.traffic_percent value=18% by=sykang
+2026-11-02T04:52:03 INFO  review-svc/rv-node-12 pool resize target=review-svc-upstream max_pool_size=176 prev=191
+2026-11-02T04:52:04 INFO  review-svc/rv-node-24 request done id=req-e5586f66 route=/review-svc/v1/cancel status=409 latency_ms=43
+2026-11-02T04:52:11 INFO  review-svc/rv-node-13 request done id=req-fc552219 route=/review-svc/v1/update status=200 latency_ms=148
+2026-11-02T04:52:16 INFO  review-svc/rv-node-22 backup finished file=/vault/daily/audit_20261008.tar.zst size_mb=56947 checksum=db1bbe3a
+2026-11-02T04:52:21 INFO  review-svc/rv-node-08 request done id=req-fcaeda91 route=/review-svc/v1/cancel status=201 latency_ms=68
+2026-11-02T04:52:27 INFO  review-svc/rv-node-14 request done id=req-8ec8d58c route=/review-svc/v1/list status=409 latency_ms=205
+2026-11-02T04:52:30 INFO  review-svc/rv-node-24 cache stats region=ap-ne-2b hit_ratio=75.6% evictions=20847
+2026-11-02T04:52:37 INFO  review-svc/rv-node-19 ticket linked id=OPS-47286 reason=runbook_update
+2026-11-02T04:52:39 INFO  review-svc/rv-node-20 deploy step release=review-svc-4.22.6 step=drain result=ok took_s=86
+2026-11-02T04:52:43 INFO  review-svc/rv-node-10 deploy step release=review-svc-4.13.6 step=verify result=ok took_s=169
+2026-11-02T04:52:47 WARN  review-svc/rv-node-07 alert fired rule=replica_lag_high value=60s threshold=47s
+2026-11-02T04:52:48 INFO  review-svc/rv-node-15 deploy step release=review-svc-4.20.5 step=shift_traffic_100 result=ok took_s=66
+2026-11-02T04:52:51 INFO  review-svc/rv-node-13 request done id=req-77dfb940 route=/review-svc/v1/update status=200 latency_ms=306
+2026-11-02T04:52:55 INFO  review-svc/rv-node-02 config applied key=cache.ttl_s value=63% by=hbyoon
+2026-11-02T04:52:58 INFO  review-svc/rv-node-17 request done id=req-3ae473fe route=/review-svc/v1/sync status=200 latency_ms=35
+2026-11-02T04:53:03 INFO  review-svc/rv-node-05 ticket linked id=OPS-47302 reason=node_drain
+2026-11-02T04:53:08 INFO  review-svc/rv-node-01 request done id=req-740ee87a route=/review-svc/v1/create status=409 latency_ms=98
+2026-11-02T04:53:12 INFO  review-svc/rv-node-18 deploy step release=review-svc-4.20.9 step=warmup result=ok took_s=66
+2026-11-02T04:53:14 INFO  review-svc/rv-node-02 request done id=req-2d206e45 route=/review-svc/v1/update status=204 latency_ms=51
+2026-11-02T04:53:16 INFO  review-svc/rv-node-24 request done id=req-eff6fce4 route=/review-svc/v1/verify status=200 latency_ms=580
+2026-11-02T04:53:18 INFO  review-svc/rv-node-19 ticket linked id=OPS-48925 reason=cert_rotation
+2026-11-02T04:53:23 INFO  review-svc/rv-node-08 deploy step release=review-svc-4.10.6 step=shift_traffic_10 result=ok took_s=89
+2026-11-02T04:53:28 INFO  review-svc/rv-node-14 request done id=req-4f8a3876 route=/review-svc/v1/sync status=200 latency_ms=66
+2026-11-02T04:53:33 INFO  review-svc/rv-node-16 config applied key=dns.ttl_s value=true by=mjlee
+2026-11-02T04:53:38 INFO  review-svc/rv-node-15 pool resize target=review-svc-queue max_pool_size=303 prev=331
+2026-11-02T04:53:45 WARN  review-svc/rv-node-03 alert fired rule=heap_used_high value=84% threshold=73%
+2026-11-02T04:53:48 INFO  review-svc/rv-node-17 request done id=req-5dbef14f route=/review-svc/v1/get status=200 latency_ms=46
+2026-11-02T04:53:51 INFO  review-svc/rv-node-19 config applied key=dns.ttl_s value=2773 by=sykang
+2026-11-02T04:53:56 INFO  review-svc/rv-node-08 request done id=req-cee176d3 route=/review-svc/v1/sync status=200 latency_ms=131
+2026-11-02T04:53:57 INFO  review-svc/rv-node-09 request done id=req-6bcfbd8f route=/review-svc/v1/status status=201 latency_ms=258
+2026-11-02T04:53:58 INFO  review-svc/rv-node-13 request done id=req-1cfd2a13 route=/review-svc/v1/cancel status=200 latency_ms=214
+2026-11-02T04:53:59 INFO  review-svc/rv-node-17 request done id=req-6c7f09f6 route=/review-svc/v1/verify status=200 latency_ms=60
+2026-11-02T04:54:00 NOTE  review-svc/rv-node-01 operator=jhpark memo="헬스체크 간격을 6초에서 32초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-02T04:54:04 INFO  review-svc/rv-node-20 ticket linked id=OPS-49907 reason=dependency_upgrade
+2026-11-02T04:54:09 INFO  review-svc/rv-node-03 pool resize target=review-svc-upstream max_pool_size=221 prev=181
+2026-11-02T04:54:16 INFO  review-svc/rv-node-03 request done id=req-bdd7b6e9 route=/review-svc/v1/cancel status=500 latency_ms=22
+2026-11-02T04:54:22 INFO  review-svc/rv-node-09 pool resize target=review-svc-db max_pool_size=179 prev=180
+2026-11-02T04:54:23 INFO  review-svc/rv-node-05 request done id=req-fcc933d1 route=/review-svc/v1/get status=200 latency_ms=98
+2026-11-02T04:54:28 INFO  review-svc/rv-node-08 backup finished file=/vault/daily/orders_20261023.tar.zst size_mb=61409 checksum=98e781c4
+2026-11-02T04:54:31 INFO  review-svc/rv-node-11 request done id=req-56d23536 route=/review-svc/v1/verify status=200 latency_ms=210
+2026-11-02T04:54:34 WARN  review-svc/rv-node-24 alert fired rule=conn_pool_saturated value=90% threshold=77%
+2026-11-02T04:54:35 INFO  review-svc/rv-node-04 request done id=req-ae87da75 route=/review-svc/v1/cancel status=200 latency_ms=203
+2026-11-02T04:54:40 WARN  review-svc/rv-node-02 alert fired rule=gc_pause_long value=68ms threshold=54ms
+2026-11-02T04:54:44 INFO  review-svc/rv-node-04 request done id=req-23cb330e route=/review-svc/v1/sync status=200 latency_ms=159
+2026-11-02T04:54:46 INFO  review-svc/rv-node-16 request done id=req-480aa1f1 route=/review-svc/v1/cancel status=200 latency_ms=346
+2026-11-02T04:54:48 WARN  review-svc/rv-node-01 alert fired rule=disk_usage_warning value=84% threshold=70%
+2026-11-02T04:54:51 INFO  review-svc/rv-node-12 deploy step release=review-svc-4.22.9 step=drain result=ok took_s=99
+2026-11-02T04:54:58 INFO  review-svc/rv-node-11 request done id=req-68e5ccf8 route=/review-svc/v1/verify status=429 latency_ms=209
+2026-11-02T04:55:04 INFO  review-svc/rv-node-08 request done id=req-bf9bc510 route=/review-svc/v1/sync status=200 latency_ms=51
+2026-11-02T04:55:10 WARN  review-svc/rv-node-15 alert fired rule=replica_lag_high value=91s threshold=79s
+2026-11-02T04:55:15 INFO  review-svc/rv-node-21 request done id=req-bea80125 route=/review-svc/v1/update status=200 latency_ms=412
+2026-11-02T04:55:18 INFO  review-svc/rv-node-04 pool resize target=review-svc-upstream max_pool_size=291 prev=279
+2026-11-02T04:55:22 INFO  review-svc/rv-node-21 config applied key=tls.session_cache value=6 by=sykang
+2026-11-02T04:55:26 NOTE  review-svc/rv-node-17 operator=dwjung memo="동시 처리 수를 49에서 40로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-02T04:55:29 INFO  review-svc/rv-node-10 config applied key=canary.traffic_percent value=true by=jhpark
+2026-11-02T04:55:36 INFO  review-svc/rv-node-01 pool resize target=review-svc-cache max_pool_size=81 prev=86
+2026-11-02T04:55:41 INFO  review-svc/rv-node-17 config applied key=breaker.half_open_s value=true by=mjlee
+2026-11-02T04:55:48 INFO  review-svc/rv-node-24 pool resize target=review-svc-cache max_pool_size=388 prev=404
+2026-11-02T04:55:53 NOTE  review-svc/rv-node-02 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-02T04:55:55 INFO  review-svc/rv-node-23 ticket linked id=OPS-47250 reason=flaky_healthcheck
+2026-11-02T04:55:57 INFO  review-svc/rv-node-19 deploy step release=review-svc-4.12.1 step=healthcheck result=ok took_s=137
+2026-11-02T04:56:04 NOTE  review-svc/rv-node-21 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-02T04:56:09 INFO  review-svc/rv-node-01 request done id=req-3bba8182 route=/review-svc/v1/sync status=500 latency_ms=81
+2026-11-02T04:56:12 INFO  review-svc/rv-node-19 pool resize target=review-svc-worker max_pool_size=192 prev=225
+2026-11-02T04:56:15 INFO  review-svc/rv-node-10 pool resize target=review-svc-cache max_pool_size=136 prev=151
+2026-11-02T04:56:20 INFO  review-svc/rv-node-11 request done id=req-824c6ac6 route=/review-svc/v1/list status=200 latency_ms=297
+2026-11-02T04:56:22 INFO  review-svc/rv-node-23 config applied key=retry.backoff_ms value=true by=ejlim
+2026-11-02T04:56:25 WARN  review-svc/rv-node-08 alert fired rule=cpu_steal_high value=58% threshold=52%
+2026-11-02T04:56:28 INFO  review-svc/rv-node-01 pool resize target=review-svc-upstream max_pool_size=109 prev=102
+2026-11-02T04:56:29 WARN  review-svc/rv-node-14 alert fired rule=p99_latency_high value=87ms threshold=77ms
+2026-11-02T04:56:36 INFO  review-svc/rv-node-21 pool resize target=review-svc-db max_pool_size=21 prev=50
+2026-11-02T04:56:38 INFO  review-svc/rv-node-21 cache stats region=us-we-2b hit_ratio=55.3% evictions=13990
+2026-11-02T04:56:42 INFO  review-svc/rv-node-24 backup finished file=/vault/daily/orders_20261018.tar.zst size_mb=81553 checksum=68b78a5e
+2026-11-02T04:56:49 INFO  review-svc/rv-node-21 request done id=req-a4d45c94 route=/review-svc/v1/cancel status=200 latency_ms=61
+2026-11-02T04:56:56 INFO  review-svc/rv-node-15 request done id=req-13911d7d route=/review-svc/v1/list status=200 latency_ms=165
+2026-11-02T04:56:57 INFO  review-svc/rv-node-12 pool resize target=review-svc-queue max_pool_size=164 prev=219
+2026-11-02T04:56:58 INFO  review-svc/rv-node-06 config applied key=queue.visibility_s value=false by=hbyoon
+2026-11-02T04:57:01 INFO  review-svc/rv-node-23 request done id=req-90a786b4 route=/review-svc/v1/create status=200 latency_ms=266
+2026-11-02T04:57:06 INFO  review-svc/rv-node-10 pool resize target=review-svc-queue max_pool_size=347 prev=387
+2026-11-02T04:57:08 ERROR review-svc/rv-node-03 job failed job=review-svc-reindex attempt=5 cause=bad_checksum
+2026-11-02T04:57:13 ERROR review-svc/rv-node-11 job failed job=review-svc-rollup attempt=3 cause=lock_wait_exceeded
+2026-11-02T04:57:20 INFO  review-svc/rv-node-03 request done id=req-17077dd1 route=/review-svc/v1/update status=200 latency_ms=53
+2026-11-02T04:57:21 INFO  review-svc/rv-node-04 ticket linked id=OPS-47505 reason=flaky_healthcheck
+2026-11-02T04:57:27 INFO  review-svc/rv-node-17 backup finished file=/vault/daily/orders_20261006.tar.zst size_mb=25358 checksum=4aa7061b
+2026-11-02T04:57:34 INFO  review-svc/rv-node-22 config applied key=flush.interval_ms value=3177 by=yjchoi
+2026-11-02T04:57:36 INFO  review-svc/rv-node-18 request done id=req-f6d73373 route=/review-svc/v1/status status=200 latency_ms=128
+2026-11-02T04:57:37 WARN  review-svc/rv-node-20 alert fired rule=p99_latency_high value=78ms threshold=67ms
+2026-11-02T04:57:39 INFO  review-svc/rv-node-09 deploy step release=review-svc-4.12.7 step=migrate result=ok took_s=198
+2026-11-02T04:57:40 INFO  review-svc/rv-node-05 request done id=req-4843ab49 route=/review-svc/v1/status status=200 latency_ms=43
+2026-11-02T04:57:47 INFO  review-svc/rv-node-16 request done id=req-a2d5f6ba route=/review-svc/v1/list status=200 latency_ms=182
+2026-11-02T04:57:52 INFO  review-svc/rv-node-11 request done id=req-3f5fb551 route=/review-svc/v1/list status=400 latency_ms=403
+2026-11-02T04:57:56 INFO  review-svc/rv-node-24 request done id=req-a89ba093 route=/review-svc/v1/status status=200 latency_ms=55
+2026-11-02T04:58:01 INFO  review-svc/rv-node-16 pool resize target=review-svc-upstream max_pool_size=334 prev=357
+2026-11-02T04:58:08 NOTE  review-svc/rv-node-12 operator=jhpark memo="타임아웃을 7ms에서 14ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-02T04:58:12 WARN  review-svc/rv-node-01 alert fired rule=replica_lag_high value=58s threshold=44s
+2026-11-02T04:58:13 WARN  review-svc/rv-node-11 alert fired rule=error_ratio_high value=53% threshold=48%
+2026-11-02T04:58:20 INFO  review-svc/rv-node-11 request done id=req-e039e934 route=/review-svc/v1/verify status=201 latency_ms=101
+2026-11-02T04:58:27 INFO  review-svc/rv-node-09 request done id=req-f73f5844 route=/review-svc/v1/verify status=200 latency_ms=55
+2026-11-02T04:58:34 INFO  review-svc/rv-node-24 request done id=req-10cc1399 route=/review-svc/v1/create status=200 latency_ms=110
+2026-11-02T04:58:40 INFO  review-svc/rv-node-03 config applied key=limiter.burst value=true by=mjlee
+2026-11-02T04:58:41 NOTE  review-svc/rv-node-07 operator=hbyoon memo="임시 증설 16대 추가. 내일 오전 회수 예정."
+2026-11-02T04:58:48 INFO  review-svc/rv-node-07 deploy step release=review-svc-4.19.0 step=shift_traffic_100 result=ok took_s=101
+2026-11-02T04:58:50 INFO  review-svc/rv-node-06 request done id=req-119374aa route=/review-svc/v1/get status=200 latency_ms=39
+2026-11-02T04:58:53 INFO  review-svc/rv-node-08 config applied key=retry.max_attempts value=false by=mjlee
+2026-11-02T04:58:58 INFO  review-svc/rv-node-12 request done id=req-64d09e7d route=/review-svc/v1/create status=429 latency_ms=286
+2026-11-02T04:59:04 INFO  review-svc/rv-node-19 deploy step release=review-svc-4.16.3 step=verify result=ok took_s=166
+2026-11-02T04:59:05 INFO  review-svc/rv-node-01 request done id=req-eade17c0 route=/review-svc/v1/status status=200 latency_ms=675
+2026-11-02T04:59:08 ERROR review-svc/rv-node-07 job failed job=review-svc-reindex attempt=1 cause=upstream_timeout
+2026-11-02T04:59:15 INFO  review-svc/rv-node-01 deploy step release=review-svc-4.12.9 step=warmup result=ok took_s=130
+2026-11-02T04:59:20 INFO  review-svc/rv-node-01 request done id=req-625e01ce route=/review-svc/v1/update status=409 latency_ms=143
+2026-11-02T04:59:25 INFO  review-svc/rv-node-24 request done id=req-cb616462 route=/review-svc/v1/create status=200 latency_ms=147
+2026-11-02T04:59:31 INFO  review-svc/rv-node-17 config applied key=dns.ttl_s value=39% by=yjchoi
+2026-11-02T04:59:34 INFO  review-svc/rv-node-14 pool resize target=review-svc-upstream max_pool_size=64 prev=95
+2026-11-02T04:59:38 INFO  review-svc/rv-node-08 request done id=req-a8d45c7b route=/review-svc/v1/sync status=400 latency_ms=417
+2026-11-02T04:59:44 INFO  review-svc/rv-node-08 request done id=req-ed770f20 route=/review-svc/v1/update status=200 latency_ms=93
+2026-11-02T04:59:47 INFO  review-svc/rv-node-22 request done id=req-29cd4fb7 route=/review-svc/v1/sync status=200 latency_ms=599
+2026-11-02T04:59:52 INFO  review-svc/rv-node-06 request done id=req-28b516f5 route=/review-svc/v1/sync status=200 latency_ms=62
+2026-11-02T04:59:58 INFO  review-svc/rv-node-19 request done id=req-9c22f142 route=/review-svc/v1/status status=200 latency_ms=271
+2026-11-02T05:00:05 INFO  review-svc/rv-node-18 pool resize target=review-svc-upstream max_pool_size=323 prev=352
+2026-11-02T05:00:06 INFO  review-svc/rv-node-08 request done id=req-8e59f95f route=/review-svc/v1/get status=409 latency_ms=55
+2026-11-02T05:00:08 INFO  review-svc/rv-node-05 ticket linked id=OPS-49832 reason=quota_increase
+2026-11-02T05:00:12 INFO  review-svc/rv-node-22 config applied key=worker.concurrency value=9 by=dwjung
+2026-11-02T05:00:13 WARN  review-svc/rv-node-21 alert fired rule=gc_pause_long value=88ms threshold=81ms
+2026-11-02T05:00:20 INFO  review-svc/rv-node-22 request done id=req-f72e48c6 route=/review-svc/v1/cancel status=200 latency_ms=162
+2026-11-02T05:00:24 INFO  review-svc/rv-node-21 request done id=req-6c7e6cef route=/review-svc/v1/cancel status=200 latency_ms=310
+2026-11-02T05:00:30 NOTE  review-svc/rv-node-18 operator=yjchoi memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-02T05:00:34 INFO  review-svc/rv-node-18 request done id=req-1d3e6dab route=/review-svc/v1/verify status=200 latency_ms=141
+2026-11-02T05:00:39 INFO  review-svc/rv-node-04 request done id=req-48148295 route=/review-svc/v1/list status=409 latency_ms=178
+2026-11-02T05:00:45 INFO  review-svc/rv-node-14 request done id=req-d1331683 route=/review-svc/v1/create status=200 latency_ms=134
+2026-11-02T05:00:46 INFO  review-svc/rv-node-11 request done id=req-9b47fefb route=/review-svc/v1/get status=204 latency_ms=153
+2026-11-02T05:00:52 INFO  review-svc/rv-node-06 request done id=req-867afd04 route=/review-svc/v1/sync status=200 latency_ms=77
+2026-11-02T05:00:56 WARN  review-svc/rv-node-14 alert fired rule=conn_pool_saturated value=79% threshold=74%
+2026-11-02T05:00:57 WARN  review-svc/rv-node-15 alert fired rule=gc_pause_long value=59ms threshold=49ms
+2026-11-02T05:01:01 INFO  review-svc/rv-node-05 backup finished file=/vault/weekly/users_2026w32.tar.zst size_mb=18235 checksum=2a9bf93c
+2026-11-02T05:01:05 INFO  review-svc/rv-node-06 request done id=req-5a29c567 route=/review-svc/v1/sync status=200 latency_ms=97
+2026-11-02T05:01:09 INFO  review-svc/rv-node-13 ticket linked id=OPS-49888 reason=dns_ttl_change
+2026-11-02T05:01:14 ERROR review-svc/rv-node-24 job failed job=review-svc-reindex attempt=1 cause=lock_wait_exceeded
+2026-11-02T05:01:16 INFO  review-svc/rv-node-16 request done id=req-edda2943 route=/review-svc/v1/create status=200 latency_ms=80
+2026-11-02T05:01:23 INFO  review-svc/rv-node-02 request done id=req-154e0e2f route=/review-svc/v1/sync status=429 latency_ms=34
+2026-11-02T05:01:30 WARN  review-svc/rv-node-13 alert fired rule=error_ratio_high value=75% threshold=65%
+2026-11-02T05:01:31 INFO  review-svc/rv-node-03 pool resize target=review-svc-upstream max_pool_size=242 prev=279
+2026-11-02T05:01:34 INFO  review-svc/rv-node-09 request done id=req-45afc926 route=/review-svc/v1/cancel status=400 latency_ms=222
+2026-11-02T05:01:40 WARN  review-svc/rv-node-17 alert fired rule=error_ratio_high value=83% threshold=80%
+2026-11-02T05:01:44 INFO  review-svc/rv-node-18 backup finished file=/vault/weekly/payments_2026w38.tar.zst size_mb=25904 checksum=44e1ede9
+2026-11-02T05:01:50 WARN  review-svc/rv-node-05 alert fired rule=conn_pool_saturated value=79% threshold=64%
+2026-11-02T05:01:51 INFO  review-svc/rv-node-11 config applied key=cache.ttl_s value=true by=shkim
+2026-11-02T05:01:55 INFO  review-svc/rv-node-07 request done id=req-cd4233c1 route=/review-svc/v1/list status=409 latency_ms=61
+2026-11-02T05:01:57 INFO  review-svc/rv-node-03 request done id=req-e6602069 route=/review-svc/v1/cancel status=200 latency_ms=100
+2026-11-02T05:01:59 INFO  review-svc/rv-node-20 request done id=req-c98ba32c route=/review-svc/v1/create status=404 latency_ms=165
+2026-11-02T05:02:06 INFO  review-svc/rv-node-07 config applied key=tls.session_cache value=false by=hbyoon
+2026-11-02T05:02:09 INFO  review-svc/rv-node-02 deploy step release=review-svc-4.10.2 step=drain result=ok took_s=25
+2026-11-02T05:02:15 INFO  review-svc/rv-node-17 pool resize target=review-svc-db max_pool_size=77 prev=68
+2026-11-02T05:02:17 INFO  review-svc/rv-node-03 cache stats region=ap-ne-2b hit_ratio=83.7% evictions=27322
+2026-11-02T05:02:24 INFO  review-svc/rv-node-22 config applied key=queue.visibility_s value=true by=shkim
+2026-11-02T05:02:30 INFO  review-svc/rv-node-05 request done id=req-4a01f423 route=/review-svc/v1/list status=200 latency_ms=104
+2026-11-02T05:02:36 INFO  review-svc/rv-node-24 ticket linked id=OPS-49205 reason=log_volume_spike
+2026-11-02T05:02:37 NOTE  review-svc/rv-node-10 operator=sykang memo="임시 증설 4대 추가. 내일 오전 회수 예정."
+2026-11-02T05:02:41 INFO  review-svc/rv-node-21 request done id=req-631edf77 route=/review-svc/v1/list status=200 latency_ms=33
+2026-11-02T05:02:48 INFO  review-svc/rv-node-10 backup finished file=/vault/weekly/sessions_2026w39.tar.zst size_mb=47522 checksum=0e76dca8
+2026-11-02T05:02:55 INFO  review-svc/rv-node-12 request done id=req-0836d30d route=/review-svc/v1/get status=503 latency_ms=92
+2026-11-02T05:02:56 INFO  review-svc/rv-node-11 request done id=req-ca7480b9 route=/review-svc/v1/verify status=200 latency_ms=163
+2026-11-02T05:02:59 INFO  review-svc/rv-node-03 request done id=req-8650e7b4 route=/review-svc/v1/verify status=200 latency_ms=39
+2026-11-02T05:03:06 INFO  review-svc/rv-node-05 request done id=req-24668e3d route=/review-svc/v1/update status=200 latency_ms=144
+2026-11-02T05:03:13 INFO  review-svc/rv-node-18 pool resize target=review-svc-db max_pool_size=391 prev=428
+2026-11-02T05:03:20 NOTE  review-svc/rv-node-14 operator=yjchoi memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-02T05:03:22 ERROR review-svc/rv-node-11 job failed job=review-svc-cleanup attempt=2 cause=dns_failure
+2026-11-02T05:03:26 INFO  review-svc/rv-node-24 request done id=req-bb6e8c6e route=/review-svc/v1/list status=404 latency_ms=67
+2026-11-02T05:03:30 INFO  review-svc/rv-node-05 backup finished file=/vault/weekly/orders_2026w36.tar.zst size_mb=27048 checksum=d92d37d1
+2026-11-02T05:03:34 INFO  review-svc/rv-node-04 config applied key=worker.concurrency value=false by=shkim
+2026-11-02T05:03:36 INFO  review-svc/rv-node-14 request done id=req-4e44bc0e route=/review-svc/v1/cancel status=429 latency_ms=109
+2026-11-02T05:03:37 INFO  review-svc/rv-node-08 request done id=req-0f6719ef route=/review-svc/v1/update status=200 latency_ms=190
+2026-11-02T05:03:38 INFO  review-svc/rv-node-20 request done id=req-714c4650 route=/review-svc/v1/get status=200 latency_ms=88
+2026-11-02T05:03:45 INFO  review-svc/rv-node-08 request done id=req-4584a587 route=/review-svc/v1/update status=404 latency_ms=356
+2026-11-02T05:03:48 INFO  review-svc/rv-node-01 request done id=req-ab09d7be route=/review-svc/v1/get status=200 latency_ms=126
+2026-11-02T05:03:50 INFO  review-svc/rv-node-06 config applied key=shard.count value=8614 by=sykang
+2026-11-02T05:03:55 INFO  review-svc/rv-node-04 cache stats region=ap-se-1a hit_ratio=93.4% evictions=29169
+2026-11-02T05:04:02 INFO  review-svc/rv-node-05 request done id=req-1cf46dd1 route=/review-svc/v1/update status=200 latency_ms=384
+2026-11-02T05:04:09 INFO  review-svc/rv-node-11 request done id=req-15a3ebb5 route=/review-svc/v1/update status=200 latency_ms=202
+2026-11-02T05:04:13 INFO  review-svc/rv-node-02 cache stats region=ap-ne-2a hit_ratio=88.1% evictions=8548
+2026-11-02T05:04:17 INFO  review-svc/rv-node-23 config applied key=shard.count value=34% by=shkim
+2026-11-02T05:04:24 INFO  review-svc/rv-node-16 request done id=req-a7937230 route=/review-svc/v1/cancel status=409 latency_ms=59
+2026-11-02T05:04:29 INFO  review-svc/rv-node-23 request done id=req-92277404 route=/review-svc/v1/create status=200 latency_ms=31
+2026-11-02T05:04:36 INFO  review-svc/rv-node-14 config applied key=http.max_conns value=false by=mjlee
+2026-11-02T05:04:43 WARN  review-svc/rv-node-21 alert fired rule=queue_depth_high value=85 threshold=77
+2026-11-02T05:04:45 INFO  review-svc/rv-node-18 cache stats region=us-we-2b hit_ratio=70.0% evictions=2506
+2026-11-02T05:04:47 INFO  review-svc/rv-node-19 request done id=req-9c1b211a route=/review-svc/v1/verify status=200 latency_ms=340
+2026-11-02T05:04:51 INFO  review-svc/rv-node-15 request done id=req-acd6cb94 route=/review-svc/v1/get status=404 latency_ms=85
+2026-11-02T05:04:57 NOTE  review-svc/rv-node-09 operator=yjchoi memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-02T05:05:01 INFO  review-svc/rv-node-04 config applied key=cache.ttl_s value=true by=yjchoi
+2026-11-02T05:05:03 INFO  review-svc/rv-node-23 deploy step release=review-svc-4.18.0 step=shift_traffic_50 result=ok took_s=200
+2026-11-02T05:05:08 INFO  review-svc/rv-node-01 request done id=req-0066d654 route=/review-svc/v1/cancel status=200 latency_ms=125
+2026-11-02T05:05:13 INFO  review-svc/rv-node-10 request done id=req-8c1adf4e route=/review-svc/v1/list status=200 latency_ms=70
+2026-11-02T05:05:17 INFO  review-svc/rv-node-24 cache stats region=ap-ne-2b hit_ratio=57.1% evictions=2536
+2026-11-02T05:05:24 INFO  review-svc/rv-node-22 deploy step release=review-svc-4.12.3 step=start result=ok took_s=164
+2026-11-02T05:05:31 INFO  review-svc/rv-node-23 request done id=req-7a126677 route=/review-svc/v1/get status=201 latency_ms=64
+2026-11-02T05:05:32 INFO  review-svc/rv-node-21 request done id=req-6be9b8c7 route=/review-svc/v1/sync status=200 latency_ms=32
+2026-11-02T05:05:37 NOTE  review-svc/rv-node-19 operator=hbyoon memo="캐시 TTL을 42초로 되돌림. 오래된 응답이 보고됨."
+2026-11-02T05:05:43 ERROR review-svc/rv-node-15 job failed job=review-svc-rollup attempt=3 cause=dns_failure
+2026-11-02T05:05:44 INFO  review-svc/rv-node-17 config applied key=worker.concurrency value=true by=mjlee
+2026-11-02T05:05:46 ERROR review-svc/rv-node-12 job failed job=review-svc-reindex attempt=3 cause=quota_exceeded
+2026-11-02T05:05:48 INFO  review-svc/rv-node-19 request done id=req-c377c285 route=/review-svc/v1/status status=200 latency_ms=729
+2026-11-02T05:05:54 INFO  review-svc/rv-node-04 request done id=req-69a53b20 route=/review-svc/v1/sync status=409 latency_ms=1159
+2026-11-02T05:05:57 INFO  review-svc/rv-node-14 request done id=req-ea6f10c3 route=/review-svc/v1/update status=200 latency_ms=242
+2026-11-02T05:06:03 INFO  review-svc/rv-node-17 request done id=req-3fbbf8d6 route=/review-svc/v1/update status=200 latency_ms=248
+2026-11-02T05:06:09 INFO  review-svc/rv-node-16 request done id=req-7747921f route=/review-svc/v1/status status=200 latency_ms=121
+2026-11-02T05:06:15 ERROR review-svc/rv-node-07 job failed job=review-svc-export attempt=4 cause=lock_wait_exceeded
+2026-11-02T05:06:16 INFO  review-svc/rv-node-18 cache stats region=ap-se-1a hit_ratio=68.1% evictions=37821
+2026-11-02T05:06:19 INFO  review-svc/rv-node-03 request done id=req-21ab1319 route=/review-svc/v1/sync status=429 latency_ms=34
+2026-11-02T05:06:24 INFO  review-svc/rv-node-18 request done id=req-339d4ef6 route=/review-svc/v1/verify status=429 latency_ms=296
+2026-11-02T05:06:30 INFO  review-svc/rv-node-19 pool resize target=review-svc-worker max_pool_size=396 prev=454
+2026-11-02T05:06:34 INFO  review-svc/rv-node-03 request done id=req-1f22373a route=/review-svc/v1/list status=200 latency_ms=133
+2026-11-02T05:06:36 ERROR review-svc/rv-node-11 job failed job=review-svc-reindex attempt=2 cause=upstream_timeout
+2026-11-02T05:06:42 INFO  review-svc/rv-node-05 pool resize target=review-svc-worker max_pool_size=20 prev=20
+2026-11-02T05:06:47 INFO  review-svc/rv-node-10 config applied key=breaker.half_open_s value=2116 by=dwjung
+2026-11-02T05:06:53 INFO  review-svc/rv-node-13 pool resize target=review-svc-worker max_pool_size=353 prev=310
+2026-11-02T05:06:54 INFO  review-svc/rv-node-13 config applied key=http.read_timeout_ms value=11 by=shkim
+2026-11-02T05:06:59 INFO  review-svc/rv-node-17 ticket linked id=OPS-47820 reason=cert_rotation
+2026-11-02T05:07:01 INFO  review-svc/rv-node-01 request done id=req-5dbf9c97 route=/review-svc/v1/list status=200 latency_ms=10
+2026-11-02T05:07:05 INFO  review-svc/rv-node-04 config applied key=http.read_timeout_ms value=false by=hbyoon
+2026-11-02T05:07:07 INFO  review-svc/rv-node-24 request done id=req-a86b6ec6 route=/review-svc/v1/cancel status=503 latency_ms=49
+2026-11-02T05:07:10 NOTE  review-svc/rv-node-13 operator=jhpark memo="점검 창을 15분 연장함. 승인: 한지우 리드."
+2026-11-02T05:07:11 INFO  review-svc/rv-node-08 request done id=req-ff2221d4 route=/review-svc/v1/create status=200 latency_ms=101
+2026-11-02T05:07:15 INFO  review-svc/rv-node-17 backup finished file=/vault/weekly/sessions_2026w35.tar.zst size_mb=18802 checksum=fc2bc59f
+2026-11-02T05:07:19 INFO  review-svc/rv-node-18 deploy step release=review-svc-4.19.7 step=shift_traffic_100 result=ok took_s=81
+2026-11-02T05:07:24 INFO  review-svc/rv-node-05 request done id=req-df588eda route=/review-svc/v1/cancel status=200 latency_ms=211
+2026-11-02T05:07:25 INFO  review-svc/rv-node-22 request done id=req-d1ac022a route=/review-svc/v1/sync status=200 latency_ms=223
+2026-11-02T05:07:32 INFO  review-svc/rv-node-17 pool resize target=review-svc-queue max_pool_size=134 prev=150
+2026-11-02T05:07:39 INFO  review-svc/rv-node-10 request done id=req-dd1fe686 route=/review-svc/v1/status status=200 latency_ms=51
+2026-11-02T05:07:43 INFO  review-svc/rv-node-19 request done id=req-b4891db9 route=/review-svc/v1/update status=200 latency_ms=52
+2026-11-02T05:07:50 INFO  review-svc/rv-node-07 request done id=req-8a62fe47 route=/review-svc/v1/sync status=201 latency_ms=61
+2026-11-02T05:07:57 INFO  review-svc/rv-node-17 request done id=req-90d78790 route=/review-svc/v1/list status=500 latency_ms=36
+2026-11-02T05:07:58 INFO  review-svc/rv-node-14 backup finished file=/vault/weekly/inventory_2026w34.tar.zst size_mb=84700 checksum=69a6de5c
+2026-11-02T05:08:00 INFO  review-svc/rv-node-21 request done id=req-57c4196e route=/review-svc/v1/list status=503 latency_ms=348
+2026-11-02T05:08:01 INFO  review-svc/rv-node-23 request done id=req-464e1522 route=/review-svc/v1/update status=500 latency_ms=67
+2026-11-02T05:08:02 INFO  review-svc/rv-node-19 request done id=req-20a92ed4 route=/review-svc/v1/cancel status=200 latency_ms=223
+2026-11-02T05:08:09 INFO  review-svc/rv-node-23 request done id=req-f7d6d1c4 route=/review-svc/v1/update status=200 latency_ms=196
+2026-11-02T05:08:10 INFO  review-svc/rv-node-08 ticket linked id=OPS-47986 reason=node_drain
+2026-11-02T05:08:15 INFO  review-svc/rv-node-06 deploy step release=review-svc-4.12.1 step=shift_traffic_50 result=ok took_s=203
+2026-11-02T05:08:21 INFO  review-svc/rv-node-17 request done id=req-f17b7e43 route=/review-svc/v1/sync status=200 latency_ms=35
+2026-11-02T05:08:24 INFO  review-svc/rv-node-15 request done id=req-c3abada4 route=/review-svc/v1/sync status=200 latency_ms=385
+2026-11-02T05:08:26 INFO  review-svc/rv-node-20 request done id=req-f9603383 route=/review-svc/v1/create status=200 latency_ms=140
+2026-11-02T05:08:30 INFO  review-svc/rv-node-19 request done id=req-418dd74b route=/review-svc/v1/create status=200 latency_ms=88
+2026-11-02T05:08:31 ERROR review-svc/rv-node-10 job failed job=review-svc-rollup attempt=2 cause=quota_exceeded
+2026-11-02T05:08:36 INFO  review-svc/rv-node-19 config applied key=queue.visibility_s value=6904 by=hbyoon
+2026-11-02T05:08:37 INFO  review-svc/rv-node-21 cache stats region=us-we-2b hit_ratio=86.1% evictions=18302
+2026-11-02T05:08:42 INFO  review-svc/rv-node-18 ticket linked id=OPS-49942 reason=log_volume_spike
+2026-11-02T05:08:47 INFO  review-svc/rv-node-06 request done id=req-ed687449 route=/review-svc/v1/create status=200 latency_ms=80
+2026-11-02T05:08:51 INFO  review-svc/rv-node-14 request done id=req-83d330c7 route=/review-svc/v1/verify status=500 latency_ms=279
+2026-11-02T05:08:58 INFO  review-svc/rv-node-13 request done id=req-68e7f6f0 route=/review-svc/v1/list status=200 latency_ms=420
+2026-11-02T05:09:00 NOTE  review-svc/rv-node-22 operator=ejlim memo="rv-node-22 재기동 후 지표 정상 확인."
+2026-11-02T05:09:03 INFO  review-svc/rv-node-14 deploy step release=review-svc-4.14.2 step=migrate result=ok took_s=191
+2026-11-02T05:09:05 INFO  review-svc/rv-node-17 config applied key=worker.concurrency value=false by=ejlim
+2026-11-02T05:09:06 INFO  review-svc/rv-node-17 request done id=req-7fbb5944 route=/review-svc/v1/sync status=200 latency_ms=665
+2026-11-02T05:09:10 INFO  review-svc/rv-node-13 request done id=req-f631181b route=/review-svc/v1/sync status=204 latency_ms=56
+2026-11-02T05:09:14 INFO  review-svc/rv-node-07 deploy step release=review-svc-4.16.3 step=verify result=ok took_s=183
+2026-11-02T05:09:21 INFO  review-svc/rv-node-14 request done id=req-eaa462ff route=/review-svc/v1/get status=400 latency_ms=118
+2026-11-02T05:09:27 INFO  review-svc/rv-node-03 request done id=req-2f9e436d route=/review-svc/v1/verify status=429 latency_ms=246
+2026-11-02T05:09:31 INFO  review-svc/rv-node-01 request done id=req-2fba7d38 route=/review-svc/v1/sync status=200 latency_ms=44
+2026-11-02T05:09:33 INFO  review-svc/rv-node-22 request done id=req-0aa0ed37 route=/review-svc/v1/create status=201 latency_ms=231
+2026-11-02T05:09:37 NOTE  review-svc/rv-node-20 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-02T05:09:40 INFO  review-svc/rv-node-20 config applied key=tls.session_cache value=false by=hbyoon
+2026-11-02T05:09:46 INFO  review-svc/rv-node-09 pool resize target=review-svc-upstream max_pool_size=21 prev=54
+2026-11-02T05:09:52 WARN  review-svc/rv-node-13 alert fired rule=p99_latency_high value=54ms threshold=39ms
+2026-11-02T05:09:55 WARN  review-svc/rv-node-19 alert fired rule=conn_pool_saturated value=98% threshold=89%
+2026-11-02T05:10:00 INFO  review-svc/rv-node-24 pool resize target=review-svc-upstream max_pool_size=200 prev=192
+2026-11-02T05:10:07 INFO  review-svc/rv-node-21 config applied key=tls.session_cache value=3505 by=ejlim
+2026-11-02T05:10:12 WARN  review-svc/rv-node-24 alert fired rule=heap_used_high value=69% threshold=59%
+2026-11-02T05:10:16 INFO  review-svc/rv-node-19 request done id=req-1df23f84 route=/review-svc/v1/get status=200 latency_ms=37
+2026-11-02T05:10:19 INFO  review-svc/rv-node-23 pool resize target=review-svc-db max_pool_size=104 prev=149
+2026-11-02T05:10:23 INFO  review-svc/rv-node-22 request done id=req-1a066af7 route=/review-svc/v1/sync status=201 latency_ms=73
+2026-11-02T05:10:26 INFO  review-svc/rv-node-24 config applied key=canary.latency_p99_threshold_ms value=false by=sykang
+2026-11-02T05:10:33 INFO  review-svc/rv-node-23 request done id=req-360b90c0 route=/review-svc/v1/sync status=200 latency_ms=104
+2026-11-02T05:10:35 INFO  review-svc/rv-node-17 pool resize target=review-svc-queue max_pool_size=298 prev=274
+2026-11-02T05:10:39 INFO  review-svc/rv-node-15 ticket linked id=OPS-47437 reason=log_volume_spike
+2026-11-02T05:10:44 NOTE  review-svc/rv-node-11 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 14일 남음."
+2026-11-02T05:10:45 INFO  review-svc/rv-node-13 config applied key=worker.concurrency value=91% by=mjlee
+2026-11-02T05:10:49 INFO  review-svc/rv-node-13 request done id=req-7eb53d64 route=/review-svc/v1/sync status=200 latency_ms=107
+2026-11-02T05:10:56 INFO  review-svc/rv-node-14 request done id=req-1ff5c547 route=/review-svc/v1/get status=200 latency_ms=65
+2026-11-02T05:10:57 INFO  review-svc/rv-node-07 pool resize target=review-svc-queue max_pool_size=14 prev=4
+2026-11-02T05:11:02 INFO  review-svc/rv-node-17 request done id=req-95deae1d route=/review-svc/v1/cancel status=200 latency_ms=64
+2026-11-02T05:11:05 INFO  review-svc/rv-node-04 config applied key=worker.concurrency value=94% by=dwjung
+2026-11-02T05:11:11 INFO  review-svc/rv-node-11 request done id=req-e98738cc route=/review-svc/v1/verify status=204 latency_ms=754
+2026-11-02T05:11:12 WARN  review-svc/rv-node-16 alert fired rule=error_ratio_high value=57% threshold=47%
+2026-11-02T05:11:13 WARN  review-svc/rv-node-16 alert fired rule=p99_latency_high value=74ms threshold=67ms
+2026-11-02T05:11:20 INFO  review-svc/rv-node-24 backup finished file=/vault/weekly/inventory_2026w43.tar.zst size_mb=39875 checksum=a06f2c57
+2026-11-02T05:11:22 INFO  review-svc/rv-node-01 pool resize target=review-svc-db max_pool_size=60 prev=97
+2026-11-02T05:11:24 INFO  review-svc/rv-node-12 request done id=req-c7cf9335 route=/review-svc/v1/update status=200 latency_ms=29
+2026-11-02T05:11:26 WARN  review-svc/rv-node-22 alert fired rule=conn_pool_saturated value=85% threshold=75%
+2026-11-02T05:11:32 INFO  review-svc/rv-node-24 config applied key=limiter.burst value=14 by=mjlee
+2026-11-02T05:11:38 INFO  review-svc/rv-node-18 request done id=req-91f03c20 route=/review-svc/v1/status status=200 latency_ms=68
+2026-11-02T05:11:45 ERROR review-svc/rv-node-18 job failed job=review-svc-export attempt=2 cause=lock_wait_exceeded
+2026-11-02T05:11:51 ERROR review-svc/rv-node-21 job failed job=review-svc-cleanup attempt=3 cause=oom_killed
+2026-11-02T05:11:54 WARN  review-svc/rv-node-12 alert fired rule=cpu_steal_high value=57% threshold=50%
+2026-11-02T05:11:58 INFO  review-svc/rv-node-20 config applied key=gc.pause_target_ms value=55 by=dwjung
+2026-11-02T05:11:59 NOTE  review-svc/rv-node-10 operator=yjchoi memo="캐시 TTL을 44초로 되돌림. 오래된 응답이 보고됨."
+2026-11-02T05:12:04 INFO  review-svc/rv-node-17 request done id=req-69ca78ad route=/review-svc/v1/verify status=200 latency_ms=254
+2026-11-02T05:12:11 INFO  review-svc/rv-node-22 backup finished file=/vault/weekly/sessions_2026w34.tar.zst size_mb=42827 checksum=11deb250
+2026-11-02T05:12:15 INFO  review-svc/rv-node-18 request done id=req-10c3c871 route=/review-svc/v1/update status=200 latency_ms=102
+2026-11-02T05:12:18 WARN  review-svc/rv-node-12 alert fired rule=fd_usage_high value=85% threshold=80%
+2026-11-02T05:12:20 INFO  review-svc/rv-node-05 pool resize target=review-svc-worker max_pool_size=334 prev=387
+2026-11-02T05:12:22 INFO  review-svc/rv-node-09 config applied key=shard.count value=16% by=mjlee
+2026-11-02T05:12:27 INFO  review-svc/rv-node-17 config applied key=gc.pause_target_ms value=52 by=jhpark
+2026-11-02T05:12:33 WARN  review-svc/rv-node-14 alert fired rule=cpu_steal_high value=51% threshold=44%
+2026-11-02T05:12:38 INFO  review-svc/rv-node-24 request done id=req-8de20d33 route=/review-svc/v1/update status=200 latency_ms=54
+2026-11-02T05:12:43 INFO  review-svc/rv-node-04 request done id=req-c27a2fd2 route=/review-svc/v1/verify status=200 latency_ms=259
+2026-11-02T05:12:48 INFO  review-svc/rv-node-01 deploy step release=review-svc-4.19.0 step=shift_traffic_10 result=ok took_s=10
+2026-11-02T05:12:53 INFO  review-svc/rv-node-02 request done id=req-22855fcd route=/review-svc/v1/update status=201 latency_ms=192
+2026-11-02T05:13:00 INFO  review-svc/rv-node-19 request done id=req-99a7bf7c route=/review-svc/v1/create status=200 latency_ms=53
+2026-11-02T05:13:02 NOTE  review-svc/rv-node-01 operator=sykang memo="동시 처리 수를 61에서 58로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-02T05:13:05 INFO  review-svc/rv-node-14 request done id=req-87eede86 route=/review-svc/v1/status status=204 latency_ms=214
+2026-11-02T05:13:11 INFO  review-svc/rv-node-07 config applied key=canary.traffic_percent value=28% by=sykang
+2026-11-02T05:13:14 INFO  review-svc/rv-node-08 config applied key=tls.session_cache value=30 by=mjlee
+2026-11-02T05:13:18 WARN  review-svc/rv-node-07 alert fired rule=replica_lag_high value=93s threshold=84s
+2026-11-02T05:13:20 INFO  review-svc/rv-node-23 request done id=req-7cfe06d0 route=/review-svc/v1/list status=200 latency_ms=171
+2026-11-02T05:13:22 INFO  review-svc/rv-node-01 request done id=req-94f0c61b route=/review-svc/v1/create status=409 latency_ms=71
+2026-11-02T05:13:26 WARN  review-svc/rv-node-07 alert fired rule=fd_usage_high value=72% threshold=71%
+2026-11-02T05:13:33 INFO  review-svc/rv-node-13 pool resize target=review-svc-db max_pool_size=265 prev=261
+2026-11-02T05:13:39 INFO  review-svc/rv-node-13 pool resize target=review-svc-db max_pool_size=157 prev=107
+2026-11-02T05:13:42 INFO  review-svc/rv-node-20 backup finished file=/vault/weekly/sessions_2026w38.tar.zst size_mb=8930 checksum=f98d927e
+2026-11-02T05:13:43 INFO  review-svc/rv-node-23 request done id=req-22b8a31e route=/review-svc/v1/update status=200 latency_ms=76
+2026-11-02T05:13:48 INFO  review-svc/rv-node-22 request done id=req-21d55509 route=/review-svc/v1/verify status=404 latency_ms=68
+2026-11-02T05:13:51 INFO  review-svc/rv-node-04 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=43335 checksum=bea7ea3d
+2026-11-02T05:13:54 INFO  review-svc/rv-node-06 cache stats region=ap-se-1a hit_ratio=88.2% evictions=37400
+2026-11-02T05:13:56 INFO  review-svc/rv-node-09 request done id=req-162b9c65 route=/review-svc/v1/cancel status=200 latency_ms=80
+2026-11-02T05:14:02 INFO  review-svc/rv-node-11 config applied key=flush.interval_ms value=false by=sykang
+2026-11-02T05:14:09 INFO  review-svc/rv-node-12 request done id=req-a98999fe route=/review-svc/v1/sync status=200 latency_ms=112
+2026-11-02T05:14:14 INFO  review-svc/rv-node-06 request done id=req-e1f0c19c route=/review-svc/v1/status status=200 latency_ms=32
+2026-11-02T05:14:18 NOTE  review-svc/rv-node-12 operator=shkim memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-11-02T05:14:21 INFO  review-svc/rv-node-07 request done id=req-832603b4 route=/review-svc/v1/cancel status=200 latency_ms=155
+2026-11-02T05:14:22 INFO  review-svc/rv-node-04 ticket linked id=OPS-48765 reason=dns_ttl_change
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

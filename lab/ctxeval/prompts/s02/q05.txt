@@ -1,0 +1,1 @@
+아까 붙여 준 이미지 리사이저(img-resize) 로그에서 03:31:06 의 cache stats 줄에 hit_ratio 가 얼마로 찍혔지?

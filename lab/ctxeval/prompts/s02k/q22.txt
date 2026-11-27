@@ -1,0 +1,1 @@
+아까 붙여 준 추천 서빙(reco-serve) 로그에 pool resize 줄이 모두 몇 건 있었지?

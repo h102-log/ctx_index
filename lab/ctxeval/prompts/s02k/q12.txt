@@ -1,0 +1,1 @@
+아까 붙여 준 정산 배치(settle-batch) 로그에서 맨 마지막에 발생한 경보(alert fired)의 시각과 rule 이 뭐였지?

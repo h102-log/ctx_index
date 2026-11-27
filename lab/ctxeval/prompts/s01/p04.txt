@@ -1,0 +1,424 @@
+참고용 로그 04: 정산 배치(settle-batch) 야간 실행 구간. '확인'이라고만 답해 줘.
+
+2026-10-08T12:01:57 INFO  settle-batch/sb-node-13 deploy step release=settle-batch-4.16.3 step=drain result=ok took_s=61
+2026-10-08T12:02:01 INFO  settle-batch/sb-node-20 request done id=req-7379aaae route=/settle-batch/v1/status status=200 latency_ms=56
+2026-10-08T12:02:02 INFO  settle-batch/sb-node-10 request done id=req-f566022a route=/settle-batch/v1/cancel status=200 latency_ms=257
+2026-10-08T12:02:05 INFO  settle-batch/sb-node-02 cache stats region=us-we-2b hit_ratio=66.9% evictions=38572
+2026-10-08T12:02:09 INFO  settle-batch/sb-node-20 request done id=req-770f47c7 route=/settle-batch/v1/update status=200 latency_ms=70
+2026-10-08T12:02:15 INFO  settle-batch/sb-node-16 request done id=req-accbaf21 route=/settle-batch/v1/verify status=200 latency_ms=89
+2026-10-08T12:02:21 INFO  settle-batch/sb-node-08 request done id=req-0110827a route=/settle-batch/v1/status status=200 latency_ms=304
+2026-10-08T12:02:25 INFO  settle-batch/sb-node-16 request done id=req-e733ccce route=/settle-batch/v1/verify status=200 latency_ms=982
+2026-10-08T12:02:30 INFO  settle-batch/sb-node-20 request done id=req-8db971c9 route=/settle-batch/v1/sync status=200 latency_ms=47
+2026-10-08T12:02:34 INFO  settle-batch/sb-node-12 request done id=req-dcf5c0ea route=/settle-batch/v1/cancel status=200 latency_ms=125
+2026-10-08T12:02:39 INFO  settle-batch/sb-node-09 request done id=req-e01dc4a9 route=/settle-batch/v1/update status=200 latency_ms=116
+2026-10-08T12:02:43 INFO  settle-batch/sb-node-06 request done id=req-d4fbd404 route=/settle-batch/v1/sync status=200 latency_ms=87
+2026-10-08T12:02:44 WARN  settle-batch/sb-node-21 alert fired rule=p99_latency_high value=65ms threshold=56ms
+2026-10-08T12:02:45 INFO  settle-batch/sb-node-05 request done id=req-05825ac5 route=/settle-batch/v1/verify status=503 latency_ms=151
+2026-10-08T12:02:52 ERROR settle-batch/sb-node-16 job failed job=settle-batch-rollup attempt=2 cause=lock_wait_exceeded
+2026-10-08T12:02:56 INFO  settle-batch/sb-node-16 ticket linked id=OPS-48957 reason=flaky_healthcheck
+2026-10-08T12:02:57 WARN  settle-batch/sb-node-13 alert fired rule=disk_usage_warning value=51% threshold=41%
+2026-10-08T12:03:00 WARN  settle-batch/sb-node-15 alert fired rule=error_ratio_high value=84% threshold=74%
+2026-10-08T12:03:06 INFO  settle-batch/sb-node-24 config applied key=breaker.open_ratio value=6% by=sykang
+2026-10-08T12:03:12 INFO  settle-batch/sb-node-19 pool resize target=settle-batch-cache max_pool_size=225 prev=280
+2026-10-08T12:03:16 INFO  settle-batch/sb-node-09 backup finished file=/vault/daily/users_20261007.tar.zst size_mb=78465 checksum=71862528
+2026-10-08T12:03:21 INFO  settle-batch/sb-node-05 request done id=req-bb7c18b4 route=/settle-batch/v1/get status=200 latency_ms=113
+2026-10-08T12:03:24 INFO  settle-batch/sb-node-08 pool resize target=settle-batch-queue max_pool_size=16 prev=38
+2026-10-08T12:03:28 INFO  settle-batch/sb-node-22 cache stats region=ap-ne-2b hit_ratio=90.3% evictions=30049
+2026-10-08T12:03:34 INFO  settle-batch/sb-node-16 request done id=req-8e94bf5a route=/settle-batch/v1/status status=200 latency_ms=149
+2026-10-08T12:03:41 INFO  settle-batch/sb-node-24 request done id=req-5a4ee745 route=/settle-batch/v1/status status=200 latency_ms=25
+2026-10-08T12:03:48 INFO  settle-batch/sb-node-01 request done id=req-352be1c9 route=/settle-batch/v1/verify status=201 latency_ms=18
+2026-10-08T12:03:52 NOTE  settle-batch/sb-node-23 operator=shkim memo="점검 창을 19분 연장함. 승인: 민도현 파트장."
+2026-10-08T12:03:53 NOTE  settle-batch/sb-node-08 operator=ejlim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-08T12:03:58 INFO  settle-batch/sb-node-23 request done id=req-94961b55 route=/settle-batch/v1/sync status=404 latency_ms=149
+2026-10-08T12:04:05 INFO  settle-batch/sb-node-06 config applied key=cache.ttl_s value=false by=shkim
+2026-10-08T12:04:09 INFO  settle-batch/sb-node-10 deploy step release=settle-batch-4.17.1 step=drain result=ok took_s=14
+2026-10-08T12:04:14 INFO  settle-batch/sb-node-19 request done id=req-519586cb route=/settle-batch/v1/create status=200 latency_ms=142
+2026-10-08T12:04:18 ERROR settle-batch/sb-node-19 job failed job=settle-batch-rollup attempt=3 cause=lock_wait_exceeded
+2026-10-08T12:04:24 INFO  settle-batch/sb-node-23 request done id=req-120a3a02 route=/settle-batch/v1/verify status=201 latency_ms=127
+2026-10-08T12:04:28 NOTE  settle-batch/sb-node-14 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-08T12:04:33 INFO  settle-batch/sb-node-03 request done id=req-51cf8227 route=/settle-batch/v1/cancel status=200 latency_ms=83
+2026-10-08T12:04:35 NOTE  settle-batch/sb-node-13 operator=sykang memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-08T12:04:39 INFO  settle-batch/sb-node-12 config applied key=retry.max_attempts value=28% by=ejlim
+2026-10-08T12:04:40 INFO  settle-batch/sb-node-10 pool resize target=settle-batch-upstream max_pool_size=139 prev=90
+2026-10-08T12:04:45 INFO  settle-batch/sb-node-15 request done id=req-d8acb621 route=/settle-batch/v1/cancel status=200 latency_ms=240
+2026-10-08T12:04:51 ERROR settle-batch/sb-node-15 job failed job=settle-batch-rollup attempt=5 cause=dns_failure
+2026-10-08T12:04:52 NOTE  settle-batch/sb-node-11 operator=mjlee memo="헬스체크 간격을 42초에서 74초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-08T12:04:56 INFO  settle-batch/sb-node-03 config applied key=queue.visibility_s value=true by=hbyoon
+2026-10-08T12:05:01 INFO  settle-batch/sb-node-02 request done id=req-24ad0974 route=/settle-batch/v1/cancel status=500 latency_ms=142
+2026-10-08T12:05:08 INFO  settle-batch/sb-node-21 config applied key=retry.backoff_ms value=false by=hbyoon
+2026-10-08T12:05:10 INFO  settle-batch/sb-node-16 ticket linked id=OPS-49479 reason=quota_increase
+2026-10-08T12:05:11 INFO  settle-batch/sb-node-13 request done id=req-d4222b05 route=/settle-batch/v1/verify status=400 latency_ms=168
+2026-10-08T12:05:12 INFO  settle-batch/sb-node-06 request done id=req-848abf80 route=/settle-batch/v1/status status=404 latency_ms=76
+2026-10-08T12:05:17 INFO  settle-batch/sb-node-08 config applied key=limiter.burst value=false by=yjchoi
+2026-10-08T12:05:24 ERROR settle-batch/sb-node-03 job failed job=settle-batch-export attempt=4 cause=oom_killed
+2026-10-08T12:05:31 INFO  settle-batch/sb-node-21 deploy step release=settle-batch-4.20.6 step=shift_traffic_100 result=ok took_s=148
+2026-10-08T12:05:32 NOTE  settle-batch/sb-node-02 operator=mjlee memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-08T12:05:34 INFO  settle-batch/sb-node-18 request done id=req-abf4b4ef route=/settle-batch/v1/update status=200 latency_ms=290
+2026-10-08T12:05:35 INFO  settle-batch/sb-node-11 request done id=req-995f0078 route=/settle-batch/v1/list status=200 latency_ms=231
+2026-10-08T12:05:38 INFO  settle-batch/sb-node-10 request done id=req-af453861 route=/settle-batch/v1/update status=429 latency_ms=227
+2026-10-08T12:05:42 INFO  settle-batch/sb-node-06 config applied key=breaker.open_ratio value=52% by=ejlim
+2026-10-08T12:05:48 INFO  settle-batch/sb-node-10 pool resize target=settle-batch-worker max_pool_size=285 prev=230
+2026-10-08T12:05:55 WARN  settle-batch/sb-node-20 alert fired rule=heap_used_high value=93% threshold=92%
+2026-10-08T12:06:01 WARN  settle-batch/sb-node-16 alert fired rule=disk_usage_warning value=65% threshold=62%
+2026-10-08T12:06:06 INFO  settle-batch/sb-node-08 request done id=req-e86ee80d route=/settle-batch/v1/create status=429 latency_ms=78
+2026-10-08T12:06:10 INFO  settle-batch/sb-node-01 request done id=req-71fade0d route=/settle-batch/v1/sync status=409 latency_ms=134
+2026-10-08T12:06:12 INFO  settle-batch/sb-node-23 request done id=req-534a7048 route=/settle-batch/v1/update status=400 latency_ms=101
+2026-10-08T12:06:13 WARN  settle-batch/sb-node-20 alert fired rule=gc_pause_long value=63ms threshold=51ms
+2026-10-08T12:06:19 INFO  settle-batch/sb-node-05 deploy step release=settle-batch-4.15.4 step=drain result=ok took_s=194
+2026-10-08T12:06:20 INFO  settle-batch/sb-node-13 request done id=req-ee9719ad route=/settle-batch/v1/get status=404 latency_ms=41
+2026-10-08T12:06:21 INFO  settle-batch/sb-node-04 request done id=req-273ff14c route=/settle-batch/v1/verify status=500 latency_ms=96
+2026-10-08T12:06:22 WARN  settle-batch/sb-node-01 alert fired rule=replica_lag_high value=97s threshold=88s
+2026-10-08T12:06:24 WARN  settle-batch/sb-node-14 alert fired rule=replica_lag_high value=78s threshold=71s
+2026-10-08T12:06:31 INFO  settle-batch/sb-node-23 request done id=req-6d5e4f78 route=/settle-batch/v1/update status=200 latency_ms=66
+2026-10-08T12:06:33 NOTE  settle-batch/sb-node-19 operator=ejlim memo="배치 시작 시각을 37시 63분으로 고정함."
+2026-10-08T12:06:36 INFO  settle-batch/sb-node-23 request done id=req-9214dd86 route=/settle-batch/v1/update status=201 latency_ms=30
+2026-10-08T12:06:37 NOTE  settle-batch/sb-node-10 operator=sykang memo="배치 시작 시각을 54시 86분으로 고정함."
+2026-10-08T12:06:41 INFO  settle-batch/sb-node-18 request done id=req-994be7b1 route=/settle-batch/v1/create status=404 latency_ms=69
+2026-10-08T12:06:46 INFO  settle-batch/sb-node-11 request done id=req-2b7edd3e route=/settle-batch/v1/status status=200 latency_ms=141
+2026-10-08T12:06:50 ERROR settle-batch/sb-node-02 job failed job=settle-batch-rollup attempt=5 cause=lock_wait_exceeded
+2026-10-08T12:06:53 INFO  settle-batch/sb-node-15 deploy step release=settle-batch-4.15.7 step=shift_traffic_10 result=ok took_s=147
+2026-10-08T12:07:00 INFO  settle-batch/sb-node-01 request done id=req-6ed9cc99 route=/settle-batch/v1/sync status=503 latency_ms=449
+2026-10-08T12:07:07 INFO  settle-batch/sb-node-05 request done id=req-3cc746e6 route=/settle-batch/v1/cancel status=200 latency_ms=36
+2026-10-08T12:07:12 INFO  settle-batch/sb-node-03 request done id=req-5b9edb07 route=/settle-batch/v1/sync status=200 latency_ms=247
+2026-10-08T12:07:19 INFO  settle-batch/sb-node-22 request done id=req-bd5ccac0 route=/settle-batch/v1/update status=200 latency_ms=31
+2026-10-08T12:07:23 INFO  settle-batch/sb-node-09 request done id=req-23e2cb88 route=/settle-batch/v1/create status=200 latency_ms=134
+2026-10-08T12:07:25 INFO  settle-batch/sb-node-15 request done id=req-bd718115 route=/settle-batch/v1/create status=200 latency_ms=289
+2026-10-08T12:07:31 INFO  settle-batch/sb-node-16 request done id=req-0f59a7cd route=/settle-batch/v1/status status=200 latency_ms=14
+2026-10-08T12:07:37 INFO  settle-batch/sb-node-19 ticket linked id=OPS-47420 reason=flaky_healthcheck
+2026-10-08T12:07:38 INFO  settle-batch/sb-node-21 request done id=req-b67fec40 route=/settle-batch/v1/create status=200 latency_ms=284
+2026-10-08T12:07:39 ERROR settle-batch/sb-node-13 job failed job=settle-batch-rollup attempt=5 cause=upstream_timeout
+2026-10-08T12:07:41 INFO  settle-batch/sb-node-20 request done id=req-cfc9101d route=/settle-batch/v1/verify status=409 latency_ms=335
+2026-10-08T12:07:46 INFO  settle-batch/sb-node-06 backup finished file=/vault/weekly/audit_2026w35.tar.zst size_mb=79832 checksum=d8ebb663
+2026-10-08T12:07:49 INFO  settle-batch/sb-node-03 pool resize target=settle-batch-upstream max_pool_size=345 prev=324
+2026-10-08T12:07:56 INFO  settle-batch/sb-node-13 request done id=req-5086b93e route=/settle-batch/v1/create status=201 latency_ms=103
+2026-10-08T12:08:01 INFO  settle-batch/sb-node-17 request done id=req-5371151f route=/settle-batch/v1/update status=200 latency_ms=38
+2026-10-08T12:08:05 WARN  settle-batch/sb-node-16 alert fired rule=p99_latency_high value=74ms threshold=68ms
+2026-10-08T12:08:07 NOTE  settle-batch/sb-node-10 operator=hbyoon memo="헬스체크 간격을 12초에서 32초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-08T12:08:13 INFO  settle-batch/sb-node-19 request done id=req-e4719175 route=/settle-batch/v1/verify status=200 latency_ms=258
+2026-10-08T12:08:16 INFO  settle-batch/sb-node-04 pool resize target=settle-batch-cache max_pool_size=138 prev=175
+2026-10-08T12:08:21 INFO  settle-batch/sb-node-16 request done id=req-38418e06 route=/settle-batch/v1/list status=200 latency_ms=50
+2026-10-08T12:08:23 INFO  settle-batch/sb-node-21 request done id=req-aee706cd route=/settle-batch/v1/sync status=200 latency_ms=57
+2026-10-08T12:08:30 INFO  settle-batch/sb-node-07 cache stats region=ap-ne-2a hit_ratio=92.7% evictions=20983
+2026-10-08T12:08:33 INFO  settle-batch/sb-node-23 deploy step release=settle-batch-4.17.7 step=migrate result=ok took_s=61
+2026-10-08T12:08:37 INFO  settle-batch/sb-node-02 request done id=req-cab0f0a1 route=/settle-batch/v1/create status=404 latency_ms=65
+2026-10-08T12:08:38 INFO  settle-batch/sb-node-20 request done id=req-572b4992 route=/settle-batch/v1/cancel status=400 latency_ms=227
+2026-10-08T12:08:39 ERROR settle-batch/sb-node-06 job failed job=settle-batch-rollup attempt=2 cause=bad_checksum
+2026-10-08T12:08:45 INFO  settle-batch/sb-node-05 request done id=req-a6956245 route=/settle-batch/v1/create status=200 latency_ms=51
+2026-10-08T12:08:51 INFO  settle-batch/sb-node-21 request done id=req-eaf0afc4 route=/settle-batch/v1/get status=200 latency_ms=268
+2026-10-08T12:08:57 INFO  settle-batch/sb-node-18 config applied key=tls.session_cache value=34% by=sykang
+2026-10-08T12:08:58 INFO  settle-batch/sb-node-12 request done id=req-3105da87 route=/settle-batch/v1/status status=200 latency_ms=257
+2026-10-08T12:09:02 INFO  settle-batch/sb-node-09 request done id=req-df76ba70 route=/settle-batch/v1/list status=200 latency_ms=239
+2026-10-08T12:09:07 INFO  settle-batch/sb-node-02 config applied key=dns.ttl_s value=true by=yjchoi
+2026-10-08T12:09:10 INFO  settle-batch/sb-node-08 request done id=req-844e8410 route=/settle-batch/v1/sync status=200 latency_ms=154
+2026-10-08T12:09:11 INFO  settle-batch/sb-node-24 config applied key=dns.ttl_s value=4417 by=shkim
+2026-10-08T12:09:18 INFO  settle-batch/sb-node-05 request done id=req-4fa572d3 route=/settle-batch/v1/cancel status=404 latency_ms=132
+2026-10-08T12:09:23 ERROR settle-batch/sb-node-03 job failed job=settle-batch-reindex attempt=5 cause=lock_wait_exceeded
+2026-10-08T12:09:24 INFO  settle-batch/sb-node-24 pool resize target=settle-batch-cache max_pool_size=188 prev=151
+2026-10-08T12:09:29 INFO  settle-batch/sb-node-02 request done id=req-b02f12fa route=/settle-batch/v1/update status=200 latency_ms=301
+2026-10-08T12:09:33 INFO  settle-batch/sb-node-15 request done id=req-d133e442 route=/settle-batch/v1/verify status=400 latency_ms=94
+2026-10-08T12:09:36 INFO  settle-batch/sb-node-16 deploy step release=settle-batch-4.18.3 step=healthcheck result=ok took_s=163
+2026-10-08T12:09:39 INFO  settle-batch/sb-node-03 request done id=req-ba8baec9 route=/settle-batch/v1/status status=200 latency_ms=176
+2026-10-08T12:09:43 INFO  settle-batch/sb-node-04 config applied key=log.sample_rate value=2% by=ejlim
+2026-10-08T12:09:49 INFO  settle-batch/sb-node-11 request done id=req-670dc1dd route=/settle-batch/v1/create status=201 latency_ms=162
+2026-10-08T12:09:55 NOTE  settle-batch/sb-node-04 operator=dwjung memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-08T12:09:56 INFO  settle-batch/sb-node-01 request done id=req-db20695f route=/settle-batch/v1/list status=200 latency_ms=91
+2026-10-08T12:10:01 INFO  settle-batch/sb-node-19 request done id=req-2fb66160 route=/settle-batch/v1/verify status=409 latency_ms=53
+2026-10-08T12:10:05 WARN  settle-batch/sb-node-14 alert fired rule=disk_usage_warning value=76% threshold=61%
+2026-10-08T12:10:10 INFO  settle-batch/sb-node-09 request done id=req-23461932 route=/settle-batch/v1/sync status=500 latency_ms=80
+2026-10-08T12:10:16 INFO  settle-batch/sb-node-19 request done id=req-38c40d97 route=/settle-batch/v1/get status=200 latency_ms=69
+2026-10-08T12:10:17 INFO  settle-batch/sb-node-17 request done id=req-a8049788 route=/settle-batch/v1/verify status=200 latency_ms=353
+2026-10-08T12:10:22 INFO  settle-batch/sb-node-10 request done id=req-0b584b85 route=/settle-batch/v1/get status=400 latency_ms=144
+2026-10-08T12:10:25 INFO  settle-batch/sb-node-24 request done id=req-47db3771 route=/settle-batch/v1/update status=200 latency_ms=290
+2026-10-08T12:10:26 INFO  settle-batch/sb-node-14 request done id=req-6944366e route=/settle-batch/v1/create status=200 latency_ms=158
+2026-10-08T12:10:28 NOTE  settle-batch/sb-node-18 operator=sykang memo="임시 증설 22대 추가. 내일 오전 회수 예정."
+2026-10-08T12:10:29 INFO  settle-batch/sb-node-10 config applied key=dns.ttl_s value=true by=mjlee
+2026-10-08T12:10:35 INFO  settle-batch/sb-node-06 ticket linked id=OPS-49643 reason=schema_change
+2026-10-08T12:10:37 INFO  settle-batch/sb-node-19 ticket linked id=OPS-49726 reason=dns_ttl_change
+2026-10-08T12:10:42 INFO  settle-batch/sb-node-20 request done id=req-74d1291a route=/settle-batch/v1/update status=201 latency_ms=51
+2026-10-08T12:10:47 INFO  settle-batch/sb-node-07 config applied key=canary.traffic_percent value=9% by=yjchoi
+2026-10-08T12:10:54 INFO  settle-batch/sb-node-08 request done id=req-3eca185b route=/settle-batch/v1/create status=500 latency_ms=98
+2026-10-08T12:10:56 WARN  settle-batch/sb-node-05 alert fired rule=conn_pool_saturated value=88% threshold=84%
+2026-10-08T12:11:01 INFO  settle-batch/sb-node-12 request done id=req-ea01a89c route=/settle-batch/v1/sync status=503 latency_ms=55
+2026-10-08T12:11:04 WARN  settle-batch/sb-node-06 alert fired rule=fd_usage_high value=60% threshold=51%
+2026-10-08T12:11:08 INFO  settle-batch/sb-node-01 request done id=req-374a910b route=/settle-batch/v1/verify status=200 latency_ms=217
+2026-10-08T12:11:11 WARN  settle-batch/sb-node-23 alert fired rule=fd_usage_high value=85% threshold=72%
+2026-10-08T12:11:12 NOTE  settle-batch/sb-node-17 operator=ejlim memo="sb-node-17 재기동 후 지표 정상 확인."
+2026-10-08T12:11:17 INFO  settle-batch/sb-node-18 request done id=req-c3098f26 route=/settle-batch/v1/status status=200 latency_ms=65
+2026-10-08T12:11:24 INFO  settle-batch/sb-node-24 request done id=req-604307ca route=/settle-batch/v1/update status=429 latency_ms=254
+2026-10-08T12:11:29 INFO  settle-batch/sb-node-17 request done id=req-2a91bd38 route=/settle-batch/v1/verify status=200 latency_ms=240
+2026-10-08T12:11:36 INFO  settle-batch/sb-node-15 request done id=req-8b5f543e route=/settle-batch/v1/cancel status=409 latency_ms=138
+2026-10-08T12:11:40 INFO  settle-batch/sb-node-19 request done id=req-4c33cc4f route=/settle-batch/v1/create status=404 latency_ms=86
+2026-10-08T12:11:43 INFO  settle-batch/sb-node-18 request done id=req-6160e4fd route=/settle-batch/v1/status status=200 latency_ms=55
+2026-10-08T12:11:44 INFO  settle-batch/sb-node-01 config applied key=shard.count value=52% by=dwjung
+2026-10-08T12:11:49 WARN  settle-batch/sb-node-16 alert fired rule=heap_used_high value=86% threshold=77%
+2026-10-08T12:11:51 INFO  settle-batch/sb-node-02 backup finished file=/vault/weekly/inventory_2026w41.tar.zst size_mb=62070 checksum=b2a462ea
+2026-10-08T12:11:58 INFO  settle-batch/sb-node-16 request done id=req-6361bfa4 route=/settle-batch/v1/cancel status=200 latency_ms=73
+2026-10-08T12:12:01 INFO  settle-batch/sb-node-16 deploy step release=settle-batch-4.11.1 step=healthcheck result=ok took_s=219
+2026-10-08T12:12:02 INFO  settle-batch/sb-node-16 request done id=req-c39c102d route=/settle-batch/v1/get status=404 latency_ms=206
+2026-10-08T12:12:06 INFO  settle-batch/sb-node-02 request done id=req-87e6ef63 route=/settle-batch/v1/verify status=200 latency_ms=181
+2026-10-08T12:12:11 INFO  settle-batch/sb-node-09 request done id=req-dfb87ae3 route=/settle-batch/v1/verify status=200 latency_ms=44
+2026-10-08T12:12:14 INFO  settle-batch/sb-node-21 config applied key=limiter.burst value=true by=mjlee
+2026-10-08T12:12:21 WARN  settle-batch/sb-node-01 alert fired rule=heap_used_high value=56% threshold=44%
+2026-10-08T12:12:28 INFO  settle-batch/sb-node-14 request done id=req-0fbdb3b8 route=/settle-batch/v1/verify status=200 latency_ms=177
+2026-10-08T12:12:32 NOTE  settle-batch/sb-node-11 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 19일 남음."
+2026-10-08T12:12:33 INFO  settle-batch/sb-node-06 request done id=req-6d997f1e route=/settle-batch/v1/update status=200 latency_ms=42
+2026-10-08T12:12:39 INFO  settle-batch/sb-node-20 request done id=req-a1298621 route=/settle-batch/v1/create status=500 latency_ms=133
+2026-10-08T12:12:45 INFO  settle-batch/sb-node-10 request done id=req-a856d5c8 route=/settle-batch/v1/sync status=400 latency_ms=132
+2026-10-08T12:12:51 INFO  settle-batch/sb-node-10 backup finished file=/vault/weekly/audit_2026w44.tar.zst size_mb=8554 checksum=0fcf929f
+2026-10-08T12:12:53 INFO  settle-batch/sb-node-09 request done id=req-795d03cd route=/settle-batch/v1/verify status=200 latency_ms=135
+2026-10-08T12:12:57 INFO  settle-batch/sb-node-21 request done id=req-a30b9104 route=/settle-batch/v1/status status=204 latency_ms=26
+2026-10-08T12:13:02 INFO  settle-batch/sb-node-16 request done id=req-23dd77c4 route=/settle-batch/v1/list status=400 latency_ms=69
+2026-10-08T12:13:07 INFO  settle-batch/sb-node-15 request done id=req-e29806e1 route=/settle-batch/v1/list status=500 latency_ms=39
+2026-10-08T12:13:08 INFO  settle-batch/sb-node-24 deploy step release=settle-batch-4.17.5 step=drain result=ok took_s=7
+2026-10-08T12:13:12 INFO  settle-batch/sb-node-07 ticket linked id=OPS-49103 reason=oncall_handoff
+2026-10-08T12:13:18 WARN  settle-batch/sb-node-19 alert fired rule=cpu_steal_high value=55% threshold=42%
+2026-10-08T12:13:25 INFO  settle-batch/sb-node-05 request done id=req-36f27f3f route=/settle-batch/v1/get status=200 latency_ms=95
+2026-10-08T12:13:28 INFO  settle-batch/sb-node-20 request done id=req-6de763ba route=/settle-batch/v1/update status=503 latency_ms=54
+2026-10-08T12:13:34 INFO  settle-batch/sb-node-22 request done id=req-f30dbede route=/settle-batch/v1/create status=200 latency_ms=220
+2026-10-08T12:13:41 INFO  settle-batch/sb-node-07 cache stats region=ap-ne-2a hit_ratio=98.5% evictions=4458
+2026-10-08T12:13:46 INFO  settle-batch/sb-node-23 pool resize target=settle-batch-queue max_pool_size=180 prev=139
+2026-10-08T12:13:47 INFO  settle-batch/sb-node-17 request done id=req-4c4558e3 route=/settle-batch/v1/cancel status=200 latency_ms=52
+2026-10-08T12:13:52 INFO  settle-batch/sb-node-09 cache stats region=ap-ne-2a hit_ratio=86.8% evictions=12827
+2026-10-08T12:13:57 INFO  settle-batch/sb-node-06 request done id=req-25a330f5 route=/settle-batch/v1/update status=200 latency_ms=61
+2026-10-08T12:13:58 INFO  settle-batch/sb-node-06 config applied key=limiter.rps value=22 by=jhpark
+2026-10-08T12:14:00 INFO  settle-batch/sb-node-23 deploy step release=settle-batch-4.18.5 step=shift_traffic_50 result=ok took_s=155
+2026-10-08T12:14:01 INFO  settle-batch/sb-node-02 pool resize target=settle-batch-worker max_pool_size=141 prev=115
+2026-10-08T12:14:05 INFO  settle-batch/sb-node-05 pool resize target=settle-batch-queue max_pool_size=30 prev=4
+2026-10-08T12:14:06 INFO  settle-batch/sb-node-04 request done id=req-73003c84 route=/settle-batch/v1/list status=503 latency_ms=65
+2026-10-08T12:14:11 INFO  settle-batch/sb-node-24 request done id=req-5e43fe1e route=/settle-batch/v1/create status=201 latency_ms=30
+2026-10-08T12:14:17 INFO  settle-batch/sb-node-17 config applied key=retry.backoff_ms value=4694 by=jhpark
+2026-10-08T12:14:24 INFO  settle-batch/sb-node-12 request done id=req-471309f1 route=/settle-batch/v1/update status=200 latency_ms=30
+2026-10-08T12:14:28 INFO  settle-batch/sb-node-15 ticket linked id=OPS-49844 reason=node_drain
+2026-10-08T12:14:29 WARN  settle-batch/sb-node-22 alert fired rule=gc_pause_long value=59ms threshold=48ms
+2026-10-08T12:14:35 INFO  settle-batch/sb-node-02 request done id=req-fd389475 route=/settle-batch/v1/create status=200 latency_ms=215
+2026-10-08T12:14:38 INFO  settle-batch/sb-node-22 request done id=req-344fc84b route=/settle-batch/v1/list status=200 latency_ms=307
+2026-10-08T12:14:41 INFO  settle-batch/sb-node-17 deploy step release=settle-batch-4.15.5 step=migrate result=ok took_s=120
+2026-10-08T12:14:44 INFO  settle-batch/sb-node-18 request done id=req-14f339e7 route=/settle-batch/v1/cancel status=429 latency_ms=193
+2026-10-08T12:14:48 INFO  settle-batch/sb-node-05 backup finished file=/vault/daily/payments_20261016.tar.zst size_mb=63576 checksum=a8968166
+2026-10-08T12:14:51 WARN  settle-batch/sb-node-12 alert fired rule=conn_pool_saturated value=97% threshold=92%
+2026-10-08T12:14:53 INFO  settle-batch/sb-node-02 backup finished file=/vault/daily/audit_20261026.tar.zst size_mb=67568 checksum=1b8e8459
+2026-10-08T12:14:59 WARN  settle-batch/sb-node-15 alert fired rule=heap_used_high value=79% threshold=67%
+2026-10-08T12:15:06 INFO  settle-batch/sb-node-05 request done id=req-37ee99da route=/settle-batch/v1/status status=200 latency_ms=43
+2026-10-08T12:15:07 NOTE  settle-batch/sb-node-18 operator=mjlee memo="sb-node-18 재기동 후 지표 정상 확인."
+2026-10-08T12:15:11 WARN  settle-batch/sb-node-15 alert fired rule=queue_depth_high value=97 threshold=89
+2026-10-08T12:15:13 INFO  settle-batch/sb-node-19 config applied key=http.max_conns value=false by=ejlim
+2026-10-08T12:15:20 INFO  settle-batch/sb-node-07 request done id=req-52ddb9e0 route=/settle-batch/v1/verify status=200 latency_ms=122
+2026-10-08T12:15:21 ERROR settle-batch/sb-node-05 job failed job=settle-batch-export attempt=3 cause=upstream_timeout
+2026-10-08T12:15:22 INFO  settle-batch/sb-node-19 request done id=req-96af0c23 route=/settle-batch/v1/create status=200 latency_ms=60
+2026-10-08T12:15:25 INFO  settle-batch/sb-node-21 request done id=req-7a2e265f route=/settle-batch/v1/cancel status=503 latency_ms=79
+2026-10-08T12:15:32 NOTE  settle-batch/sb-node-22 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 56일 남음."
+2026-10-08T12:15:37 INFO  settle-batch/sb-node-13 deploy step release=settle-batch-4.13.3 step=shift_traffic_10 result=ok took_s=93
+2026-10-08T12:15:40 WARN  settle-batch/sb-node-21 alert fired rule=replica_lag_high value=73s threshold=66s
+2026-10-08T12:15:41 INFO  settle-batch/sb-node-12 ticket linked id=OPS-49426 reason=schema_change
+2026-10-08T12:15:48 INFO  settle-batch/sb-node-16 config applied key=retry.max_attempts value=41% by=dwjung
+2026-10-08T12:15:52 INFO  settle-batch/sb-node-21 request done id=req-2b858040 route=/settle-batch/v1/update status=200 latency_ms=65
+2026-10-08T12:15:53 INFO  settle-batch/sb-node-24 config applied key=queue.visibility_s value=71% by=dwjung
+2026-10-08T12:15:59 INFO  settle-batch/sb-node-11 request done id=req-7fd201a5 route=/settle-batch/v1/verify status=201 latency_ms=72
+2026-10-08T12:16:06 INFO  settle-batch/sb-node-03 request done id=req-8c4c5282 route=/settle-batch/v1/cancel status=200 latency_ms=133
+2026-10-08T12:16:08 INFO  settle-batch/sb-node-12 backup finished file=/vault/weekly/sessions_2026w33.tar.zst size_mb=24627 checksum=a9f0e802
+2026-10-08T12:16:11 INFO  settle-batch/sb-node-23 request done id=req-9b1c6f57 route=/settle-batch/v1/get status=503 latency_ms=134
+2026-10-08T12:16:12 INFO  settle-batch/sb-node-16 pool resize target=settle-batch-cache max_pool_size=267 prev=236
+2026-10-08T12:16:14 INFO  settle-batch/sb-node-17 request done id=req-f33d537b route=/settle-batch/v1/verify status=503 latency_ms=137
+2026-10-08T12:16:15 INFO  settle-batch/sb-node-03 request done id=req-c6cf5a1c route=/settle-batch/v1/sync status=200 latency_ms=56
+2026-10-08T12:16:21 INFO  settle-batch/sb-node-18 config applied key=retry.backoff_ms value=true by=sykang
+2026-10-08T12:16:28 INFO  settle-batch/sb-node-17 ticket linked id=OPS-47535 reason=cert_rotation
+2026-10-08T12:16:29 INFO  settle-batch/sb-node-11 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=65925 checksum=7209ecc3
+2026-10-08T12:16:32 WARN  settle-batch/sb-node-18 alert fired rule=p99_latency_high value=95ms threshold=80ms
+2026-10-08T12:16:39 INFO  settle-batch/sb-node-18 request done id=req-ec00d66d route=/settle-batch/v1/verify status=400 latency_ms=499
+2026-10-08T12:16:45 INFO  settle-batch/sb-node-08 request done id=req-3144decb route=/settle-batch/v1/create status=204 latency_ms=103
+2026-10-08T12:16:46 WARN  settle-batch/sb-node-14 alert fired rule=disk_usage_warning value=53% threshold=52%
+2026-10-08T12:16:51 INFO  settle-batch/sb-node-12 backup finished file=/vault/daily/inventory_20261022.tar.zst size_mb=78705 checksum=b4ee28e9
+2026-10-08T12:16:58 INFO  settle-batch/sb-node-20 config applied key=shard.count value=true by=jhpark
+2026-10-08T12:17:05 INFO  settle-batch/sb-node-24 request done id=req-803a4fb1 route=/settle-batch/v1/cancel status=429 latency_ms=75
+2026-10-08T12:17:10 INFO  settle-batch/sb-node-06 request done id=req-1ead8b68 route=/settle-batch/v1/update status=200 latency_ms=139
+2026-10-08T12:17:14 INFO  settle-batch/sb-node-17 config applied key=dns.ttl_s value=65% by=hbyoon
+2026-10-08T12:17:17 WARN  settle-batch/sb-node-20 alert fired rule=disk_usage_warning value=83% threshold=75%
+2026-10-08T12:17:24 INFO  settle-batch/sb-node-22 pool resize target=settle-batch-upstream max_pool_size=393 prev=410
+2026-10-08T12:17:27 WARN  settle-batch/sb-node-22 alert fired rule=conn_pool_saturated value=73% threshold=62%
+2026-10-08T12:17:30 INFO  settle-batch/sb-node-09 ticket linked id=OPS-48282 reason=flaky_healthcheck
+2026-10-08T12:17:32 INFO  settle-batch/sb-node-15 config applied key=shard.count value=true by=mjlee
+2026-10-08T12:17:37 INFO  settle-batch/sb-node-20 request done id=req-f8109d82 route=/settle-batch/v1/status status=200 latency_ms=53
+2026-10-08T12:17:42 INFO  settle-batch/sb-node-06 config applied key=limiter.rps value=6110 by=jhpark
+2026-10-08T12:17:43 INFO  settle-batch/sb-node-19 ticket linked id=OPS-47359 reason=flaky_healthcheck
+2026-10-08T12:17:48 INFO  settle-batch/sb-node-12 request done id=req-f7ea5f9a route=/settle-batch/v1/get status=201 latency_ms=70
+2026-10-08T12:17:55 INFO  settle-batch/sb-node-18 request done id=req-d8827dc2 route=/settle-batch/v1/create status=429 latency_ms=162
+2026-10-08T12:18:00 INFO  settle-batch/sb-node-03 backup finished file=/vault/daily/inventory_20261020.tar.zst size_mb=29772 checksum=e730a587
+2026-10-08T12:18:04 INFO  settle-batch/sb-node-04 request done id=req-0323fb6c route=/settle-batch/v1/create status=400 latency_ms=123
+2026-10-08T12:18:10 INFO  settle-batch/sb-node-01 cache stats region=ap-ne-2a hit_ratio=72.4% evictions=18204
+2026-10-08T12:18:14 INFO  settle-batch/sb-node-21 pool resize target=settle-batch-worker max_pool_size=156 prev=149
+2026-10-08T12:18:18 INFO  settle-batch/sb-node-07 request done id=req-202d6595 route=/settle-batch/v1/verify status=200 latency_ms=88
+2026-10-08T12:18:21 INFO  settle-batch/sb-node-19 config applied key=limiter.burst value=52 by=ejlim
+2026-10-08T12:18:25 INFO  settle-batch/sb-node-11 request done id=req-157e38b8 route=/settle-batch/v1/list status=503 latency_ms=250
+2026-10-08T12:18:32 WARN  settle-batch/sb-node-14 alert fired rule=p99_latency_high value=73ms threshold=66ms
+2026-10-08T12:18:33 INFO  settle-batch/sb-node-20 request done id=req-1d72730e route=/settle-batch/v1/create status=400 latency_ms=62
+2026-10-08T12:18:34 INFO  settle-batch/sb-node-07 config applied key=canary.latency_p99_threshold_ms value=false by=yjchoi
+2026-10-08T12:18:38 NOTE  settle-batch/sb-node-17 operator=sykang memo="로그 보존 기간은 49일로 유지하기로 함."
+2026-10-08T12:18:42 INFO  settle-batch/sb-node-06 request done id=req-71548d9b route=/settle-batch/v1/verify status=200 latency_ms=364
+2026-10-08T12:18:48 WARN  settle-batch/sb-node-03 alert fired rule=fd_usage_high value=75% threshold=60%
+2026-10-08T12:18:52 INFO  settle-batch/sb-node-03 pool resize target=settle-batch-worker max_pool_size=51 prev=31
+2026-10-08T12:18:57 ERROR settle-batch/sb-node-20 job failed job=settle-batch-export attempt=4 cause=bad_checksum
+2026-10-08T12:19:01 INFO  settle-batch/sb-node-15 request done id=req-240d1f4e route=/settle-batch/v1/status status=201 latency_ms=427
+2026-10-08T12:19:02 INFO  settle-batch/sb-node-11 deploy step release=settle-batch-4.15.2 step=shift_traffic_10 result=ok took_s=111
+2026-10-08T12:19:06 INFO  settle-batch/sb-node-17 request done id=req-e979087c route=/settle-batch/v1/verify status=409 latency_ms=59
+2026-10-08T12:19:11 INFO  settle-batch/sb-node-01 request done id=req-49280cb8 route=/settle-batch/v1/create status=200 latency_ms=81
+2026-10-08T12:19:13 INFO  settle-batch/sb-node-01 request done id=req-9ff79e22 route=/settle-batch/v1/status status=200 latency_ms=85
+2026-10-08T12:19:19 INFO  settle-batch/sb-node-14 request done id=req-29d2cedf route=/settle-batch/v1/verify status=200 latency_ms=291
+2026-10-08T12:19:21 INFO  settle-batch/sb-node-16 deploy step release=settle-batch-4.12.1 step=warmup result=ok took_s=9
+2026-10-08T12:19:22 INFO  settle-batch/sb-node-21 backup finished file=/vault/weekly/inventory_2026w34.tar.zst size_mb=44464 checksum=1d037bb7
+2026-10-08T12:19:24 INFO  settle-batch/sb-node-12 request done id=req-a0752c6e route=/settle-batch/v1/list status=200 latency_ms=81
+2026-10-08T12:19:29 INFO  settle-batch/sb-node-24 request done id=req-e7c55174 route=/settle-batch/v1/verify status=409 latency_ms=92
+2026-10-08T12:19:33 INFO  settle-batch/sb-node-05 backup finished file=/vault/daily/orders_20261003.tar.zst size_mb=17693 checksum=ea51c61f
+2026-10-08T12:19:39 INFO  settle-batch/sb-node-07 backup finished file=/vault/daily/payments_20261010.tar.zst size_mb=67186 checksum=e147d538
+2026-10-08T12:19:40 INFO  settle-batch/sb-node-14 request done id=req-6dc84330 route=/settle-batch/v1/cancel status=200 latency_ms=54
+2026-10-08T12:19:46 INFO  settle-batch/sb-node-22 pool resize target=settle-batch-queue max_pool_size=159 prev=217
+2026-10-08T12:19:50 INFO  settle-batch/sb-node-17 request done id=req-248b1596 route=/settle-batch/v1/list status=200 latency_ms=102
+2026-10-08T12:19:55 INFO  settle-batch/sb-node-17 request done id=req-752dbd00 route=/settle-batch/v1/list status=404 latency_ms=293
+2026-10-08T12:19:56 INFO  settle-batch/sb-node-09 ticket linked id=OPS-48119 reason=schema_change
+2026-10-08T12:20:03 INFO  settle-batch/sb-node-03 config applied key=http.read_timeout_ms value=true by=jhpark
+2026-10-08T12:20:05 NOTE  settle-batch/sb-node-21 operator=mjlee memo="캐시 TTL을 10초로 되돌림. 오래된 응답이 보고됨."
+2026-10-08T12:20:06 INFO  settle-batch/sb-node-12 request done id=req-49aaf788 route=/settle-batch/v1/create status=200 latency_ms=452
+2026-10-08T12:20:13 WARN  settle-batch/sb-node-15 alert fired rule=conn_pool_saturated value=85% threshold=77%
+2026-10-08T12:20:16 INFO  settle-batch/sb-node-12 config applied key=retry.backoff_ms value=false by=mjlee
+2026-10-08T12:20:20 NOTE  settle-batch/sb-node-09 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-08T12:20:23 NOTE  settle-batch/sb-node-12 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-08T12:20:25 INFO  settle-batch/sb-node-05 cache stats region=us-we-2b hit_ratio=89.4% evictions=14681
+2026-10-08T12:20:31 WARN  settle-batch/sb-node-03 alert fired rule=heap_used_high value=76% threshold=69%
+2026-10-08T12:20:37 NOTE  settle-batch/sb-node-14 operator=mjlee memo="재시도 상한을 5회에서 3회로 낮춤. 4회차부터 정산 원장에 중복 행이 생기는 것을 확인했기 때문."
+2026-10-08T12:20:39 WARN  settle-batch/sb-node-04 alert fired rule=queue_depth_high value=64 threshold=53
+2026-10-08T12:20:46 INFO  settle-batch/sb-node-11 deploy step release=settle-batch-4.22.5 step=start result=ok took_s=38
+2026-10-08T12:20:50 INFO  settle-batch/sb-node-22 request done id=req-09506bbd route=/settle-batch/v1/cancel status=503 latency_ms=59
+2026-10-08T12:20:51 INFO  settle-batch/sb-node-20 request done id=req-c9eaaaaa route=/settle-batch/v1/status status=429 latency_ms=32
+2026-10-08T12:20:53 INFO  settle-batch/sb-node-05 deploy step release=settle-batch-4.17.2 step=shift_traffic_50 result=ok took_s=160
+2026-10-08T12:20:57 NOTE  settle-batch/sb-node-11 operator=shkim memo="연동 팀에 변경 공지 완료."
+2026-10-08T12:21:00 WARN  settle-batch/sb-node-17 alert fired rule=heap_used_high value=50% threshold=39%
+2026-10-08T12:21:03 INFO  settle-batch/sb-node-16 request done id=req-edfcea5c route=/settle-batch/v1/create status=200 latency_ms=175
+2026-10-08T12:21:04 INFO  settle-batch/sb-node-19 cache stats region=us-we-2b hit_ratio=63.5% evictions=10755
+2026-10-08T12:21:10 INFO  settle-batch/sb-node-13 request done id=req-106a70cf route=/settle-batch/v1/status status=200 latency_ms=54
+2026-10-08T12:21:14 INFO  settle-batch/sb-node-24 request done id=req-0473532a route=/settle-batch/v1/list status=200 latency_ms=95
+2026-10-08T12:21:15 INFO  settle-batch/sb-node-22 backup finished file=/vault/daily/audit_20261017.tar.zst size_mb=89883 checksum=acf0cf1e
+2026-10-08T12:21:21 INFO  settle-batch/sb-node-23 request done id=req-68936a06 route=/settle-batch/v1/update status=404 latency_ms=150
+2026-10-08T12:21:25 INFO  settle-batch/sb-node-19 request done id=req-26aca7e0 route=/settle-batch/v1/list status=200 latency_ms=276
+2026-10-08T12:21:30 INFO  settle-batch/sb-node-19 backup finished file=/vault/daily/sessions_20261009.tar.zst size_mb=48463 checksum=a499d824
+2026-10-08T12:21:32 INFO  settle-batch/sb-node-13 ticket linked id=OPS-47879 reason=node_drain
+2026-10-08T12:21:39 INFO  settle-batch/sb-node-10 config applied key=limiter.burst value=3 by=shkim
+2026-10-08T12:21:43 NOTE  settle-batch/sb-node-07 operator=ejlim memo="헬스체크 간격을 26초에서 30초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-08T12:21:44 INFO  settle-batch/sb-node-17 request done id=req-c77c3121 route=/settle-batch/v1/sync status=200 latency_ms=109
+2026-10-08T12:21:46 INFO  settle-batch/sb-node-15 request done id=req-4173101b route=/settle-batch/v1/list status=200 latency_ms=77
+2026-10-08T12:21:47 ERROR settle-batch/sb-node-15 job failed job=settle-batch-rollup attempt=3 cause=bad_checksum
+2026-10-08T12:21:50 ERROR settle-batch/sb-node-09 job failed job=settle-batch-cleanup attempt=4 cause=oom_killed
+2026-10-08T12:21:57 INFO  settle-batch/sb-node-01 request done id=req-aad6190f route=/settle-batch/v1/list status=400 latency_ms=154
+2026-10-08T12:22:02 INFO  settle-batch/sb-node-10 request done id=req-cb6e1cac route=/settle-batch/v1/verify status=201 latency_ms=62
+2026-10-08T12:22:04 WARN  settle-batch/sb-node-13 alert fired rule=disk_usage_warning value=69% threshold=65%
+2026-10-08T12:22:11 INFO  settle-batch/sb-node-01 request done id=req-ca8e16af route=/settle-batch/v1/sync status=429 latency_ms=56
+2026-10-08T12:22:12 INFO  settle-batch/sb-node-04 request done id=req-91309aa3 route=/settle-batch/v1/cancel status=500 latency_ms=63
+2026-10-08T12:22:18 INFO  settle-batch/sb-node-03 request done id=req-641d9142 route=/settle-batch/v1/status status=400 latency_ms=155
+2026-10-08T12:22:23 INFO  settle-batch/sb-node-06 backup finished file=/vault/weekly/users_2026w33.tar.zst size_mb=21193 checksum=713108fd
+2026-10-08T12:22:25 INFO  settle-batch/sb-node-04 request done id=req-3f22d822 route=/settle-batch/v1/verify status=200 latency_ms=53
+2026-10-08T12:22:28 INFO  settle-batch/sb-node-05 request done id=req-4a3b496c route=/settle-batch/v1/list status=500 latency_ms=103
+2026-10-08T12:22:29 INFO  settle-batch/sb-node-17 request done id=req-0b17aa7c route=/settle-batch/v1/update status=500 latency_ms=300
+2026-10-08T12:22:35 INFO  settle-batch/sb-node-02 request done id=req-380fb4f8 route=/settle-batch/v1/create status=200 latency_ms=135
+2026-10-08T12:22:40 INFO  settle-batch/sb-node-24 pool resize target=settle-batch-cache max_pool_size=314 prev=329
+2026-10-08T12:22:43 INFO  settle-batch/sb-node-08 pool resize target=settle-batch-db max_pool_size=305 prev=345
+2026-10-08T12:22:44 WARN  settle-batch/sb-node-01 alert fired rule=queue_depth_high value=69 threshold=58
+2026-10-08T12:22:45 WARN  settle-batch/sb-node-19 alert fired rule=p99_latency_high value=62ms threshold=54ms
+2026-10-08T12:22:48 ERROR settle-batch/sb-node-18 job failed job=settle-batch-reindex attempt=3 cause=quota_exceeded
+2026-10-08T12:22:51 INFO  settle-batch/sb-node-09 request done id=req-b2a59e87 route=/settle-batch/v1/sync status=200 latency_ms=53
+2026-10-08T12:22:57 INFO  settle-batch/sb-node-11 ticket linked id=OPS-48056 reason=log_volume_spike
+2026-10-08T12:23:03 WARN  settle-batch/sb-node-11 alert fired rule=queue_depth_high value=54 threshold=43
+2026-10-08T12:23:08 NOTE  settle-batch/sb-node-17 operator=jhpark memo="캐시 TTL을 7초로 되돌림. 오래된 응답이 보고됨."
+2026-10-08T12:23:11 INFO  settle-batch/sb-node-03 request done id=req-75c0f725 route=/settle-batch/v1/cancel status=201 latency_ms=433
+2026-10-08T12:23:18 INFO  settle-batch/sb-node-06 cache stats region=ap-ne-2b hit_ratio=95.6% evictions=35905
+2026-10-08T12:23:22 WARN  settle-batch/sb-node-06 alert fired rule=fd_usage_high value=59% threshold=47%
+2026-10-08T12:23:25 INFO  settle-batch/sb-node-10 request done id=req-d1b3e097 route=/settle-batch/v1/get status=200 latency_ms=102
+2026-10-08T12:23:27 INFO  settle-batch/sb-node-06 request done id=req-2a1977cb route=/settle-batch/v1/create status=200 latency_ms=193
+2026-10-08T12:23:32 INFO  settle-batch/sb-node-06 config applied key=retry.max_attempts value=20 by=shkim
+2026-10-08T12:23:39 INFO  settle-batch/sb-node-04 request done id=req-ceb15fae route=/settle-batch/v1/verify status=200 latency_ms=94
+2026-10-08T12:23:45 INFO  settle-batch/sb-node-07 request done id=req-0bd38acc route=/settle-batch/v1/status status=400 latency_ms=99
+2026-10-08T12:23:51 NOTE  settle-batch/sb-node-13 operator=hbyoon memo="sb-node-13 재기동 후 지표 정상 확인."
+2026-10-08T12:23:58 INFO  settle-batch/sb-node-15 cache stats region=ap-ne-2b hit_ratio=91.4% evictions=79
+2026-10-08T12:24:03 INFO  settle-batch/sb-node-17 config applied key=limiter.rps value=84% by=mjlee
+2026-10-08T12:24:09 INFO  settle-batch/sb-node-18 pool resize target=settle-batch-cache max_pool_size=9 prev=4
+2026-10-08T12:24:14 INFO  settle-batch/sb-node-21 backup finished file=/vault/daily/users_20261015.tar.zst size_mb=87969 checksum=5263b39c
+2026-10-08T12:24:16 INFO  settle-batch/sb-node-01 config applied key=limiter.rps value=43 by=sykang
+2026-10-08T12:24:23 INFO  settle-batch/sb-node-13 pool resize target=settle-batch-worker max_pool_size=130 prev=72
+2026-10-08T12:24:27 WARN  settle-batch/sb-node-16 alert fired rule=replica_lag_high value=66s threshold=63s
+2026-10-08T12:24:31 INFO  settle-batch/sb-node-13 request done id=req-80faca09 route=/settle-batch/v1/get status=200 latency_ms=352
+2026-10-08T12:24:36 INFO  settle-batch/sb-node-18 request done id=req-9708a143 route=/settle-batch/v1/list status=500 latency_ms=125
+2026-10-08T12:24:42 INFO  settle-batch/sb-node-07 config applied key=queue.visibility_s value=false by=hbyoon
+2026-10-08T12:24:43 WARN  settle-batch/sb-node-18 alert fired rule=replica_lag_high value=70s threshold=64s
+2026-10-08T12:24:46 INFO  settle-batch/sb-node-21 request done id=req-0199587c route=/settle-batch/v1/get status=429 latency_ms=134
+2026-10-08T12:24:49 INFO  settle-batch/sb-node-24 config applied key=http.read_timeout_ms value=5995 by=yjchoi
+2026-10-08T12:24:52 NOTE  settle-batch/sb-node-21 operator=mjlee memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-08T12:24:57 INFO  settle-batch/sb-node-03 ticket linked id=OPS-49920 reason=runbook_update
+2026-10-08T12:25:00 WARN  settle-batch/sb-node-11 alert fired rule=queue_depth_high value=64 threshold=61
+2026-10-08T12:25:04 INFO  settle-batch/sb-node-17 request done id=req-5389a0dd route=/settle-batch/v1/sync status=200 latency_ms=168
+2026-10-08T12:25:09 WARN  settle-batch/sb-node-17 alert fired rule=cpu_steal_high value=64% threshold=53%
+2026-10-08T12:25:10 INFO  settle-batch/sb-node-01 request done id=req-6c4243d3 route=/settle-batch/v1/update status=200 latency_ms=107
+2026-10-08T12:25:14 WARN  settle-batch/sb-node-13 alert fired rule=disk_usage_warning value=78% threshold=64%
+2026-10-08T12:25:16 INFO  settle-batch/sb-node-17 ticket linked id=OPS-48868 reason=dependency_upgrade
+2026-10-08T12:25:20 INFO  settle-batch/sb-node-24 request done id=req-a8dfaae0 route=/settle-batch/v1/sync status=400 latency_ms=64
+2026-10-08T12:25:22 INFO  settle-batch/sb-node-23 request done id=req-8648c4b4 route=/settle-batch/v1/create status=200 latency_ms=99
+2026-10-08T12:25:28 INFO  settle-batch/sb-node-18 request done id=req-6ed34d31 route=/settle-batch/v1/list status=201 latency_ms=128
+2026-10-08T12:25:29 INFO  settle-batch/sb-node-16 cache stats region=us-we-2b hit_ratio=83.9% evictions=19262
+2026-10-08T12:25:34 WARN  settle-batch/sb-node-02 alert fired rule=replica_lag_high value=51s threshold=50s
+2026-10-08T12:25:37 INFO  settle-batch/sb-node-01 request done id=req-d0573421 route=/settle-batch/v1/update status=200 latency_ms=122
+2026-10-08T12:25:43 INFO  settle-batch/sb-node-18 request done id=req-ce549416 route=/settle-batch/v1/status status=201 latency_ms=76
+2026-10-08T12:25:50 INFO  settle-batch/sb-node-04 request done id=req-b80805f5 route=/settle-batch/v1/create status=200 latency_ms=117
+2026-10-08T12:25:55 INFO  settle-batch/sb-node-05 request done id=req-88c40d91 route=/settle-batch/v1/sync status=204 latency_ms=92
+2026-10-08T12:25:58 INFO  settle-batch/sb-node-06 request done id=req-2994df76 route=/settle-batch/v1/list status=500 latency_ms=68
+2026-10-08T12:26:00 INFO  settle-batch/sb-node-23 request done id=req-7d13175d route=/settle-batch/v1/sync status=200 latency_ms=427
+2026-10-08T12:26:01 INFO  settle-batch/sb-node-23 pool resize target=settle-batch-queue max_pool_size=303 prev=363
+2026-10-08T12:26:06 INFO  settle-batch/sb-node-15 request done id=req-27e5f93c route=/settle-batch/v1/sync status=200 latency_ms=353
+2026-10-08T12:26:13 WARN  settle-batch/sb-node-24 alert fired rule=p99_latency_high value=57ms threshold=55ms
+2026-10-08T12:26:15 INFO  settle-batch/sb-node-13 request done id=req-0d950d86 route=/settle-batch/v1/verify status=400 latency_ms=24
+2026-10-08T12:26:19 WARN  settle-batch/sb-node-23 alert fired rule=queue_depth_high value=97 threshold=83
+2026-10-08T12:26:24 WARN  settle-batch/sb-node-10 alert fired rule=error_ratio_high value=66% threshold=61%
+2026-10-08T12:26:26 INFO  settle-batch/sb-node-20 request done id=req-eb637779 route=/settle-batch/v1/update status=200 latency_ms=320
+2026-10-08T12:26:30 INFO  settle-batch/sb-node-18 pool resize target=settle-batch-cache max_pool_size=229 prev=260
+2026-10-08T12:26:37 INFO  settle-batch/sb-node-02 request done id=req-5a05ba2e route=/settle-batch/v1/update status=200 latency_ms=63
+2026-10-08T12:26:43 WARN  settle-batch/sb-node-04 alert fired rule=heap_used_high value=58% threshold=54%
+2026-10-08T12:26:50 INFO  settle-batch/sb-node-07 ticket linked id=OPS-48070 reason=cert_rotation
+2026-10-08T12:26:53 INFO  settle-batch/sb-node-03 request done id=req-829f44a0 route=/settle-batch/v1/update status=200 latency_ms=133
+2026-10-08T12:26:59 INFO  settle-batch/sb-node-05 backup finished file=/vault/weekly/audit_2026w44.tar.zst size_mb=6577 checksum=4aca91d2
+2026-10-08T12:27:01 INFO  settle-batch/sb-node-04 request done id=req-df9008f8 route=/settle-batch/v1/verify status=200 latency_ms=110
+2026-10-08T12:27:05 ERROR settle-batch/sb-node-22 job failed job=settle-batch-export attempt=5 cause=lock_wait_exceeded
+2026-10-08T12:27:12 INFO  settle-batch/sb-node-01 ticket linked id=OPS-47764 reason=node_drain
+2026-10-08T12:27:19 INFO  settle-batch/sb-node-23 ticket linked id=OPS-49547 reason=oncall_handoff
+2026-10-08T12:27:24 INFO  settle-batch/sb-node-15 request done id=req-9cddf122 route=/settle-batch/v1/sync status=500 latency_ms=95
+2026-10-08T12:27:28 INFO  settle-batch/sb-node-08 config applied key=worker.concurrency value=56 by=hbyoon
+2026-10-08T12:27:35 WARN  settle-batch/sb-node-23 alert fired rule=heap_used_high value=75% threshold=60%
+2026-10-08T12:27:40 INFO  settle-batch/sb-node-17 pool resize target=settle-batch-db max_pool_size=231 prev=202
+2026-10-08T12:27:46 INFO  settle-batch/sb-node-11 config applied key=tls.session_cache value=1006 by=dwjung
+2026-10-08T12:27:51 ERROR settle-batch/sb-node-19 job failed job=settle-batch-cleanup attempt=2 cause=upstream_timeout
+2026-10-08T12:27:53 ERROR settle-batch/sb-node-02 job failed job=settle-batch-rollup attempt=5 cause=bad_checksum
+2026-10-08T12:27:58 NOTE  settle-batch/sb-node-10 operator=shkim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-08T12:28:00 INFO  settle-batch/sb-node-22 request done id=req-f728b17b route=/settle-batch/v1/list status=200 latency_ms=1095
+2026-10-08T12:28:03 INFO  settle-batch/sb-node-08 request done id=req-6bce476b route=/settle-batch/v1/update status=201 latency_ms=196
+2026-10-08T12:28:10 INFO  settle-batch/sb-node-01 deploy step release=settle-batch-4.19.0 step=shift_traffic_50 result=ok took_s=159
+2026-10-08T12:28:17 INFO  settle-batch/sb-node-19 backup finished file=/vault/weekly/payments_2026w37.tar.zst size_mb=68850 checksum=42a0cf29
+2026-10-08T12:28:24 ERROR settle-batch/sb-node-24 job failed job=settle-batch-export attempt=5 cause=upstream_timeout
+2026-10-08T12:28:28 INFO  settle-batch/sb-node-20 request done id=req-6abe4515 route=/settle-batch/v1/list status=404 latency_ms=131
+2026-10-08T12:28:33 INFO  settle-batch/sb-node-10 deploy step release=settle-batch-4.21.9 step=shift_traffic_100 result=ok took_s=102
+2026-10-08T12:28:40 WARN  settle-batch/sb-node-03 alert fired rule=replica_lag_high value=64s threshold=57s
+2026-10-08T12:28:41 INFO  settle-batch/sb-node-22 deploy step release=settle-batch-4.11.9 step=shift_traffic_10 result=ok took_s=13
+2026-10-08T12:28:42 INFO  settle-batch/sb-node-07 request done id=req-cd8ee697 route=/settle-batch/v1/sync status=201 latency_ms=262
+2026-10-08T12:28:45 NOTE  settle-batch/sb-node-04 operator=hbyoon memo="점검 창을 53분 연장함. 승인: 류태경 팀장."
+2026-10-08T12:28:46 INFO  settle-batch/sb-node-13 cache stats region=ap-ne-2c hit_ratio=66.5% evictions=9247
+2026-10-08T12:28:53 INFO  settle-batch/sb-node-03 request done id=req-63af7888 route=/settle-batch/v1/sync status=200 latency_ms=143
+2026-10-08T12:28:58 INFO  settle-batch/sb-node-13 request done id=req-283f3a28 route=/settle-batch/v1/get status=503 latency_ms=126
+2026-10-08T12:29:04 WARN  settle-batch/sb-node-01 alert fired rule=p99_latency_high value=51ms threshold=46ms
+2026-10-08T12:29:08 INFO  settle-batch/sb-node-20 request done id=req-4c14de5d route=/settle-batch/v1/list status=200 latency_ms=95
+2026-10-08T12:29:12 INFO  settle-batch/sb-node-02 request done id=req-f91a49f0 route=/settle-batch/v1/status status=200 latency_ms=25
+2026-10-08T12:29:17 INFO  settle-batch/sb-node-15 request done id=req-0c8d131f route=/settle-batch/v1/cancel status=200 latency_ms=126
+2026-10-08T12:29:21 INFO  settle-batch/sb-node-19 deploy step release=settle-batch-4.12.0 step=healthcheck result=ok took_s=229
+2026-10-08T12:29:23 INFO  settle-batch/sb-node-11 ticket linked id=OPS-49684 reason=runbook_update
+2026-10-08T12:29:29 NOTE  settle-batch/sb-node-08 operator=dwjung memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-08T12:29:35 INFO  settle-batch/sb-node-13 request done id=req-bb7cf2f4 route=/settle-batch/v1/create status=200 latency_ms=32
+2026-10-08T12:29:39 INFO  settle-batch/sb-node-12 request done id=req-9ecf73d6 route=/settle-batch/v1/verify status=204 latency_ms=60
+2026-10-08T12:29:43 INFO  settle-batch/sb-node-23 pool resize target=settle-batch-upstream max_pool_size=287 prev=313
+2026-10-08T12:29:48 INFO  settle-batch/sb-node-05 request done id=req-2fb6aab4 route=/settle-batch/v1/sync status=400 latency_ms=70
+2026-10-08T12:29:52 INFO  settle-batch/sb-node-10 request done id=req-a01de163 route=/settle-batch/v1/sync status=409 latency_ms=235
+2026-10-08T12:29:55 NOTE  settle-batch/sb-node-16 operator=mjlee memo="타임아웃을 12ms에서 21ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-08T12:29:59 ERROR settle-batch/sb-node-13 job failed job=settle-batch-rollup attempt=5 cause=dns_failure
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

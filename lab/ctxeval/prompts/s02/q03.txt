@@ -1,0 +1,1 @@
+아까 붙여 준 주문 DB(order-db) 로그에서 백업 파일 /vault/daily/orders_20261024.tar.zst 의 checksum 이 뭐였지?

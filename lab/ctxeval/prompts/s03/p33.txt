@@ -1,0 +1,424 @@
+참고용 로그 33: 트레이스 수집(trace-sink) 샘플링 조정 구간. '확인'이라고만 답해 줘.
+
+2026-11-06T12:04:15 INFO  trace-sink/ts-node-04 request done id=req-bf189b61 route=/trace-sink/v1/get status=404 latency_ms=578
+2026-11-06T12:04:16 INFO  trace-sink/ts-node-14 cache stats region=us-we-2b hit_ratio=61.3% evictions=1899
+2026-11-06T12:04:22 WARN  trace-sink/ts-node-19 alert fired rule=heap_used_high value=69% threshold=60%
+2026-11-06T12:04:27 INFO  trace-sink/ts-node-16 request done id=req-c61f738a route=/trace-sink/v1/update status=200 latency_ms=292
+2026-11-06T12:04:33 INFO  trace-sink/ts-node-17 config applied key=limiter.rps value=82% by=hbyoon
+2026-11-06T12:04:37 INFO  trace-sink/ts-node-23 request done id=req-268efcfa route=/trace-sink/v1/sync status=200 latency_ms=90
+2026-11-06T12:04:39 INFO  trace-sink/ts-node-06 request done id=req-1f0990b1 route=/trace-sink/v1/status status=200 latency_ms=7
+2026-11-06T12:04:42 INFO  trace-sink/ts-node-05 request done id=req-8ee0a48b route=/trace-sink/v1/create status=201 latency_ms=161
+2026-11-06T12:04:44 INFO  trace-sink/ts-node-03 request done id=req-265c5394 route=/trace-sink/v1/verify status=200 latency_ms=347
+2026-11-06T12:04:49 INFO  trace-sink/ts-node-15 request done id=req-b1afb2d0 route=/trace-sink/v1/status status=404 latency_ms=161
+2026-11-06T12:04:51 INFO  trace-sink/ts-node-08 request done id=req-9ecc4be1 route=/trace-sink/v1/create status=200 latency_ms=53
+2026-11-06T12:04:57 INFO  trace-sink/ts-node-12 request done id=req-08b17efc route=/trace-sink/v1/verify status=200 latency_ms=212
+2026-11-06T12:04:59 INFO  trace-sink/ts-node-18 ticket linked id=OPS-49597 reason=dns_ttl_change
+2026-11-06T12:05:05 INFO  trace-sink/ts-node-02 request done id=req-feaba1f6 route=/trace-sink/v1/get status=200 latency_ms=107
+2026-11-06T12:05:07 INFO  trace-sink/ts-node-15 backup finished file=/vault/weekly/inventory_2026w33.tar.zst size_mb=83127 checksum=d33051e8
+2026-11-06T12:05:10 INFO  trace-sink/ts-node-15 deploy step release=trace-sink-4.20.3 step=migrate result=ok took_s=129
+2026-11-06T12:05:12 INFO  trace-sink/ts-node-17 ticket linked id=OPS-48675 reason=flaky_healthcheck
+2026-11-06T12:05:13 INFO  trace-sink/ts-node-04 pool resize target=trace-sink-cache max_pool_size=90 prev=142
+2026-11-06T12:05:17 INFO  trace-sink/ts-node-07 config applied key=flush.interval_ms value=true by=hbyoon
+2026-11-06T12:05:18 INFO  trace-sink/ts-node-15 cache stats region=ap-ne-2b hit_ratio=59.1% evictions=10097
+2026-11-06T12:05:25 INFO  trace-sink/ts-node-05 request done id=req-07951a6f route=/trace-sink/v1/cancel status=200 latency_ms=62
+2026-11-06T12:05:30 INFO  trace-sink/ts-node-05 request done id=req-0ca14162 route=/trace-sink/v1/cancel status=200 latency_ms=11
+2026-11-06T12:05:32 INFO  trace-sink/ts-node-12 request done id=req-1aea4961 route=/trace-sink/v1/update status=200 latency_ms=565
+2026-11-06T12:05:34 INFO  trace-sink/ts-node-14 request done id=req-0ba00d49 route=/trace-sink/v1/sync status=409 latency_ms=265
+2026-11-06T12:05:36 INFO  trace-sink/ts-node-05 request done id=req-0b67f2c2 route=/trace-sink/v1/list status=200 latency_ms=150
+2026-11-06T12:05:39 INFO  trace-sink/ts-node-10 request done id=req-2c956fae route=/trace-sink/v1/sync status=400 latency_ms=146
+2026-11-06T12:05:42 INFO  trace-sink/ts-node-19 request done id=req-346b6404 route=/trace-sink/v1/update status=200 latency_ms=303
+2026-11-06T12:05:49 INFO  trace-sink/ts-node-14 ticket linked id=OPS-47005 reason=cert_rotation
+2026-11-06T12:05:52 INFO  trace-sink/ts-node-08 request done id=req-f9ee94e2 route=/trace-sink/v1/update status=201 latency_ms=67
+2026-11-06T12:05:54 INFO  trace-sink/ts-node-15 pool resize target=trace-sink-worker max_pool_size=82 prev=35
+2026-11-06T12:05:57 INFO  trace-sink/ts-node-06 config applied key=retry.backoff_ms value=false by=jhpark
+2026-11-06T12:05:58 INFO  trace-sink/ts-node-22 request done id=req-46349024 route=/trace-sink/v1/list status=400 latency_ms=229
+2026-11-06T12:06:05 WARN  trace-sink/ts-node-03 alert fired rule=fd_usage_high value=82% threshold=72%
+2026-11-06T12:06:10 INFO  trace-sink/ts-node-02 request done id=req-2a4c257d route=/trace-sink/v1/update status=200 latency_ms=87
+2026-11-06T12:06:12 INFO  trace-sink/ts-node-20 deploy step release=trace-sink-4.21.5 step=shift_traffic_100 result=ok took_s=124
+2026-11-06T12:06:16 WARN  trace-sink/ts-node-04 alert fired rule=disk_usage_warning value=90% threshold=80%
+2026-11-06T12:06:19 INFO  trace-sink/ts-node-23 request done id=req-c4dd140b route=/trace-sink/v1/verify status=200 latency_ms=503
+2026-11-06T12:06:23 INFO  trace-sink/ts-node-12 ticket linked id=OPS-47136 reason=schema_change
+2026-11-06T12:06:30 INFO  trace-sink/ts-node-12 pool resize target=trace-sink-db max_pool_size=396 prev=402
+2026-11-06T12:06:31 INFO  trace-sink/ts-node-14 request done id=req-bbe8cfe0 route=/trace-sink/v1/create status=200 latency_ms=24
+2026-11-06T12:06:33 INFO  trace-sink/ts-node-04 request done id=req-8fd49ca2 route=/trace-sink/v1/list status=200 latency_ms=114
+2026-11-06T12:06:36 ERROR trace-sink/ts-node-17 job failed job=trace-sink-export attempt=4 cause=dns_failure
+2026-11-06T12:06:38 INFO  trace-sink/ts-node-02 config applied key=cache.ttl_s value=true by=mjlee
+2026-11-06T12:06:42 INFO  trace-sink/ts-node-24 request done id=req-2a2afb62 route=/trace-sink/v1/create status=200 latency_ms=189
+2026-11-06T12:06:44 INFO  trace-sink/ts-node-05 request done id=req-e8080f95 route=/trace-sink/v1/create status=201 latency_ms=404
+2026-11-06T12:06:48 INFO  trace-sink/ts-node-03 deploy step release=trace-sink-4.17.1 step=shift_traffic_10 result=ok took_s=7
+2026-11-06T12:06:50 WARN  trace-sink/ts-node-13 alert fired rule=disk_usage_warning value=96% threshold=85%
+2026-11-06T12:06:54 INFO  trace-sink/ts-node-16 ticket linked id=OPS-47508 reason=quota_increase
+2026-11-06T12:06:59 INFO  trace-sink/ts-node-02 request done id=req-96557d17 route=/trace-sink/v1/create status=200 latency_ms=66
+2026-11-06T12:07:04 NOTE  trace-sink/ts-node-19 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-06T12:07:11 INFO  trace-sink/ts-node-13 request done id=req-9d6ade06 route=/trace-sink/v1/list status=200 latency_ms=42
+2026-11-06T12:07:16 INFO  trace-sink/ts-node-15 request done id=req-d52b0e14 route=/trace-sink/v1/cancel status=200 latency_ms=45
+2026-11-06T12:07:21 INFO  trace-sink/ts-node-07 pool resize target=trace-sink-queue max_pool_size=380 prev=433
+2026-11-06T12:07:26 INFO  trace-sink/ts-node-04 backup finished file=/vault/daily/payments_20261001.tar.zst size_mb=57725 checksum=8384d6c9
+2026-11-06T12:07:31 INFO  trace-sink/ts-node-13 request done id=req-435c3917 route=/trace-sink/v1/sync status=200 latency_ms=58
+2026-11-06T12:07:38 INFO  trace-sink/ts-node-21 pool resize target=trace-sink-queue max_pool_size=30 prev=19
+2026-11-06T12:07:43 INFO  trace-sink/ts-node-24 request done id=req-a869b068 route=/trace-sink/v1/status status=201 latency_ms=92
+2026-11-06T12:07:47 INFO  trace-sink/ts-node-12 request done id=req-75cfd0e7 route=/trace-sink/v1/status status=404 latency_ms=334
+2026-11-06T12:07:51 NOTE  trace-sink/ts-node-24 operator=shkim memo="헬스체크 간격을 55초에서 75초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-06T12:07:52 ERROR trace-sink/ts-node-15 job failed job=trace-sink-reindex attempt=3 cause=bad_checksum
+2026-11-06T12:07:56 INFO  trace-sink/ts-node-22 deploy step release=trace-sink-4.22.6 step=shift_traffic_50 result=ok took_s=221
+2026-11-06T12:07:59 INFO  trace-sink/ts-node-12 ticket linked id=OPS-48822 reason=cert_rotation
+2026-11-06T12:08:03 INFO  trace-sink/ts-node-23 request done id=req-73bb35d9 route=/trace-sink/v1/list status=200 latency_ms=105
+2026-11-06T12:08:10 INFO  trace-sink/ts-node-23 request done id=req-45669ee7 route=/trace-sink/v1/list status=200 latency_ms=66
+2026-11-06T12:08:13 INFO  trace-sink/ts-node-10 config applied key=retry.max_attempts value=true by=ejlim
+2026-11-06T12:08:19 WARN  trace-sink/ts-node-04 alert fired rule=replica_lag_high value=95s threshold=90s
+2026-11-06T12:08:24 ERROR trace-sink/ts-node-08 job failed job=trace-sink-reindex attempt=3 cause=bad_checksum
+2026-11-06T12:08:29 INFO  trace-sink/ts-node-20 request done id=req-37a04769 route=/trace-sink/v1/verify status=503 latency_ms=302
+2026-11-06T12:08:33 INFO  trace-sink/ts-node-22 pool resize target=trace-sink-queue max_pool_size=345 prev=294
+2026-11-06T12:08:36 INFO  trace-sink/ts-node-11 ticket linked id=OPS-49905 reason=flaky_healthcheck
+2026-11-06T12:08:42 INFO  trace-sink/ts-node-07 pool resize target=trace-sink-worker max_pool_size=188 prev=221
+2026-11-06T12:08:47 INFO  trace-sink/ts-node-19 config applied key=flush.interval_ms value=3208 by=mjlee
+2026-11-06T12:08:48 INFO  trace-sink/ts-node-04 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=28823 checksum=f653e8df
+2026-11-06T12:08:53 INFO  trace-sink/ts-node-20 config applied key=http.read_timeout_ms value=false by=hbyoon
+2026-11-06T12:09:00 INFO  trace-sink/ts-node-10 request done id=req-864fb750 route=/trace-sink/v1/create status=200 latency_ms=47
+2026-11-06T12:09:07 WARN  trace-sink/ts-node-20 alert fired rule=disk_usage_warning value=69% threshold=62%
+2026-11-06T12:09:14 INFO  trace-sink/ts-node-15 config applied key=breaker.half_open_s value=false by=shkim
+2026-11-06T12:09:19 INFO  trace-sink/ts-node-03 request done id=req-d27d5bc0 route=/trace-sink/v1/sync status=200 latency_ms=87
+2026-11-06T12:09:25 INFO  trace-sink/ts-node-12 ticket linked id=OPS-47564 reason=flaky_healthcheck
+2026-11-06T12:09:31 INFO  trace-sink/ts-node-24 config applied key=limiter.rps value=15 by=yjchoi
+2026-11-06T12:09:34 INFO  trace-sink/ts-node-08 pool resize target=trace-sink-queue max_pool_size=220 prev=248
+2026-11-06T12:09:35 INFO  trace-sink/ts-node-07 ticket linked id=OPS-48801 reason=oncall_handoff
+2026-11-06T12:09:39 INFO  trace-sink/ts-node-02 deploy step release=trace-sink-4.20.3 step=verify result=ok took_s=199
+2026-11-06T12:09:45 INFO  trace-sink/ts-node-17 request done id=req-a2636aab route=/trace-sink/v1/update status=200 latency_ms=255
+2026-11-06T12:09:51 INFO  trace-sink/ts-node-05 backup finished file=/vault/daily/audit_20261026.tar.zst size_mb=84978 checksum=817063bc
+2026-11-06T12:09:53 INFO  trace-sink/ts-node-23 pool resize target=trace-sink-upstream max_pool_size=25 prev=4
+2026-11-06T12:09:56 INFO  trace-sink/ts-node-06 request done id=req-abfc5622 route=/trace-sink/v1/verify status=200 latency_ms=253
+2026-11-06T12:10:00 INFO  trace-sink/ts-node-04 request done id=req-956ff2b3 route=/trace-sink/v1/sync status=200 latency_ms=259
+2026-11-06T12:10:07 INFO  trace-sink/ts-node-08 request done id=req-590cf90f route=/trace-sink/v1/update status=201 latency_ms=285
+2026-11-06T12:10:10 INFO  trace-sink/ts-node-04 backup finished file=/vault/weekly/orders_2026w40.tar.zst size_mb=81197 checksum=53c4022e
+2026-11-06T12:10:15 INFO  trace-sink/ts-node-17 cache stats region=ap-ne-2c hit_ratio=96.3% evictions=22809
+2026-11-06T12:10:19 INFO  trace-sink/ts-node-20 request done id=req-7664c881 route=/trace-sink/v1/sync status=200 latency_ms=37
+2026-11-06T12:10:21 INFO  trace-sink/ts-node-03 ticket linked id=OPS-47855 reason=log_volume_spike
+2026-11-06T12:10:27 INFO  trace-sink/ts-node-22 deploy step release=trace-sink-4.18.4 step=shift_traffic_10 result=ok took_s=19
+2026-11-06T12:10:32 INFO  trace-sink/ts-node-21 request done id=req-f9d0563d route=/trace-sink/v1/update status=200 latency_ms=47
+2026-11-06T12:10:35 INFO  trace-sink/ts-node-03 ticket linked id=OPS-48591 reason=dependency_upgrade
+2026-11-06T12:10:37 INFO  trace-sink/ts-node-14 ticket linked id=OPS-47362 reason=log_volume_spike
+2026-11-06T12:10:39 INFO  trace-sink/ts-node-18 request done id=req-51d00dfb route=/trace-sink/v1/verify status=404 latency_ms=175
+2026-11-06T12:10:42 INFO  trace-sink/ts-node-06 request done id=req-b75aa668 route=/trace-sink/v1/create status=404 latency_ms=102
+2026-11-06T12:10:44 INFO  trace-sink/ts-node-24 deploy step release=trace-sink-4.19.9 step=shift_traffic_10 result=ok took_s=71
+2026-11-06T12:10:48 INFO  trace-sink/ts-node-10 cache stats region=ap-ne-2a hit_ratio=90.2% evictions=17094
+2026-11-06T12:10:53 ERROR trace-sink/ts-node-06 job failed job=trace-sink-export attempt=1 cause=lock_wait_exceeded
+2026-11-06T12:10:54 INFO  trace-sink/ts-node-13 pool resize target=trace-sink-cache max_pool_size=183 prev=203
+2026-11-06T12:10:56 INFO  trace-sink/ts-node-14 backup finished file=/vault/daily/inventory_20261016.tar.zst size_mb=86205 checksum=9a82189a
+2026-11-06T12:10:58 INFO  trace-sink/ts-node-08 config applied key=limiter.burst value=false by=ejlim
+2026-11-06T12:11:02 INFO  trace-sink/ts-node-16 deploy step release=trace-sink-4.22.8 step=drain result=ok took_s=31
+2026-11-06T12:11:07 INFO  trace-sink/ts-node-05 request done id=req-28c42e43 route=/trace-sink/v1/sync status=429 latency_ms=180
+2026-11-06T12:11:13 NOTE  trace-sink/ts-node-11 operator=jhpark memo="점검 창을 45분 연장함. 승인: 류태경 팀장."
+2026-11-06T12:11:15 ERROR trace-sink/ts-node-15 job failed job=trace-sink-cleanup attempt=1 cause=quota_exceeded
+2026-11-06T12:11:17 INFO  trace-sink/ts-node-13 request done id=req-afc11dd5 route=/trace-sink/v1/status status=200 latency_ms=127
+2026-11-06T12:11:22 WARN  trace-sink/ts-node-20 alert fired rule=fd_usage_high value=57% threshold=55%
+2026-11-06T12:11:25 NOTE  trace-sink/ts-node-07 operator=dwjung memo="헬스체크 간격을 23초에서 27초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-06T12:11:31 INFO  trace-sink/ts-node-13 request done id=req-715c4eec route=/trace-sink/v1/create status=200 latency_ms=65
+2026-11-06T12:11:37 INFO  trace-sink/ts-node-06 request done id=req-d9ffc301 route=/trace-sink/v1/verify status=200 latency_ms=223
+2026-11-06T12:11:44 INFO  trace-sink/ts-node-01 request done id=req-5f30f925 route=/trace-sink/v1/verify status=429 latency_ms=126
+2026-11-06T12:11:48 ERROR trace-sink/ts-node-11 job failed job=trace-sink-reindex attempt=2 cause=dns_failure
+2026-11-06T12:11:51 INFO  trace-sink/ts-node-17 config applied key=dns.ttl_s value=15% by=shkim
+2026-11-06T12:11:58 INFO  trace-sink/ts-node-19 config applied key=dns.ttl_s value=true by=jhpark
+2026-11-06T12:12:05 INFO  trace-sink/ts-node-24 pool resize target=trace-sink-upstream max_pool_size=396 prev=351
+2026-11-06T12:12:09 INFO  trace-sink/ts-node-04 config applied key=http.max_conns value=5925 by=shkim
+2026-11-06T12:12:16 INFO  trace-sink/ts-node-22 request done id=req-2890cca9 route=/trace-sink/v1/status status=200 latency_ms=226
+2026-11-06T12:12:19 INFO  trace-sink/ts-node-01 request done id=req-df7c5588 route=/trace-sink/v1/verify status=204 latency_ms=63
+2026-11-06T12:12:24 INFO  trace-sink/ts-node-22 request done id=req-ce907ab3 route=/trace-sink/v1/get status=200 latency_ms=11
+2026-11-06T12:12:26 INFO  trace-sink/ts-node-11 request done id=req-6cd75f96 route=/trace-sink/v1/cancel status=204 latency_ms=211
+2026-11-06T12:12:30 INFO  trace-sink/ts-node-11 ticket linked id=OPS-48142 reason=log_volume_spike
+2026-11-06T12:12:33 ERROR trace-sink/ts-node-11 job failed job=trace-sink-reindex attempt=3 cause=oom_killed
+2026-11-06T12:12:37 INFO  trace-sink/ts-node-21 ticket linked id=OPS-49547 reason=node_drain
+2026-11-06T12:12:42 INFO  trace-sink/ts-node-06 pool resize target=trace-sink-upstream max_pool_size=250 prev=284
+2026-11-06T12:12:46 INFO  trace-sink/ts-node-22 ticket linked id=OPS-47890 reason=cert_rotation
+2026-11-06T12:12:49 INFO  trace-sink/ts-node-03 request done id=req-b7a3e732 route=/trace-sink/v1/list status=429 latency_ms=47
+2026-11-06T12:12:53 INFO  trace-sink/ts-node-22 request done id=req-0cc25099 route=/trace-sink/v1/create status=200 latency_ms=59
+2026-11-06T12:12:59 INFO  trace-sink/ts-node-04 config applied key=dns.ttl_s value=4704 by=shkim
+2026-11-06T12:13:02 INFO  trace-sink/ts-node-12 ticket linked id=OPS-48607 reason=cert_rotation
+2026-11-06T12:13:09 INFO  trace-sink/ts-node-18 ticket linked id=OPS-47815 reason=runbook_update
+2026-11-06T12:13:13 INFO  trace-sink/ts-node-13 pool resize target=trace-sink-db max_pool_size=239 prev=196
+2026-11-06T12:13:19 INFO  trace-sink/ts-node-07 request done id=req-051c6d6f route=/trace-sink/v1/create status=429 latency_ms=20
+2026-11-06T12:13:22 INFO  trace-sink/ts-node-13 request done id=req-519d4f44 route=/trace-sink/v1/create status=200 latency_ms=109
+2026-11-06T12:13:27 INFO  trace-sink/ts-node-10 deploy step release=trace-sink-4.15.5 step=warmup result=ok took_s=159
+2026-11-06T12:13:28 INFO  trace-sink/ts-node-10 request done id=req-c4eeb787 route=/trace-sink/v1/sync status=500 latency_ms=96
+2026-11-06T12:13:34 INFO  trace-sink/ts-node-13 request done id=req-77e515ee route=/trace-sink/v1/sync status=200 latency_ms=151
+2026-11-06T12:13:36 INFO  trace-sink/ts-node-22 config applied key=retry.max_attempts value=true by=mjlee
+2026-11-06T12:13:38 INFO  trace-sink/ts-node-03 request done id=req-961f7c2a route=/trace-sink/v1/list status=200 latency_ms=831
+2026-11-06T12:13:40 INFO  trace-sink/ts-node-12 ticket linked id=OPS-49474 reason=oncall_handoff
+2026-11-06T12:13:43 INFO  trace-sink/ts-node-02 request done id=req-4f13b09b route=/trace-sink/v1/list status=200 latency_ms=382
+2026-11-06T12:13:48 INFO  trace-sink/ts-node-11 backup finished file=/vault/daily/audit_20261028.tar.zst size_mb=14389 checksum=5212d2d6
+2026-11-06T12:13:50 INFO  trace-sink/ts-node-01 request done id=req-c8176e8f route=/trace-sink/v1/create status=200 latency_ms=61
+2026-11-06T12:13:53 WARN  trace-sink/ts-node-08 alert fired rule=error_ratio_high value=56% threshold=52%
+2026-11-06T12:13:56 INFO  trace-sink/ts-node-14 config applied key=tls.session_cache value=53% by=hbyoon
+2026-11-06T12:13:59 ERROR trace-sink/ts-node-06 job failed job=trace-sink-rollup attempt=1 cause=quota_exceeded
+2026-11-06T12:14:01 INFO  trace-sink/ts-node-15 deploy step release=trace-sink-4.20.2 step=migrate result=ok took_s=131
+2026-11-06T12:14:05 INFO  trace-sink/ts-node-01 request done id=req-f0e027ee route=/trace-sink/v1/create status=404 latency_ms=101
+2026-11-06T12:14:12 INFO  trace-sink/ts-node-20 cache stats region=ap-ne-2c hit_ratio=88.3% evictions=2871
+2026-11-06T12:14:15 INFO  trace-sink/ts-node-21 request done id=req-660bf4a0 route=/trace-sink/v1/create status=200 latency_ms=125
+2026-11-06T12:14:22 INFO  trace-sink/ts-node-09 cache stats region=ap-se-1a hit_ratio=70.4% evictions=18866
+2026-11-06T12:14:26 INFO  trace-sink/ts-node-23 request done id=req-248a742e route=/trace-sink/v1/verify status=200 latency_ms=52
+2026-11-06T12:14:32 INFO  trace-sink/ts-node-24 pool resize target=trace-sink-db max_pool_size=328 prev=286
+2026-11-06T12:14:34 INFO  trace-sink/ts-node-24 backup finished file=/vault/daily/sessions_20261011.tar.zst size_mb=4228 checksum=05d531ed
+2026-11-06T12:14:40 WARN  trace-sink/ts-node-05 alert fired rule=gc_pause_long value=64ms threshold=52ms
+2026-11-06T12:14:47 INFO  trace-sink/ts-node-23 ticket linked id=OPS-49089 reason=quota_increase
+2026-11-06T12:14:52 INFO  trace-sink/ts-node-13 ticket linked id=OPS-47446 reason=schema_change
+2026-11-06T12:14:54 INFO  trace-sink/ts-node-02 ticket linked id=OPS-48543 reason=quota_increase
+2026-11-06T12:14:58 ERROR trace-sink/ts-node-24 job failed job=trace-sink-reindex attempt=2 cause=oom_killed
+2026-11-06T12:15:01 INFO  trace-sink/ts-node-15 request done id=req-39342846 route=/trace-sink/v1/create status=200 latency_ms=355
+2026-11-06T12:15:07 INFO  trace-sink/ts-node-23 pool resize target=trace-sink-queue max_pool_size=372 prev=313
+2026-11-06T12:15:11 INFO  trace-sink/ts-node-08 request done id=req-be8a7018 route=/trace-sink/v1/verify status=429 latency_ms=1075
+2026-11-06T12:15:18 INFO  trace-sink/ts-node-03 deploy step release=trace-sink-4.11.3 step=warmup result=ok took_s=145
+2026-11-06T12:15:19 INFO  trace-sink/ts-node-22 pool resize target=trace-sink-worker max_pool_size=108 prev=137
+2026-11-06T12:15:26 INFO  trace-sink/ts-node-16 request done id=req-0e439ae4 route=/trace-sink/v1/status status=200 latency_ms=261
+2026-11-06T12:15:27 INFO  trace-sink/ts-node-15 ticket linked id=OPS-49150 reason=oncall_handoff
+2026-11-06T12:15:34 INFO  trace-sink/ts-node-19 request done id=req-1719319e route=/trace-sink/v1/cancel status=503 latency_ms=48
+2026-11-06T12:15:35 INFO  trace-sink/ts-node-06 request done id=req-ea19e813 route=/trace-sink/v1/cancel status=409 latency_ms=334
+2026-11-06T12:15:36 INFO  trace-sink/ts-node-15 pool resize target=trace-sink-cache max_pool_size=61 prev=107
+2026-11-06T12:15:38 INFO  trace-sink/ts-node-05 request done id=req-edbe92fe route=/trace-sink/v1/get status=503 latency_ms=216
+2026-11-06T12:15:39 INFO  trace-sink/ts-node-13 ticket linked id=OPS-47931 reason=schema_change
+2026-11-06T12:15:40 INFO  trace-sink/ts-node-13 backup finished file=/vault/daily/orders_20261007.tar.zst size_mb=5184 checksum=4e0806e2
+2026-11-06T12:15:42 INFO  trace-sink/ts-node-16 request done id=req-6bf911d4 route=/trace-sink/v1/status status=400 latency_ms=174
+2026-11-06T12:15:45 INFO  trace-sink/ts-node-19 request done id=req-0b2863dd route=/trace-sink/v1/create status=200 latency_ms=154
+2026-11-06T12:15:47 INFO  trace-sink/ts-node-18 request done id=req-c6ab85f0 route=/trace-sink/v1/create status=200 latency_ms=124
+2026-11-06T12:15:51 INFO  trace-sink/ts-node-13 request done id=req-dc7ffb72 route=/trace-sink/v1/update status=200 latency_ms=111
+2026-11-06T12:15:53 INFO  trace-sink/ts-node-24 request done id=req-ef0f1fa2 route=/trace-sink/v1/cancel status=503 latency_ms=234
+2026-11-06T12:16:00 INFO  trace-sink/ts-node-18 request done id=req-a3e480e1 route=/trace-sink/v1/create status=200 latency_ms=123
+2026-11-06T12:16:01 INFO  trace-sink/ts-node-10 cache stats region=ap-ne-2b hit_ratio=70.1% evictions=14482
+2026-11-06T12:16:08 INFO  trace-sink/ts-node-21 request done id=req-0da9c775 route=/trace-sink/v1/status status=200 latency_ms=115
+2026-11-06T12:16:09 ERROR trace-sink/ts-node-06 job failed job=trace-sink-rollup attempt=5 cause=upstream_timeout
+2026-11-06T12:16:13 WARN  trace-sink/ts-node-18 alert fired rule=fd_usage_high value=64% threshold=54%
+2026-11-06T12:16:17 INFO  trace-sink/ts-node-24 ticket linked id=OPS-47421 reason=node_drain
+2026-11-06T12:16:24 INFO  trace-sink/ts-node-13 config applied key=http.max_conns value=false by=dwjung
+2026-11-06T12:16:25 INFO  trace-sink/ts-node-09 deploy step release=trace-sink-4.10.8 step=verify result=ok took_s=133
+2026-11-06T12:16:27 NOTE  trace-sink/ts-node-13 operator=sykang memo="로그 보존 기간은 44일로 유지하기로 함."
+2026-11-06T12:16:32 ERROR trace-sink/ts-node-11 job failed job=trace-sink-export attempt=4 cause=lock_wait_exceeded
+2026-11-06T12:16:33 INFO  trace-sink/ts-node-13 request done id=req-a693081d route=/trace-sink/v1/sync status=201 latency_ms=258
+2026-11-06T12:16:38 INFO  trace-sink/ts-node-23 deploy step release=trace-sink-4.22.8 step=shift_traffic_10 result=ok took_s=129
+2026-11-06T12:16:42 INFO  trace-sink/ts-node-18 config applied key=gc.pause_target_ms value=77% by=jhpark
+2026-11-06T12:16:44 INFO  trace-sink/ts-node-10 request done id=req-4e8348b8 route=/trace-sink/v1/sync status=503 latency_ms=154
+2026-11-06T12:16:46 ERROR trace-sink/ts-node-05 job failed job=trace-sink-cleanup attempt=3 cause=lock_wait_exceeded
+2026-11-06T12:16:51 INFO  trace-sink/ts-node-19 request done id=req-22a790fe route=/trace-sink/v1/sync status=200 latency_ms=187
+2026-11-06T12:16:54 INFO  trace-sink/ts-node-24 request done id=req-c5b3f8a0 route=/trace-sink/v1/get status=503 latency_ms=281
+2026-11-06T12:17:00 INFO  trace-sink/ts-node-17 request done id=req-62e2f653 route=/trace-sink/v1/update status=200 latency_ms=63
+2026-11-06T12:17:05 WARN  trace-sink/ts-node-01 alert fired rule=fd_usage_high value=85% threshold=70%
+2026-11-06T12:17:07 INFO  trace-sink/ts-node-16 ticket linked id=OPS-48215 reason=oncall_handoff
+2026-11-06T12:17:08 INFO  trace-sink/ts-node-13 request done id=req-04f04894 route=/trace-sink/v1/sync status=200 latency_ms=53
+2026-11-06T12:17:15 WARN  trace-sink/ts-node-04 alert fired rule=p99_latency_high value=61ms threshold=55ms
+2026-11-06T12:17:16 WARN  trace-sink/ts-node-21 alert fired rule=error_ratio_high value=50% threshold=47%
+2026-11-06T12:17:18 WARN  trace-sink/ts-node-17 alert fired rule=error_ratio_high value=64% threshold=55%
+2026-11-06T12:17:25 INFO  trace-sink/ts-node-14 request done id=req-94db44e7 route=/trace-sink/v1/status status=200 latency_ms=215
+2026-11-06T12:17:26 NOTE  trace-sink/ts-node-02 operator=mjlee memo="ts-node-02 재기동 후 지표 정상 확인."
+2026-11-06T12:17:28 INFO  trace-sink/ts-node-02 request done id=req-0eb93131 route=/trace-sink/v1/list status=200 latency_ms=50
+2026-11-06T12:17:32 ERROR trace-sink/ts-node-10 job failed job=trace-sink-rollup attempt=4 cause=quota_exceeded
+2026-11-06T12:17:35 INFO  trace-sink/ts-node-17 deploy step release=trace-sink-4.14.0 step=drain result=ok took_s=30
+2026-11-06T12:17:39 INFO  trace-sink/ts-node-24 pool resize target=trace-sink-cache max_pool_size=154 prev=210
+2026-11-06T12:17:45 INFO  trace-sink/ts-node-24 request done id=req-35d730ee route=/trace-sink/v1/create status=200 latency_ms=42
+2026-11-06T12:17:46 ERROR trace-sink/ts-node-03 job failed job=trace-sink-reindex attempt=3 cause=dns_failure
+2026-11-06T12:17:49 INFO  trace-sink/ts-node-07 cache stats region=ap-ne-2a hit_ratio=81.0% evictions=27012
+2026-11-06T12:17:55 INFO  trace-sink/ts-node-21 request done id=req-0b3292df route=/trace-sink/v1/get status=200 latency_ms=351
+2026-11-06T12:17:59 INFO  trace-sink/ts-node-10 config applied key=limiter.burst value=20 by=mjlee
+2026-11-06T12:18:03 WARN  trace-sink/ts-node-14 alert fired rule=conn_pool_saturated value=59% threshold=52%
+2026-11-06T12:18:10 INFO  trace-sink/ts-node-22 config applied key=queue.batch_size value=50 by=jhpark
+2026-11-06T12:18:12 INFO  trace-sink/ts-node-19 request done id=req-9502a7f1 route=/trace-sink/v1/cancel status=200 latency_ms=89
+2026-11-06T12:18:16 INFO  trace-sink/ts-node-19 deploy step release=trace-sink-4.17.2 step=shift_traffic_100 result=ok took_s=67
+2026-11-06T12:18:23 INFO  trace-sink/ts-node-10 request done id=req-0fb916fb route=/trace-sink/v1/create status=200 latency_ms=535
+2026-11-06T12:18:30 INFO  trace-sink/ts-node-12 config applied key=shard.count value=true by=jhpark
+2026-11-06T12:18:32 INFO  trace-sink/ts-node-01 deploy step release=trace-sink-4.13.0 step=drain result=ok took_s=91
+2026-11-06T12:18:36 INFO  trace-sink/ts-node-16 request done id=req-8cd1ece0 route=/trace-sink/v1/update status=204 latency_ms=224
+2026-11-06T12:18:38 INFO  trace-sink/ts-node-20 config applied key=cache.ttl_s value=15 by=jhpark
+2026-11-06T12:18:39 INFO  trace-sink/ts-node-06 request done id=req-64630d3b route=/trace-sink/v1/list status=200 latency_ms=441
+2026-11-06T12:18:40 INFO  trace-sink/ts-node-03 request done id=req-614e85ec route=/trace-sink/v1/create status=200 latency_ms=26
+2026-11-06T12:18:41 INFO  trace-sink/ts-node-19 request done id=req-11900f97 route=/trace-sink/v1/status status=200 latency_ms=348
+2026-11-06T12:18:47 INFO  trace-sink/ts-node-24 request done id=req-641d39aa route=/trace-sink/v1/cancel status=404 latency_ms=156
+2026-11-06T12:18:54 NOTE  trace-sink/ts-node-22 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-06T12:18:57 INFO  trace-sink/ts-node-23 config applied key=limiter.burst value=false by=hbyoon
+2026-11-06T12:19:01 INFO  trace-sink/ts-node-11 request done id=req-65c6ba60 route=/trace-sink/v1/get status=200 latency_ms=497
+2026-11-06T12:19:05 INFO  trace-sink/ts-node-03 ticket linked id=OPS-49785 reason=schema_change
+2026-11-06T12:19:07 NOTE  trace-sink/ts-node-21 operator=yjchoi memo="연동 팀에 변경 공지 완료."
+2026-11-06T12:19:13 INFO  trace-sink/ts-node-01 pool resize target=trace-sink-worker max_pool_size=107 prev=109
+2026-11-06T12:19:20 INFO  trace-sink/ts-node-01 ticket linked id=OPS-49521 reason=flaky_healthcheck
+2026-11-06T12:19:21 INFO  trace-sink/ts-node-06 ticket linked id=OPS-49491 reason=runbook_update
+2026-11-06T12:19:25 INFO  trace-sink/ts-node-02 request done id=req-eaa76fb0 route=/trace-sink/v1/sync status=200 latency_ms=192
+2026-11-06T12:19:31 INFO  trace-sink/ts-node-18 request done id=req-a44250d2 route=/trace-sink/v1/get status=429 latency_ms=65
+2026-11-06T12:19:38 INFO  trace-sink/ts-node-07 config applied key=tls.session_cache value=42 by=mjlee
+2026-11-06T12:19:41 INFO  trace-sink/ts-node-12 request done id=req-3f7ae79b route=/trace-sink/v1/list status=200 latency_ms=29
+2026-11-06T12:19:48 INFO  trace-sink/ts-node-23 pool resize target=trace-sink-queue max_pool_size=192 prev=155
+2026-11-06T12:19:50 INFO  trace-sink/ts-node-18 request done id=req-9517a8a8 route=/trace-sink/v1/get status=200 latency_ms=62
+2026-11-06T12:19:52 INFO  trace-sink/ts-node-24 request done id=req-facd5453 route=/trace-sink/v1/get status=200 latency_ms=159
+2026-11-06T12:19:59 INFO  trace-sink/ts-node-07 request done id=req-50754387 route=/trace-sink/v1/sync status=200 latency_ms=212
+2026-11-06T12:20:01 INFO  trace-sink/ts-node-08 deploy step release=trace-sink-4.12.8 step=verify result=ok took_s=93
+2026-11-06T12:20:08 INFO  trace-sink/ts-node-18 config applied key=queue.visibility_s value=59% by=yjchoi
+2026-11-06T12:20:12 INFO  trace-sink/ts-node-06 pool resize target=trace-sink-db max_pool_size=397 prev=437
+2026-11-06T12:20:19 INFO  trace-sink/ts-node-14 request done id=req-349f7dfc route=/trace-sink/v1/get status=200 latency_ms=67
+2026-11-06T12:20:24 INFO  trace-sink/ts-node-19 pool resize target=trace-sink-queue max_pool_size=22 prev=4
+2026-11-06T12:20:29 INFO  trace-sink/ts-node-24 request done id=req-e2806ab6 route=/trace-sink/v1/verify status=200 latency_ms=78
+2026-11-06T12:20:33 INFO  trace-sink/ts-node-02 pool resize target=trace-sink-worker max_pool_size=90 prev=145
+2026-11-06T12:20:36 INFO  trace-sink/ts-node-01 backup finished file=/vault/daily/sessions_20261021.tar.zst size_mb=11151 checksum=cebf8891
+2026-11-06T12:20:43 INFO  trace-sink/ts-node-23 backup finished file=/vault/daily/inventory_20261018.tar.zst size_mb=53342 checksum=5a65b33d
+2026-11-06T12:20:44 INFO  trace-sink/ts-node-06 request done id=req-dc4e9abe route=/trace-sink/v1/cancel status=200 latency_ms=455
+2026-11-06T12:20:49 INFO  trace-sink/ts-node-22 deploy step release=trace-sink-4.22.9 step=healthcheck result=ok took_s=9
+2026-11-06T12:20:55 WARN  trace-sink/ts-node-17 alert fired rule=heap_used_high value=66% threshold=56%
+2026-11-06T12:21:02 WARN  trace-sink/ts-node-19 alert fired rule=error_ratio_high value=87% threshold=81%
+2026-11-06T12:21:05 INFO  trace-sink/ts-node-18 request done id=req-6c68ca89 route=/trace-sink/v1/create status=429 latency_ms=215
+2026-11-06T12:21:10 INFO  trace-sink/ts-node-17 request done id=req-47d5c49a route=/trace-sink/v1/list status=503 latency_ms=170
+2026-11-06T12:21:15 INFO  trace-sink/ts-node-01 deploy step release=trace-sink-4.11.7 step=verify result=ok took_s=74
+2026-11-06T12:21:18 INFO  trace-sink/ts-node-21 request done id=req-8449e505 route=/trace-sink/v1/status status=200 latency_ms=460
+2026-11-06T12:21:23 INFO  trace-sink/ts-node-21 request done id=req-af78c49e route=/trace-sink/v1/list status=200 latency_ms=70
+2026-11-06T12:21:25 WARN  trace-sink/ts-node-02 alert fired rule=gc_pause_long value=65ms threshold=59ms
+2026-11-06T12:21:30 INFO  trace-sink/ts-node-19 request done id=req-7bf88c83 route=/trace-sink/v1/list status=204 latency_ms=134
+2026-11-06T12:21:35 ERROR trace-sink/ts-node-22 job failed job=trace-sink-rollup attempt=2 cause=oom_killed
+2026-11-06T12:21:39 INFO  trace-sink/ts-node-03 request done id=req-9ba6562b route=/trace-sink/v1/status status=409 latency_ms=58
+2026-11-06T12:21:42 INFO  trace-sink/ts-node-13 request done id=req-6072f8dd route=/trace-sink/v1/create status=200 latency_ms=271
+2026-11-06T12:21:45 NOTE  trace-sink/ts-node-08 operator=mjlee memo="캐시 TTL을 12초로 되돌림. 오래된 응답이 보고됨."
+2026-11-06T12:21:51 INFO  trace-sink/ts-node-07 request done id=req-c27deb3a route=/trace-sink/v1/status status=503 latency_ms=142
+2026-11-06T12:21:53 INFO  trace-sink/ts-node-10 ticket linked id=OPS-48161 reason=node_drain
+2026-11-06T12:21:55 INFO  trace-sink/ts-node-18 request done id=req-ddc6ab39 route=/trace-sink/v1/create status=200 latency_ms=326
+2026-11-06T12:21:58 WARN  trace-sink/ts-node-23 alert fired rule=disk_usage_warning value=86% threshold=77%
+2026-11-06T12:22:03 ERROR trace-sink/ts-node-16 job failed job=trace-sink-cleanup attempt=5 cause=upstream_timeout
+2026-11-06T12:22:05 INFO  trace-sink/ts-node-04 request done id=req-6946d8da route=/trace-sink/v1/update status=200 latency_ms=64
+2026-11-06T12:22:10 INFO  trace-sink/ts-node-23 request done id=req-605907a8 route=/trace-sink/v1/get status=201 latency_ms=217
+2026-11-06T12:22:11 INFO  trace-sink/ts-node-15 request done id=req-8438c89f route=/trace-sink/v1/status status=500 latency_ms=143
+2026-11-06T12:22:12 INFO  trace-sink/ts-node-16 deploy step release=trace-sink-4.10.8 step=shift_traffic_50 result=ok took_s=114
+2026-11-06T12:22:17 WARN  trace-sink/ts-node-21 alert fired rule=conn_pool_saturated value=56% threshold=41%
+2026-11-06T12:22:20 WARN  trace-sink/ts-node-17 alert fired rule=p99_latency_high value=62ms threshold=51ms
+2026-11-06T12:22:27 INFO  trace-sink/ts-node-02 request done id=req-c5ab7ed3 route=/trace-sink/v1/get status=200 latency_ms=161
+2026-11-06T12:22:30 NOTE  trace-sink/ts-node-16 operator=ejlim memo="연동 팀에 변경 공지 완료."
+2026-11-06T12:22:36 INFO  trace-sink/ts-node-13 request done id=req-d765c4a9 route=/trace-sink/v1/list status=500 latency_ms=132
+2026-11-06T12:22:39 INFO  trace-sink/ts-node-18 request done id=req-5a18d19f route=/trace-sink/v1/verify status=204 latency_ms=36
+2026-11-06T12:22:46 INFO  trace-sink/ts-node-11 request done id=req-51a7d8f1 route=/trace-sink/v1/status status=200 latency_ms=154
+2026-11-06T12:22:50 INFO  trace-sink/ts-node-23 cache stats region=us-we-2b hit_ratio=64.6% evictions=14185
+2026-11-06T12:22:54 NOTE  trace-sink/ts-node-13 operator=dwjung memo="캐시 TTL을 13초로 되돌림. 오래된 응답이 보고됨."
+2026-11-06T12:22:55 INFO  trace-sink/ts-node-07 config applied key=log.sample_rate value=30 by=shkim
+2026-11-06T12:23:01 INFO  trace-sink/ts-node-08 deploy step release=trace-sink-4.15.2 step=warmup result=ok took_s=200
+2026-11-06T12:23:02 INFO  trace-sink/ts-node-19 cache stats region=us-we-2b hit_ratio=92.5% evictions=20806
+2026-11-06T12:23:09 WARN  trace-sink/ts-node-23 alert fired rule=queue_depth_high value=75 threshold=72
+2026-11-06T12:23:16 INFO  trace-sink/ts-node-16 pool resize target=trace-sink-upstream max_pool_size=260 prev=272
+2026-11-06T12:23:23 INFO  trace-sink/ts-node-14 request done id=req-768097cd route=/trace-sink/v1/create status=204 latency_ms=144
+2026-11-06T12:23:28 INFO  trace-sink/ts-node-08 request done id=req-bd18ce01 route=/trace-sink/v1/sync status=200 latency_ms=236
+2026-11-06T12:23:34 INFO  trace-sink/ts-node-19 request done id=req-190c89f3 route=/trace-sink/v1/status status=200 latency_ms=46
+2026-11-06T12:23:37 INFO  trace-sink/ts-node-05 request done id=req-30ab3661 route=/trace-sink/v1/list status=500 latency_ms=359
+2026-11-06T12:23:38 INFO  trace-sink/ts-node-13 request done id=req-cdcbee25 route=/trace-sink/v1/update status=200 latency_ms=82
+2026-11-06T12:23:43 INFO  trace-sink/ts-node-13 request done id=req-6633b852 route=/trace-sink/v1/cancel status=400 latency_ms=226
+2026-11-06T12:23:49 INFO  trace-sink/ts-node-12 config applied key=retry.max_attempts value=4523 by=ejlim
+2026-11-06T12:23:56 INFO  trace-sink/ts-node-06 request done id=req-f3f92afd route=/trace-sink/v1/create status=503 latency_ms=266
+2026-11-06T12:24:01 INFO  trace-sink/ts-node-04 config applied key=limiter.rps value=3732 by=jhpark
+2026-11-06T12:24:06 INFO  trace-sink/ts-node-05 request done id=req-c0f94017 route=/trace-sink/v1/verify status=204 latency_ms=193
+2026-11-06T12:24:10 INFO  trace-sink/ts-node-20 request done id=req-0bc6924d route=/trace-sink/v1/create status=200 latency_ms=148
+2026-11-06T12:24:16 INFO  trace-sink/ts-node-16 pool resize target=trace-sink-queue max_pool_size=119 prev=155
+2026-11-06T12:24:21 INFO  trace-sink/ts-node-06 request done id=req-00a853c5 route=/trace-sink/v1/status status=200 latency_ms=68
+2026-11-06T12:24:22 INFO  trace-sink/ts-node-11 pool resize target=trace-sink-cache max_pool_size=377 prev=411
+2026-11-06T12:24:27 INFO  trace-sink/ts-node-16 cache stats region=us-we-2b hit_ratio=74.9% evictions=6123
+2026-11-06T12:24:30 INFO  trace-sink/ts-node-01 deploy step release=trace-sink-4.12.1 step=start result=ok took_s=185
+2026-11-06T12:24:31 INFO  trace-sink/ts-node-14 request done id=req-2f662456 route=/trace-sink/v1/list status=200 latency_ms=100
+2026-11-06T12:24:38 INFO  trace-sink/ts-node-09 request done id=req-fdc373d8 route=/trace-sink/v1/sync status=500 latency_ms=173
+2026-11-06T12:24:40 INFO  trace-sink/ts-node-13 config applied key=worker.concurrency value=41 by=jhpark
+2026-11-06T12:24:44 INFO  trace-sink/ts-node-21 request done id=req-44b370a1 route=/trace-sink/v1/sync status=503 latency_ms=44
+2026-11-06T12:24:47 ERROR trace-sink/ts-node-09 job failed job=trace-sink-cleanup attempt=5 cause=upstream_timeout
+2026-11-06T12:24:54 INFO  trace-sink/ts-node-21 config applied key=cache.ttl_s value=22 by=yjchoi
+2026-11-06T12:24:58 INFO  trace-sink/ts-node-04 request done id=req-4edeb02f route=/trace-sink/v1/get status=200 latency_ms=307
+2026-11-06T12:25:03 WARN  trace-sink/ts-node-01 alert fired rule=heap_used_high value=96% threshold=85%
+2026-11-06T12:25:06 INFO  trace-sink/ts-node-23 request done id=req-8820f7a0 route=/trace-sink/v1/create status=204 latency_ms=159
+2026-11-06T12:25:13 INFO  trace-sink/ts-node-14 request done id=req-2b2a485d route=/trace-sink/v1/status status=200 latency_ms=85
+2026-11-06T12:25:17 INFO  trace-sink/ts-node-06 deploy step release=trace-sink-4.12.9 step=shift_traffic_50 result=ok took_s=197
+2026-11-06T12:25:22 INFO  trace-sink/ts-node-05 request done id=req-a59d5d4f route=/trace-sink/v1/verify status=500 latency_ms=180
+2026-11-06T12:25:25 WARN  trace-sink/ts-node-15 alert fired rule=error_ratio_high value=97% threshold=87%
+2026-11-06T12:25:32 INFO  trace-sink/ts-node-01 request done id=req-897e28c4 route=/trace-sink/v1/get status=200 latency_ms=41
+2026-11-06T12:25:38 INFO  trace-sink/ts-node-18 request done id=req-46c524c0 route=/trace-sink/v1/sync status=200 latency_ms=48
+2026-11-06T12:25:45 INFO  trace-sink/ts-node-02 request done id=req-ed28b726 route=/trace-sink/v1/list status=200 latency_ms=124
+2026-11-06T12:25:51 INFO  trace-sink/ts-node-02 backup finished file=/vault/weekly/orders_2026w36.tar.zst size_mb=66619 checksum=b31702d9
+2026-11-06T12:25:57 INFO  trace-sink/ts-node-21 request done id=req-a4cfdc69 route=/trace-sink/v1/update status=200 latency_ms=209
+2026-11-06T12:26:01 INFO  trace-sink/ts-node-23 pool resize target=trace-sink-worker max_pool_size=244 prev=269
+2026-11-06T12:26:06 INFO  trace-sink/ts-node-19 backup finished file=/vault/weekly/payments_2026w34.tar.zst size_mb=26245 checksum=c47aeb44
+2026-11-06T12:26:07 WARN  trace-sink/ts-node-22 alert fired rule=p99_latency_high value=65ms threshold=64ms
+2026-11-06T12:26:14 INFO  trace-sink/ts-node-03 request done id=req-9c565611 route=/trace-sink/v1/update status=200 latency_ms=201
+2026-11-06T12:26:15 INFO  trace-sink/ts-node-21 request done id=req-26e57e55 route=/trace-sink/v1/update status=200 latency_ms=841
+2026-11-06T12:26:16 NOTE  trace-sink/ts-node-22 operator=shkim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-06T12:26:21 WARN  trace-sink/ts-node-22 alert fired rule=error_ratio_high value=53% threshold=52%
+2026-11-06T12:26:27 INFO  trace-sink/ts-node-03 request done id=req-389e1f42 route=/trace-sink/v1/sync status=204 latency_ms=86
+2026-11-06T12:26:29 INFO  trace-sink/ts-node-18 request done id=req-aacd9eed route=/trace-sink/v1/sync status=200 latency_ms=56
+2026-11-06T12:26:33 INFO  trace-sink/ts-node-01 deploy step release=trace-sink-4.17.2 step=migrate result=ok took_s=118
+2026-11-06T12:26:37 WARN  trace-sink/ts-node-18 alert fired rule=gc_pause_long value=85ms threshold=76ms
+2026-11-06T12:26:40 INFO  trace-sink/ts-node-24 deploy step release=trace-sink-4.22.4 step=warmup result=ok took_s=199
+2026-11-06T12:26:44 INFO  trace-sink/ts-node-12 deploy step release=trace-sink-4.15.1 step=shift_traffic_100 result=ok took_s=71
+2026-11-06T12:26:47 INFO  trace-sink/ts-node-12 cache stats region=ap-ne-2c hit_ratio=73.9% evictions=27051
+2026-11-06T12:26:50 INFO  trace-sink/ts-node-10 request done id=req-801fd06c route=/trace-sink/v1/create status=201 latency_ms=89
+2026-11-06T12:26:55 INFO  trace-sink/ts-node-16 request done id=req-32f9950c route=/trace-sink/v1/cancel status=429 latency_ms=89
+2026-11-06T12:26:58 INFO  trace-sink/ts-node-07 request done id=req-c5fe2607 route=/trace-sink/v1/create status=503 latency_ms=106
+2026-11-06T12:27:04 NOTE  trace-sink/ts-node-10 operator=mjlee memo="점검 창을 18분 연장함. 승인: 류태경 팀장."
+2026-11-06T12:27:08 INFO  trace-sink/ts-node-01 config applied key=worker.concurrency value=50 by=mjlee
+2026-11-06T12:27:11 INFO  trace-sink/ts-node-12 request done id=req-e2e56034 route=/trace-sink/v1/cancel status=404 latency_ms=150
+2026-11-06T12:27:16 INFO  trace-sink/ts-node-02 backup finished file=/vault/weekly/inventory_2026w42.tar.zst size_mb=57202 checksum=a764fc98
+2026-11-06T12:27:23 INFO  trace-sink/ts-node-13 deploy step release=trace-sink-4.12.0 step=shift_traffic_50 result=ok took_s=212
+2026-11-06T12:27:30 INFO  trace-sink/ts-node-03 pool resize target=trace-sink-queue max_pool_size=229 prev=270
+2026-11-06T12:27:33 WARN  trace-sink/ts-node-19 alert fired rule=cpu_steal_high value=96% threshold=92%
+2026-11-06T12:27:39 INFO  trace-sink/ts-node-14 request done id=req-4830a407 route=/trace-sink/v1/update status=200 latency_ms=225
+2026-11-06T12:27:40 INFO  trace-sink/ts-node-09 ticket linked id=OPS-47596 reason=log_volume_spike
+2026-11-06T12:27:44 INFO  trace-sink/ts-node-15 backup finished file=/vault/weekly/inventory_2026w42.tar.zst size_mb=27887 checksum=152431c1
+2026-11-06T12:27:49 INFO  trace-sink/ts-node-13 deploy step release=trace-sink-4.19.4 step=start result=ok took_s=103
+2026-11-06T12:27:52 INFO  trace-sink/ts-node-11 request done id=req-fd9df4d9 route=/trace-sink/v1/get status=200 latency_ms=13
+2026-11-06T12:27:54 INFO  trace-sink/ts-node-17 config applied key=breaker.half_open_s value=true by=mjlee
+2026-11-06T12:27:57 INFO  trace-sink/ts-node-08 backup finished file=/vault/weekly/sessions_2026w31.tar.zst size_mb=89752 checksum=758e6978
+2026-11-06T12:28:02 INFO  trace-sink/ts-node-24 deploy step release=trace-sink-4.12.5 step=migrate result=ok took_s=119
+2026-11-06T12:28:08 INFO  trace-sink/ts-node-13 request done id=req-64fb36f7 route=/trace-sink/v1/cancel status=400 latency_ms=565
+2026-11-06T12:28:11 WARN  trace-sink/ts-node-17 alert fired rule=error_ratio_high value=68% threshold=59%
+2026-11-06T12:28:16 INFO  trace-sink/ts-node-10 config applied key=gc.pause_target_ms value=false by=mjlee
+2026-11-06T12:28:20 INFO  trace-sink/ts-node-06 request done id=req-cbe45d06 route=/trace-sink/v1/cancel status=200 latency_ms=272
+2026-11-06T12:28:23 INFO  trace-sink/ts-node-10 deploy step release=trace-sink-4.16.1 step=pull_image result=ok took_s=41
+2026-11-06T12:28:24 INFO  trace-sink/ts-node-14 config applied key=canary.traffic_percent value=6368 by=yjchoi
+2026-11-06T12:28:27 NOTE  trace-sink/ts-node-11 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 41일 남음."
+2026-11-06T12:28:30 INFO  trace-sink/ts-node-23 deploy step release=trace-sink-4.10.9 step=migrate result=ok took_s=189
+2026-11-06T12:28:33 INFO  trace-sink/ts-node-04 request done id=req-07816836 route=/trace-sink/v1/list status=201 latency_ms=332
+2026-11-06T12:28:34 INFO  trace-sink/ts-node-01 backup finished file=/vault/weekly/orders_2026w32.tar.zst size_mb=38061 checksum=e083ec76
+2026-11-06T12:28:38 INFO  trace-sink/ts-node-20 request done id=req-ee6e99b9 route=/trace-sink/v1/cancel status=200 latency_ms=22
+2026-11-06T12:28:44 NOTE  trace-sink/ts-node-08 operator=jhpark memo="캐시 TTL을 41초로 되돌림. 오래된 응답이 보고됨."
+2026-11-06T12:28:45 INFO  trace-sink/ts-node-18 request done id=req-22a798d4 route=/trace-sink/v1/update status=200 latency_ms=165
+2026-11-06T12:28:51 INFO  trace-sink/ts-node-10 request done id=req-02fe9b86 route=/trace-sink/v1/create status=200 latency_ms=194
+2026-11-06T12:28:56 INFO  trace-sink/ts-node-20 deploy step release=trace-sink-4.14.9 step=shift_traffic_100 result=ok took_s=201
+2026-11-06T12:28:59 INFO  trace-sink/ts-node-09 ticket linked id=OPS-49355 reason=oncall_handoff
+2026-11-06T12:29:02 INFO  trace-sink/ts-node-05 request done id=req-d56480ec route=/trace-sink/v1/update status=400 latency_ms=52
+2026-11-06T12:29:08 ERROR trace-sink/ts-node-09 job failed job=trace-sink-cleanup attempt=3 cause=quota_exceeded
+2026-11-06T12:29:10 INFO  trace-sink/ts-node-09 ticket linked id=OPS-48518 reason=quota_increase
+2026-11-06T12:29:17 INFO  trace-sink/ts-node-16 request done id=req-8eba45a7 route=/trace-sink/v1/update status=400 latency_ms=111
+2026-11-06T12:29:24 INFO  trace-sink/ts-node-02 config applied key=breaker.half_open_s value=false by=jhpark
+2026-11-06T12:29:27 INFO  trace-sink/ts-node-17 request done id=req-6f43e9f8 route=/trace-sink/v1/list status=200 latency_ms=129
+2026-11-06T12:29:33 INFO  trace-sink/ts-node-17 deploy step release=trace-sink-4.22.5 step=healthcheck result=ok took_s=139
+2026-11-06T12:29:37 INFO  trace-sink/ts-node-05 request done id=req-55309f40 route=/trace-sink/v1/status status=200 latency_ms=129
+2026-11-06T12:29:41 INFO  trace-sink/ts-node-01 deploy step release=trace-sink-4.17.0 step=shift_traffic_10 result=ok took_s=238
+2026-11-06T12:29:47 INFO  trace-sink/ts-node-18 request done id=req-4df87086 route=/trace-sink/v1/status status=500 latency_ms=264
+2026-11-06T12:29:53 INFO  trace-sink/ts-node-21 request done id=req-8592d3e8 route=/trace-sink/v1/update status=200 latency_ms=392
+2026-11-06T12:29:59 INFO  trace-sink/ts-node-03 backup finished file=/vault/weekly/sessions_2026w44.tar.zst size_mb=70082 checksum=cc5ee212
+2026-11-06T12:30:02 INFO  trace-sink/ts-node-13 ticket linked id=OPS-49135 reason=oncall_handoff
+2026-11-06T12:30:05 INFO  trace-sink/ts-node-15 config applied key=limiter.rps value=22% by=shkim
+2026-11-06T12:30:06 WARN  trace-sink/ts-node-05 alert fired rule=error_ratio_high value=77% threshold=68%
+2026-11-06T12:30:13 INFO  trace-sink/ts-node-07 backup finished file=/vault/weekly/users_2026w35.tar.zst size_mb=87534 checksum=7be5d28b
+2026-11-06T12:30:19 WARN  trace-sink/ts-node-16 alert fired rule=heap_used_high value=86% threshold=81%
+2026-11-06T12:30:23 INFO  trace-sink/ts-node-18 request done id=req-e372f84e route=/trace-sink/v1/create status=200 latency_ms=43
+2026-11-06T12:30:24 INFO  trace-sink/ts-node-23 request done id=req-a2e6fb79 route=/trace-sink/v1/update status=204 latency_ms=55
+2026-11-06T12:30:31 INFO  trace-sink/ts-node-23 backup finished file=/vault/weekly/users_2026w32.tar.zst size_mb=1315 checksum=73dd917b
+2026-11-06T12:30:34 INFO  trace-sink/ts-node-08 deploy step release=trace-sink-4.18.9 step=healthcheck result=ok took_s=76
+2026-11-06T12:30:37 INFO  trace-sink/ts-node-13 deploy step release=trace-sink-4.20.4 step=shift_traffic_100 result=ok took_s=207
+2026-11-06T12:30:44 INFO  trace-sink/ts-node-17 ticket linked id=OPS-49392 reason=dependency_upgrade
+2026-11-06T12:30:45 WARN  trace-sink/ts-node-07 alert fired rule=p99_latency_high value=59ms threshold=53ms
+2026-11-06T12:30:48 INFO  trace-sink/ts-node-22 request done id=req-59bfda96 route=/trace-sink/v1/create status=200 latency_ms=261
+2026-11-06T12:30:54 INFO  trace-sink/ts-node-13 request done id=req-416852cb route=/trace-sink/v1/cancel status=200 latency_ms=48
+2026-11-06T12:30:59 INFO  trace-sink/ts-node-23 request done id=req-23f5926c route=/trace-sink/v1/status status=200 latency_ms=104
+2026-11-06T12:31:04 INFO  trace-sink/ts-node-13 config applied key=queue.batch_size value=30 by=shkim
+2026-11-06T12:31:08 INFO  trace-sink/ts-node-13 request done id=req-2ea7b449 route=/trace-sink/v1/sync status=200 latency_ms=47
+2026-11-06T12:31:10 INFO  trace-sink/ts-node-11 request done id=req-5a768712 route=/trace-sink/v1/cancel status=200 latency_ms=261
+2026-11-06T12:31:14 INFO  trace-sink/ts-node-07 backup finished file=/vault/weekly/payments_2026w35.tar.zst size_mb=71086 checksum=44a3150f
+2026-11-06T12:31:18 INFO  trace-sink/ts-node-22 deploy step release=trace-sink-4.18.2 step=shift_traffic_50 result=ok took_s=28
+2026-11-06T12:31:19 INFO  trace-sink/ts-node-16 request done id=req-8df49785 route=/trace-sink/v1/list status=200 latency_ms=139
+2026-11-06T12:31:25 INFO  trace-sink/ts-node-03 deploy step release=trace-sink-4.19.5 step=drain result=ok took_s=128
+2026-11-06T12:31:29 INFO  trace-sink/ts-node-04 request done id=req-b173339e route=/trace-sink/v1/update status=201 latency_ms=104
+2026-11-06T12:31:35 INFO  trace-sink/ts-node-11 backup finished file=/vault/weekly/users_2026w42.tar.zst size_mb=82836 checksum=2b0fb28b
+2026-11-06T12:31:41 INFO  trace-sink/ts-node-24 request done id=req-9dc90189 route=/trace-sink/v1/list status=204 latency_ms=88
+2026-11-06T12:31:42 INFO  trace-sink/ts-node-04 request done id=req-a4d7cfa8 route=/trace-sink/v1/list status=200 latency_ms=225
+2026-11-06T12:31:49 INFO  trace-sink/ts-node-06 backup finished file=/vault/daily/payments_20261013.tar.zst size_mb=29930 checksum=1ad6ad33
+2026-11-06T12:31:55 INFO  trace-sink/ts-node-18 request done id=req-f780606a route=/trace-sink/v1/update status=200 latency_ms=194
+2026-11-06T12:31:57 INFO  trace-sink/ts-node-10 request done id=req-5e256df2 route=/trace-sink/v1/create status=201 latency_ms=232
+2026-11-06T12:32:02 INFO  trace-sink/ts-node-03 request done id=req-373fdaff route=/trace-sink/v1/cancel status=200 latency_ms=220
+2026-11-06T12:32:04 WARN  trace-sink/ts-node-04 alert fired rule=queue_depth_high value=63 threshold=59
+2026-11-06T12:32:08 WARN  trace-sink/ts-node-08 alert fired rule=heap_used_high value=68% threshold=64%
+2026-11-06T12:32:11 INFO  trace-sink/ts-node-07 pool resize target=trace-sink-cache max_pool_size=175 prev=115
+2026-11-06T12:32:15 INFO  trace-sink/ts-node-18 ticket linked id=OPS-48064 reason=cert_rotation
+2026-11-06T12:32:21 INFO  trace-sink/ts-node-01 backup finished file=/vault/daily/inventory_20261002.tar.zst size_mb=51736 checksum=6fe808c6
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

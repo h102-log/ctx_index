@@ -1,0 +1,424 @@
+참고용 로그 06: 알림 워커(notify-worker) 큐 적체 구간. '확인'이라고만 답해 줘.
+
+2026-10-10T15:24:42 INFO  notify-worker/nw-node-05 deploy step release=notify-worker-4.15.2 step=shift_traffic_100 result=ok took_s=76
+2026-10-10T15:24:48 INFO  notify-worker/nw-node-19 request done id=req-beede886 route=/notify-worker/v1/get status=200 latency_ms=46
+2026-10-10T15:24:50 INFO  notify-worker/nw-node-01 backup finished file=/vault/weekly/payments_2026w36.tar.zst size_mb=79331 checksum=456aa956
+2026-10-10T15:24:52 INFO  notify-worker/nw-node-13 request done id=req-dc8b0d51 route=/notify-worker/v1/status status=200 latency_ms=64
+2026-10-10T15:24:53 INFO  notify-worker/nw-node-09 backup finished file=/vault/weekly/users_2026w42.tar.zst size_mb=67118 checksum=f0ee86f0
+2026-10-10T15:24:56 INFO  notify-worker/nw-node-18 request done id=req-9142afff route=/notify-worker/v1/status status=200 latency_ms=238
+2026-10-10T15:24:59 INFO  notify-worker/nw-node-24 request done id=req-fee14a22 route=/notify-worker/v1/list status=200 latency_ms=63
+2026-10-10T15:25:01 INFO  notify-worker/nw-node-21 request done id=req-0b1eaf5f route=/notify-worker/v1/verify status=200 latency_ms=71
+2026-10-10T15:25:05 NOTE  notify-worker/nw-node-19 operator=jhpark memo="타임아웃을 18ms에서 45ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-10T15:25:08 INFO  notify-worker/nw-node-09 request done id=req-c198c9dd route=/notify-worker/v1/cancel status=200 latency_ms=164
+2026-10-10T15:25:15 INFO  notify-worker/nw-node-16 request done id=req-61d0b28b route=/notify-worker/v1/create status=200 latency_ms=82
+2026-10-10T15:25:19 INFO  notify-worker/nw-node-18 request done id=req-c2d0e12c route=/notify-worker/v1/status status=200 latency_ms=179
+2026-10-10T15:25:20 INFO  notify-worker/nw-node-22 request done id=req-8a36bb7b route=/notify-worker/v1/cancel status=201 latency_ms=131
+2026-10-10T15:25:25 INFO  notify-worker/nw-node-10 config applied key=retry.max_attempts value=false by=hbyoon
+2026-10-10T15:25:29 INFO  notify-worker/nw-node-22 backup finished file=/vault/daily/inventory_20261021.tar.zst size_mb=39631 checksum=67180505
+2026-10-10T15:25:35 NOTE  notify-worker/nw-node-06 operator=sykang memo="동시 처리 수를 92에서 53로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-10T15:25:41 INFO  notify-worker/nw-node-10 pool resize target=notify-worker-cache max_pool_size=205 prev=180
+2026-10-10T15:25:44 INFO  notify-worker/nw-node-03 ticket linked id=OPS-49110 reason=node_drain
+2026-10-10T15:25:50 INFO  notify-worker/nw-node-20 ticket linked id=OPS-48078 reason=quota_increase
+2026-10-10T15:25:53 INFO  notify-worker/nw-node-16 request done id=req-011946ac route=/notify-worker/v1/cancel status=429 latency_ms=150
+2026-10-10T15:25:58 INFO  notify-worker/nw-node-10 request done id=req-226ff6da route=/notify-worker/v1/get status=200 latency_ms=103
+2026-10-10T15:26:02 INFO  notify-worker/nw-node-14 request done id=req-a703202b route=/notify-worker/v1/get status=200 latency_ms=112
+2026-10-10T15:26:05 WARN  notify-worker/nw-node-11 alert fired rule=cpu_steal_high value=88% threshold=77%
+2026-10-10T15:26:07 INFO  notify-worker/nw-node-01 request done id=req-339a70a6 route=/notify-worker/v1/status status=409 latency_ms=401
+2026-10-10T15:26:13 ERROR notify-worker/nw-node-05 job failed job=notify-worker-rollup attempt=1 cause=quota_exceeded
+2026-10-10T15:26:20 INFO  notify-worker/nw-node-14 backup finished file=/vault/weekly/sessions_2026w40.tar.zst size_mb=83485 checksum=eef93c4c
+2026-10-10T15:26:22 ERROR notify-worker/nw-node-11 job failed job=notify-worker-export attempt=4 cause=upstream_timeout
+2026-10-10T15:26:29 INFO  notify-worker/nw-node-18 request done id=req-da26156b route=/notify-worker/v1/verify status=500 latency_ms=328
+2026-10-10T15:26:32 NOTE  notify-worker/nw-node-13 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-10T15:26:34 INFO  notify-worker/nw-node-14 config applied key=retry.backoff_ms value=1083 by=shkim
+2026-10-10T15:26:38 INFO  notify-worker/nw-node-11 ticket linked id=OPS-47585 reason=oncall_handoff
+2026-10-10T15:26:45 INFO  notify-worker/nw-node-09 deploy step release=notify-worker-4.16.6 step=migrate result=ok took_s=212
+2026-10-10T15:26:48 INFO  notify-worker/nw-node-12 config applied key=limiter.burst value=false by=mjlee
+2026-10-10T15:26:51 INFO  notify-worker/nw-node-22 request done id=req-6a292335 route=/notify-worker/v1/list status=400 latency_ms=139
+2026-10-10T15:26:54 INFO  notify-worker/nw-node-12 request done id=req-462c3ca8 route=/notify-worker/v1/sync status=204 latency_ms=180
+2026-10-10T15:27:01 INFO  notify-worker/nw-node-20 config applied key=http.max_conns value=36 by=sykang
+2026-10-10T15:27:07 INFO  notify-worker/nw-node-13 request done id=req-10f9a1ed route=/notify-worker/v1/list status=200 latency_ms=64
+2026-10-10T15:27:08 INFO  notify-worker/nw-node-06 deploy step release=notify-worker-4.13.0 step=migrate result=ok took_s=32
+2026-10-10T15:27:09 NOTE  notify-worker/nw-node-07 operator=mjlee memo="연동 팀에 변경 공지 완료."
+2026-10-10T15:27:12 NOTE  notify-worker/nw-node-04 operator=shkim memo="헬스체크 간격을 36초에서 39초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-10T15:27:13 INFO  notify-worker/nw-node-20 request done id=req-3f68d19a route=/notify-worker/v1/status status=200 latency_ms=74
+2026-10-10T15:27:17 INFO  notify-worker/nw-node-12 request done id=req-8fb09d5c route=/notify-worker/v1/status status=200 latency_ms=242
+2026-10-10T15:27:22 INFO  notify-worker/nw-node-17 request done id=req-40935381 route=/notify-worker/v1/create status=200 latency_ms=106
+2026-10-10T15:27:27 INFO  notify-worker/nw-node-01 request done id=req-4c562575 route=/notify-worker/v1/cancel status=200 latency_ms=222
+2026-10-10T15:27:29 INFO  notify-worker/nw-node-19 config applied key=queue.visibility_s value=false by=shkim
+2026-10-10T15:27:34 NOTE  notify-worker/nw-node-16 operator=sykang memo="캐시 TTL을 19초로 되돌림. 오래된 응답이 보고됨."
+2026-10-10T15:27:37 INFO  notify-worker/nw-node-24 cache stats region=ap-se-1a hit_ratio=72.0% evictions=10263
+2026-10-10T15:27:38 INFO  notify-worker/nw-node-19 request done id=req-1c4a31ec route=/notify-worker/v1/sync status=404 latency_ms=195
+2026-10-10T15:27:44 INFO  notify-worker/nw-node-20 request done id=req-96c8e090 route=/notify-worker/v1/verify status=200 latency_ms=166
+2026-10-10T15:27:45 INFO  notify-worker/nw-node-19 request done id=req-b84b80a5 route=/notify-worker/v1/update status=429 latency_ms=48
+2026-10-10T15:27:51 NOTE  notify-worker/nw-node-03 operator=jhpark memo="동시 처리 수를 60에서 47로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-10T15:27:53 WARN  notify-worker/nw-node-10 alert fired rule=fd_usage_high value=70% threshold=59%
+2026-10-10T15:27:54 INFO  notify-worker/nw-node-19 request done id=req-bff879a9 route=/notify-worker/v1/sync status=200 latency_ms=723
+2026-10-10T15:27:57 INFO  notify-worker/nw-node-21 ticket linked id=OPS-47326 reason=oncall_handoff
+2026-10-10T15:28:00 INFO  notify-worker/nw-node-02 request done id=req-e61d4027 route=/notify-worker/v1/sync status=200 latency_ms=133
+2026-10-10T15:28:02 INFO  notify-worker/nw-node-08 request done id=req-4210aead route=/notify-worker/v1/cancel status=200 latency_ms=175
+2026-10-10T15:28:07 INFO  notify-worker/nw-node-15 backup finished file=/vault/weekly/orders_2026w32.tar.zst size_mb=87668 checksum=2fb31a11
+2026-10-10T15:28:09 INFO  notify-worker/nw-node-17 request done id=req-356fea6d route=/notify-worker/v1/cancel status=200 latency_ms=149
+2026-10-10T15:28:12 WARN  notify-worker/nw-node-07 alert fired rule=heap_used_high value=86% threshold=75%
+2026-10-10T15:28:18 INFO  notify-worker/nw-node-15 request done id=req-b3f27ba9 route=/notify-worker/v1/update status=200 latency_ms=296
+2026-10-10T15:28:19 INFO  notify-worker/nw-node-01 request done id=req-1771665b route=/notify-worker/v1/cancel status=200 latency_ms=82
+2026-10-10T15:28:25 INFO  notify-worker/nw-node-20 request done id=req-d5ab141a route=/notify-worker/v1/verify status=200 latency_ms=94
+2026-10-10T15:28:26 INFO  notify-worker/nw-node-15 backup finished file=/vault/daily/sessions_20261018.tar.zst size_mb=22857 checksum=ecb17777
+2026-10-10T15:28:29 INFO  notify-worker/nw-node-08 request done id=req-4e66ed60 route=/notify-worker/v1/update status=200 latency_ms=90
+2026-10-10T15:28:34 INFO  notify-worker/nw-node-18 ticket linked id=OPS-48649 reason=dns_ttl_change
+2026-10-10T15:28:38 WARN  notify-worker/nw-node-13 alert fired rule=replica_lag_high value=81s threshold=70s
+2026-10-10T15:28:40 INFO  notify-worker/nw-node-12 request done id=req-3bfc3f28 route=/notify-worker/v1/sync status=200 latency_ms=72
+2026-10-10T15:28:44 INFO  notify-worker/nw-node-13 request done id=req-af7f7dd5 route=/notify-worker/v1/status status=429 latency_ms=161
+2026-10-10T15:28:45 INFO  notify-worker/nw-node-23 request done id=req-b4d33a1d route=/notify-worker/v1/status status=200 latency_ms=52
+2026-10-10T15:28:52 INFO  notify-worker/nw-node-18 request done id=req-5485fb4e route=/notify-worker/v1/update status=400 latency_ms=144
+2026-10-10T15:28:56 INFO  notify-worker/nw-node-13 request done id=req-e34b3e00 route=/notify-worker/v1/get status=201 latency_ms=102
+2026-10-10T15:29:00 INFO  notify-worker/nw-node-06 backup finished file=/vault/daily/orders_20261008.tar.zst size_mb=14794 checksum=bb6261cf
+2026-10-10T15:29:05 INFO  notify-worker/nw-node-20 config applied key=queue.visibility_s value=4668 by=mjlee
+2026-10-10T15:29:11 INFO  notify-worker/nw-node-09 config applied key=http.max_conns value=5134 by=sykang
+2026-10-10T15:29:12 INFO  notify-worker/nw-node-21 backup finished file=/vault/weekly/inventory_2026w38.tar.zst size_mb=42385 checksum=1e9393f6
+2026-10-10T15:29:16 INFO  notify-worker/nw-node-03 request done id=req-ab024bcf route=/notify-worker/v1/verify status=503 latency_ms=101
+2026-10-10T15:29:20 WARN  notify-worker/nw-node-17 alert fired rule=heap_used_high value=86% threshold=85%
+2026-10-10T15:29:25 INFO  notify-worker/nw-node-19 request done id=req-2b1ae797 route=/notify-worker/v1/verify status=200 latency_ms=132
+2026-10-10T15:29:31 INFO  notify-worker/nw-node-23 pool resize target=notify-worker-upstream max_pool_size=346 prev=366
+2026-10-10T15:29:34 INFO  notify-worker/nw-node-06 deploy step release=notify-worker-4.16.9 step=start result=ok took_s=113
+2026-10-10T15:29:37 INFO  notify-worker/nw-node-07 request done id=req-3dc8923f route=/notify-worker/v1/cancel status=200 latency_ms=127
+2026-10-10T15:29:39 INFO  notify-worker/nw-node-15 request done id=req-fbbbbc7b route=/notify-worker/v1/status status=404 latency_ms=46
+2026-10-10T15:29:40 INFO  notify-worker/nw-node-13 request done id=req-1414e4d4 route=/notify-worker/v1/status status=200 latency_ms=224
+2026-10-10T15:29:42 WARN  notify-worker/nw-node-13 alert fired rule=heap_used_high value=95% threshold=94%
+2026-10-10T15:29:47 INFO  notify-worker/nw-node-16 config applied key=tls.session_cache value=false by=hbyoon
+2026-10-10T15:29:50 NOTE  notify-worker/nw-node-12 operator=ejlim memo="임시 증설 18대 추가. 내일 오전 회수 예정."
+2026-10-10T15:29:57 INFO  notify-worker/nw-node-10 config applied key=breaker.open_ratio value=true by=dwjung
+2026-10-10T15:29:58 INFO  notify-worker/nw-node-10 deploy step release=notify-worker-4.22.9 step=drain result=ok took_s=159
+2026-10-10T15:30:00 INFO  notify-worker/nw-node-19 request done id=req-f9226e02 route=/notify-worker/v1/verify status=200 latency_ms=264
+2026-10-10T15:30:04 INFO  notify-worker/nw-node-22 ticket linked id=OPS-48060 reason=runbook_update
+2026-10-10T15:30:05 INFO  notify-worker/nw-node-03 request done id=req-059398fc route=/notify-worker/v1/sync status=200 latency_ms=187
+2026-10-10T15:30:09 INFO  notify-worker/nw-node-04 deploy step release=notify-worker-4.17.3 step=pull_image result=ok took_s=52
+2026-10-10T15:30:13 INFO  notify-worker/nw-node-15 cache stats region=ap-se-1a hit_ratio=92.3% evictions=26673
+2026-10-10T15:30:17 INFO  notify-worker/nw-node-07 cache stats region=ap-ne-2c hit_ratio=96.5% evictions=3926
+2026-10-10T15:30:22 INFO  notify-worker/nw-node-10 cache stats region=ap-ne-2c hit_ratio=59.0% evictions=1390
+2026-10-10T15:30:28 INFO  notify-worker/nw-node-15 deploy step release=notify-worker-4.10.5 step=shift_traffic_10 result=ok took_s=59
+2026-10-10T15:30:33 INFO  notify-worker/nw-node-11 request done id=req-281d95ea route=/notify-worker/v1/update status=200 latency_ms=155
+2026-10-10T15:30:36 INFO  notify-worker/nw-node-02 ticket linked id=OPS-48971 reason=schema_change
+2026-10-10T15:30:37 INFO  notify-worker/nw-node-03 request done id=req-a7af9746 route=/notify-worker/v1/get status=200 latency_ms=519
+2026-10-10T15:30:38 INFO  notify-worker/nw-node-16 request done id=req-cb124289 route=/notify-worker/v1/verify status=200 latency_ms=125
+2026-10-10T15:30:45 ERROR notify-worker/nw-node-20 job failed job=notify-worker-rollup attempt=4 cause=bad_checksum
+2026-10-10T15:30:49 INFO  notify-worker/nw-node-19 config applied key=flush.interval_ms value=true by=yjchoi
+2026-10-10T15:30:51 INFO  notify-worker/nw-node-14 request done id=req-11c86f1f route=/notify-worker/v1/get status=429 latency_ms=229
+2026-10-10T15:30:58 INFO  notify-worker/nw-node-02 request done id=req-4d702b73 route=/notify-worker/v1/create status=200 latency_ms=502
+2026-10-10T15:31:05 INFO  notify-worker/nw-node-20 ticket linked id=OPS-49067 reason=runbook_update
+2026-10-10T15:31:12 WARN  notify-worker/nw-node-12 alert fired rule=queue_depth_high value=60 threshold=51
+2026-10-10T15:31:15 WARN  notify-worker/nw-node-18 alert fired rule=gc_pause_long value=53ms threshold=42ms
+2026-10-10T15:31:19 INFO  notify-worker/nw-node-04 request done id=req-0ba82077 route=/notify-worker/v1/cancel status=201 latency_ms=42
+2026-10-10T15:31:20 INFO  notify-worker/nw-node-03 deploy step release=notify-worker-4.11.4 step=verify result=ok took_s=183
+2026-10-10T15:31:27 INFO  notify-worker/nw-node-24 request done id=req-86b8cb4e route=/notify-worker/v1/list status=200 latency_ms=67
+2026-10-10T15:31:29 INFO  notify-worker/nw-node-02 deploy step release=notify-worker-4.18.2 step=verify result=ok took_s=195
+2026-10-10T15:31:32 INFO  notify-worker/nw-node-13 deploy step release=notify-worker-4.17.4 step=warmup result=ok took_s=208
+2026-10-10T15:31:39 INFO  notify-worker/nw-node-10 request done id=req-03566515 route=/notify-worker/v1/sync status=429 latency_ms=466
+2026-10-10T15:31:45 INFO  notify-worker/nw-node-22 deploy step release=notify-worker-4.10.7 step=shift_traffic_100 result=ok took_s=128
+2026-10-10T15:31:48 INFO  notify-worker/nw-node-14 request done id=req-8501dec6 route=/notify-worker/v1/verify status=204 latency_ms=63
+2026-10-10T15:31:50 INFO  notify-worker/nw-node-18 ticket linked id=OPS-49797 reason=cert_rotation
+2026-10-10T15:31:54 WARN  notify-worker/nw-node-19 alert fired rule=error_ratio_high value=91% threshold=90%
+2026-10-10T15:32:00 ERROR notify-worker/nw-node-22 job failed job=notify-worker-export attempt=4 cause=lock_wait_exceeded
+2026-10-10T15:32:04 INFO  notify-worker/nw-node-19 request done id=req-b20ceeed route=/notify-worker/v1/list status=200 latency_ms=145
+2026-10-10T15:32:09 INFO  notify-worker/nw-node-14 ticket linked id=OPS-47659 reason=dependency_upgrade
+2026-10-10T15:32:14 INFO  notify-worker/nw-node-19 request done id=req-c2c4c40c route=/notify-worker/v1/verify status=200 latency_ms=70
+2026-10-10T15:32:15 INFO  notify-worker/nw-node-19 request done id=req-9fd163a2 route=/notify-worker/v1/create status=200 latency_ms=135
+2026-10-10T15:32:20 INFO  notify-worker/nw-node-07 request done id=req-31b639c7 route=/notify-worker/v1/get status=429 latency_ms=322
+2026-10-10T15:32:21 INFO  notify-worker/nw-node-20 config applied key=retry.max_attempts value=38% by=shkim
+2026-10-10T15:32:26 INFO  notify-worker/nw-node-08 deploy step release=notify-worker-4.13.8 step=start result=ok took_s=157
+2026-10-10T15:32:30 INFO  notify-worker/nw-node-21 pool resize target=notify-worker-cache max_pool_size=111 prev=169
+2026-10-10T15:32:33 INFO  notify-worker/nw-node-09 request done id=req-dd67e3d0 route=/notify-worker/v1/verify status=200 latency_ms=52
+2026-10-10T15:32:34 INFO  notify-worker/nw-node-16 request done id=req-46353958 route=/notify-worker/v1/update status=200 latency_ms=57
+2026-10-10T15:32:41 INFO  notify-worker/nw-node-04 request done id=req-65359189 route=/notify-worker/v1/update status=200 latency_ms=323
+2026-10-10T15:32:47 INFO  notify-worker/nw-node-22 request done id=req-06912b5f route=/notify-worker/v1/get status=200 latency_ms=72
+2026-10-10T15:32:51 INFO  notify-worker/nw-node-02 request done id=req-7f36f009 route=/notify-worker/v1/get status=200 latency_ms=108
+2026-10-10T15:32:53 WARN  notify-worker/nw-node-14 alert fired rule=disk_usage_warning value=65% threshold=55%
+2026-10-10T15:32:55 INFO  notify-worker/nw-node-08 request done id=req-d8f5d20f route=/notify-worker/v1/status status=500 latency_ms=302
+2026-10-10T15:33:01 NOTE  notify-worker/nw-node-24 operator=sykang memo="배치 시작 시각을 51시 54분으로 고정함."
+2026-10-10T15:33:02 INFO  notify-worker/nw-node-07 pool resize target=notify-worker-queue max_pool_size=254 prev=244
+2026-10-10T15:33:08 INFO  notify-worker/nw-node-17 config applied key=limiter.rps value=false by=dwjung
+2026-10-10T15:33:14 INFO  notify-worker/nw-node-03 config applied key=worker.concurrency value=46 by=dwjung
+2026-10-10T15:33:21 INFO  notify-worker/nw-node-10 deploy step release=notify-worker-4.14.5 step=warmup result=ok took_s=233
+2026-10-10T15:33:26 INFO  notify-worker/nw-node-08 ticket linked id=OPS-47158 reason=dns_ttl_change
+2026-10-10T15:33:32 INFO  notify-worker/nw-node-01 request done id=req-d51e7005 route=/notify-worker/v1/sync status=429 latency_ms=38
+2026-10-10T15:33:34 NOTE  notify-worker/nw-node-09 operator=yjchoi memo="로그 보존 기간은 9일로 유지하기로 함."
+2026-10-10T15:33:39 INFO  notify-worker/nw-node-04 request done id=req-b4da3f79 route=/notify-worker/v1/verify status=200 latency_ms=222
+2026-10-10T15:33:40 INFO  notify-worker/nw-node-23 config applied key=flush.interval_ms value=true by=yjchoi
+2026-10-10T15:33:43 INFO  notify-worker/nw-node-21 ticket linked id=OPS-49992 reason=schema_change
+2026-10-10T15:33:48 NOTE  notify-worker/nw-node-01 operator=dwjung memo="헬스체크 간격을 49초에서 72초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-10T15:33:53 INFO  notify-worker/nw-node-08 request done id=req-33f5262e route=/notify-worker/v1/get status=200 latency_ms=834
+2026-10-10T15:33:54 INFO  notify-worker/nw-node-21 request done id=req-1a980892 route=/notify-worker/v1/get status=200 latency_ms=75
+2026-10-10T15:34:00 INFO  notify-worker/nw-node-19 config applied key=limiter.rps value=17 by=shkim
+2026-10-10T15:34:06 INFO  notify-worker/nw-node-20 pool resize target=notify-worker-db max_pool_size=365 prev=407
+2026-10-10T15:34:11 INFO  notify-worker/nw-node-14 deploy step release=notify-worker-4.21.2 step=shift_traffic_10 result=ok took_s=142
+2026-10-10T15:34:13 INFO  notify-worker/nw-node-05 request done id=req-575e6857 route=/notify-worker/v1/verify status=200 latency_ms=82
+2026-10-10T15:34:15 INFO  notify-worker/nw-node-16 pool resize target=notify-worker-queue max_pool_size=114 prev=80
+2026-10-10T15:34:22 INFO  notify-worker/nw-node-08 request done id=req-8c70ac44 route=/notify-worker/v1/list status=200 latency_ms=108
+2026-10-10T15:34:29 INFO  notify-worker/nw-node-03 backup finished file=/vault/daily/sessions_20261008.tar.zst size_mb=54538 checksum=af076f00
+2026-10-10T15:34:31 INFO  notify-worker/nw-node-13 request done id=req-a2757868 route=/notify-worker/v1/list status=200 latency_ms=55
+2026-10-10T15:34:36 INFO  notify-worker/nw-node-23 request done id=req-55803c7c route=/notify-worker/v1/get status=200 latency_ms=280
+2026-10-10T15:34:37 ERROR notify-worker/nw-node-13 job failed job=notify-worker-cleanup attempt=3 cause=quota_exceeded
+2026-10-10T15:34:42 INFO  notify-worker/nw-node-19 request done id=req-3318d6b6 route=/notify-worker/v1/get status=200 latency_ms=99
+2026-10-10T15:34:47 INFO  notify-worker/nw-node-01 config applied key=cache.ttl_s value=true by=ejlim
+2026-10-10T15:34:49 INFO  notify-worker/nw-node-13 request done id=req-37d49887 route=/notify-worker/v1/verify status=200 latency_ms=48
+2026-10-10T15:34:50 INFO  notify-worker/nw-node-07 request done id=req-3b01dc04 route=/notify-worker/v1/create status=409 latency_ms=134
+2026-10-10T15:34:54 INFO  notify-worker/nw-node-24 pool resize target=notify-worker-worker max_pool_size=260 prev=236
+2026-10-10T15:34:57 INFO  notify-worker/nw-node-06 request done id=req-0fe2dc1a route=/notify-worker/v1/create status=200 latency_ms=41
+2026-10-10T15:34:58 WARN  notify-worker/nw-node-14 alert fired rule=disk_usage_warning value=52% threshold=49%
+2026-10-10T15:35:00 INFO  notify-worker/nw-node-03 cache stats region=ap-se-1a hit_ratio=87.0% evictions=15052
+2026-10-10T15:35:07 INFO  notify-worker/nw-node-21 request done id=req-2b5b901b route=/notify-worker/v1/get status=400 latency_ms=110
+2026-10-10T15:35:08 INFO  notify-worker/nw-node-07 request done id=req-0dcf7e95 route=/notify-worker/v1/verify status=400 latency_ms=48
+2026-10-10T15:35:14 INFO  notify-worker/nw-node-04 request done id=req-414a1cfd route=/notify-worker/v1/cancel status=429 latency_ms=82
+2026-10-10T15:35:19 INFO  notify-worker/nw-node-03 config applied key=queue.batch_size value=32 by=ejlim
+2026-10-10T15:35:24 WARN  notify-worker/nw-node-19 alert fired rule=error_ratio_high value=72% threshold=65%
+2026-10-10T15:35:30 INFO  notify-worker/nw-node-13 pool resize target=notify-worker-cache max_pool_size=335 prev=340
+2026-10-10T15:35:32 WARN  notify-worker/nw-node-23 alert fired rule=disk_usage_warning value=81% threshold=79%
+2026-10-10T15:35:37 ERROR notify-worker/nw-node-08 job failed job=notify-worker-reindex attempt=4 cause=quota_exceeded
+2026-10-10T15:35:41 INFO  notify-worker/nw-node-01 pool resize target=notify-worker-db max_pool_size=318 prev=267
+2026-10-10T15:35:44 INFO  notify-worker/nw-node-18 request done id=req-6d66b7c5 route=/notify-worker/v1/update status=201 latency_ms=43
+2026-10-10T15:35:50 WARN  notify-worker/nw-node-16 alert fired rule=fd_usage_high value=99% threshold=88%
+2026-10-10T15:35:55 INFO  notify-worker/nw-node-10 request done id=req-500e5b40 route=/notify-worker/v1/get status=200 latency_ms=34
+2026-10-10T15:36:01 INFO  notify-worker/nw-node-05 config applied key=worker.concurrency value=6784 by=shkim
+2026-10-10T15:36:07 INFO  notify-worker/nw-node-12 ticket linked id=OPS-48758 reason=quota_increase
+2026-10-10T15:36:08 INFO  notify-worker/nw-node-22 request done id=req-ba467e3f route=/notify-worker/v1/verify status=200 latency_ms=145
+2026-10-10T15:36:13 INFO  notify-worker/nw-node-21 request done id=req-8cc839b2 route=/notify-worker/v1/status status=500 latency_ms=183
+2026-10-10T15:36:15 INFO  notify-worker/nw-node-06 deploy step release=notify-worker-4.16.4 step=warmup result=ok took_s=4
+2026-10-10T15:36:20 INFO  notify-worker/nw-node-07 ticket linked id=OPS-49593 reason=dependency_upgrade
+2026-10-10T15:36:25 ERROR notify-worker/nw-node-24 job failed job=notify-worker-rollup attempt=4 cause=quota_exceeded
+2026-10-10T15:36:27 INFO  notify-worker/nw-node-16 request done id=req-6678b759 route=/notify-worker/v1/update status=200 latency_ms=441
+2026-10-10T15:36:31 INFO  notify-worker/nw-node-11 cache stats region=us-we-2b hit_ratio=74.8% evictions=15534
+2026-10-10T15:36:37 INFO  notify-worker/nw-node-13 backup finished file=/vault/weekly/sessions_2026w39.tar.zst size_mb=53018 checksum=d379b1fb
+2026-10-10T15:36:39 INFO  notify-worker/nw-node-15 request done id=req-f0742e74 route=/notify-worker/v1/create status=200 latency_ms=202
+2026-10-10T15:36:44 ERROR notify-worker/nw-node-12 job failed job=notify-worker-reindex attempt=2 cause=oom_killed
+2026-10-10T15:36:47 INFO  notify-worker/nw-node-18 request done id=req-914b4981 route=/notify-worker/v1/sync status=200 latency_ms=200
+2026-10-10T15:36:48 INFO  notify-worker/nw-node-15 cache stats region=ap-ne-2c hit_ratio=57.7% evictions=11998
+2026-10-10T15:36:50 INFO  notify-worker/nw-node-10 ticket linked id=OPS-47000 reason=log_volume_spike
+2026-10-10T15:36:53 INFO  notify-worker/nw-node-09 config applied key=queue.visibility_s value=3 by=jhpark
+2026-10-10T15:36:56 INFO  notify-worker/nw-node-18 request done id=req-2997e777 route=/notify-worker/v1/create status=200 latency_ms=252
+2026-10-10T15:37:03 INFO  notify-worker/nw-node-19 request done id=req-a54e36b2 route=/notify-worker/v1/list status=201 latency_ms=48
+2026-10-10T15:37:06 WARN  notify-worker/nw-node-07 alert fired rule=replica_lag_high value=55s threshold=54s
+2026-10-10T15:37:10 WARN  notify-worker/nw-node-22 alert fired rule=error_ratio_high value=82% threshold=70%
+2026-10-10T15:37:13 INFO  notify-worker/nw-node-11 request done id=req-abbf13b5 route=/notify-worker/v1/status status=200 latency_ms=27
+2026-10-10T15:37:14 WARN  notify-worker/nw-node-13 alert fired rule=gc_pause_long value=65ms threshold=50ms
+2026-10-10T15:37:16 ERROR notify-worker/nw-node-13 job failed job=notify-worker-export attempt=5 cause=quota_exceeded
+2026-10-10T15:37:23 INFO  notify-worker/nw-node-08 config applied key=log.sample_rate value=32% by=dwjung
+2026-10-10T15:37:30 NOTE  notify-worker/nw-node-10 operator=sykang memo="헬스체크 간격을 2초에서 31초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-10T15:37:36 INFO  notify-worker/nw-node-16 request done id=req-2f1b3a90 route=/notify-worker/v1/cancel status=409 latency_ms=242
+2026-10-10T15:37:41 INFO  notify-worker/nw-node-24 pool resize target=notify-worker-queue max_pool_size=373 prev=402
+2026-10-10T15:37:42 INFO  notify-worker/nw-node-08 request done id=req-3aa7741e route=/notify-worker/v1/create status=429 latency_ms=100
+2026-10-10T15:37:48 INFO  notify-worker/nw-node-12 pool resize target=notify-worker-queue max_pool_size=116 prev=65
+2026-10-10T15:37:51 INFO  notify-worker/nw-node-16 pool resize target=notify-worker-cache max_pool_size=386 prev=349
+2026-10-10T15:37:56 INFO  notify-worker/nw-node-11 config applied key=breaker.half_open_s value=33 by=jhpark
+2026-10-10T15:38:03 INFO  notify-worker/nw-node-10 request done id=req-d59329e1 route=/notify-worker/v1/update status=204 latency_ms=370
+2026-10-10T15:38:10 INFO  notify-worker/nw-node-10 request done id=req-010c2c2f route=/notify-worker/v1/verify status=200 latency_ms=169
+2026-10-10T15:38:14 WARN  notify-worker/nw-node-23 alert fired rule=queue_depth_high value=69 threshold=68
+2026-10-10T15:38:21 INFO  notify-worker/nw-node-10 config applied key=dns.ttl_s value=true by=mjlee
+2026-10-10T15:38:25 INFO  notify-worker/nw-node-24 request done id=req-21a3ec7a route=/notify-worker/v1/verify status=200 latency_ms=178
+2026-10-10T15:38:32 INFO  notify-worker/nw-node-07 pool resize target=notify-worker-db max_pool_size=245 prev=237
+2026-10-10T15:38:37 NOTE  notify-worker/nw-node-05 operator=yjchoi memo="배치 시작 시각을 48시 85분으로 고정함."
+2026-10-10T15:38:38 INFO  notify-worker/nw-node-10 request done id=req-1bc44fa1 route=/notify-worker/v1/create status=200 latency_ms=247
+2026-10-10T15:38:45 NOTE  notify-worker/nw-node-08 operator=hbyoon memo="타임아웃을 32ms에서 53ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-10T15:38:52 INFO  notify-worker/nw-node-02 cache stats region=ap-ne-2a hit_ratio=79.6% evictions=38780
+2026-10-10T15:38:59 INFO  notify-worker/nw-node-11 pool resize target=notify-worker-queue max_pool_size=139 prev=152
+2026-10-10T15:39:03 INFO  notify-worker/nw-node-04 request done id=req-319dcc61 route=/notify-worker/v1/get status=200 latency_ms=209
+2026-10-10T15:39:04 INFO  notify-worker/nw-node-22 request done id=req-19eb4a04 route=/notify-worker/v1/sync status=201 latency_ms=52
+2026-10-10T15:39:05 INFO  notify-worker/nw-node-14 request done id=req-c159807c route=/notify-worker/v1/sync status=503 latency_ms=536
+2026-10-10T15:39:06 INFO  notify-worker/nw-node-21 request done id=req-c5d0121d route=/notify-worker/v1/cancel status=200 latency_ms=115
+2026-10-10T15:39:07 INFO  notify-worker/nw-node-23 deploy step release=notify-worker-4.10.4 step=warmup result=ok took_s=26
+2026-10-10T15:39:14 NOTE  notify-worker/nw-node-14 operator=sykang memo="동시 처리 수를 41에서 15로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-10T15:39:20 WARN  notify-worker/nw-node-12 alert fired rule=conn_pool_saturated value=73% threshold=60%
+2026-10-10T15:39:24 INFO  notify-worker/nw-node-13 request done id=req-c645d345 route=/notify-worker/v1/get status=500 latency_ms=59
+2026-10-10T15:39:25 INFO  notify-worker/nw-node-02 request done id=req-66f03852 route=/notify-worker/v1/verify status=200 latency_ms=818
+2026-10-10T15:39:30 INFO  notify-worker/nw-node-08 backup finished file=/vault/weekly/inventory_2026w35.tar.zst size_mb=46243 checksum=84d943f0
+2026-10-10T15:39:33 INFO  notify-worker/nw-node-17 request done id=req-322fd6f1 route=/notify-worker/v1/create status=200 latency_ms=169
+2026-10-10T15:39:36 NOTE  notify-worker/nw-node-03 operator=hbyoon memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-10T15:39:42 INFO  notify-worker/nw-node-11 request done id=req-1fc8200e route=/notify-worker/v1/create status=200 latency_ms=40
+2026-10-10T15:39:43 INFO  notify-worker/nw-node-13 request done id=req-ba496806 route=/notify-worker/v1/list status=200 latency_ms=28
+2026-10-10T15:39:49 INFO  notify-worker/nw-node-21 request done id=req-9b686be7 route=/notify-worker/v1/update status=200 latency_ms=90
+2026-10-10T15:39:54 INFO  notify-worker/nw-node-12 request done id=req-da395122 route=/notify-worker/v1/update status=200 latency_ms=123
+2026-10-10T15:40:01 INFO  notify-worker/nw-node-12 request done id=req-77bfbcf9 route=/notify-worker/v1/verify status=200 latency_ms=273
+2026-10-10T15:40:06 INFO  notify-worker/nw-node-21 request done id=req-ebeb9d26 route=/notify-worker/v1/status status=200 latency_ms=40
+2026-10-10T15:40:10 WARN  notify-worker/nw-node-07 alert fired rule=gc_pause_long value=59ms threshold=56ms
+2026-10-10T15:40:12 INFO  notify-worker/nw-node-01 deploy step release=notify-worker-4.20.3 step=migrate result=ok took_s=236
+2026-10-10T15:40:15 INFO  notify-worker/nw-node-01 ticket linked id=OPS-49716 reason=cert_rotation
+2026-10-10T15:40:17 INFO  notify-worker/nw-node-06 request done id=req-272c4560 route=/notify-worker/v1/create status=400 latency_ms=162
+2026-10-10T15:40:22 INFO  notify-worker/nw-node-01 request done id=req-fb045ab6 route=/notify-worker/v1/cancel status=200 latency_ms=52
+2026-10-10T15:40:26 INFO  notify-worker/nw-node-21 config applied key=http.read_timeout_ms value=14 by=sykang
+2026-10-10T15:40:27 INFO  notify-worker/nw-node-01 deploy step release=notify-worker-4.14.8 step=pull_image result=ok took_s=234
+2026-10-10T15:40:33 INFO  notify-worker/nw-node-24 request done id=req-df7acc25 route=/notify-worker/v1/create status=200 latency_ms=231
+2026-10-10T15:40:38 INFO  notify-worker/nw-node-02 request done id=req-4e39d394 route=/notify-worker/v1/verify status=201 latency_ms=105
+2026-10-10T15:40:45 INFO  notify-worker/nw-node-06 request done id=req-fdb7f459 route=/notify-worker/v1/update status=500 latency_ms=137
+2026-10-10T15:40:52 INFO  notify-worker/nw-node-23 ticket linked id=OPS-47322 reason=node_drain
+2026-10-10T15:40:54 INFO  notify-worker/nw-node-04 request done id=req-751046d3 route=/notify-worker/v1/status status=409 latency_ms=232
+2026-10-10T15:40:59 WARN  notify-worker/nw-node-08 alert fired rule=disk_usage_warning value=65% threshold=61%
+2026-10-10T15:41:01 INFO  notify-worker/nw-node-07 ticket linked id=OPS-47522 reason=quota_increase
+2026-10-10T15:41:03 INFO  notify-worker/nw-node-01 request done id=req-9d915e68 route=/notify-worker/v1/update status=200 latency_ms=50
+2026-10-10T15:41:05 INFO  notify-worker/nw-node-15 backup finished file=/vault/daily/users_20261006.tar.zst size_mb=13835 checksum=96b2763d
+2026-10-10T15:41:10 INFO  notify-worker/nw-node-20 request done id=req-7acfecf7 route=/notify-worker/v1/get status=204 latency_ms=559
+2026-10-10T15:41:16 INFO  notify-worker/nw-node-03 config applied key=breaker.open_ratio value=92% by=mjlee
+2026-10-10T15:41:20 INFO  notify-worker/nw-node-10 config applied key=gc.pause_target_ms value=false by=shkim
+2026-10-10T15:41:27 INFO  notify-worker/nw-node-23 request done id=req-ec36cbf6 route=/notify-worker/v1/get status=429 latency_ms=83
+2026-10-10T15:41:28 INFO  notify-worker/nw-node-02 request done id=req-baea1581 route=/notify-worker/v1/list status=404 latency_ms=297
+2026-10-10T15:41:29 INFO  notify-worker/nw-node-05 deploy step release=notify-worker-4.15.3 step=drain result=ok took_s=193
+2026-10-10T15:41:35 INFO  notify-worker/nw-node-23 deploy step release=notify-worker-4.12.2 step=migrate result=ok took_s=40
+2026-10-10T15:41:41 INFO  notify-worker/nw-node-02 request done id=req-9735d1cc route=/notify-worker/v1/update status=204 latency_ms=140
+2026-10-10T15:41:42 WARN  notify-worker/nw-node-04 alert fired rule=replica_lag_high value=52s threshold=49s
+2026-10-10T15:41:44 INFO  notify-worker/nw-node-13 request done id=req-17f47456 route=/notify-worker/v1/update status=429 latency_ms=512
+2026-10-10T15:41:51 INFO  notify-worker/nw-node-21 request done id=req-4fdacbee route=/notify-worker/v1/sync status=200 latency_ms=48
+2026-10-10T15:41:52 INFO  notify-worker/nw-node-10 pool resize target=notify-worker-upstream max_pool_size=396 prev=387
+2026-10-10T15:41:54 INFO  notify-worker/nw-node-23 ticket linked id=OPS-47186 reason=cert_rotation
+2026-10-10T15:41:55 INFO  notify-worker/nw-node-07 request done id=req-39090cec route=/notify-worker/v1/status status=200 latency_ms=200
+2026-10-10T15:41:59 INFO  notify-worker/nw-node-08 request done id=req-8e4c7050 route=/notify-worker/v1/verify status=200 latency_ms=55
+2026-10-10T15:42:00 INFO  notify-worker/nw-node-17 request done id=req-1ef19a61 route=/notify-worker/v1/status status=201 latency_ms=97
+2026-10-10T15:42:04 INFO  notify-worker/nw-node-23 deploy step release=notify-worker-4.20.3 step=healthcheck result=ok took_s=147
+2026-10-10T15:42:07 INFO  notify-worker/nw-node-23 request done id=req-bac287be route=/notify-worker/v1/status status=503 latency_ms=51
+2026-10-10T15:42:08 INFO  notify-worker/nw-node-06 ticket linked id=OPS-47907 reason=node_drain
+2026-10-10T15:42:13 INFO  notify-worker/nw-node-01 ticket linked id=OPS-49508 reason=log_volume_spike
+2026-10-10T15:42:16 NOTE  notify-worker/nw-node-14 operator=sykang memo="점검 창을 39분 연장함. 승인: 한지우 리드."
+2026-10-10T15:42:22 WARN  notify-worker/nw-node-23 alert fired rule=replica_lag_high value=52s threshold=41s
+2026-10-10T15:42:29 INFO  notify-worker/nw-node-18 backup finished file=/vault/weekly/payments_2026w32.tar.zst size_mb=18460 checksum=291a1489
+2026-10-10T15:42:35 INFO  notify-worker/nw-node-05 pool resize target=notify-worker-upstream max_pool_size=68 prev=12
+2026-10-10T15:42:41 WARN  notify-worker/nw-node-04 alert fired rule=queue_depth_high value=84 threshold=81
+2026-10-10T15:42:45 INFO  notify-worker/nw-node-10 cache stats region=ap-ne-2b hit_ratio=87.5% evictions=31868
+2026-10-10T15:42:46 INFO  notify-worker/nw-node-01 request done id=req-00700cc4 route=/notify-worker/v1/get status=200 latency_ms=86
+2026-10-10T15:42:52 INFO  notify-worker/nw-node-13 request done id=req-faf35f32 route=/notify-worker/v1/sync status=409 latency_ms=71
+2026-10-10T15:42:53 INFO  notify-worker/nw-node-18 pool resize target=notify-worker-queue max_pool_size=153 prev=132
+2026-10-10T15:42:57 INFO  notify-worker/nw-node-17 request done id=req-95fc359b route=/notify-worker/v1/sync status=200 latency_ms=102
+2026-10-10T15:43:04 INFO  notify-worker/nw-node-21 request done id=req-75e6e63a route=/notify-worker/v1/update status=200 latency_ms=35
+2026-10-10T15:43:06 WARN  notify-worker/nw-node-20 alert fired rule=queue_depth_high value=83 threshold=80
+2026-10-10T15:43:07 INFO  notify-worker/nw-node-09 request done id=req-a54bdc2d route=/notify-worker/v1/cancel status=200 latency_ms=58
+2026-10-10T15:43:11 INFO  notify-worker/nw-node-01 request done id=req-a13d0e29 route=/notify-worker/v1/update status=201 latency_ms=73
+2026-10-10T15:43:12 INFO  notify-worker/nw-node-21 request done id=req-699b667d route=/notify-worker/v1/sync status=200 latency_ms=76
+2026-10-10T15:43:17 WARN  notify-worker/nw-node-04 alert fired rule=conn_pool_saturated value=68% threshold=57%
+2026-10-10T15:43:20 ERROR notify-worker/nw-node-15 job failed job=notify-worker-reindex attempt=2 cause=quota_exceeded
+2026-10-10T15:43:23 INFO  notify-worker/nw-node-22 config applied key=breaker.half_open_s value=true by=yjchoi
+2026-10-10T15:43:25 INFO  notify-worker/nw-node-01 request done id=req-fc3baf53 route=/notify-worker/v1/update status=200 latency_ms=148
+2026-10-10T15:43:31 INFO  notify-worker/nw-node-06 backup finished file=/vault/daily/sessions_20261012.tar.zst size_mb=59875 checksum=b486aea0
+2026-10-10T15:43:32 WARN  notify-worker/nw-node-18 alert fired rule=conn_pool_saturated value=89% threshold=76%
+2026-10-10T15:43:37 ERROR notify-worker/nw-node-15 job failed job=notify-worker-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-10T15:43:39 INFO  notify-worker/nw-node-13 pool resize target=notify-worker-cache max_pool_size=199 prev=215
+2026-10-10T15:43:40 INFO  notify-worker/nw-node-03 request done id=req-86bfb7d4 route=/notify-worker/v1/sync status=200 latency_ms=116
+2026-10-10T15:43:42 INFO  notify-worker/nw-node-23 request done id=req-8c0f49a7 route=/notify-worker/v1/list status=204 latency_ms=344
+2026-10-10T15:43:47 INFO  notify-worker/nw-node-07 ticket linked id=OPS-48787 reason=flaky_healthcheck
+2026-10-10T15:43:52 NOTE  notify-worker/nw-node-21 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-10T15:43:56 INFO  notify-worker/nw-node-01 pool resize target=notify-worker-cache max_pool_size=187 prev=207
+2026-10-10T15:43:58 INFO  notify-worker/nw-node-15 ticket linked id=OPS-47975 reason=cert_rotation
+2026-10-10T15:44:01 INFO  notify-worker/nw-node-12 request done id=req-fcd29919 route=/notify-worker/v1/cancel status=503 latency_ms=121
+2026-10-10T15:44:02 INFO  notify-worker/nw-node-02 request done id=req-5da9d5cb route=/notify-worker/v1/list status=400 latency_ms=90
+2026-10-10T15:44:09 INFO  notify-worker/nw-node-09 backup finished file=/vault/weekly/audit_2026w43.tar.zst size_mb=49926 checksum=1bda614f
+2026-10-10T15:44:14 INFO  notify-worker/nw-node-17 request done id=req-7aa72a45 route=/notify-worker/v1/update status=200 latency_ms=104
+2026-10-10T15:44:20 NOTE  notify-worker/nw-node-14 operator=hbyoon memo="nw-node-14 재기동 후 지표 정상 확인."
+2026-10-10T15:44:21 INFO  notify-worker/nw-node-13 request done id=req-d01e381f route=/notify-worker/v1/sync status=200 latency_ms=80
+2026-10-10T15:44:23 WARN  notify-worker/nw-node-06 alert fired rule=disk_usage_warning value=54% threshold=42%
+2026-10-10T15:44:28 INFO  notify-worker/nw-node-13 request done id=req-88746454 route=/notify-worker/v1/verify status=200 latency_ms=106
+2026-10-10T15:44:33 INFO  notify-worker/nw-node-19 deploy step release=notify-worker-4.18.5 step=healthcheck result=ok took_s=31
+2026-10-10T15:44:40 WARN  notify-worker/nw-node-22 alert fired rule=heap_used_high value=73% threshold=72%
+2026-10-10T15:44:41 INFO  notify-worker/nw-node-19 deploy step release=notify-worker-4.20.9 step=verify result=ok took_s=195
+2026-10-10T15:44:48 INFO  notify-worker/nw-node-05 cache stats region=ap-ne-2a hit_ratio=62.8% evictions=1512
+2026-10-10T15:44:49 INFO  notify-worker/nw-node-09 request done id=req-c543dd52 route=/notify-worker/v1/get status=429 latency_ms=332
+2026-10-10T15:44:51 WARN  notify-worker/nw-node-20 alert fired rule=heap_used_high value=81% threshold=72%
+2026-10-10T15:44:58 INFO  notify-worker/nw-node-12 request done id=req-830f18a5 route=/notify-worker/v1/list status=200 latency_ms=148
+2026-10-10T15:45:02 INFO  notify-worker/nw-node-22 config applied key=http.max_conns value=false by=jhpark
+2026-10-10T15:45:05 ERROR notify-worker/nw-node-11 job failed job=notify-worker-reindex attempt=1 cause=lock_wait_exceeded
+2026-10-10T15:45:12 INFO  notify-worker/nw-node-14 request done id=req-c726d93b route=/notify-worker/v1/status status=200 latency_ms=250
+2026-10-10T15:45:13 INFO  notify-worker/nw-node-02 deploy step release=notify-worker-4.11.9 step=verify result=ok took_s=44
+2026-10-10T15:45:17 INFO  notify-worker/nw-node-23 pool resize target=notify-worker-queue max_pool_size=387 prev=341
+2026-10-10T15:45:20 INFO  notify-worker/nw-node-06 cache stats region=us-we-2b hit_ratio=68.1% evictions=35478
+2026-10-10T15:45:24 INFO  notify-worker/nw-node-16 deploy step release=notify-worker-4.11.6 step=warmup result=ok took_s=129
+2026-10-10T15:45:26 NOTE  notify-worker/nw-node-01 operator=jhpark memo="점검 창을 11분 연장함. 승인: 류태경 팀장."
+2026-10-10T15:45:28 INFO  notify-worker/nw-node-22 backup finished file=/vault/daily/payments_20261007.tar.zst size_mb=10101 checksum=344de0c7
+2026-10-10T15:45:35 INFO  notify-worker/nw-node-04 config applied key=dns.ttl_s value=false by=yjchoi
+2026-10-10T15:45:39 NOTE  notify-worker/nw-node-06 operator=shkim memo="캐시 TTL을 7초로 되돌림. 오래된 응답이 보고됨."
+2026-10-10T15:45:45 WARN  notify-worker/nw-node-13 alert fired rule=gc_pause_long value=57ms threshold=56ms
+2026-10-10T15:45:47 INFO  notify-worker/nw-node-11 request done id=req-4007450f route=/notify-worker/v1/update status=200 latency_ms=40
+2026-10-10T15:45:54 ERROR notify-worker/nw-node-04 job failed job=notify-worker-reindex attempt=5 cause=dns_failure
+2026-10-10T15:45:56 INFO  notify-worker/nw-node-05 deploy step release=notify-worker-4.17.2 step=shift_traffic_100 result=ok took_s=59
+2026-10-10T15:45:58 INFO  notify-worker/nw-node-11 request done id=req-eb775274 route=/notify-worker/v1/sync status=204 latency_ms=36
+2026-10-10T15:46:00 INFO  notify-worker/nw-node-19 request done id=req-3996c279 route=/notify-worker/v1/sync status=429 latency_ms=303
+2026-10-10T15:46:01 INFO  notify-worker/nw-node-18 request done id=req-e34ddb2f route=/notify-worker/v1/create status=200 latency_ms=33
+2026-10-10T15:46:06 INFO  notify-worker/nw-node-15 request done id=req-8c2129e4 route=/notify-worker/v1/list status=200 latency_ms=111
+2026-10-10T15:46:11 INFO  notify-worker/nw-node-14 request done id=req-d614c723 route=/notify-worker/v1/sync status=404 latency_ms=332
+2026-10-10T15:46:15 WARN  notify-worker/nw-node-19 alert fired rule=p99_latency_high value=74ms threshold=66ms
+2026-10-10T15:46:19 INFO  notify-worker/nw-node-23 request done id=req-20cb3c2a route=/notify-worker/v1/cancel status=200 latency_ms=1222
+2026-10-10T15:46:20 INFO  notify-worker/nw-node-09 request done id=req-9a169c0b route=/notify-worker/v1/cancel status=204 latency_ms=72
+2026-10-10T15:46:21 INFO  notify-worker/nw-node-24 backup finished file=/vault/weekly/sessions_2026w36.tar.zst size_mb=59636 checksum=fc957caa
+2026-10-10T15:46:22 ERROR notify-worker/nw-node-01 job failed job=notify-worker-reindex attempt=5 cause=lock_wait_exceeded
+2026-10-10T15:46:27 NOTE  notify-worker/nw-node-22 operator=dwjung memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-10T15:46:29 NOTE  notify-worker/nw-node-11 operator=ejlim memo="로그 보존 기간은 45일로 유지하기로 함."
+2026-10-10T15:46:31 INFO  notify-worker/nw-node-19 request done id=req-998ac014 route=/notify-worker/v1/create status=200 latency_ms=33
+2026-10-10T15:46:37 INFO  notify-worker/nw-node-10 request done id=req-f70f8a76 route=/notify-worker/v1/verify status=200 latency_ms=84
+2026-10-10T15:46:38 INFO  notify-worker/nw-node-05 request done id=req-b4823a14 route=/notify-worker/v1/update status=200 latency_ms=83
+2026-10-10T15:46:45 INFO  notify-worker/nw-node-20 request done id=req-4ebfc506 route=/notify-worker/v1/sync status=200 latency_ms=99
+2026-10-10T15:46:52 INFO  notify-worker/nw-node-11 request done id=req-9147afbf route=/notify-worker/v1/cancel status=200 latency_ms=96
+2026-10-10T15:46:57 INFO  notify-worker/nw-node-24 config applied key=gc.pause_target_ms value=2650 by=sykang
+2026-10-10T15:46:58 INFO  notify-worker/nw-node-01 request done id=req-f37b41c1 route=/notify-worker/v1/verify status=200 latency_ms=69
+2026-10-10T15:47:01 WARN  notify-worker/nw-node-14 alert fired rule=gc_pause_long value=82ms threshold=70ms
+2026-10-10T15:47:03 INFO  notify-worker/nw-node-08 deploy step release=notify-worker-4.17.5 step=pull_image result=ok took_s=56
+2026-10-10T15:47:06 NOTE  notify-worker/nw-node-06 operator=ejlim memo="점검 창을 55분 연장함. 승인: 오세린 매니저."
+2026-10-10T15:47:08 WARN  notify-worker/nw-node-06 alert fired rule=p99_latency_high value=62ms threshold=57ms
+2026-10-10T15:47:13 ERROR notify-worker/nw-node-11 job failed job=notify-worker-reindex attempt=2 cause=upstream_timeout
+2026-10-10T15:47:15 INFO  notify-worker/nw-node-14 deploy step release=notify-worker-4.18.2 step=drain result=ok took_s=10
+2026-10-10T15:47:16 ERROR notify-worker/nw-node-15 job failed job=notify-worker-cleanup attempt=1 cause=bad_checksum
+2026-10-10T15:47:19 INFO  notify-worker/nw-node-14 request done id=req-5f70ab20 route=/notify-worker/v1/status status=503 latency_ms=73
+2026-10-10T15:47:24 INFO  notify-worker/nw-node-13 request done id=req-4fb17cbe route=/notify-worker/v1/create status=200 latency_ms=37
+2026-10-10T15:47:31 WARN  notify-worker/nw-node-11 alert fired rule=replica_lag_high value=71s threshold=62s
+2026-10-10T15:47:37 INFO  notify-worker/nw-node-02 request done id=req-1b7cacbd route=/notify-worker/v1/verify status=200 latency_ms=61
+2026-10-10T15:47:38 INFO  notify-worker/nw-node-07 config applied key=flush.interval_ms value=false by=ejlim
+2026-10-10T15:47:45 INFO  notify-worker/nw-node-03 request done id=req-9c7c7a18 route=/notify-worker/v1/get status=429 latency_ms=582
+2026-10-10T15:47:46 WARN  notify-worker/nw-node-02 alert fired rule=cpu_steal_high value=71% threshold=61%
+2026-10-10T15:47:53 INFO  notify-worker/nw-node-06 config applied key=breaker.half_open_s value=63 by=hbyoon
+2026-10-10T15:47:54 INFO  notify-worker/nw-node-18 cache stats region=ap-ne-2a hit_ratio=58.0% evictions=11226
+2026-10-10T15:48:00 NOTE  notify-worker/nw-node-04 operator=shkim memo="연동 팀에 변경 공지 완료."
+2026-10-10T15:48:02 INFO  notify-worker/nw-node-19 deploy step release=notify-worker-4.17.7 step=start result=ok took_s=40
+2026-10-10T15:48:04 INFO  notify-worker/nw-node-24 deploy step release=notify-worker-4.12.0 step=warmup result=ok took_s=223
+2026-10-10T15:48:11 INFO  notify-worker/nw-node-01 request done id=req-c49c5f0f route=/notify-worker/v1/sync status=503 latency_ms=71
+2026-10-10T15:48:16 INFO  notify-worker/nw-node-24 config applied key=http.max_conns value=true by=dwjung
+2026-10-10T15:48:23 INFO  notify-worker/nw-node-13 request done id=req-3f1d522b route=/notify-worker/v1/update status=409 latency_ms=321
+2026-10-10T15:48:24 INFO  notify-worker/nw-node-10 deploy step release=notify-worker-4.18.9 step=drain result=ok took_s=83
+2026-10-10T15:48:28 NOTE  notify-worker/nw-node-19 operator=dwjung memo="nw-node-19 재기동 후 지표 정상 확인."
+2026-10-10T15:48:30 INFO  notify-worker/nw-node-02 deploy step release=notify-worker-4.12.5 step=shift_traffic_10 result=ok took_s=40
+2026-10-10T15:48:34 INFO  notify-worker/nw-node-03 request done id=req-57a18b3c route=/notify-worker/v1/verify status=200 latency_ms=214
+2026-10-10T15:48:41 INFO  notify-worker/nw-node-14 cache stats region=ap-ne-2a hit_ratio=75.3% evictions=19512
+2026-10-10T15:48:46 INFO  notify-worker/nw-node-11 config applied key=queue.batch_size value=false by=ejlim
+2026-10-10T15:48:53 INFO  notify-worker/nw-node-18 deploy step release=notify-worker-4.15.4 step=warmup result=ok took_s=136
+2026-10-10T15:48:57 INFO  notify-worker/nw-node-04 request done id=req-b1368824 route=/notify-worker/v1/verify status=400 latency_ms=58
+2026-10-10T15:49:01 INFO  notify-worker/nw-node-23 request done id=req-8e87e987 route=/notify-worker/v1/cancel status=200 latency_ms=69
+2026-10-10T15:49:05 INFO  notify-worker/nw-node-09 config applied key=breaker.half_open_s value=81% by=jhpark
+2026-10-10T15:49:10 WARN  notify-worker/nw-node-20 alert fired rule=fd_usage_high value=73% threshold=70%
+2026-10-10T15:49:12 INFO  notify-worker/nw-node-24 request done id=req-82b51eca route=/notify-worker/v1/status status=200 latency_ms=38
+2026-10-10T15:49:16 INFO  notify-worker/nw-node-10 config applied key=queue.batch_size value=5628 by=hbyoon
+2026-10-10T15:49:23 INFO  notify-worker/nw-node-04 request done id=req-68a5d82f route=/notify-worker/v1/get status=201 latency_ms=156
+2026-10-10T15:49:30 INFO  notify-worker/nw-node-19 ticket linked id=OPS-47113 reason=dns_ttl_change
+2026-10-10T15:49:33 INFO  notify-worker/nw-node-15 config applied key=shard.count value=1799 by=hbyoon
+2026-10-10T15:49:40 INFO  notify-worker/nw-node-08 request done id=req-48090233 route=/notify-worker/v1/sync status=200 latency_ms=34
+2026-10-10T15:49:43 INFO  notify-worker/nw-node-14 pool resize target=notify-worker-worker max_pool_size=81 prev=86
+2026-10-10T15:49:47 INFO  notify-worker/nw-node-20 request done id=req-a0662219 route=/notify-worker/v1/update status=200 latency_ms=185
+2026-10-10T15:49:54 ERROR notify-worker/nw-node-08 job failed job=notify-worker-export attempt=5 cause=lock_wait_exceeded
+2026-10-10T15:50:00 INFO  notify-worker/nw-node-10 request done id=req-52daa7ab route=/notify-worker/v1/cancel status=400 latency_ms=139
+2026-10-10T15:50:07 INFO  notify-worker/nw-node-04 request done id=req-13619b37 route=/notify-worker/v1/list status=200 latency_ms=89
+2026-10-10T15:50:11 INFO  notify-worker/nw-node-01 request done id=req-97206336 route=/notify-worker/v1/status status=200 latency_ms=84
+2026-10-10T15:50:15 WARN  notify-worker/nw-node-24 alert fired rule=p99_latency_high value=58ms threshold=46ms
+2026-10-10T15:50:22 INFO  notify-worker/nw-node-24 request done id=req-65c82c42 route=/notify-worker/v1/create status=200 latency_ms=46
+2026-10-10T15:50:29 INFO  notify-worker/nw-node-12 request done id=req-542461ac route=/notify-worker/v1/cancel status=200 latency_ms=111
+2026-10-10T15:50:31 INFO  notify-worker/nw-node-06 config applied key=canary.traffic_percent value=false by=jhpark
+2026-10-10T15:50:34 INFO  notify-worker/nw-node-10 request done id=req-afe5ff18 route=/notify-worker/v1/create status=200 latency_ms=286
+2026-10-10T15:50:35 INFO  notify-worker/nw-node-01 request done id=req-be4f8503 route=/notify-worker/v1/create status=201 latency_ms=71
+2026-10-10T15:50:42 INFO  notify-worker/nw-node-03 request done id=req-0d3811f4 route=/notify-worker/v1/create status=200 latency_ms=119
+2026-10-10T15:50:44 INFO  notify-worker/nw-node-06 deploy step release=notify-worker-4.14.9 step=verify result=ok took_s=178
+2026-10-10T15:50:50 INFO  notify-worker/nw-node-24 pool resize target=notify-worker-worker max_pool_size=300 prev=274
+2026-10-10T15:50:52 INFO  notify-worker/nw-node-02 deploy step release=notify-worker-4.13.1 step=pull_image result=ok took_s=30
+2026-10-10T15:50:59 INFO  notify-worker/nw-node-07 backup finished file=/vault/weekly/audit_2026w35.tar.zst size_mb=69162 checksum=4e951659
+2026-10-10T15:51:01 INFO  notify-worker/nw-node-21 deploy step release=notify-worker-4.20.9 step=warmup result=ok took_s=190
+2026-10-10T15:51:03 NOTE  notify-worker/nw-node-06 operator=yjchoi memo="캐시 TTL을 31초로 되돌림. 오래된 응답이 보고됨."
+2026-10-10T15:51:05 INFO  notify-worker/nw-node-14 cache stats region=ap-se-1a hit_ratio=81.2% evictions=22509
+2026-10-10T15:51:09 INFO  notify-worker/nw-node-06 pool resize target=notify-worker-upstream max_pool_size=96 prev=37
+2026-10-10T15:51:16 INFO  notify-worker/nw-node-19 request done id=req-34ffe90f route=/notify-worker/v1/get status=409 latency_ms=18
+2026-10-10T15:51:21 INFO  notify-worker/nw-node-10 pool resize target=notify-worker-cache max_pool_size=218 prev=245
+2026-10-10T15:51:25 INFO  notify-worker/nw-node-07 pool resize target=notify-worker-upstream max_pool_size=107 prev=148
+2026-10-10T15:51:26 WARN  notify-worker/nw-node-15 alert fired rule=queue_depth_high value=51 threshold=46
+2026-10-10T15:51:31 INFO  notify-worker/nw-node-14 request done id=req-b04ff0a3 route=/notify-worker/v1/status status=200 latency_ms=126
+2026-10-10T15:51:32 INFO  notify-worker/nw-node-01 config applied key=canary.traffic_percent value=75% by=yjchoi
+2026-10-10T15:51:35 INFO  notify-worker/nw-node-09 deploy step release=notify-worker-4.15.8 step=shift_traffic_10 result=ok took_s=225
+2026-10-10T15:51:39 WARN  notify-worker/nw-node-22 alert fired rule=disk_usage_warning value=98% threshold=96%
+2026-10-10T15:51:42 WARN  notify-worker/nw-node-16 alert fired rule=gc_pause_long value=77ms threshold=67ms
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

@@ -1,0 +1,424 @@
+참고용 로그 24: 푸시 게이트웨이(push-gw) 인증서 교체 구간. '확인'이라고만 답해 줘.
+
+2026-10-28T06:11:15 INFO  push-gw/pw-node-16 request done id=req-19cc1d04 route=/push-gw/v1/cancel status=429 latency_ms=501
+2026-10-28T06:11:21 INFO  push-gw/pw-node-15 pool resize target=push-gw-upstream max_pool_size=146 prev=114
+2026-10-28T06:11:26 INFO  push-gw/pw-node-23 config applied key=breaker.half_open_s value=false by=sykang
+2026-10-28T06:11:31 WARN  push-gw/pw-node-22 alert fired rule=disk_usage_warning value=61% threshold=49%
+2026-10-28T06:11:37 INFO  push-gw/pw-node-14 ticket linked id=OPS-49054 reason=log_volume_spike
+2026-10-28T06:11:40 INFO  push-gw/pw-node-22 backup finished file=/vault/daily/sessions_20261012.tar.zst size_mb=80084 checksum=743b4395
+2026-10-28T06:11:45 INFO  push-gw/pw-node-23 request done id=req-bf367dc9 route=/push-gw/v1/update status=200 latency_ms=12
+2026-10-28T06:11:49 ERROR push-gw/pw-node-10 job failed job=push-gw-cleanup attempt=5 cause=dns_failure
+2026-10-28T06:11:52 INFO  push-gw/pw-node-13 request done id=req-8cd6d770 route=/push-gw/v1/verify status=200 latency_ms=48
+2026-10-28T06:11:53 ERROR push-gw/pw-node-03 job failed job=push-gw-rollup attempt=4 cause=lock_wait_exceeded
+2026-10-28T06:12:00 INFO  push-gw/pw-node-20 request done id=req-b944c31a route=/push-gw/v1/verify status=201 latency_ms=98
+2026-10-28T06:12:02 INFO  push-gw/pw-node-03 deploy step release=push-gw-4.10.0 step=warmup result=ok took_s=63
+2026-10-28T06:12:06 INFO  push-gw/pw-node-13 request done id=req-d2e9eee3 route=/push-gw/v1/verify status=200 latency_ms=159
+2026-10-28T06:12:08 ERROR push-gw/pw-node-12 job failed job=push-gw-cleanup attempt=4 cause=upstream_timeout
+2026-10-28T06:12:09 INFO  push-gw/pw-node-05 request done id=req-5ac004dd route=/push-gw/v1/update status=200 latency_ms=32
+2026-10-28T06:12:13 INFO  push-gw/pw-node-24 backup finished file=/vault/weekly/users_2026w40.tar.zst size_mb=48491 checksum=6519d98d
+2026-10-28T06:12:18 INFO  push-gw/pw-node-15 config applied key=tls.session_cache value=true by=mjlee
+2026-10-28T06:12:19 INFO  push-gw/pw-node-10 ticket linked id=OPS-49306 reason=cert_rotation
+2026-10-28T06:12:23 INFO  push-gw/pw-node-03 pool resize target=push-gw-db max_pool_size=113 prev=54
+2026-10-28T06:12:26 WARN  push-gw/pw-node-08 alert fired rule=queue_depth_high value=73 threshold=64
+2026-10-28T06:12:33 INFO  push-gw/pw-node-02 request done id=req-d2f12976 route=/push-gw/v1/cancel status=404 latency_ms=82
+2026-10-28T06:12:35 INFO  push-gw/pw-node-20 config applied key=shard.count value=25 by=dwjung
+2026-10-28T06:12:36 INFO  push-gw/pw-node-10 request done id=req-853390f5 route=/push-gw/v1/create status=429 latency_ms=486
+2026-10-28T06:12:37 INFO  push-gw/pw-node-11 request done id=req-7c1c604d route=/push-gw/v1/get status=200 latency_ms=30
+2026-10-28T06:12:39 INFO  push-gw/pw-node-18 request done id=req-b3df8ca7 route=/push-gw/v1/verify status=200 latency_ms=134
+2026-10-28T06:12:40 INFO  push-gw/pw-node-10 config applied key=queue.visibility_s value=false by=shkim
+2026-10-28T06:12:45 WARN  push-gw/pw-node-08 alert fired rule=cpu_steal_high value=99% threshold=86%
+2026-10-28T06:12:48 INFO  push-gw/pw-node-23 request done id=req-0a5e2b81 route=/push-gw/v1/create status=500 latency_ms=89
+2026-10-28T06:12:52 INFO  push-gw/pw-node-06 config applied key=breaker.half_open_s value=false by=hbyoon
+2026-10-28T06:12:59 INFO  push-gw/pw-node-12 deploy step release=push-gw-4.12.2 step=drain result=ok took_s=154
+2026-10-28T06:13:04 INFO  push-gw/pw-node-21 backup finished file=/vault/weekly/orders_2026w38.tar.zst size_mb=37331 checksum=0960e251
+2026-10-28T06:13:06 INFO  push-gw/pw-node-12 pool resize target=push-gw-db max_pool_size=267 prev=220
+2026-10-28T06:13:09 NOTE  push-gw/pw-node-07 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-28T06:13:11 INFO  push-gw/pw-node-18 request done id=req-87138990 route=/push-gw/v1/update status=200 latency_ms=112
+2026-10-28T06:13:15 INFO  push-gw/pw-node-01 request done id=req-6810f385 route=/push-gw/v1/create status=200 latency_ms=113
+2026-10-28T06:13:16 INFO  push-gw/pw-node-15 request done id=req-f9777219 route=/push-gw/v1/cancel status=503 latency_ms=187
+2026-10-28T06:13:19 INFO  push-gw/pw-node-07 request done id=req-20e1436d route=/push-gw/v1/verify status=404 latency_ms=116
+2026-10-28T06:13:22 INFO  push-gw/pw-node-23 config applied key=shard.count value=true by=jhpark
+2026-10-28T06:13:23 INFO  push-gw/pw-node-21 request done id=req-f332e0b3 route=/push-gw/v1/get status=200 latency_ms=164
+2026-10-28T06:13:29 INFO  push-gw/pw-node-07 config applied key=shard.count value=true by=yjchoi
+2026-10-28T06:13:31 WARN  push-gw/pw-node-16 alert fired rule=conn_pool_saturated value=77% threshold=73%
+2026-10-28T06:13:36 INFO  push-gw/pw-node-05 request done id=req-f7c1184e route=/push-gw/v1/get status=200 latency_ms=54
+2026-10-28T06:13:40 INFO  push-gw/pw-node-16 request done id=req-c98b98b2 route=/push-gw/v1/sync status=201 latency_ms=58
+2026-10-28T06:13:42 INFO  push-gw/pw-node-23 request done id=req-8836a970 route=/push-gw/v1/update status=409 latency_ms=88
+2026-10-28T06:13:48 INFO  push-gw/pw-node-15 request done id=req-10f8988a route=/push-gw/v1/verify status=200 latency_ms=136
+2026-10-28T06:13:51 INFO  push-gw/pw-node-14 ticket linked id=OPS-49798 reason=oncall_handoff
+2026-10-28T06:13:56 INFO  push-gw/pw-node-21 config applied key=dns.ttl_s value=false by=sykang
+2026-10-28T06:13:57 INFO  push-gw/pw-node-03 request done id=req-4caf182c route=/push-gw/v1/get status=200 latency_ms=125
+2026-10-28T06:14:00 INFO  push-gw/pw-node-08 config applied key=gc.pause_target_ms value=1163 by=yjchoi
+2026-10-28T06:14:03 INFO  push-gw/pw-node-15 config applied key=flush.interval_ms value=55 by=yjchoi
+2026-10-28T06:14:08 INFO  push-gw/pw-node-17 request done id=req-4f286592 route=/push-gw/v1/cancel status=200 latency_ms=84
+2026-10-28T06:14:12 INFO  push-gw/pw-node-13 config applied key=shard.count value=false by=shkim
+2026-10-28T06:14:15 ERROR push-gw/pw-node-06 job failed job=push-gw-rollup attempt=4 cause=quota_exceeded
+2026-10-28T06:14:17 INFO  push-gw/pw-node-02 request done id=req-bd5bdf61 route=/push-gw/v1/cancel status=200 latency_ms=52
+2026-10-28T06:14:19 INFO  push-gw/pw-node-05 request done id=req-bc6b105c route=/push-gw/v1/verify status=200 latency_ms=230
+2026-10-28T06:14:23 NOTE  push-gw/pw-node-03 operator=ejlim memo="헬스체크 간격을 3초에서 23초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-28T06:14:28 INFO  push-gw/pw-node-20 request done id=req-a3793519 route=/push-gw/v1/status status=200 latency_ms=96
+2026-10-28T06:14:35 INFO  push-gw/pw-node-16 config applied key=shard.count value=true by=sykang
+2026-10-28T06:14:40 INFO  push-gw/pw-node-19 cache stats region=ap-se-1a hit_ratio=66.6% evictions=10420
+2026-10-28T06:14:43 INFO  push-gw/pw-node-03 request done id=req-32b49631 route=/push-gw/v1/status status=404 latency_ms=42
+2026-10-28T06:14:44 INFO  push-gw/pw-node-22 config applied key=cache.ttl_s value=647 by=sykang
+2026-10-28T06:14:49 INFO  push-gw/pw-node-14 request done id=req-e3b8dc66 route=/push-gw/v1/status status=409 latency_ms=19
+2026-10-28T06:14:54 INFO  push-gw/pw-node-05 config applied key=limiter.burst value=54 by=dwjung
+2026-10-28T06:14:58 INFO  push-gw/pw-node-04 request done id=req-ba10dd7c route=/push-gw/v1/create status=200 latency_ms=172
+2026-10-28T06:15:04 INFO  push-gw/pw-node-02 request done id=req-a8bfa9ed route=/push-gw/v1/verify status=200 latency_ms=40
+2026-10-28T06:15:07 INFO  push-gw/pw-node-17 config applied key=cache.ttl_s value=36% by=shkim
+2026-10-28T06:15:09 NOTE  push-gw/pw-node-05 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-28T06:15:15 WARN  push-gw/pw-node-05 alert fired rule=replica_lag_high value=91s threshold=78s
+2026-10-28T06:15:17 INFO  push-gw/pw-node-14 request done id=req-1fbef8ab route=/push-gw/v1/sync status=200 latency_ms=117
+2026-10-28T06:15:21 WARN  push-gw/pw-node-19 alert fired rule=cpu_steal_high value=85% threshold=78%
+2026-10-28T06:15:28 INFO  push-gw/pw-node-09 request done id=req-79d3a647 route=/push-gw/v1/sync status=503 latency_ms=149
+2026-10-28T06:15:31 INFO  push-gw/pw-node-12 request done id=req-3f6a4fe1 route=/push-gw/v1/cancel status=429 latency_ms=406
+2026-10-28T06:15:34 WARN  push-gw/pw-node-10 alert fired rule=disk_usage_warning value=51% threshold=40%
+2026-10-28T06:15:36 INFO  push-gw/pw-node-15 request done id=req-f40b1e94 route=/push-gw/v1/cancel status=200 latency_ms=111
+2026-10-28T06:15:40 INFO  push-gw/pw-node-14 ticket linked id=OPS-48753 reason=runbook_update
+2026-10-28T06:15:46 INFO  push-gw/pw-node-14 deploy step release=push-gw-4.18.6 step=pull_image result=ok took_s=200
+2026-10-28T06:15:52 INFO  push-gw/pw-node-05 config applied key=dns.ttl_s value=true by=ejlim
+2026-10-28T06:15:59 INFO  push-gw/pw-node-06 request done id=req-e27e6f57 route=/push-gw/v1/sync status=200 latency_ms=43
+2026-10-28T06:16:02 INFO  push-gw/pw-node-22 pool resize target=push-gw-worker max_pool_size=154 prev=108
+2026-10-28T06:16:05 NOTE  push-gw/pw-node-09 operator=ejlim memo="점검 창을 48분 연장함. 승인: 오세린 매니저."
+2026-10-28T06:16:06 INFO  push-gw/pw-node-22 request done id=req-aa02aced route=/push-gw/v1/sync status=204 latency_ms=64
+2026-10-28T06:16:13 INFO  push-gw/pw-node-23 request done id=req-98ea5e32 route=/push-gw/v1/get status=200 latency_ms=169
+2026-10-28T06:16:14 WARN  push-gw/pw-node-15 alert fired rule=error_ratio_high value=61% threshold=55%
+2026-10-28T06:16:19 WARN  push-gw/pw-node-20 alert fired rule=fd_usage_high value=54% threshold=43%
+2026-10-28T06:16:26 INFO  push-gw/pw-node-24 pool resize target=push-gw-worker max_pool_size=160 prev=212
+2026-10-28T06:16:31 INFO  push-gw/pw-node-12 ticket linked id=OPS-47460 reason=dns_ttl_change
+2026-10-28T06:16:33 INFO  push-gw/pw-node-09 cache stats region=ap-ne-2c hit_ratio=56.0% evictions=20361
+2026-10-28T06:16:36 INFO  push-gw/pw-node-14 config applied key=dns.ttl_s value=true by=shkim
+2026-10-28T06:16:39 INFO  push-gw/pw-node-13 backup finished file=/vault/daily/audit_20261010.tar.zst size_mb=24389 checksum=02c11d2b
+2026-10-28T06:16:45 INFO  push-gw/pw-node-05 request done id=req-e0ef45cd route=/push-gw/v1/verify status=200 latency_ms=59
+2026-10-28T06:16:48 INFO  push-gw/pw-node-06 request done id=req-b903cbd1 route=/push-gw/v1/create status=200 latency_ms=55
+2026-10-28T06:16:52 INFO  push-gw/pw-node-16 backup finished file=/vault/weekly/users_2026w44.tar.zst size_mb=34304 checksum=28ae8667
+2026-10-28T06:16:55 WARN  push-gw/pw-node-14 alert fired rule=gc_pause_long value=71ms threshold=62ms
+2026-10-28T06:16:59 WARN  push-gw/pw-node-03 alert fired rule=replica_lag_high value=68s threshold=64s
+2026-10-28T06:17:00 INFO  push-gw/pw-node-18 request done id=req-4f6f3ebc route=/push-gw/v1/list status=409 latency_ms=140
+2026-10-28T06:17:06 INFO  push-gw/pw-node-06 request done id=req-0770e187 route=/push-gw/v1/sync status=200 latency_ms=487
+2026-10-28T06:17:12 INFO  push-gw/pw-node-10 request done id=req-9e247c84 route=/push-gw/v1/verify status=200 latency_ms=258
+2026-10-28T06:17:15 INFO  push-gw/pw-node-14 request done id=req-bf945508 route=/push-gw/v1/status status=200 latency_ms=71
+2026-10-28T06:17:18 INFO  push-gw/pw-node-19 request done id=req-49f0410f route=/push-gw/v1/status status=409 latency_ms=496
+2026-10-28T06:17:25 INFO  push-gw/pw-node-10 request done id=req-ed014776 route=/push-gw/v1/status status=200 latency_ms=315
+2026-10-28T06:17:26 INFO  push-gw/pw-node-04 deploy step release=push-gw-4.13.3 step=healthcheck result=ok took_s=5
+2026-10-28T06:17:31 INFO  push-gw/pw-node-05 pool resize target=push-gw-upstream max_pool_size=60 prev=101
+2026-10-28T06:17:35 INFO  push-gw/pw-node-09 request done id=req-acd0fb0a route=/push-gw/v1/cancel status=200 latency_ms=160
+2026-10-28T06:17:39 INFO  push-gw/pw-node-14 request done id=req-ec1ebc17 route=/push-gw/v1/get status=201 latency_ms=117
+2026-10-28T06:17:42 INFO  push-gw/pw-node-13 deploy step release=push-gw-4.10.8 step=shift_traffic_100 result=ok took_s=168
+2026-10-28T06:17:47 INFO  push-gw/pw-node-02 ticket linked id=OPS-48490 reason=cert_rotation
+2026-10-28T06:17:49 INFO  push-gw/pw-node-11 request done id=req-75b6ad56 route=/push-gw/v1/cancel status=429 latency_ms=158
+2026-10-28T06:17:52 INFO  push-gw/pw-node-07 pool resize target=push-gw-queue max_pool_size=117 prev=81
+2026-10-28T06:17:55 WARN  push-gw/pw-node-12 alert fired rule=replica_lag_high value=94s threshold=87s
+2026-10-28T06:17:59 INFO  push-gw/pw-node-24 backup finished file=/vault/weekly/users_2026w38.tar.zst size_mb=73241 checksum=80e792b0
+2026-10-28T06:18:03 INFO  push-gw/pw-node-16 request done id=req-1a30b0e9 route=/push-gw/v1/status status=400 latency_ms=52
+2026-10-28T06:18:09 INFO  push-gw/pw-node-22 request done id=req-77f49592 route=/push-gw/v1/get status=200 latency_ms=68
+2026-10-28T06:18:11 INFO  push-gw/pw-node-17 request done id=req-e9d97121 route=/push-gw/v1/list status=200 latency_ms=124
+2026-10-28T06:18:12 INFO  push-gw/pw-node-21 request done id=req-50d18903 route=/push-gw/v1/verify status=429 latency_ms=101
+2026-10-28T06:18:14 INFO  push-gw/pw-node-02 request done id=req-60983289 route=/push-gw/v1/create status=200 latency_ms=210
+2026-10-28T06:18:19 INFO  push-gw/pw-node-17 request done id=req-7029a063 route=/push-gw/v1/status status=503 latency_ms=96
+2026-10-28T06:18:20 INFO  push-gw/pw-node-19 request done id=req-0d0f10ec route=/push-gw/v1/update status=200 latency_ms=183
+2026-10-28T06:18:21 INFO  push-gw/pw-node-18 request done id=req-b54a23cd route=/push-gw/v1/list status=200 latency_ms=586
+2026-10-28T06:18:26 INFO  push-gw/pw-node-03 config applied key=gc.pause_target_ms value=6742 by=yjchoi
+2026-10-28T06:18:27 WARN  push-gw/pw-node-24 alert fired rule=replica_lag_high value=76s threshold=72s
+2026-10-28T06:18:28 INFO  push-gw/pw-node-04 request done id=req-0bcf135c route=/push-gw/v1/update status=200 latency_ms=228
+2026-10-28T06:18:32 INFO  push-gw/pw-node-21 pool resize target=push-gw-worker max_pool_size=109 prev=134
+2026-10-28T06:18:34 INFO  push-gw/pw-node-05 backup finished file=/vault/weekly/inventory_2026w33.tar.zst size_mb=40337 checksum=3c07a813
+2026-10-28T06:18:40 WARN  push-gw/pw-node-13 alert fired rule=error_ratio_high value=66% threshold=65%
+2026-10-28T06:18:47 INFO  push-gw/pw-node-02 request done id=req-ef32d901 route=/push-gw/v1/cancel status=409 latency_ms=48
+2026-10-28T06:18:53 INFO  push-gw/pw-node-20 backup finished file=/vault/daily/audit_20261005.tar.zst size_mb=53452 checksum=af569c39
+2026-10-28T06:18:59 INFO  push-gw/pw-node-23 request done id=req-37da99ee route=/push-gw/v1/status status=201 latency_ms=47
+2026-10-28T06:19:03 INFO  push-gw/pw-node-23 request done id=req-1ab5b446 route=/push-gw/v1/cancel status=200 latency_ms=134
+2026-10-28T06:19:09 INFO  push-gw/pw-node-02 request done id=req-eb70e811 route=/push-gw/v1/verify status=500 latency_ms=138
+2026-10-28T06:19:16 WARN  push-gw/pw-node-24 alert fired rule=fd_usage_high value=85% threshold=77%
+2026-10-28T06:19:23 INFO  push-gw/pw-node-23 ticket linked id=OPS-49005 reason=log_volume_spike
+2026-10-28T06:19:26 INFO  push-gw/pw-node-17 backup finished file=/vault/weekly/users_2026w35.tar.zst size_mb=31910 checksum=a1af4222
+2026-10-28T06:19:27 INFO  push-gw/pw-node-15 request done id=req-69089c83 route=/push-gw/v1/create status=200 latency_ms=79
+2026-10-28T06:19:31 INFO  push-gw/pw-node-23 request done id=req-70c17453 route=/push-gw/v1/update status=200 latency_ms=1586
+2026-10-28T06:19:36 INFO  push-gw/pw-node-02 request done id=req-9c83bc0b route=/push-gw/v1/verify status=200 latency_ms=24
+2026-10-28T06:19:39 INFO  push-gw/pw-node-19 deploy step release=push-gw-4.11.6 step=pull_image result=ok took_s=95
+2026-10-28T06:19:41 INFO  push-gw/pw-node-22 request done id=req-a2a4e1c4 route=/push-gw/v1/status status=200 latency_ms=390
+2026-10-28T06:19:45 INFO  push-gw/pw-node-01 pool resize target=push-gw-worker max_pool_size=108 prev=85
+2026-10-28T06:19:46 INFO  push-gw/pw-node-24 request done id=req-8ba00720 route=/push-gw/v1/update status=200 latency_ms=567
+2026-10-28T06:19:49 INFO  push-gw/pw-node-04 ticket linked id=OPS-48443 reason=runbook_update
+2026-10-28T06:19:52 ERROR push-gw/pw-node-11 job failed job=push-gw-reindex attempt=4 cause=dns_failure
+2026-10-28T06:19:56 INFO  push-gw/pw-node-09 pool resize target=push-gw-upstream max_pool_size=264 prev=303
+2026-10-28T06:19:57 INFO  push-gw/pw-node-16 pool resize target=push-gw-worker max_pool_size=386 prev=432
+2026-10-28T06:19:58 INFO  push-gw/pw-node-05 request done id=req-1247ecbf route=/push-gw/v1/create status=500 latency_ms=182
+2026-10-28T06:20:04 INFO  push-gw/pw-node-13 deploy step release=push-gw-4.19.7 step=drain result=ok took_s=222
+2026-10-28T06:20:09 ERROR push-gw/pw-node-10 job failed job=push-gw-reindex attempt=1 cause=oom_killed
+2026-10-28T06:20:11 INFO  push-gw/pw-node-22 request done id=req-162fe9fa route=/push-gw/v1/sync status=200 latency_ms=104
+2026-10-28T06:20:16 ERROR push-gw/pw-node-19 job failed job=push-gw-cleanup attempt=3 cause=bad_checksum
+2026-10-28T06:20:23 INFO  push-gw/pw-node-03 cache stats region=ap-se-1a hit_ratio=88.7% evictions=35431
+2026-10-28T06:20:30 INFO  push-gw/pw-node-22 request done id=req-16af0b61 route=/push-gw/v1/list status=200 latency_ms=132
+2026-10-28T06:20:34 INFO  push-gw/pw-node-19 pool resize target=push-gw-db max_pool_size=268 prev=228
+2026-10-28T06:20:37 INFO  push-gw/pw-node-21 request done id=req-7663dec9 route=/push-gw/v1/list status=200 latency_ms=29
+2026-10-28T06:20:41 INFO  push-gw/pw-node-07 request done id=req-603c0212 route=/push-gw/v1/get status=201 latency_ms=100
+2026-10-28T06:20:42 INFO  push-gw/pw-node-03 request done id=req-c7a957f5 route=/push-gw/v1/get status=200 latency_ms=260
+2026-10-28T06:20:49 INFO  push-gw/pw-node-24 request done id=req-2502e31c route=/push-gw/v1/get status=200 latency_ms=33
+2026-10-28T06:20:54 INFO  push-gw/pw-node-05 request done id=req-1eacaa91 route=/push-gw/v1/list status=404 latency_ms=16
+2026-10-28T06:20:58 INFO  push-gw/pw-node-08 request done id=req-d4525d66 route=/push-gw/v1/sync status=200 latency_ms=21
+2026-10-28T06:21:02 INFO  push-gw/pw-node-17 config applied key=http.read_timeout_ms value=53% by=yjchoi
+2026-10-28T06:21:04 INFO  push-gw/pw-node-10 cache stats region=us-we-2b hit_ratio=73.3% evictions=30971
+2026-10-28T06:21:11 INFO  push-gw/pw-node-03 deploy step release=push-gw-4.16.9 step=migrate result=ok took_s=25
+2026-10-28T06:21:14 INFO  push-gw/pw-node-11 request done id=req-c4a8fd08 route=/push-gw/v1/sync status=200 latency_ms=98
+2026-10-28T06:21:20 INFO  push-gw/pw-node-07 request done id=req-0234ff9e route=/push-gw/v1/sync status=400 latency_ms=84
+2026-10-28T06:21:24 INFO  push-gw/pw-node-08 config applied key=gc.pause_target_ms value=992 by=jhpark
+2026-10-28T06:21:26 WARN  push-gw/pw-node-20 alert fired rule=conn_pool_saturated value=99% threshold=87%
+2026-10-28T06:21:28 NOTE  push-gw/pw-node-12 operator=hbyoon memo="헬스체크 간격을 18초에서 43초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-28T06:21:30 INFO  push-gw/pw-node-04 request done id=req-4dd151d8 route=/push-gw/v1/create status=201 latency_ms=69
+2026-10-28T06:21:33 INFO  push-gw/pw-node-08 config applied key=log.sample_rate value=1863 by=sykang
+2026-10-28T06:21:40 NOTE  push-gw/pw-node-09 operator=hbyoon memo="타임아웃을 2ms에서 25ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-28T06:21:44 INFO  push-gw/pw-node-12 pool resize target=push-gw-db max_pool_size=160 prev=164
+2026-10-28T06:21:48 INFO  push-gw/pw-node-17 config applied key=shard.count value=false by=jhpark
+2026-10-28T06:21:49 INFO  push-gw/pw-node-06 request done id=req-82d149cb route=/push-gw/v1/sync status=201 latency_ms=194
+2026-10-28T06:21:51 INFO  push-gw/pw-node-07 backup finished file=/vault/weekly/orders_2026w38.tar.zst size_mb=9899 checksum=da08a48b
+2026-10-28T06:21:54 INFO  push-gw/pw-node-17 request done id=req-ffa1079a route=/push-gw/v1/status status=201 latency_ms=268
+2026-10-28T06:22:00 INFO  push-gw/pw-node-17 request done id=req-49d2273e route=/push-gw/v1/list status=429 latency_ms=627
+2026-10-28T06:22:01 INFO  push-gw/pw-node-06 request done id=req-24b507d3 route=/push-gw/v1/update status=204 latency_ms=587
+2026-10-28T06:22:03 NOTE  push-gw/pw-node-13 operator=hbyoon memo="캐시 TTL을 40초로 되돌림. 오래된 응답이 보고됨."
+2026-10-28T06:22:10 INFO  push-gw/pw-node-06 request done id=req-861e267e route=/push-gw/v1/list status=204 latency_ms=173
+2026-10-28T06:22:17 INFO  push-gw/pw-node-05 cache stats region=ap-se-1a hit_ratio=80.3% evictions=20907
+2026-10-28T06:22:21 INFO  push-gw/pw-node-19 request done id=req-b5c039b2 route=/push-gw/v1/create status=200 latency_ms=176
+2026-10-28T06:22:23 INFO  push-gw/pw-node-18 config applied key=dns.ttl_s value=14 by=ejlim
+2026-10-28T06:22:27 INFO  push-gw/pw-node-05 request done id=req-09d73037 route=/push-gw/v1/status status=200 latency_ms=138
+2026-10-28T06:22:30 INFO  push-gw/pw-node-12 request done id=req-0814a299 route=/push-gw/v1/update status=200 latency_ms=258
+2026-10-28T06:22:37 INFO  push-gw/pw-node-19 ticket linked id=OPS-49167 reason=cert_rotation
+2026-10-28T06:22:43 INFO  push-gw/pw-node-03 backup finished file=/vault/weekly/users_2026w35.tar.zst size_mb=75452 checksum=d4cb9c3c
+2026-10-28T06:22:44 WARN  push-gw/pw-node-12 alert fired rule=disk_usage_warning value=84% threshold=82%
+2026-10-28T06:22:47 INFO  push-gw/pw-node-06 request done id=req-5a575f3a route=/push-gw/v1/verify status=200 latency_ms=397
+2026-10-28T06:22:52 INFO  push-gw/pw-node-03 deploy step release=push-gw-4.13.5 step=healthcheck result=ok took_s=152
+2026-10-28T06:22:53 INFO  push-gw/pw-node-24 request done id=req-8af5f2de route=/push-gw/v1/update status=429 latency_ms=70
+2026-10-28T06:22:59 INFO  push-gw/pw-node-17 backup finished file=/vault/daily/audit_20261018.tar.zst size_mb=73331 checksum=78fbfe8c
+2026-10-28T06:23:06 INFO  push-gw/pw-node-23 pool resize target=push-gw-db max_pool_size=239 prev=222
+2026-10-28T06:23:09 INFO  push-gw/pw-node-05 deploy step release=push-gw-4.13.9 step=drain result=ok took_s=77
+2026-10-28T06:23:12 INFO  push-gw/pw-node-09 request done id=req-a87785ff route=/push-gw/v1/cancel status=201 latency_ms=219
+2026-10-28T06:23:19 INFO  push-gw/pw-node-20 request done id=req-5b6aa428 route=/push-gw/v1/cancel status=200 latency_ms=238
+2026-10-28T06:23:20 INFO  push-gw/pw-node-12 pool resize target=push-gw-queue max_pool_size=181 prev=176
+2026-10-28T06:23:22 INFO  push-gw/pw-node-01 request done id=req-9e349152 route=/push-gw/v1/verify status=200 latency_ms=164
+2026-10-28T06:23:25 INFO  push-gw/pw-node-06 config applied key=limiter.rps value=1714 by=shkim
+2026-10-28T06:23:27 WARN  push-gw/pw-node-24 alert fired rule=cpu_steal_high value=60% threshold=49%
+2026-10-28T06:23:29 INFO  push-gw/pw-node-11 request done id=req-7554faf3 route=/push-gw/v1/status status=503 latency_ms=60
+2026-10-28T06:23:35 INFO  push-gw/pw-node-02 request done id=req-6b607996 route=/push-gw/v1/list status=200 latency_ms=138
+2026-10-28T06:23:40 WARN  push-gw/pw-node-15 alert fired rule=replica_lag_high value=58s threshold=44s
+2026-10-28T06:23:41 INFO  push-gw/pw-node-09 request done id=req-46aec458 route=/push-gw/v1/list status=400 latency_ms=159
+2026-10-28T06:23:43 INFO  push-gw/pw-node-07 backup finished file=/vault/daily/users_20261015.tar.zst size_mb=15983 checksum=6d442fbc
+2026-10-28T06:23:44 INFO  push-gw/pw-node-18 request done id=req-6049c2ee route=/push-gw/v1/get status=429 latency_ms=158
+2026-10-28T06:23:50 INFO  push-gw/pw-node-24 request done id=req-9fcbffca route=/push-gw/v1/create status=200 latency_ms=80
+2026-10-28T06:23:56 INFO  push-gw/pw-node-20 request done id=req-8c623229 route=/push-gw/v1/status status=429 latency_ms=105
+2026-10-28T06:24:02 INFO  push-gw/pw-node-21 backup finished file=/vault/daily/sessions_20261021.tar.zst size_mb=51992 checksum=75105c0b
+2026-10-28T06:24:06 INFO  push-gw/pw-node-10 ticket linked id=OPS-49800 reason=cert_rotation
+2026-10-28T06:24:08 INFO  push-gw/pw-node-18 request done id=req-08a28bf6 route=/push-gw/v1/cancel status=200 latency_ms=154
+2026-10-28T06:24:12 INFO  push-gw/pw-node-22 request done id=req-ae9ad05f route=/push-gw/v1/get status=200 latency_ms=45
+2026-10-28T06:24:18 WARN  push-gw/pw-node-21 alert fired rule=gc_pause_long value=91ms threshold=82ms
+2026-10-28T06:24:22 NOTE  push-gw/pw-node-21 operator=ejlim memo="pw-node-21 재기동 후 지표 정상 확인."
+2026-10-28T06:24:23 INFO  push-gw/pw-node-03 backup finished file=/vault/weekly/sessions_2026w33.tar.zst size_mb=1268 checksum=bebab226
+2026-10-28T06:24:27 WARN  push-gw/pw-node-02 alert fired rule=cpu_steal_high value=55% threshold=51%
+2026-10-28T06:24:32 INFO  push-gw/pw-node-23 cache stats region=ap-se-1a hit_ratio=75.6% evictions=26173
+2026-10-28T06:24:33 INFO  push-gw/pw-node-13 request done id=req-430d574a route=/push-gw/v1/verify status=200 latency_ms=187
+2026-10-28T06:24:40 INFO  push-gw/pw-node-07 request done id=req-f79b4602 route=/push-gw/v1/update status=409 latency_ms=119
+2026-10-28T06:24:43 INFO  push-gw/pw-node-05 request done id=req-f7d3b4fd route=/push-gw/v1/list status=503 latency_ms=55
+2026-10-28T06:24:44 INFO  push-gw/pw-node-24 request done id=req-8e408f15 route=/push-gw/v1/list status=200 latency_ms=91
+2026-10-28T06:24:47 INFO  push-gw/pw-node-07 config applied key=breaker.open_ratio value=5588 by=shkim
+2026-10-28T06:24:52 INFO  push-gw/pw-node-03 pool resize target=push-gw-upstream max_pool_size=342 prev=329
+2026-10-28T06:24:57 INFO  push-gw/pw-node-08 config applied key=shard.count value=4 by=jhpark
+2026-10-28T06:25:01 INFO  push-gw/pw-node-20 request done id=req-7ed900aa route=/push-gw/v1/list status=200 latency_ms=218
+2026-10-28T06:25:02 INFO  push-gw/pw-node-21 request done id=req-025e8b12 route=/push-gw/v1/update status=200 latency_ms=75
+2026-10-28T06:25:06 INFO  push-gw/pw-node-16 deploy step release=push-gw-4.22.9 step=pull_image result=ok took_s=33
+2026-10-28T06:25:13 INFO  push-gw/pw-node-24 config applied key=canary.latency_p99_threshold_ms value=35 by=dwjung
+2026-10-28T06:25:19 WARN  push-gw/pw-node-08 alert fired rule=heap_used_high value=76% threshold=64%
+2026-10-28T06:25:25 ERROR push-gw/pw-node-16 job failed job=push-gw-export attempt=5 cause=bad_checksum
+2026-10-28T06:25:31 INFO  push-gw/pw-node-03 request done id=req-439d87a8 route=/push-gw/v1/verify status=200 latency_ms=130
+2026-10-28T06:25:32 WARN  push-gw/pw-node-03 alert fired rule=disk_usage_warning value=97% threshold=84%
+2026-10-28T06:25:39 WARN  push-gw/pw-node-06 alert fired rule=replica_lag_high value=94s threshold=88s
+2026-10-28T06:25:42 INFO  push-gw/pw-node-19 request done id=req-477e3e1b route=/push-gw/v1/sync status=404 latency_ms=333
+2026-10-28T06:25:45 INFO  push-gw/pw-node-01 cache stats region=us-we-2b hit_ratio=88.2% evictions=25479
+2026-10-28T06:25:48 INFO  push-gw/pw-node-06 config applied key=flush.interval_ms value=53 by=sykang
+2026-10-28T06:25:49 NOTE  push-gw/pw-node-16 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-28T06:25:55 INFO  push-gw/pw-node-07 request done id=req-d684683e route=/push-gw/v1/sync status=200 latency_ms=75
+2026-10-28T06:25:56 INFO  push-gw/pw-node-19 request done id=req-4055bcd6 route=/push-gw/v1/verify status=200 latency_ms=291
+2026-10-28T06:26:03 INFO  push-gw/pw-node-02 deploy step release=push-gw-4.14.2 step=start result=ok took_s=152
+2026-10-28T06:26:09 INFO  push-gw/pw-node-14 request done id=req-f7536666 route=/push-gw/v1/cancel status=201 latency_ms=19
+2026-10-28T06:26:11 INFO  push-gw/pw-node-23 request done id=req-bb885fa0 route=/push-gw/v1/cancel status=200 latency_ms=377
+2026-10-28T06:26:14 WARN  push-gw/pw-node-09 alert fired rule=error_ratio_high value=51% threshold=43%
+2026-10-28T06:26:20 INFO  push-gw/pw-node-16 request done id=req-d3e0ab97 route=/push-gw/v1/sync status=200 latency_ms=257
+2026-10-28T06:26:22 INFO  push-gw/pw-node-06 config applied key=limiter.burst value=true by=sykang
+2026-10-28T06:26:27 INFO  push-gw/pw-node-19 config applied key=queue.batch_size value=5 by=hbyoon
+2026-10-28T06:26:29 INFO  push-gw/pw-node-09 config applied key=dns.ttl_s value=18 by=shkim
+2026-10-28T06:26:36 ERROR push-gw/pw-node-20 job failed job=push-gw-export attempt=2 cause=quota_exceeded
+2026-10-28T06:26:38 INFO  push-gw/pw-node-20 request done id=req-8a76f969 route=/push-gw/v1/list status=200 latency_ms=924
+2026-10-28T06:26:44 INFO  push-gw/pw-node-11 request done id=req-008483db route=/push-gw/v1/cancel status=200 latency_ms=156
+2026-10-28T06:26:51 INFO  push-gw/pw-node-16 deploy step release=push-gw-4.18.9 step=shift_traffic_100 result=ok took_s=44
+2026-10-28T06:26:54 WARN  push-gw/pw-node-23 alert fired rule=replica_lag_high value=50s threshold=38s
+2026-10-28T06:26:56 INFO  push-gw/pw-node-20 request done id=req-fb62ea16 route=/push-gw/v1/status status=200 latency_ms=27
+2026-10-28T06:26:57 INFO  push-gw/pw-node-21 request done id=req-57135dbd route=/push-gw/v1/get status=200 latency_ms=65
+2026-10-28T06:27:02 INFO  push-gw/pw-node-05 request done id=req-01f32f01 route=/push-gw/v1/get status=400 latency_ms=69
+2026-10-28T06:27:04 INFO  push-gw/pw-node-15 request done id=req-3b749206 route=/push-gw/v1/list status=200 latency_ms=168
+2026-10-28T06:27:05 INFO  push-gw/pw-node-11 deploy step release=push-gw-4.18.3 step=warmup result=ok took_s=74
+2026-10-28T06:27:09 INFO  push-gw/pw-node-20 request done id=req-d8059bac route=/push-gw/v1/cancel status=200 latency_ms=240
+2026-10-28T06:27:10 INFO  push-gw/pw-node-24 request done id=req-b4f8dcc4 route=/push-gw/v1/sync status=200 latency_ms=58
+2026-10-28T06:27:14 INFO  push-gw/pw-node-05 cache stats region=ap-se-1a hit_ratio=86.5% evictions=19862
+2026-10-28T06:27:21 INFO  push-gw/pw-node-06 request done id=req-30e88e5c route=/push-gw/v1/update status=200 latency_ms=461
+2026-10-28T06:27:22 NOTE  push-gw/pw-node-08 operator=mjlee memo="타임아웃을 20ms에서 58ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-28T06:27:28 INFO  push-gw/pw-node-19 request done id=req-688dd958 route=/push-gw/v1/create status=404 latency_ms=255
+2026-10-28T06:27:30 INFO  push-gw/pw-node-09 request done id=req-e3c65c4f route=/push-gw/v1/update status=200 latency_ms=46
+2026-10-28T06:27:31 INFO  push-gw/pw-node-13 request done id=req-b92cd110 route=/push-gw/v1/sync status=404 latency_ms=66
+2026-10-28T06:27:37 INFO  push-gw/pw-node-21 request done id=req-e84e8b3b route=/push-gw/v1/create status=200 latency_ms=132
+2026-10-28T06:27:39 INFO  push-gw/pw-node-19 config applied key=flush.interval_ms value=false by=shkim
+2026-10-28T06:27:45 WARN  push-gw/pw-node-22 alert fired rule=heap_used_high value=50% threshold=46%
+2026-10-28T06:27:51 INFO  push-gw/pw-node-12 request done id=req-61537975 route=/push-gw/v1/sync status=200 latency_ms=149
+2026-10-28T06:27:56 INFO  push-gw/pw-node-05 deploy step release=push-gw-4.11.4 step=warmup result=ok took_s=210
+2026-10-28T06:27:57 INFO  push-gw/pw-node-12 request done id=req-1a013f9a route=/push-gw/v1/cancel status=200 latency_ms=26
+2026-10-28T06:28:01 INFO  push-gw/pw-node-06 deploy step release=push-gw-4.15.4 step=verify result=ok took_s=96
+2026-10-28T06:28:07 WARN  push-gw/pw-node-17 alert fired rule=p99_latency_high value=74ms threshold=70ms
+2026-10-28T06:28:14 INFO  push-gw/pw-node-06 request done id=req-291d5162 route=/push-gw/v1/get status=204 latency_ms=685
+2026-10-28T06:28:19 INFO  push-gw/pw-node-12 request done id=req-56485587 route=/push-gw/v1/create status=200 latency_ms=169
+2026-10-28T06:28:25 INFO  push-gw/pw-node-13 request done id=req-d4e48096 route=/push-gw/v1/update status=200 latency_ms=50
+2026-10-28T06:28:32 INFO  push-gw/pw-node-10 request done id=req-5b0d38d5 route=/push-gw/v1/verify status=200 latency_ms=55
+2026-10-28T06:28:36 INFO  push-gw/pw-node-05 deploy step release=push-gw-4.18.4 step=shift_traffic_10 result=ok took_s=87
+2026-10-28T06:28:43 INFO  push-gw/pw-node-15 request done id=req-40cc7c25 route=/push-gw/v1/verify status=200 latency_ms=231
+2026-10-28T06:28:48 INFO  push-gw/pw-node-24 request done id=req-62bc2c98 route=/push-gw/v1/status status=400 latency_ms=639
+2026-10-28T06:28:53 INFO  push-gw/pw-node-02 pool resize target=push-gw-worker max_pool_size=109 prev=104
+2026-10-28T06:28:59 INFO  push-gw/pw-node-22 request done id=req-aa102de3 route=/push-gw/v1/sync status=204 latency_ms=134
+2026-10-28T06:29:01 WARN  push-gw/pw-node-20 alert fired rule=heap_used_high value=96% threshold=82%
+2026-10-28T06:29:02 INFO  push-gw/pw-node-24 request done id=req-27beeabd route=/push-gw/v1/list status=200 latency_ms=24
+2026-10-28T06:29:05 WARN  push-gw/pw-node-21 alert fired rule=error_ratio_high value=95% threshold=93%
+2026-10-28T06:29:10 INFO  push-gw/pw-node-10 deploy step release=push-gw-4.18.5 step=migrate result=ok took_s=8
+2026-10-28T06:29:17 INFO  push-gw/pw-node-22 request done id=req-b58586a7 route=/push-gw/v1/create status=200 latency_ms=160
+2026-10-28T06:29:24 INFO  push-gw/pw-node-23 config applied key=flush.interval_ms value=8749 by=mjlee
+2026-10-28T06:29:31 WARN  push-gw/pw-node-05 alert fired rule=queue_depth_high value=85 threshold=71
+2026-10-28T06:29:35 INFO  push-gw/pw-node-14 request done id=req-84de18d6 route=/push-gw/v1/status status=200 latency_ms=110
+2026-10-28T06:29:37 NOTE  push-gw/pw-node-19 operator=ejlim memo="연동 팀에 변경 공지 완료."
+2026-10-28T06:29:41 INFO  push-gw/pw-node-03 request done id=req-4bc01c6e route=/push-gw/v1/sync status=200 latency_ms=58
+2026-10-28T06:29:47 INFO  push-gw/pw-node-09 request done id=req-4b1e0d37 route=/push-gw/v1/verify status=200 latency_ms=62
+2026-10-28T06:29:48 INFO  push-gw/pw-node-24 request done id=req-a87e9305 route=/push-gw/v1/cancel status=400 latency_ms=177
+2026-10-28T06:29:55 INFO  push-gw/pw-node-21 ticket linked id=OPS-49838 reason=cert_rotation
+2026-10-28T06:29:58 INFO  push-gw/pw-node-21 request done id=req-ff517cad route=/push-gw/v1/sync status=201 latency_ms=110
+2026-10-28T06:30:03 INFO  push-gw/pw-node-07 config applied key=tls.session_cache value=3606 by=ejlim
+2026-10-28T06:30:07 INFO  push-gw/pw-node-23 request done id=req-c57ac72b route=/push-gw/v1/get status=429 latency_ms=67
+2026-10-28T06:30:09 INFO  push-gw/pw-node-18 request done id=req-752e1e63 route=/push-gw/v1/update status=200 latency_ms=55
+2026-10-28T06:30:15 INFO  push-gw/pw-node-06 request done id=req-c23bb068 route=/push-gw/v1/status status=200 latency_ms=86
+2026-10-28T06:30:18 INFO  push-gw/pw-node-15 config applied key=canary.traffic_percent value=99% by=shkim
+2026-10-28T06:30:20 INFO  push-gw/pw-node-16 config applied key=dns.ttl_s value=false by=ejlim
+2026-10-28T06:30:21 INFO  push-gw/pw-node-15 request done id=req-2a2648a8 route=/push-gw/v1/create status=200 latency_ms=335
+2026-10-28T06:30:24 WARN  push-gw/pw-node-04 alert fired rule=cpu_steal_high value=89% threshold=75%
+2026-10-28T06:30:29 INFO  push-gw/pw-node-19 ticket linked id=OPS-49684 reason=runbook_update
+2026-10-28T06:30:34 WARN  push-gw/pw-node-16 alert fired rule=conn_pool_saturated value=78% threshold=66%
+2026-10-28T06:30:36 INFO  push-gw/pw-node-01 request done id=req-3ade53d2 route=/push-gw/v1/status status=204 latency_ms=160
+2026-10-28T06:30:41 INFO  push-gw/pw-node-19 pool resize target=push-gw-worker max_pool_size=92 prev=52
+2026-10-28T06:30:46 INFO  push-gw/pw-node-07 request done id=req-8fbae57d route=/push-gw/v1/get status=200 latency_ms=65
+2026-10-28T06:30:50 NOTE  push-gw/pw-node-14 operator=shkim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-28T06:30:54 INFO  push-gw/pw-node-07 request done id=req-88dcf716 route=/push-gw/v1/status status=200 latency_ms=70
+2026-10-28T06:31:01 INFO  push-gw/pw-node-24 request done id=req-677b3068 route=/push-gw/v1/list status=200 latency_ms=143
+2026-10-28T06:31:07 NOTE  push-gw/pw-node-23 operator=jhpark memo="캐시 TTL을 59초로 되돌림. 오래된 응답이 보고됨."
+2026-10-28T06:31:12 NOTE  push-gw/pw-node-06 operator=ejlim memo="동시 처리 수를 18에서 3로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-28T06:31:16 INFO  push-gw/pw-node-01 request done id=req-7cd2ae1d route=/push-gw/v1/status status=409 latency_ms=443
+2026-10-28T06:31:18 INFO  push-gw/pw-node-03 request done id=req-d2283883 route=/push-gw/v1/get status=200 latency_ms=71
+2026-10-28T06:31:19 NOTE  push-gw/pw-node-08 operator=yjchoi memo="점검 창을 44분 연장함. 승인: 오세린 매니저."
+2026-10-28T06:31:26 INFO  push-gw/pw-node-08 pool resize target=push-gw-cache max_pool_size=251 prev=269
+2026-10-28T06:31:32 WARN  push-gw/pw-node-03 alert fired rule=replica_lag_high value=67s threshold=54s
+2026-10-28T06:31:39 INFO  push-gw/pw-node-13 request done id=req-69292664 route=/push-gw/v1/cancel status=503 latency_ms=176
+2026-10-28T06:31:44 INFO  push-gw/pw-node-12 request done id=req-cc11f989 route=/push-gw/v1/update status=200 latency_ms=264
+2026-10-28T06:31:50 INFO  push-gw/pw-node-21 ticket linked id=OPS-49064 reason=oncall_handoff
+2026-10-28T06:31:53 WARN  push-gw/pw-node-17 alert fired rule=disk_usage_warning value=68% threshold=62%
+2026-10-28T06:31:59 INFO  push-gw/pw-node-18 request done id=req-7e9fdce9 route=/push-gw/v1/status status=201 latency_ms=100
+2026-10-28T06:32:01 INFO  push-gw/pw-node-08 ticket linked id=OPS-47251 reason=schema_change
+2026-10-28T06:32:05 INFO  push-gw/pw-node-13 config applied key=tls.session_cache value=false by=dwjung
+2026-10-28T06:32:10 INFO  push-gw/pw-node-14 deploy step release=push-gw-4.20.7 step=drain result=ok took_s=123
+2026-10-28T06:32:13 INFO  push-gw/pw-node-12 deploy step release=push-gw-4.11.0 step=migrate result=ok took_s=213
+2026-10-28T06:32:15 INFO  push-gw/pw-node-06 request done id=req-650de21b route=/push-gw/v1/status status=200 latency_ms=285
+2026-10-28T06:32:16 NOTE  push-gw/pw-node-10 operator=shkim memo="임시 증설 47대 추가. 내일 오전 회수 예정."
+2026-10-28T06:32:22 INFO  push-gw/pw-node-24 pool resize target=push-gw-queue max_pool_size=318 prev=261
+2026-10-28T06:32:25 NOTE  push-gw/pw-node-06 operator=hbyoon memo="인증서 갱신 일정 확인. 만료까지 6일 남음."
+2026-10-28T06:32:26 INFO  push-gw/pw-node-12 request done id=req-2bf66475 route=/push-gw/v1/create status=404 latency_ms=175
+2026-10-28T06:32:30 WARN  push-gw/pw-node-06 alert fired rule=gc_pause_long value=69ms threshold=54ms
+2026-10-28T06:32:34 INFO  push-gw/pw-node-15 request done id=req-b947f96a route=/push-gw/v1/list status=400 latency_ms=36
+2026-10-28T06:32:35 INFO  push-gw/pw-node-09 request done id=req-d5d401f2 route=/push-gw/v1/update status=200 latency_ms=40
+2026-10-28T06:32:41 INFO  push-gw/pw-node-24 pool resize target=push-gw-db max_pool_size=178 prev=220
+2026-10-28T06:32:46 INFO  push-gw/pw-node-09 config applied key=cache.ttl_s value=1 by=sykang
+2026-10-28T06:32:53 ERROR push-gw/pw-node-10 job failed job=push-gw-export attempt=3 cause=lock_wait_exceeded
+2026-10-28T06:32:56 INFO  push-gw/pw-node-21 request done id=req-6acd5641 route=/push-gw/v1/cancel status=429 latency_ms=152
+2026-10-28T06:33:00 INFO  push-gw/pw-node-08 request done id=req-2732f802 route=/push-gw/v1/update status=404 latency_ms=70
+2026-10-28T06:33:03 INFO  push-gw/pw-node-22 request done id=req-a0660aca route=/push-gw/v1/update status=200 latency_ms=233
+2026-10-28T06:33:05 INFO  push-gw/pw-node-13 request done id=req-bb1b4e40 route=/push-gw/v1/cancel status=200 latency_ms=122
+2026-10-28T06:33:11 INFO  push-gw/pw-node-07 request done id=req-d1d0ebea route=/push-gw/v1/get status=200 latency_ms=306
+2026-10-28T06:33:12 INFO  push-gw/pw-node-10 deploy step release=push-gw-4.14.8 step=drain result=ok took_s=166
+2026-10-28T06:33:19 INFO  push-gw/pw-node-01 ticket linked id=OPS-47215 reason=runbook_update
+2026-10-28T06:33:22 INFO  push-gw/pw-node-01 request done id=req-89bb6edf route=/push-gw/v1/cancel status=200 latency_ms=170
+2026-10-28T06:33:24 INFO  push-gw/pw-node-14 deploy step release=push-gw-4.18.4 step=migrate result=ok took_s=35
+2026-10-28T06:33:28 NOTE  push-gw/pw-node-16 operator=hbyoon memo="헬스체크 간격을 14초에서 30초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-28T06:33:32 WARN  push-gw/pw-node-07 alert fired rule=heap_used_high value=69% threshold=63%
+2026-10-28T06:33:35 INFO  push-gw/pw-node-12 request done id=req-e524a3fa route=/push-gw/v1/sync status=429 latency_ms=56
+2026-10-28T06:33:40 NOTE  push-gw/pw-node-23 operator=jhpark memo="배치 시작 시각을 40시 61분으로 고정함."
+2026-10-28T06:33:42 INFO  push-gw/pw-node-08 request done id=req-033b38d4 route=/push-gw/v1/sync status=200 latency_ms=284
+2026-10-28T06:33:44 INFO  push-gw/pw-node-02 deploy step release=push-gw-4.17.2 step=shift_traffic_100 result=ok took_s=174
+2026-10-28T06:33:47 NOTE  push-gw/pw-node-20 operator=jhpark memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-28T06:33:49 INFO  push-gw/pw-node-20 ticket linked id=OPS-47903 reason=schema_change
+2026-10-28T06:33:53 WARN  push-gw/pw-node-10 alert fired rule=queue_depth_high value=62 threshold=59
+2026-10-28T06:33:57 INFO  push-gw/pw-node-03 request done id=req-a9f0019f route=/push-gw/v1/verify status=200 latency_ms=200
+2026-10-28T06:34:02 INFO  push-gw/pw-node-10 request done id=req-d0c14f47 route=/push-gw/v1/sync status=200 latency_ms=673
+2026-10-28T06:34:08 INFO  push-gw/pw-node-09 backup finished file=/vault/weekly/orders_2026w43.tar.zst size_mb=69805 checksum=820845b7
+2026-10-28T06:34:10 ERROR push-gw/pw-node-10 job failed job=push-gw-rollup attempt=1 cause=upstream_timeout
+2026-10-28T06:34:13 INFO  push-gw/pw-node-02 request done id=req-e7311f38 route=/push-gw/v1/list status=200 latency_ms=71
+2026-10-28T06:34:16 WARN  push-gw/pw-node-11 alert fired rule=queue_depth_high value=63 threshold=54
+2026-10-28T06:34:21 INFO  push-gw/pw-node-12 request done id=req-4cb30cd2 route=/push-gw/v1/get status=400 latency_ms=83
+2026-10-28T06:34:28 INFO  push-gw/pw-node-23 request done id=req-a1fb6326 route=/push-gw/v1/create status=429 latency_ms=31
+2026-10-28T06:34:34 INFO  push-gw/pw-node-15 request done id=req-6ae21bdf route=/push-gw/v1/get status=200 latency_ms=269
+2026-10-28T06:34:41 WARN  push-gw/pw-node-04 alert fired rule=p99_latency_high value=50ms threshold=48ms
+2026-10-28T06:34:47 INFO  push-gw/pw-node-21 request done id=req-a4f50c03 route=/push-gw/v1/update status=500 latency_ms=214
+2026-10-28T06:34:49 INFO  push-gw/pw-node-01 request done id=req-cb50fd9e route=/push-gw/v1/update status=200 latency_ms=67
+2026-10-28T06:34:55 INFO  push-gw/pw-node-02 ticket linked id=OPS-47060 reason=log_volume_spike
+2026-10-28T06:34:58 INFO  push-gw/pw-node-23 request done id=req-eb42d6f9 route=/push-gw/v1/get status=200 latency_ms=196
+2026-10-28T06:35:04 ERROR push-gw/pw-node-04 job failed job=push-gw-reindex attempt=5 cause=oom_killed
+2026-10-28T06:35:07 NOTE  push-gw/pw-node-18 operator=sykang memo="로그 보존 기간은 28일로 유지하기로 함."
+2026-10-28T06:35:12 ERROR push-gw/pw-node-02 job failed job=push-gw-cleanup attempt=3 cause=dns_failure
+2026-10-28T06:35:17 INFO  push-gw/pw-node-22 request done id=req-37959760 route=/push-gw/v1/sync status=200 latency_ms=190
+2026-10-28T06:35:21 INFO  push-gw/pw-node-14 request done id=req-e6895dbf route=/push-gw/v1/verify status=200 latency_ms=93
+2026-10-28T06:35:22 INFO  push-gw/pw-node-19 cache stats region=us-we-2b hit_ratio=88.1% evictions=2658
+2026-10-28T06:35:25 INFO  push-gw/pw-node-20 backup finished file=/vault/daily/payments_20261015.tar.zst size_mb=4271 checksum=c037bb10
+2026-10-28T06:35:28 INFO  push-gw/pw-node-11 pool resize target=push-gw-upstream max_pool_size=208 prev=242
+2026-10-28T06:35:32 ERROR push-gw/pw-node-08 job failed job=push-gw-cleanup attempt=1 cause=dns_failure
+2026-10-28T06:35:34 INFO  push-gw/pw-node-05 pool resize target=push-gw-cache max_pool_size=227 prev=208
+2026-10-28T06:35:35 WARN  push-gw/pw-node-14 alert fired rule=queue_depth_high value=57 threshold=44
+2026-10-28T06:35:40 INFO  push-gw/pw-node-24 request done id=req-c6cfa797 route=/push-gw/v1/cancel status=409 latency_ms=155
+2026-10-28T06:35:45 NOTE  push-gw/pw-node-05 operator=ejlim memo="로그 보존 기간은 54일로 유지하기로 함."
+2026-10-28T06:35:46 INFO  push-gw/pw-node-19 request done id=req-7ebd26a9 route=/push-gw/v1/cancel status=200 latency_ms=339
+2026-10-28T06:35:52 ERROR push-gw/pw-node-24 job failed job=push-gw-export attempt=3 cause=lock_wait_exceeded
+2026-10-28T06:35:53 INFO  push-gw/pw-node-17 request done id=req-2d624536 route=/push-gw/v1/sync status=200 latency_ms=169
+2026-10-28T06:35:55 INFO  push-gw/pw-node-21 backup finished file=/vault/weekly/sessions_2026w33.tar.zst size_mb=84409 checksum=d57a9f42
+2026-10-28T06:36:00 INFO  push-gw/pw-node-02 request done id=req-9ea77091 route=/push-gw/v1/create status=200 latency_ms=39
+2026-10-28T06:36:01 INFO  push-gw/pw-node-02 config applied key=flush.interval_ms value=false by=mjlee
+2026-10-28T06:36:08 INFO  push-gw/pw-node-24 pool resize target=push-gw-db max_pool_size=172 prev=216
+2026-10-28T06:36:09 WARN  push-gw/pw-node-23 alert fired rule=cpu_steal_high value=58% threshold=53%
+2026-10-28T06:36:13 INFO  push-gw/pw-node-08 request done id=req-67b6ef99 route=/push-gw/v1/get status=400 latency_ms=26
+2026-10-28T06:36:14 WARN  push-gw/pw-node-03 alert fired rule=gc_pause_long value=52ms threshold=38ms
+2026-10-28T06:36:18 INFO  push-gw/pw-node-21 request done id=req-b86cdc64 route=/push-gw/v1/sync status=200 latency_ms=247
+2026-10-28T06:36:24 WARN  push-gw/pw-node-15 alert fired rule=heap_used_high value=93% threshold=92%
+2026-10-28T06:36:28 WARN  push-gw/pw-node-08 alert fired rule=fd_usage_high value=86% threshold=74%
+2026-10-28T06:36:30 INFO  push-gw/pw-node-12 request done id=req-2a926f11 route=/push-gw/v1/create status=200 latency_ms=152
+2026-10-28T06:36:32 WARN  push-gw/pw-node-23 alert fired rule=error_ratio_high value=86% threshold=71%
+2026-10-28T06:36:33 INFO  push-gw/pw-node-19 ticket linked id=OPS-48252 reason=quota_increase
+2026-10-28T06:36:39 WARN  push-gw/pw-node-12 alert fired rule=gc_pause_long value=97ms threshold=93ms
+2026-10-28T06:36:46 INFO  push-gw/pw-node-02 config applied key=breaker.half_open_s value=true by=mjlee
+2026-10-28T06:36:53 INFO  push-gw/pw-node-04 request done id=req-3d224657 route=/push-gw/v1/status status=200 latency_ms=415
+2026-10-28T06:36:55 INFO  push-gw/pw-node-24 deploy step release=push-gw-4.18.4 step=start result=ok took_s=232
+2026-10-28T06:36:56 INFO  push-gw/pw-node-08 deploy step release=push-gw-4.17.7 step=start result=ok took_s=200
+2026-10-28T06:37:02 INFO  push-gw/pw-node-24 request done id=req-0aa600d7 route=/push-gw/v1/verify status=200 latency_ms=64
+2026-10-28T06:37:09 INFO  push-gw/pw-node-01 request done id=req-a197f45f route=/push-gw/v1/sync status=201 latency_ms=239
+2026-10-28T06:37:14 WARN  push-gw/pw-node-22 alert fired rule=cpu_steal_high value=62% threshold=53%
+2026-10-28T06:37:21 ERROR push-gw/pw-node-18 job failed job=push-gw-reindex attempt=3 cause=bad_checksum
+2026-10-28T06:37:23 WARN  push-gw/pw-node-02 alert fired rule=fd_usage_high value=93% threshold=80%
+2026-10-28T06:37:28 WARN  push-gw/pw-node-18 alert fired rule=cpu_steal_high value=94% threshold=85%
+2026-10-28T06:37:34 INFO  push-gw/pw-node-02 request done id=req-b646a91d route=/push-gw/v1/status status=500 latency_ms=133
+2026-10-28T06:37:40 INFO  push-gw/pw-node-19 request done id=req-4d8e77c4 route=/push-gw/v1/create status=200 latency_ms=66
+2026-10-28T06:37:41 INFO  push-gw/pw-node-22 request done id=req-6a7b5db2 route=/push-gw/v1/get status=409 latency_ms=38
+2026-10-28T06:37:43 WARN  push-gw/pw-node-19 alert fired rule=disk_usage_warning value=82% threshold=67%
+2026-10-28T06:37:49 INFO  push-gw/pw-node-21 request done id=req-eebabcbb route=/push-gw/v1/status status=400 latency_ms=30
+2026-10-28T06:37:56 INFO  push-gw/pw-node-20 request done id=req-0e6e4f37 route=/push-gw/v1/status status=200 latency_ms=190
+2026-10-28T06:37:59 INFO  push-gw/pw-node-03 request done id=req-b132e860 route=/push-gw/v1/update status=200 latency_ms=280
+2026-10-28T06:38:01 INFO  push-gw/pw-node-12 request done id=req-921ba710 route=/push-gw/v1/update status=404 latency_ms=67
+2026-10-28T06:38:03 INFO  push-gw/pw-node-07 ticket linked id=OPS-48096 reason=log_volume_spike
+2026-10-28T06:38:09 INFO  push-gw/pw-node-15 request done id=req-a93d3ec4 route=/push-gw/v1/list status=201 latency_ms=59
+2026-10-28T06:38:12 INFO  push-gw/pw-node-01 request done id=req-90ad6861 route=/push-gw/v1/verify status=200 latency_ms=46
+2026-10-28T06:38:15 WARN  push-gw/pw-node-06 alert fired rule=fd_usage_high value=87% threshold=76%
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

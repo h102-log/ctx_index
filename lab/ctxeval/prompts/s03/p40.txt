@@ -1,0 +1,424 @@
+참고용 로그 40: 썸네일 캐시(thumb-cache) 축출 점검 구간. '확인'이라고만 답해 줘.
+
+2026-11-13T00:46:08 INFO  thumb-cache/tc-node-10 request done id=req-2883a99e route=/thumb-cache/v1/create status=200 latency_ms=90
+2026-11-13T00:46:13 INFO  thumb-cache/tc-node-15 request done id=req-e11a251d route=/thumb-cache/v1/sync status=200 latency_ms=341
+2026-11-13T00:46:19 INFO  thumb-cache/tc-node-07 deploy step release=thumb-cache-4.13.4 step=pull_image result=ok took_s=137
+2026-11-13T00:46:20 INFO  thumb-cache/tc-node-02 request done id=req-7753a747 route=/thumb-cache/v1/status status=201 latency_ms=62
+2026-11-13T00:46:21 INFO  thumb-cache/tc-node-13 request done id=req-88fb17e3 route=/thumb-cache/v1/status status=200 latency_ms=86
+2026-11-13T00:46:27 INFO  thumb-cache/tc-node-23 request done id=req-8f8c03ab route=/thumb-cache/v1/list status=200 latency_ms=38
+2026-11-13T00:46:30 INFO  thumb-cache/tc-node-13 pool resize target=thumb-cache-cache max_pool_size=380 prev=403
+2026-11-13T00:46:34 INFO  thumb-cache/tc-node-12 deploy step release=thumb-cache-4.20.4 step=start result=ok took_s=55
+2026-11-13T00:46:40 INFO  thumb-cache/tc-node-04 request done id=req-4ce07840 route=/thumb-cache/v1/verify status=200 latency_ms=248
+2026-11-13T00:46:44 INFO  thumb-cache/tc-node-13 config applied key=http.read_timeout_ms value=true by=sykang
+2026-11-13T00:46:48 INFO  thumb-cache/tc-node-03 ticket linked id=OPS-47352 reason=dependency_upgrade
+2026-11-13T00:46:53 INFO  thumb-cache/tc-node-19 config applied key=log.sample_rate value=4674 by=shkim
+2026-11-13T00:46:57 INFO  thumb-cache/tc-node-03 ticket linked id=OPS-49458 reason=cert_rotation
+2026-11-13T00:47:00 INFO  thumb-cache/tc-node-05 request done id=req-14f0404f route=/thumb-cache/v1/get status=404 latency_ms=40
+2026-11-13T00:47:02 INFO  thumb-cache/tc-node-04 deploy step release=thumb-cache-4.10.7 step=shift_traffic_10 result=ok took_s=97
+2026-11-13T00:47:06 INFO  thumb-cache/tc-node-18 request done id=req-a95421a2 route=/thumb-cache/v1/update status=409 latency_ms=160
+2026-11-13T00:47:12 INFO  thumb-cache/tc-node-19 pool resize target=thumb-cache-worker max_pool_size=274 prev=245
+2026-11-13T00:47:18 INFO  thumb-cache/tc-node-19 request done id=req-9b10974e route=/thumb-cache/v1/sync status=200 latency_ms=96
+2026-11-13T00:47:22 INFO  thumb-cache/tc-node-07 request done id=req-ef452dcb route=/thumb-cache/v1/cancel status=409 latency_ms=64
+2026-11-13T00:47:28 WARN  thumb-cache/tc-node-18 alert fired rule=cpu_steal_high value=97% threshold=96%
+2026-11-13T00:47:35 INFO  thumb-cache/tc-node-19 request done id=req-7b832a86 route=/thumb-cache/v1/sync status=200 latency_ms=49
+2026-11-13T00:47:40 ERROR thumb-cache/tc-node-24 job failed job=thumb-cache-rollup attempt=2 cause=dns_failure
+2026-11-13T00:47:45 NOTE  thumb-cache/tc-node-03 operator=yjchoi memo="동시 처리 수를 57에서 37로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-13T00:47:51 ERROR thumb-cache/tc-node-19 job failed job=thumb-cache-export attempt=4 cause=upstream_timeout
+2026-11-13T00:47:57 INFO  thumb-cache/tc-node-22 request done id=req-96928b23 route=/thumb-cache/v1/create status=409 latency_ms=44
+2026-11-13T00:47:59 INFO  thumb-cache/tc-node-15 deploy step release=thumb-cache-4.20.1 step=warmup result=ok took_s=109
+2026-11-13T00:48:02 INFO  thumb-cache/tc-node-06 request done id=req-09948203 route=/thumb-cache/v1/list status=200 latency_ms=378
+2026-11-13T00:48:04 NOTE  thumb-cache/tc-node-17 operator=ejlim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-13T00:48:05 INFO  thumb-cache/tc-node-09 config applied key=flush.interval_ms value=29 by=ejlim
+2026-11-13T00:48:10 INFO  thumb-cache/tc-node-11 request done id=req-7357a7e3 route=/thumb-cache/v1/update status=200 latency_ms=119
+2026-11-13T00:48:14 INFO  thumb-cache/tc-node-22 config applied key=limiter.burst value=false by=ejlim
+2026-11-13T00:48:17 INFO  thumb-cache/tc-node-19 backup finished file=/vault/weekly/sessions_2026w35.tar.zst size_mb=48716 checksum=4aee4ddc
+2026-11-13T00:48:20 INFO  thumb-cache/tc-node-11 request done id=req-f3a18e32 route=/thumb-cache/v1/cancel status=200 latency_ms=9
+2026-11-13T00:48:21 ERROR thumb-cache/tc-node-19 job failed job=thumb-cache-reindex attempt=5 cause=oom_killed
+2026-11-13T00:48:27 INFO  thumb-cache/tc-node-07 ticket linked id=OPS-48753 reason=schema_change
+2026-11-13T00:48:33 WARN  thumb-cache/tc-node-19 alert fired rule=gc_pause_long value=97ms threshold=92ms
+2026-11-13T00:48:36 WARN  thumb-cache/tc-node-13 alert fired rule=heap_used_high value=64% threshold=63%
+2026-11-13T00:48:42 INFO  thumb-cache/tc-node-10 request done id=req-e873a291 route=/thumb-cache/v1/get status=200 latency_ms=88
+2026-11-13T00:48:43 WARN  thumb-cache/tc-node-15 alert fired rule=cpu_steal_high value=77% threshold=68%
+2026-11-13T00:48:49 INFO  thumb-cache/tc-node-23 request done id=req-c8048fa9 route=/thumb-cache/v1/get status=200 latency_ms=111
+2026-11-13T00:48:51 INFO  thumb-cache/tc-node-16 pool resize target=thumb-cache-upstream max_pool_size=27 prev=70
+2026-11-13T00:48:56 INFO  thumb-cache/tc-node-11 request done id=req-17c2248a route=/thumb-cache/v1/verify status=201 latency_ms=561
+2026-11-13T00:49:01 INFO  thumb-cache/tc-node-03 request done id=req-5c4024dd route=/thumb-cache/v1/sync status=200 latency_ms=105
+2026-11-13T00:49:05 INFO  thumb-cache/tc-node-16 request done id=req-78c709db route=/thumb-cache/v1/sync status=200 latency_ms=161
+2026-11-13T00:49:10 INFO  thumb-cache/tc-node-18 request done id=req-f3266a3f route=/thumb-cache/v1/sync status=404 latency_ms=207
+2026-11-13T00:49:14 INFO  thumb-cache/tc-node-21 request done id=req-9cc56a99 route=/thumb-cache/v1/cancel status=409 latency_ms=54
+2026-11-13T00:49:16 INFO  thumb-cache/tc-node-21 ticket linked id=OPS-47857 reason=node_drain
+2026-11-13T00:49:20 NOTE  thumb-cache/tc-node-23 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-13T00:49:26 WARN  thumb-cache/tc-node-20 alert fired rule=heap_used_high value=92% threshold=84%
+2026-11-13T00:49:31 INFO  thumb-cache/tc-node-15 deploy step release=thumb-cache-4.20.1 step=verify result=ok took_s=230
+2026-11-13T00:49:36 INFO  thumb-cache/tc-node-22 config applied key=gc.pause_target_ms value=true by=ejlim
+2026-11-13T00:49:38 INFO  thumb-cache/tc-node-04 request done id=req-da3d2a98 route=/thumb-cache/v1/create status=200 latency_ms=57
+2026-11-13T00:49:45 INFO  thumb-cache/tc-node-01 deploy step release=thumb-cache-4.20.5 step=warmup result=ok took_s=106
+2026-11-13T00:49:52 INFO  thumb-cache/tc-node-10 request done id=req-e9b7e75b route=/thumb-cache/v1/verify status=200 latency_ms=74
+2026-11-13T00:49:53 INFO  thumb-cache/tc-node-04 pool resize target=thumb-cache-upstream max_pool_size=389 prev=432
+2026-11-13T00:49:58 INFO  thumb-cache/tc-node-02 cache stats region=ap-ne-2b hit_ratio=66.0% evictions=23640
+2026-11-13T00:50:05 INFO  thumb-cache/tc-node-05 deploy step release=thumb-cache-4.10.7 step=healthcheck result=ok took_s=169
+2026-11-13T00:50:11 INFO  thumb-cache/tc-node-10 request done id=req-351da03c route=/thumb-cache/v1/update status=200 latency_ms=57
+2026-11-13T00:50:16 INFO  thumb-cache/tc-node-15 pool resize target=thumb-cache-worker max_pool_size=172 prev=229
+2026-11-13T00:50:22 INFO  thumb-cache/tc-node-12 ticket linked id=OPS-47712 reason=dependency_upgrade
+2026-11-13T00:50:25 WARN  thumb-cache/tc-node-02 alert fired rule=conn_pool_saturated value=67% threshold=64%
+2026-11-13T00:50:28 INFO  thumb-cache/tc-node-02 request done id=req-6dae9f87 route=/thumb-cache/v1/status status=200 latency_ms=423
+2026-11-13T00:50:35 WARN  thumb-cache/tc-node-04 alert fired rule=queue_depth_high value=81 threshold=77
+2026-11-13T00:50:42 INFO  thumb-cache/tc-node-23 backup finished file=/vault/daily/inventory_20261011.tar.zst size_mb=83676 checksum=a281c035
+2026-11-13T00:50:49 INFO  thumb-cache/tc-node-05 request done id=req-446a9ea7 route=/thumb-cache/v1/verify status=500 latency_ms=83
+2026-11-13T00:50:56 INFO  thumb-cache/tc-node-09 pool resize target=thumb-cache-cache max_pool_size=267 prev=249
+2026-11-13T00:51:01 INFO  thumb-cache/tc-node-09 cache stats region=ap-se-1a hit_ratio=59.4% evictions=33998
+2026-11-13T00:51:03 INFO  thumb-cache/tc-node-21 request done id=req-46044a6d route=/thumb-cache/v1/cancel status=503 latency_ms=244
+2026-11-13T00:51:08 INFO  thumb-cache/tc-node-21 request done id=req-bfbc06d9 route=/thumb-cache/v1/verify status=200 latency_ms=146
+2026-11-13T00:51:15 ERROR thumb-cache/tc-node-23 job failed job=thumb-cache-cleanup attempt=1 cause=lock_wait_exceeded
+2026-11-13T00:51:22 INFO  thumb-cache/tc-node-15 request done id=req-5651857a route=/thumb-cache/v1/verify status=200 latency_ms=210
+2026-11-13T00:51:28 INFO  thumb-cache/tc-node-04 config applied key=http.read_timeout_ms value=99% by=dwjung
+2026-11-13T00:51:32 INFO  thumb-cache/tc-node-14 deploy step release=thumb-cache-4.15.1 step=warmup result=ok took_s=218
+2026-11-13T00:51:33 INFO  thumb-cache/tc-node-11 cache stats region=ap-ne-2c hit_ratio=58.3% evictions=32824
+2026-11-13T00:51:37 INFO  thumb-cache/tc-node-03 request done id=req-3548a746 route=/thumb-cache/v1/create status=200 latency_ms=103
+2026-11-13T00:51:43 ERROR thumb-cache/tc-node-01 job failed job=thumb-cache-cleanup attempt=3 cause=quota_exceeded
+2026-11-13T00:51:48 WARN  thumb-cache/tc-node-13 alert fired rule=replica_lag_high value=50s threshold=46s
+2026-11-13T00:51:50 INFO  thumb-cache/tc-node-07 config applied key=queue.visibility_s value=false by=shkim
+2026-11-13T00:51:57 INFO  thumb-cache/tc-node-02 request done id=req-f46d1155 route=/thumb-cache/v1/cancel status=429 latency_ms=187
+2026-11-13T00:52:00 INFO  thumb-cache/tc-node-07 request done id=req-29f2e2a4 route=/thumb-cache/v1/get status=200 latency_ms=24
+2026-11-13T00:52:02 WARN  thumb-cache/tc-node-04 alert fired rule=disk_usage_warning value=64% threshold=56%
+2026-11-13T00:52:04 INFO  thumb-cache/tc-node-01 request done id=req-7416f0a7 route=/thumb-cache/v1/cancel status=200 latency_ms=19
+2026-11-13T00:52:10 INFO  thumb-cache/tc-node-22 request done id=req-c431d8d4 route=/thumb-cache/v1/sync status=200 latency_ms=166
+2026-11-13T00:52:15 INFO  thumb-cache/tc-node-07 ticket linked id=OPS-49926 reason=dependency_upgrade
+2026-11-13T00:52:18 INFO  thumb-cache/tc-node-08 request done id=req-65a48596 route=/thumb-cache/v1/create status=200 latency_ms=206
+2026-11-13T00:52:20 INFO  thumb-cache/tc-node-17 request done id=req-ed7da283 route=/thumb-cache/v1/update status=500 latency_ms=317
+2026-11-13T00:52:21 INFO  thumb-cache/tc-node-12 request done id=req-7111346a route=/thumb-cache/v1/update status=503 latency_ms=102
+2026-11-13T00:52:27 INFO  thumb-cache/tc-node-17 deploy step release=thumb-cache-4.16.2 step=drain result=ok took_s=52
+2026-11-13T00:52:30 INFO  thumb-cache/tc-node-05 config applied key=shard.count value=47% by=yjchoi
+2026-11-13T00:52:33 INFO  thumb-cache/tc-node-09 request done id=req-9fc4120e route=/thumb-cache/v1/sync status=200 latency_ms=108
+2026-11-13T00:52:36 INFO  thumb-cache/tc-node-20 request done id=req-e1839fe3 route=/thumb-cache/v1/update status=200 latency_ms=33
+2026-11-13T00:52:38 INFO  thumb-cache/tc-node-18 request done id=req-8bc33bf0 route=/thumb-cache/v1/verify status=200 latency_ms=98
+2026-11-13T00:52:43 INFO  thumb-cache/tc-node-01 pool resize target=thumb-cache-cache max_pool_size=247 prev=301
+2026-11-13T00:52:44 INFO  thumb-cache/tc-node-05 request done id=req-1d33c414 route=/thumb-cache/v1/cancel status=200 latency_ms=107
+2026-11-13T00:52:46 INFO  thumb-cache/tc-node-01 request done id=req-c865b399 route=/thumb-cache/v1/update status=404 latency_ms=136
+2026-11-13T00:52:47 INFO  thumb-cache/tc-node-05 request done id=req-5fbdd68e route=/thumb-cache/v1/update status=200 latency_ms=252
+2026-11-13T00:52:49 INFO  thumb-cache/tc-node-16 request done id=req-8084922e route=/thumb-cache/v1/cancel status=200 latency_ms=94
+2026-11-13T00:52:52 INFO  thumb-cache/tc-node-21 request done id=req-594b35dc route=/thumb-cache/v1/cancel status=200 latency_ms=99
+2026-11-13T00:52:54 ERROR thumb-cache/tc-node-05 job failed job=thumb-cache-cleanup attempt=2 cause=quota_exceeded
+2026-11-13T00:52:57 INFO  thumb-cache/tc-node-21 deploy step release=thumb-cache-4.14.2 step=healthcheck result=ok took_s=82
+2026-11-13T00:53:04 INFO  thumb-cache/tc-node-09 request done id=req-517570d9 route=/thumb-cache/v1/verify status=500 latency_ms=141
+2026-11-13T00:53:09 INFO  thumb-cache/tc-node-10 request done id=req-17abfadc route=/thumb-cache/v1/verify status=200 latency_ms=206
+2026-11-13T00:53:13 INFO  thumb-cache/tc-node-10 ticket linked id=OPS-47537 reason=schema_change
+2026-11-13T00:53:16 INFO  thumb-cache/tc-node-14 request done id=req-9782bf35 route=/thumb-cache/v1/cancel status=200 latency_ms=283
+2026-11-13T00:53:17 ERROR thumb-cache/tc-node-11 job failed job=thumb-cache-export attempt=4 cause=quota_exceeded
+2026-11-13T00:53:24 INFO  thumb-cache/tc-node-10 request done id=req-7baeec6f route=/thumb-cache/v1/cancel status=204 latency_ms=205
+2026-11-13T00:53:30 INFO  thumb-cache/tc-node-15 request done id=req-12143ca4 route=/thumb-cache/v1/sync status=200 latency_ms=154
+2026-11-13T00:53:33 INFO  thumb-cache/tc-node-11 request done id=req-6bb7cb5b route=/thumb-cache/v1/create status=200 latency_ms=17
+2026-11-13T00:53:37 INFO  thumb-cache/tc-node-24 backup finished file=/vault/daily/orders_20261012.tar.zst size_mb=78946 checksum=d0965475
+2026-11-13T00:53:38 INFO  thumb-cache/tc-node-20 request done id=req-6d0be131 route=/thumb-cache/v1/create status=204 latency_ms=1153
+2026-11-13T00:53:41 INFO  thumb-cache/tc-node-20 request done id=req-6717f5ac route=/thumb-cache/v1/status status=200 latency_ms=21
+2026-11-13T00:53:47 WARN  thumb-cache/tc-node-23 alert fired rule=fd_usage_high value=72% threshold=57%
+2026-11-13T00:53:48 INFO  thumb-cache/tc-node-19 request done id=req-36b23f9d route=/thumb-cache/v1/status status=429 latency_ms=178
+2026-11-13T00:53:54 INFO  thumb-cache/tc-node-09 pool resize target=thumb-cache-db max_pool_size=310 prev=362
+2026-11-13T00:53:59 INFO  thumb-cache/tc-node-06 request done id=req-3ab04509 route=/thumb-cache/v1/cancel status=200 latency_ms=43
+2026-11-13T00:54:02 INFO  thumb-cache/tc-node-22 pool resize target=thumb-cache-queue max_pool_size=335 prev=326
+2026-11-13T00:54:07 INFO  thumb-cache/tc-node-21 deploy step release=thumb-cache-4.14.8 step=healthcheck result=ok took_s=225
+2026-11-13T00:54:10 INFO  thumb-cache/tc-node-22 config applied key=dns.ttl_s value=false by=sykang
+2026-11-13T00:54:13 INFO  thumb-cache/tc-node-14 deploy step release=thumb-cache-4.16.7 step=migrate result=ok took_s=100
+2026-11-13T00:54:19 INFO  thumb-cache/tc-node-20 deploy step release=thumb-cache-4.20.8 step=healthcheck result=ok took_s=23
+2026-11-13T00:54:25 INFO  thumb-cache/tc-node-11 backup finished file=/vault/weekly/users_2026w39.tar.zst size_mb=69221 checksum=ed728fbf
+2026-11-13T00:54:32 ERROR thumb-cache/tc-node-14 job failed job=thumb-cache-export attempt=2 cause=dns_failure
+2026-11-13T00:54:37 INFO  thumb-cache/tc-node-21 request done id=req-9e5542ba route=/thumb-cache/v1/list status=200 latency_ms=130
+2026-11-13T00:54:43 INFO  thumb-cache/tc-node-14 request done id=req-0164bc6a route=/thumb-cache/v1/create status=200 latency_ms=344
+2026-11-13T00:54:47 WARN  thumb-cache/tc-node-07 alert fired rule=cpu_steal_high value=65% threshold=58%
+2026-11-13T00:54:54 INFO  thumb-cache/tc-node-02 request done id=req-d5f85580 route=/thumb-cache/v1/update status=200 latency_ms=661
+2026-11-13T00:54:56 INFO  thumb-cache/tc-node-01 request done id=req-a7959e97 route=/thumb-cache/v1/cancel status=204 latency_ms=136
+2026-11-13T00:54:57 INFO  thumb-cache/tc-node-10 request done id=req-449afa6f route=/thumb-cache/v1/verify status=404 latency_ms=61
+2026-11-13T00:55:00 INFO  thumb-cache/tc-node-09 config applied key=gc.pause_target_ms value=5567 by=sykang
+2026-11-13T00:55:06 WARN  thumb-cache/tc-node-05 alert fired rule=disk_usage_warning value=58% threshold=51%
+2026-11-13T00:55:11 INFO  thumb-cache/tc-node-11 ticket linked id=OPS-48233 reason=dependency_upgrade
+2026-11-13T00:55:17 INFO  thumb-cache/tc-node-15 request done id=req-bd8789fb route=/thumb-cache/v1/cancel status=200 latency_ms=63
+2026-11-13T00:55:18 INFO  thumb-cache/tc-node-15 request done id=req-21aa10fb route=/thumb-cache/v1/verify status=200 latency_ms=76
+2026-11-13T00:55:19 INFO  thumb-cache/tc-node-07 request done id=req-838f2761 route=/thumb-cache/v1/verify status=200 latency_ms=132
+2026-11-13T00:55:22 INFO  thumb-cache/tc-node-13 request done id=req-ee62d5dd route=/thumb-cache/v1/list status=404 latency_ms=35
+2026-11-13T00:55:26 INFO  thumb-cache/tc-node-21 config applied key=dns.ttl_s value=true by=hbyoon
+2026-11-13T00:55:31 INFO  thumb-cache/tc-node-07 request done id=req-ea85f305 route=/thumb-cache/v1/create status=200 latency_ms=226
+2026-11-13T00:55:35 ERROR thumb-cache/tc-node-02 job failed job=thumb-cache-reindex attempt=5 cause=oom_killed
+2026-11-13T00:55:37 INFO  thumb-cache/tc-node-10 deploy step release=thumb-cache-4.18.5 step=warmup result=ok took_s=39
+2026-11-13T00:55:42 INFO  thumb-cache/tc-node-01 request done id=req-9ad2a5d1 route=/thumb-cache/v1/update status=200 latency_ms=136
+2026-11-13T00:55:48 INFO  thumb-cache/tc-node-18 config applied key=flush.interval_ms value=true by=ejlim
+2026-11-13T00:55:54 INFO  thumb-cache/tc-node-11 deploy step release=thumb-cache-4.18.9 step=shift_traffic_50 result=ok took_s=36
+2026-11-13T00:55:55 INFO  thumb-cache/tc-node-07 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=75966 checksum=6dea6a65
+2026-11-13T00:55:57 INFO  thumb-cache/tc-node-06 config applied key=retry.backoff_ms value=64% by=ejlim
+2026-11-13T00:56:04 INFO  thumb-cache/tc-node-09 config applied key=retry.backoff_ms value=8465 by=mjlee
+2026-11-13T00:56:06 INFO  thumb-cache/tc-node-10 request done id=req-7ca9a41a route=/thumb-cache/v1/verify status=200 latency_ms=20
+2026-11-13T00:56:12 INFO  thumb-cache/tc-node-17 request done id=req-9dce997e route=/thumb-cache/v1/update status=400 latency_ms=116
+2026-11-13T00:56:19 INFO  thumb-cache/tc-node-17 config applied key=limiter.burst value=false by=dwjung
+2026-11-13T00:56:25 INFO  thumb-cache/tc-node-23 config applied key=http.max_conns value=false by=sykang
+2026-11-13T00:56:31 INFO  thumb-cache/tc-node-19 deploy step release=thumb-cache-4.14.6 step=shift_traffic_10 result=ok took_s=144
+2026-11-13T00:56:33 INFO  thumb-cache/tc-node-06 request done id=req-d9ca450f route=/thumb-cache/v1/sync status=400 latency_ms=224
+2026-11-13T00:56:37 INFO  thumb-cache/tc-node-22 request done id=req-c4c65fe9 route=/thumb-cache/v1/sync status=200 latency_ms=74
+2026-11-13T00:56:41 WARN  thumb-cache/tc-node-09 alert fired rule=queue_depth_high value=50 threshold=37
+2026-11-13T00:56:47 INFO  thumb-cache/tc-node-23 request done id=req-f94e7f28 route=/thumb-cache/v1/status status=200 latency_ms=146
+2026-11-13T00:56:48 INFO  thumb-cache/tc-node-03 request done id=req-76fef955 route=/thumb-cache/v1/update status=200 latency_ms=83
+2026-11-13T00:56:53 INFO  thumb-cache/tc-node-19 ticket linked id=OPS-49501 reason=schema_change
+2026-11-13T00:56:58 INFO  thumb-cache/tc-node-09 pool resize target=thumb-cache-db max_pool_size=194 prev=140
+2026-11-13T00:57:02 WARN  thumb-cache/tc-node-02 alert fired rule=conn_pool_saturated value=63% threshold=59%
+2026-11-13T00:57:08 INFO  thumb-cache/tc-node-07 pool resize target=thumb-cache-db max_pool_size=332 prev=354
+2026-11-13T00:57:15 INFO  thumb-cache/tc-node-22 request done id=req-00b5cffd route=/thumb-cache/v1/create status=404 latency_ms=363
+2026-11-13T00:57:20 INFO  thumb-cache/tc-node-23 request done id=req-6d3243d9 route=/thumb-cache/v1/verify status=200 latency_ms=51
+2026-11-13T00:57:21 WARN  thumb-cache/tc-node-14 alert fired rule=replica_lag_high value=80s threshold=65s
+2026-11-13T00:57:27 INFO  thumb-cache/tc-node-04 pool resize target=thumb-cache-upstream max_pool_size=294 prev=280
+2026-11-13T00:57:28 INFO  thumb-cache/tc-node-18 ticket linked id=OPS-49871 reason=oncall_handoff
+2026-11-13T00:57:32 INFO  thumb-cache/tc-node-23 pool resize target=thumb-cache-worker max_pool_size=287 prev=306
+2026-11-13T00:57:37 ERROR thumb-cache/tc-node-07 job failed job=thumb-cache-rollup attempt=5 cause=lock_wait_exceeded
+2026-11-13T00:57:40 INFO  thumb-cache/tc-node-11 request done id=req-d2134f5c route=/thumb-cache/v1/get status=200 latency_ms=76
+2026-11-13T00:57:44 INFO  thumb-cache/tc-node-22 request done id=req-6ce44b29 route=/thumb-cache/v1/get status=200 latency_ms=131
+2026-11-13T00:57:48 INFO  thumb-cache/tc-node-09 deploy step release=thumb-cache-4.10.3 step=pull_image result=ok took_s=134
+2026-11-13T00:57:50 INFO  thumb-cache/tc-node-06 deploy step release=thumb-cache-4.14.0 step=shift_traffic_100 result=ok took_s=131
+2026-11-13T00:57:52 INFO  thumb-cache/tc-node-16 ticket linked id=OPS-49218 reason=node_drain
+2026-11-13T00:57:58 INFO  thumb-cache/tc-node-12 deploy step release=thumb-cache-4.12.5 step=migrate result=ok took_s=225
+2026-11-13T00:58:03 INFO  thumb-cache/tc-node-04 request done id=req-006e0ae2 route=/thumb-cache/v1/verify status=400 latency_ms=222
+2026-11-13T00:58:07 INFO  thumb-cache/tc-node-20 pool resize target=thumb-cache-cache max_pool_size=166 prev=161
+2026-11-13T00:58:11 INFO  thumb-cache/tc-node-09 deploy step release=thumb-cache-4.12.8 step=healthcheck result=ok took_s=123
+2026-11-13T00:58:14 INFO  thumb-cache/tc-node-22 backup finished file=/vault/daily/payments_20261002.tar.zst size_mb=8600 checksum=91fc9ab0
+2026-11-13T00:58:20 INFO  thumb-cache/tc-node-07 request done id=req-fecbe473 route=/thumb-cache/v1/sync status=200 latency_ms=88
+2026-11-13T00:58:23 INFO  thumb-cache/tc-node-09 deploy step release=thumb-cache-4.19.7 step=migrate result=ok took_s=41
+2026-11-13T00:58:25 INFO  thumb-cache/tc-node-01 request done id=req-f0b23f0f route=/thumb-cache/v1/verify status=503 latency_ms=278
+2026-11-13T00:58:32 INFO  thumb-cache/tc-node-05 deploy step release=thumb-cache-4.20.0 step=verify result=ok took_s=79
+2026-11-13T00:58:36 INFO  thumb-cache/tc-node-11 request done id=req-b74848be route=/thumb-cache/v1/sync status=200 latency_ms=149
+2026-11-13T00:58:40 WARN  thumb-cache/tc-node-16 alert fired rule=error_ratio_high value=88% threshold=79%
+2026-11-13T00:58:45 ERROR thumb-cache/tc-node-09 job failed job=thumb-cache-rollup attempt=5 cause=lock_wait_exceeded
+2026-11-13T00:58:51 INFO  thumb-cache/tc-node-13 request done id=req-a7271ede route=/thumb-cache/v1/cancel status=204 latency_ms=88
+2026-11-13T00:58:55 INFO  thumb-cache/tc-node-09 request done id=req-b2367ccd route=/thumb-cache/v1/cancel status=200 latency_ms=70
+2026-11-13T00:58:58 INFO  thumb-cache/tc-node-09 request done id=req-2fd09f59 route=/thumb-cache/v1/sync status=200 latency_ms=390
+2026-11-13T00:59:02 INFO  thumb-cache/tc-node-15 config applied key=gc.pause_target_ms value=1324 by=mjlee
+2026-11-13T00:59:06 INFO  thumb-cache/tc-node-24 pool resize target=thumb-cache-db max_pool_size=314 prev=331
+2026-11-13T00:59:08 INFO  thumb-cache/tc-node-05 request done id=req-cbd0a4c4 route=/thumb-cache/v1/create status=200 latency_ms=160
+2026-11-13T00:59:14 INFO  thumb-cache/tc-node-14 request done id=req-e94089a8 route=/thumb-cache/v1/list status=200 latency_ms=34
+2026-11-13T00:59:20 INFO  thumb-cache/tc-node-10 request done id=req-e2e5947a route=/thumb-cache/v1/create status=200 latency_ms=170
+2026-11-13T00:59:24 INFO  thumb-cache/tc-node-04 config applied key=limiter.burst value=6 by=sykang
+2026-11-13T00:59:26 WARN  thumb-cache/tc-node-01 alert fired rule=fd_usage_high value=76% threshold=64%
+2026-11-13T00:59:27 INFO  thumb-cache/tc-node-18 cache stats region=ap-ne-2b hit_ratio=65.3% evictions=1744
+2026-11-13T00:59:31 INFO  thumb-cache/tc-node-02 request done id=req-bbaef394 route=/thumb-cache/v1/create status=200 latency_ms=161
+2026-11-13T00:59:36 WARN  thumb-cache/tc-node-10 alert fired rule=disk_usage_warning value=91% threshold=77%
+2026-11-13T00:59:43 NOTE  thumb-cache/tc-node-07 operator=hbyoon memo="점검 창을 17분 연장함. 승인: 한지우 리드."
+2026-11-13T00:59:46 INFO  thumb-cache/tc-node-09 request done id=req-80446602 route=/thumb-cache/v1/verify status=201 latency_ms=61
+2026-11-13T00:59:50 INFO  thumb-cache/tc-node-16 request done id=req-9e9f1c5a route=/thumb-cache/v1/cancel status=200 latency_ms=256
+2026-11-13T00:59:53 INFO  thumb-cache/tc-node-12 request done id=req-9c75ca3c route=/thumb-cache/v1/update status=204 latency_ms=61
+2026-11-13T00:59:56 WARN  thumb-cache/tc-node-13 alert fired rule=heap_used_high value=82% threshold=71%
+2026-11-13T01:00:02 INFO  thumb-cache/tc-node-13 request done id=req-decf7854 route=/thumb-cache/v1/cancel status=429 latency_ms=98
+2026-11-13T01:00:04 INFO  thumb-cache/tc-node-06 request done id=req-57d3f500 route=/thumb-cache/v1/get status=404 latency_ms=325
+2026-11-13T01:00:11 INFO  thumb-cache/tc-node-19 ticket linked id=OPS-48627 reason=quota_increase
+2026-11-13T01:00:13 INFO  thumb-cache/tc-node-12 deploy step release=thumb-cache-4.11.8 step=shift_traffic_10 result=ok took_s=91
+2026-11-13T01:00:17 INFO  thumb-cache/tc-node-05 deploy step release=thumb-cache-4.10.7 step=shift_traffic_50 result=ok took_s=236
+2026-11-13T01:00:21 WARN  thumb-cache/tc-node-18 alert fired rule=disk_usage_warning value=71% threshold=68%
+2026-11-13T01:00:25 INFO  thumb-cache/tc-node-07 request done id=req-8e3ac671 route=/thumb-cache/v1/list status=429 latency_ms=130
+2026-11-13T01:00:32 INFO  thumb-cache/tc-node-11 pool resize target=thumb-cache-worker max_pool_size=383 prev=417
+2026-11-13T01:00:36 WARN  thumb-cache/tc-node-04 alert fired rule=p99_latency_high value=91ms threshold=87ms
+2026-11-13T01:00:42 INFO  thumb-cache/tc-node-05 request done id=req-e47291df route=/thumb-cache/v1/create status=200 latency_ms=184
+2026-11-13T01:00:44 INFO  thumb-cache/tc-node-12 request done id=req-efd33374 route=/thumb-cache/v1/list status=429 latency_ms=60
+2026-11-13T01:00:48 INFO  thumb-cache/tc-node-14 request done id=req-68183475 route=/thumb-cache/v1/cancel status=200 latency_ms=41
+2026-11-13T01:00:54 INFO  thumb-cache/tc-node-05 cache stats region=ap-ne-2c hit_ratio=63.7% evictions=29357
+2026-11-13T01:00:57 INFO  thumb-cache/tc-node-08 request done id=req-40749e53 route=/thumb-cache/v1/list status=200 latency_ms=55
+2026-11-13T01:01:02 WARN  thumb-cache/tc-node-21 alert fired rule=gc_pause_long value=63ms threshold=51ms
+2026-11-13T01:01:04 INFO  thumb-cache/tc-node-01 request done id=req-f5f4e963 route=/thumb-cache/v1/list status=404 latency_ms=123
+2026-11-13T01:01:06 INFO  thumb-cache/tc-node-22 request done id=req-0ab22d74 route=/thumb-cache/v1/verify status=200 latency_ms=252
+2026-11-13T01:01:10 INFO  thumb-cache/tc-node-20 backup finished file=/vault/daily/orders_20261016.tar.zst size_mb=82485 checksum=11d309bd
+2026-11-13T01:01:11 INFO  thumb-cache/tc-node-16 request done id=req-0f4466e6 route=/thumb-cache/v1/update status=200 latency_ms=47
+2026-11-13T01:01:18 INFO  thumb-cache/tc-node-07 ticket linked id=OPS-48925 reason=schema_change
+2026-11-13T01:01:19 INFO  thumb-cache/tc-node-17 pool resize target=thumb-cache-upstream max_pool_size=86 prev=120
+2026-11-13T01:01:25 INFO  thumb-cache/tc-node-01 request done id=req-d4332d9f route=/thumb-cache/v1/list status=404 latency_ms=122
+2026-11-13T01:01:32 NOTE  thumb-cache/tc-node-15 operator=shkim memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-11-13T01:01:36 INFO  thumb-cache/tc-node-18 request done id=req-f2a46c89 route=/thumb-cache/v1/status status=200 latency_ms=374
+2026-11-13T01:01:43 INFO  thumb-cache/tc-node-16 request done id=req-aacb9bf8 route=/thumb-cache/v1/status status=200 latency_ms=69
+2026-11-13T01:01:44 INFO  thumb-cache/tc-node-14 deploy step release=thumb-cache-4.17.2 step=shift_traffic_50 result=ok took_s=174
+2026-11-13T01:01:45 INFO  thumb-cache/tc-node-11 pool resize target=thumb-cache-worker max_pool_size=306 prev=288
+2026-11-13T01:01:48 INFO  thumb-cache/tc-node-24 deploy step release=thumb-cache-4.19.7 step=migrate result=ok took_s=44
+2026-11-13T01:01:51 INFO  thumb-cache/tc-node-08 request done id=req-990636cd route=/thumb-cache/v1/create status=200 latency_ms=198
+2026-11-13T01:01:56 NOTE  thumb-cache/tc-node-18 operator=yjchoi memo="배치 시작 시각을 5시 24분으로 고정함."
+2026-11-13T01:02:01 INFO  thumb-cache/tc-node-24 config applied key=canary.traffic_percent value=56 by=hbyoon
+2026-11-13T01:02:04 INFO  thumb-cache/tc-node-17 config applied key=breaker.half_open_s value=6307 by=shkim
+2026-11-13T01:02:09 INFO  thumb-cache/tc-node-17 request done id=req-70a1abc8 route=/thumb-cache/v1/cancel status=200 latency_ms=446
+2026-11-13T01:02:11 INFO  thumb-cache/tc-node-11 request done id=req-685f1010 route=/thumb-cache/v1/create status=200 latency_ms=145
+2026-11-13T01:02:15 INFO  thumb-cache/tc-node-21 request done id=req-3e1840da route=/thumb-cache/v1/update status=200 latency_ms=59
+2026-11-13T01:02:20 INFO  thumb-cache/tc-node-17 request done id=req-30fe2923 route=/thumb-cache/v1/cancel status=200 latency_ms=92
+2026-11-13T01:02:24 INFO  thumb-cache/tc-node-16 request done id=req-33955be3 route=/thumb-cache/v1/update status=200 latency_ms=151
+2026-11-13T01:02:31 INFO  thumb-cache/tc-node-22 backup finished file=/vault/daily/orders_20261019.tar.zst size_mb=13539 checksum=f6df6c03
+2026-11-13T01:02:36 WARN  thumb-cache/tc-node-12 alert fired rule=fd_usage_high value=74% threshold=65%
+2026-11-13T01:02:40 INFO  thumb-cache/tc-node-09 request done id=req-c1cfaf66 route=/thumb-cache/v1/update status=200 latency_ms=73
+2026-11-13T01:02:47 INFO  thumb-cache/tc-node-16 request done id=req-5c0c8472 route=/thumb-cache/v1/status status=200 latency_ms=293
+2026-11-13T01:02:49 INFO  thumb-cache/tc-node-14 request done id=req-bd4cd55b route=/thumb-cache/v1/get status=200 latency_ms=197
+2026-11-13T01:02:54 NOTE  thumb-cache/tc-node-09 operator=dwjung memo="동시 처리 수를 75에서 37로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-13T01:02:58 WARN  thumb-cache/tc-node-23 alert fired rule=heap_used_high value=84% threshold=75%
+2026-11-13T01:03:01 INFO  thumb-cache/tc-node-17 request done id=req-681cfd40 route=/thumb-cache/v1/cancel status=200 latency_ms=40
+2026-11-13T01:03:06 INFO  thumb-cache/tc-node-22 pool resize target=thumb-cache-db max_pool_size=237 prev=280
+2026-11-13T01:03:11 INFO  thumb-cache/tc-node-22 deploy step release=thumb-cache-4.12.5 step=migrate result=ok took_s=17
+2026-11-13T01:03:18 INFO  thumb-cache/tc-node-02 ticket linked id=OPS-47970 reason=schema_change
+2026-11-13T01:03:24 INFO  thumb-cache/tc-node-22 request done id=req-2af65c92 route=/thumb-cache/v1/cancel status=200 latency_ms=193
+2026-11-13T01:03:25 INFO  thumb-cache/tc-node-20 pool resize target=thumb-cache-db max_pool_size=86 prev=63
+2026-11-13T01:03:29 INFO  thumb-cache/tc-node-23 request done id=req-2738f6d3 route=/thumb-cache/v1/create status=200 latency_ms=93
+2026-11-13T01:03:35 INFO  thumb-cache/tc-node-14 request done id=req-09e646c3 route=/thumb-cache/v1/update status=429 latency_ms=261
+2026-11-13T01:03:38 INFO  thumb-cache/tc-node-11 deploy step release=thumb-cache-4.17.9 step=shift_traffic_100 result=ok took_s=198
+2026-11-13T01:03:44 WARN  thumb-cache/tc-node-05 alert fired rule=conn_pool_saturated value=80% threshold=72%
+2026-11-13T01:03:51 INFO  thumb-cache/tc-node-11 deploy step release=thumb-cache-4.12.4 step=migrate result=ok took_s=10
+2026-11-13T01:03:57 INFO  thumb-cache/tc-node-02 backup finished file=/vault/weekly/audit_2026w41.tar.zst size_mb=69556 checksum=9d0c6382
+2026-11-13T01:04:02 INFO  thumb-cache/tc-node-06 request done id=req-ea10d97b route=/thumb-cache/v1/status status=200 latency_ms=62
+2026-11-13T01:04:09 INFO  thumb-cache/tc-node-16 request done id=req-27098415 route=/thumb-cache/v1/create status=400 latency_ms=54
+2026-11-13T01:04:15 INFO  thumb-cache/tc-node-17 pool resize target=thumb-cache-db max_pool_size=61 prev=45
+2026-11-13T01:04:20 INFO  thumb-cache/tc-node-22 deploy step release=thumb-cache-4.15.4 step=pull_image result=ok took_s=222
+2026-11-13T01:04:27 INFO  thumb-cache/tc-node-14 config applied key=limiter.rps value=false by=yjchoi
+2026-11-13T01:04:28 INFO  thumb-cache/tc-node-16 request done id=req-61ffdd81 route=/thumb-cache/v1/sync status=200 latency_ms=129
+2026-11-13T01:04:29 INFO  thumb-cache/tc-node-24 request done id=req-cb34ff53 route=/thumb-cache/v1/create status=200 latency_ms=174
+2026-11-13T01:04:35 INFO  thumb-cache/tc-node-03 request done id=req-dc2356a9 route=/thumb-cache/v1/sync status=204 latency_ms=207
+2026-11-13T01:04:40 INFO  thumb-cache/tc-node-22 deploy step release=thumb-cache-4.13.4 step=drain result=ok took_s=3
+2026-11-13T01:04:47 NOTE  thumb-cache/tc-node-09 operator=hbyoon memo="로그 보존 기간은 39일로 유지하기로 함."
+2026-11-13T01:04:54 NOTE  thumb-cache/tc-node-02 operator=mjlee memo="로그 보존 기간은 34일로 유지하기로 함."
+2026-11-13T01:04:59 INFO  thumb-cache/tc-node-15 cache stats region=ap-ne-2a hit_ratio=67.5% evictions=33896
+2026-11-13T01:05:03 INFO  thumb-cache/tc-node-20 request done id=req-2dcb43d8 route=/thumb-cache/v1/status status=200 latency_ms=33
+2026-11-13T01:05:05 INFO  thumb-cache/tc-node-04 deploy step release=thumb-cache-4.16.2 step=shift_traffic_10 result=ok took_s=28
+2026-11-13T01:05:07 WARN  thumb-cache/tc-node-06 alert fired rule=conn_pool_saturated value=88% threshold=74%
+2026-11-13T01:05:12 INFO  thumb-cache/tc-node-11 deploy step release=thumb-cache-4.10.1 step=healthcheck result=ok took_s=52
+2026-11-13T01:05:14 INFO  thumb-cache/tc-node-20 request done id=req-8b9b3197 route=/thumb-cache/v1/sync status=409 latency_ms=93
+2026-11-13T01:05:21 INFO  thumb-cache/tc-node-16 request done id=req-fe1604d0 route=/thumb-cache/v1/get status=204 latency_ms=138
+2026-11-13T01:05:27 INFO  thumb-cache/tc-node-02 request done id=req-a0d148f8 route=/thumb-cache/v1/update status=200 latency_ms=33
+2026-11-13T01:05:29 INFO  thumb-cache/tc-node-08 deploy step release=thumb-cache-4.20.2 step=shift_traffic_50 result=ok took_s=53
+2026-11-13T01:05:30 INFO  thumb-cache/tc-node-15 request done id=req-7e80cc85 route=/thumb-cache/v1/get status=429 latency_ms=80
+2026-11-13T01:05:34 WARN  thumb-cache/tc-node-15 alert fired rule=cpu_steal_high value=68% threshold=59%
+2026-11-13T01:05:38 INFO  thumb-cache/tc-node-04 deploy step release=thumb-cache-4.10.3 step=verify result=ok took_s=152
+2026-11-13T01:05:39 INFO  thumb-cache/tc-node-05 request done id=req-32b66a15 route=/thumb-cache/v1/update status=200 latency_ms=360
+2026-11-13T01:05:45 INFO  thumb-cache/tc-node-15 request done id=req-223ac447 route=/thumb-cache/v1/verify status=404 latency_ms=422
+2026-11-13T01:05:49 INFO  thumb-cache/tc-node-23 request done id=req-b9710727 route=/thumb-cache/v1/list status=200 latency_ms=86
+2026-11-13T01:05:53 INFO  thumb-cache/tc-node-11 request done id=req-d95e6688 route=/thumb-cache/v1/create status=500 latency_ms=644
+2026-11-13T01:05:58 INFO  thumb-cache/tc-node-01 config applied key=http.max_conns value=2669 by=shkim
+2026-11-13T01:06:00 INFO  thumb-cache/tc-node-09 request done id=req-e0a38920 route=/thumb-cache/v1/cancel status=200 latency_ms=70
+2026-11-13T01:06:02 INFO  thumb-cache/tc-node-13 pool resize target=thumb-cache-worker max_pool_size=196 prev=152
+2026-11-13T01:06:03 WARN  thumb-cache/tc-node-19 alert fired rule=gc_pause_long value=75ms threshold=72ms
+2026-11-13T01:06:08 NOTE  thumb-cache/tc-node-13 operator=hbyoon memo="임시 증설 20대 추가. 내일 오전 회수 예정."
+2026-11-13T01:06:14 WARN  thumb-cache/tc-node-16 alert fired rule=disk_usage_warning value=89% threshold=88%
+2026-11-13T01:06:21 INFO  thumb-cache/tc-node-09 config applied key=shard.count value=54 by=dwjung
+2026-11-13T01:06:28 INFO  thumb-cache/tc-node-12 request done id=req-bcff3817 route=/thumb-cache/v1/create status=200 latency_ms=249
+2026-11-13T01:06:35 INFO  thumb-cache/tc-node-22 request done id=req-c597feec route=/thumb-cache/v1/verify status=404 latency_ms=25
+2026-11-13T01:06:38 INFO  thumb-cache/tc-node-12 cache stats region=us-we-2b hit_ratio=73.4% evictions=10479
+2026-11-13T01:06:43 INFO  thumb-cache/tc-node-10 pool resize target=thumb-cache-queue max_pool_size=170 prev=188
+2026-11-13T01:06:47 INFO  thumb-cache/tc-node-09 pool resize target=thumb-cache-queue max_pool_size=73 prev=20
+2026-11-13T01:06:54 INFO  thumb-cache/tc-node-05 request done id=req-7fb355fb route=/thumb-cache/v1/sync status=200 latency_ms=41
+2026-11-13T01:06:57 INFO  thumb-cache/tc-node-23 request done id=req-758b31a5 route=/thumb-cache/v1/create status=200 latency_ms=253
+2026-11-13T01:07:04 INFO  thumb-cache/tc-node-15 request done id=req-47bd7719 route=/thumb-cache/v1/list status=400 latency_ms=62
+2026-11-13T01:07:09 INFO  thumb-cache/tc-node-20 request done id=req-19f4d0de route=/thumb-cache/v1/create status=200 latency_ms=381
+2026-11-13T01:07:11 INFO  thumb-cache/tc-node-17 request done id=req-25124384 route=/thumb-cache/v1/get status=429 latency_ms=71
+2026-11-13T01:07:12 INFO  thumb-cache/tc-node-16 request done id=req-a36a9881 route=/thumb-cache/v1/cancel status=204 latency_ms=121
+2026-11-13T01:07:19 INFO  thumb-cache/tc-node-02 request done id=req-45417ebc route=/thumb-cache/v1/verify status=400 latency_ms=91
+2026-11-13T01:07:25 INFO  thumb-cache/tc-node-23 request done id=req-9ab6ff4b route=/thumb-cache/v1/list status=200 latency_ms=46
+2026-11-13T01:07:27 INFO  thumb-cache/tc-node-02 request done id=req-a3ffab6b route=/thumb-cache/v1/update status=200 latency_ms=16
+2026-11-13T01:07:29 INFO  thumb-cache/tc-node-16 request done id=req-e9b41077 route=/thumb-cache/v1/cancel status=404 latency_ms=33
+2026-11-13T01:07:35 WARN  thumb-cache/tc-node-20 alert fired rule=heap_used_high value=53% threshold=50%
+2026-11-13T01:07:39 INFO  thumb-cache/tc-node-01 request done id=req-d6f1f3b4 route=/thumb-cache/v1/get status=200 latency_ms=81
+2026-11-13T01:07:46 INFO  thumb-cache/tc-node-04 deploy step release=thumb-cache-4.16.1 step=warmup result=ok took_s=14
+2026-11-13T01:07:49 INFO  thumb-cache/tc-node-23 config applied key=worker.concurrency value=64% by=ejlim
+2026-11-13T01:07:51 INFO  thumb-cache/tc-node-13 request done id=req-a4f8d6b7 route=/thumb-cache/v1/create status=200 latency_ms=233
+2026-11-13T01:07:52 INFO  thumb-cache/tc-node-08 pool resize target=thumb-cache-cache max_pool_size=144 prev=190
+2026-11-13T01:07:53 INFO  thumb-cache/tc-node-07 config applied key=gc.pause_target_ms value=52 by=jhpark
+2026-11-13T01:07:54 INFO  thumb-cache/tc-node-10 config applied key=dns.ttl_s value=false by=shkim
+2026-11-13T01:08:00 INFO  thumb-cache/tc-node-04 request done id=req-28899a48 route=/thumb-cache/v1/get status=404 latency_ms=300
+2026-11-13T01:08:02 INFO  thumb-cache/tc-node-02 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=34629 checksum=4c9d9ca1
+2026-11-13T01:08:05 INFO  thumb-cache/tc-node-11 pool resize target=thumb-cache-worker max_pool_size=241 prev=256
+2026-11-13T01:08:07 INFO  thumb-cache/tc-node-11 config applied key=retry.max_attempts value=14% by=jhpark
+2026-11-13T01:08:14 INFO  thumb-cache/tc-node-20 request done id=req-43a758a7 route=/thumb-cache/v1/update status=200 latency_ms=106
+2026-11-13T01:08:19 INFO  thumb-cache/tc-node-21 config applied key=retry.max_attempts value=true by=ejlim
+2026-11-13T01:08:22 INFO  thumb-cache/tc-node-15 config applied key=shard.count value=42 by=ejlim
+2026-11-13T01:08:26 INFO  thumb-cache/tc-node-07 backup finished file=/vault/weekly/inventory_2026w39.tar.zst size_mb=24008 checksum=821a1fb7
+2026-11-13T01:08:27 INFO  thumb-cache/tc-node-05 request done id=req-0d9bd576 route=/thumb-cache/v1/status status=200 latency_ms=83
+2026-11-13T01:08:30 INFO  thumb-cache/tc-node-21 deploy step release=thumb-cache-4.13.4 step=drain result=ok took_s=6
+2026-11-13T01:08:33 INFO  thumb-cache/tc-node-20 pool resize target=thumb-cache-upstream max_pool_size=121 prev=93
+2026-11-13T01:08:39 WARN  thumb-cache/tc-node-09 alert fired rule=disk_usage_warning value=73% threshold=59%
+2026-11-13T01:08:46 INFO  thumb-cache/tc-node-11 pool resize target=thumb-cache-db max_pool_size=156 prev=181
+2026-11-13T01:08:52 INFO  thumb-cache/tc-node-06 request done id=req-45f74650 route=/thumb-cache/v1/create status=200 latency_ms=57
+2026-11-13T01:08:55 INFO  thumb-cache/tc-node-03 request done id=req-d7604126 route=/thumb-cache/v1/verify status=500 latency_ms=221
+2026-11-13T01:08:56 INFO  thumb-cache/tc-node-04 request done id=req-c99d8609 route=/thumb-cache/v1/update status=200 latency_ms=100
+2026-11-13T01:09:02 INFO  thumb-cache/tc-node-10 ticket linked id=OPS-48948 reason=quota_increase
+2026-11-13T01:09:05 INFO  thumb-cache/tc-node-02 request done id=req-92649adc route=/thumb-cache/v1/get status=200 latency_ms=62
+2026-11-13T01:09:10 INFO  thumb-cache/tc-node-15 request done id=req-efa10606 route=/thumb-cache/v1/cancel status=409 latency_ms=85
+2026-11-13T01:09:13 INFO  thumb-cache/tc-node-21 ticket linked id=OPS-49829 reason=schema_change
+2026-11-13T01:09:17 INFO  thumb-cache/tc-node-20 request done id=req-4f57d08f route=/thumb-cache/v1/list status=200 latency_ms=61
+2026-11-13T01:09:22 INFO  thumb-cache/tc-node-17 request done id=req-ec8f3382 route=/thumb-cache/v1/status status=200 latency_ms=93
+2026-11-13T01:09:29 INFO  thumb-cache/tc-node-16 ticket linked id=OPS-49167 reason=quota_increase
+2026-11-13T01:09:34 INFO  thumb-cache/tc-node-03 request done id=req-7a9926bb route=/thumb-cache/v1/get status=204 latency_ms=55
+2026-11-13T01:09:41 INFO  thumb-cache/tc-node-23 config applied key=shard.count value=5135 by=sykang
+2026-11-13T01:09:46 INFO  thumb-cache/tc-node-14 deploy step release=thumb-cache-4.16.4 step=healthcheck result=ok took_s=233
+2026-11-13T01:09:48 INFO  thumb-cache/tc-node-19 pool resize target=thumb-cache-worker max_pool_size=384 prev=368
+2026-11-13T01:09:55 INFO  thumb-cache/tc-node-21 request done id=req-d0676a19 route=/thumb-cache/v1/cancel status=200 latency_ms=350
+2026-11-13T01:09:57 INFO  thumb-cache/tc-node-02 request done id=req-9df1cba2 route=/thumb-cache/v1/verify status=200 latency_ms=209
+2026-11-13T01:10:00 INFO  thumb-cache/tc-node-04 request done id=req-4e183a43 route=/thumb-cache/v1/cancel status=429 latency_ms=134
+2026-11-13T01:10:03 INFO  thumb-cache/tc-node-14 deploy step release=thumb-cache-4.20.7 step=shift_traffic_10 result=ok took_s=145
+2026-11-13T01:10:10 WARN  thumb-cache/tc-node-03 alert fired rule=queue_depth_high value=70 threshold=67
+2026-11-13T01:10:12 INFO  thumb-cache/tc-node-04 deploy step release=thumb-cache-4.21.2 step=healthcheck result=ok took_s=224
+2026-11-13T01:10:14 INFO  thumb-cache/tc-node-20 config applied key=canary.latency_p99_threshold_ms value=56% by=ejlim
+2026-11-13T01:10:20 INFO  thumb-cache/tc-node-03 backup finished file=/vault/daily/orders_20261002.tar.zst size_mb=18743 checksum=2da3b5de
+2026-11-13T01:10:23 INFO  thumb-cache/tc-node-11 deploy step release=thumb-cache-4.13.6 step=shift_traffic_10 result=ok took_s=176
+2026-11-13T01:10:30 INFO  thumb-cache/tc-node-10 request done id=req-414559f9 route=/thumb-cache/v1/status status=409 latency_ms=290
+2026-11-13T01:10:34 INFO  thumb-cache/tc-node-14 cache stats region=ap-ne-2b hit_ratio=71.4% evictions=10071
+2026-11-13T01:10:38 INFO  thumb-cache/tc-node-20 request done id=req-53bf6883 route=/thumb-cache/v1/list status=200 latency_ms=72
+2026-11-13T01:10:40 INFO  thumb-cache/tc-node-03 request done id=req-089104c2 route=/thumb-cache/v1/verify status=200 latency_ms=178
+2026-11-13T01:10:41 INFO  thumb-cache/tc-node-20 request done id=req-a695feee route=/thumb-cache/v1/verify status=200 latency_ms=243
+2026-11-13T01:10:46 INFO  thumb-cache/tc-node-11 request done id=req-f03d64e6 route=/thumb-cache/v1/list status=400 latency_ms=600
+2026-11-13T01:10:50 INFO  thumb-cache/tc-node-03 config applied key=queue.batch_size value=31% by=mjlee
+2026-11-13T01:10:52 NOTE  thumb-cache/tc-node-07 operator=sykang memo="배치 시작 시각을 5시 19분으로 고정함."
+2026-11-13T01:10:56 INFO  thumb-cache/tc-node-11 request done id=req-1e4620f4 route=/thumb-cache/v1/create status=503 latency_ms=51
+2026-11-13T01:11:01 ERROR thumb-cache/tc-node-12 job failed job=thumb-cache-cleanup attempt=1 cause=bad_checksum
+2026-11-13T01:11:02 INFO  thumb-cache/tc-node-09 config applied key=log.sample_rate value=true by=hbyoon
+2026-11-13T01:11:08 INFO  thumb-cache/tc-node-04 cache stats region=ap-ne-2b hit_ratio=68.8% evictions=4154
+2026-11-13T01:11:15 INFO  thumb-cache/tc-node-11 request done id=req-3d3701c4 route=/thumb-cache/v1/list status=204 latency_ms=27
+2026-11-13T01:11:20 NOTE  thumb-cache/tc-node-24 operator=dwjung memo="tc-node-24 재기동 후 지표 정상 확인."
+2026-11-13T01:11:22 INFO  thumb-cache/tc-node-03 request done id=req-d1aa3b85 route=/thumb-cache/v1/sync status=200 latency_ms=54
+2026-11-13T01:11:23 INFO  thumb-cache/tc-node-02 request done id=req-1d7e0fe2 route=/thumb-cache/v1/cancel status=200 latency_ms=156
+2026-11-13T01:11:30 INFO  thumb-cache/tc-node-04 pool resize target=thumb-cache-queue max_pool_size=79 prev=132
+2026-11-13T01:11:33 INFO  thumb-cache/tc-node-23 request done id=req-1a3eed0e route=/thumb-cache/v1/update status=200 latency_ms=393
+2026-11-13T01:11:35 INFO  thumb-cache/tc-node-02 request done id=req-70699417 route=/thumb-cache/v1/create status=200 latency_ms=160
+2026-11-13T01:11:38 INFO  thumb-cache/tc-node-15 pool resize target=thumb-cache-queue max_pool_size=59 prev=50
+2026-11-13T01:11:41 INFO  thumb-cache/tc-node-20 request done id=req-44ab8cc3 route=/thumb-cache/v1/cancel status=200 latency_ms=74
+2026-11-13T01:11:44 ERROR thumb-cache/tc-node-18 job failed job=thumb-cache-export attempt=5 cause=upstream_timeout
+2026-11-13T01:11:50 INFO  thumb-cache/tc-node-03 request done id=req-4cfe7e08 route=/thumb-cache/v1/status status=200 latency_ms=35
+2026-11-13T01:11:57 INFO  thumb-cache/tc-node-21 request done id=req-f68cdc4b route=/thumb-cache/v1/status status=503 latency_ms=137
+2026-11-13T01:12:02 INFO  thumb-cache/tc-node-03 ticket linked id=OPS-48776 reason=quota_increase
+2026-11-13T01:12:06 INFO  thumb-cache/tc-node-02 request done id=req-590573dc route=/thumb-cache/v1/cancel status=200 latency_ms=32
+2026-11-13T01:12:12 INFO  thumb-cache/tc-node-06 cache stats region=ap-ne-2a hit_ratio=89.7% evictions=39051
+2026-11-13T01:12:14 INFO  thumb-cache/tc-node-03 config applied key=queue.batch_size value=true by=yjchoi
+2026-11-13T01:12:17 INFO  thumb-cache/tc-node-23 backup finished file=/vault/weekly/inventory_2026w41.tar.zst size_mb=58522 checksum=1cf06411
+2026-11-13T01:12:18 INFO  thumb-cache/tc-node-03 request done id=req-50849b4f route=/thumb-cache/v1/create status=200 latency_ms=420
+2026-11-13T01:12:24 INFO  thumb-cache/tc-node-24 request done id=req-6e319337 route=/thumb-cache/v1/status status=200 latency_ms=377
+2026-11-13T01:12:30 INFO  thumb-cache/tc-node-15 request done id=req-e2bef0a3 route=/thumb-cache/v1/create status=400 latency_ms=297
+2026-11-13T01:12:31 INFO  thumb-cache/tc-node-24 request done id=req-c6ec6836 route=/thumb-cache/v1/status status=503 latency_ms=261
+2026-11-13T01:12:35 INFO  thumb-cache/tc-node-12 request done id=req-a15994f2 route=/thumb-cache/v1/list status=429 latency_ms=93
+2026-11-13T01:12:41 INFO  thumb-cache/tc-node-01 deploy step release=thumb-cache-4.14.9 step=shift_traffic_100 result=ok took_s=121
+2026-11-13T01:12:44 INFO  thumb-cache/tc-node-04 cache stats region=us-we-2b hit_ratio=77.3% evictions=35193
+2026-11-13T01:12:51 ERROR thumb-cache/tc-node-13 job failed job=thumb-cache-reindex attempt=2 cause=bad_checksum
+2026-11-13T01:12:54 INFO  thumb-cache/tc-node-13 deploy step release=thumb-cache-4.18.3 step=healthcheck result=ok took_s=152
+2026-11-13T01:13:00 INFO  thumb-cache/tc-node-24 config applied key=worker.concurrency value=55 by=sykang
+2026-11-13T01:13:04 INFO  thumb-cache/tc-node-11 request done id=req-6a7a7c93 route=/thumb-cache/v1/get status=200 latency_ms=64
+2026-11-13T01:13:11 INFO  thumb-cache/tc-node-13 deploy step release=thumb-cache-4.19.9 step=shift_traffic_100 result=ok took_s=146
+2026-11-13T01:13:17 INFO  thumb-cache/tc-node-01 request done id=req-85456efa route=/thumb-cache/v1/create status=200 latency_ms=363
+2026-11-13T01:13:19 INFO  thumb-cache/tc-node-16 request done id=req-e59afd32 route=/thumb-cache/v1/update status=200 latency_ms=72
+2026-11-13T01:13:25 INFO  thumb-cache/tc-node-21 request done id=req-1766eced route=/thumb-cache/v1/create status=500 latency_ms=206
+2026-11-13T01:13:32 INFO  thumb-cache/tc-node-13 request done id=req-2376a121 route=/thumb-cache/v1/get status=200 latency_ms=95
+2026-11-13T01:13:37 INFO  thumb-cache/tc-node-02 request done id=req-e39113b9 route=/thumb-cache/v1/verify status=400 latency_ms=186
+2026-11-13T01:13:42 INFO  thumb-cache/tc-node-10 request done id=req-f0950ea1 route=/thumb-cache/v1/create status=200 latency_ms=147
+2026-11-13T01:13:43 INFO  thumb-cache/tc-node-12 request done id=req-1740d2d8 route=/thumb-cache/v1/list status=200 latency_ms=89
+2026-11-13T01:13:50 INFO  thumb-cache/tc-node-01 request done id=req-c8145323 route=/thumb-cache/v1/list status=200 latency_ms=131
+2026-11-13T01:13:55 INFO  thumb-cache/tc-node-17 deploy step release=thumb-cache-4.16.9 step=start result=ok took_s=75
+2026-11-13T01:13:58 INFO  thumb-cache/tc-node-08 request done id=req-8e0cda11 route=/thumb-cache/v1/create status=404 latency_ms=412
+2026-11-13T01:14:00 WARN  thumb-cache/tc-node-21 alert fired rule=error_ratio_high value=60% threshold=51%
+2026-11-13T01:14:07 INFO  thumb-cache/tc-node-14 request done id=req-f1b8b8a6 route=/thumb-cache/v1/sync status=200 latency_ms=221
+2026-11-13T01:14:12 INFO  thumb-cache/tc-node-18 request done id=req-ddc40a70 route=/thumb-cache/v1/create status=200 latency_ms=63
+2026-11-13T01:14:15 INFO  thumb-cache/tc-node-19 deploy step release=thumb-cache-4.18.1 step=healthcheck result=ok took_s=239
+2026-11-13T01:14:18 INFO  thumb-cache/tc-node-02 request done id=req-c009ada3 route=/thumb-cache/v1/create status=200 latency_ms=52
+2026-11-13T01:14:23 INFO  thumb-cache/tc-node-10 ticket linked id=OPS-47212 reason=node_drain
+2026-11-13T01:14:25 INFO  thumb-cache/tc-node-15 request done id=req-677f8bb9 route=/thumb-cache/v1/create status=200 latency_ms=32
+2026-11-13T01:14:29 WARN  thumb-cache/tc-node-19 alert fired rule=replica_lag_high value=73s threshold=59s
+2026-11-13T01:14:33 WARN  thumb-cache/tc-node-07 alert fired rule=fd_usage_high value=73% threshold=71%
+2026-11-13T01:14:38 INFO  thumb-cache/tc-node-07 request done id=req-7d59a5c7 route=/thumb-cache/v1/status status=200 latency_ms=27
+2026-11-13T01:14:41 INFO  thumb-cache/tc-node-13 request done id=req-e5560697 route=/thumb-cache/v1/sync status=503 latency_ms=484
+2026-11-13T01:14:43 WARN  thumb-cache/tc-node-07 alert fired rule=heap_used_high value=70% threshold=64%
+2026-11-13T01:14:46 INFO  thumb-cache/tc-node-22 ticket linked id=OPS-47038 reason=quota_increase
+2026-11-13T01:14:52 INFO  thumb-cache/tc-node-07 request done id=req-9dfc0d0f route=/thumb-cache/v1/list status=201 latency_ms=319
+2026-11-13T01:14:58 INFO  thumb-cache/tc-node-16 request done id=req-1c268190 route=/thumb-cache/v1/get status=200 latency_ms=503
+2026-11-13T01:15:04 INFO  thumb-cache/tc-node-10 pool resize target=thumb-cache-worker max_pool_size=206 prev=152
+2026-11-13T01:15:06 INFO  thumb-cache/tc-node-01 config applied key=canary.traffic_percent value=85% by=mjlee
+2026-11-13T01:15:09 INFO  thumb-cache/tc-node-01 config applied key=limiter.rps value=44% by=shkim
+2026-11-13T01:15:11 NOTE  thumb-cache/tc-node-19 operator=ejlim memo="연동 팀에 변경 공지 완료."
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

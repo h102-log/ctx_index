@@ -1,0 +1,1 @@
+아까 붙여 준 정산 배치(settle-batch) 로그에서 13:30:22 에 있었던 pool resize 의 max_pool_size 가 얼마였지?

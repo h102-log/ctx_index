@@ -1,0 +1,424 @@
+참고용 로그 28: 회원 프로필(user-profile) 스키마 변경 구간. '확인'이라고만 답해 줘.
+
+2026-11-01T11:37:54 INFO  user-profile/up-node-11 request done id=req-ddad7bad route=/user-profile/v1/get status=503 latency_ms=73
+2026-11-01T11:38:00 INFO  user-profile/up-node-20 pool resize target=user-profile-cache max_pool_size=215 prev=207
+2026-11-01T11:38:06 INFO  user-profile/up-node-24 config applied key=dns.ttl_s value=false by=jhpark
+2026-11-01T11:38:09 INFO  user-profile/up-node-05 request done id=req-f275942e route=/user-profile/v1/verify status=200 latency_ms=49
+2026-11-01T11:38:13 INFO  user-profile/up-node-22 request done id=req-21aa4e3f route=/user-profile/v1/cancel status=200 latency_ms=72
+2026-11-01T11:38:15 INFO  user-profile/up-node-20 pool resize target=user-profile-upstream max_pool_size=165 prev=150
+2026-11-01T11:38:21 INFO  user-profile/up-node-05 config applied key=retry.max_attempts value=true by=shkim
+2026-11-01T11:38:27 WARN  user-profile/up-node-07 alert fired rule=conn_pool_saturated value=85% threshold=72%
+2026-11-01T11:38:29 INFO  user-profile/up-node-21 ticket linked id=OPS-49276 reason=dns_ttl_change
+2026-11-01T11:38:31 INFO  user-profile/up-node-13 request done id=req-7a27b723 route=/user-profile/v1/get status=200 latency_ms=117
+2026-11-01T11:38:36 INFO  user-profile/up-node-04 deploy step release=user-profile-4.19.0 step=shift_traffic_10 result=ok took_s=164
+2026-11-01T11:38:39 INFO  user-profile/up-node-20 config applied key=worker.concurrency value=39 by=dwjung
+2026-11-01T11:38:46 INFO  user-profile/up-node-19 deploy step release=user-profile-4.14.6 step=migrate result=ok took_s=80
+2026-11-01T11:38:52 INFO  user-profile/up-node-22 backup finished file=/vault/daily/inventory_20261017.tar.zst size_mb=23074 checksum=a6b082a6
+2026-11-01T11:38:57 INFO  user-profile/up-node-22 cache stats region=us-we-2b hit_ratio=92.4% evictions=15486
+2026-11-01T11:39:00 INFO  user-profile/up-node-03 backup finished file=/vault/daily/users_20261023.tar.zst size_mb=33708 checksum=42f0be92
+2026-11-01T11:39:04 INFO  user-profile/up-node-07 request done id=req-5875efc3 route=/user-profile/v1/cancel status=200 latency_ms=291
+2026-11-01T11:39:07 INFO  user-profile/up-node-22 deploy step release=user-profile-4.16.9 step=shift_traffic_10 result=ok took_s=178
+2026-11-01T11:39:14 INFO  user-profile/up-node-13 request done id=req-a8541ab4 route=/user-profile/v1/status status=200 latency_ms=128
+2026-11-01T11:39:15 ERROR user-profile/up-node-01 job failed job=user-profile-reindex attempt=3 cause=bad_checksum
+2026-11-01T11:39:21 INFO  user-profile/up-node-24 deploy step release=user-profile-4.20.9 step=pull_image result=ok took_s=163
+2026-11-01T11:39:22 INFO  user-profile/up-node-17 request done id=req-4f53df18 route=/user-profile/v1/update status=200 latency_ms=61
+2026-11-01T11:39:29 INFO  user-profile/up-node-21 request done id=req-a7502bd9 route=/user-profile/v1/sync status=200 latency_ms=19
+2026-11-01T11:39:33 INFO  user-profile/up-node-07 config applied key=breaker.open_ratio value=true by=sykang
+2026-11-01T11:39:39 INFO  user-profile/up-node-12 request done id=req-6910f4c0 route=/user-profile/v1/status status=201 latency_ms=48
+2026-11-01T11:39:46 WARN  user-profile/up-node-14 alert fired rule=conn_pool_saturated value=98% threshold=86%
+2026-11-01T11:39:47 INFO  user-profile/up-node-17 config applied key=http.read_timeout_ms value=false by=dwjung
+2026-11-01T11:39:53 INFO  user-profile/up-node-24 request done id=req-57e15d53 route=/user-profile/v1/get status=200 latency_ms=53
+2026-11-01T11:39:55 INFO  user-profile/up-node-24 backup finished file=/vault/weekly/orders_2026w36.tar.zst size_mb=69944 checksum=d3165067
+2026-11-01T11:40:02 INFO  user-profile/up-node-10 request done id=req-cd0418bf route=/user-profile/v1/get status=200 latency_ms=69
+2026-11-01T11:40:05 INFO  user-profile/up-node-19 request done id=req-e3900802 route=/user-profile/v1/sync status=503 latency_ms=32
+2026-11-01T11:40:12 INFO  user-profile/up-node-19 ticket linked id=OPS-48472 reason=flaky_healthcheck
+2026-11-01T11:40:18 INFO  user-profile/up-node-02 request done id=req-609afda4 route=/user-profile/v1/status status=429 latency_ms=83
+2026-11-01T11:40:21 INFO  user-profile/up-node-05 request done id=req-e8278a28 route=/user-profile/v1/sync status=204 latency_ms=63
+2026-11-01T11:40:28 INFO  user-profile/up-node-15 request done id=req-099874b1 route=/user-profile/v1/update status=200 latency_ms=575
+2026-11-01T11:40:29 INFO  user-profile/up-node-08 ticket linked id=OPS-47019 reason=node_drain
+2026-11-01T11:40:34 INFO  user-profile/up-node-07 request done id=req-fc66b084 route=/user-profile/v1/verify status=409 latency_ms=102
+2026-11-01T11:40:39 NOTE  user-profile/up-node-15 operator=shkim memo="임시 증설 40대 추가. 내일 오전 회수 예정."
+2026-11-01T11:40:45 INFO  user-profile/up-node-04 cache stats region=ap-ne-2b hit_ratio=92.1% evictions=5989
+2026-11-01T11:40:51 INFO  user-profile/up-node-13 request done id=req-062cb6f7 route=/user-profile/v1/verify status=201 latency_ms=540
+2026-11-01T11:40:52 INFO  user-profile/up-node-21 request done id=req-24a078e3 route=/user-profile/v1/update status=400 latency_ms=147
+2026-11-01T11:40:59 INFO  user-profile/up-node-17 request done id=req-c990d066 route=/user-profile/v1/verify status=200 latency_ms=79
+2026-11-01T11:41:04 WARN  user-profile/up-node-20 alert fired rule=fd_usage_high value=51% threshold=36%
+2026-11-01T11:41:05 INFO  user-profile/up-node-18 request done id=req-a1b27779 route=/user-profile/v1/get status=200 latency_ms=100
+2026-11-01T11:41:11 INFO  user-profile/up-node-03 request done id=req-6e6f6ae7 route=/user-profile/v1/sync status=400 latency_ms=27
+2026-11-01T11:41:16 INFO  user-profile/up-node-19 config applied key=limiter.burst value=33% by=yjchoi
+2026-11-01T11:41:23 INFO  user-profile/up-node-16 request done id=req-8cf470ed route=/user-profile/v1/list status=200 latency_ms=192
+2026-11-01T11:41:24 INFO  user-profile/up-node-08 request done id=req-198756ec route=/user-profile/v1/get status=200 latency_ms=73
+2026-11-01T11:41:25 INFO  user-profile/up-node-20 request done id=req-94641d20 route=/user-profile/v1/status status=200 latency_ms=209
+2026-11-01T11:41:32 WARN  user-profile/up-node-19 alert fired rule=replica_lag_high value=91s threshold=90s
+2026-11-01T11:41:34 INFO  user-profile/up-node-12 request done id=req-66dfa8f7 route=/user-profile/v1/cancel status=200 latency_ms=85
+2026-11-01T11:41:36 INFO  user-profile/up-node-11 request done id=req-72d7da46 route=/user-profile/v1/verify status=409 latency_ms=157
+2026-11-01T11:41:40 INFO  user-profile/up-node-13 request done id=req-c790b236 route=/user-profile/v1/update status=409 latency_ms=389
+2026-11-01T11:41:43 INFO  user-profile/up-node-20 request done id=req-ef16fba6 route=/user-profile/v1/cancel status=200 latency_ms=546
+2026-11-01T11:41:50 INFO  user-profile/up-node-04 ticket linked id=OPS-48013 reason=dependency_upgrade
+2026-11-01T11:41:51 INFO  user-profile/up-node-09 ticket linked id=OPS-47520 reason=dns_ttl_change
+2026-11-01T11:41:54 INFO  user-profile/up-node-07 request done id=req-f0071199 route=/user-profile/v1/cancel status=200 latency_ms=109
+2026-11-01T11:41:57 INFO  user-profile/up-node-06 request done id=req-4339d6eb route=/user-profile/v1/update status=200 latency_ms=102
+2026-11-01T11:42:04 NOTE  user-profile/up-node-04 operator=shkim memo="로그 보존 기간은 37일로 유지하기로 함."
+2026-11-01T11:42:08 INFO  user-profile/up-node-14 request done id=req-ee3b1e7f route=/user-profile/v1/create status=503 latency_ms=163
+2026-11-01T11:42:12 INFO  user-profile/up-node-21 request done id=req-5fbef4c0 route=/user-profile/v1/sync status=200 latency_ms=61
+2026-11-01T11:42:16 INFO  user-profile/up-node-01 cache stats region=ap-ne-2c hit_ratio=66.2% evictions=23699
+2026-11-01T11:42:19 INFO  user-profile/up-node-17 pool resize target=user-profile-queue max_pool_size=266 prev=325
+2026-11-01T11:42:23 INFO  user-profile/up-node-08 request done id=req-4e1bd7b1 route=/user-profile/v1/get status=200 latency_ms=102
+2026-11-01T11:42:29 WARN  user-profile/up-node-11 alert fired rule=cpu_steal_high value=78% threshold=65%
+2026-11-01T11:42:30 ERROR user-profile/up-node-15 job failed job=user-profile-cleanup attempt=2 cause=oom_killed
+2026-11-01T11:42:31 INFO  user-profile/up-node-24 request done id=req-96139f97 route=/user-profile/v1/status status=200 latency_ms=33
+2026-11-01T11:42:37 INFO  user-profile/up-node-24 request done id=req-b19f9875 route=/user-profile/v1/sync status=200 latency_ms=95
+2026-11-01T11:42:38 INFO  user-profile/up-node-05 request done id=req-47defc7b route=/user-profile/v1/get status=204 latency_ms=135
+2026-11-01T11:42:43 WARN  user-profile/up-node-14 alert fired rule=gc_pause_long value=78ms threshold=68ms
+2026-11-01T11:42:49 INFO  user-profile/up-node-01 request done id=req-b762e904 route=/user-profile/v1/create status=200 latency_ms=823
+2026-11-01T11:42:53 INFO  user-profile/up-node-03 backup finished file=/vault/weekly/orders_2026w35.tar.zst size_mb=34981 checksum=fc8064f9
+2026-11-01T11:42:56 ERROR user-profile/up-node-04 job failed job=user-profile-export attempt=2 cause=dns_failure
+2026-11-01T11:42:58 WARN  user-profile/up-node-10 alert fired rule=queue_depth_high value=58 threshold=48
+2026-11-01T11:42:59 INFO  user-profile/up-node-19 request done id=req-9aa5aab0 route=/user-profile/v1/update status=200 latency_ms=359
+2026-11-01T11:43:06 INFO  user-profile/up-node-24 pool resize target=user-profile-queue max_pool_size=270 prev=228
+2026-11-01T11:43:11 INFO  user-profile/up-node-16 config applied key=retry.max_attempts value=3532 by=yjchoi
+2026-11-01T11:43:13 INFO  user-profile/up-node-17 pool resize target=user-profile-upstream max_pool_size=108 prev=111
+2026-11-01T11:43:20 INFO  user-profile/up-node-07 request done id=req-db5ca84d route=/user-profile/v1/verify status=200 latency_ms=126
+2026-11-01T11:43:24 INFO  user-profile/up-node-21 request done id=req-fd7a4f4e route=/user-profile/v1/get status=409 latency_ms=46
+2026-11-01T11:43:26 WARN  user-profile/up-node-01 alert fired rule=fd_usage_high value=53% threshold=50%
+2026-11-01T11:43:33 NOTE  user-profile/up-node-22 operator=sykang memo="연동 팀에 변경 공지 완료."
+2026-11-01T11:43:35 INFO  user-profile/up-node-23 request done id=req-7296d841 route=/user-profile/v1/create status=200 latency_ms=93
+2026-11-01T11:43:40 INFO  user-profile/up-node-15 request done id=req-4e5e2e52 route=/user-profile/v1/get status=204 latency_ms=113
+2026-11-01T11:43:44 INFO  user-profile/up-node-09 request done id=req-aeebd44a route=/user-profile/v1/status status=200 latency_ms=111
+2026-11-01T11:43:49 INFO  user-profile/up-node-19 request done id=req-9a7fe88d route=/user-profile/v1/cancel status=200 latency_ms=273
+2026-11-01T11:43:51 INFO  user-profile/up-node-17 request done id=req-788fbaa5 route=/user-profile/v1/cancel status=200 latency_ms=56
+2026-11-01T11:43:57 INFO  user-profile/up-node-07 request done id=req-fafe39ca route=/user-profile/v1/update status=200 latency_ms=124
+2026-11-01T11:44:00 INFO  user-profile/up-node-12 deploy step release=user-profile-4.20.4 step=healthcheck result=ok took_s=117
+2026-11-01T11:44:05 WARN  user-profile/up-node-17 alert fired rule=replica_lag_high value=95s threshold=89s
+2026-11-01T11:44:07 INFO  user-profile/up-node-02 config applied key=log.sample_rate value=false by=yjchoi
+2026-11-01T11:44:09 INFO  user-profile/up-node-05 deploy step release=user-profile-4.12.4 step=shift_traffic_10 result=ok took_s=183
+2026-11-01T11:44:10 INFO  user-profile/up-node-12 pool resize target=user-profile-db max_pool_size=182 prev=202
+2026-11-01T11:44:14 INFO  user-profile/up-node-20 config applied key=tls.session_cache value=false by=mjlee
+2026-11-01T11:44:18 ERROR user-profile/up-node-21 job failed job=user-profile-rollup attempt=1 cause=dns_failure
+2026-11-01T11:44:22 INFO  user-profile/up-node-08 ticket linked id=OPS-47609 reason=log_volume_spike
+2026-11-01T11:44:27 INFO  user-profile/up-node-20 request done id=req-b8fc9190 route=/user-profile/v1/verify status=429 latency_ms=48
+2026-11-01T11:44:34 INFO  user-profile/up-node-04 request done id=req-ac2f6962 route=/user-profile/v1/status status=200 latency_ms=133
+2026-11-01T11:44:36 ERROR user-profile/up-node-07 job failed job=user-profile-reindex attempt=3 cause=upstream_timeout
+2026-11-01T11:44:41 INFO  user-profile/up-node-18 request done id=req-2b2221b2 route=/user-profile/v1/list status=200 latency_ms=180
+2026-11-01T11:44:48 INFO  user-profile/up-node-15 request done id=req-8a2cc805 route=/user-profile/v1/sync status=200 latency_ms=102
+2026-11-01T11:44:50 INFO  user-profile/up-node-20 request done id=req-4c0b5416 route=/user-profile/v1/get status=500 latency_ms=334
+2026-11-01T11:44:57 WARN  user-profile/up-node-01 alert fired rule=error_ratio_high value=89% threshold=84%
+2026-11-01T11:45:00 INFO  user-profile/up-node-08 request done id=req-e4a6536f route=/user-profile/v1/sync status=200 latency_ms=128
+2026-11-01T11:45:05 INFO  user-profile/up-node-09 backup finished file=/vault/weekly/audit_2026w38.tar.zst size_mb=85319 checksum=c61dcd5b
+2026-11-01T11:45:07 INFO  user-profile/up-node-01 pool resize target=user-profile-upstream max_pool_size=202 prev=233
+2026-11-01T11:45:12 WARN  user-profile/up-node-24 alert fired rule=disk_usage_warning value=90% threshold=88%
+2026-11-01T11:45:15 INFO  user-profile/up-node-13 deploy step release=user-profile-4.15.7 step=migrate result=ok took_s=196
+2026-11-01T11:45:21 ERROR user-profile/up-node-08 job failed job=user-profile-export attempt=4 cause=upstream_timeout
+2026-11-01T11:45:25 INFO  user-profile/up-node-13 request done id=req-9c5a5533 route=/user-profile/v1/cancel status=200 latency_ms=157
+2026-11-01T11:45:27 INFO  user-profile/up-node-23 pool resize target=user-profile-cache max_pool_size=54 prev=104
+2026-11-01T11:45:34 INFO  user-profile/up-node-05 pool resize target=user-profile-upstream max_pool_size=68 prev=55
+2026-11-01T11:45:35 INFO  user-profile/up-node-19 request done id=req-9aa8f324 route=/user-profile/v1/update status=400 latency_ms=121
+2026-11-01T11:45:41 INFO  user-profile/up-node-12 request done id=req-85ca8e38 route=/user-profile/v1/create status=200 latency_ms=176
+2026-11-01T11:45:48 ERROR user-profile/up-node-23 job failed job=user-profile-export attempt=3 cause=quota_exceeded
+2026-11-01T11:45:49 INFO  user-profile/up-node-10 ticket linked id=OPS-47759 reason=cert_rotation
+2026-11-01T11:45:53 INFO  user-profile/up-node-06 request done id=req-350caf62 route=/user-profile/v1/get status=200 latency_ms=126
+2026-11-01T11:45:56 INFO  user-profile/up-node-12 request done id=req-5a210046 route=/user-profile/v1/list status=200 latency_ms=87
+2026-11-01T11:46:03 INFO  user-profile/up-node-16 config applied key=shard.count value=true by=mjlee
+2026-11-01T11:46:09 INFO  user-profile/up-node-15 deploy step release=user-profile-4.14.0 step=healthcheck result=ok took_s=160
+2026-11-01T11:46:13 INFO  user-profile/up-node-24 request done id=req-f4a41f0d route=/user-profile/v1/status status=200 latency_ms=161
+2026-11-01T11:46:14 INFO  user-profile/up-node-11 config applied key=gc.pause_target_ms value=3 by=dwjung
+2026-11-01T11:46:16 INFO  user-profile/up-node-04 request done id=req-742c8897 route=/user-profile/v1/list status=200 latency_ms=45
+2026-11-01T11:46:23 INFO  user-profile/up-node-03 request done id=req-ea939e80 route=/user-profile/v1/status status=200 latency_ms=62
+2026-11-01T11:46:30 INFO  user-profile/up-node-08 request done id=req-be669ff3 route=/user-profile/v1/status status=200 latency_ms=48
+2026-11-01T11:46:37 INFO  user-profile/up-node-23 pool resize target=user-profile-cache max_pool_size=81 prev=59
+2026-11-01T11:46:41 INFO  user-profile/up-node-20 config applied key=flush.interval_ms value=73% by=mjlee
+2026-11-01T11:46:48 INFO  user-profile/up-node-16 backup finished file=/vault/daily/inventory_20261016.tar.zst size_mb=27416 checksum=41ef164d
+2026-11-01T11:46:55 INFO  user-profile/up-node-07 request done id=req-d7d85144 route=/user-profile/v1/verify status=500 latency_ms=49
+2026-11-01T11:46:56 INFO  user-profile/up-node-09 request done id=req-502f17a6 route=/user-profile/v1/status status=409 latency_ms=151
+2026-11-01T11:47:00 INFO  user-profile/up-node-13 request done id=req-8b701b61 route=/user-profile/v1/get status=409 latency_ms=250
+2026-11-01T11:47:04 INFO  user-profile/up-node-24 request done id=req-a6b20010 route=/user-profile/v1/list status=200 latency_ms=70
+2026-11-01T11:47:05 INFO  user-profile/up-node-02 request done id=req-004b4f0f route=/user-profile/v1/verify status=201 latency_ms=176
+2026-11-01T11:47:09 INFO  user-profile/up-node-22 request done id=req-6169a6c2 route=/user-profile/v1/cancel status=200 latency_ms=502
+2026-11-01T11:47:10 WARN  user-profile/up-node-23 alert fired rule=replica_lag_high value=96s threshold=83s
+2026-11-01T11:47:15 INFO  user-profile/up-node-01 config applied key=canary.traffic_percent value=true by=shkim
+2026-11-01T11:47:17 INFO  user-profile/up-node-03 deploy step release=user-profile-4.21.2 step=warmup result=ok took_s=205
+2026-11-01T11:47:23 INFO  user-profile/up-node-23 deploy step release=user-profile-4.12.8 step=drain result=ok took_s=183
+2026-11-01T11:47:26 INFO  user-profile/up-node-22 request done id=req-bd0755a3 route=/user-profile/v1/get status=200 latency_ms=23
+2026-11-01T11:47:30 INFO  user-profile/up-node-07 request done id=req-66117806 route=/user-profile/v1/sync status=201 latency_ms=163
+2026-11-01T11:47:34 WARN  user-profile/up-node-01 alert fired rule=disk_usage_warning value=80% threshold=73%
+2026-11-01T11:47:35 INFO  user-profile/up-node-08 pool resize target=user-profile-queue max_pool_size=55 prev=55
+2026-11-01T11:47:36 WARN  user-profile/up-node-06 alert fired rule=error_ratio_high value=74% threshold=67%
+2026-11-01T11:47:40 WARN  user-profile/up-node-14 alert fired rule=error_ratio_high value=87% threshold=78%
+2026-11-01T11:47:45 INFO  user-profile/up-node-21 request done id=req-a7f6d2b9 route=/user-profile/v1/sync status=200 latency_ms=223
+2026-11-01T11:47:49 INFO  user-profile/up-node-08 request done id=req-f0e1d6ef route=/user-profile/v1/list status=409 latency_ms=83
+2026-11-01T11:47:54 INFO  user-profile/up-node-07 request done id=req-76b6d678 route=/user-profile/v1/list status=409 latency_ms=210
+2026-11-01T11:48:01 INFO  user-profile/up-node-15 config applied key=retry.max_attempts value=true by=sykang
+2026-11-01T11:48:06 INFO  user-profile/up-node-20 request done id=req-0fbda059 route=/user-profile/v1/list status=200 latency_ms=27
+2026-11-01T11:48:08 INFO  user-profile/up-node-19 request done id=req-5fc7188c route=/user-profile/v1/list status=200 latency_ms=306
+2026-11-01T11:48:11 INFO  user-profile/up-node-15 pool resize target=user-profile-worker max_pool_size=183 prev=200
+2026-11-01T11:48:12 INFO  user-profile/up-node-24 request done id=req-7ded3562 route=/user-profile/v1/list status=200 latency_ms=215
+2026-11-01T11:48:14 INFO  user-profile/up-node-05 request done id=req-ac920606 route=/user-profile/v1/list status=429 latency_ms=481
+2026-11-01T11:48:19 INFO  user-profile/up-node-21 config applied key=retry.backoff_ms value=false by=mjlee
+2026-11-01T11:48:20 INFO  user-profile/up-node-18 request done id=req-97b480d7 route=/user-profile/v1/status status=200 latency_ms=29
+2026-11-01T11:48:24 INFO  user-profile/up-node-11 ticket linked id=OPS-48002 reason=dependency_upgrade
+2026-11-01T11:48:27 INFO  user-profile/up-node-02 ticket linked id=OPS-48769 reason=flaky_healthcheck
+2026-11-01T11:48:30 INFO  user-profile/up-node-07 request done id=req-fc645c15 route=/user-profile/v1/sync status=200 latency_ms=308
+2026-11-01T11:48:33 WARN  user-profile/up-node-20 alert fired rule=heap_used_high value=92% threshold=89%
+2026-11-01T11:48:35 INFO  user-profile/up-node-15 deploy step release=user-profile-4.11.8 step=shift_traffic_10 result=ok took_s=149
+2026-11-01T11:48:36 WARN  user-profile/up-node-01 alert fired rule=gc_pause_long value=65ms threshold=60ms
+2026-11-01T11:48:40 INFO  user-profile/up-node-14 request done id=req-3d067885 route=/user-profile/v1/verify status=200 latency_ms=28
+2026-11-01T11:48:47 INFO  user-profile/up-node-12 request done id=req-6097ce77 route=/user-profile/v1/status status=200 latency_ms=194
+2026-11-01T11:48:50 INFO  user-profile/up-node-12 request done id=req-a8c868b3 route=/user-profile/v1/list status=201 latency_ms=75
+2026-11-01T11:48:53 INFO  user-profile/up-node-18 cache stats region=us-we-2b hit_ratio=75.4% evictions=25381
+2026-11-01T11:49:00 WARN  user-profile/up-node-22 alert fired rule=heap_used_high value=91% threshold=90%
+2026-11-01T11:49:03 INFO  user-profile/up-node-18 request done id=req-1eef10af route=/user-profile/v1/cancel status=400 latency_ms=199
+2026-11-01T11:49:10 ERROR user-profile/up-node-03 job failed job=user-profile-rollup attempt=4 cause=upstream_timeout
+2026-11-01T11:49:12 INFO  user-profile/up-node-22 request done id=req-52e0d266 route=/user-profile/v1/sync status=200 latency_ms=267
+2026-11-01T11:49:19 INFO  user-profile/up-node-16 config applied key=shard.count value=8% by=mjlee
+2026-11-01T11:49:22 INFO  user-profile/up-node-02 pool resize target=user-profile-upstream max_pool_size=337 prev=292
+2026-11-01T11:49:23 NOTE  user-profile/up-node-07 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-01T11:49:28 INFO  user-profile/up-node-19 backup finished file=/vault/weekly/payments_2026w38.tar.zst size_mb=69868 checksum=e0b4a5c4
+2026-11-01T11:49:29 INFO  user-profile/up-node-14 cache stats region=ap-ne-2c hit_ratio=69.4% evictions=14638
+2026-11-01T11:49:34 INFO  user-profile/up-node-17 deploy step release=user-profile-4.18.5 step=shift_traffic_10 result=ok took_s=156
+2026-11-01T11:49:39 INFO  user-profile/up-node-08 request done id=req-8d002a67 route=/user-profile/v1/sync status=200 latency_ms=229
+2026-11-01T11:49:43 WARN  user-profile/up-node-17 alert fired rule=disk_usage_warning value=64% threshold=49%
+2026-11-01T11:49:48 INFO  user-profile/up-node-04 request done id=req-832fef88 route=/user-profile/v1/cancel status=200 latency_ms=109
+2026-11-01T11:49:54 INFO  user-profile/up-node-16 pool resize target=user-profile-queue max_pool_size=166 prev=134
+2026-11-01T11:49:57 INFO  user-profile/up-node-03 cache stats region=us-we-2b hit_ratio=72.6% evictions=7662
+2026-11-01T11:49:59 INFO  user-profile/up-node-16 pool resize target=user-profile-queue max_pool_size=327 prev=345
+2026-11-01T11:50:02 INFO  user-profile/up-node-07 request done id=req-c9ef843f route=/user-profile/v1/status status=200 latency_ms=57
+2026-11-01T11:50:07 NOTE  user-profile/up-node-02 operator=shkim memo="캐시 TTL을 35초로 되돌림. 오래된 응답이 보고됨."
+2026-11-01T11:50:10 INFO  user-profile/up-node-20 request done id=req-a4d091eb route=/user-profile/v1/list status=200 latency_ms=350
+2026-11-01T11:50:16 WARN  user-profile/up-node-02 alert fired rule=gc_pause_long value=94ms threshold=80ms
+2026-11-01T11:50:19 INFO  user-profile/up-node-02 request done id=req-f764bbc4 route=/user-profile/v1/cancel status=200 latency_ms=141
+2026-11-01T11:50:22 INFO  user-profile/up-node-02 deploy step release=user-profile-4.21.2 step=migrate result=ok took_s=228
+2026-11-01T11:50:28 INFO  user-profile/up-node-03 request done id=req-855f3998 route=/user-profile/v1/sync status=409 latency_ms=70
+2026-11-01T11:50:35 INFO  user-profile/up-node-11 request done id=req-fd027d79 route=/user-profile/v1/list status=200 latency_ms=98
+2026-11-01T11:50:40 WARN  user-profile/up-node-15 alert fired rule=conn_pool_saturated value=65% threshold=56%
+2026-11-01T11:50:46 INFO  user-profile/up-node-04 deploy step release=user-profile-4.19.5 step=shift_traffic_10 result=ok took_s=68
+2026-11-01T11:50:53 INFO  user-profile/up-node-14 request done id=req-ba6e674c route=/user-profile/v1/update status=200 latency_ms=37
+2026-11-01T11:50:56 INFO  user-profile/up-node-05 request done id=req-c4833f9b route=/user-profile/v1/get status=200 latency_ms=309
+2026-11-01T11:51:01 INFO  user-profile/up-node-14 request done id=req-99cc3952 route=/user-profile/v1/cancel status=200 latency_ms=48
+2026-11-01T11:51:07 INFO  user-profile/up-node-23 deploy step release=user-profile-4.13.4 step=pull_image result=ok took_s=176
+2026-11-01T11:51:10 INFO  user-profile/up-node-20 request done id=req-471ba09d route=/user-profile/v1/cancel status=200 latency_ms=101
+2026-11-01T11:51:12 INFO  user-profile/up-node-18 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=83536 checksum=9221a10c
+2026-11-01T11:51:17 INFO  user-profile/up-node-08 request done id=req-8cf0fe60 route=/user-profile/v1/verify status=200 latency_ms=35
+2026-11-01T11:51:20 INFO  user-profile/up-node-13 ticket linked id=OPS-49225 reason=dependency_upgrade
+2026-11-01T11:51:26 INFO  user-profile/up-node-17 config applied key=worker.concurrency value=47 by=jhpark
+2026-11-01T11:51:32 INFO  user-profile/up-node-22 backup finished file=/vault/daily/inventory_20261012.tar.zst size_mb=40182 checksum=d4ae42e0
+2026-11-01T11:51:36 INFO  user-profile/up-node-05 request done id=req-98deed00 route=/user-profile/v1/update status=204 latency_ms=106
+2026-11-01T11:51:37 WARN  user-profile/up-node-09 alert fired rule=replica_lag_high value=69s threshold=68s
+2026-11-01T11:51:44 INFO  user-profile/up-node-17 request done id=req-ed395035 route=/user-profile/v1/update status=409 latency_ms=249
+2026-11-01T11:51:45 INFO  user-profile/up-node-03 request done id=req-243d8617 route=/user-profile/v1/list status=500 latency_ms=98
+2026-11-01T11:51:49 INFO  user-profile/up-node-24 request done id=req-6c3e2020 route=/user-profile/v1/status status=201 latency_ms=57
+2026-11-01T11:51:52 WARN  user-profile/up-node-01 alert fired rule=queue_depth_high value=87 threshold=82
+2026-11-01T11:51:57 INFO  user-profile/up-node-09 config applied key=canary.latency_p99_threshold_ms value=true by=jhpark
+2026-11-01T11:51:59 INFO  user-profile/up-node-04 request done id=req-a994ed4c route=/user-profile/v1/sync status=200 latency_ms=217
+2026-11-01T11:52:00 INFO  user-profile/up-node-02 request done id=req-3632bf3a route=/user-profile/v1/verify status=200 latency_ms=86
+2026-11-01T11:52:01 INFO  user-profile/up-node-16 request done id=req-55476ffe route=/user-profile/v1/get status=200 latency_ms=15
+2026-11-01T11:52:02 INFO  user-profile/up-node-01 request done id=req-cca1c8b0 route=/user-profile/v1/verify status=400 latency_ms=56
+2026-11-01T11:52:03 INFO  user-profile/up-node-23 pool resize target=user-profile-cache max_pool_size=206 prev=171
+2026-11-01T11:52:07 INFO  user-profile/up-node-04 request done id=req-040f703a route=/user-profile/v1/sync status=200 latency_ms=320
+2026-11-01T11:52:09 INFO  user-profile/up-node-17 request done id=req-7cd1eeb2 route=/user-profile/v1/list status=409 latency_ms=83
+2026-11-01T11:52:15 INFO  user-profile/up-node-14 config applied key=log.sample_rate value=true by=dwjung
+2026-11-01T11:52:16 WARN  user-profile/up-node-09 alert fired rule=heap_used_high value=70% threshold=55%
+2026-11-01T11:52:17 INFO  user-profile/up-node-13 request done id=req-c600f57c route=/user-profile/v1/get status=200 latency_ms=55
+2026-11-01T11:52:18 INFO  user-profile/up-node-24 pool resize target=user-profile-queue max_pool_size=127 prev=67
+2026-11-01T11:52:20 WARN  user-profile/up-node-24 alert fired rule=error_ratio_high value=79% threshold=73%
+2026-11-01T11:52:25 WARN  user-profile/up-node-09 alert fired rule=gc_pause_long value=63ms threshold=48ms
+2026-11-01T11:52:32 ERROR user-profile/up-node-23 job failed job=user-profile-rollup attempt=1 cause=dns_failure
+2026-11-01T11:52:36 INFO  user-profile/up-node-16 request done id=req-206e56d8 route=/user-profile/v1/get status=503 latency_ms=208
+2026-11-01T11:52:41 INFO  user-profile/up-node-08 request done id=req-425d45d2 route=/user-profile/v1/list status=200 latency_ms=65
+2026-11-01T11:52:42 NOTE  user-profile/up-node-08 operator=shkim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-01T11:52:46 WARN  user-profile/up-node-21 alert fired rule=queue_depth_high value=98 threshold=88
+2026-11-01T11:52:50 INFO  user-profile/up-node-23 pool resize target=user-profile-db max_pool_size=318 prev=326
+2026-11-01T11:52:52 INFO  user-profile/up-node-09 pool resize target=user-profile-worker max_pool_size=309 prev=348
+2026-11-01T11:52:55 INFO  user-profile/up-node-15 request done id=req-fb34223d route=/user-profile/v1/update status=400 latency_ms=43
+2026-11-01T11:52:57 INFO  user-profile/up-node-24 request done id=req-e316a0b2 route=/user-profile/v1/get status=200 latency_ms=503
+2026-11-01T11:53:04 INFO  user-profile/up-node-22 deploy step release=user-profile-4.10.0 step=migrate result=ok took_s=204
+2026-11-01T11:53:06 INFO  user-profile/up-node-06 cache stats region=us-we-2b hit_ratio=74.9% evictions=14836
+2026-11-01T11:53:09 INFO  user-profile/up-node-18 request done id=req-d68258a6 route=/user-profile/v1/create status=200 latency_ms=122
+2026-11-01T11:53:10 INFO  user-profile/up-node-01 request done id=req-67371911 route=/user-profile/v1/get status=409 latency_ms=298
+2026-11-01T11:53:14 INFO  user-profile/up-node-04 cache stats region=us-we-2b hit_ratio=56.2% evictions=4206
+2026-11-01T11:53:17 INFO  user-profile/up-node-03 config applied key=dns.ttl_s value=false by=jhpark
+2026-11-01T11:53:20 INFO  user-profile/up-node-24 request done id=req-843af2be route=/user-profile/v1/sync status=201 latency_ms=202
+2026-11-01T11:53:27 WARN  user-profile/up-node-23 alert fired rule=queue_depth_high value=95 threshold=94
+2026-11-01T11:53:29 INFO  user-profile/up-node-07 deploy step release=user-profile-4.15.9 step=shift_traffic_100 result=ok took_s=34
+2026-11-01T11:53:33 INFO  user-profile/up-node-23 cache stats region=ap-ne-2b hit_ratio=64.9% evictions=34079
+2026-11-01T11:53:40 INFO  user-profile/up-node-20 pool resize target=user-profile-upstream max_pool_size=331 prev=359
+2026-11-01T11:53:43 INFO  user-profile/up-node-06 request done id=req-d478d455 route=/user-profile/v1/get status=200 latency_ms=114
+2026-11-01T11:53:44 INFO  user-profile/up-node-16 request done id=req-f4f13c19 route=/user-profile/v1/verify status=404 latency_ms=95
+2026-11-01T11:53:45 INFO  user-profile/up-node-01 backup finished file=/vault/daily/orders_20261013.tar.zst size_mb=63016 checksum=d1901e6e
+2026-11-01T11:53:48 INFO  user-profile/up-node-20 request done id=req-67a2c3c7 route=/user-profile/v1/create status=204 latency_ms=40
+2026-11-01T11:53:51 INFO  user-profile/up-node-09 request done id=req-723d5015 route=/user-profile/v1/update status=201 latency_ms=90
+2026-11-01T11:53:57 INFO  user-profile/up-node-10 request done id=req-32510d8c route=/user-profile/v1/update status=429 latency_ms=72
+2026-11-01T11:54:01 INFO  user-profile/up-node-14 config applied key=flush.interval_ms value=18 by=jhpark
+2026-11-01T11:54:07 INFO  user-profile/up-node-08 request done id=req-579ad9cd route=/user-profile/v1/status status=400 latency_ms=92
+2026-11-01T11:54:09 INFO  user-profile/up-node-20 deploy step release=user-profile-4.13.5 step=shift_traffic_100 result=ok took_s=60
+2026-11-01T11:54:11 INFO  user-profile/up-node-01 request done id=req-beed654e route=/user-profile/v1/status status=200 latency_ms=30
+2026-11-01T11:54:18 ERROR user-profile/up-node-01 job failed job=user-profile-rollup attempt=3 cause=upstream_timeout
+2026-11-01T11:54:25 NOTE  user-profile/up-node-04 operator=hbyoon memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-01T11:54:27 INFO  user-profile/up-node-23 ticket linked id=OPS-48302 reason=dns_ttl_change
+2026-11-01T11:54:34 INFO  user-profile/up-node-10 request done id=req-58fcf65c route=/user-profile/v1/verify status=200 latency_ms=699
+2026-11-01T11:54:36 INFO  user-profile/up-node-05 request done id=req-284191a0 route=/user-profile/v1/create status=409 latency_ms=23
+2026-11-01T11:54:37 WARN  user-profile/up-node-15 alert fired rule=replica_lag_high value=57s threshold=50s
+2026-11-01T11:54:38 INFO  user-profile/up-node-16 config applied key=limiter.rps value=false by=yjchoi
+2026-11-01T11:54:44 INFO  user-profile/up-node-07 config applied key=cache.ttl_s value=false by=shkim
+2026-11-01T11:54:50 INFO  user-profile/up-node-07 config applied key=canary.latency_p99_threshold_ms value=51 by=ejlim
+2026-11-01T11:54:56 INFO  user-profile/up-node-11 request done id=req-a1e32cec route=/user-profile/v1/update status=204 latency_ms=9
+2026-11-01T11:55:02 INFO  user-profile/up-node-13 request done id=req-1b5efb7c route=/user-profile/v1/create status=500 latency_ms=116
+2026-11-01T11:55:03 INFO  user-profile/up-node-13 request done id=req-e21cc13d route=/user-profile/v1/update status=200 latency_ms=113
+2026-11-01T11:55:07 INFO  user-profile/up-node-23 request done id=req-8f80f184 route=/user-profile/v1/status status=200 latency_ms=305
+2026-11-01T11:55:11 INFO  user-profile/up-node-18 request done id=req-a0ec10e6 route=/user-profile/v1/status status=503 latency_ms=130
+2026-11-01T11:55:15 INFO  user-profile/up-node-13 pool resize target=user-profile-cache max_pool_size=277 prev=231
+2026-11-01T11:55:22 INFO  user-profile/up-node-12 config applied key=canary.traffic_percent value=false by=sykang
+2026-11-01T11:55:23 INFO  user-profile/up-node-04 backup finished file=/vault/weekly/users_2026w36.tar.zst size_mb=21340 checksum=52fa0b88
+2026-11-01T11:55:29 INFO  user-profile/up-node-06 request done id=req-144d5c64 route=/user-profile/v1/sync status=200 latency_ms=96
+2026-11-01T11:55:35 INFO  user-profile/up-node-15 request done id=req-c75e3b4a route=/user-profile/v1/status status=201 latency_ms=95
+2026-11-01T11:55:36 INFO  user-profile/up-node-14 backup finished file=/vault/weekly/sessions_2026w32.tar.zst size_mb=86147 checksum=02d39981
+2026-11-01T11:55:41 INFO  user-profile/up-node-19 deploy step release=user-profile-4.19.6 step=shift_traffic_50 result=ok took_s=30
+2026-11-01T11:55:47 INFO  user-profile/up-node-08 deploy step release=user-profile-4.11.4 step=pull_image result=ok took_s=180
+2026-11-01T11:55:53 INFO  user-profile/up-node-06 pool resize target=user-profile-upstream max_pool_size=104 prev=110
+2026-11-01T11:55:57 INFO  user-profile/up-node-14 request done id=req-5e449fc3 route=/user-profile/v1/create status=409 latency_ms=41
+2026-11-01T11:56:03 INFO  user-profile/up-node-10 pool resize target=user-profile-upstream max_pool_size=54 prev=110
+2026-11-01T11:56:09 INFO  user-profile/up-node-13 request done id=req-0bbf3991 route=/user-profile/v1/list status=200 latency_ms=315
+2026-11-01T11:56:15 INFO  user-profile/up-node-24 request done id=req-a474cdaa route=/user-profile/v1/sync status=201 latency_ms=57
+2026-11-01T11:56:16 INFO  user-profile/up-node-12 request done id=req-707a0092 route=/user-profile/v1/status status=200 latency_ms=166
+2026-11-01T11:56:20 INFO  user-profile/up-node-19 request done id=req-f3d78463 route=/user-profile/v1/verify status=200 latency_ms=34
+2026-11-01T11:56:21 INFO  user-profile/up-node-13 request done id=req-8599a4c8 route=/user-profile/v1/sync status=200 latency_ms=49
+2026-11-01T11:56:27 INFO  user-profile/up-node-17 request done id=req-a1c2f936 route=/user-profile/v1/update status=503 latency_ms=18
+2026-11-01T11:56:34 INFO  user-profile/up-node-15 deploy step release=user-profile-4.13.8 step=drain result=ok took_s=232
+2026-11-01T11:56:41 WARN  user-profile/up-node-16 alert fired rule=heap_used_high value=85% threshold=77%
+2026-11-01T11:56:48 INFO  user-profile/up-node-04 config applied key=tls.session_cache value=false by=hbyoon
+2026-11-01T11:56:50 INFO  user-profile/up-node-15 request done id=req-65a8a247 route=/user-profile/v1/create status=200 latency_ms=88
+2026-11-01T11:56:55 INFO  user-profile/up-node-05 request done id=req-2911cf9c route=/user-profile/v1/cancel status=200 latency_ms=92
+2026-11-01T11:56:57 INFO  user-profile/up-node-14 cache stats region=ap-ne-2b hit_ratio=69.9% evictions=25562
+2026-11-01T11:57:03 INFO  user-profile/up-node-04 config applied key=dns.ttl_s value=true by=jhpark
+2026-11-01T11:57:04 INFO  user-profile/up-node-07 config applied key=limiter.burst value=8% by=ejlim
+2026-11-01T11:57:06 INFO  user-profile/up-node-16 request done id=req-2694d0ff route=/user-profile/v1/sync status=200 latency_ms=218
+2026-11-01T11:57:10 INFO  user-profile/up-node-21 request done id=req-91df0597 route=/user-profile/v1/get status=409 latency_ms=254
+2026-11-01T11:57:15 INFO  user-profile/up-node-16 pool resize target=user-profile-db max_pool_size=334 prev=328
+2026-11-01T11:57:20 INFO  user-profile/up-node-14 deploy step release=user-profile-4.22.8 step=start result=ok took_s=28
+2026-11-01T11:57:26 INFO  user-profile/up-node-04 request done id=req-8e84e1f0 route=/user-profile/v1/create status=409 latency_ms=44
+2026-11-01T11:57:32 INFO  user-profile/up-node-03 request done id=req-93dae5ad route=/user-profile/v1/verify status=200 latency_ms=184
+2026-11-01T11:57:34 INFO  user-profile/up-node-05 request done id=req-ff6811b1 route=/user-profile/v1/verify status=201 latency_ms=115
+2026-11-01T11:57:38 INFO  user-profile/up-node-13 request done id=req-b126b96a route=/user-profile/v1/status status=200 latency_ms=140
+2026-11-01T11:57:44 INFO  user-profile/up-node-21 backup finished file=/vault/daily/sessions_20261008.tar.zst size_mb=30568 checksum=4a550948
+2026-11-01T11:57:51 INFO  user-profile/up-node-01 request done id=req-00a78557 route=/user-profile/v1/status status=200 latency_ms=227
+2026-11-01T11:57:54 INFO  user-profile/up-node-05 deploy step release=user-profile-4.20.3 step=migrate result=ok took_s=176
+2026-11-01T11:57:55 INFO  user-profile/up-node-10 deploy step release=user-profile-4.13.0 step=warmup result=ok took_s=146
+2026-11-01T11:58:02 ERROR user-profile/up-node-05 job failed job=user-profile-reindex attempt=2 cause=lock_wait_exceeded
+2026-11-01T11:58:07 WARN  user-profile/up-node-06 alert fired rule=disk_usage_warning value=95% threshold=82%
+2026-11-01T11:58:12 INFO  user-profile/up-node-08 deploy step release=user-profile-4.16.4 step=verify result=ok took_s=30
+2026-11-01T11:58:13 INFO  user-profile/up-node-07 request done id=req-4d6361b0 route=/user-profile/v1/verify status=200 latency_ms=260
+2026-11-01T11:58:14 INFO  user-profile/up-node-09 request done id=req-bb8ea57a route=/user-profile/v1/list status=201 latency_ms=77
+2026-11-01T11:58:20 INFO  user-profile/up-node-01 deploy step release=user-profile-4.10.0 step=start result=ok took_s=140
+2026-11-01T11:58:22 INFO  user-profile/up-node-19 deploy step release=user-profile-4.11.4 step=warmup result=ok took_s=56
+2026-11-01T11:58:25 INFO  user-profile/up-node-20 request done id=req-a11f49eb route=/user-profile/v1/update status=200 latency_ms=30
+2026-11-01T11:58:31 INFO  user-profile/up-node-04 request done id=req-ed6909f0 route=/user-profile/v1/cancel status=200 latency_ms=33
+2026-11-01T11:58:36 INFO  user-profile/up-node-23 request done id=req-24376862 route=/user-profile/v1/update status=409 latency_ms=81
+2026-11-01T11:58:37 INFO  user-profile/up-node-07 request done id=req-6a9bdddb route=/user-profile/v1/status status=200 latency_ms=85
+2026-11-01T11:58:42 NOTE  user-profile/up-node-20 operator=mjlee memo="로그 보존 기간은 30일로 유지하기로 함."
+2026-11-01T11:58:44 WARN  user-profile/up-node-08 alert fired rule=gc_pause_long value=91ms threshold=82ms
+2026-11-01T11:58:46 INFO  user-profile/up-node-05 config applied key=breaker.open_ratio value=34 by=jhpark
+2026-11-01T11:58:52 INFO  user-profile/up-node-22 request done id=req-512b1ba3 route=/user-profile/v1/status status=200 latency_ms=121
+2026-11-01T11:58:54 ERROR user-profile/up-node-14 job failed job=user-profile-reindex attempt=2 cause=lock_wait_exceeded
+2026-11-01T11:58:56 INFO  user-profile/up-node-16 ticket linked id=OPS-48109 reason=quota_increase
+2026-11-01T11:59:02 INFO  user-profile/up-node-10 config applied key=breaker.open_ratio value=1661 by=sykang
+2026-11-01T11:59:04 INFO  user-profile/up-node-03 request done id=req-b39324b9 route=/user-profile/v1/update status=200 latency_ms=127
+2026-11-01T11:59:05 WARN  user-profile/up-node-12 alert fired rule=replica_lag_high value=86s threshold=78s
+2026-11-01T11:59:08 INFO  user-profile/up-node-12 deploy step release=user-profile-4.15.6 step=verify result=ok took_s=214
+2026-11-01T11:59:09 INFO  user-profile/up-node-20 request done id=req-309ec11a route=/user-profile/v1/status status=429 latency_ms=57
+2026-11-01T11:59:10 INFO  user-profile/up-node-07 pool resize target=user-profile-cache max_pool_size=158 prev=128
+2026-11-01T11:59:11 WARN  user-profile/up-node-20 alert fired rule=fd_usage_high value=82% threshold=73%
+2026-11-01T11:59:14 INFO  user-profile/up-node-03 config applied key=http.read_timeout_ms value=true by=hbyoon
+2026-11-01T11:59:21 INFO  user-profile/up-node-05 request done id=req-f63b1476 route=/user-profile/v1/sync status=404 latency_ms=110
+2026-11-01T11:59:25 INFO  user-profile/up-node-17 ticket linked id=OPS-48464 reason=cert_rotation
+2026-11-01T11:59:30 INFO  user-profile/up-node-01 request done id=req-0b65d207 route=/user-profile/v1/update status=404 latency_ms=115
+2026-11-01T11:59:33 INFO  user-profile/up-node-24 request done id=req-51e65d3e route=/user-profile/v1/create status=200 latency_ms=22
+2026-11-01T11:59:35 INFO  user-profile/up-node-21 request done id=req-ed5a3db4 route=/user-profile/v1/cancel status=429 latency_ms=60
+2026-11-01T11:59:39 INFO  user-profile/up-node-13 pool resize target=user-profile-worker max_pool_size=372 prev=392
+2026-11-01T11:59:42 INFO  user-profile/up-node-16 config applied key=limiter.rps value=34% by=shkim
+2026-11-01T11:59:49 INFO  user-profile/up-node-14 deploy step release=user-profile-4.15.6 step=migrate result=ok took_s=8
+2026-11-01T11:59:51 INFO  user-profile/up-node-05 cache stats region=ap-ne-2c hit_ratio=56.7% evictions=26637
+2026-11-01T11:59:57 INFO  user-profile/up-node-22 request done id=req-42a1cd9f route=/user-profile/v1/cancel status=503 latency_ms=206
+2026-11-01T12:00:04 INFO  user-profile/up-node-08 deploy step release=user-profile-4.15.2 step=drain result=ok took_s=97
+2026-11-01T12:00:08 INFO  user-profile/up-node-07 request done id=req-fb823653 route=/user-profile/v1/get status=200 latency_ms=257
+2026-11-01T12:00:11 NOTE  user-profile/up-node-08 operator=dwjung memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-01T12:00:12 WARN  user-profile/up-node-11 alert fired rule=heap_used_high value=64% threshold=51%
+2026-11-01T12:00:16 NOTE  user-profile/up-node-09 operator=jhpark memo="up-node-09 재기동 후 지표 정상 확인."
+2026-11-01T12:00:17 ERROR user-profile/up-node-05 job failed job=user-profile-reindex attempt=5 cause=oom_killed
+2026-11-01T12:00:22 INFO  user-profile/up-node-23 request done id=req-fa0662b9 route=/user-profile/v1/status status=200 latency_ms=517
+2026-11-01T12:00:28 INFO  user-profile/up-node-04 request done id=req-410f99ff route=/user-profile/v1/update status=200 latency_ms=136
+2026-11-01T12:00:32 INFO  user-profile/up-node-18 deploy step release=user-profile-4.20.8 step=shift_traffic_50 result=ok took_s=136
+2026-11-01T12:00:38 INFO  user-profile/up-node-02 request done id=req-eb25dc9e route=/user-profile/v1/cancel status=429 latency_ms=71
+2026-11-01T12:00:41 INFO  user-profile/up-node-10 pool resize target=user-profile-worker max_pool_size=11 prev=4
+2026-11-01T12:00:47 INFO  user-profile/up-node-14 deploy step release=user-profile-4.18.7 step=shift_traffic_50 result=ok took_s=37
+2026-11-01T12:00:48 WARN  user-profile/up-node-14 alert fired rule=gc_pause_long value=99ms threshold=94ms
+2026-11-01T12:00:51 INFO  user-profile/up-node-04 request done id=req-60f50b68 route=/user-profile/v1/status status=200 latency_ms=323
+2026-11-01T12:00:56 WARN  user-profile/up-node-08 alert fired rule=replica_lag_high value=50s threshold=45s
+2026-11-01T12:01:03 INFO  user-profile/up-node-17 request done id=req-d4429ca5 route=/user-profile/v1/status status=200 latency_ms=173
+2026-11-01T12:01:07 INFO  user-profile/up-node-03 deploy step release=user-profile-4.10.8 step=shift_traffic_10 result=ok took_s=217
+2026-11-01T12:01:09 INFO  user-profile/up-node-18 pool resize target=user-profile-queue max_pool_size=15 prev=10
+2026-11-01T12:01:16 NOTE  user-profile/up-node-15 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-01T12:01:23 INFO  user-profile/up-node-07 request done id=req-1fbcd2a7 route=/user-profile/v1/create status=200 latency_ms=29
+2026-11-01T12:01:29 INFO  user-profile/up-node-03 request done id=req-f8747026 route=/user-profile/v1/verify status=200 latency_ms=874
+2026-11-01T12:01:30 INFO  user-profile/up-node-20 request done id=req-df3948ce route=/user-profile/v1/verify status=200 latency_ms=348
+2026-11-01T12:01:33 WARN  user-profile/up-node-01 alert fired rule=replica_lag_high value=98s threshold=87s
+2026-11-01T12:01:35 INFO  user-profile/up-node-08 request done id=req-aa790191 route=/user-profile/v1/verify status=404 latency_ms=462
+2026-11-01T12:01:36 INFO  user-profile/up-node-06 cache stats region=us-we-2b hit_ratio=86.1% evictions=5135
+2026-11-01T12:01:37 INFO  user-profile/up-node-24 request done id=req-e4f93ee1 route=/user-profile/v1/create status=404 latency_ms=369
+2026-11-01T12:01:41 ERROR user-profile/up-node-12 job failed job=user-profile-rollup attempt=2 cause=upstream_timeout
+2026-11-01T12:01:42 INFO  user-profile/up-node-01 request done id=req-6b0eaa5a route=/user-profile/v1/verify status=400 latency_ms=31
+2026-11-01T12:01:45 WARN  user-profile/up-node-14 alert fired rule=cpu_steal_high value=94% threshold=93%
+2026-11-01T12:01:52 INFO  user-profile/up-node-08 request done id=req-20c51cd4 route=/user-profile/v1/cancel status=200 latency_ms=76
+2026-11-01T12:01:59 WARN  user-profile/up-node-09 alert fired rule=heap_used_high value=77% threshold=74%
+2026-11-01T12:02:00 INFO  user-profile/up-node-11 request done id=req-11c963ea route=/user-profile/v1/verify status=409 latency_ms=333
+2026-11-01T12:02:05 INFO  user-profile/up-node-23 request done id=req-7ab4feab route=/user-profile/v1/update status=200 latency_ms=54
+2026-11-01T12:02:11 INFO  user-profile/up-node-17 pool resize target=user-profile-upstream max_pool_size=362 prev=419
+2026-11-01T12:02:12 INFO  user-profile/up-node-10 deploy step release=user-profile-4.19.2 step=shift_traffic_10 result=ok took_s=186
+2026-11-01T12:02:14 INFO  user-profile/up-node-18 request done id=req-6b851a9f route=/user-profile/v1/status status=200 latency_ms=157
+2026-11-01T12:02:18 WARN  user-profile/up-node-16 alert fired rule=queue_depth_high value=72 threshold=57
+2026-11-01T12:02:21 INFO  user-profile/up-node-15 request done id=req-4edb33c6 route=/user-profile/v1/cancel status=200 latency_ms=260
+2026-11-01T12:02:26 WARN  user-profile/up-node-23 alert fired rule=gc_pause_long value=52ms threshold=46ms
+2026-11-01T12:02:32 INFO  user-profile/up-node-09 deploy step release=user-profile-4.17.0 step=shift_traffic_50 result=ok took_s=41
+2026-11-01T12:02:37 INFO  user-profile/up-node-23 deploy step release=user-profile-4.15.1 step=warmup result=ok took_s=10
+2026-11-01T12:02:39 INFO  user-profile/up-node-08 deploy step release=user-profile-4.12.3 step=shift_traffic_10 result=ok took_s=178
+2026-11-01T12:02:43 INFO  user-profile/up-node-20 cache stats region=us-we-2b hit_ratio=69.9% evictions=30815
+2026-11-01T12:02:47 INFO  user-profile/up-node-18 request done id=req-27af2dc3 route=/user-profile/v1/get status=429 latency_ms=100
+2026-11-01T12:02:54 INFO  user-profile/up-node-01 config applied key=retry.backoff_ms value=false by=shkim
+2026-11-01T12:02:59 NOTE  user-profile/up-node-07 operator=shkim memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-11-01T12:03:00 INFO  user-profile/up-node-09 deploy step release=user-profile-4.21.0 step=warmup result=ok took_s=67
+2026-11-01T12:03:04 WARN  user-profile/up-node-04 alert fired rule=conn_pool_saturated value=56% threshold=48%
+2026-11-01T12:03:09 INFO  user-profile/up-node-12 deploy step release=user-profile-4.12.1 step=healthcheck result=ok took_s=79
+2026-11-01T12:03:15 INFO  user-profile/up-node-11 request done id=req-7e899e67 route=/user-profile/v1/verify status=200 latency_ms=213
+2026-11-01T12:03:20 INFO  user-profile/up-node-17 pool resize target=user-profile-db max_pool_size=314 prev=373
+2026-11-01T12:03:23 INFO  user-profile/up-node-21 request done id=req-db6a73d9 route=/user-profile/v1/status status=200 latency_ms=47
+2026-11-01T12:03:25 INFO  user-profile/up-node-02 request done id=req-92799b2f route=/user-profile/v1/create status=200 latency_ms=111
+2026-11-01T12:03:28 INFO  user-profile/up-node-15 request done id=req-71b565e7 route=/user-profile/v1/verify status=200 latency_ms=85
+2026-11-01T12:03:33 INFO  user-profile/up-node-11 request done id=req-157c367b route=/user-profile/v1/verify status=200 latency_ms=125
+2026-11-01T12:03:36 INFO  user-profile/up-node-19 request done id=req-cd50f0aa route=/user-profile/v1/cancel status=200 latency_ms=44
+2026-11-01T12:03:38 INFO  user-profile/up-node-08 request done id=req-1ff96c39 route=/user-profile/v1/get status=200 latency_ms=32
+2026-11-01T12:03:43 INFO  user-profile/up-node-24 request done id=req-f1ac2209 route=/user-profile/v1/update status=200 latency_ms=126
+2026-11-01T12:03:46 INFO  user-profile/up-node-05 request done id=req-c87fa794 route=/user-profile/v1/list status=200 latency_ms=407
+2026-11-01T12:03:48 INFO  user-profile/up-node-17 request done id=req-b2a8db45 route=/user-profile/v1/list status=200 latency_ms=120
+2026-11-01T12:03:53 INFO  user-profile/up-node-17 request done id=req-d84c8382 route=/user-profile/v1/sync status=200 latency_ms=87
+2026-11-01T12:03:56 INFO  user-profile/up-node-11 request done id=req-051b4117 route=/user-profile/v1/list status=503 latency_ms=338
+2026-11-01T12:03:59 NOTE  user-profile/up-node-15 operator=shkim memo="점검 창을 55분 연장함. 승인: 한지우 리드."
+2026-11-01T12:04:05 WARN  user-profile/up-node-10 alert fired rule=fd_usage_high value=85% threshold=77%
+2026-11-01T12:04:11 INFO  user-profile/up-node-05 request done id=req-671b3ff7 route=/user-profile/v1/cancel status=200 latency_ms=480
+2026-11-01T12:04:15 INFO  user-profile/up-node-22 request done id=req-be1f2117 route=/user-profile/v1/cancel status=200 latency_ms=247
+2026-11-01T12:04:16 INFO  user-profile/up-node-19 request done id=req-e69fbb46 route=/user-profile/v1/get status=503 latency_ms=196
+2026-11-01T12:04:19 INFO  user-profile/up-node-22 request done id=req-e6d940ec route=/user-profile/v1/verify status=200 latency_ms=112
+2026-11-01T12:04:25 INFO  user-profile/up-node-05 backup finished file=/vault/daily/inventory_20261020.tar.zst size_mb=16220 checksum=444790ef
+2026-11-01T12:04:26 INFO  user-profile/up-node-09 deploy step release=user-profile-4.17.5 step=drain result=ok took_s=179
+2026-11-01T12:04:31 INFO  user-profile/up-node-21 request done id=req-622eb1ca route=/user-profile/v1/sync status=201 latency_ms=211
+2026-11-01T12:04:35 INFO  user-profile/up-node-09 request done id=req-363c8adb route=/user-profile/v1/update status=200 latency_ms=216
+2026-11-01T12:04:36 INFO  user-profile/up-node-07 config applied key=http.max_conns value=4542 by=yjchoi
+2026-11-01T12:04:40 INFO  user-profile/up-node-05 request done id=req-a1b50c8b route=/user-profile/v1/get status=200 latency_ms=146
+2026-11-01T12:04:43 INFO  user-profile/up-node-07 request done id=req-6e061cbc route=/user-profile/v1/sync status=200 latency_ms=255
+2026-11-01T12:04:46 INFO  user-profile/up-node-19 request done id=req-2cdb6e04 route=/user-profile/v1/verify status=200 latency_ms=85
+2026-11-01T12:04:53 INFO  user-profile/up-node-24 request done id=req-bacd5e6f route=/user-profile/v1/cancel status=200 latency_ms=75
+2026-11-01T12:04:54 INFO  user-profile/up-node-06 request done id=req-2083c480 route=/user-profile/v1/cancel status=200 latency_ms=300
+2026-11-01T12:04:58 INFO  user-profile/up-node-24 backup finished file=/vault/daily/inventory_20261025.tar.zst size_mb=16367 checksum=4bcfb717
+2026-11-01T12:05:05 INFO  user-profile/up-node-20 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=47651 checksum=88d28e0e
+2026-11-01T12:05:10 INFO  user-profile/up-node-20 deploy step release=user-profile-4.12.0 step=healthcheck result=ok took_s=52
+2026-11-01T12:05:13 INFO  user-profile/up-node-07 deploy step release=user-profile-4.21.2 step=start result=ok took_s=4
+2026-11-01T12:05:17 INFO  user-profile/up-node-22 request done id=req-464ad5a8 route=/user-profile/v1/update status=200 latency_ms=204
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

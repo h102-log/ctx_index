@@ -1,0 +1,424 @@
+참고용 로그 23: 미디어 저장소(media-store) 이관 구간. '확인'이라고만 답해 줘.
+
+2026-10-27T16:57:41 INFO  media-store/ms-node-23 cache stats region=us-we-2b hit_ratio=95.2% evictions=4822
+2026-10-27T16:57:44 INFO  media-store/ms-node-12 request done id=req-2bb2fe53 route=/media-store/v1/sync status=200 latency_ms=73
+2026-10-27T16:57:49 INFO  media-store/ms-node-20 ticket linked id=OPS-48351 reason=cert_rotation
+2026-10-27T16:57:54 INFO  media-store/ms-node-10 pool resize target=media-store-cache max_pool_size=92 prev=92
+2026-10-27T16:58:00 INFO  media-store/ms-node-06 request done id=req-e52fddac route=/media-store/v1/status status=200 latency_ms=110
+2026-10-27T16:58:04 WARN  media-store/ms-node-15 alert fired rule=cpu_steal_high value=64% threshold=63%
+2026-10-27T16:58:08 INFO  media-store/ms-node-09 request done id=req-08af45e0 route=/media-store/v1/get status=200 latency_ms=42
+2026-10-27T16:58:15 INFO  media-store/ms-node-06 deploy step release=media-store-4.17.9 step=warmup result=ok took_s=104
+2026-10-27T16:58:18 INFO  media-store/ms-node-11 pool resize target=media-store-upstream max_pool_size=376 prev=400
+2026-10-27T16:58:22 INFO  media-store/ms-node-05 ticket linked id=OPS-47046 reason=oncall_handoff
+2026-10-27T16:58:29 INFO  media-store/ms-node-18 request done id=req-3d88ab6a route=/media-store/v1/sync status=200 latency_ms=43
+2026-10-27T16:58:32 NOTE  media-store/ms-node-16 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 33일 남음."
+2026-10-27T16:58:35 NOTE  media-store/ms-node-19 operator=jhpark memo="타임아웃을 34ms에서 57ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-27T16:58:42 INFO  media-store/ms-node-18 deploy step release=media-store-4.19.5 step=shift_traffic_100 result=ok took_s=225
+2026-10-27T16:58:44 INFO  media-store/ms-node-11 deploy step release=media-store-4.11.9 step=shift_traffic_10 result=ok took_s=135
+2026-10-27T16:58:45 INFO  media-store/ms-node-11 config applied key=flush.interval_ms value=120 by=mjlee
+2026-10-27T16:58:52 INFO  media-store/ms-node-13 config applied key=canary.traffic_percent value=295 by=yjchoi
+2026-10-27T16:58:55 INFO  media-store/ms-node-05 config applied key=tls.session_cache value=false by=hbyoon
+2026-10-27T16:58:56 INFO  media-store/ms-node-12 request done id=req-17c601e7 route=/media-store/v1/get status=200 latency_ms=495
+2026-10-27T16:59:01 INFO  media-store/ms-node-10 request done id=req-57d47fc2 route=/media-store/v1/list status=200 latency_ms=149
+2026-10-27T16:59:06 INFO  media-store/ms-node-08 request done id=req-f657e180 route=/media-store/v1/verify status=409 latency_ms=82
+2026-10-27T16:59:08 WARN  media-store/ms-node-07 alert fired rule=replica_lag_high value=80s threshold=68s
+2026-10-27T16:59:13 INFO  media-store/ms-node-23 request done id=req-c6f8b9c5 route=/media-store/v1/list status=200 latency_ms=100
+2026-10-27T16:59:17 INFO  media-store/ms-node-02 deploy step release=media-store-4.14.2 step=shift_traffic_100 result=ok took_s=205
+2026-10-27T16:59:19 INFO  media-store/ms-node-16 cache stats region=ap-ne-2a hit_ratio=59.5% evictions=23211
+2026-10-27T16:59:20 INFO  media-store/ms-node-01 request done id=req-511a9412 route=/media-store/v1/update status=500 latency_ms=127
+2026-10-27T16:59:26 INFO  media-store/ms-node-19 cache stats region=ap-ne-2b hit_ratio=69.2% evictions=10124
+2026-10-27T16:59:29 ERROR media-store/ms-node-12 job failed job=media-store-cleanup attempt=5 cause=bad_checksum
+2026-10-27T16:59:35 INFO  media-store/ms-node-20 ticket linked id=OPS-49286 reason=flaky_healthcheck
+2026-10-27T16:59:36 NOTE  media-store/ms-node-15 operator=hbyoon memo="헬스체크 간격을 12초에서 17초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-27T16:59:43 INFO  media-store/ms-node-08 request done id=req-fc23d4a7 route=/media-store/v1/list status=200 latency_ms=283
+2026-10-27T16:59:50 INFO  media-store/ms-node-05 config applied key=http.max_conns value=false by=yjchoi
+2026-10-27T16:59:56 NOTE  media-store/ms-node-12 operator=ejlim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-27T16:59:59 INFO  media-store/ms-node-09 backup finished file=/vault/weekly/orders_2026w36.tar.zst size_mb=42358 checksum=4534d28b
+2026-10-27T17:00:02 ERROR media-store/ms-node-24 job failed job=media-store-cleanup attempt=5 cause=quota_exceeded
+2026-10-27T17:00:03 INFO  media-store/ms-node-07 pool resize target=media-store-queue max_pool_size=336 prev=295
+2026-10-27T17:00:07 INFO  media-store/ms-node-12 config applied key=log.sample_rate value=4126 by=hbyoon
+2026-10-27T17:00:11 NOTE  media-store/ms-node-15 operator=sykang memo="연동 팀에 변경 공지 완료."
+2026-10-27T17:00:12 INFO  media-store/ms-node-03 request done id=req-01a5f51e route=/media-store/v1/cancel status=500 latency_ms=235
+2026-10-27T17:00:13 INFO  media-store/ms-node-20 deploy step release=media-store-4.10.7 step=healthcheck result=ok took_s=124
+2026-10-27T17:00:18 INFO  media-store/ms-node-15 request done id=req-91d3db3c route=/media-store/v1/list status=400 latency_ms=102
+2026-10-27T17:00:25 INFO  media-store/ms-node-17 config applied key=tls.session_cache value=false by=yjchoi
+2026-10-27T17:00:27 INFO  media-store/ms-node-08 request done id=req-531ca83a route=/media-store/v1/update status=200 latency_ms=115
+2026-10-27T17:00:31 INFO  media-store/ms-node-06 request done id=req-e9da8f06 route=/media-store/v1/cancel status=500 latency_ms=168
+2026-10-27T17:00:35 INFO  media-store/ms-node-15 request done id=req-d1dd27e2 route=/media-store/v1/verify status=200 latency_ms=84
+2026-10-27T17:00:41 WARN  media-store/ms-node-02 alert fired rule=queue_depth_high value=81 threshold=74
+2026-10-27T17:00:46 WARN  media-store/ms-node-20 alert fired rule=heap_used_high value=91% threshold=84%
+2026-10-27T17:00:49 INFO  media-store/ms-node-19 config applied key=http.max_conns value=55% by=shkim
+2026-10-27T17:00:50 NOTE  media-store/ms-node-23 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-27T17:00:51 ERROR media-store/ms-node-19 job failed job=media-store-cleanup attempt=4 cause=lock_wait_exceeded
+2026-10-27T17:00:58 INFO  media-store/ms-node-14 pool resize target=media-store-cache max_pool_size=59 prev=117
+2026-10-27T17:01:03 INFO  media-store/ms-node-13 deploy step release=media-store-4.16.6 step=shift_traffic_100 result=ok took_s=124
+2026-10-27T17:01:04 INFO  media-store/ms-node-19 cache stats region=us-we-2b hit_ratio=83.7% evictions=2063
+2026-10-27T17:01:06 INFO  media-store/ms-node-14 deploy step release=media-store-4.19.6 step=start result=ok took_s=180
+2026-10-27T17:01:12 NOTE  media-store/ms-node-04 operator=mjlee memo="인증서 갱신 일정 확인. 만료까지 30일 남음."
+2026-10-27T17:01:19 NOTE  media-store/ms-node-14 operator=dwjung memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-27T17:01:20 INFO  media-store/ms-node-01 ticket linked id=OPS-48200 reason=dns_ttl_change
+2026-10-27T17:01:21 INFO  media-store/ms-node-08 request done id=req-7b8c984e route=/media-store/v1/get status=200 latency_ms=487
+2026-10-27T17:01:28 INFO  media-store/ms-node-08 request done id=req-34a287a5 route=/media-store/v1/cancel status=500 latency_ms=132
+2026-10-27T17:01:29 WARN  media-store/ms-node-04 alert fired rule=p99_latency_high value=97ms threshold=82ms
+2026-10-27T17:01:34 WARN  media-store/ms-node-10 alert fired rule=p99_latency_high value=73ms threshold=65ms
+2026-10-27T17:01:38 WARN  media-store/ms-node-11 alert fired rule=cpu_steal_high value=53% threshold=40%
+2026-10-27T17:01:42 INFO  media-store/ms-node-23 pool resize target=media-store-queue max_pool_size=111 prev=150
+2026-10-27T17:01:45 INFO  media-store/ms-node-01 deploy step release=media-store-4.16.0 step=shift_traffic_100 result=ok took_s=38
+2026-10-27T17:01:47 INFO  media-store/ms-node-15 config applied key=canary.traffic_percent value=4211 by=ejlim
+2026-10-27T17:01:49 ERROR media-store/ms-node-06 job failed job=media-store-reindex attempt=4 cause=oom_killed
+2026-10-27T17:01:52 WARN  media-store/ms-node-11 alert fired rule=p99_latency_high value=87ms threshold=83ms
+2026-10-27T17:01:54 NOTE  media-store/ms-node-12 operator=jhpark memo="임시 증설 44대 추가. 내일 오전 회수 예정."
+2026-10-27T17:01:55 INFO  media-store/ms-node-23 request done id=req-b15eed73 route=/media-store/v1/cancel status=200 latency_ms=217
+2026-10-27T17:02:01 INFO  media-store/ms-node-22 request done id=req-688c83b5 route=/media-store/v1/cancel status=500 latency_ms=253
+2026-10-27T17:02:04 WARN  media-store/ms-node-16 alert fired rule=heap_used_high value=87% threshold=86%
+2026-10-27T17:02:07 INFO  media-store/ms-node-16 deploy step release=media-store-4.18.2 step=shift_traffic_100 result=ok took_s=195
+2026-10-27T17:02:13 INFO  media-store/ms-node-22 request done id=req-a7ccca59 route=/media-store/v1/update status=200 latency_ms=36
+2026-10-27T17:02:18 INFO  media-store/ms-node-03 config applied key=queue.batch_size value=52 by=shkim
+2026-10-27T17:02:24 INFO  media-store/ms-node-11 config applied key=limiter.burst value=true by=sykang
+2026-10-27T17:02:26 INFO  media-store/ms-node-13 request done id=req-9c8a7323 route=/media-store/v1/create status=200 latency_ms=113
+2026-10-27T17:02:29 INFO  media-store/ms-node-13 backup finished file=/vault/daily/sessions_20261024.tar.zst size_mb=38960 checksum=f6410253
+2026-10-27T17:02:35 INFO  media-store/ms-node-03 deploy step release=media-store-4.14.1 step=healthcheck result=ok took_s=86
+2026-10-27T17:02:38 INFO  media-store/ms-node-10 request done id=req-eb1b80e0 route=/media-store/v1/get status=200 latency_ms=128
+2026-10-27T17:02:42 INFO  media-store/ms-node-22 config applied key=retry.max_attempts value=true by=yjchoi
+2026-10-27T17:02:43 NOTE  media-store/ms-node-24 operator=shkim memo="로그 보존 기간은 26일로 유지하기로 함."
+2026-10-27T17:02:49 INFO  media-store/ms-node-23 pool resize target=media-store-queue max_pool_size=146 prev=142
+2026-10-27T17:02:54 INFO  media-store/ms-node-12 request done id=req-1deebd2f route=/media-store/v1/create status=204 latency_ms=170
+2026-10-27T17:02:55 INFO  media-store/ms-node-22 request done id=req-3f424c14 route=/media-store/v1/cancel status=500 latency_ms=322
+2026-10-27T17:02:59 INFO  media-store/ms-node-18 backup finished file=/vault/daily/users_20261020.tar.zst size_mb=78391 checksum=11ca5abc
+2026-10-27T17:03:01 INFO  media-store/ms-node-19 request done id=req-80fded3e route=/media-store/v1/cancel status=200 latency_ms=398
+2026-10-27T17:03:08 INFO  media-store/ms-node-21 request done id=req-36518e59 route=/media-store/v1/status status=400 latency_ms=279
+2026-10-27T17:03:14 INFO  media-store/ms-node-09 backup finished file=/vault/weekly/users_2026w42.tar.zst size_mb=44061 checksum=08395d06
+2026-10-27T17:03:16 INFO  media-store/ms-node-20 request done id=req-708858b3 route=/media-store/v1/sync status=200 latency_ms=44
+2026-10-27T17:03:19 INFO  media-store/ms-node-01 request done id=req-85193598 route=/media-store/v1/update status=200 latency_ms=149
+2026-10-27T17:03:24 INFO  media-store/ms-node-06 pool resize target=media-store-worker max_pool_size=98 prev=150
+2026-10-27T17:03:28 INFO  media-store/ms-node-20 request done id=req-8f62aa34 route=/media-store/v1/sync status=204 latency_ms=172
+2026-10-27T17:03:31 INFO  media-store/ms-node-06 pool resize target=media-store-db max_pool_size=24 prev=24
+2026-10-27T17:03:36 INFO  media-store/ms-node-21 request done id=req-aaba8650 route=/media-store/v1/update status=200 latency_ms=59
+2026-10-27T17:03:42 INFO  media-store/ms-node-16 request done id=req-032eb358 route=/media-store/v1/list status=200 latency_ms=59
+2026-10-27T17:03:46 INFO  media-store/ms-node-15 request done id=req-dc5cd6e0 route=/media-store/v1/verify status=200 latency_ms=52
+2026-10-27T17:03:49 INFO  media-store/ms-node-15 config applied key=canary.traffic_percent value=1 by=jhpark
+2026-10-27T17:03:54 INFO  media-store/ms-node-04 request done id=req-01e8c593 route=/media-store/v1/update status=400 latency_ms=95
+2026-10-27T17:03:58 WARN  media-store/ms-node-12 alert fired rule=fd_usage_high value=74% threshold=59%
+2026-10-27T17:04:03 INFO  media-store/ms-node-01 request done id=req-dd2592bf route=/media-store/v1/update status=500 latency_ms=127
+2026-10-27T17:04:07 INFO  media-store/ms-node-20 config applied key=dns.ttl_s value=5361 by=yjchoi
+2026-10-27T17:04:11 INFO  media-store/ms-node-03 config applied key=tls.session_cache value=false by=jhpark
+2026-10-27T17:04:18 INFO  media-store/ms-node-24 request done id=req-68d3788a route=/media-store/v1/create status=200 latency_ms=350
+2026-10-27T17:04:23 INFO  media-store/ms-node-03 config applied key=dns.ttl_s value=19% by=ejlim
+2026-10-27T17:04:24 INFO  media-store/ms-node-15 request done id=req-60061a7b route=/media-store/v1/create status=200 latency_ms=266
+2026-10-27T17:04:29 INFO  media-store/ms-node-10 deploy step release=media-store-4.14.5 step=start result=ok took_s=177
+2026-10-27T17:04:31 INFO  media-store/ms-node-17 request done id=req-6fa3b6c3 route=/media-store/v1/verify status=201 latency_ms=221
+2026-10-27T17:04:37 INFO  media-store/ms-node-04 request done id=req-cd2b1d94 route=/media-store/v1/create status=429 latency_ms=247
+2026-10-27T17:04:42 INFO  media-store/ms-node-20 request done id=req-79be6592 route=/media-store/v1/verify status=200 latency_ms=83
+2026-10-27T17:04:49 INFO  media-store/ms-node-22 request done id=req-b8ab6815 route=/media-store/v1/status status=200 latency_ms=50
+2026-10-27T17:04:56 INFO  media-store/ms-node-15 request done id=req-2297f7ee route=/media-store/v1/list status=200 latency_ms=36
+2026-10-27T17:05:01 INFO  media-store/ms-node-04 request done id=req-6f92891e route=/media-store/v1/cancel status=200 latency_ms=248
+2026-10-27T17:05:03 INFO  media-store/ms-node-21 request done id=req-289923e5 route=/media-store/v1/create status=200 latency_ms=218
+2026-10-27T17:05:07 INFO  media-store/ms-node-20 cache stats region=us-we-2b hit_ratio=72.6% evictions=10911
+2026-10-27T17:05:10 ERROR media-store/ms-node-24 job failed job=media-store-rollup attempt=2 cause=lock_wait_exceeded
+2026-10-27T17:05:17 INFO  media-store/ms-node-01 request done id=req-ac4c6d11 route=/media-store/v1/verify status=200 latency_ms=179
+2026-10-27T17:05:22 INFO  media-store/ms-node-03 config applied key=http.read_timeout_ms value=false by=sykang
+2026-10-27T17:05:26 INFO  media-store/ms-node-16 ticket linked id=OPS-49061 reason=dns_ttl_change
+2026-10-27T17:05:27 INFO  media-store/ms-node-01 backup finished file=/vault/weekly/payments_2026w39.tar.zst size_mb=71381 checksum=f60266e2
+2026-10-27T17:05:28 INFO  media-store/ms-node-17 request done id=req-90054366 route=/media-store/v1/cancel status=200 latency_ms=306
+2026-10-27T17:05:32 INFO  media-store/ms-node-14 cache stats region=ap-se-1a hit_ratio=65.5% evictions=26395
+2026-10-27T17:05:39 INFO  media-store/ms-node-11 pool resize target=media-store-cache max_pool_size=17 prev=66
+2026-10-27T17:05:46 INFO  media-store/ms-node-16 deploy step release=media-store-4.11.2 step=pull_image result=ok took_s=228
+2026-10-27T17:05:48 NOTE  media-store/ms-node-06 operator=jhpark memo="타임아웃을 29ms에서 44ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-27T17:05:52 NOTE  media-store/ms-node-21 operator=ejlim memo="연동 팀에 변경 공지 완료."
+2026-10-27T17:05:56 INFO  media-store/ms-node-10 ticket linked id=OPS-48486 reason=oncall_handoff
+2026-10-27T17:06:02 NOTE  media-store/ms-node-08 operator=shkim memo="연동 팀에 변경 공지 완료."
+2026-10-27T17:06:08 INFO  media-store/ms-node-10 request done id=req-15396500 route=/media-store/v1/status status=200 latency_ms=169
+2026-10-27T17:06:09 INFO  media-store/ms-node-23 backup finished file=/vault/weekly/inventory_2026w31.tar.zst size_mb=55171 checksum=92689162
+2026-10-27T17:06:12 INFO  media-store/ms-node-20 backup finished file=/vault/weekly/payments_2026w30.tar.zst size_mb=9000 checksum=78aa7e77
+2026-10-27T17:06:18 INFO  media-store/ms-node-19 request done id=req-0bf9ebe2 route=/media-store/v1/status status=200 latency_ms=149
+2026-10-27T17:06:19 INFO  media-store/ms-node-14 request done id=req-568b30e8 route=/media-store/v1/verify status=201 latency_ms=94
+2026-10-27T17:06:24 NOTE  media-store/ms-node-14 operator=shkim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-27T17:06:27 INFO  media-store/ms-node-04 cache stats region=ap-ne-2c hit_ratio=68.7% evictions=10986
+2026-10-27T17:06:28 WARN  media-store/ms-node-15 alert fired rule=conn_pool_saturated value=81% threshold=78%
+2026-10-27T17:06:35 INFO  media-store/ms-node-02 request done id=req-8d5e4f78 route=/media-store/v1/cancel status=429 latency_ms=417
+2026-10-27T17:06:39 ERROR media-store/ms-node-14 job failed job=media-store-export attempt=3 cause=lock_wait_exceeded
+2026-10-27T17:06:45 INFO  media-store/ms-node-15 request done id=req-e8f9adbd route=/media-store/v1/update status=200 latency_ms=71
+2026-10-27T17:06:47 INFO  media-store/ms-node-07 request done id=req-7c47ee5e route=/media-store/v1/sync status=200 latency_ms=79
+2026-10-27T17:06:53 INFO  media-store/ms-node-23 request done id=req-4bdbb8e9 route=/media-store/v1/get status=429 latency_ms=103
+2026-10-27T17:06:54 INFO  media-store/ms-node-08 request done id=req-056dd240 route=/media-store/v1/update status=200 latency_ms=190
+2026-10-27T17:06:57 ERROR media-store/ms-node-17 job failed job=media-store-cleanup attempt=1 cause=bad_checksum
+2026-10-27T17:07:01 INFO  media-store/ms-node-19 request done id=req-33528faf route=/media-store/v1/verify status=500 latency_ms=82
+2026-10-27T17:07:02 WARN  media-store/ms-node-12 alert fired rule=p99_latency_high value=51ms threshold=44ms
+2026-10-27T17:07:08 ERROR media-store/ms-node-21 job failed job=media-store-reindex attempt=5 cause=lock_wait_exceeded
+2026-10-27T17:07:14 INFO  media-store/ms-node-19 request done id=req-fb996be9 route=/media-store/v1/list status=201 latency_ms=131
+2026-10-27T17:07:19 INFO  media-store/ms-node-09 request done id=req-4ca638b1 route=/media-store/v1/verify status=200 latency_ms=90
+2026-10-27T17:07:20 INFO  media-store/ms-node-10 request done id=req-f1ba0f66 route=/media-store/v1/list status=200 latency_ms=127
+2026-10-27T17:07:22 INFO  media-store/ms-node-01 ticket linked id=OPS-49467 reason=schema_change
+2026-10-27T17:07:28 INFO  media-store/ms-node-20 request done id=req-4842c77b route=/media-store/v1/create status=200 latency_ms=217
+2026-10-27T17:07:34 WARN  media-store/ms-node-22 alert fired rule=cpu_steal_high value=77% threshold=63%
+2026-10-27T17:07:40 INFO  media-store/ms-node-04 deploy step release=media-store-4.10.3 step=drain result=ok took_s=59
+2026-10-27T17:07:41 INFO  media-store/ms-node-16 pool resize target=media-store-queue max_pool_size=286 prev=310
+2026-10-27T17:07:47 INFO  media-store/ms-node-13 request done id=req-94661c2e route=/media-store/v1/list status=200 latency_ms=90
+2026-10-27T17:07:54 INFO  media-store/ms-node-02 config applied key=queue.batch_size value=18 by=dwjung
+2026-10-27T17:07:56 INFO  media-store/ms-node-22 request done id=req-122773cc route=/media-store/v1/update status=200 latency_ms=342
+2026-10-27T17:08:02 INFO  media-store/ms-node-17 config applied key=breaker.half_open_s value=false by=dwjung
+2026-10-27T17:08:07 INFO  media-store/ms-node-12 request done id=req-8a276407 route=/media-store/v1/verify status=409 latency_ms=95
+2026-10-27T17:08:12 INFO  media-store/ms-node-18 pool resize target=media-store-cache max_pool_size=239 prev=268
+2026-10-27T17:08:19 INFO  media-store/ms-node-01 config applied key=retry.max_attempts value=849 by=dwjung
+2026-10-27T17:08:20 INFO  media-store/ms-node-09 request done id=req-00fc3821 route=/media-store/v1/verify status=200 latency_ms=189
+2026-10-27T17:08:27 INFO  media-store/ms-node-01 request done id=req-16dd3522 route=/media-store/v1/list status=200 latency_ms=260
+2026-10-27T17:08:29 INFO  media-store/ms-node-14 config applied key=retry.max_attempts value=33 by=dwjung
+2026-10-27T17:08:35 NOTE  media-store/ms-node-18 operator=yjchoi memo="로그 보존 기간은 10일로 유지하기로 함."
+2026-10-27T17:08:42 INFO  media-store/ms-node-17 pool resize target=media-store-queue max_pool_size=332 prev=279
+2026-10-27T17:08:43 INFO  media-store/ms-node-24 request done id=req-f33dea29 route=/media-store/v1/status status=200 latency_ms=205
+2026-10-27T17:08:49 INFO  media-store/ms-node-12 deploy step release=media-store-4.11.5 step=drain result=ok took_s=148
+2026-10-27T17:08:54 NOTE  media-store/ms-node-06 operator=jhpark memo="ms-node-06 재기동 후 지표 정상 확인."
+2026-10-27T17:08:59 INFO  media-store/ms-node-03 ticket linked id=OPS-48715 reason=cert_rotation
+2026-10-27T17:09:05 INFO  media-store/ms-node-13 config applied key=tls.session_cache value=false by=sykang
+2026-10-27T17:09:08 NOTE  media-store/ms-node-05 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 7일 남음."
+2026-10-27T17:09:11 INFO  media-store/ms-node-10 request done id=req-fbe0b042 route=/media-store/v1/status status=200 latency_ms=24
+2026-10-27T17:09:14 INFO  media-store/ms-node-11 request done id=req-29a8258d route=/media-store/v1/create status=204 latency_ms=62
+2026-10-27T17:09:19 INFO  media-store/ms-node-02 ticket linked id=OPS-49900 reason=quota_increase
+2026-10-27T17:09:24 INFO  media-store/ms-node-21 backup finished file=/vault/weekly/inventory_2026w31.tar.zst size_mb=66458 checksum=133b9a31
+2026-10-27T17:09:29 INFO  media-store/ms-node-13 cache stats region=ap-ne-2b hit_ratio=92.0% evictions=37438
+2026-10-27T17:09:36 INFO  media-store/ms-node-11 request done id=req-8b45781b route=/media-store/v1/cancel status=429 latency_ms=389
+2026-10-27T17:09:37 WARN  media-store/ms-node-23 alert fired rule=disk_usage_warning value=88% threshold=84%
+2026-10-27T17:09:43 INFO  media-store/ms-node-17 request done id=req-39198a13 route=/media-store/v1/sync status=200 latency_ms=25
+2026-10-27T17:09:48 INFO  media-store/ms-node-10 request done id=req-2f41fa54 route=/media-store/v1/list status=409 latency_ms=42
+2026-10-27T17:09:53 INFO  media-store/ms-node-13 request done id=req-32de4263 route=/media-store/v1/create status=200 latency_ms=204
+2026-10-27T17:09:57 INFO  media-store/ms-node-06 request done id=req-525e2e4c route=/media-store/v1/sync status=200 latency_ms=91
+2026-10-27T17:09:58 ERROR media-store/ms-node-18 job failed job=media-store-cleanup attempt=3 cause=lock_wait_exceeded
+2026-10-27T17:10:01 INFO  media-store/ms-node-11 request done id=req-1eda5cfd route=/media-store/v1/sync status=200 latency_ms=229
+2026-10-27T17:10:07 INFO  media-store/ms-node-11 request done id=req-185aa069 route=/media-store/v1/update status=200 latency_ms=173
+2026-10-27T17:10:10 INFO  media-store/ms-node-18 request done id=req-9b98714e route=/media-store/v1/sync status=200 latency_ms=483
+2026-10-27T17:10:17 INFO  media-store/ms-node-13 deploy step release=media-store-4.20.7 step=warmup result=ok took_s=145
+2026-10-27T17:10:20 INFO  media-store/ms-node-21 request done id=req-97c97824 route=/media-store/v1/create status=200 latency_ms=36
+2026-10-27T17:10:23 INFO  media-store/ms-node-15 deploy step release=media-store-4.12.0 step=shift_traffic_50 result=ok took_s=53
+2026-10-27T17:10:30 WARN  media-store/ms-node-12 alert fired rule=error_ratio_high value=90% threshold=79%
+2026-10-27T17:10:32 INFO  media-store/ms-node-10 pool resize target=media-store-queue max_pool_size=79 prev=44
+2026-10-27T17:10:38 WARN  media-store/ms-node-15 alert fired rule=disk_usage_warning value=69% threshold=55%
+2026-10-27T17:10:39 INFO  media-store/ms-node-15 config applied key=gc.pause_target_ms value=50 by=sykang
+2026-10-27T17:10:44 INFO  media-store/ms-node-04 request done id=req-db8d05e8 route=/media-store/v1/sync status=200 latency_ms=114
+2026-10-27T17:10:50 INFO  media-store/ms-node-21 pool resize target=media-store-worker max_pool_size=180 prev=160
+2026-10-27T17:10:52 INFO  media-store/ms-node-10 request done id=req-2c430bce route=/media-store/v1/create status=200 latency_ms=224
+2026-10-27T17:10:56 INFO  media-store/ms-node-21 pool resize target=media-store-db max_pool_size=53 prev=4
+2026-10-27T17:10:58 INFO  media-store/ms-node-14 pool resize target=media-store-db max_pool_size=333 prev=309
+2026-10-27T17:11:02 INFO  media-store/ms-node-10 deploy step release=media-store-4.22.9 step=verify result=ok took_s=29
+2026-10-27T17:11:07 INFO  media-store/ms-node-21 pool resize target=media-store-db max_pool_size=178 prev=211
+2026-10-27T17:11:10 INFO  media-store/ms-node-18 request done id=req-5fb80943 route=/media-store/v1/list status=200 latency_ms=118
+2026-10-27T17:11:13 INFO  media-store/ms-node-16 request done id=req-10997185 route=/media-store/v1/update status=200 latency_ms=53
+2026-10-27T17:11:19 NOTE  media-store/ms-node-04 operator=ejlim memo="임시 증설 48대 추가. 내일 오전 회수 예정."
+2026-10-27T17:11:23 INFO  media-store/ms-node-15 config applied key=queue.visibility_s value=959 by=jhpark
+2026-10-27T17:11:27 INFO  media-store/ms-node-01 request done id=req-6650014e route=/media-store/v1/create status=200 latency_ms=162
+2026-10-27T17:11:34 INFO  media-store/ms-node-19 config applied key=http.max_conns value=false by=ejlim
+2026-10-27T17:11:40 INFO  media-store/ms-node-19 deploy step release=media-store-4.15.2 step=warmup result=ok took_s=103
+2026-10-27T17:11:47 INFO  media-store/ms-node-06 pool resize target=media-store-db max_pool_size=387 prev=368
+2026-10-27T17:11:51 INFO  media-store/ms-node-14 deploy step release=media-store-4.10.4 step=start result=ok took_s=113
+2026-10-27T17:11:58 INFO  media-store/ms-node-21 request done id=req-6056cf0d route=/media-store/v1/create status=200 latency_ms=95
+2026-10-27T17:12:01 INFO  media-store/ms-node-10 request done id=req-6b401030 route=/media-store/v1/cancel status=200 latency_ms=393
+2026-10-27T17:12:04 INFO  media-store/ms-node-13 ticket linked id=OPS-48275 reason=runbook_update
+2026-10-27T17:12:08 INFO  media-store/ms-node-12 request done id=req-80a6398f route=/media-store/v1/verify status=200 latency_ms=76
+2026-10-27T17:12:09 NOTE  media-store/ms-node-20 operator=jhpark memo="타임아웃을 38ms에서 40ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-27T17:12:13 WARN  media-store/ms-node-18 alert fired rule=cpu_steal_high value=53% threshold=50%
+2026-10-27T17:12:17 INFO  media-store/ms-node-14 request done id=req-10142b33 route=/media-store/v1/status status=201 latency_ms=93
+2026-10-27T17:12:22 INFO  media-store/ms-node-04 deploy step release=media-store-4.14.3 step=verify result=ok took_s=159
+2026-10-27T17:12:29 INFO  media-store/ms-node-01 request done id=req-5ae0ff8e route=/media-store/v1/update status=200 latency_ms=116
+2026-10-27T17:12:33 WARN  media-store/ms-node-16 alert fired rule=heap_used_high value=75% threshold=61%
+2026-10-27T17:12:35 INFO  media-store/ms-node-11 cache stats region=us-we-2b hit_ratio=96.8% evictions=31545
+2026-10-27T17:12:39 INFO  media-store/ms-node-18 config applied key=limiter.burst value=36% by=yjchoi
+2026-10-27T17:12:45 INFO  media-store/ms-node-02 pool resize target=media-store-worker max_pool_size=224 prev=210
+2026-10-27T17:12:52 INFO  media-store/ms-node-11 request done id=req-ce60fdb8 route=/media-store/v1/update status=409 latency_ms=17
+2026-10-27T17:12:53 INFO  media-store/ms-node-10 request done id=req-b7c8a687 route=/media-store/v1/list status=204 latency_ms=140
+2026-10-27T17:12:59 WARN  media-store/ms-node-19 alert fired rule=queue_depth_high value=66 threshold=64
+2026-10-27T17:13:02 INFO  media-store/ms-node-02 request done id=req-ce9286a4 route=/media-store/v1/list status=200 latency_ms=203
+2026-10-27T17:13:06 INFO  media-store/ms-node-07 config applied key=retry.max_attempts value=58% by=hbyoon
+2026-10-27T17:13:12 INFO  media-store/ms-node-04 backup finished file=/vault/weekly/inventory_2026w44.tar.zst size_mb=23079 checksum=24813762
+2026-10-27T17:13:17 INFO  media-store/ms-node-13 request done id=req-0ed25bfe route=/media-store/v1/update status=200 latency_ms=330
+2026-10-27T17:13:22 INFO  media-store/ms-node-16 request done id=req-f4dd0a45 route=/media-store/v1/cancel status=200 latency_ms=199
+2026-10-27T17:13:28 INFO  media-store/ms-node-22 request done id=req-8f62a6ce route=/media-store/v1/update status=400 latency_ms=103
+2026-10-27T17:13:34 INFO  media-store/ms-node-04 deploy step release=media-store-4.21.2 step=shift_traffic_10 result=ok took_s=55
+2026-10-27T17:13:37 INFO  media-store/ms-node-05 pool resize target=media-store-upstream max_pool_size=81 prev=124
+2026-10-27T17:13:40 INFO  media-store/ms-node-01 request done id=req-ddbb919c route=/media-store/v1/verify status=200 latency_ms=42
+2026-10-27T17:13:45 INFO  media-store/ms-node-20 request done id=req-b85b886c route=/media-store/v1/cancel status=201 latency_ms=81
+2026-10-27T17:13:51 WARN  media-store/ms-node-02 alert fired rule=disk_usage_warning value=90% threshold=87%
+2026-10-27T17:13:57 ERROR media-store/ms-node-01 job failed job=media-store-cleanup attempt=2 cause=lock_wait_exceeded
+2026-10-27T17:14:03 INFO  media-store/ms-node-03 request done id=req-9fcb1f43 route=/media-store/v1/cancel status=200 latency_ms=102
+2026-10-27T17:14:04 INFO  media-store/ms-node-11 request done id=req-704e61f5 route=/media-store/v1/sync status=200 latency_ms=208
+2026-10-27T17:14:07 INFO  media-store/ms-node-21 cache stats region=ap-ne-2b hit_ratio=62.2% evictions=3189
+2026-10-27T17:14:11 INFO  media-store/ms-node-08 pool resize target=media-store-upstream max_pool_size=380 prev=400
+2026-10-27T17:14:16 INFO  media-store/ms-node-14 pool resize target=media-store-worker max_pool_size=306 prev=257
+2026-10-27T17:14:18 INFO  media-store/ms-node-02 request done id=req-be030270 route=/media-store/v1/cancel status=200 latency_ms=547
+2026-10-27T17:14:20 INFO  media-store/ms-node-15 request done id=req-badddc3d route=/media-store/v1/status status=200 latency_ms=92
+2026-10-27T17:14:26 NOTE  media-store/ms-node-13 operator=shkim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-27T17:14:31 INFO  media-store/ms-node-02 request done id=req-0d31f488 route=/media-store/v1/create status=404 latency_ms=161
+2026-10-27T17:14:32 INFO  media-store/ms-node-08 ticket linked id=OPS-49133 reason=oncall_handoff
+2026-10-27T17:14:39 INFO  media-store/ms-node-20 pool resize target=media-store-cache max_pool_size=348 prev=376
+2026-10-27T17:14:41 INFO  media-store/ms-node-01 request done id=req-60b4e634 route=/media-store/v1/get status=200 latency_ms=59
+2026-10-27T17:14:42 WARN  media-store/ms-node-03 alert fired rule=conn_pool_saturated value=66% threshold=63%
+2026-10-27T17:14:45 INFO  media-store/ms-node-24 deploy step release=media-store-4.18.1 step=shift_traffic_10 result=ok took_s=31
+2026-10-27T17:14:52 INFO  media-store/ms-node-16 request done id=req-6f89c5a5 route=/media-store/v1/sync status=503 latency_ms=95
+2026-10-27T17:14:53 INFO  media-store/ms-node-08 ticket linked id=OPS-47167 reason=schema_change
+2026-10-27T17:14:58 INFO  media-store/ms-node-14 deploy step release=media-store-4.13.0 step=shift_traffic_100 result=ok took_s=197
+2026-10-27T17:15:05 WARN  media-store/ms-node-03 alert fired rule=replica_lag_high value=57s threshold=42s
+2026-10-27T17:15:10 INFO  media-store/ms-node-10 request done id=req-451c69f2 route=/media-store/v1/update status=200 latency_ms=66
+2026-10-27T17:15:14 INFO  media-store/ms-node-09 request done id=req-4cc8326a route=/media-store/v1/cancel status=200 latency_ms=143
+2026-10-27T17:15:18 INFO  media-store/ms-node-08 request done id=req-43818068 route=/media-store/v1/create status=200 latency_ms=95
+2026-10-27T17:15:19 INFO  media-store/ms-node-19 pool resize target=media-store-upstream max_pool_size=342 prev=387
+2026-10-27T17:15:23 INFO  media-store/ms-node-10 deploy step release=media-store-4.12.5 step=pull_image result=ok took_s=88
+2026-10-27T17:15:24 INFO  media-store/ms-node-20 backup finished file=/vault/daily/users_20261023.tar.zst size_mb=41883 checksum=b2aa5f47
+2026-10-27T17:15:31 INFO  media-store/ms-node-21 request done id=req-5a07f65f route=/media-store/v1/status status=200 latency_ms=94
+2026-10-27T17:15:34 INFO  media-store/ms-node-11 deploy step release=media-store-4.22.2 step=warmup result=ok took_s=56
+2026-10-27T17:15:36 INFO  media-store/ms-node-07 pool resize target=media-store-worker max_pool_size=153 prev=154
+2026-10-27T17:15:42 WARN  media-store/ms-node-10 alert fired rule=replica_lag_high value=69s threshold=67s
+2026-10-27T17:15:47 INFO  media-store/ms-node-23 request done id=req-efc1d5c6 route=/media-store/v1/verify status=200 latency_ms=177
+2026-10-27T17:15:48 INFO  media-store/ms-node-04 request done id=req-773b134b route=/media-store/v1/create status=400 latency_ms=41
+2026-10-27T17:15:51 INFO  media-store/ms-node-06 deploy step release=media-store-4.18.8 step=migrate result=ok took_s=134
+2026-10-27T17:15:52 WARN  media-store/ms-node-04 alert fired rule=fd_usage_high value=54% threshold=45%
+2026-10-27T17:15:53 INFO  media-store/ms-node-08 deploy step release=media-store-4.13.8 step=shift_traffic_10 result=ok took_s=194
+2026-10-27T17:15:57 INFO  media-store/ms-node-19 ticket linked id=OPS-47882 reason=quota_increase
+2026-10-27T17:16:02 INFO  media-store/ms-node-17 config applied key=http.max_conns value=true by=ejlim
+2026-10-27T17:16:07 INFO  media-store/ms-node-24 ticket linked id=OPS-48312 reason=dns_ttl_change
+2026-10-27T17:16:08 WARN  media-store/ms-node-17 alert fired rule=replica_lag_high value=52s threshold=50s
+2026-10-27T17:16:13 INFO  media-store/ms-node-03 request done id=req-97f61b99 route=/media-store/v1/status status=200 latency_ms=136
+2026-10-27T17:16:16 INFO  media-store/ms-node-16 request done id=req-08e28548 route=/media-store/v1/status status=429 latency_ms=162
+2026-10-27T17:16:17 INFO  media-store/ms-node-17 request done id=req-7b365813 route=/media-store/v1/verify status=200 latency_ms=134
+2026-10-27T17:16:24 ERROR media-store/ms-node-03 job failed job=media-store-rollup attempt=3 cause=bad_checksum
+2026-10-27T17:16:31 INFO  media-store/ms-node-14 request done id=req-cde9dbff route=/media-store/v1/cancel status=503 latency_ms=192
+2026-10-27T17:16:38 INFO  media-store/ms-node-09 request done id=req-1b250d45 route=/media-store/v1/update status=200 latency_ms=215
+2026-10-27T17:16:43 INFO  media-store/ms-node-24 ticket linked id=OPS-49741 reason=quota_increase
+2026-10-27T17:16:47 NOTE  media-store/ms-node-03 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 7일 남음."
+2026-10-27T17:16:50 INFO  media-store/ms-node-17 request done id=req-eb743f76 route=/media-store/v1/verify status=200 latency_ms=134
+2026-10-27T17:16:55 WARN  media-store/ms-node-17 alert fired rule=heap_used_high value=62% threshold=48%
+2026-10-27T17:17:00 INFO  media-store/ms-node-24 deploy step release=media-store-4.19.2 step=verify result=ok took_s=206
+2026-10-27T17:17:02 NOTE  media-store/ms-node-11 operator=shkim memo="점검 창을 24분 연장함. 승인: 한지우 리드."
+2026-10-27T17:17:06 INFO  media-store/ms-node-17 ticket linked id=OPS-49652 reason=dependency_upgrade
+2026-10-27T17:17:09 WARN  media-store/ms-node-14 alert fired rule=gc_pause_long value=61ms threshold=56ms
+2026-10-27T17:17:16 INFO  media-store/ms-node-16 request done id=req-73715825 route=/media-store/v1/create status=200 latency_ms=53
+2026-10-27T17:17:22 INFO  media-store/ms-node-21 request done id=req-c2897181 route=/media-store/v1/cancel status=200 latency_ms=30
+2026-10-27T17:17:25 INFO  media-store/ms-node-04 pool resize target=media-store-db max_pool_size=130 prev=187
+2026-10-27T17:17:28 INFO  media-store/ms-node-03 pool resize target=media-store-queue max_pool_size=203 prev=194
+2026-10-27T17:17:30 INFO  media-store/ms-node-09 request done id=req-cea57f50 route=/media-store/v1/create status=500 latency_ms=201
+2026-10-27T17:17:33 INFO  media-store/ms-node-12 request done id=req-151c62f8 route=/media-store/v1/list status=404 latency_ms=65
+2026-10-27T17:17:34 INFO  media-store/ms-node-11 pool resize target=media-store-cache max_pool_size=246 prev=188
+2026-10-27T17:17:38 INFO  media-store/ms-node-06 request done id=req-45e3cd4b route=/media-store/v1/verify status=201 latency_ms=235
+2026-10-27T17:17:44 INFO  media-store/ms-node-11 request done id=req-d3f22e98 route=/media-store/v1/get status=201 latency_ms=82
+2026-10-27T17:17:45 INFO  media-store/ms-node-13 request done id=req-b62a2d8a route=/media-store/v1/verify status=204 latency_ms=23
+2026-10-27T17:17:50 INFO  media-store/ms-node-24 request done id=req-0da61eaa route=/media-store/v1/status status=404 latency_ms=92
+2026-10-27T17:17:55 ERROR media-store/ms-node-04 job failed job=media-store-cleanup attempt=1 cause=oom_killed
+2026-10-27T17:17:58 INFO  media-store/ms-node-09 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=48399 checksum=1468f6dd
+2026-10-27T17:18:01 INFO  media-store/ms-node-20 request done id=req-fc23223d route=/media-store/v1/list status=200 latency_ms=77
+2026-10-27T17:18:06 INFO  media-store/ms-node-10 request done id=req-9e8e3150 route=/media-store/v1/get status=200 latency_ms=103
+2026-10-27T17:18:12 INFO  media-store/ms-node-14 request done id=req-72acab9f route=/media-store/v1/verify status=200 latency_ms=1078
+2026-10-27T17:18:19 INFO  media-store/ms-node-08 deploy step release=media-store-4.22.6 step=migrate result=ok took_s=95
+2026-10-27T17:18:21 INFO  media-store/ms-node-07 request done id=req-1f796f9e route=/media-store/v1/status status=200 latency_ms=121
+2026-10-27T17:18:25 INFO  media-store/ms-node-01 request done id=req-658c587a route=/media-store/v1/create status=404 latency_ms=68
+2026-10-27T17:18:26 INFO  media-store/ms-node-17 pool resize target=media-store-db max_pool_size=342 prev=306
+2026-10-27T17:18:30 WARN  media-store/ms-node-19 alert fired rule=replica_lag_high value=88s threshold=77s
+2026-10-27T17:18:34 INFO  media-store/ms-node-16 pool resize target=media-store-worker max_pool_size=47 prev=48
+2026-10-27T17:18:35 INFO  media-store/ms-node-05 request done id=req-469a9eb2 route=/media-store/v1/cancel status=200 latency_ms=79
+2026-10-27T17:18:42 WARN  media-store/ms-node-24 alert fired rule=disk_usage_warning value=85% threshold=83%
+2026-10-27T17:18:46 INFO  media-store/ms-node-19 request done id=req-10701917 route=/media-store/v1/get status=400 latency_ms=87
+2026-10-27T17:18:50 INFO  media-store/ms-node-19 pool resize target=media-store-db max_pool_size=77 prev=62
+2026-10-27T17:18:53 INFO  media-store/ms-node-12 request done id=req-2ffd667f route=/media-store/v1/create status=200 latency_ms=169
+2026-10-27T17:18:55 INFO  media-store/ms-node-15 request done id=req-c697914c route=/media-store/v1/cancel status=200 latency_ms=50
+2026-10-27T17:19:01 INFO  media-store/ms-node-14 request done id=req-7d7ff7dc route=/media-store/v1/status status=503 latency_ms=691
+2026-10-27T17:19:04 INFO  media-store/ms-node-09 request done id=req-5a8ebaf9 route=/media-store/v1/cancel status=200 latency_ms=168
+2026-10-27T17:19:09 INFO  media-store/ms-node-12 request done id=req-094b137e route=/media-store/v1/cancel status=200 latency_ms=217
+2026-10-27T17:19:16 WARN  media-store/ms-node-15 alert fired rule=conn_pool_saturated value=76% threshold=63%
+2026-10-27T17:19:17 INFO  media-store/ms-node-13 pool resize target=media-store-upstream max_pool_size=125 prev=91
+2026-10-27T17:19:19 INFO  media-store/ms-node-18 request done id=req-15d326ef route=/media-store/v1/update status=200 latency_ms=85
+2026-10-27T17:19:24 INFO  media-store/ms-node-08 request done id=req-8cbda637 route=/media-store/v1/update status=503 latency_ms=45
+2026-10-27T17:19:28 INFO  media-store/ms-node-11 backup finished file=/vault/daily/audit_20261009.tar.zst size_mb=3105 checksum=422dec6b
+2026-10-27T17:19:33 INFO  media-store/ms-node-16 config applied key=log.sample_rate value=16% by=hbyoon
+2026-10-27T17:19:38 INFO  media-store/ms-node-23 ticket linked id=OPS-48174 reason=cert_rotation
+2026-10-27T17:19:43 INFO  media-store/ms-node-20 request done id=req-c1680f80 route=/media-store/v1/cancel status=200 latency_ms=31
+2026-10-27T17:19:46 INFO  media-store/ms-node-07 ticket linked id=OPS-47048 reason=cert_rotation
+2026-10-27T17:19:50 INFO  media-store/ms-node-03 request done id=req-0830f65d route=/media-store/v1/sync status=200 latency_ms=70
+2026-10-27T17:19:53 INFO  media-store/ms-node-17 request done id=req-70adc5de route=/media-store/v1/verify status=409 latency_ms=151
+2026-10-27T17:19:58 INFO  media-store/ms-node-15 config applied key=limiter.rps value=true by=ejlim
+2026-10-27T17:20:05 INFO  media-store/ms-node-14 deploy step release=media-store-4.12.3 step=start result=ok took_s=56
+2026-10-27T17:20:08 INFO  media-store/ms-node-04 ticket linked id=OPS-48991 reason=oncall_handoff
+2026-10-27T17:20:12 INFO  media-store/ms-node-12 request done id=req-d161ebad route=/media-store/v1/list status=204 latency_ms=203
+2026-10-27T17:20:19 INFO  media-store/ms-node-01 request done id=req-c56a2556 route=/media-store/v1/verify status=429 latency_ms=175
+2026-10-27T17:20:25 INFO  media-store/ms-node-22 request done id=req-adf44640 route=/media-store/v1/list status=200 latency_ms=129
+2026-10-27T17:20:31 INFO  media-store/ms-node-12 request done id=req-067f87dc route=/media-store/v1/create status=201 latency_ms=49
+2026-10-27T17:20:38 NOTE  media-store/ms-node-17 operator=shkim memo="동시 처리 수를 54에서 16로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-27T17:20:44 ERROR media-store/ms-node-04 job failed job=media-store-export attempt=3 cause=dns_failure
+2026-10-27T17:20:48 INFO  media-store/ms-node-06 ticket linked id=OPS-47389 reason=dependency_upgrade
+2026-10-27T17:20:54 INFO  media-store/ms-node-11 request done id=req-ecb6d2f0 route=/media-store/v1/update status=429 latency_ms=639
+2026-10-27T17:20:55 INFO  media-store/ms-node-23 request done id=req-ff64269f route=/media-store/v1/sync status=200 latency_ms=241
+2026-10-27T17:21:02 INFO  media-store/ms-node-03 deploy step release=media-store-4.12.2 step=migrate result=ok took_s=97
+2026-10-27T17:21:06 INFO  media-store/ms-node-08 request done id=req-b074dc3b route=/media-store/v1/update status=200 latency_ms=62
+2026-10-27T17:21:07 INFO  media-store/ms-node-23 ticket linked id=OPS-48419 reason=log_volume_spike
+2026-10-27T17:21:11 INFO  media-store/ms-node-02 request done id=req-e070480b route=/media-store/v1/list status=200 latency_ms=134
+2026-10-27T17:21:16 INFO  media-store/ms-node-20 request done id=req-3e326cff route=/media-store/v1/status status=400 latency_ms=152
+2026-10-27T17:21:20 INFO  media-store/ms-node-11 request done id=req-fd50fe21 route=/media-store/v1/list status=400 latency_ms=83
+2026-10-27T17:21:23 INFO  media-store/ms-node-11 request done id=req-e9d91fbd route=/media-store/v1/get status=200 latency_ms=241
+2026-10-27T17:21:29 INFO  media-store/ms-node-16 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=86333 checksum=5bf8a184
+2026-10-27T17:21:34 INFO  media-store/ms-node-19 pool resize target=media-store-queue max_pool_size=230 prev=219
+2026-10-27T17:21:37 NOTE  media-store/ms-node-17 operator=sykang memo="로그 보존 기간은 25일로 유지하기로 함."
+2026-10-27T17:21:38 INFO  media-store/ms-node-21 ticket linked id=OPS-49740 reason=dns_ttl_change
+2026-10-27T17:21:43 ERROR media-store/ms-node-18 job failed job=media-store-export attempt=1 cause=quota_exceeded
+2026-10-27T17:21:44 INFO  media-store/ms-node-15 backup finished file=/vault/daily/audit_20261018.tar.zst size_mb=64447 checksum=34db57b9
+2026-10-27T17:21:51 INFO  media-store/ms-node-15 request done id=req-585c73b5 route=/media-store/v1/sync status=400 latency_ms=89
+2026-10-27T17:21:57 INFO  media-store/ms-node-22 deploy step release=media-store-4.20.5 step=pull_image result=ok took_s=61
+2026-10-27T17:21:59 INFO  media-store/ms-node-14 request done id=req-05371e7b route=/media-store/v1/get status=409 latency_ms=379
+2026-10-27T17:22:02 NOTE  media-store/ms-node-09 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-27T17:22:09 WARN  media-store/ms-node-13 alert fired rule=p99_latency_high value=95ms threshold=94ms
+2026-10-27T17:22:10 INFO  media-store/ms-node-02 request done id=req-2f1f1a54 route=/media-store/v1/status status=200 latency_ms=139
+2026-10-27T17:22:14 INFO  media-store/ms-node-09 config applied key=retry.backoff_ms value=false by=hbyoon
+2026-10-27T17:22:16 WARN  media-store/ms-node-17 alert fired rule=queue_depth_high value=96 threshold=81
+2026-10-27T17:22:18 INFO  media-store/ms-node-13 request done id=req-3b4e941e route=/media-store/v1/sync status=200 latency_ms=215
+2026-10-27T17:22:25 INFO  media-store/ms-node-21 pool resize target=media-store-cache max_pool_size=377 prev=393
+2026-10-27T17:22:29 INFO  media-store/ms-node-08 request done id=req-71272b08 route=/media-store/v1/list status=200 latency_ms=597
+2026-10-27T17:22:33 INFO  media-store/ms-node-19 cache stats region=ap-ne-2a hit_ratio=75.9% evictions=37588
+2026-10-27T17:22:38 INFO  media-store/ms-node-06 request done id=req-705dcd5b route=/media-store/v1/sync status=200 latency_ms=328
+2026-10-27T17:22:42 WARN  media-store/ms-node-07 alert fired rule=gc_pause_long value=61ms threshold=46ms
+2026-10-27T17:22:43 INFO  media-store/ms-node-02 deploy step release=media-store-4.11.1 step=healthcheck result=ok took_s=157
+2026-10-27T17:22:46 INFO  media-store/ms-node-01 request done id=req-ab25c402 route=/media-store/v1/create status=200 latency_ms=62
+2026-10-27T17:22:52 INFO  media-store/ms-node-03 request done id=req-896d7432 route=/media-store/v1/create status=200 latency_ms=53
+2026-10-27T17:22:55 INFO  media-store/ms-node-09 request done id=req-d8df69df route=/media-store/v1/cancel status=503 latency_ms=68
+2026-10-27T17:22:56 INFO  media-store/ms-node-21 config applied key=gc.pause_target_ms value=81% by=dwjung
+2026-10-27T17:22:58 INFO  media-store/ms-node-14 config applied key=log.sample_rate value=true by=sykang
+2026-10-27T17:22:59 INFO  media-store/ms-node-16 request done id=req-ba0f19e6 route=/media-store/v1/sync status=200 latency_ms=89
+2026-10-27T17:23:04 INFO  media-store/ms-node-03 config applied key=worker.concurrency value=false by=ejlim
+2026-10-27T17:23:11 INFO  media-store/ms-node-14 request done id=req-a829dee3 route=/media-store/v1/sync status=200 latency_ms=49
+2026-10-27T17:23:15 ERROR media-store/ms-node-02 job failed job=media-store-export attempt=2 cause=upstream_timeout
+2026-10-27T17:23:22 INFO  media-store/ms-node-14 request done id=req-0b43ade0 route=/media-store/v1/status status=429 latency_ms=97
+2026-10-27T17:23:26 INFO  media-store/ms-node-10 request done id=req-e19f0b3e route=/media-store/v1/verify status=200 latency_ms=102
+2026-10-27T17:23:32 INFO  media-store/ms-node-04 request done id=req-fdacc005 route=/media-store/v1/cancel status=500 latency_ms=54
+2026-10-27T17:23:36 NOTE  media-store/ms-node-13 operator=mjlee memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-27T17:23:41 INFO  media-store/ms-node-07 request done id=req-225e327a route=/media-store/v1/status status=503 latency_ms=39
+2026-10-27T17:23:42 INFO  media-store/ms-node-17 pool resize target=media-store-db max_pool_size=154 prev=95
+2026-10-27T17:23:48 INFO  media-store/ms-node-02 config applied key=shard.count value=3806 by=sykang
+2026-10-27T17:23:53 INFO  media-store/ms-node-04 request done id=req-d2b7fbcf route=/media-store/v1/get status=200 latency_ms=114
+2026-10-27T17:23:57 INFO  media-store/ms-node-03 deploy step release=media-store-4.16.7 step=pull_image result=ok took_s=68
+2026-10-27T17:23:59 INFO  media-store/ms-node-24 request done id=req-76fdc66d route=/media-store/v1/list status=500 latency_ms=348
+2026-10-27T17:24:01 INFO  media-store/ms-node-23 request done id=req-7bf18e12 route=/media-store/v1/status status=200 latency_ms=193
+2026-10-27T17:24:04 INFO  media-store/ms-node-11 pool resize target=media-store-db max_pool_size=181 prev=165
+2026-10-27T17:24:08 INFO  media-store/ms-node-24 request done id=req-8eb459df route=/media-store/v1/cancel status=404 latency_ms=57
+2026-10-27T17:24:09 INFO  media-store/ms-node-17 request done id=req-ac318d5f route=/media-store/v1/sync status=429 latency_ms=193
+2026-10-27T17:24:13 INFO  media-store/ms-node-24 request done id=req-254818b4 route=/media-store/v1/list status=200 latency_ms=20
+2026-10-27T17:24:15 INFO  media-store/ms-node-05 config applied key=http.max_conns value=1 by=mjlee
+2026-10-27T17:24:19 INFO  media-store/ms-node-09 request done id=req-620d6865 route=/media-store/v1/get status=500 latency_ms=98
+2026-10-27T17:24:26 INFO  media-store/ms-node-03 pool resize target=media-store-db max_pool_size=305 prev=295
+2026-10-27T17:24:27 INFO  media-store/ms-node-08 ticket linked id=OPS-48318 reason=dependency_upgrade
+2026-10-27T17:24:30 INFO  media-store/ms-node-02 request done id=req-33e65e2a route=/media-store/v1/verify status=400 latency_ms=112
+2026-10-27T17:24:35 INFO  media-store/ms-node-17 config applied key=worker.concurrency value=false by=yjchoi
+2026-10-27T17:24:40 INFO  media-store/ms-node-24 request done id=req-f9a807ee route=/media-store/v1/get status=200 latency_ms=166
+2026-10-27T17:24:42 WARN  media-store/ms-node-22 alert fired rule=heap_used_high value=89% threshold=82%
+2026-10-27T17:24:48 INFO  media-store/ms-node-18 deploy step release=media-store-4.14.0 step=drain result=ok took_s=123
+2026-10-27T17:24:52 INFO  media-store/ms-node-20 deploy step release=media-store-4.15.8 step=pull_image result=ok took_s=75
+2026-10-27T17:24:59 INFO  media-store/ms-node-15 request done id=req-a7ad23fb route=/media-store/v1/list status=200 latency_ms=136
+2026-10-27T17:25:03 ERROR media-store/ms-node-02 job failed job=media-store-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-27T17:25:07 ERROR media-store/ms-node-14 job failed job=media-store-cleanup attempt=5 cause=upstream_timeout
+2026-10-27T17:25:12 INFO  media-store/ms-node-09 config applied key=tls.session_cache value=34% by=jhpark
+2026-10-27T17:25:16 INFO  media-store/ms-node-14 config applied key=dns.ttl_s value=4321 by=dwjung
+2026-10-27T17:25:23 INFO  media-store/ms-node-24 request done id=req-87afef8c route=/media-store/v1/create status=200 latency_ms=65
+2026-10-27T17:25:29 NOTE  media-store/ms-node-05 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-27T17:25:30 INFO  media-store/ms-node-08 request done id=req-e01d2ca9 route=/media-store/v1/get status=200 latency_ms=94
+2026-10-27T17:25:33 INFO  media-store/ms-node-09 request done id=req-07440a42 route=/media-store/v1/create status=503 latency_ms=140
+2026-10-27T17:25:40 INFO  media-store/ms-node-17 request done id=req-aee82750 route=/media-store/v1/update status=200 latency_ms=86
+2026-10-27T17:25:47 INFO  media-store/ms-node-21 request done id=req-487ad987 route=/media-store/v1/verify status=409 latency_ms=427
+2026-10-27T17:25:53 INFO  media-store/ms-node-20 ticket linked id=OPS-49942 reason=dns_ttl_change
+2026-10-27T17:25:59 INFO  media-store/ms-node-10 request done id=req-7d798a3c route=/media-store/v1/cancel status=204 latency_ms=19
+2026-10-27T17:26:00 NOTE  media-store/ms-node-24 operator=ejlim memo="타임아웃을 49ms에서 61ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-27T17:26:01 INFO  media-store/ms-node-11 request done id=req-ace98b01 route=/media-store/v1/create status=201 latency_ms=109
+2026-10-27T17:26:02 INFO  media-store/ms-node-03 ticket linked id=OPS-49585 reason=log_volume_spike
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

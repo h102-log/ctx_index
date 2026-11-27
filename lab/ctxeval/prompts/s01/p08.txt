@@ -1,0 +1,424 @@
+참고용 로그 08: 추천 서빙(reco-serve) 카나리 구간. '확인'이라고만 답해 줘.
+
+2026-10-12T21:34:20 INFO  reco-serve/rs-node-22 request done id=req-daa6534e route=/reco-serve/v1/cancel status=400 latency_ms=104
+2026-10-12T21:34:26 WARN  reco-serve/rs-node-06 alert fired rule=p99_latency_high value=69ms threshold=66ms
+2026-10-12T21:34:29 INFO  reco-serve/rs-node-06 ticket linked id=OPS-49324 reason=oncall_handoff
+2026-10-12T21:34:32 WARN  reco-serve/rs-node-12 alert fired rule=queue_depth_high value=63 threshold=51
+2026-10-12T21:34:39 INFO  reco-serve/rs-node-10 pool resize target=reco-serve-upstream max_pool_size=282 prev=332
+2026-10-12T21:34:43 INFO  reco-serve/rs-node-16 request done id=req-a2b6c7e9 route=/reco-serve/v1/sync status=200 latency_ms=90
+2026-10-12T21:34:47 INFO  reco-serve/rs-node-09 config applied key=breaker.open_ratio value=false by=mjlee
+2026-10-12T21:34:48 INFO  reco-serve/rs-node-13 ticket linked id=OPS-47486 reason=schema_change
+2026-10-12T21:34:49 INFO  reco-serve/rs-node-16 request done id=req-f5466109 route=/reco-serve/v1/verify status=200 latency_ms=195
+2026-10-12T21:34:53 WARN  reco-serve/rs-node-17 alert fired rule=replica_lag_high value=50s threshold=45s
+2026-10-12T21:35:00 INFO  reco-serve/rs-node-08 request done id=req-54930c19 route=/reco-serve/v1/update status=503 latency_ms=106
+2026-10-12T21:35:02 INFO  reco-serve/rs-node-09 config applied key=retry.backoff_ms value=true by=dwjung
+2026-10-12T21:35:06 INFO  reco-serve/rs-node-22 request done id=req-5cc88380 route=/reco-serve/v1/cancel status=200 latency_ms=141
+2026-10-12T21:35:13 INFO  reco-serve/rs-node-15 request done id=req-a4a03451 route=/reco-serve/v1/cancel status=200 latency_ms=357
+2026-10-12T21:35:20 INFO  reco-serve/rs-node-13 config applied key=retry.backoff_ms value=false by=mjlee
+2026-10-12T21:35:22 INFO  reco-serve/rs-node-07 request done id=req-4fb420f2 route=/reco-serve/v1/status status=200 latency_ms=211
+2026-10-12T21:35:25 INFO  reco-serve/rs-node-13 request done id=req-6be26162 route=/reco-serve/v1/status status=204 latency_ms=441
+2026-10-12T21:35:31 INFO  reco-serve/rs-node-03 config applied key=retry.backoff_ms value=170 by=dwjung
+2026-10-12T21:35:36 INFO  reco-serve/rs-node-14 pool resize target=reco-serve-queue max_pool_size=302 prev=339
+2026-10-12T21:35:39 INFO  reco-serve/rs-node-21 request done id=req-e6011ce6 route=/reco-serve/v1/verify status=409 latency_ms=174
+2026-10-12T21:35:45 INFO  reco-serve/rs-node-07 pool resize target=reco-serve-db max_pool_size=152 prev=145
+2026-10-12T21:35:47 INFO  reco-serve/rs-node-20 request done id=req-9f162718 route=/reco-serve/v1/create status=404 latency_ms=20
+2026-10-12T21:35:51 INFO  reco-serve/rs-node-12 request done id=req-97057ef1 route=/reco-serve/v1/verify status=200 latency_ms=73
+2026-10-12T21:35:58 WARN  reco-serve/rs-node-15 alert fired rule=disk_usage_warning value=78% threshold=72%
+2026-10-12T21:36:04 INFO  reco-serve/rs-node-08 request done id=req-741c1730 route=/reco-serve/v1/update status=500 latency_ms=172
+2026-10-12T21:36:10 INFO  reco-serve/rs-node-15 request done id=req-0737dc69 route=/reco-serve/v1/verify status=204 latency_ms=297
+2026-10-12T21:36:15 INFO  reco-serve/rs-node-10 pool resize target=reco-serve-queue max_pool_size=156 prev=108
+2026-10-12T21:36:18 INFO  reco-serve/rs-node-14 request done id=req-c7c16728 route=/reco-serve/v1/create status=200 latency_ms=72
+2026-10-12T21:36:22 INFO  reco-serve/rs-node-16 request done id=req-9fd8d539 route=/reco-serve/v1/update status=500 latency_ms=217
+2026-10-12T21:36:23 INFO  reco-serve/rs-node-11 backup finished file=/vault/weekly/inventory_2026w43.tar.zst size_mb=41963 checksum=afea3658
+2026-10-12T21:36:24 INFO  reco-serve/rs-node-22 config applied key=limiter.burst value=84% by=hbyoon
+2026-10-12T21:36:28 INFO  reco-serve/rs-node-05 config applied key=retry.max_attempts value=7170 by=dwjung
+2026-10-12T21:36:30 INFO  reco-serve/rs-node-08 cache stats region=ap-ne-2c hit_ratio=56.6% evictions=17184
+2026-10-12T21:36:35 INFO  reco-serve/rs-node-20 request done id=req-32b5d65b route=/reco-serve/v1/status status=200 latency_ms=227
+2026-10-12T21:36:38 INFO  reco-serve/rs-node-21 request done id=req-15053e68 route=/reco-serve/v1/create status=409 latency_ms=37
+2026-10-12T21:36:40 INFO  reco-serve/rs-node-12 request done id=req-ab71f0ad route=/reco-serve/v1/cancel status=409 latency_ms=50
+2026-10-12T21:36:43 INFO  reco-serve/rs-node-07 ticket linked id=OPS-48994 reason=flaky_healthcheck
+2026-10-12T21:36:47 INFO  reco-serve/rs-node-07 deploy step release=reco-serve-4.11.2 step=warmup result=ok took_s=228
+2026-10-12T21:36:51 INFO  reco-serve/rs-node-20 request done id=req-7f2d0638 route=/reco-serve/v1/update status=429 latency_ms=70
+2026-10-12T21:36:55 INFO  reco-serve/rs-node-03 request done id=req-82b32028 route=/reco-serve/v1/get status=200 latency_ms=132
+2026-10-12T21:36:57 ERROR reco-serve/rs-node-18 job failed job=reco-serve-rollup attempt=2 cause=upstream_timeout
+2026-10-12T21:37:03 NOTE  reco-serve/rs-node-05 operator=yjchoi memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-12T21:37:06 NOTE  reco-serve/rs-node-09 operator=mjlee memo="로그 보존 기간은 55일로 유지하기로 함."
+2026-10-12T21:37:09 INFO  reco-serve/rs-node-03 pool resize target=reco-serve-worker max_pool_size=385 prev=432
+2026-10-12T21:37:11 INFO  reco-serve/rs-node-02 config applied key=retry.backoff_ms value=22 by=mjlee
+2026-10-12T21:37:14 INFO  reco-serve/rs-node-18 request done id=req-1b386e58 route=/reco-serve/v1/status status=429 latency_ms=61
+2026-10-12T21:37:19 WARN  reco-serve/rs-node-24 alert fired rule=queue_depth_high value=83 threshold=68
+2026-10-12T21:37:24 INFO  reco-serve/rs-node-18 config applied key=worker.concurrency value=6098 by=shkim
+2026-10-12T21:37:26 INFO  reco-serve/rs-node-20 request done id=req-7471b02d route=/reco-serve/v1/list status=400 latency_ms=87
+2026-10-12T21:37:27 INFO  reco-serve/rs-node-01 pool resize target=reco-serve-db max_pool_size=221 prev=273
+2026-10-12T21:37:31 INFO  reco-serve/rs-node-21 request done id=req-c4d64248 route=/reco-serve/v1/cancel status=200 latency_ms=97
+2026-10-12T21:37:34 WARN  reco-serve/rs-node-04 alert fired rule=replica_lag_high value=60s threshold=52s
+2026-10-12T21:37:37 WARN  reco-serve/rs-node-01 alert fired rule=disk_usage_warning value=83% threshold=82%
+2026-10-12T21:37:41 INFO  reco-serve/rs-node-18 config applied key=tls.session_cache value=true by=dwjung
+2026-10-12T21:37:44 INFO  reco-serve/rs-node-23 request done id=req-74dbf61a route=/reco-serve/v1/verify status=200 latency_ms=85
+2026-10-12T21:37:50 INFO  reco-serve/rs-node-12 request done id=req-3833a719 route=/reco-serve/v1/list status=503 latency_ms=98
+2026-10-12T21:37:51 INFO  reco-serve/rs-node-21 request done id=req-2167297c route=/reco-serve/v1/status status=200 latency_ms=430
+2026-10-12T21:37:55 NOTE  reco-serve/rs-node-23 operator=jhpark memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-12T21:38:01 INFO  reco-serve/rs-node-09 config applied key=queue.batch_size value=13% by=ejlim
+2026-10-12T21:38:06 INFO  reco-serve/rs-node-07 pool resize target=reco-serve-worker max_pool_size=277 prev=311
+2026-10-12T21:38:09 INFO  reco-serve/rs-node-05 request done id=req-f508a5dd route=/reco-serve/v1/verify status=200 latency_ms=210
+2026-10-12T21:38:12 WARN  reco-serve/rs-node-21 alert fired rule=replica_lag_high value=93s threshold=78s
+2026-10-12T21:38:17 INFO  reco-serve/rs-node-10 config applied key=limiter.rps value=12% by=mjlee
+2026-10-12T21:38:18 INFO  reco-serve/rs-node-03 request done id=req-778acee1 route=/reco-serve/v1/cancel status=409 latency_ms=307
+2026-10-12T21:38:22 INFO  reco-serve/rs-node-08 request done id=req-4d004e57 route=/reco-serve/v1/sync status=404 latency_ms=329
+2026-10-12T21:38:29 INFO  reco-serve/rs-node-11 request done id=req-4298a962 route=/reco-serve/v1/verify status=503 latency_ms=67
+2026-10-12T21:38:36 INFO  reco-serve/rs-node-10 pool resize target=reco-serve-worker max_pool_size=255 prev=301
+2026-10-12T21:38:38 INFO  reco-serve/rs-node-17 ticket linked id=OPS-49243 reason=schema_change
+2026-10-12T21:38:42 WARN  reco-serve/rs-node-19 alert fired rule=queue_depth_high value=90 threshold=83
+2026-10-12T21:38:48 INFO  reco-serve/rs-node-07 config applied key=queue.visibility_s value=true by=jhpark
+2026-10-12T21:38:53 INFO  reco-serve/rs-node-13 request done id=req-4f9555ff route=/reco-serve/v1/create status=503 latency_ms=48
+2026-10-12T21:38:55 INFO  reco-serve/rs-node-18 ticket linked id=OPS-48313 reason=runbook_update
+2026-10-12T21:39:02 INFO  reco-serve/rs-node-15 pool resize target=reco-serve-cache max_pool_size=313 prev=325
+2026-10-12T21:39:08 INFO  reco-serve/rs-node-19 request done id=req-e0ec1a9e route=/reco-serve/v1/verify status=200 latency_ms=84
+2026-10-12T21:39:13 INFO  reco-serve/rs-node-20 cache stats region=ap-se-1a hit_ratio=69.2% evictions=37357
+2026-10-12T21:39:14 ERROR reco-serve/rs-node-20 job failed job=reco-serve-rollup attempt=5 cause=bad_checksum
+2026-10-12T21:39:21 INFO  reco-serve/rs-node-02 deploy step release=reco-serve-4.20.2 step=drain result=ok took_s=161
+2026-10-12T21:39:26 INFO  reco-serve/rs-node-10 request done id=req-d57ff1e3 route=/reco-serve/v1/list status=200 latency_ms=135
+2026-10-12T21:39:31 INFO  reco-serve/rs-node-01 request done id=req-bd37db66 route=/reco-serve/v1/get status=200 latency_ms=373
+2026-10-12T21:39:37 INFO  reco-serve/rs-node-22 deploy step release=reco-serve-4.12.1 step=drain result=ok took_s=200
+2026-10-12T21:39:44 INFO  reco-serve/rs-node-19 backup finished file=/vault/weekly/orders_2026w38.tar.zst size_mb=69678 checksum=89a61111
+2026-10-12T21:39:50 INFO  reco-serve/rs-node-04 config applied key=limiter.burst value=82% by=hbyoon
+2026-10-12T21:39:54 WARN  reco-serve/rs-node-12 alert fired rule=queue_depth_high value=62 threshold=55
+2026-10-12T21:39:55 INFO  reco-serve/rs-node-22 pool resize target=reco-serve-cache max_pool_size=378 prev=341
+2026-10-12T21:39:56 INFO  reco-serve/rs-node-21 request done id=req-296e7bae route=/reco-serve/v1/verify status=400 latency_ms=389
+2026-10-12T21:40:01 INFO  reco-serve/rs-node-21 request done id=req-d09a081b route=/reco-serve/v1/update status=429 latency_ms=40
+2026-10-12T21:40:02 INFO  reco-serve/rs-node-18 request done id=req-fb27d02c route=/reco-serve/v1/create status=200 latency_ms=114
+2026-10-12T21:40:07 INFO  reco-serve/rs-node-18 request done id=req-3f7da727 route=/reco-serve/v1/verify status=200 latency_ms=73
+2026-10-12T21:40:11 NOTE  reco-serve/rs-node-12 operator=sykang memo="인증서 갱신 일정 확인. 만료까지 20일 남음."
+2026-10-12T21:40:14 NOTE  reco-serve/rs-node-02 operator=mjlee memo="동시 처리 수를 58에서 38로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-12T21:40:15 ERROR reco-serve/rs-node-19 job failed job=reco-serve-export attempt=2 cause=lock_wait_exceeded
+2026-10-12T21:40:19 INFO  reco-serve/rs-node-05 request done id=req-1e161438 route=/reco-serve/v1/get status=503 latency_ms=254
+2026-10-12T21:40:22 INFO  reco-serve/rs-node-18 request done id=req-91ff69f7 route=/reco-serve/v1/sync status=201 latency_ms=59
+2026-10-12T21:40:27 INFO  reco-serve/rs-node-16 request done id=req-95ae1866 route=/reco-serve/v1/list status=200 latency_ms=93
+2026-10-12T21:40:28 INFO  reco-serve/rs-node-23 request done id=req-d6c5f817 route=/reco-serve/v1/list status=503 latency_ms=178
+2026-10-12T21:40:30 INFO  reco-serve/rs-node-06 deploy step release=reco-serve-4.22.3 step=start result=ok took_s=30
+2026-10-12T21:40:35 INFO  reco-serve/rs-node-12 request done id=req-d1c1e8f1 route=/reco-serve/v1/verify status=200 latency_ms=99
+2026-10-12T21:40:36 INFO  reco-serve/rs-node-10 request done id=req-82b1af91 route=/reco-serve/v1/verify status=200 latency_ms=120
+2026-10-12T21:40:42 INFO  reco-serve/rs-node-11 cache stats region=ap-ne-2b hit_ratio=96.9% evictions=35679
+2026-10-12T21:40:47 INFO  reco-serve/rs-node-02 deploy step release=reco-serve-4.22.9 step=shift_traffic_10 result=ok took_s=8
+2026-10-12T21:40:51 INFO  reco-serve/rs-node-02 config applied key=limiter.rps value=false by=sykang
+2026-10-12T21:40:56 NOTE  reco-serve/rs-node-20 operator=jhpark memo="헬스체크 간격을 8초에서 21초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-12T21:40:57 INFO  reco-serve/rs-node-13 config applied key=canary.traffic_percent value=false by=yjchoi
+2026-10-12T21:40:58 INFO  reco-serve/rs-node-03 request done id=req-9a3bc2b3 route=/reco-serve/v1/get status=200 latency_ms=154
+2026-10-12T21:41:05 INFO  reco-serve/rs-node-09 deploy step release=reco-serve-4.14.6 step=migrate result=ok took_s=115
+2026-10-12T21:41:08 WARN  reco-serve/rs-node-17 alert fired rule=p99_latency_high value=88ms threshold=87ms
+2026-10-12T21:41:12 INFO  reco-serve/rs-node-02 request done id=req-8c8cd691 route=/reco-serve/v1/update status=200 latency_ms=131
+2026-10-12T21:41:16 INFO  reco-serve/rs-node-24 request done id=req-6571db48 route=/reco-serve/v1/create status=200 latency_ms=33
+2026-10-12T21:41:17 WARN  reco-serve/rs-node-12 alert fired rule=conn_pool_saturated value=75% threshold=72%
+2026-10-12T21:41:24 INFO  reco-serve/rs-node-13 request done id=req-f4562757 route=/reco-serve/v1/list status=200 latency_ms=49
+2026-10-12T21:41:25 ERROR reco-serve/rs-node-19 job failed job=reco-serve-reindex attempt=5 cause=quota_exceeded
+2026-10-12T21:41:30 INFO  reco-serve/rs-node-19 request done id=req-6a7d8520 route=/reco-serve/v1/get status=200 latency_ms=71
+2026-10-12T21:41:33 WARN  reco-serve/rs-node-23 alert fired rule=queue_depth_high value=95 threshold=90
+2026-10-12T21:41:34 INFO  reco-serve/rs-node-20 deploy step release=reco-serve-4.22.3 step=shift_traffic_10 result=ok took_s=103
+2026-10-12T21:41:35 NOTE  reco-serve/rs-node-04 operator=shkim memo="임시 증설 39대 추가. 내일 오전 회수 예정."
+2026-10-12T21:41:42 INFO  reco-serve/rs-node-23 request done id=req-592453c6 route=/reco-serve/v1/verify status=200 latency_ms=321
+2026-10-12T21:41:49 INFO  reco-serve/rs-node-02 request done id=req-f5e2f320 route=/reco-serve/v1/create status=201 latency_ms=191
+2026-10-12T21:41:56 INFO  reco-serve/rs-node-17 config applied key=cache.ttl_s value=false by=sykang
+2026-10-12T21:42:01 INFO  reco-serve/rs-node-24 pool resize target=reco-serve-queue max_pool_size=46 prev=41
+2026-10-12T21:42:05 INFO  reco-serve/rs-node-07 deploy step release=reco-serve-4.15.9 step=pull_image result=ok took_s=87
+2026-10-12T21:42:11 INFO  reco-serve/rs-node-22 config applied key=worker.concurrency value=4713 by=shkim
+2026-10-12T21:42:15 WARN  reco-serve/rs-node-05 alert fired rule=heap_used_high value=58% threshold=50%
+2026-10-12T21:42:18 ERROR reco-serve/rs-node-06 job failed job=reco-serve-export attempt=2 cause=lock_wait_exceeded
+2026-10-12T21:42:21 INFO  reco-serve/rs-node-15 request done id=req-1562fbab route=/reco-serve/v1/verify status=200 latency_ms=81
+2026-10-12T21:42:23 INFO  reco-serve/rs-node-06 deploy step release=reco-serve-4.15.5 step=start result=ok took_s=48
+2026-10-12T21:42:24 INFO  reco-serve/rs-node-05 request done id=req-39e8f586 route=/reco-serve/v1/update status=200 latency_ms=183
+2026-10-12T21:42:25 INFO  reco-serve/rs-node-22 request done id=req-f51230e1 route=/reco-serve/v1/create status=200 latency_ms=99
+2026-10-12T21:42:32 INFO  reco-serve/rs-node-15 backup finished file=/vault/weekly/audit_2026w35.tar.zst size_mb=74610 checksum=8ac446df
+2026-10-12T21:42:38 INFO  reco-serve/rs-node-21 request done id=req-36da4dc0 route=/reco-serve/v1/sync status=200 latency_ms=34
+2026-10-12T21:42:41 INFO  reco-serve/rs-node-15 request done id=req-e7fc8379 route=/reco-serve/v1/sync status=200 latency_ms=166
+2026-10-12T21:42:42 INFO  reco-serve/rs-node-18 request done id=req-5055546d route=/reco-serve/v1/get status=200 latency_ms=194
+2026-10-12T21:42:44 INFO  reco-serve/rs-node-14 pool resize target=reco-serve-queue max_pool_size=69 prev=58
+2026-10-12T21:42:50 INFO  reco-serve/rs-node-09 request done id=req-6a45befc route=/reco-serve/v1/update status=404 latency_ms=114
+2026-10-12T21:42:53 INFO  reco-serve/rs-node-10 request done id=req-396fe140 route=/reco-serve/v1/list status=409 latency_ms=85
+2026-10-12T21:42:57 INFO  reco-serve/rs-node-19 request done id=req-963d537f route=/reco-serve/v1/cancel status=200 latency_ms=68
+2026-10-12T21:43:04 INFO  reco-serve/rs-node-04 pool resize target=reco-serve-db max_pool_size=301 prev=346
+2026-10-12T21:43:06 INFO  reco-serve/rs-node-01 ticket linked id=OPS-49928 reason=dependency_upgrade
+2026-10-12T21:43:12 INFO  reco-serve/rs-node-18 request done id=req-dc2bb40a route=/reco-serve/v1/status status=200 latency_ms=201
+2026-10-12T21:43:13 INFO  reco-serve/rs-node-07 ticket linked id=OPS-49882 reason=dependency_upgrade
+2026-10-12T21:43:17 INFO  reco-serve/rs-node-09 request done id=req-10dc09b8 route=/reco-serve/v1/list status=200 latency_ms=85
+2026-10-12T21:43:23 INFO  reco-serve/rs-node-05 deploy step release=reco-serve-4.20.8 step=warmup result=ok took_s=88
+2026-10-12T21:43:26 INFO  reco-serve/rs-node-18 config applied key=log.sample_rate value=7736 by=jhpark
+2026-10-12T21:43:27 INFO  reco-serve/rs-node-23 deploy step release=reco-serve-4.10.4 step=healthcheck result=ok took_s=185
+2026-10-12T21:43:33 INFO  reco-serve/rs-node-23 request done id=req-7fe553e0 route=/reco-serve/v1/cancel status=201 latency_ms=44
+2026-10-12T21:43:40 INFO  reco-serve/rs-node-24 request done id=req-ef440fa6 route=/reco-serve/v1/verify status=200 latency_ms=172
+2026-10-12T21:43:42 INFO  reco-serve/rs-node-24 backup finished file=/vault/daily/inventory_20261001.tar.zst size_mb=8762 checksum=ff15d564
+2026-10-12T21:43:49 INFO  reco-serve/rs-node-09 request done id=req-434c5d05 route=/reco-serve/v1/update status=400 latency_ms=92
+2026-10-12T21:43:55 INFO  reco-serve/rs-node-01 request done id=req-abc0e894 route=/reco-serve/v1/list status=200 latency_ms=322
+2026-10-12T21:43:58 INFO  reco-serve/rs-node-13 request done id=req-f8dfc5e7 route=/reco-serve/v1/cancel status=200 latency_ms=354
+2026-10-12T21:43:59 INFO  reco-serve/rs-node-12 request done id=req-4b720098 route=/reco-serve/v1/sync status=200 latency_ms=32
+2026-10-12T21:44:02 ERROR reco-serve/rs-node-17 job failed job=reco-serve-export attempt=4 cause=bad_checksum
+2026-10-12T21:44:04 INFO  reco-serve/rs-node-03 request done id=req-7358d3ff route=/reco-serve/v1/sync status=400 latency_ms=265
+2026-10-12T21:44:10 INFO  reco-serve/rs-node-07 request done id=req-51da4746 route=/reco-serve/v1/cancel status=200 latency_ms=248
+2026-10-12T21:44:13 INFO  reco-serve/rs-node-12 config applied key=worker.concurrency value=55 by=hbyoon
+2026-10-12T21:44:14 INFO  reco-serve/rs-node-09 request done id=req-486dd98f route=/reco-serve/v1/create status=200 latency_ms=76
+2026-10-12T21:44:16 INFO  reco-serve/rs-node-19 deploy step release=reco-serve-4.22.8 step=shift_traffic_50 result=ok took_s=7
+2026-10-12T21:44:18 INFO  reco-serve/rs-node-09 request done id=req-daf527a4 route=/reco-serve/v1/create status=200 latency_ms=62
+2026-10-12T21:44:23 INFO  reco-serve/rs-node-16 request done id=req-c766b351 route=/reco-serve/v1/create status=200 latency_ms=159
+2026-10-12T21:44:25 INFO  reco-serve/rs-node-15 pool resize target=reco-serve-queue max_pool_size=135 prev=148
+2026-10-12T21:44:31 INFO  reco-serve/rs-node-09 config applied key=limiter.rps value=false by=ejlim
+2026-10-12T21:44:32 INFO  reco-serve/rs-node-02 backup finished file=/vault/daily/orders_20261003.tar.zst size_mb=64697 checksum=5b9570bf
+2026-10-12T21:44:36 INFO  reco-serve/rs-node-08 config applied key=queue.visibility_s value=false by=mjlee
+2026-10-12T21:44:43 INFO  reco-serve/rs-node-13 pool resize target=reco-serve-worker max_pool_size=115 prev=98
+2026-10-12T21:44:49 INFO  reco-serve/rs-node-10 config applied key=limiter.rps value=28% by=shkim
+2026-10-12T21:44:54 INFO  reco-serve/rs-node-11 request done id=req-e23d05bc route=/reco-serve/v1/create status=200 latency_ms=55
+2026-10-12T21:44:57 INFO  reco-serve/rs-node-14 ticket linked id=OPS-49184 reason=schema_change
+2026-10-12T21:45:04 INFO  reco-serve/rs-node-05 request done id=req-f88e6a89 route=/reco-serve/v1/verify status=200 latency_ms=43
+2026-10-12T21:45:10 INFO  reco-serve/rs-node-02 backup finished file=/vault/daily/inventory_20261024.tar.zst size_mb=30893 checksum=a0789073
+2026-10-12T21:45:11 INFO  reco-serve/rs-node-16 pool resize target=reco-serve-queue max_pool_size=326 prev=382
+2026-10-12T21:45:15 ERROR reco-serve/rs-node-23 job failed job=reco-serve-rollup attempt=4 cause=lock_wait_exceeded
+2026-10-12T21:45:18 INFO  reco-serve/rs-node-22 request done id=req-729c1107 route=/reco-serve/v1/get status=201 latency_ms=75
+2026-10-12T21:45:22 INFO  reco-serve/rs-node-19 config applied key=ranker.candidate_pool_size value=1375 by=shkim
+2026-10-12T21:45:26 INFO  reco-serve/rs-node-16 request done id=req-0de9e88d route=/reco-serve/v1/cancel status=200 latency_ms=508
+2026-10-12T21:45:28 INFO  reco-serve/rs-node-13 ticket linked id=OPS-49432 reason=runbook_update
+2026-10-12T21:45:35 INFO  reco-serve/rs-node-01 pool resize target=reco-serve-queue max_pool_size=65 prev=62
+2026-10-12T21:45:36 NOTE  reco-serve/rs-node-20 operator=mjlee memo="점검 창을 56분 연장함. 승인: 한지우 리드."
+2026-10-12T21:45:40 INFO  reco-serve/rs-node-21 deploy step release=reco-serve-4.19.7 step=verify result=ok took_s=175
+2026-10-12T21:45:42 WARN  reco-serve/rs-node-05 alert fired rule=error_ratio_high value=91% threshold=81%
+2026-10-12T21:45:45 INFO  reco-serve/rs-node-23 backup finished file=/vault/weekly/inventory_2026w43.tar.zst size_mb=86322 checksum=46d9cd7b
+2026-10-12T21:45:46 WARN  reco-serve/rs-node-09 alert fired rule=queue_depth_high value=99 threshold=94
+2026-10-12T21:45:47 INFO  reco-serve/rs-node-21 request done id=req-1b43f68c route=/reco-serve/v1/status status=200 latency_ms=47
+2026-10-12T21:45:54 INFO  reco-serve/rs-node-07 request done id=req-a6ab5b54 route=/reco-serve/v1/create status=400 latency_ms=170
+2026-10-12T21:45:56 INFO  reco-serve/rs-node-21 config applied key=retry.backoff_ms value=1 by=shkim
+2026-10-12T21:45:57 INFO  reco-serve/rs-node-04 config applied key=retry.backoff_ms value=54 by=dwjung
+2026-10-12T21:46:01 INFO  reco-serve/rs-node-03 request done id=req-58c8faea route=/reco-serve/v1/verify status=200 latency_ms=129
+2026-10-12T21:46:03 INFO  reco-serve/rs-node-09 request done id=req-dbaf8ae3 route=/reco-serve/v1/get status=200 latency_ms=132
+2026-10-12T21:46:06 WARN  reco-serve/rs-node-23 alert fired rule=queue_depth_high value=82 threshold=79
+2026-10-12T21:46:08 ERROR reco-serve/rs-node-06 job failed job=reco-serve-cleanup attempt=2 cause=upstream_timeout
+2026-10-12T21:46:11 ERROR reco-serve/rs-node-07 job failed job=reco-serve-reindex attempt=5 cause=oom_killed
+2026-10-12T21:46:14 NOTE  reco-serve/rs-node-07 operator=hbyoon memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-12T21:46:16 INFO  reco-serve/rs-node-24 ticket linked id=OPS-47188 reason=dns_ttl_change
+2026-10-12T21:46:18 INFO  reco-serve/rs-node-13 request done id=req-159813c1 route=/reco-serve/v1/status status=200 latency_ms=67
+2026-10-12T21:46:20 INFO  reco-serve/rs-node-13 request done id=req-f1ad248f route=/reco-serve/v1/create status=200 latency_ms=15
+2026-10-12T21:46:24 INFO  reco-serve/rs-node-21 ticket linked id=OPS-48391 reason=schema_change
+2026-10-12T21:46:30 INFO  reco-serve/rs-node-07 ticket linked id=OPS-48974 reason=dns_ttl_change
+2026-10-12T21:46:34 INFO  reco-serve/rs-node-23 request done id=req-fb705b35 route=/reco-serve/v1/list status=200 latency_ms=45
+2026-10-12T21:46:37 INFO  reco-serve/rs-node-20 request done id=req-65cee15f route=/reco-serve/v1/sync status=200 latency_ms=126
+2026-10-12T21:46:44 ERROR reco-serve/rs-node-08 job failed job=reco-serve-export attempt=3 cause=upstream_timeout
+2026-10-12T21:46:50 INFO  reco-serve/rs-node-17 request done id=req-9023ff50 route=/reco-serve/v1/verify status=200 latency_ms=80
+2026-10-12T21:46:53 INFO  reco-serve/rs-node-11 request done id=req-d569a46c route=/reco-serve/v1/verify status=429 latency_ms=268
+2026-10-12T21:46:59 INFO  reco-serve/rs-node-24 request done id=req-e4508b95 route=/reco-serve/v1/create status=200 latency_ms=123
+2026-10-12T21:47:00 WARN  reco-serve/rs-node-06 alert fired rule=gc_pause_long value=91ms threshold=82ms
+2026-10-12T21:47:05 INFO  reco-serve/rs-node-01 request done id=req-18400f0e route=/reco-serve/v1/sync status=200 latency_ms=82
+2026-10-12T21:47:09 INFO  reco-serve/rs-node-08 request done id=req-124250a8 route=/reco-serve/v1/get status=200 latency_ms=190
+2026-10-12T21:47:15 INFO  reco-serve/rs-node-15 request done id=req-32fed325 route=/reco-serve/v1/create status=200 latency_ms=14
+2026-10-12T21:47:19 WARN  reco-serve/rs-node-12 alert fired rule=conn_pool_saturated value=92% threshold=79%
+2026-10-12T21:47:21 INFO  reco-serve/rs-node-17 ticket linked id=OPS-49602 reason=node_drain
+2026-10-12T21:47:24 INFO  reco-serve/rs-node-03 ticket linked id=OPS-47418 reason=log_volume_spike
+2026-10-12T21:47:30 INFO  reco-serve/rs-node-24 pool resize target=reco-serve-queue max_pool_size=99 prev=87
+2026-10-12T21:47:37 ERROR reco-serve/rs-node-09 job failed job=reco-serve-cleanup attempt=2 cause=oom_killed
+2026-10-12T21:47:44 INFO  reco-serve/rs-node-05 request done id=req-132773d1 route=/reco-serve/v1/status status=200 latency_ms=217
+2026-10-12T21:47:46 INFO  reco-serve/rs-node-14 config applied key=queue.batch_size value=3743 by=jhpark
+2026-10-12T21:47:47 INFO  reco-serve/rs-node-05 request done id=req-90f087fc route=/reco-serve/v1/get status=409 latency_ms=127
+2026-10-12T21:47:53 INFO  reco-serve/rs-node-16 deploy step release=reco-serve-4.16.1 step=shift_traffic_100 result=ok took_s=33
+2026-10-12T21:47:57 INFO  reco-serve/rs-node-04 request done id=req-f33603ef route=/reco-serve/v1/get status=400 latency_ms=219
+2026-10-12T21:48:03 INFO  reco-serve/rs-node-04 pool resize target=reco-serve-db max_pool_size=262 prev=220
+2026-10-12T21:48:10 INFO  reco-serve/rs-node-04 request done id=req-a22d4e08 route=/reco-serve/v1/list status=500 latency_ms=114
+2026-10-12T21:48:17 ERROR reco-serve/rs-node-13 job failed job=reco-serve-reindex attempt=5 cause=oom_killed
+2026-10-12T21:48:18 INFO  reco-serve/rs-node-04 request done id=req-bb65d7f0 route=/reco-serve/v1/get status=409 latency_ms=601
+2026-10-12T21:48:25 INFO  reco-serve/rs-node-15 request done id=req-8e49a5ff route=/reco-serve/v1/create status=429 latency_ms=86
+2026-10-12T21:48:32 INFO  reco-serve/rs-node-03 request done id=req-4ff46112 route=/reco-serve/v1/cancel status=400 latency_ms=1596
+2026-10-12T21:48:35 INFO  reco-serve/rs-node-24 request done id=req-29c6d3a8 route=/reco-serve/v1/update status=500 latency_ms=69
+2026-10-12T21:48:41 INFO  reco-serve/rs-node-21 request done id=req-7d4dffce route=/reco-serve/v1/list status=409 latency_ms=161
+2026-10-12T21:48:44 INFO  reco-serve/rs-node-17 config applied key=breaker.half_open_s value=true by=hbyoon
+2026-10-12T21:48:50 NOTE  reco-serve/rs-node-16 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-12T21:48:55 INFO  reco-serve/rs-node-17 request done id=req-1ac50e3e route=/reco-serve/v1/status status=200 latency_ms=267
+2026-10-12T21:48:58 INFO  reco-serve/rs-node-03 request done id=req-1d433e2e route=/reco-serve/v1/list status=200 latency_ms=38
+2026-10-12T21:49:00 INFO  reco-serve/rs-node-22 request done id=req-b3ce01a8 route=/reco-serve/v1/list status=200 latency_ms=118
+2026-10-12T21:49:03 INFO  reco-serve/rs-node-15 request done id=req-3dbf79ef route=/reco-serve/v1/cancel status=404 latency_ms=294
+2026-10-12T21:49:08 INFO  reco-serve/rs-node-06 pool resize target=reco-serve-upstream max_pool_size=254 prev=311
+2026-10-12T21:49:12 INFO  reco-serve/rs-node-05 request done id=req-850a0f7d route=/reco-serve/v1/status status=503 latency_ms=47
+2026-10-12T21:49:14 INFO  reco-serve/rs-node-16 request done id=req-8d5378eb route=/reco-serve/v1/update status=200 latency_ms=167
+2026-10-12T21:49:19 INFO  reco-serve/rs-node-08 request done id=req-c14c4dfa route=/reco-serve/v1/update status=200 latency_ms=103
+2026-10-12T21:49:26 NOTE  reco-serve/rs-node-15 operator=yjchoi memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-12T21:49:27 INFO  reco-serve/rs-node-10 deploy step release=reco-serve-4.14.4 step=shift_traffic_10 result=ok took_s=152
+2026-10-12T21:49:32 INFO  reco-serve/rs-node-24 request done id=req-a23101fb route=/reco-serve/v1/update status=200 latency_ms=63
+2026-10-12T21:49:33 INFO  reco-serve/rs-node-13 ticket linked id=OPS-47940 reason=dns_ttl_change
+2026-10-12T21:49:34 INFO  reco-serve/rs-node-23 request done id=req-098beab8 route=/reco-serve/v1/list status=200 latency_ms=394
+2026-10-12T21:49:41 INFO  reco-serve/rs-node-23 request done id=req-1dffeaf9 route=/reco-serve/v1/status status=200 latency_ms=97
+2026-10-12T21:49:48 INFO  reco-serve/rs-node-22 request done id=req-8572af7b route=/reco-serve/v1/get status=400 latency_ms=172
+2026-10-12T21:49:52 ERROR reco-serve/rs-node-11 job failed job=reco-serve-reindex attempt=4 cause=oom_killed
+2026-10-12T21:49:53 INFO  reco-serve/rs-node-02 request done id=req-33bef62a route=/reco-serve/v1/status status=200 latency_ms=59
+2026-10-12T21:49:57 INFO  reco-serve/rs-node-12 request done id=req-76d7c71c route=/reco-serve/v1/verify status=200 latency_ms=295
+2026-10-12T21:50:04 INFO  reco-serve/rs-node-04 request done id=req-0a58fa70 route=/reco-serve/v1/create status=404 latency_ms=224
+2026-10-12T21:50:08 INFO  reco-serve/rs-node-14 deploy step release=reco-serve-4.20.4 step=verify result=ok took_s=68
+2026-10-12T21:50:12 INFO  reco-serve/rs-node-13 config applied key=limiter.rps value=72% by=jhpark
+2026-10-12T21:50:18 INFO  reco-serve/rs-node-23 cache stats region=ap-se-1a hit_ratio=60.6% evictions=36028
+2026-10-12T21:50:20 INFO  reco-serve/rs-node-08 config applied key=tls.session_cache value=28 by=sykang
+2026-10-12T21:50:25 INFO  reco-serve/rs-node-03 request done id=req-72b4876f route=/reco-serve/v1/create status=400 latency_ms=31
+2026-10-12T21:50:29 WARN  reco-serve/rs-node-19 alert fired rule=fd_usage_high value=58% threshold=49%
+2026-10-12T21:50:32 INFO  reco-serve/rs-node-23 request done id=req-f9ecfe25 route=/reco-serve/v1/status status=200 latency_ms=78
+2026-10-12T21:50:39 ERROR reco-serve/rs-node-02 job failed job=reco-serve-rollup attempt=5 cause=oom_killed
+2026-10-12T21:50:44 INFO  reco-serve/rs-node-06 request done id=req-a2510d29 route=/reco-serve/v1/list status=201 latency_ms=60
+2026-10-12T21:50:47 INFO  reco-serve/rs-node-06 ticket linked id=OPS-47570 reason=cert_rotation
+2026-10-12T21:50:49 INFO  reco-serve/rs-node-12 request done id=req-c9142a0b route=/reco-serve/v1/get status=200 latency_ms=112
+2026-10-12T21:50:50 WARN  reco-serve/rs-node-05 alert fired rule=p99_latency_high value=83ms threshold=75ms
+2026-10-12T21:50:51 INFO  reco-serve/rs-node-07 cache stats region=us-we-2b hit_ratio=61.9% evictions=18597
+2026-10-12T21:50:52 INFO  reco-serve/rs-node-21 request done id=req-6aa09b35 route=/reco-serve/v1/status status=201 latency_ms=21
+2026-10-12T21:50:58 INFO  reco-serve/rs-node-07 request done id=req-83b953d8 route=/reco-serve/v1/cancel status=204 latency_ms=41
+2026-10-12T21:51:01 INFO  reco-serve/rs-node-24 config applied key=shard.count value=24 by=dwjung
+2026-10-12T21:51:08 INFO  reco-serve/rs-node-02 config applied key=retry.max_attempts value=98% by=dwjung
+2026-10-12T21:51:11 INFO  reco-serve/rs-node-21 cache stats region=ap-ne-2a hit_ratio=61.1% evictions=27322
+2026-10-12T21:51:18 INFO  reco-serve/rs-node-06 deploy step release=reco-serve-4.18.2 step=shift_traffic_50 result=ok took_s=184
+2026-10-12T21:51:20 INFO  reco-serve/rs-node-07 request done id=req-23626855 route=/reco-serve/v1/cancel status=200 latency_ms=68
+2026-10-12T21:51:26 WARN  reco-serve/rs-node-13 alert fired rule=conn_pool_saturated value=50% threshold=38%
+2026-10-12T21:51:27 INFO  reco-serve/rs-node-20 request done id=req-6f97b559 route=/reco-serve/v1/cancel status=404 latency_ms=483
+2026-10-12T21:51:31 NOTE  reco-serve/rs-node-23 operator=ejlim memo="로그 보존 기간은 49일로 유지하기로 함."
+2026-10-12T21:51:32 INFO  reco-serve/rs-node-04 request done id=req-e9c5cb84 route=/reco-serve/v1/list status=200 latency_ms=233
+2026-10-12T21:51:33 INFO  reco-serve/rs-node-17 request done id=req-a72aaf5b route=/reco-serve/v1/cancel status=200 latency_ms=204
+2026-10-12T21:51:40 INFO  reco-serve/rs-node-17 ticket linked id=OPS-49295 reason=cert_rotation
+2026-10-12T21:51:44 INFO  reco-serve/rs-node-01 ticket linked id=OPS-48046 reason=quota_increase
+2026-10-12T21:51:48 INFO  reco-serve/rs-node-16 request done id=req-00717f55 route=/reco-serve/v1/update status=200 latency_ms=81
+2026-10-12T21:51:51 INFO  reco-serve/rs-node-19 ticket linked id=OPS-49040 reason=node_drain
+2026-10-12T21:51:57 WARN  reco-serve/rs-node-10 alert fired rule=error_ratio_high value=52% threshold=46%
+2026-10-12T21:52:02 INFO  reco-serve/rs-node-11 request done id=req-97f0bac1 route=/reco-serve/v1/verify status=200 latency_ms=319
+2026-10-12T21:52:08 INFO  reco-serve/rs-node-19 backup finished file=/vault/daily/inventory_20261013.tar.zst size_mb=29696 checksum=e54a5aaf
+2026-10-12T21:52:10 INFO  reco-serve/rs-node-20 ticket linked id=OPS-48850 reason=cert_rotation
+2026-10-12T21:52:13 INFO  reco-serve/rs-node-15 config applied key=retry.max_attempts value=7173 by=sykang
+2026-10-12T21:52:19 INFO  reco-serve/rs-node-03 request done id=req-b44ff0d9 route=/reco-serve/v1/verify status=200 latency_ms=401
+2026-10-12T21:52:23 INFO  reco-serve/rs-node-17 request done id=req-417eec06 route=/reco-serve/v1/update status=200 latency_ms=505
+2026-10-12T21:52:24 INFO  reco-serve/rs-node-08 request done id=req-0d4412a3 route=/reco-serve/v1/create status=429 latency_ms=51
+2026-10-12T21:52:28 INFO  reco-serve/rs-node-19 request done id=req-0019fe4e route=/reco-serve/v1/get status=200 latency_ms=88
+2026-10-12T21:52:31 INFO  reco-serve/rs-node-16 request done id=req-b4fea9f0 route=/reco-serve/v1/status status=200 latency_ms=46
+2026-10-12T21:52:32 INFO  reco-serve/rs-node-18 request done id=req-67a59d22 route=/reco-serve/v1/update status=200 latency_ms=142
+2026-10-12T21:52:36 INFO  reco-serve/rs-node-12 deploy step release=reco-serve-4.19.0 step=drain result=ok took_s=172
+2026-10-12T21:52:41 INFO  reco-serve/rs-node-13 request done id=req-6051f02b route=/reco-serve/v1/sync status=200 latency_ms=165
+2026-10-12T21:52:47 WARN  reco-serve/rs-node-19 alert fired rule=gc_pause_long value=79ms threshold=72ms
+2026-10-12T21:52:52 INFO  reco-serve/rs-node-01 request done id=req-f199d363 route=/reco-serve/v1/sync status=204 latency_ms=325
+2026-10-12T21:52:56 INFO  reco-serve/rs-node-09 request done id=req-dae849cf route=/reco-serve/v1/list status=200 latency_ms=39
+2026-10-12T21:53:00 INFO  reco-serve/rs-node-09 request done id=req-b64ea495 route=/reco-serve/v1/cancel status=404 latency_ms=236
+2026-10-12T21:53:06 INFO  reco-serve/rs-node-18 request done id=req-cc1bd6f2 route=/reco-serve/v1/status status=200 latency_ms=61
+2026-10-12T21:53:08 WARN  reco-serve/rs-node-12 alert fired rule=replica_lag_high value=75s threshold=72s
+2026-10-12T21:53:11 ERROR reco-serve/rs-node-08 job failed job=reco-serve-rollup attempt=3 cause=dns_failure
+2026-10-12T21:53:17 INFO  reco-serve/rs-node-20 request done id=req-00233b6a route=/reco-serve/v1/update status=409 latency_ms=235
+2026-10-12T21:53:24 INFO  reco-serve/rs-node-01 request done id=req-2b9706d2 route=/reco-serve/v1/cancel status=200 latency_ms=80
+2026-10-12T21:53:28 INFO  reco-serve/rs-node-11 request done id=req-d5fcd7e9 route=/reco-serve/v1/update status=429 latency_ms=456
+2026-10-12T21:53:30 INFO  reco-serve/rs-node-18 config applied key=retry.max_attempts value=30 by=hbyoon
+2026-10-12T21:53:35 INFO  reco-serve/rs-node-23 ticket linked id=OPS-48855 reason=schema_change
+2026-10-12T21:53:37 INFO  reco-serve/rs-node-16 deploy step release=reco-serve-4.21.5 step=start result=ok took_s=188
+2026-10-12T21:53:40 ERROR reco-serve/rs-node-01 job failed job=reco-serve-rollup attempt=2 cause=upstream_timeout
+2026-10-12T21:53:47 INFO  reco-serve/rs-node-01 request done id=req-01e39cd7 route=/reco-serve/v1/verify status=200 latency_ms=132
+2026-10-12T21:53:48 INFO  reco-serve/rs-node-22 request done id=req-b367e8c4 route=/reco-serve/v1/list status=200 latency_ms=94
+2026-10-12T21:53:49 INFO  reco-serve/rs-node-02 request done id=req-8198fc54 route=/reco-serve/v1/status status=204 latency_ms=150
+2026-10-12T21:53:52 WARN  reco-serve/rs-node-02 alert fired rule=disk_usage_warning value=62% threshold=59%
+2026-10-12T21:53:54 INFO  reco-serve/rs-node-09 request done id=req-3029eb19 route=/reco-serve/v1/get status=200 latency_ms=255
+2026-10-12T21:53:58 INFO  reco-serve/rs-node-05 cache stats region=ap-ne-2c hit_ratio=78.5% evictions=6175
+2026-10-12T21:54:02 INFO  reco-serve/rs-node-01 request done id=req-d8b54cd6 route=/reco-serve/v1/get status=400 latency_ms=220
+2026-10-12T21:54:05 INFO  reco-serve/rs-node-21 request done id=req-ab685031 route=/reco-serve/v1/status status=200 latency_ms=1204
+2026-10-12T21:54:10 INFO  reco-serve/rs-node-05 request done id=req-745a6fa6 route=/reco-serve/v1/get status=200 latency_ms=197
+2026-10-12T21:54:12 INFO  reco-serve/rs-node-05 config applied key=http.read_timeout_ms value=false by=dwjung
+2026-10-12T21:54:15 INFO  reco-serve/rs-node-02 request done id=req-c3cd1ccc route=/reco-serve/v1/update status=200 latency_ms=336
+2026-10-12T21:54:22 INFO  reco-serve/rs-node-20 deploy step release=reco-serve-4.20.8 step=shift_traffic_50 result=ok took_s=100
+2026-10-12T21:54:23 INFO  reco-serve/rs-node-04 deploy step release=reco-serve-4.20.7 step=migrate result=ok took_s=84
+2026-10-12T21:54:29 INFO  reco-serve/rs-node-11 request done id=req-144b6023 route=/reco-serve/v1/list status=404 latency_ms=162
+2026-10-12T21:54:34 INFO  reco-serve/rs-node-13 request done id=req-685b6fee route=/reco-serve/v1/get status=200 latency_ms=615
+2026-10-12T21:54:35 ERROR reco-serve/rs-node-04 job failed job=reco-serve-reindex attempt=4 cause=quota_exceeded
+2026-10-12T21:54:42 INFO  reco-serve/rs-node-03 request done id=req-b0db244b route=/reco-serve/v1/update status=503 latency_ms=506
+2026-10-12T21:54:46 INFO  reco-serve/rs-node-21 request done id=req-df8ad8a3 route=/reco-serve/v1/list status=409 latency_ms=122
+2026-10-12T21:54:50 INFO  reco-serve/rs-node-16 config applied key=queue.visibility_s value=false by=mjlee
+2026-10-12T21:54:51 INFO  reco-serve/rs-node-15 config applied key=http.max_conns value=40 by=sykang
+2026-10-12T21:54:55 INFO  reco-serve/rs-node-17 request done id=req-a6a5eded route=/reco-serve/v1/create status=200 latency_ms=276
+2026-10-12T21:54:59 WARN  reco-serve/rs-node-17 alert fired rule=p99_latency_high value=94ms threshold=83ms
+2026-10-12T21:55:03 INFO  reco-serve/rs-node-23 deploy step release=reco-serve-4.11.0 step=shift_traffic_100 result=ok took_s=82
+2026-10-12T21:55:09 INFO  reco-serve/rs-node-17 request done id=req-3a36a5ee route=/reco-serve/v1/verify status=200 latency_ms=143
+2026-10-12T21:55:15 INFO  reco-serve/rs-node-19 config applied key=gc.pause_target_ms value=5026 by=yjchoi
+2026-10-12T21:55:16 INFO  reco-serve/rs-node-13 request done id=req-4763c779 route=/reco-serve/v1/update status=409 latency_ms=65
+2026-10-12T21:55:20 INFO  reco-serve/rs-node-17 request done id=req-1b19c4b1 route=/reco-serve/v1/list status=201 latency_ms=158
+2026-10-12T21:55:26 WARN  reco-serve/rs-node-21 alert fired rule=replica_lag_high value=82s threshold=74s
+2026-10-12T21:55:30 INFO  reco-serve/rs-node-10 request done id=req-2a8a5889 route=/reco-serve/v1/cancel status=200 latency_ms=97
+2026-10-12T21:55:35 INFO  reco-serve/rs-node-15 request done id=req-080e8c11 route=/reco-serve/v1/update status=200 latency_ms=239
+2026-10-12T21:55:39 INFO  reco-serve/rs-node-20 request done id=req-ec2e7e74 route=/reco-serve/v1/status status=200 latency_ms=35
+2026-10-12T21:55:40 INFO  reco-serve/rs-node-10 ticket linked id=OPS-49600 reason=schema_change
+2026-10-12T21:55:42 INFO  reco-serve/rs-node-15 request done id=req-35c38184 route=/reco-serve/v1/list status=200 latency_ms=73
+2026-10-12T21:55:43 INFO  reco-serve/rs-node-18 request done id=req-f3445ca2 route=/reco-serve/v1/status status=400 latency_ms=147
+2026-10-12T21:55:44 INFO  reco-serve/rs-node-14 ticket linked id=OPS-48583 reason=dependency_upgrade
+2026-10-12T21:55:50 INFO  reco-serve/rs-node-18 deploy step release=reco-serve-4.18.4 step=healthcheck result=ok took_s=25
+2026-10-12T21:55:56 INFO  reco-serve/rs-node-13 request done id=req-abf19974 route=/reco-serve/v1/sync status=200 latency_ms=78
+2026-10-12T21:55:58 INFO  reco-serve/rs-node-04 ticket linked id=OPS-48618 reason=schema_change
+2026-10-12T21:56:04 INFO  reco-serve/rs-node-14 backup finished file=/vault/weekly/orders_2026w36.tar.zst size_mb=14216 checksum=5f5bd1d2
+2026-10-12T21:56:09 NOTE  reco-serve/rs-node-11 operator=yjchoi memo="헬스체크 간격을 59초에서 71초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-12T21:56:15 INFO  reco-serve/rs-node-20 request done id=req-9ac41da3 route=/reco-serve/v1/update status=400 latency_ms=55
+2026-10-12T21:56:20 INFO  reco-serve/rs-node-07 config applied key=queue.visibility_s value=50 by=ejlim
+2026-10-12T21:56:21 INFO  reco-serve/rs-node-11 request done id=req-fa21a431 route=/reco-serve/v1/update status=503 latency_ms=208
+2026-10-12T21:56:25 INFO  reco-serve/rs-node-22 deploy step release=reco-serve-4.17.4 step=verify result=ok took_s=66
+2026-10-12T21:56:27 INFO  reco-serve/rs-node-13 request done id=req-34d40f67 route=/reco-serve/v1/sync status=200 latency_ms=91
+2026-10-12T21:56:28 INFO  reco-serve/rs-node-24 request done id=req-7270b261 route=/reco-serve/v1/sync status=200 latency_ms=122
+2026-10-12T21:56:34 INFO  reco-serve/rs-node-04 request done id=req-2876257e route=/reco-serve/v1/list status=404 latency_ms=163
+2026-10-12T21:56:40 INFO  reco-serve/rs-node-01 request done id=req-519518f9 route=/reco-serve/v1/create status=200 latency_ms=143
+2026-10-12T21:56:43 INFO  reco-serve/rs-node-06 request done id=req-8e80e1f4 route=/reco-serve/v1/verify status=200 latency_ms=163
+2026-10-12T21:56:47 INFO  reco-serve/rs-node-09 request done id=req-1b2483af route=/reco-serve/v1/create status=200 latency_ms=314
+2026-10-12T21:56:53 INFO  reco-serve/rs-node-20 pool resize target=reco-serve-db max_pool_size=210 prev=182
+2026-10-12T21:56:57 INFO  reco-serve/rs-node-24 backup finished file=/vault/weekly/orders_2026w31.tar.zst size_mb=35081 checksum=2be17cdd
+2026-10-12T21:56:59 INFO  reco-serve/rs-node-19 request done id=req-822f0ec7 route=/reco-serve/v1/update status=409 latency_ms=154
+2026-10-12T21:57:06 INFO  reco-serve/rs-node-01 deploy step release=reco-serve-4.15.6 step=healthcheck result=ok took_s=65
+2026-10-12T21:57:10 INFO  reco-serve/rs-node-20 request done id=req-d0236cf0 route=/reco-serve/v1/verify status=200 latency_ms=253
+2026-10-12T21:57:11 INFO  reco-serve/rs-node-14 request done id=req-44c7ab33 route=/reco-serve/v1/cancel status=400 latency_ms=86
+2026-10-12T21:57:16 INFO  reco-serve/rs-node-19 request done id=req-6acd9a9d route=/reco-serve/v1/get status=200 latency_ms=91
+2026-10-12T21:57:23 INFO  reco-serve/rs-node-23 request done id=req-8789bc20 route=/reco-serve/v1/create status=200 latency_ms=20
+2026-10-12T21:57:25 INFO  reco-serve/rs-node-14 cache stats region=ap-ne-2c hit_ratio=60.2% evictions=30352
+2026-10-12T21:57:26 INFO  reco-serve/rs-node-06 config applied key=retry.max_attempts value=2386 by=dwjung
+2026-10-12T21:57:33 WARN  reco-serve/rs-node-19 alert fired rule=gc_pause_long value=77ms threshold=64ms
+2026-10-12T21:57:35 WARN  reco-serve/rs-node-02 alert fired rule=conn_pool_saturated value=82% threshold=80%
+2026-10-12T21:57:38 INFO  reco-serve/rs-node-05 backup finished file=/vault/daily/inventory_20261017.tar.zst size_mb=65603 checksum=a95ba072
+2026-10-12T21:57:39 INFO  reco-serve/rs-node-03 request done id=req-1923eacf route=/reco-serve/v1/get status=200 latency_ms=229
+2026-10-12T21:57:46 NOTE  reco-serve/rs-node-10 operator=mjlee memo="로그 보존 기간은 46일로 유지하기로 함."
+2026-10-12T21:57:51 INFO  reco-serve/rs-node-06 backup finished file=/vault/daily/inventory_20261024.tar.zst size_mb=14207 checksum=ce1f7ac7
+2026-10-12T21:57:52 INFO  reco-serve/rs-node-09 request done id=req-2f07cd94 route=/reco-serve/v1/list status=200 latency_ms=141
+2026-10-12T21:57:54 INFO  reco-serve/rs-node-11 pool resize target=reco-serve-queue max_pool_size=203 prev=227
+2026-10-12T21:58:01 WARN  reco-serve/rs-node-13 alert fired rule=replica_lag_high value=90s threshold=82s
+2026-10-12T21:58:07 INFO  reco-serve/rs-node-03 config applied key=queue.visibility_s value=false by=mjlee
+2026-10-12T21:58:14 INFO  reco-serve/rs-node-23 backup finished file=/vault/daily/audit_20261008.tar.zst size_mb=26552 checksum=1bd25663
+2026-10-12T21:58:18 INFO  reco-serve/rs-node-14 request done id=req-40ae432c route=/reco-serve/v1/get status=200 latency_ms=474
+2026-10-12T21:58:25 INFO  reco-serve/rs-node-22 request done id=req-371e83dc route=/reco-serve/v1/update status=200 latency_ms=58
+2026-10-12T21:58:32 INFO  reco-serve/rs-node-02 ticket linked id=OPS-49964 reason=oncall_handoff
+2026-10-12T21:58:35 INFO  reco-serve/rs-node-19 ticket linked id=OPS-47574 reason=oncall_handoff
+2026-10-12T21:58:40 INFO  reco-serve/rs-node-08 request done id=req-ba29c8a4 route=/reco-serve/v1/sync status=404 latency_ms=36
+2026-10-12T21:58:44 INFO  reco-serve/rs-node-15 cache stats region=us-we-2b hit_ratio=61.0% evictions=28476
+2026-10-12T21:58:47 INFO  reco-serve/rs-node-09 config applied key=flush.interval_ms value=true by=jhpark
+2026-10-12T21:58:51 INFO  reco-serve/rs-node-11 request done id=req-948f799b route=/reco-serve/v1/status status=409 latency_ms=245
+2026-10-12T21:58:54 INFO  reco-serve/rs-node-04 backup finished file=/vault/daily/users_20261013.tar.zst size_mb=81355 checksum=be32c810
+2026-10-12T21:59:01 INFO  reco-serve/rs-node-13 request done id=req-6f3d4d4d route=/reco-serve/v1/cancel status=204 latency_ms=69
+2026-10-12T21:59:05 INFO  reco-serve/rs-node-13 request done id=req-67440a2b route=/reco-serve/v1/list status=200 latency_ms=66
+2026-10-12T21:59:12 INFO  reco-serve/rs-node-09 request done id=req-88e9363b route=/reco-serve/v1/create status=409 latency_ms=14
+2026-10-12T21:59:15 INFO  reco-serve/rs-node-18 config applied key=gc.pause_target_ms value=false by=hbyoon
+2026-10-12T21:59:19 INFO  reco-serve/rs-node-10 request done id=req-e83c28e0 route=/reco-serve/v1/verify status=200 latency_ms=27
+2026-10-12T21:59:21 INFO  reco-serve/rs-node-17 request done id=req-5aa191a8 route=/reco-serve/v1/get status=200 latency_ms=84
+2026-10-12T21:59:23 WARN  reco-serve/rs-node-03 alert fired rule=gc_pause_long value=61ms threshold=54ms
+2026-10-12T21:59:29 INFO  reco-serve/rs-node-16 request done id=req-511dc299 route=/reco-serve/v1/list status=200 latency_ms=394
+2026-10-12T21:59:33 INFO  reco-serve/rs-node-18 pool resize target=reco-serve-cache max_pool_size=142 prev=132
+2026-10-12T21:59:38 INFO  reco-serve/rs-node-12 request done id=req-24af0fd7 route=/reco-serve/v1/create status=200 latency_ms=159
+2026-10-12T21:59:42 INFO  reco-serve/rs-node-18 deploy step release=reco-serve-4.15.4 step=pull_image result=ok took_s=92
+2026-10-12T21:59:48 INFO  reco-serve/rs-node-07 config applied key=queue.batch_size value=5951 by=dwjung
+2026-10-12T21:59:51 NOTE  reco-serve/rs-node-04 operator=sykang memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-12T21:59:57 INFO  reco-serve/rs-node-14 request done id=req-4271c898 route=/reco-serve/v1/sync status=204 latency_ms=29
+2026-10-12T22:00:00 INFO  reco-serve/rs-node-07 cache stats region=ap-ne-2b hit_ratio=61.0% evictions=14528
+2026-10-12T22:00:01 INFO  reco-serve/rs-node-13 deploy step release=reco-serve-4.14.1 step=drain result=ok took_s=5
+2026-10-12T22:00:08 INFO  reco-serve/rs-node-04 request done id=req-10d907f9 route=/reco-serve/v1/update status=200 latency_ms=359
+2026-10-12T22:00:09 INFO  reco-serve/rs-node-07 config applied key=worker.concurrency value=4858 by=jhpark
+2026-10-12T22:00:12 WARN  reco-serve/rs-node-19 alert fired rule=disk_usage_warning value=59% threshold=52%
+2026-10-12T22:00:14 INFO  reco-serve/rs-node-09 deploy step release=reco-serve-4.11.5 step=healthcheck result=ok took_s=152
+2026-10-12T22:00:19 NOTE  reco-serve/rs-node-14 operator=shkim memo="rs-node-14 재기동 후 지표 정상 확인."
+2026-10-12T22:00:22 INFO  reco-serve/rs-node-01 ticket linked id=OPS-47460 reason=runbook_update
+2026-10-12T22:00:27 ERROR reco-serve/rs-node-17 job failed job=reco-serve-rollup attempt=3 cause=lock_wait_exceeded
+2026-10-12T22:00:33 INFO  reco-serve/rs-node-10 request done id=req-a860f23b route=/reco-serve/v1/get status=200 latency_ms=448
+2026-10-12T22:00:37 INFO  reco-serve/rs-node-24 request done id=req-770f2599 route=/reco-serve/v1/get status=200 latency_ms=237
+2026-10-12T22:00:40 INFO  reco-serve/rs-node-18 pool resize target=reco-serve-queue max_pool_size=82 prev=52
+2026-10-12T22:00:47 INFO  reco-serve/rs-node-07 request done id=req-caebae26 route=/reco-serve/v1/create status=200 latency_ms=273
+2026-10-12T22:00:54 INFO  reco-serve/rs-node-03 pool resize target=reco-serve-db max_pool_size=217 prev=163
+2026-10-12T22:00:57 INFO  reco-serve/rs-node-10 request done id=req-55b42759 route=/reco-serve/v1/list status=200 latency_ms=260
+2026-10-12T22:00:59 INFO  reco-serve/rs-node-08 request done id=req-ef5b4e64 route=/reco-serve/v1/status status=200 latency_ms=83
+2026-10-12T22:01:02 WARN  reco-serve/rs-node-20 alert fired rule=error_ratio_high value=84% threshold=80%
+2026-10-12T22:01:08 INFO  reco-serve/rs-node-03 request done id=req-9ee395a5 route=/reco-serve/v1/get status=200 latency_ms=129
+2026-10-12T22:01:14 INFO  reco-serve/rs-node-13 request done id=req-866bfbe8 route=/reco-serve/v1/update status=200 latency_ms=123
+2026-10-12T22:01:18 INFO  reco-serve/rs-node-07 deploy step release=reco-serve-4.21.4 step=shift_traffic_100 result=ok took_s=117
+2026-10-12T22:01:24 INFO  reco-serve/rs-node-05 deploy step release=reco-serve-4.14.2 step=shift_traffic_100 result=ok took_s=111
+2026-10-12T22:01:30 INFO  reco-serve/rs-node-14 request done id=req-8e7f2070 route=/reco-serve/v1/sync status=201 latency_ms=170
+2026-10-12T22:01:35 INFO  reco-serve/rs-node-24 request done id=req-1d657f01 route=/reco-serve/v1/list status=200 latency_ms=176
+2026-10-12T22:01:37 INFO  reco-serve/rs-node-18 backup finished file=/vault/daily/users_20261014.tar.zst size_mb=12896 checksum=ffed8e74
+2026-10-12T22:01:42 INFO  reco-serve/rs-node-10 ticket linked id=OPS-49914 reason=dns_ttl_change
+2026-10-12T22:01:44 INFO  reco-serve/rs-node-19 request done id=req-f9cc9f69 route=/reco-serve/v1/sync status=200 latency_ms=218
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

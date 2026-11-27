@@ -1,0 +1,1 @@
+아까 붙여 준 결제 게이트웨이(pay-gw) 로그에서 요청 req-bf5bcd68 의 latency_ms 가 얼마였지?

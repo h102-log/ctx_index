@@ -1,0 +1,1 @@
+아까 붙여 준 로그 수집기(log-collector) 로그의 cache stats 줄 가운데 evictions 가 가장 컸던 줄의 시각과 그 evictions 값이 뭐였지?

@@ -1,0 +1,424 @@
+참고용 로그 05: 이미지 리사이저(img-resize) 캐시 점검 구간. '확인'이라고만 답해 줘.
+
+2026-10-09T19:12:28 INFO  img-resize/ir-node-02 request done id=req-231dfcdc route=/img-resize/v1/sync status=200 latency_ms=154
+2026-10-09T19:12:31 INFO  img-resize/ir-node-09 request done id=req-568e665f route=/img-resize/v1/status status=200 latency_ms=42
+2026-10-09T19:12:35 ERROR img-resize/ir-node-24 job failed job=img-resize-export attempt=1 cause=dns_failure
+2026-10-09T19:12:36 WARN  img-resize/ir-node-10 alert fired rule=queue_depth_high value=53 threshold=51
+2026-10-09T19:12:40 INFO  img-resize/ir-node-05 request done id=req-0bbdcbf0 route=/img-resize/v1/status status=200 latency_ms=95
+2026-10-09T19:12:44 INFO  img-resize/ir-node-09 deploy step release=img-resize-4.16.3 step=pull_image result=ok took_s=24
+2026-10-09T19:12:50 ERROR img-resize/ir-node-07 job failed job=img-resize-reindex attempt=1 cause=oom_killed
+2026-10-09T19:12:51 WARN  img-resize/ir-node-01 alert fired rule=p99_latency_high value=74ms threshold=60ms
+2026-10-09T19:12:53 INFO  img-resize/ir-node-05 deploy step release=img-resize-4.18.1 step=shift_traffic_100 result=ok took_s=153
+2026-10-09T19:12:54 INFO  img-resize/ir-node-19 request done id=req-f34660e5 route=/img-resize/v1/list status=404 latency_ms=1483
+2026-10-09T19:12:55 INFO  img-resize/ir-node-09 request done id=req-30ac1e26 route=/img-resize/v1/cancel status=200 latency_ms=74
+2026-10-09T19:12:56 INFO  img-resize/ir-node-05 ticket linked id=OPS-47912 reason=node_drain
+2026-10-09T19:12:57 NOTE  img-resize/ir-node-15 operator=mjlee memo="ir-node-15 재기동 후 지표 정상 확인."
+2026-10-09T19:13:01 INFO  img-resize/ir-node-03 request done id=req-07db3bd1 route=/img-resize/v1/list status=200 latency_ms=213
+2026-10-09T19:13:05 INFO  img-resize/ir-node-02 request done id=req-43472c5e route=/img-resize/v1/cancel status=400 latency_ms=85
+2026-10-09T19:13:11 INFO  img-resize/ir-node-20 request done id=req-e3179b47 route=/img-resize/v1/sync status=200 latency_ms=116
+2026-10-09T19:13:17 INFO  img-resize/ir-node-14 config applied key=queue.visibility_s value=31 by=jhpark
+2026-10-09T19:13:22 INFO  img-resize/ir-node-20 request done id=req-e8bc0aac route=/img-resize/v1/create status=204 latency_ms=165
+2026-10-09T19:13:26 INFO  img-resize/ir-node-23 pool resize target=img-resize-db max_pool_size=280 prev=242
+2026-10-09T19:13:28 INFO  img-resize/ir-node-20 request done id=req-2bf331c9 route=/img-resize/v1/verify status=200 latency_ms=206
+2026-10-09T19:13:34 INFO  img-resize/ir-node-14 config applied key=dns.ttl_s value=true by=hbyoon
+2026-10-09T19:13:37 ERROR img-resize/ir-node-16 job failed job=img-resize-reindex attempt=5 cause=oom_killed
+2026-10-09T19:13:41 NOTE  img-resize/ir-node-19 operator=ejlim memo="연동 팀에 변경 공지 완료."
+2026-10-09T19:13:43 INFO  img-resize/ir-node-01 request done id=req-536e5cef route=/img-resize/v1/update status=200 latency_ms=70
+2026-10-09T19:13:47 INFO  img-resize/ir-node-18 pool resize target=img-resize-queue max_pool_size=260 prev=259
+2026-10-09T19:13:53 INFO  img-resize/ir-node-01 pool resize target=img-resize-worker max_pool_size=336 prev=318
+2026-10-09T19:13:56 INFO  img-resize/ir-node-17 request done id=req-62001e8d route=/img-resize/v1/status status=200 latency_ms=188
+2026-10-09T19:13:58 INFO  img-resize/ir-node-23 deploy step release=img-resize-4.21.2 step=shift_traffic_50 result=ok took_s=224
+2026-10-09T19:14:03 WARN  img-resize/ir-node-05 alert fired rule=conn_pool_saturated value=76% threshold=65%
+2026-10-09T19:14:09 INFO  img-resize/ir-node-22 config applied key=limiter.rps value=29% by=dwjung
+2026-10-09T19:14:14 INFO  img-resize/ir-node-10 deploy step release=img-resize-4.11.9 step=start result=ok took_s=211
+2026-10-09T19:14:15 INFO  img-resize/ir-node-05 deploy step release=img-resize-4.10.9 step=verify result=ok took_s=230
+2026-10-09T19:14:19 INFO  img-resize/ir-node-02 cache stats region=ap-ne-2a hit_ratio=85.0% evictions=9738
+2026-10-09T19:14:23 WARN  img-resize/ir-node-17 alert fired rule=p99_latency_high value=87ms threshold=83ms
+2026-10-09T19:14:27 INFO  img-resize/ir-node-12 pool resize target=img-resize-upstream max_pool_size=66 prev=92
+2026-10-09T19:14:28 INFO  img-resize/ir-node-14 request done id=req-ca4bb365 route=/img-resize/v1/create status=404 latency_ms=191
+2026-10-09T19:14:35 INFO  img-resize/ir-node-10 request done id=req-8d727bc5 route=/img-resize/v1/get status=200 latency_ms=23
+2026-10-09T19:14:39 INFO  img-resize/ir-node-20 pool resize target=img-resize-worker max_pool_size=57 prev=28
+2026-10-09T19:14:43 INFO  img-resize/ir-node-24 ticket linked id=OPS-47348 reason=runbook_update
+2026-10-09T19:14:44 INFO  img-resize/ir-node-18 request done id=req-bb50b0b5 route=/img-resize/v1/verify status=200 latency_ms=46
+2026-10-09T19:14:49 INFO  img-resize/ir-node-06 request done id=req-8fdd4bec route=/img-resize/v1/status status=200 latency_ms=90
+2026-10-09T19:14:52 INFO  img-resize/ir-node-16 backup finished file=/vault/daily/payments_20261009.tar.zst size_mb=4964 checksum=8fb2eac9
+2026-10-09T19:14:55 INFO  img-resize/ir-node-24 config applied key=cache.ttl_s value=1475 by=dwjung
+2026-10-09T19:15:01 WARN  img-resize/ir-node-04 alert fired rule=fd_usage_high value=96% threshold=81%
+2026-10-09T19:15:02 INFO  img-resize/ir-node-09 request done id=req-b42442d1 route=/img-resize/v1/verify status=200 latency_ms=212
+2026-10-09T19:15:04 INFO  img-resize/ir-node-22 config applied key=queue.batch_size value=10 by=dwjung
+2026-10-09T19:15:06 WARN  img-resize/ir-node-14 alert fired rule=gc_pause_long value=80ms threshold=73ms
+2026-10-09T19:15:08 WARN  img-resize/ir-node-01 alert fired rule=error_ratio_high value=73% threshold=69%
+2026-10-09T19:15:15 INFO  img-resize/ir-node-24 request done id=req-4f6e9868 route=/img-resize/v1/get status=200 latency_ms=38
+2026-10-09T19:15:21 INFO  img-resize/ir-node-21 request done id=req-5a44836b route=/img-resize/v1/update status=200 latency_ms=192
+2026-10-09T19:15:27 INFO  img-resize/ir-node-13 pool resize target=img-resize-cache max_pool_size=144 prev=116
+2026-10-09T19:15:28 INFO  img-resize/ir-node-20 deploy step release=img-resize-4.15.8 step=migrate result=ok took_s=78
+2026-10-09T19:15:34 INFO  img-resize/ir-node-03 request done id=req-9bda37aa route=/img-resize/v1/sync status=404 latency_ms=329
+2026-10-09T19:15:38 INFO  img-resize/ir-node-16 request done id=req-3bcdecce route=/img-resize/v1/get status=200 latency_ms=103
+2026-10-09T19:15:39 WARN  img-resize/ir-node-13 alert fired rule=queue_depth_high value=73 threshold=71
+2026-10-09T19:15:44 INFO  img-resize/ir-node-13 request done id=req-269193eb route=/img-resize/v1/cancel status=200 latency_ms=383
+2026-10-09T19:15:49 INFO  img-resize/ir-node-23 request done id=req-8d56bdcc route=/img-resize/v1/create status=200 latency_ms=55
+2026-10-09T19:15:54 INFO  img-resize/ir-node-14 request done id=req-fa355073 route=/img-resize/v1/status status=200 latency_ms=205
+2026-10-09T19:15:56 INFO  img-resize/ir-node-21 pool resize target=img-resize-upstream max_pool_size=187 prev=147
+2026-10-09T19:16:03 INFO  img-resize/ir-node-10 config applied key=queue.batch_size value=8 by=ejlim
+2026-10-09T19:16:07 INFO  img-resize/ir-node-11 request done id=req-6013b8f4 route=/img-resize/v1/create status=429 latency_ms=360
+2026-10-09T19:16:11 INFO  img-resize/ir-node-03 backup finished file=/vault/daily/sessions_20261026.tar.zst size_mb=35765 checksum=0ff3baa2
+2026-10-09T19:16:18 INFO  img-resize/ir-node-06 request done id=req-8204ee3a route=/img-resize/v1/status status=200 latency_ms=138
+2026-10-09T19:16:24 WARN  img-resize/ir-node-15 alert fired rule=error_ratio_high value=88% threshold=74%
+2026-10-09T19:16:27 INFO  img-resize/ir-node-04 request done id=req-f890a95c route=/img-resize/v1/get status=400 latency_ms=146
+2026-10-09T19:16:30 INFO  img-resize/ir-node-24 request done id=req-11a36310 route=/img-resize/v1/cancel status=200 latency_ms=221
+2026-10-09T19:16:33 INFO  img-resize/ir-node-11 backup finished file=/vault/weekly/users_2026w39.tar.zst size_mb=79109 checksum=5ec48388
+2026-10-09T19:16:37 INFO  img-resize/ir-node-24 ticket linked id=OPS-47115 reason=oncall_handoff
+2026-10-09T19:16:41 INFO  img-resize/ir-node-08 backup finished file=/vault/daily/users_20261013.tar.zst size_mb=19217 checksum=05dd9b52
+2026-10-09T19:16:48 INFO  img-resize/ir-node-05 request done id=req-a7725799 route=/img-resize/v1/status status=200 latency_ms=82
+2026-10-09T19:16:54 INFO  img-resize/ir-node-24 request done id=req-baf49cd3 route=/img-resize/v1/status status=200 latency_ms=10
+2026-10-09T19:16:58 INFO  img-resize/ir-node-18 backup finished file=/vault/weekly/users_2026w44.tar.zst size_mb=65052 checksum=a0c9247c
+2026-10-09T19:17:03 INFO  img-resize/ir-node-05 config applied key=dns.ttl_s value=2455 by=hbyoon
+2026-10-09T19:17:05 INFO  img-resize/ir-node-10 request done id=req-5c75d1c3 route=/img-resize/v1/sync status=404 latency_ms=65
+2026-10-09T19:17:09 WARN  img-resize/ir-node-23 alert fired rule=heap_used_high value=91% threshold=88%
+2026-10-09T19:17:10 INFO  img-resize/ir-node-04 ticket linked id=OPS-47805 reason=cert_rotation
+2026-10-09T19:17:12 INFO  img-resize/ir-node-22 config applied key=dns.ttl_s value=91% by=dwjung
+2026-10-09T19:17:14 NOTE  img-resize/ir-node-17 operator=mjlee memo="배치 시작 시각을 57시 82분으로 고정함."
+2026-10-09T19:17:15 WARN  img-resize/ir-node-11 alert fired rule=error_ratio_high value=70% threshold=59%
+2026-10-09T19:17:19 INFO  img-resize/ir-node-13 config applied key=worker.concurrency value=5389 by=mjlee
+2026-10-09T19:17:24 INFO  img-resize/ir-node-04 ticket linked id=OPS-48321 reason=dependency_upgrade
+2026-10-09T19:17:25 ERROR img-resize/ir-node-04 job failed job=img-resize-export attempt=4 cause=lock_wait_exceeded
+2026-10-09T19:17:31 INFO  img-resize/ir-node-03 config applied key=flush.interval_ms value=46% by=jhpark
+2026-10-09T19:17:35 INFO  img-resize/ir-node-15 request done id=req-c9590f29 route=/img-resize/v1/get status=200 latency_ms=260
+2026-10-09T19:17:37 INFO  img-resize/ir-node-09 request done id=req-1f44d1d5 route=/img-resize/v1/update status=200 latency_ms=592
+2026-10-09T19:17:39 INFO  img-resize/ir-node-13 deploy step release=img-resize-4.10.0 step=shift_traffic_100 result=ok took_s=160
+2026-10-09T19:17:43 INFO  img-resize/ir-node-22 request done id=req-8ae0abdc route=/img-resize/v1/update status=404 latency_ms=391
+2026-10-09T19:17:50 WARN  img-resize/ir-node-23 alert fired rule=heap_used_high value=85% threshold=81%
+2026-10-09T19:17:54 INFO  img-resize/ir-node-07 request done id=req-67dc76f2 route=/img-resize/v1/get status=201 latency_ms=71
+2026-10-09T19:17:55 WARN  img-resize/ir-node-19 alert fired rule=p99_latency_high value=90ms threshold=84ms
+2026-10-09T19:17:59 INFO  img-resize/ir-node-03 ticket linked id=OPS-49333 reason=oncall_handoff
+2026-10-09T19:18:03 INFO  img-resize/ir-node-04 cache stats region=ap-ne-2c hit_ratio=57.9% evictions=25498
+2026-10-09T19:18:06 WARN  img-resize/ir-node-13 alert fired rule=gc_pause_long value=74ms threshold=72ms
+2026-10-09T19:18:11 INFO  img-resize/ir-node-07 config applied key=retry.max_attempts value=1787 by=sykang
+2026-10-09T19:18:16 INFO  img-resize/ir-node-18 pool resize target=img-resize-upstream max_pool_size=127 prev=93
+2026-10-09T19:18:19 INFO  img-resize/ir-node-03 deploy step release=img-resize-4.19.5 step=migrate result=ok took_s=45
+2026-10-09T19:18:22 INFO  img-resize/ir-node-01 pool resize target=img-resize-upstream max_pool_size=87 prev=82
+2026-10-09T19:18:25 INFO  img-resize/ir-node-06 request done id=req-9a3b55b5 route=/img-resize/v1/create status=200 latency_ms=288
+2026-10-09T19:18:28 INFO  img-resize/ir-node-15 ticket linked id=OPS-48990 reason=log_volume_spike
+2026-10-09T19:18:30 INFO  img-resize/ir-node-21 pool resize target=img-resize-upstream max_pool_size=290 prev=286
+2026-10-09T19:18:35 INFO  img-resize/ir-node-05 request done id=req-2ac5a132 route=/img-resize/v1/update status=500 latency_ms=207
+2026-10-09T19:18:36 INFO  img-resize/ir-node-16 request done id=req-9c9d5487 route=/img-resize/v1/list status=400 latency_ms=198
+2026-10-09T19:18:37 INFO  img-resize/ir-node-24 config applied key=cache.ttl_s value=9 by=dwjung
+2026-10-09T19:18:42 INFO  img-resize/ir-node-22 request done id=req-2254b3a1 route=/img-resize/v1/cancel status=200 latency_ms=65
+2026-10-09T19:18:44 INFO  img-resize/ir-node-15 ticket linked id=OPS-49329 reason=runbook_update
+2026-10-09T19:18:46 INFO  img-resize/ir-node-12 request done id=req-8efadfee route=/img-resize/v1/create status=200 latency_ms=33
+2026-10-09T19:18:52 INFO  img-resize/ir-node-23 pool resize target=img-resize-worker max_pool_size=186 prev=155
+2026-10-09T19:18:55 INFO  img-resize/ir-node-06 deploy step release=img-resize-4.21.1 step=shift_traffic_10 result=ok took_s=68
+2026-10-09T19:18:58 INFO  img-resize/ir-node-16 cache stats region=ap-se-1a hit_ratio=79.8% evictions=37851
+2026-10-09T19:19:03 INFO  img-resize/ir-node-20 cache stats region=ap-ne-2a hit_ratio=72.8% evictions=13330
+2026-10-09T19:19:08 INFO  img-resize/ir-node-16 request done id=req-9a53d6e8 route=/img-resize/v1/cancel status=200 latency_ms=46
+2026-10-09T19:19:09 INFO  img-resize/ir-node-09 request done id=req-2480380d route=/img-resize/v1/sync status=200 latency_ms=308
+2026-10-09T19:19:10 INFO  img-resize/ir-node-01 backup finished file=/vault/weekly/users_2026w36.tar.zst size_mb=29938 checksum=f657a46a
+2026-10-09T19:19:14 ERROR img-resize/ir-node-01 job failed job=img-resize-reindex attempt=1 cause=dns_failure
+2026-10-09T19:19:19 INFO  img-resize/ir-node-04 request done id=req-4b6aa708 route=/img-resize/v1/get status=429 latency_ms=122
+2026-10-09T19:19:24 INFO  img-resize/ir-node-03 request done id=req-88b14fd3 route=/img-resize/v1/cancel status=200 latency_ms=201
+2026-10-09T19:19:29 INFO  img-resize/ir-node-10 config applied key=queue.visibility_s value=81% by=dwjung
+2026-10-09T19:19:32 INFO  img-resize/ir-node-01 config applied key=http.max_conns value=53% by=jhpark
+2026-10-09T19:19:38 ERROR img-resize/ir-node-20 job failed job=img-resize-reindex attempt=4 cause=quota_exceeded
+2026-10-09T19:19:43 INFO  img-resize/ir-node-16 request done id=req-30522b29 route=/img-resize/v1/status status=200 latency_ms=539
+2026-10-09T19:19:47 INFO  img-resize/ir-node-03 request done id=req-1c6e1128 route=/img-resize/v1/sync status=201 latency_ms=157
+2026-10-09T19:19:51 INFO  img-resize/ir-node-17 config applied key=worker.concurrency value=5033 by=hbyoon
+2026-10-09T19:19:55 INFO  img-resize/ir-node-10 request done id=req-ba27b374 route=/img-resize/v1/sync status=400 latency_ms=739
+2026-10-09T19:20:02 INFO  img-resize/ir-node-16 request done id=req-a1ce675d route=/img-resize/v1/sync status=200 latency_ms=142
+2026-10-09T19:20:03 INFO  img-resize/ir-node-14 request done id=req-8eba7aa7 route=/img-resize/v1/verify status=503 latency_ms=290
+2026-10-09T19:20:07 INFO  img-resize/ir-node-03 request done id=req-a07b5d36 route=/img-resize/v1/create status=404 latency_ms=64
+2026-10-09T19:20:13 INFO  img-resize/ir-node-24 cache stats region=us-we-2b hit_ratio=80.3% evictions=35821
+2026-10-09T19:20:16 NOTE  img-resize/ir-node-17 operator=dwjung memo="헬스체크 간격을 50초에서 62초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-09T19:20:21 WARN  img-resize/ir-node-10 alert fired rule=disk_usage_warning value=98% threshold=96%
+2026-10-09T19:20:26 INFO  img-resize/ir-node-16 request done id=req-857d7c3b route=/img-resize/v1/list status=200 latency_ms=89
+2026-10-09T19:20:28 INFO  img-resize/ir-node-23 request done id=req-f5af2c84 route=/img-resize/v1/create status=400 latency_ms=109
+2026-10-09T19:20:34 INFO  img-resize/ir-node-17 deploy step release=img-resize-4.14.2 step=drain result=ok took_s=204
+2026-10-09T19:20:40 INFO  img-resize/ir-node-13 pool resize target=img-resize-queue max_pool_size=282 prev=328
+2026-10-09T19:20:47 INFO  img-resize/ir-node-08 request done id=req-11949bb8 route=/img-resize/v1/status status=200 latency_ms=54
+2026-10-09T19:20:53 INFO  img-resize/ir-node-11 deploy step release=img-resize-4.14.8 step=shift_traffic_50 result=ok took_s=13
+2026-10-09T19:20:59 INFO  img-resize/ir-node-06 config applied key=flush.interval_ms value=true by=sykang
+2026-10-09T19:21:04 INFO  img-resize/ir-node-17 deploy step release=img-resize-4.19.2 step=warmup result=ok took_s=200
+2026-10-09T19:21:07 NOTE  img-resize/ir-node-07 operator=ejlim memo="연동 팀에 변경 공지 완료."
+2026-10-09T19:21:10 WARN  img-resize/ir-node-08 alert fired rule=disk_usage_warning value=58% threshold=50%
+2026-10-09T19:21:17 WARN  img-resize/ir-node-22 alert fired rule=error_ratio_high value=61% threshold=58%
+2026-10-09T19:21:22 INFO  img-resize/ir-node-11 request done id=req-2415ef31 route=/img-resize/v1/list status=404 latency_ms=31
+2026-10-09T19:21:24 INFO  img-resize/ir-node-05 request done id=req-b41197fc route=/img-resize/v1/sync status=200 latency_ms=69
+2026-10-09T19:21:31 INFO  img-resize/ir-node-15 request done id=req-983f4651 route=/img-resize/v1/verify status=200 latency_ms=76
+2026-10-09T19:21:38 INFO  img-resize/ir-node-09 request done id=req-ae6ba9e7 route=/img-resize/v1/sync status=200 latency_ms=101
+2026-10-09T19:21:42 INFO  img-resize/ir-node-18 deploy step release=img-resize-4.19.0 step=verify result=ok took_s=9
+2026-10-09T19:21:45 INFO  img-resize/ir-node-07 request done id=req-402c94f0 route=/img-resize/v1/create status=409 latency_ms=327
+2026-10-09T19:21:46 INFO  img-resize/ir-node-03 ticket linked id=OPS-47785 reason=log_volume_spike
+2026-10-09T19:21:51 WARN  img-resize/ir-node-07 alert fired rule=conn_pool_saturated value=87% threshold=75%
+2026-10-09T19:21:55 INFO  img-resize/ir-node-09 config applied key=breaker.open_ratio value=59 by=shkim
+2026-10-09T19:21:56 INFO  img-resize/ir-node-18 request done id=req-4dcffcb7 route=/img-resize/v1/list status=404 latency_ms=32
+2026-10-09T19:21:58 INFO  img-resize/ir-node-14 deploy step release=img-resize-4.10.7 step=migrate result=ok took_s=116
+2026-10-09T19:22:03 INFO  img-resize/ir-node-02 config applied key=http.read_timeout_ms value=2926 by=jhpark
+2026-10-09T19:22:07 ERROR img-resize/ir-node-08 job failed job=img-resize-cleanup attempt=1 cause=upstream_timeout
+2026-10-09T19:22:08 INFO  img-resize/ir-node-02 config applied key=canary.latency_p99_threshold_ms value=40 by=mjlee
+2026-10-09T19:22:15 INFO  img-resize/ir-node-03 deploy step release=img-resize-4.17.3 step=shift_traffic_10 result=ok took_s=97
+2026-10-09T19:22:21 INFO  img-resize/ir-node-19 deploy step release=img-resize-4.18.9 step=migrate result=ok took_s=9
+2026-10-09T19:22:25 INFO  img-resize/ir-node-13 config applied key=http.read_timeout_ms value=true by=shkim
+2026-10-09T19:22:27 INFO  img-resize/ir-node-17 request done id=req-435ffb10 route=/img-resize/v1/update status=200 latency_ms=275
+2026-10-09T19:22:31 INFO  img-resize/ir-node-11 config applied key=canary.latency_p99_threshold_ms value=36% by=hbyoon
+2026-10-09T19:22:36 WARN  img-resize/ir-node-05 alert fired rule=conn_pool_saturated value=75% threshold=64%
+2026-10-09T19:22:37 INFO  img-resize/ir-node-22 deploy step release=img-resize-4.14.2 step=drain result=ok took_s=139
+2026-10-09T19:22:44 INFO  img-resize/ir-node-17 backup finished file=/vault/daily/inventory_20261027.tar.zst size_mb=25591 checksum=736898a0
+2026-10-09T19:22:49 NOTE  img-resize/ir-node-05 operator=yjchoi memo="배치 시작 시각을 42시 81분으로 고정함."
+2026-10-09T19:22:55 ERROR img-resize/ir-node-21 job failed job=img-resize-export attempt=1 cause=bad_checksum
+2026-10-09T19:23:01 INFO  img-resize/ir-node-11 request done id=req-6544470d route=/img-resize/v1/list status=200 latency_ms=103
+2026-10-09T19:23:03 INFO  img-resize/ir-node-09 request done id=req-6e8a5d87 route=/img-resize/v1/update status=200 latency_ms=68
+2026-10-09T19:23:06 INFO  img-resize/ir-node-18 request done id=req-a4468132 route=/img-resize/v1/update status=200 latency_ms=153
+2026-10-09T19:23:11 INFO  img-resize/ir-node-22 request done id=req-1452330d route=/img-resize/v1/verify status=409 latency_ms=177
+2026-10-09T19:23:18 ERROR img-resize/ir-node-06 job failed job=img-resize-reindex attempt=5 cause=upstream_timeout
+2026-10-09T19:23:25 INFO  img-resize/ir-node-02 request done id=req-e48ef8c1 route=/img-resize/v1/status status=200 latency_ms=69
+2026-10-09T19:23:27 INFO  img-resize/ir-node-15 request done id=req-4e6dbf63 route=/img-resize/v1/status status=200 latency_ms=436
+2026-10-09T19:23:28 INFO  img-resize/ir-node-16 ticket linked id=OPS-49191 reason=flaky_healthcheck
+2026-10-09T19:23:35 NOTE  img-resize/ir-node-18 operator=shkim memo="캐시 TTL을 40초로 되돌림. 오래된 응답이 보고됨."
+2026-10-09T19:23:39 INFO  img-resize/ir-node-18 request done id=req-42479bcb route=/img-resize/v1/verify status=200 latency_ms=143
+2026-10-09T19:23:43 INFO  img-resize/ir-node-13 request done id=req-001b57a3 route=/img-resize/v1/sync status=429 latency_ms=223
+2026-10-09T19:23:50 WARN  img-resize/ir-node-14 alert fired rule=conn_pool_saturated value=83% threshold=79%
+2026-10-09T19:23:54 INFO  img-resize/ir-node-13 pool resize target=img-resize-worker max_pool_size=311 prev=364
+2026-10-09T19:24:01 INFO  img-resize/ir-node-07 config applied key=shard.count value=true by=ejlim
+2026-10-09T19:24:04 INFO  img-resize/ir-node-23 ticket linked id=OPS-49220 reason=dns_ttl_change
+2026-10-09T19:24:07 INFO  img-resize/ir-node-05 request done id=req-51e9e34b route=/img-resize/v1/cancel status=200 latency_ms=76
+2026-10-09T19:24:11 WARN  img-resize/ir-node-14 alert fired rule=error_ratio_high value=90% threshold=76%
+2026-10-09T19:24:16 INFO  img-resize/ir-node-19 backup finished file=/vault/weekly/inventory_2026w39.tar.zst size_mb=7233 checksum=4cd0d0b7
+2026-10-09T19:24:20 INFO  img-resize/ir-node-15 config applied key=limiter.rps value=12 by=dwjung
+2026-10-09T19:24:24 INFO  img-resize/ir-node-13 pool resize target=img-resize-queue max_pool_size=53 prev=59
+2026-10-09T19:24:25 INFO  img-resize/ir-node-22 config applied key=flush.interval_ms value=74% by=ejlim
+2026-10-09T19:24:27 INFO  img-resize/ir-node-03 request done id=req-774d40a4 route=/img-resize/v1/cancel status=200 latency_ms=379
+2026-10-09T19:24:29 INFO  img-resize/ir-node-11 config applied key=retry.max_attempts value=6636 by=shkim
+2026-10-09T19:24:31 INFO  img-resize/ir-node-07 pool resize target=img-resize-upstream max_pool_size=28 prev=15
+2026-10-09T19:24:34 WARN  img-resize/ir-node-10 alert fired rule=gc_pause_long value=88ms threshold=85ms
+2026-10-09T19:24:40 INFO  img-resize/ir-node-15 request done id=req-fa13b247 route=/img-resize/v1/create status=429 latency_ms=163
+2026-10-09T19:24:42 INFO  img-resize/ir-node-23 request done id=req-2f4b8598 route=/img-resize/v1/get status=400 latency_ms=115
+2026-10-09T19:24:48 INFO  img-resize/ir-node-04 config applied key=canary.latency_p99_threshold_ms value=true by=hbyoon
+2026-10-09T19:24:54 INFO  img-resize/ir-node-14 request done id=req-413574ce route=/img-resize/v1/verify status=409 latency_ms=218
+2026-10-09T19:25:01 INFO  img-resize/ir-node-21 deploy step release=img-resize-4.17.1 step=migrate result=ok took_s=60
+2026-10-09T19:25:07 INFO  img-resize/ir-node-24 request done id=req-810d5311 route=/img-resize/v1/create status=404 latency_ms=268
+2026-10-09T19:25:13 INFO  img-resize/ir-node-16 config applied key=worker.concurrency value=false by=ejlim
+2026-10-09T19:25:16 INFO  img-resize/ir-node-18 request done id=req-f93bead0 route=/img-resize/v1/cancel status=200 latency_ms=197
+2026-10-09T19:25:17 INFO  img-resize/ir-node-21 request done id=req-d90a188b route=/img-resize/v1/get status=200 latency_ms=72
+2026-10-09T19:25:23 INFO  img-resize/ir-node-19 request done id=req-a91bc63e route=/img-resize/v1/update status=200 latency_ms=108
+2026-10-09T19:25:27 INFO  img-resize/ir-node-04 request done id=req-b3f77765 route=/img-resize/v1/status status=200 latency_ms=105
+2026-10-09T19:25:29 INFO  img-resize/ir-node-03 ticket linked id=OPS-49142 reason=dependency_upgrade
+2026-10-09T19:25:31 INFO  img-resize/ir-node-07 deploy step release=img-resize-4.11.7 step=pull_image result=ok took_s=238
+2026-10-09T19:25:35 INFO  img-resize/ir-node-22 config applied key=limiter.rps value=96% by=sykang
+2026-10-09T19:25:38 INFO  img-resize/ir-node-13 request done id=req-3180b1c2 route=/img-resize/v1/create status=200 latency_ms=128
+2026-10-09T19:25:42 WARN  img-resize/ir-node-04 alert fired rule=heap_used_high value=94% threshold=90%
+2026-10-09T19:25:44 INFO  img-resize/ir-node-08 pool resize target=img-resize-upstream max_pool_size=172 prev=212
+2026-10-09T19:25:48 INFO  img-resize/ir-node-16 deploy step release=img-resize-4.14.5 step=verify result=ok took_s=98
+2026-10-09T19:25:53 WARN  img-resize/ir-node-24 alert fired rule=thumb_cache_hit_ratio_low value=61.4% threshold=75%
+2026-10-09T19:25:55 INFO  img-resize/ir-node-13 config applied key=breaker.half_open_s value=8151 by=mjlee
+2026-10-09T19:26:01 INFO  img-resize/ir-node-01 config applied key=queue.batch_size value=30% by=jhpark
+2026-10-09T19:26:04 INFO  img-resize/ir-node-11 request done id=req-385562f7 route=/img-resize/v1/list status=429 latency_ms=75
+2026-10-09T19:26:09 INFO  img-resize/ir-node-01 request done id=req-b4b3fcb6 route=/img-resize/v1/get status=201 latency_ms=105
+2026-10-09T19:26:15 INFO  img-resize/ir-node-18 request done id=req-0b36669f route=/img-resize/v1/cancel status=200 latency_ms=202
+2026-10-09T19:26:16 INFO  img-resize/ir-node-23 request done id=req-bb2f648d route=/img-resize/v1/verify status=503 latency_ms=498
+2026-10-09T19:26:23 INFO  img-resize/ir-node-07 request done id=req-e9f5cae4 route=/img-resize/v1/create status=200 latency_ms=587
+2026-10-09T19:26:30 INFO  img-resize/ir-node-13 deploy step release=img-resize-4.17.8 step=start result=ok took_s=119
+2026-10-09T19:26:35 INFO  img-resize/ir-node-11 request done id=req-6a6b14ff route=/img-resize/v1/update status=200 latency_ms=280
+2026-10-09T19:26:40 INFO  img-resize/ir-node-17 pool resize target=img-resize-cache max_pool_size=119 prev=110
+2026-10-09T19:26:46 INFO  img-resize/ir-node-10 request done id=req-f4bac16d route=/img-resize/v1/status status=400 latency_ms=216
+2026-10-09T19:26:48 INFO  img-resize/ir-node-22 request done id=req-a6995288 route=/img-resize/v1/status status=200 latency_ms=66
+2026-10-09T19:26:55 INFO  img-resize/ir-node-06 pool resize target=img-resize-queue max_pool_size=152 prev=208
+2026-10-09T19:26:56 ERROR img-resize/ir-node-22 job failed job=img-resize-cleanup attempt=2 cause=lock_wait_exceeded
+2026-10-09T19:27:03 INFO  img-resize/ir-node-04 request done id=req-d403e9e5 route=/img-resize/v1/sync status=500 latency_ms=308
+2026-10-09T19:27:08 INFO  img-resize/ir-node-02 request done id=req-1d41e3e4 route=/img-resize/v1/status status=400 latency_ms=325
+2026-10-09T19:27:12 WARN  img-resize/ir-node-16 alert fired rule=disk_usage_warning value=75% threshold=72%
+2026-10-09T19:27:17 INFO  img-resize/ir-node-04 request done id=req-49c832d6 route=/img-resize/v1/sync status=200 latency_ms=64
+2026-10-09T19:27:24 INFO  img-resize/ir-node-05 request done id=req-8c4b101b route=/img-resize/v1/create status=200 latency_ms=673
+2026-10-09T19:27:31 INFO  img-resize/ir-node-06 request done id=req-07366b5c route=/img-resize/v1/sync status=200 latency_ms=85
+2026-10-09T19:27:33 WARN  img-resize/ir-node-16 alert fired rule=fd_usage_high value=75% threshold=73%
+2026-10-09T19:27:34 INFO  img-resize/ir-node-03 pool resize target=img-resize-queue max_pool_size=296 prev=267
+2026-10-09T19:27:37 INFO  img-resize/ir-node-11 backup finished file=/vault/daily/orders_20261025.tar.zst size_mb=14506 checksum=ee8cd744
+2026-10-09T19:27:43 INFO  img-resize/ir-node-11 request done id=req-34c87276 route=/img-resize/v1/cancel status=200 latency_ms=70
+2026-10-09T19:27:49 INFO  img-resize/ir-node-06 backup finished file=/vault/daily/sessions_20261011.tar.zst size_mb=51754 checksum=46281481
+2026-10-09T19:27:54 INFO  img-resize/ir-node-07 request done id=req-5e567245 route=/img-resize/v1/get status=200 latency_ms=89
+2026-10-09T19:27:56 INFO  img-resize/ir-node-14 request done id=req-b731afe1 route=/img-resize/v1/list status=200 latency_ms=221
+2026-10-09T19:28:02 INFO  img-resize/ir-node-16 ticket linked id=OPS-48150 reason=dependency_upgrade
+2026-10-09T19:28:08 NOTE  img-resize/ir-node-08 operator=mjlee memo="캐시 TTL을 39초로 되돌림. 오래된 응답이 보고됨."
+2026-10-09T19:28:13 INFO  img-resize/ir-node-21 deploy step release=img-resize-4.16.7 step=shift_traffic_50 result=ok took_s=142
+2026-10-09T19:28:20 INFO  img-resize/ir-node-08 pool resize target=img-resize-cache max_pool_size=329 prev=277
+2026-10-09T19:28:26 WARN  img-resize/ir-node-09 alert fired rule=disk_usage_warning value=53% threshold=51%
+2026-10-09T19:28:28 INFO  img-resize/ir-node-06 deploy step release=img-resize-4.20.2 step=shift_traffic_50 result=ok took_s=195
+2026-10-09T19:28:31 INFO  img-resize/ir-node-17 request done id=req-2034d444 route=/img-resize/v1/create status=200 latency_ms=36
+2026-10-09T19:28:33 INFO  img-resize/ir-node-23 request done id=req-73bb23dc route=/img-resize/v1/update status=200 latency_ms=234
+2026-10-09T19:28:34 INFO  img-resize/ir-node-17 request done id=req-3cb2feb3 route=/img-resize/v1/verify status=200 latency_ms=93
+2026-10-09T19:28:38 INFO  img-resize/ir-node-15 request done id=req-e7e67844 route=/img-resize/v1/sync status=200 latency_ms=222
+2026-10-09T19:28:45 NOTE  img-resize/ir-node-05 operator=hbyoon memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-09T19:28:51 INFO  img-resize/ir-node-22 request done id=req-cce2385d route=/img-resize/v1/cancel status=200 latency_ms=351
+2026-10-09T19:28:56 WARN  img-resize/ir-node-08 alert fired rule=conn_pool_saturated value=54% threshold=50%
+2026-10-09T19:29:03 ERROR img-resize/ir-node-13 job failed job=img-resize-export attempt=4 cause=dns_failure
+2026-10-09T19:29:09 INFO  img-resize/ir-node-08 request done id=req-5b093d9f route=/img-resize/v1/update status=200 latency_ms=300
+2026-10-09T19:29:16 INFO  img-resize/ir-node-04 request done id=req-592186c0 route=/img-resize/v1/status status=429 latency_ms=247
+2026-10-09T19:29:23 INFO  img-resize/ir-node-20 request done id=req-62fcca22 route=/img-resize/v1/create status=200 latency_ms=37
+2026-10-09T19:29:25 INFO  img-resize/ir-node-01 request done id=req-3d946521 route=/img-resize/v1/create status=200 latency_ms=165
+2026-10-09T19:29:26 INFO  img-resize/ir-node-21 backup finished file=/vault/weekly/orders_2026w33.tar.zst size_mb=11807 checksum=bc3a471d
+2026-10-09T19:29:29 INFO  img-resize/ir-node-03 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=49785 checksum=9675582b
+2026-10-09T19:29:33 INFO  img-resize/ir-node-21 request done id=req-0b3f0920 route=/img-resize/v1/list status=200 latency_ms=189
+2026-10-09T19:29:39 INFO  img-resize/ir-node-20 deploy step release=img-resize-4.10.0 step=pull_image result=ok took_s=190
+2026-10-09T19:29:45 INFO  img-resize/ir-node-17 request done id=req-ceb8d4ed route=/img-resize/v1/list status=200 latency_ms=115
+2026-10-09T19:29:46 INFO  img-resize/ir-node-24 request done id=req-29d09a43 route=/img-resize/v1/create status=200 latency_ms=112
+2026-10-09T19:29:49 INFO  img-resize/ir-node-16 cache stats region=ap-se-1a hit_ratio=61.7% evictions=36736
+2026-10-09T19:29:53 NOTE  img-resize/ir-node-13 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 12일 남음."
+2026-10-09T19:29:59 INFO  img-resize/ir-node-08 request done id=req-8e8b51fe route=/img-resize/v1/list status=404 latency_ms=165
+2026-10-09T19:30:04 INFO  img-resize/ir-node-20 request done id=req-53ef6fa9 route=/img-resize/v1/verify status=201 latency_ms=68
+2026-10-09T19:30:06 INFO  img-resize/ir-node-09 request done id=req-0ab671ee route=/img-resize/v1/list status=200 latency_ms=56
+2026-10-09T19:30:08 INFO  img-resize/ir-node-11 config applied key=dns.ttl_s value=2286 by=dwjung
+2026-10-09T19:30:11 INFO  img-resize/ir-node-20 request done id=req-2ad79415 route=/img-resize/v1/cancel status=409 latency_ms=105
+2026-10-09T19:30:18 INFO  img-resize/ir-node-24 ticket linked id=OPS-49621 reason=oncall_handoff
+2026-10-09T19:30:19 INFO  img-resize/ir-node-18 config applied key=http.read_timeout_ms value=82% by=jhpark
+2026-10-09T19:30:25 INFO  img-resize/ir-node-22 request done id=req-51122961 route=/img-resize/v1/verify status=200 latency_ms=42
+2026-10-09T19:30:31 WARN  img-resize/ir-node-15 alert fired rule=cpu_steal_high value=99% threshold=87%
+2026-10-09T19:30:33 INFO  img-resize/ir-node-01 request done id=req-d98e6342 route=/img-resize/v1/cancel status=409 latency_ms=60
+2026-10-09T19:30:39 INFO  img-resize/ir-node-18 request done id=req-a85d9165 route=/img-resize/v1/sync status=500 latency_ms=90
+2026-10-09T19:30:45 INFO  img-resize/ir-node-19 deploy step release=img-resize-4.22.3 step=start result=ok took_s=55
+2026-10-09T19:30:52 INFO  img-resize/ir-node-17 request done id=req-086331e1 route=/img-resize/v1/sync status=200 latency_ms=149
+2026-10-09T19:30:55 INFO  img-resize/ir-node-16 request done id=req-e2ecb62c route=/img-resize/v1/sync status=200 latency_ms=40
+2026-10-09T19:30:58 INFO  img-resize/ir-node-04 request done id=req-21eb420f route=/img-resize/v1/verify status=200 latency_ms=43
+2026-10-09T19:31:00 INFO  img-resize/ir-node-06 deploy step release=img-resize-4.21.3 step=drain result=ok took_s=70
+2026-10-09T19:31:06 INFO  img-resize/ir-node-11 request done id=req-61f6f04c route=/img-resize/v1/sync status=200 latency_ms=48
+2026-10-09T19:31:11 INFO  img-resize/ir-node-23 request done id=req-6d08bff6 route=/img-resize/v1/sync status=200 latency_ms=64
+2026-10-09T19:31:16 INFO  img-resize/ir-node-10 config applied key=http.max_conns value=75% by=dwjung
+2026-10-09T19:31:23 INFO  img-resize/ir-node-11 request done id=req-bd7bfb82 route=/img-resize/v1/list status=200 latency_ms=113
+2026-10-09T19:31:28 INFO  img-resize/ir-node-23 request done id=req-a46e3078 route=/img-resize/v1/get status=200 latency_ms=115
+2026-10-09T19:31:29 INFO  img-resize/ir-node-21 pool resize target=img-resize-db max_pool_size=125 prev=174
+2026-10-09T19:31:31 INFO  img-resize/ir-node-10 request done id=req-e1d56394 route=/img-resize/v1/cancel status=429 latency_ms=328
+2026-10-09T19:31:36 WARN  img-resize/ir-node-15 alert fired rule=disk_usage_warning value=92% threshold=78%
+2026-10-09T19:31:38 ERROR img-resize/ir-node-13 job failed job=img-resize-cleanup attempt=3 cause=bad_checksum
+2026-10-09T19:31:39 INFO  img-resize/ir-node-21 request done id=req-37059516 route=/img-resize/v1/sync status=200 latency_ms=150
+2026-10-09T19:31:45 INFO  img-resize/ir-node-04 request done id=req-9df9f0ed route=/img-resize/v1/cancel status=200 latency_ms=167
+2026-10-09T19:31:46 INFO  img-resize/ir-node-19 deploy step release=img-resize-4.22.1 step=start result=ok took_s=198
+2026-10-09T19:31:47 INFO  img-resize/ir-node-07 backup finished file=/vault/daily/sessions_20261017.tar.zst size_mb=1510 checksum=d6208ea3
+2026-10-09T19:31:49 INFO  img-resize/ir-node-15 request done id=req-d48a5924 route=/img-resize/v1/get status=200 latency_ms=85
+2026-10-09T19:31:56 INFO  img-resize/ir-node-01 request done id=req-e511c441 route=/img-resize/v1/cancel status=200 latency_ms=186
+2026-10-09T19:32:03 INFO  img-resize/ir-node-23 config applied key=canary.latency_p99_threshold_ms value=false by=mjlee
+2026-10-09T19:32:09 NOTE  img-resize/ir-node-12 operator=yjchoi memo="배치 시작 시각을 49시 62분으로 고정함."
+2026-10-09T19:32:10 INFO  img-resize/ir-node-09 request done id=req-acd599ec route=/img-resize/v1/verify status=200 latency_ms=201
+2026-10-09T19:32:13 INFO  img-resize/ir-node-17 request done id=req-5dc9c64f route=/img-resize/v1/update status=200 latency_ms=248
+2026-10-09T19:32:17 INFO  img-resize/ir-node-06 request done id=req-cac80289 route=/img-resize/v1/cancel status=200 latency_ms=625
+2026-10-09T19:32:20 INFO  img-resize/ir-node-17 request done id=req-2b04e525 route=/img-resize/v1/get status=200 latency_ms=214
+2026-10-09T19:32:26 INFO  img-resize/ir-node-09 backup finished file=/vault/daily/orders_20261005.tar.zst size_mb=14344 checksum=ae6212b7
+2026-10-09T19:32:30 INFO  img-resize/ir-node-07 pool resize target=img-resize-db max_pool_size=77 prev=128
+2026-10-09T19:32:34 INFO  img-resize/ir-node-16 request done id=req-b9f4f332 route=/img-resize/v1/verify status=200 latency_ms=145
+2026-10-09T19:32:36 INFO  img-resize/ir-node-15 config applied key=tls.session_cache value=false by=yjchoi
+2026-10-09T19:32:38 INFO  img-resize/ir-node-03 request done id=req-1b297bfd route=/img-resize/v1/cancel status=200 latency_ms=118
+2026-10-09T19:32:39 INFO  img-resize/ir-node-14 ticket linked id=OPS-49478 reason=runbook_update
+2026-10-09T19:32:41 INFO  img-resize/ir-node-06 pool resize target=img-resize-cache max_pool_size=24 prev=83
+2026-10-09T19:32:42 INFO  img-resize/ir-node-05 pool resize target=img-resize-cache max_pool_size=68 prev=109
+2026-10-09T19:32:48 INFO  img-resize/ir-node-24 request done id=req-f2ea2bde route=/img-resize/v1/list status=503 latency_ms=73
+2026-10-09T19:32:49 INFO  img-resize/ir-node-03 backup finished file=/vault/daily/payments_20261028.tar.zst size_mb=45858 checksum=1d9766ab
+2026-10-09T19:32:54 INFO  img-resize/ir-node-09 request done id=req-75d2ed25 route=/img-resize/v1/list status=409 latency_ms=25
+2026-10-09T19:32:57 INFO  img-resize/ir-node-07 config applied key=gc.pause_target_ms value=true by=yjchoi
+2026-10-09T19:33:04 INFO  img-resize/ir-node-03 request done id=req-78a3a55d route=/img-resize/v1/cancel status=200 latency_ms=184
+2026-10-09T19:33:07 INFO  img-resize/ir-node-13 ticket linked id=OPS-48390 reason=dependency_upgrade
+2026-10-09T19:33:08 INFO  img-resize/ir-node-07 config applied key=dns.ttl_s value=false by=sykang
+2026-10-09T19:33:14 INFO  img-resize/ir-node-14 request done id=req-a3db0228 route=/img-resize/v1/status status=200 latency_ms=964
+2026-10-09T19:33:17 INFO  img-resize/ir-node-06 pool resize target=img-resize-worker max_pool_size=18 prev=78
+2026-10-09T19:33:24 INFO  img-resize/ir-node-05 request done id=req-4c52cf75 route=/img-resize/v1/get status=201 latency_ms=248
+2026-10-09T19:33:30 INFO  img-resize/ir-node-16 deploy step release=img-resize-4.11.8 step=drain result=ok took_s=227
+2026-10-09T19:33:32 ERROR img-resize/ir-node-05 job failed job=img-resize-export attempt=2 cause=quota_exceeded
+2026-10-09T19:33:35 INFO  img-resize/ir-node-13 request done id=req-6245a362 route=/img-resize/v1/create status=200 latency_ms=283
+2026-10-09T19:33:41 INFO  img-resize/ir-node-22 request done id=req-8b0dc99b route=/img-resize/v1/get status=200 latency_ms=85
+2026-10-09T19:33:44 WARN  img-resize/ir-node-03 alert fired rule=disk_usage_warning value=97% threshold=88%
+2026-10-09T19:33:46 WARN  img-resize/ir-node-12 alert fired rule=disk_usage_warning value=86% threshold=77%
+2026-10-09T19:33:52 WARN  img-resize/ir-node-05 alert fired rule=conn_pool_saturated value=93% threshold=90%
+2026-10-09T19:33:58 NOTE  img-resize/ir-node-23 operator=hbyoon memo="타임아웃을 49ms에서 60ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-09T19:34:02 INFO  img-resize/ir-node-19 request done id=req-a97e278f route=/img-resize/v1/update status=204 latency_ms=91
+2026-10-09T19:34:04 WARN  img-resize/ir-node-24 alert fired rule=conn_pool_saturated value=53% threshold=44%
+2026-10-09T19:34:05 INFO  img-resize/ir-node-01 backup finished file=/vault/daily/sessions_20261021.tar.zst size_mb=53806 checksum=be06e1b0
+2026-10-09T19:34:08 INFO  img-resize/ir-node-02 request done id=req-a870e727 route=/img-resize/v1/get status=200 latency_ms=61
+2026-10-09T19:34:10 INFO  img-resize/ir-node-22 config applied key=shard.count value=39 by=dwjung
+2026-10-09T19:34:17 INFO  img-resize/ir-node-04 request done id=req-655ddfbf route=/img-resize/v1/get status=200 latency_ms=66
+2026-10-09T19:34:22 INFO  img-resize/ir-node-14 request done id=req-a9fe4349 route=/img-resize/v1/status status=201 latency_ms=199
+2026-10-09T19:34:24 INFO  img-resize/ir-node-13 request done id=req-56fd36b4 route=/img-resize/v1/status status=200 latency_ms=19
+2026-10-09T19:34:26 INFO  img-resize/ir-node-20 request done id=req-5262f79b route=/img-resize/v1/verify status=400 latency_ms=212
+2026-10-09T19:34:31 INFO  img-resize/ir-node-01 request done id=req-99c664d6 route=/img-resize/v1/status status=200 latency_ms=99
+2026-10-09T19:34:36 WARN  img-resize/ir-node-11 alert fired rule=p99_latency_high value=96ms threshold=92ms
+2026-10-09T19:34:41 ERROR img-resize/ir-node-11 job failed job=img-resize-reindex attempt=3 cause=bad_checksum
+2026-10-09T19:34:43 INFO  img-resize/ir-node-21 request done id=req-e6959c69 route=/img-resize/v1/status status=200 latency_ms=287
+2026-10-09T19:34:47 INFO  img-resize/ir-node-24 request done id=req-9530f016 route=/img-resize/v1/create status=200 latency_ms=48
+2026-10-09T19:34:51 INFO  img-resize/ir-node-21 pool resize target=img-resize-db max_pool_size=248 prev=198
+2026-10-09T19:34:58 INFO  img-resize/ir-node-07 request done id=req-38c95fcc route=/img-resize/v1/cancel status=200 latency_ms=275
+2026-10-09T19:35:00 INFO  img-resize/ir-node-21 config applied key=limiter.burst value=1 by=ejlim
+2026-10-09T19:35:03 INFO  img-resize/ir-node-07 request done id=req-53f0f1dd route=/img-resize/v1/cancel status=201 latency_ms=124
+2026-10-09T19:35:09 INFO  img-resize/ir-node-08 request done id=req-c04f8d76 route=/img-resize/v1/sync status=204 latency_ms=124
+2026-10-09T19:35:15 INFO  img-resize/ir-node-12 request done id=req-efde9f30 route=/img-resize/v1/get status=200 latency_ms=54
+2026-10-09T19:35:18 INFO  img-resize/ir-node-03 deploy step release=img-resize-4.14.5 step=shift_traffic_10 result=ok took_s=78
+2026-10-09T19:35:19 INFO  img-resize/ir-node-06 request done id=req-c866f9f0 route=/img-resize/v1/update status=200 latency_ms=72
+2026-10-09T19:35:25 INFO  img-resize/ir-node-24 request done id=req-bcf32714 route=/img-resize/v1/cancel status=200 latency_ms=284
+2026-10-09T19:35:32 INFO  img-resize/ir-node-22 request done id=req-7af597e8 route=/img-resize/v1/verify status=200 latency_ms=488
+2026-10-09T19:35:33 ERROR img-resize/ir-node-08 job failed job=img-resize-rollup attempt=4 cause=oom_killed
+2026-10-09T19:35:38 INFO  img-resize/ir-node-24 request done id=req-cb4e1a30 route=/img-resize/v1/update status=200 latency_ms=141
+2026-10-09T19:35:39 WARN  img-resize/ir-node-17 alert fired rule=conn_pool_saturated value=65% threshold=63%
+2026-10-09T19:35:41 ERROR img-resize/ir-node-09 job failed job=img-resize-rollup attempt=1 cause=dns_failure
+2026-10-09T19:35:47 INFO  img-resize/ir-node-11 request done id=req-b97ec22d route=/img-resize/v1/create status=503 latency_ms=157
+2026-10-09T19:35:52 INFO  img-resize/ir-node-07 request done id=req-ff1b4ad6 route=/img-resize/v1/cancel status=409 latency_ms=329
+2026-10-09T19:35:58 INFO  img-resize/ir-node-05 request done id=req-83d5c0ec route=/img-resize/v1/verify status=204 latency_ms=134
+2026-10-09T19:36:05 INFO  img-resize/ir-node-23 request done id=req-f36ce98a route=/img-resize/v1/sync status=409 latency_ms=185
+2026-10-09T19:36:11 INFO  img-resize/ir-node-06 request done id=req-f6de7380 route=/img-resize/v1/get status=200 latency_ms=174
+2026-10-09T19:36:18 INFO  img-resize/ir-node-13 request done id=req-f4e5af96 route=/img-resize/v1/get status=429 latency_ms=89
+2026-10-09T19:36:23 INFO  img-resize/ir-node-07 deploy step release=img-resize-4.22.5 step=healthcheck result=ok took_s=145
+2026-10-09T19:36:24 WARN  img-resize/ir-node-20 alert fired rule=disk_usage_warning value=50% threshold=35%
+2026-10-09T19:36:30 INFO  img-resize/ir-node-19 request done id=req-096c1bd1 route=/img-resize/v1/create status=204 latency_ms=90
+2026-10-09T19:36:34 INFO  img-resize/ir-node-18 cache stats region=ap-ne-2c hit_ratio=86.5% evictions=25129
+2026-10-09T19:36:37 INFO  img-resize/ir-node-03 request done id=req-40b7f704 route=/img-resize/v1/verify status=200 latency_ms=365
+2026-10-09T19:36:42 INFO  img-resize/ir-node-24 request done id=req-99af7aa3 route=/img-resize/v1/status status=409 latency_ms=630
+2026-10-09T19:36:43 NOTE  img-resize/ir-node-23 operator=sykang memo="헬스체크 간격을 12초에서 38초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-09T19:36:50 INFO  img-resize/ir-node-15 request done id=req-20afd629 route=/img-resize/v1/verify status=400 latency_ms=236
+2026-10-09T19:36:52 INFO  img-resize/ir-node-11 request done id=req-288b2cf3 route=/img-resize/v1/sync status=429 latency_ms=128
+2026-10-09T19:36:54 INFO  img-resize/ir-node-09 request done id=req-6c0bcf94 route=/img-resize/v1/sync status=404 latency_ms=362
+2026-10-09T19:37:01 INFO  img-resize/ir-node-19 request done id=req-a02eacb0 route=/img-resize/v1/cancel status=200 latency_ms=126
+2026-10-09T19:37:07 ERROR img-resize/ir-node-16 job failed job=img-resize-reindex attempt=2 cause=oom_killed
+2026-10-09T19:37:08 INFO  img-resize/ir-node-16 backup finished file=/vault/daily/audit_20261010.tar.zst size_mb=76414 checksum=e51f3904
+2026-10-09T19:37:15 INFO  img-resize/ir-node-13 request done id=req-11c4b84b route=/img-resize/v1/list status=200 latency_ms=141
+2026-10-09T19:37:19 INFO  img-resize/ir-node-18 request done id=req-9d078e4f route=/img-resize/v1/status status=201 latency_ms=61
+2026-10-09T19:37:25 INFO  img-resize/ir-node-20 request done id=req-fccc7b23 route=/img-resize/v1/sync status=204 latency_ms=115
+2026-10-09T19:37:31 INFO  img-resize/ir-node-04 ticket linked id=OPS-49192 reason=node_drain
+2026-10-09T19:37:38 INFO  img-resize/ir-node-20 request done id=req-2348d710 route=/img-resize/v1/cancel status=200 latency_ms=75
+2026-10-09T19:37:44 INFO  img-resize/ir-node-04 request done id=req-cbff5169 route=/img-resize/v1/cancel status=500 latency_ms=163
+2026-10-09T19:37:45 INFO  img-resize/ir-node-03 config applied key=breaker.half_open_s value=43 by=dwjung
+2026-10-09T19:37:46 INFO  img-resize/ir-node-05 request done id=req-c635ea8d route=/img-resize/v1/verify status=404 latency_ms=383
+2026-10-09T19:37:50 INFO  img-resize/ir-node-07 request done id=req-c4d741ad route=/img-resize/v1/status status=201 latency_ms=90
+2026-10-09T19:37:56 WARN  img-resize/ir-node-03 alert fired rule=p99_latency_high value=63ms threshold=50ms
+2026-10-09T19:38:00 WARN  img-resize/ir-node-20 alert fired rule=conn_pool_saturated value=72% threshold=57%
+2026-10-09T19:38:05 INFO  img-resize/ir-node-04 ticket linked id=OPS-48974 reason=log_volume_spike
+2026-10-09T19:38:06 INFO  img-resize/ir-node-21 request done id=req-2bcc855f route=/img-resize/v1/list status=200 latency_ms=210
+2026-10-09T19:38:07 INFO  img-resize/ir-node-16 request done id=req-7e41b02f route=/img-resize/v1/list status=409 latency_ms=102
+2026-10-09T19:38:08 INFO  img-resize/ir-node-07 request done id=req-ec7afff0 route=/img-resize/v1/verify status=200 latency_ms=205
+2026-10-09T19:38:10 INFO  img-resize/ir-node-03 config applied key=canary.latency_p99_threshold_ms value=6376 by=shkim
+2026-10-09T19:38:12 INFO  img-resize/ir-node-21 request done id=req-bda87f04 route=/img-resize/v1/update status=200 latency_ms=123
+2026-10-09T19:38:17 INFO  img-resize/ir-node-05 pool resize target=img-resize-upstream max_pool_size=335 prev=376
+2026-10-09T19:38:20 INFO  img-resize/ir-node-04 request done id=req-dda9c03e route=/img-resize/v1/verify status=409 latency_ms=76
+2026-10-09T19:38:27 INFO  img-resize/ir-node-15 request done id=req-4a03f400 route=/img-resize/v1/verify status=200 latency_ms=138
+2026-10-09T19:38:34 INFO  img-resize/ir-node-11 request done id=req-070831a9 route=/img-resize/v1/get status=200 latency_ms=67
+2026-10-09T19:38:37 WARN  img-resize/ir-node-01 alert fired rule=queue_depth_high value=97 threshold=83
+2026-10-09T19:38:38 INFO  img-resize/ir-node-14 request done id=req-ca582fd4 route=/img-resize/v1/status status=200 latency_ms=128
+2026-10-09T19:38:45 INFO  img-resize/ir-node-19 config applied key=tls.session_cache value=89% by=jhpark
+2026-10-09T19:38:47 WARN  img-resize/ir-node-22 alert fired rule=gc_pause_long value=53ms threshold=42ms
+2026-10-09T19:38:50 INFO  img-resize/ir-node-24 request done id=req-a75c47b9 route=/img-resize/v1/create status=200 latency_ms=73
+2026-10-09T19:38:54 INFO  img-resize/ir-node-23 request done id=req-b09a9fba route=/img-resize/v1/cancel status=200 latency_ms=151
+2026-10-09T19:38:59 INFO  img-resize/ir-node-08 request done id=req-428193b6 route=/img-resize/v1/create status=200 latency_ms=67
+2026-10-09T19:39:00 INFO  img-resize/ir-node-21 request done id=req-c1973ba8 route=/img-resize/v1/sync status=201 latency_ms=54
+2026-10-09T19:39:06 INFO  img-resize/ir-node-13 request done id=req-dd8f7e82 route=/img-resize/v1/list status=200 latency_ms=80
+2026-10-09T19:39:12 WARN  img-resize/ir-node-11 alert fired rule=heap_used_high value=57% threshold=43%
+2026-10-09T19:39:19 INFO  img-resize/ir-node-15 deploy step release=img-resize-4.13.4 step=shift_traffic_50 result=ok took_s=106
+2026-10-09T19:39:26 INFO  img-resize/ir-node-20 backup finished file=/vault/weekly/inventory_2026w35.tar.zst size_mb=12553 checksum=368fb4de
+2026-10-09T19:39:31 NOTE  img-resize/ir-node-19 operator=jhpark memo="캐시 TTL을 50초로 되돌림. 오래된 응답이 보고됨."
+2026-10-09T19:39:35 INFO  img-resize/ir-node-10 request done id=req-676fd4e7 route=/img-resize/v1/list status=200 latency_ms=93
+2026-10-09T19:39:36 INFO  img-resize/ir-node-11 config applied key=http.max_conns value=14% by=shkim
+2026-10-09T19:39:40 WARN  img-resize/ir-node-06 alert fired rule=p99_latency_high value=84ms threshold=82ms
+2026-10-09T19:39:45 INFO  img-resize/ir-node-23 request done id=req-86427088 route=/img-resize/v1/cancel status=200 latency_ms=126
+2026-10-09T19:39:47 INFO  img-resize/ir-node-10 request done id=req-9ffdfe61 route=/img-resize/v1/create status=409 latency_ms=151
+2026-10-09T19:39:51 INFO  img-resize/ir-node-12 request done id=req-c2c1f2bf route=/img-resize/v1/create status=200 latency_ms=106
+2026-10-09T19:39:57 INFO  img-resize/ir-node-06 request done id=req-e927562a route=/img-resize/v1/create status=503 latency_ms=111
+2026-10-09T19:40:00 INFO  img-resize/ir-node-20 backup finished file=/vault/weekly/orders_2026w44.tar.zst size_mb=27305 checksum=4b854f2d
+2026-10-09T19:40:06 INFO  img-resize/ir-node-01 pool resize target=img-resize-db max_pool_size=301 prev=324
+2026-10-09T19:40:10 INFO  img-resize/ir-node-14 request done id=req-cbf9d964 route=/img-resize/v1/cancel status=200 latency_ms=134
+2026-10-09T19:40:14 INFO  img-resize/ir-node-05 request done id=req-2e2db83b route=/img-resize/v1/list status=400 latency_ms=353
+2026-10-09T19:40:19 INFO  img-resize/ir-node-22 request done id=req-1afe4152 route=/img-resize/v1/get status=201 latency_ms=211
+2026-10-09T19:40:20 INFO  img-resize/ir-node-04 backup finished file=/vault/weekly/sessions_2026w41.tar.zst size_mb=5960 checksum=f0929557
+2026-10-09T19:40:25 INFO  img-resize/ir-node-15 deploy step release=img-resize-4.18.5 step=migrate result=ok took_s=229
+2026-10-09T19:40:32 WARN  img-resize/ir-node-06 alert fired rule=conn_pool_saturated value=86% threshold=72%
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

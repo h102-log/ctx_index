@@ -1,0 +1,424 @@
+참고용 로그 36: 로드밸런서 제어(lb-ctl) 가중치 변경 구간. '확인'이라고만 답해 줘.
+
+2026-11-09T08:39:05 WARN  lb-ctl/lb-node-21 alert fired rule=fd_usage_high value=71% threshold=56%
+2026-11-09T08:39:11 INFO  lb-ctl/lb-node-11 request done id=req-9725fcdd route=/lb-ctl/v1/get status=429 latency_ms=239
+2026-11-09T08:39:14 INFO  lb-ctl/lb-node-19 config applied key=breaker.open_ratio value=false by=yjchoi
+2026-11-09T08:39:21 INFO  lb-ctl/lb-node-15 request done id=req-0e89dfea route=/lb-ctl/v1/cancel status=500 latency_ms=186
+2026-11-09T08:39:25 INFO  lb-ctl/lb-node-10 request done id=req-9973031c route=/lb-ctl/v1/list status=404 latency_ms=148
+2026-11-09T08:39:26 INFO  lb-ctl/lb-node-06 cache stats region=ap-ne-2a hit_ratio=91.8% evictions=34542
+2026-11-09T08:39:33 INFO  lb-ctl/lb-node-02 request done id=req-bef6af19 route=/lb-ctl/v1/status status=200 latency_ms=99
+2026-11-09T08:39:37 INFO  lb-ctl/lb-node-03 request done id=req-b1ba9cc4 route=/lb-ctl/v1/create status=200 latency_ms=69
+2026-11-09T08:39:40 WARN  lb-ctl/lb-node-08 alert fired rule=cpu_steal_high value=61% threshold=58%
+2026-11-09T08:39:42 INFO  lb-ctl/lb-node-11 pool resize target=lb-ctl-db max_pool_size=159 prev=119
+2026-11-09T08:39:44 INFO  lb-ctl/lb-node-09 config applied key=queue.batch_size value=49 by=ejlim
+2026-11-09T08:39:51 INFO  lb-ctl/lb-node-21 request done id=req-5f963a27 route=/lb-ctl/v1/get status=200 latency_ms=224
+2026-11-09T08:39:53 INFO  lb-ctl/lb-node-12 config applied key=retry.backoff_ms value=true by=shkim
+2026-11-09T08:39:59 INFO  lb-ctl/lb-node-12 cache stats region=ap-ne-2b hit_ratio=65.2% evictions=34942
+2026-11-09T08:40:06 WARN  lb-ctl/lb-node-02 alert fired rule=fd_usage_high value=96% threshold=85%
+2026-11-09T08:40:11 INFO  lb-ctl/lb-node-13 request done id=req-5b82e10d route=/lb-ctl/v1/get status=400 latency_ms=244
+2026-11-09T08:40:13 INFO  lb-ctl/lb-node-06 request done id=req-a9d0eca7 route=/lb-ctl/v1/create status=500 latency_ms=54
+2026-11-09T08:40:20 WARN  lb-ctl/lb-node-18 alert fired rule=fd_usage_high value=65% threshold=60%
+2026-11-09T08:40:22 INFO  lb-ctl/lb-node-14 backup finished file=/vault/weekly/users_2026w41.tar.zst size_mb=33619 checksum=3d83ef74
+2026-11-09T08:40:29 INFO  lb-ctl/lb-node-15 pool resize target=lb-ctl-cache max_pool_size=229 prev=189
+2026-11-09T08:40:35 INFO  lb-ctl/lb-node-17 deploy step release=lb-ctl-4.11.6 step=start result=ok took_s=49
+2026-11-09T08:40:37 INFO  lb-ctl/lb-node-24 request done id=req-fb771947 route=/lb-ctl/v1/sync status=200 latency_ms=298
+2026-11-09T08:40:42 INFO  lb-ctl/lb-node-03 request done id=req-1a4de5ee route=/lb-ctl/v1/get status=429 latency_ms=63
+2026-11-09T08:40:47 INFO  lb-ctl/lb-node-19 request done id=req-a4375ee5 route=/lb-ctl/v1/sync status=200 latency_ms=248
+2026-11-09T08:40:52 INFO  lb-ctl/lb-node-04 pool resize target=lb-ctl-worker max_pool_size=303 prev=337
+2026-11-09T08:40:58 INFO  lb-ctl/lb-node-04 request done id=req-8c86be38 route=/lb-ctl/v1/verify status=200 latency_ms=70
+2026-11-09T08:41:04 INFO  lb-ctl/lb-node-16 request done id=req-bde06f88 route=/lb-ctl/v1/sync status=200 latency_ms=81
+2026-11-09T08:41:08 INFO  lb-ctl/lb-node-13 backup finished file=/vault/weekly/users_2026w32.tar.zst size_mb=24171 checksum=93c94def
+2026-11-09T08:41:13 INFO  lb-ctl/lb-node-19 config applied key=gc.pause_target_ms value=false by=jhpark
+2026-11-09T08:41:18 ERROR lb-ctl/lb-node-02 job failed job=lb-ctl-export attempt=5 cause=upstream_timeout
+2026-11-09T08:41:19 INFO  lb-ctl/lb-node-24 request done id=req-18e3e4dc route=/lb-ctl/v1/status status=200 latency_ms=63
+2026-11-09T08:41:26 INFO  lb-ctl/lb-node-23 ticket linked id=OPS-48196 reason=cert_rotation
+2026-11-09T08:41:32 INFO  lb-ctl/lb-node-22 request done id=req-724018fb route=/lb-ctl/v1/verify status=200 latency_ms=192
+2026-11-09T08:41:34 INFO  lb-ctl/lb-node-06 config applied key=worker.concurrency value=61 by=hbyoon
+2026-11-09T08:41:36 INFO  lb-ctl/lb-node-19 pool resize target=lb-ctl-worker max_pool_size=276 prev=286
+2026-11-09T08:41:43 INFO  lb-ctl/lb-node-02 request done id=req-4dd7ef22 route=/lb-ctl/v1/create status=404 latency_ms=199
+2026-11-09T08:41:49 INFO  lb-ctl/lb-node-05 request done id=req-233bb7b8 route=/lb-ctl/v1/create status=200 latency_ms=95
+2026-11-09T08:41:54 INFO  lb-ctl/lb-node-17 request done id=req-1a255bac route=/lb-ctl/v1/update status=500 latency_ms=270
+2026-11-09T08:42:00 INFO  lb-ctl/lb-node-21 request done id=req-0feb2ea7 route=/lb-ctl/v1/create status=200 latency_ms=115
+2026-11-09T08:42:05 INFO  lb-ctl/lb-node-23 config applied key=worker.concurrency value=41% by=dwjung
+2026-11-09T08:42:06 INFO  lb-ctl/lb-node-22 request done id=req-d72abfee route=/lb-ctl/v1/create status=409 latency_ms=16
+2026-11-09T08:42:09 INFO  lb-ctl/lb-node-05 request done id=req-f35e8005 route=/lb-ctl/v1/create status=200 latency_ms=123
+2026-11-09T08:42:14 INFO  lb-ctl/lb-node-07 request done id=req-40531401 route=/lb-ctl/v1/list status=200 latency_ms=54
+2026-11-09T08:42:19 INFO  lb-ctl/lb-node-24 ticket linked id=OPS-48571 reason=node_drain
+2026-11-09T08:42:24 ERROR lb-ctl/lb-node-13 job failed job=lb-ctl-rollup attempt=3 cause=oom_killed
+2026-11-09T08:42:28 INFO  lb-ctl/lb-node-10 config applied key=retry.backoff_ms value=false by=yjchoi
+2026-11-09T08:42:30 INFO  lb-ctl/lb-node-15 config applied key=canary.traffic_percent value=false by=shkim
+2026-11-09T08:42:33 INFO  lb-ctl/lb-node-12 deploy step release=lb-ctl-4.10.6 step=shift_traffic_50 result=ok took_s=217
+2026-11-09T08:42:36 ERROR lb-ctl/lb-node-04 job failed job=lb-ctl-export attempt=2 cause=lock_wait_exceeded
+2026-11-09T08:42:39 INFO  lb-ctl/lb-node-13 request done id=req-30a7b04c route=/lb-ctl/v1/create status=200 latency_ms=309
+2026-11-09T08:42:42 INFO  lb-ctl/lb-node-11 deploy step release=lb-ctl-4.11.2 step=shift_traffic_10 result=ok took_s=175
+2026-11-09T08:42:48 INFO  lb-ctl/lb-node-12 request done id=req-f3571e98 route=/lb-ctl/v1/status status=404 latency_ms=167
+2026-11-09T08:42:50 INFO  lb-ctl/lb-node-07 request done id=req-677e134c route=/lb-ctl/v1/status status=200 latency_ms=63
+2026-11-09T08:42:52 INFO  lb-ctl/lb-node-08 request done id=req-03631efb route=/lb-ctl/v1/cancel status=200 latency_ms=130
+2026-11-09T08:42:57 INFO  lb-ctl/lb-node-15 config applied key=queue.visibility_s value=59 by=sykang
+2026-11-09T08:43:03 INFO  lb-ctl/lb-node-03 request done id=req-35eae5b0 route=/lb-ctl/v1/list status=200 latency_ms=85
+2026-11-09T08:43:07 INFO  lb-ctl/lb-node-17 request done id=req-415cb7c7 route=/lb-ctl/v1/get status=400 latency_ms=30
+2026-11-09T08:43:12 INFO  lb-ctl/lb-node-01 pool resize target=lb-ctl-queue max_pool_size=287 prev=275
+2026-11-09T08:43:15 INFO  lb-ctl/lb-node-13 pool resize target=lb-ctl-cache max_pool_size=38 prev=47
+2026-11-09T08:43:17 ERROR lb-ctl/lb-node-07 job failed job=lb-ctl-reindex attempt=3 cause=quota_exceeded
+2026-11-09T08:43:22 INFO  lb-ctl/lb-node-11 request done id=req-b37ef7c4 route=/lb-ctl/v1/cancel status=200 latency_ms=33
+2026-11-09T08:43:23 INFO  lb-ctl/lb-node-19 request done id=req-91555395 route=/lb-ctl/v1/verify status=200 latency_ms=75
+2026-11-09T08:43:24 INFO  lb-ctl/lb-node-16 pool resize target=lb-ctl-queue max_pool_size=124 prev=172
+2026-11-09T08:43:29 ERROR lb-ctl/lb-node-18 job failed job=lb-ctl-cleanup attempt=5 cause=lock_wait_exceeded
+2026-11-09T08:43:36 INFO  lb-ctl/lb-node-05 request done id=req-5b6de91d route=/lb-ctl/v1/list status=200 latency_ms=226
+2026-11-09T08:43:40 INFO  lb-ctl/lb-node-13 request done id=req-f1f3dae6 route=/lb-ctl/v1/verify status=200 latency_ms=77
+2026-11-09T08:43:46 INFO  lb-ctl/lb-node-08 request done id=req-e230987c route=/lb-ctl/v1/create status=404 latency_ms=40
+2026-11-09T08:43:50 INFO  lb-ctl/lb-node-19 request done id=req-a9a83f66 route=/lb-ctl/v1/get status=200 latency_ms=65
+2026-11-09T08:43:55 INFO  lb-ctl/lb-node-05 request done id=req-d1fc4eb1 route=/lb-ctl/v1/status status=200 latency_ms=165
+2026-11-09T08:44:00 NOTE  lb-ctl/lb-node-10 operator=dwjung memo="로그 보존 기간은 6일로 유지하기로 함."
+2026-11-09T08:44:04 INFO  lb-ctl/lb-node-01 request done id=req-8d8f3744 route=/lb-ctl/v1/update status=200 latency_ms=128
+2026-11-09T08:44:11 INFO  lb-ctl/lb-node-05 request done id=req-f7cb4546 route=/lb-ctl/v1/update status=200 latency_ms=257
+2026-11-09T08:44:13 INFO  lb-ctl/lb-node-20 pool resize target=lb-ctl-db max_pool_size=206 prev=147
+2026-11-09T08:44:17 INFO  lb-ctl/lb-node-06 request done id=req-ca7d680f route=/lb-ctl/v1/sync status=200 latency_ms=235
+2026-11-09T08:44:19 WARN  lb-ctl/lb-node-09 alert fired rule=error_ratio_high value=80% threshold=79%
+2026-11-09T08:44:26 INFO  lb-ctl/lb-node-21 request done id=req-0e174e75 route=/lb-ctl/v1/create status=503 latency_ms=101
+2026-11-09T08:44:32 INFO  lb-ctl/lb-node-01 request done id=req-4309942d route=/lb-ctl/v1/get status=500 latency_ms=167
+2026-11-09T08:44:39 INFO  lb-ctl/lb-node-08 request done id=req-5a6e1b8c route=/lb-ctl/v1/list status=200 latency_ms=85
+2026-11-09T08:44:40 INFO  lb-ctl/lb-node-05 request done id=req-07ad0725 route=/lb-ctl/v1/verify status=200 latency_ms=25
+2026-11-09T08:44:46 INFO  lb-ctl/lb-node-16 request done id=req-096bd06b route=/lb-ctl/v1/status status=200 latency_ms=42
+2026-11-09T08:44:48 INFO  lb-ctl/lb-node-16 request done id=req-f98eef41 route=/lb-ctl/v1/sync status=500 latency_ms=22
+2026-11-09T08:44:53 INFO  lb-ctl/lb-node-03 request done id=req-99aa2b2b route=/lb-ctl/v1/sync status=409 latency_ms=119
+2026-11-09T08:44:59 INFO  lb-ctl/lb-node-08 config applied key=dns.ttl_s value=7 by=jhpark
+2026-11-09T08:45:01 INFO  lb-ctl/lb-node-18 request done id=req-d223cc10 route=/lb-ctl/v1/list status=200 latency_ms=372
+2026-11-09T08:45:04 INFO  lb-ctl/lb-node-04 deploy step release=lb-ctl-4.12.8 step=shift_traffic_50 result=ok took_s=163
+2026-11-09T08:45:05 INFO  lb-ctl/lb-node-05 pool resize target=lb-ctl-worker max_pool_size=62 prev=83
+2026-11-09T08:45:07 INFO  lb-ctl/lb-node-16 request done id=req-3dad7fa0 route=/lb-ctl/v1/get status=200 latency_ms=43
+2026-11-09T08:45:09 INFO  lb-ctl/lb-node-22 request done id=req-0eff59ff route=/lb-ctl/v1/list status=200 latency_ms=172
+2026-11-09T08:45:16 WARN  lb-ctl/lb-node-20 alert fired rule=gc_pause_long value=71ms threshold=65ms
+2026-11-09T08:45:22 INFO  lb-ctl/lb-node-02 request done id=req-06c83693 route=/lb-ctl/v1/get status=429 latency_ms=191
+2026-11-09T08:45:23 NOTE  lb-ctl/lb-node-11 operator=shkim memo="캐시 TTL을 17초로 되돌림. 오래된 응답이 보고됨."
+2026-11-09T08:45:24 INFO  lb-ctl/lb-node-16 deploy step release=lb-ctl-4.18.6 step=shift_traffic_50 result=ok took_s=21
+2026-11-09T08:45:28 INFO  lb-ctl/lb-node-06 config applied key=breaker.open_ratio value=48 by=ejlim
+2026-11-09T08:45:29 INFO  lb-ctl/lb-node-05 request done id=req-04a841b8 route=/lb-ctl/v1/list status=200 latency_ms=111
+2026-11-09T08:45:35 INFO  lb-ctl/lb-node-17 config applied key=http.read_timeout_ms value=64 by=hbyoon
+2026-11-09T08:45:40 INFO  lb-ctl/lb-node-05 request done id=req-98cccc4e route=/lb-ctl/v1/sync status=404 latency_ms=139
+2026-11-09T08:45:45 INFO  lb-ctl/lb-node-14 request done id=req-9ebd6625 route=/lb-ctl/v1/list status=200 latency_ms=208
+2026-11-09T08:45:47 INFO  lb-ctl/lb-node-06 pool resize target=lb-ctl-queue max_pool_size=100 prev=146
+2026-11-09T08:45:48 INFO  lb-ctl/lb-node-05 backup finished file=/vault/daily/sessions_20261022.tar.zst size_mb=53898 checksum=713688e8
+2026-11-09T08:45:54 INFO  lb-ctl/lb-node-06 config applied key=shard.count value=false by=jhpark
+2026-11-09T08:45:55 INFO  lb-ctl/lb-node-11 config applied key=worker.concurrency value=false by=mjlee
+2026-11-09T08:45:58 INFO  lb-ctl/lb-node-18 request done id=req-8998d753 route=/lb-ctl/v1/update status=200 latency_ms=95
+2026-11-09T08:46:03 INFO  lb-ctl/lb-node-17 request done id=req-263df8f3 route=/lb-ctl/v1/update status=200 latency_ms=328
+2026-11-09T08:46:07 INFO  lb-ctl/lb-node-21 request done id=req-fc79c9f9 route=/lb-ctl/v1/list status=200 latency_ms=203
+2026-11-09T08:46:10 INFO  lb-ctl/lb-node-06 deploy step release=lb-ctl-4.22.7 step=warmup result=ok took_s=197
+2026-11-09T08:46:12 INFO  lb-ctl/lb-node-07 deploy step release=lb-ctl-4.15.3 step=healthcheck result=ok took_s=63
+2026-11-09T08:46:14 INFO  lb-ctl/lb-node-16 config applied key=canary.traffic_percent value=61 by=yjchoi
+2026-11-09T08:46:19 INFO  lb-ctl/lb-node-12 pool resize target=lb-ctl-db max_pool_size=89 prev=145
+2026-11-09T08:46:20 INFO  lb-ctl/lb-node-19 request done id=req-b9e78c91 route=/lb-ctl/v1/get status=200 latency_ms=46
+2026-11-09T08:46:27 INFO  lb-ctl/lb-node-23 request done id=req-7be55b1a route=/lb-ctl/v1/get status=200 latency_ms=109
+2026-11-09T08:46:28 INFO  lb-ctl/lb-node-23 cache stats region=ap-ne-2a hit_ratio=68.1% evictions=13992
+2026-11-09T08:46:33 INFO  lb-ctl/lb-node-11 request done id=req-284838d5 route=/lb-ctl/v1/sync status=200 latency_ms=120
+2026-11-09T08:46:35 INFO  lb-ctl/lb-node-06 deploy step release=lb-ctl-4.22.5 step=verify result=ok took_s=113
+2026-11-09T08:46:41 INFO  lb-ctl/lb-node-07 request done id=req-62a7e46a route=/lb-ctl/v1/get status=200 latency_ms=398
+2026-11-09T08:46:45 INFO  lb-ctl/lb-node-09 request done id=req-5111669a route=/lb-ctl/v1/cancel status=200 latency_ms=63
+2026-11-09T08:46:50 INFO  lb-ctl/lb-node-02 deploy step release=lb-ctl-4.14.6 step=start result=ok took_s=170
+2026-11-09T08:46:51 INFO  lb-ctl/lb-node-19 request done id=req-8170611d route=/lb-ctl/v1/update status=200 latency_ms=84
+2026-11-09T08:46:56 INFO  lb-ctl/lb-node-07 request done id=req-ef0fae6c route=/lb-ctl/v1/get status=200 latency_ms=328
+2026-11-09T08:47:00 WARN  lb-ctl/lb-node-24 alert fired rule=disk_usage_warning value=53% threshold=47%
+2026-11-09T08:47:05 INFO  lb-ctl/lb-node-02 pool resize target=lb-ctl-queue max_pool_size=310 prev=307
+2026-11-09T08:47:06 NOTE  lb-ctl/lb-node-08 operator=dwjung memo="임시 증설 4대 추가. 내일 오전 회수 예정."
+2026-11-09T08:47:13 INFO  lb-ctl/lb-node-04 cache stats region=ap-ne-2c hit_ratio=69.4% evictions=15430
+2026-11-09T08:47:15 INFO  lb-ctl/lb-node-08 request done id=req-c04b5bd5 route=/lb-ctl/v1/update status=200 latency_ms=318
+2026-11-09T08:47:21 INFO  lb-ctl/lb-node-13 request done id=req-9745b7ea route=/lb-ctl/v1/list status=200 latency_ms=297
+2026-11-09T08:47:26 INFO  lb-ctl/lb-node-09 request done id=req-ad1b19da route=/lb-ctl/v1/update status=400 latency_ms=33
+2026-11-09T08:47:27 INFO  lb-ctl/lb-node-19 request done id=req-a51dccc7 route=/lb-ctl/v1/status status=200 latency_ms=470
+2026-11-09T08:47:32 INFO  lb-ctl/lb-node-13 request done id=req-5bc49191 route=/lb-ctl/v1/cancel status=200 latency_ms=191
+2026-11-09T08:47:34 INFO  lb-ctl/lb-node-17 deploy step release=lb-ctl-4.21.0 step=shift_traffic_10 result=ok took_s=27
+2026-11-09T08:47:39 INFO  lb-ctl/lb-node-03 request done id=req-7ca3e393 route=/lb-ctl/v1/list status=200 latency_ms=66
+2026-11-09T08:47:41 INFO  lb-ctl/lb-node-24 request done id=req-7e742c74 route=/lb-ctl/v1/cancel status=429 latency_ms=243
+2026-11-09T08:47:45 INFO  lb-ctl/lb-node-07 config applied key=retry.max_attempts value=26 by=jhpark
+2026-11-09T08:47:47 INFO  lb-ctl/lb-node-04 request done id=req-02274dc1 route=/lb-ctl/v1/create status=503 latency_ms=73
+2026-11-09T08:47:54 NOTE  lb-ctl/lb-node-06 operator=sykang memo="임시 증설 11대 추가. 내일 오전 회수 예정."
+2026-11-09T08:47:56 WARN  lb-ctl/lb-node-01 alert fired rule=p99_latency_high value=93ms threshold=79ms
+2026-11-09T08:47:58 INFO  lb-ctl/lb-node-19 request done id=req-db344a2d route=/lb-ctl/v1/update status=500 latency_ms=360
+2026-11-09T08:48:04 INFO  lb-ctl/lb-node-12 request done id=req-f8bf547f route=/lb-ctl/v1/update status=200 latency_ms=172
+2026-11-09T08:48:07 WARN  lb-ctl/lb-node-06 alert fired rule=cpu_steal_high value=72% threshold=71%
+2026-11-09T08:48:13 INFO  lb-ctl/lb-node-01 ticket linked id=OPS-47893 reason=runbook_update
+2026-11-09T08:48:15 INFO  lb-ctl/lb-node-21 request done id=req-9f0470cb route=/lb-ctl/v1/status status=200 latency_ms=341
+2026-11-09T08:48:22 INFO  lb-ctl/lb-node-13 deploy step release=lb-ctl-4.21.1 step=migrate result=ok took_s=230
+2026-11-09T08:48:27 INFO  lb-ctl/lb-node-03 request done id=req-82830be2 route=/lb-ctl/v1/status status=200 latency_ms=115
+2026-11-09T08:48:34 INFO  lb-ctl/lb-node-02 config applied key=gc.pause_target_ms value=52 by=hbyoon
+2026-11-09T08:48:39 INFO  lb-ctl/lb-node-23 ticket linked id=OPS-49313 reason=node_drain
+2026-11-09T08:48:40 INFO  lb-ctl/lb-node-09 config applied key=worker.concurrency value=true by=yjchoi
+2026-11-09T08:48:47 INFO  lb-ctl/lb-node-18 request done id=req-5c8a9ea6 route=/lb-ctl/v1/status status=200 latency_ms=221
+2026-11-09T08:48:51 ERROR lb-ctl/lb-node-02 job failed job=lb-ctl-reindex attempt=1 cause=upstream_timeout
+2026-11-09T08:48:57 INFO  lb-ctl/lb-node-11 backup finished file=/vault/daily/audit_20261027.tar.zst size_mb=42756 checksum=5d9db5a1
+2026-11-09T08:48:58 INFO  lb-ctl/lb-node-16 request done id=req-66c688cb route=/lb-ctl/v1/create status=404 latency_ms=86
+2026-11-09T08:49:01 INFO  lb-ctl/lb-node-03 request done id=req-2e0859e3 route=/lb-ctl/v1/create status=200 latency_ms=227
+2026-11-09T08:49:06 INFO  lb-ctl/lb-node-16 request done id=req-3d66300d route=/lb-ctl/v1/list status=500 latency_ms=559
+2026-11-09T08:49:13 INFO  lb-ctl/lb-node-05 request done id=req-1ebaa1d3 route=/lb-ctl/v1/verify status=204 latency_ms=31
+2026-11-09T08:49:19 INFO  lb-ctl/lb-node-12 config applied key=breaker.open_ratio value=false by=yjchoi
+2026-11-09T08:49:25 INFO  lb-ctl/lb-node-10 config applied key=breaker.half_open_s value=63% by=sykang
+2026-11-09T08:49:28 INFO  lb-ctl/lb-node-08 request done id=req-313c834d route=/lb-ctl/v1/sync status=404 latency_ms=395
+2026-11-09T08:49:35 ERROR lb-ctl/lb-node-04 job failed job=lb-ctl-rollup attempt=4 cause=quota_exceeded
+2026-11-09T08:49:36 INFO  lb-ctl/lb-node-12 request done id=req-d7c244f0 route=/lb-ctl/v1/create status=200 latency_ms=45
+2026-11-09T08:49:40 INFO  lb-ctl/lb-node-19 request done id=req-8f030a5c route=/lb-ctl/v1/update status=200 latency_ms=280
+2026-11-09T08:49:46 INFO  lb-ctl/lb-node-18 config applied key=dns.ttl_s value=54 by=hbyoon
+2026-11-09T08:49:47 INFO  lb-ctl/lb-node-10 deploy step release=lb-ctl-4.12.1 step=shift_traffic_10 result=ok took_s=220
+2026-11-09T08:49:52 WARN  lb-ctl/lb-node-16 alert fired rule=cpu_steal_high value=62% threshold=53%
+2026-11-09T08:49:55 INFO  lb-ctl/lb-node-24 request done id=req-716dbaac route=/lb-ctl/v1/get status=201 latency_ms=235
+2026-11-09T08:49:56 INFO  lb-ctl/lb-node-09 request done id=req-e34da69c route=/lb-ctl/v1/cancel status=429 latency_ms=87
+2026-11-09T08:50:03 INFO  lb-ctl/lb-node-02 request done id=req-d96d126a route=/lb-ctl/v1/update status=503 latency_ms=85
+2026-11-09T08:50:04 INFO  lb-ctl/lb-node-14 deploy step release=lb-ctl-4.10.3 step=healthcheck result=ok took_s=161
+2026-11-09T08:50:10 INFO  lb-ctl/lb-node-14 request done id=req-e4553d73 route=/lb-ctl/v1/list status=400 latency_ms=106
+2026-11-09T08:50:17 INFO  lb-ctl/lb-node-06 ticket linked id=OPS-48302 reason=quota_increase
+2026-11-09T08:50:19 INFO  lb-ctl/lb-node-20 backup finished file=/vault/daily/orders_20261018.tar.zst size_mb=78197 checksum=e0bb8662
+2026-11-09T08:50:25 INFO  lb-ctl/lb-node-11 config applied key=flush.interval_ms value=true by=hbyoon
+2026-11-09T08:50:30 INFO  lb-ctl/lb-node-15 request done id=req-2545e6a3 route=/lb-ctl/v1/list status=200 latency_ms=549
+2026-11-09T08:50:34 INFO  lb-ctl/lb-node-23 request done id=req-778be00d route=/lb-ctl/v1/update status=409 latency_ms=266
+2026-11-09T08:50:39 INFO  lb-ctl/lb-node-20 cache stats region=ap-ne-2c hit_ratio=75.7% evictions=11119
+2026-11-09T08:50:43 INFO  lb-ctl/lb-node-15 request done id=req-1a93a148 route=/lb-ctl/v1/update status=200 latency_ms=112
+2026-11-09T08:50:49 ERROR lb-ctl/lb-node-24 job failed job=lb-ctl-rollup attempt=5 cause=lock_wait_exceeded
+2026-11-09T08:50:56 INFO  lb-ctl/lb-node-22 request done id=req-1baf88e8 route=/lb-ctl/v1/sync status=500 latency_ms=97
+2026-11-09T08:50:58 INFO  lb-ctl/lb-node-05 request done id=req-cb534dc6 route=/lb-ctl/v1/status status=200 latency_ms=416
+2026-11-09T08:51:02 INFO  lb-ctl/lb-node-09 request done id=req-1f676126 route=/lb-ctl/v1/update status=200 latency_ms=242
+2026-11-09T08:51:06 WARN  lb-ctl/lb-node-05 alert fired rule=p99_latency_high value=69ms threshold=60ms
+2026-11-09T08:51:13 INFO  lb-ctl/lb-node-11 request done id=req-a88d7ccb route=/lb-ctl/v1/create status=201 latency_ms=60
+2026-11-09T08:51:17 INFO  lb-ctl/lb-node-04 request done id=req-7d8b4fb5 route=/lb-ctl/v1/verify status=404 latency_ms=93
+2026-11-09T08:51:18 INFO  lb-ctl/lb-node-07 request done id=req-affc1467 route=/lb-ctl/v1/update status=200 latency_ms=276
+2026-11-09T08:51:22 WARN  lb-ctl/lb-node-20 alert fired rule=cpu_steal_high value=62% threshold=49%
+2026-11-09T08:51:26 WARN  lb-ctl/lb-node-19 alert fired rule=error_ratio_high value=77% threshold=67%
+2026-11-09T08:51:33 NOTE  lb-ctl/lb-node-06 operator=shkim memo="임시 증설 32대 추가. 내일 오전 회수 예정."
+2026-11-09T08:51:34 INFO  lb-ctl/lb-node-08 request done id=req-c882253d route=/lb-ctl/v1/get status=200 latency_ms=36
+2026-11-09T08:51:41 WARN  lb-ctl/lb-node-11 alert fired rule=heap_used_high value=92% threshold=84%
+2026-11-09T08:51:46 INFO  lb-ctl/lb-node-08 request done id=req-a8f587f5 route=/lb-ctl/v1/create status=429 latency_ms=150
+2026-11-09T08:51:48 INFO  lb-ctl/lb-node-12 deploy step release=lb-ctl-4.14.6 step=start result=ok took_s=121
+2026-11-09T08:51:55 ERROR lb-ctl/lb-node-02 job failed job=lb-ctl-export attempt=5 cause=dns_failure
+2026-11-09T08:51:57 INFO  lb-ctl/lb-node-09 request done id=req-84e124ed route=/lb-ctl/v1/cancel status=500 latency_ms=147
+2026-11-09T08:52:04 INFO  lb-ctl/lb-node-19 backup finished file=/vault/weekly/sessions_2026w40.tar.zst size_mb=57584 checksum=4950aad7
+2026-11-09T08:52:11 INFO  lb-ctl/lb-node-14 config applied key=worker.concurrency value=false by=shkim
+2026-11-09T08:52:17 WARN  lb-ctl/lb-node-15 alert fired rule=replica_lag_high value=64s threshold=50s
+2026-11-09T08:52:19 WARN  lb-ctl/lb-node-03 alert fired rule=queue_depth_high value=80 threshold=68
+2026-11-09T08:52:24 INFO  lb-ctl/lb-node-04 request done id=req-cbf8051a route=/lb-ctl/v1/get status=404 latency_ms=85
+2026-11-09T08:52:27 INFO  lb-ctl/lb-node-03 request done id=req-a8ed5f9d route=/lb-ctl/v1/status status=201 latency_ms=282
+2026-11-09T08:52:34 INFO  lb-ctl/lb-node-01 request done id=req-0857019f route=/lb-ctl/v1/create status=200 latency_ms=137
+2026-11-09T08:52:41 INFO  lb-ctl/lb-node-13 request done id=req-81e72894 route=/lb-ctl/v1/sync status=200 latency_ms=131
+2026-11-09T08:52:46 INFO  lb-ctl/lb-node-03 ticket linked id=OPS-49601 reason=cert_rotation
+2026-11-09T08:52:47 INFO  lb-ctl/lb-node-19 deploy step release=lb-ctl-4.10.5 step=shift_traffic_100 result=ok took_s=223
+2026-11-09T08:52:49 INFO  lb-ctl/lb-node-01 request done id=req-9b60d727 route=/lb-ctl/v1/get status=400 latency_ms=161
+2026-11-09T08:52:55 INFO  lb-ctl/lb-node-08 request done id=req-fc478aa5 route=/lb-ctl/v1/get status=404 latency_ms=396
+2026-11-09T08:52:58 ERROR lb-ctl/lb-node-06 job failed job=lb-ctl-rollup attempt=2 cause=upstream_timeout
+2026-11-09T08:53:04 INFO  lb-ctl/lb-node-11 request done id=req-42cb08ce route=/lb-ctl/v1/get status=200 latency_ms=442
+2026-11-09T08:53:08 INFO  lb-ctl/lb-node-07 deploy step release=lb-ctl-4.10.9 step=warmup result=ok took_s=157
+2026-11-09T08:53:15 ERROR lb-ctl/lb-node-09 job failed job=lb-ctl-rollup attempt=5 cause=lock_wait_exceeded
+2026-11-09T08:53:20 INFO  lb-ctl/lb-node-01 config applied key=canary.latency_p99_threshold_ms value=82% by=hbyoon
+2026-11-09T08:53:27 INFO  lb-ctl/lb-node-05 request done id=req-6a49803e route=/lb-ctl/v1/create status=204 latency_ms=59
+2026-11-09T08:53:28 INFO  lb-ctl/lb-node-15 config applied key=log.sample_rate value=true by=shkim
+2026-11-09T08:53:30 INFO  lb-ctl/lb-node-08 backup finished file=/vault/daily/audit_20261021.tar.zst size_mb=15801 checksum=d1978289
+2026-11-09T08:53:35 INFO  lb-ctl/lb-node-19 pool resize target=lb-ctl-queue max_pool_size=9 prev=4
+2026-11-09T08:53:36 INFO  lb-ctl/lb-node-14 request done id=req-60d4e7ee route=/lb-ctl/v1/create status=200 latency_ms=22
+2026-11-09T08:53:41 INFO  lb-ctl/lb-node-21 request done id=req-0f8878ff route=/lb-ctl/v1/cancel status=200 latency_ms=63
+2026-11-09T08:53:44 INFO  lb-ctl/lb-node-24 request done id=req-85624a54 route=/lb-ctl/v1/cancel status=200 latency_ms=40
+2026-11-09T08:53:49 INFO  lb-ctl/lb-node-16 request done id=req-6d2913af route=/lb-ctl/v1/list status=200 latency_ms=82
+2026-11-09T08:53:54 INFO  lb-ctl/lb-node-22 ticket linked id=OPS-47043 reason=flaky_healthcheck
+2026-11-09T08:54:00 WARN  lb-ctl/lb-node-19 alert fired rule=error_ratio_high value=85% threshold=74%
+2026-11-09T08:54:01 INFO  lb-ctl/lb-node-04 config applied key=gc.pause_target_ms value=true by=yjchoi
+2026-11-09T08:54:07 INFO  lb-ctl/lb-node-07 config applied key=log.sample_rate value=true by=jhpark
+2026-11-09T08:54:09 INFO  lb-ctl/lb-node-22 request done id=req-b463e565 route=/lb-ctl/v1/list status=200 latency_ms=63
+2026-11-09T08:54:14 INFO  lb-ctl/lb-node-01 ticket linked id=OPS-48331 reason=dependency_upgrade
+2026-11-09T08:54:20 INFO  lb-ctl/lb-node-05 config applied key=limiter.rps value=false by=ejlim
+2026-11-09T08:54:22 INFO  lb-ctl/lb-node-20 request done id=req-9e409c26 route=/lb-ctl/v1/update status=204 latency_ms=476
+2026-11-09T08:54:28 INFO  lb-ctl/lb-node-21 request done id=req-c9536948 route=/lb-ctl/v1/cancel status=200 latency_ms=110
+2026-11-09T08:54:30 INFO  lb-ctl/lb-node-07 ticket linked id=OPS-48887 reason=node_drain
+2026-11-09T08:54:35 INFO  lb-ctl/lb-node-19 deploy step release=lb-ctl-4.19.4 step=healthcheck result=ok took_s=209
+2026-11-09T08:54:42 WARN  lb-ctl/lb-node-13 alert fired rule=p99_latency_high value=73ms threshold=70ms
+2026-11-09T08:54:47 INFO  lb-ctl/lb-node-04 request done id=req-7e2891db route=/lb-ctl/v1/cancel status=200 latency_ms=129
+2026-11-09T08:54:48 INFO  lb-ctl/lb-node-17 request done id=req-846ae28d route=/lb-ctl/v1/status status=200 latency_ms=143
+2026-11-09T08:54:52 INFO  lb-ctl/lb-node-08 cache stats region=ap-ne-2c hit_ratio=92.4% evictions=9168
+2026-11-09T08:54:53 INFO  lb-ctl/lb-node-15 backup finished file=/vault/daily/inventory_20261010.tar.zst size_mb=5898 checksum=a230a942
+2026-11-09T08:54:55 NOTE  lb-ctl/lb-node-04 operator=hbyoon memo="lb-node-04 재기동 후 지표 정상 확인."
+2026-11-09T08:55:01 INFO  lb-ctl/lb-node-08 deploy step release=lb-ctl-4.21.5 step=healthcheck result=ok took_s=10
+2026-11-09T08:55:06 INFO  lb-ctl/lb-node-08 request done id=req-d49a61be route=/lb-ctl/v1/status status=500 latency_ms=129
+2026-11-09T08:55:13 INFO  lb-ctl/lb-node-21 request done id=req-463cef7c route=/lb-ctl/v1/update status=201 latency_ms=89
+2026-11-09T08:55:20 NOTE  lb-ctl/lb-node-15 operator=yjchoi memo="헬스체크 간격을 15초에서 29초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-09T08:55:21 INFO  lb-ctl/lb-node-20 backup finished file=/vault/weekly/audit_2026w31.tar.zst size_mb=37789 checksum=424d3568
+2026-11-09T08:55:24 NOTE  lb-ctl/lb-node-17 operator=mjlee memo="로그 보존 기간은 36일로 유지하기로 함."
+2026-11-09T08:55:25 INFO  lb-ctl/lb-node-02 request done id=req-8cf09a0e route=/lb-ctl/v1/sync status=409 latency_ms=348
+2026-11-09T08:55:32 NOTE  lb-ctl/lb-node-21 operator=dwjung memo="타임아웃을 10ms에서 11ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-09T08:55:39 INFO  lb-ctl/lb-node-09 request done id=req-6cfc9332 route=/lb-ctl/v1/get status=204 latency_ms=664
+2026-11-09T08:55:46 WARN  lb-ctl/lb-node-13 alert fired rule=disk_usage_warning value=51% threshold=39%
+2026-11-09T08:55:53 INFO  lb-ctl/lb-node-13 request done id=req-b1d6bc64 route=/lb-ctl/v1/create status=200 latency_ms=35
+2026-11-09T08:55:58 INFO  lb-ctl/lb-node-24 deploy step release=lb-ctl-4.14.8 step=verify result=ok took_s=232
+2026-11-09T08:56:00 INFO  lb-ctl/lb-node-03 request done id=req-df3019c4 route=/lb-ctl/v1/status status=200 latency_ms=75
+2026-11-09T08:56:04 INFO  lb-ctl/lb-node-21 deploy step release=lb-ctl-4.16.9 step=migrate result=ok took_s=4
+2026-11-09T08:56:11 INFO  lb-ctl/lb-node-05 request done id=req-c7377689 route=/lb-ctl/v1/update status=200 latency_ms=115
+2026-11-09T08:56:17 INFO  lb-ctl/lb-node-19 pool resize target=lb-ctl-cache max_pool_size=305 prev=343
+2026-11-09T08:56:21 INFO  lb-ctl/lb-node-18 cache stats region=ap-se-1a hit_ratio=93.3% evictions=15431
+2026-11-09T08:56:26 INFO  lb-ctl/lb-node-14 request done id=req-73f31010 route=/lb-ctl/v1/sync status=200 latency_ms=166
+2026-11-09T08:56:27 INFO  lb-ctl/lb-node-23 cache stats region=us-we-2b hit_ratio=96.7% evictions=33830
+2026-11-09T08:56:30 INFO  lb-ctl/lb-node-23 deploy step release=lb-ctl-4.20.8 step=drain result=ok took_s=116
+2026-11-09T08:56:32 INFO  lb-ctl/lb-node-22 pool resize target=lb-ctl-queue max_pool_size=270 prev=297
+2026-11-09T08:56:34 INFO  lb-ctl/lb-node-02 config applied key=breaker.open_ratio value=true by=sykang
+2026-11-09T08:56:39 WARN  lb-ctl/lb-node-13 alert fired rule=p99_latency_high value=70ms threshold=61ms
+2026-11-09T08:56:43 INFO  lb-ctl/lb-node-08 request done id=req-f8439894 route=/lb-ctl/v1/status status=200 latency_ms=40
+2026-11-09T08:56:48 WARN  lb-ctl/lb-node-01 alert fired rule=cpu_steal_high value=64% threshold=63%
+2026-11-09T08:56:49 ERROR lb-ctl/lb-node-22 job failed job=lb-ctl-rollup attempt=1 cause=bad_checksum
+2026-11-09T08:56:51 INFO  lb-ctl/lb-node-05 request done id=req-f24da16c route=/lb-ctl/v1/cancel status=200 latency_ms=334
+2026-11-09T08:56:52 NOTE  lb-ctl/lb-node-09 operator=yjchoi memo="로그 보존 기간은 44일로 유지하기로 함."
+2026-11-09T08:56:59 INFO  lb-ctl/lb-node-19 request done id=req-81d33b07 route=/lb-ctl/v1/create status=204 latency_ms=126
+2026-11-09T08:57:05 INFO  lb-ctl/lb-node-18 request done id=req-76cc4b89 route=/lb-ctl/v1/status status=200 latency_ms=115
+2026-11-09T08:57:11 INFO  lb-ctl/lb-node-21 request done id=req-31bceec1 route=/lb-ctl/v1/cancel status=500 latency_ms=27
+2026-11-09T08:57:15 INFO  lb-ctl/lb-node-08 config applied key=retry.max_attempts value=false by=dwjung
+2026-11-09T08:57:21 INFO  lb-ctl/lb-node-19 request done id=req-38a7a400 route=/lb-ctl/v1/create status=409 latency_ms=253
+2026-11-09T08:57:28 WARN  lb-ctl/lb-node-11 alert fired rule=replica_lag_high value=60s threshold=50s
+2026-11-09T08:57:34 NOTE  lb-ctl/lb-node-14 operator=sykang memo="연동 팀에 변경 공지 완료."
+2026-11-09T08:57:35 ERROR lb-ctl/lb-node-15 job failed job=lb-ctl-reindex attempt=4 cause=quota_exceeded
+2026-11-09T08:57:42 ERROR lb-ctl/lb-node-16 job failed job=lb-ctl-cleanup attempt=2 cause=oom_killed
+2026-11-09T08:57:43 INFO  lb-ctl/lb-node-11 request done id=req-07a75226 route=/lb-ctl/v1/create status=404 latency_ms=111
+2026-11-09T08:57:46 NOTE  lb-ctl/lb-node-16 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-11-09T08:57:47 WARN  lb-ctl/lb-node-22 alert fired rule=queue_depth_high value=55 threshold=51
+2026-11-09T08:57:50 INFO  lb-ctl/lb-node-18 request done id=req-d87c41ac route=/lb-ctl/v1/verify status=200 latency_ms=41
+2026-11-09T08:57:57 INFO  lb-ctl/lb-node-15 request done id=req-b75c1f72 route=/lb-ctl/v1/verify status=200 latency_ms=119
+2026-11-09T08:58:02 INFO  lb-ctl/lb-node-03 config applied key=breaker.half_open_s value=false by=ejlim
+2026-11-09T08:58:07 INFO  lb-ctl/lb-node-09 deploy step release=lb-ctl-4.22.8 step=start result=ok took_s=24
+2026-11-09T08:58:09 INFO  lb-ctl/lb-node-23 request done id=req-6c0c404c route=/lb-ctl/v1/get status=204 latency_ms=62
+2026-11-09T08:58:13 INFO  lb-ctl/lb-node-13 request done id=req-72c39fd0 route=/lb-ctl/v1/get status=200 latency_ms=116
+2026-11-09T08:58:19 INFO  lb-ctl/lb-node-03 deploy step release=lb-ctl-4.14.9 step=start result=ok took_s=229
+2026-11-09T08:58:23 INFO  lb-ctl/lb-node-04 backup finished file=/vault/weekly/users_2026w38.tar.zst size_mb=76377 checksum=db9bad91
+2026-11-09T08:58:29 INFO  lb-ctl/lb-node-18 backup finished file=/vault/daily/orders_20261011.tar.zst size_mb=61616 checksum=e9bf5b85
+2026-11-09T08:58:32 INFO  lb-ctl/lb-node-15 deploy step release=lb-ctl-4.14.9 step=pull_image result=ok took_s=2
+2026-11-09T08:58:35 INFO  lb-ctl/lb-node-05 deploy step release=lb-ctl-4.17.9 step=shift_traffic_50 result=ok took_s=180
+2026-11-09T08:58:38 INFO  lb-ctl/lb-node-21 request done id=req-f92184a6 route=/lb-ctl/v1/get status=400 latency_ms=323
+2026-11-09T08:58:41 INFO  lb-ctl/lb-node-09 request done id=req-ae0724ce route=/lb-ctl/v1/cancel status=200 latency_ms=56
+2026-11-09T08:58:48 INFO  lb-ctl/lb-node-14 request done id=req-34bcbdbe route=/lb-ctl/v1/sync status=404 latency_ms=121
+2026-11-09T08:58:49 INFO  lb-ctl/lb-node-17 request done id=req-74e16d08 route=/lb-ctl/v1/sync status=200 latency_ms=176
+2026-11-09T08:58:53 INFO  lb-ctl/lb-node-17 request done id=req-3ce519da route=/lb-ctl/v1/verify status=404 latency_ms=156
+2026-11-09T08:59:00 INFO  lb-ctl/lb-node-15 request done id=req-10682ae7 route=/lb-ctl/v1/create status=200 latency_ms=200
+2026-11-09T08:59:02 ERROR lb-ctl/lb-node-08 job failed job=lb-ctl-rollup attempt=3 cause=dns_failure
+2026-11-09T08:59:04 INFO  lb-ctl/lb-node-19 request done id=req-066386a5 route=/lb-ctl/v1/list status=503 latency_ms=136
+2026-11-09T08:59:10 INFO  lb-ctl/lb-node-07 pool resize target=lb-ctl-db max_pool_size=123 prev=118
+2026-11-09T08:59:16 INFO  lb-ctl/lb-node-03 request done id=req-7e224122 route=/lb-ctl/v1/sync status=204 latency_ms=485
+2026-11-09T08:59:22 ERROR lb-ctl/lb-node-08 job failed job=lb-ctl-reindex attempt=3 cause=bad_checksum
+2026-11-09T08:59:23 INFO  lb-ctl/lb-node-16 request done id=req-1abffb5f route=/lb-ctl/v1/status status=404 latency_ms=43
+2026-11-09T08:59:24 INFO  lb-ctl/lb-node-09 request done id=req-cfae4ea9 route=/lb-ctl/v1/sync status=200 latency_ms=90
+2026-11-09T08:59:27 INFO  lb-ctl/lb-node-03 request done id=req-8bdb3fd3 route=/lb-ctl/v1/get status=500 latency_ms=120
+2026-11-09T08:59:30 INFO  lb-ctl/lb-node-07 ticket linked id=OPS-47303 reason=dependency_upgrade
+2026-11-09T08:59:33 INFO  lb-ctl/lb-node-11 request done id=req-cdb65db8 route=/lb-ctl/v1/get status=200 latency_ms=145
+2026-11-09T08:59:36 INFO  lb-ctl/lb-node-01 config applied key=worker.concurrency value=false by=yjchoi
+2026-11-09T08:59:39 INFO  lb-ctl/lb-node-12 request done id=req-d14f19e5 route=/lb-ctl/v1/update status=200 latency_ms=154
+2026-11-09T08:59:44 INFO  lb-ctl/lb-node-07 request done id=req-e4d80f13 route=/lb-ctl/v1/create status=200 latency_ms=262
+2026-11-09T08:59:47 INFO  lb-ctl/lb-node-02 request done id=req-9463af06 route=/lb-ctl/v1/update status=200 latency_ms=209
+2026-11-09T08:59:50 INFO  lb-ctl/lb-node-14 request done id=req-d57bd98e route=/lb-ctl/v1/update status=200 latency_ms=211
+2026-11-09T08:59:54 INFO  lb-ctl/lb-node-12 request done id=req-a527e756 route=/lb-ctl/v1/sync status=200 latency_ms=168
+2026-11-09T08:59:57 INFO  lb-ctl/lb-node-07 request done id=req-9b5cb6e4 route=/lb-ctl/v1/sync status=200 latency_ms=199
+2026-11-09T08:59:58 INFO  lb-ctl/lb-node-10 deploy step release=lb-ctl-4.12.2 step=verify result=ok took_s=147
+2026-11-09T09:00:05 WARN  lb-ctl/lb-node-22 alert fired rule=p99_latency_high value=92ms threshold=88ms
+2026-11-09T09:00:10 INFO  lb-ctl/lb-node-04 request done id=req-f003eb32 route=/lb-ctl/v1/status status=200 latency_ms=107
+2026-11-09T09:00:13 INFO  lb-ctl/lb-node-04 cache stats region=us-we-2b hit_ratio=55.4% evictions=31512
+2026-11-09T09:00:18 INFO  lb-ctl/lb-node-06 pool resize target=lb-ctl-upstream max_pool_size=291 prev=256
+2026-11-09T09:00:21 INFO  lb-ctl/lb-node-07 request done id=req-b4acb223 route=/lb-ctl/v1/create status=200 latency_ms=95
+2026-11-09T09:00:22 INFO  lb-ctl/lb-node-24 request done id=req-541a0198 route=/lb-ctl/v1/create status=200 latency_ms=108
+2026-11-09T09:00:23 INFO  lb-ctl/lb-node-13 request done id=req-fc70edd8 route=/lb-ctl/v1/list status=200 latency_ms=37
+2026-11-09T09:00:29 INFO  lb-ctl/lb-node-04 request done id=req-e9805183 route=/lb-ctl/v1/sync status=200 latency_ms=149
+2026-11-09T09:00:33 INFO  lb-ctl/lb-node-03 request done id=req-f9036cc7 route=/lb-ctl/v1/verify status=200 latency_ms=113
+2026-11-09T09:00:36 INFO  lb-ctl/lb-node-16 request done id=req-76c4598b route=/lb-ctl/v1/get status=429 latency_ms=41
+2026-11-09T09:00:40 INFO  lb-ctl/lb-node-22 ticket linked id=OPS-49280 reason=dns_ttl_change
+2026-11-09T09:00:41 INFO  lb-ctl/lb-node-02 backup finished file=/vault/daily/users_20261016.tar.zst size_mb=59117 checksum=a368b710
+2026-11-09T09:00:44 INFO  lb-ctl/lb-node-08 request done id=req-7c4f7a36 route=/lb-ctl/v1/list status=200 latency_ms=205
+2026-11-09T09:00:46 INFO  lb-ctl/lb-node-07 request done id=req-0cbb631c route=/lb-ctl/v1/cancel status=200 latency_ms=100
+2026-11-09T09:00:51 INFO  lb-ctl/lb-node-10 pool resize target=lb-ctl-upstream max_pool_size=223 prev=236
+2026-11-09T09:00:56 INFO  lb-ctl/lb-node-14 request done id=req-7f18aef0 route=/lb-ctl/v1/get status=204 latency_ms=62
+2026-11-09T09:00:59 INFO  lb-ctl/lb-node-10 request done id=req-c063ab7e route=/lb-ctl/v1/list status=204 latency_ms=429
+2026-11-09T09:01:03 INFO  lb-ctl/lb-node-16 ticket linked id=OPS-49106 reason=node_drain
+2026-11-09T09:01:04 WARN  lb-ctl/lb-node-19 alert fired rule=error_ratio_high value=62% threshold=47%
+2026-11-09T09:01:09 INFO  lb-ctl/lb-node-20 ticket linked id=OPS-49193 reason=runbook_update
+2026-11-09T09:01:10 INFO  lb-ctl/lb-node-23 pool resize target=lb-ctl-cache max_pool_size=149 prev=112
+2026-11-09T09:01:16 INFO  lb-ctl/lb-node-19 pool resize target=lb-ctl-cache max_pool_size=346 prev=395
+2026-11-09T09:01:21 INFO  lb-ctl/lb-node-06 request done id=req-2d6f177b route=/lb-ctl/v1/verify status=409 latency_ms=37
+2026-11-09T09:01:24 INFO  lb-ctl/lb-node-06 request done id=req-f012d0e9 route=/lb-ctl/v1/list status=200 latency_ms=34
+2026-11-09T09:01:29 INFO  lb-ctl/lb-node-07 deploy step release=lb-ctl-4.15.1 step=shift_traffic_10 result=ok took_s=21
+2026-11-09T09:01:34 INFO  lb-ctl/lb-node-15 request done id=req-8af196cd route=/lb-ctl/v1/update status=200 latency_ms=231
+2026-11-09T09:01:39 INFO  lb-ctl/lb-node-15 config applied key=limiter.rps value=true by=shkim
+2026-11-09T09:01:40 INFO  lb-ctl/lb-node-20 request done id=req-4420861f route=/lb-ctl/v1/create status=200 latency_ms=152
+2026-11-09T09:01:46 INFO  lb-ctl/lb-node-14 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=23668 checksum=3087c725
+2026-11-09T09:01:50 INFO  lb-ctl/lb-node-10 request done id=req-6090127e route=/lb-ctl/v1/verify status=409 latency_ms=69
+2026-11-09T09:01:55 INFO  lb-ctl/lb-node-01 request done id=req-ec9d971a route=/lb-ctl/v1/get status=200 latency_ms=151
+2026-11-09T09:01:56 ERROR lb-ctl/lb-node-13 job failed job=lb-ctl-export attempt=2 cause=lock_wait_exceeded
+2026-11-09T09:02:01 ERROR lb-ctl/lb-node-12 job failed job=lb-ctl-rollup attempt=3 cause=quota_exceeded
+2026-11-09T09:02:04 INFO  lb-ctl/lb-node-15 request done id=req-3a9f4378 route=/lb-ctl/v1/create status=200 latency_ms=307
+2026-11-09T09:02:06 NOTE  lb-ctl/lb-node-11 operator=mjlee memo="로그 보존 기간은 31일로 유지하기로 함."
+2026-11-09T09:02:10 INFO  lb-ctl/lb-node-06 deploy step release=lb-ctl-4.11.7 step=warmup result=ok took_s=52
+2026-11-09T09:02:17 ERROR lb-ctl/lb-node-17 job failed job=lb-ctl-cleanup attempt=2 cause=dns_failure
+2026-11-09T09:02:18 INFO  lb-ctl/lb-node-08 request done id=req-5eeff3ad route=/lb-ctl/v1/sync status=400 latency_ms=123
+2026-11-09T09:02:21 INFO  lb-ctl/lb-node-15 request done id=req-6ff18c20 route=/lb-ctl/v1/status status=409 latency_ms=260
+2026-11-09T09:02:26 NOTE  lb-ctl/lb-node-24 operator=sykang memo="동시 처리 수를 57에서 31로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-09T09:02:28 INFO  lb-ctl/lb-node-04 pool resize target=lb-ctl-queue max_pool_size=269 prev=293
+2026-11-09T09:02:33 INFO  lb-ctl/lb-node-20 request done id=req-f56eedc0 route=/lb-ctl/v1/update status=409 latency_ms=123
+2026-11-09T09:02:34 INFO  lb-ctl/lb-node-21 request done id=req-374056c5 route=/lb-ctl/v1/list status=503 latency_ms=11
+2026-11-09T09:02:37 INFO  lb-ctl/lb-node-21 request done id=req-53cbbe04 route=/lb-ctl/v1/list status=200 latency_ms=64
+2026-11-09T09:02:40 INFO  lb-ctl/lb-node-13 cache stats region=ap-ne-2c hit_ratio=67.9% evictions=26911
+2026-11-09T09:02:44 INFO  lb-ctl/lb-node-18 request done id=req-ce701a20 route=/lb-ctl/v1/list status=404 latency_ms=109
+2026-11-09T09:02:45 INFO  lb-ctl/lb-node-15 backup finished file=/vault/daily/users_20261014.tar.zst size_mb=20069 checksum=bf65a2b9
+2026-11-09T09:02:50 INFO  lb-ctl/lb-node-09 request done id=req-5f2a60ea route=/lb-ctl/v1/get status=429 latency_ms=246
+2026-11-09T09:02:56 INFO  lb-ctl/lb-node-13 request done id=req-b56789a8 route=/lb-ctl/v1/create status=200 latency_ms=277
+2026-11-09T09:03:00 INFO  lb-ctl/lb-node-17 config applied key=tls.session_cache value=20 by=jhpark
+2026-11-09T09:03:04 WARN  lb-ctl/lb-node-18 alert fired rule=queue_depth_high value=98 threshold=92
+2026-11-09T09:03:11 INFO  lb-ctl/lb-node-08 request done id=req-4a19f63d route=/lb-ctl/v1/status status=200 latency_ms=66
+2026-11-09T09:03:15 INFO  lb-ctl/lb-node-05 deploy step release=lb-ctl-4.18.8 step=shift_traffic_100 result=ok took_s=143
+2026-11-09T09:03:16 INFO  lb-ctl/lb-node-11 request done id=req-aa36ed2c route=/lb-ctl/v1/list status=200 latency_ms=130
+2026-11-09T09:03:20 INFO  lb-ctl/lb-node-11 request done id=req-e72f8987 route=/lb-ctl/v1/cancel status=201 latency_ms=57
+2026-11-09T09:03:21 ERROR lb-ctl/lb-node-24 job failed job=lb-ctl-reindex attempt=3 cause=quota_exceeded
+2026-11-09T09:03:28 INFO  lb-ctl/lb-node-10 request done id=req-3049cfc1 route=/lb-ctl/v1/sync status=200 latency_ms=112
+2026-11-09T09:03:30 ERROR lb-ctl/lb-node-08 job failed job=lb-ctl-reindex attempt=1 cause=oom_killed
+2026-11-09T09:03:35 INFO  lb-ctl/lb-node-17 request done id=req-699890f3 route=/lb-ctl/v1/update status=201 latency_ms=191
+2026-11-09T09:03:37 INFO  lb-ctl/lb-node-19 deploy step release=lb-ctl-4.16.6 step=shift_traffic_50 result=ok took_s=20
+2026-11-09T09:03:43 INFO  lb-ctl/lb-node-14 request done id=req-a62b4323 route=/lb-ctl/v1/verify status=409 latency_ms=358
+2026-11-09T09:03:46 ERROR lb-ctl/lb-node-07 job failed job=lb-ctl-export attempt=4 cause=dns_failure
+2026-11-09T09:03:48 INFO  lb-ctl/lb-node-10 request done id=req-f16efa86 route=/lb-ctl/v1/get status=400 latency_ms=282
+2026-11-09T09:03:52 INFO  lb-ctl/lb-node-16 pool resize target=lb-ctl-upstream max_pool_size=202 prev=253
+2026-11-09T09:03:59 INFO  lb-ctl/lb-node-02 request done id=req-a57dc3af route=/lb-ctl/v1/cancel status=409 latency_ms=93
+2026-11-09T09:04:00 NOTE  lb-ctl/lb-node-03 operator=ejlim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-11-09T09:04:03 INFO  lb-ctl/lb-node-17 request done id=req-16610259 route=/lb-ctl/v1/status status=200 latency_ms=102
+2026-11-09T09:04:05 INFO  lb-ctl/lb-node-03 request done id=req-6472a2e4 route=/lb-ctl/v1/get status=201 latency_ms=26
+2026-11-09T09:04:08 INFO  lb-ctl/lb-node-06 request done id=req-aad56fd8 route=/lb-ctl/v1/get status=200 latency_ms=213
+2026-11-09T09:04:15 INFO  lb-ctl/lb-node-02 pool resize target=lb-ctl-db max_pool_size=345 prev=347
+2026-11-09T09:04:17 INFO  lb-ctl/lb-node-14 pool resize target=lb-ctl-cache max_pool_size=203 prev=212
+2026-11-09T09:04:20 INFO  lb-ctl/lb-node-04 request done id=req-5deda389 route=/lb-ctl/v1/cancel status=200 latency_ms=105
+2026-11-09T09:04:24 WARN  lb-ctl/lb-node-20 alert fired rule=heap_used_high value=91% threshold=77%
+2026-11-09T09:04:28 INFO  lb-ctl/lb-node-14 ticket linked id=OPS-49874 reason=quota_increase
+2026-11-09T09:04:29 INFO  lb-ctl/lb-node-01 request done id=req-4b98bf60 route=/lb-ctl/v1/create status=200 latency_ms=58
+2026-11-09T09:04:32 INFO  lb-ctl/lb-node-08 request done id=req-ce36ef2d route=/lb-ctl/v1/list status=409 latency_ms=497
+2026-11-09T09:04:39 WARN  lb-ctl/lb-node-05 alert fired rule=error_ratio_high value=94% threshold=85%
+2026-11-09T09:04:41 INFO  lb-ctl/lb-node-06 cache stats region=us-we-2b hit_ratio=68.1% evictions=24907
+2026-11-09T09:04:42 INFO  lb-ctl/lb-node-12 ticket linked id=OPS-48569 reason=dependency_upgrade
+2026-11-09T09:04:47 INFO  lb-ctl/lb-node-01 cache stats region=ap-se-1a hit_ratio=63.1% evictions=6135
+2026-11-09T09:04:48 WARN  lb-ctl/lb-node-06 alert fired rule=error_ratio_high value=88% threshold=87%
+2026-11-09T09:04:53 INFO  lb-ctl/lb-node-10 request done id=req-e58279e0 route=/lb-ctl/v1/create status=200 latency_ms=168
+2026-11-09T09:04:59 INFO  lb-ctl/lb-node-15 pool resize target=lb-ctl-queue max_pool_size=267 prev=326
+2026-11-09T09:05:06 INFO  lb-ctl/lb-node-23 request done id=req-5563a7d4 route=/lb-ctl/v1/cancel status=200 latency_ms=86
+2026-11-09T09:05:13 ERROR lb-ctl/lb-node-05 job failed job=lb-ctl-reindex attempt=1 cause=oom_killed
+2026-11-09T09:05:16 INFO  lb-ctl/lb-node-24 request done id=req-daaf90a2 route=/lb-ctl/v1/update status=204 latency_ms=122
+2026-11-09T09:05:18 INFO  lb-ctl/lb-node-18 request done id=req-d2c17635 route=/lb-ctl/v1/verify status=200 latency_ms=105
+2026-11-09T09:05:24 INFO  lb-ctl/lb-node-24 request done id=req-9bf06c5c route=/lb-ctl/v1/get status=200 latency_ms=168
+2026-11-09T09:05:28 INFO  lb-ctl/lb-node-08 config applied key=queue.visibility_s value=5258 by=ejlim
+2026-11-09T09:05:33 INFO  lb-ctl/lb-node-13 deploy step release=lb-ctl-4.18.7 step=migrate result=ok took_s=146
+2026-11-09T09:05:37 INFO  lb-ctl/lb-node-07 request done id=req-cc87dcc6 route=/lb-ctl/v1/get status=200 latency_ms=86
+2026-11-09T09:05:44 WARN  lb-ctl/lb-node-04 alert fired rule=replica_lag_high value=96s threshold=89s
+2026-11-09T09:05:48 INFO  lb-ctl/lb-node-04 request done id=req-a02bd47d route=/lb-ctl/v1/verify status=200 latency_ms=51
+2026-11-09T09:05:52 INFO  lb-ctl/lb-node-01 request done id=req-239289df route=/lb-ctl/v1/cancel status=200 latency_ms=64
+2026-11-09T09:05:56 INFO  lb-ctl/lb-node-15 deploy step release=lb-ctl-4.22.0 step=start result=ok took_s=35
+2026-11-09T09:06:03 INFO  lb-ctl/lb-node-18 config applied key=shard.count value=false by=sykang
+2026-11-09T09:06:09 INFO  lb-ctl/lb-node-06 request done id=req-35ad7240 route=/lb-ctl/v1/status status=409 latency_ms=39
+2026-11-09T09:06:12 INFO  lb-ctl/lb-node-01 request done id=req-fafc4c82 route=/lb-ctl/v1/list status=200 latency_ms=49
+2026-11-09T09:06:15 INFO  lb-ctl/lb-node-08 ticket linked id=OPS-47351 reason=flaky_healthcheck
+2026-11-09T09:06:18 WARN  lb-ctl/lb-node-12 alert fired rule=p99_latency_high value=88ms threshold=74ms
+2026-11-09T09:06:22 INFO  lb-ctl/lb-node-05 request done id=req-e5122d8f route=/lb-ctl/v1/create status=200 latency_ms=238
+2026-11-09T09:06:27 INFO  lb-ctl/lb-node-04 request done id=req-0596eeb9 route=/lb-ctl/v1/list status=503 latency_ms=73
+2026-11-09T09:06:29 INFO  lb-ctl/lb-node-05 deploy step release=lb-ctl-4.16.3 step=shift_traffic_10 result=ok took_s=184
+2026-11-09T09:06:34 INFO  lb-ctl/lb-node-21 request done id=req-413e9907 route=/lb-ctl/v1/update status=200 latency_ms=72
+2026-11-09T09:06:37 INFO  lb-ctl/lb-node-06 pool resize target=lb-ctl-queue max_pool_size=105 prev=63
+2026-11-09T09:06:41 INFO  lb-ctl/lb-node-07 request done id=req-4d731471 route=/lb-ctl/v1/sync status=200 latency_ms=121
+2026-11-09T09:06:44 INFO  lb-ctl/lb-node-22 ticket linked id=OPS-49094 reason=oncall_handoff
+2026-11-09T09:06:45 INFO  lb-ctl/lb-node-09 request done id=req-7694b30a route=/lb-ctl/v1/get status=200 latency_ms=104
+2026-11-09T09:06:51 INFO  lb-ctl/lb-node-15 config applied key=cache.ttl_s value=false by=ejlim
+2026-11-09T09:06:52 INFO  lb-ctl/lb-node-19 cache stats region=ap-ne-2c hit_ratio=95.1% evictions=5387
+2026-11-09T09:06:55 ERROR lb-ctl/lb-node-16 job failed job=lb-ctl-reindex attempt=2 cause=dns_failure
+2026-11-09T09:07:00 INFO  lb-ctl/lb-node-23 cache stats region=ap-ne-2b hit_ratio=74.3% evictions=30365
+2026-11-09T09:07:03 WARN  lb-ctl/lb-node-07 alert fired rule=p99_latency_high value=93ms threshold=83ms
+2026-11-09T09:07:09 INFO  lb-ctl/lb-node-24 cache stats region=ap-se-1a hit_ratio=59.1% evictions=3450
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

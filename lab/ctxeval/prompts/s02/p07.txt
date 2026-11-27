@@ -1,0 +1,424 @@
+참고용 로그 07: 로그 수집기(log-collector) 디스크 점검 구간. '확인'이라고만 답해 줘.
+
+2026-10-11T07:19:03 INFO  log-collector/lc-node-17 config applied key=worker.concurrency value=true by=hbyoon
+2026-10-11T07:19:09 INFO  log-collector/lc-node-19 request done id=req-044083ef route=/log-collector/v1/update status=200 latency_ms=152
+2026-10-11T07:19:13 INFO  log-collector/lc-node-24 pool resize target=log-collector-queue max_pool_size=21 prev=60
+2026-10-11T07:19:20 INFO  log-collector/lc-node-23 request done id=req-69a3ffd5 route=/log-collector/v1/sync status=204 latency_ms=403
+2026-10-11T07:19:25 INFO  log-collector/lc-node-01 pool resize target=log-collector-cache max_pool_size=255 prev=230
+2026-10-11T07:19:28 INFO  log-collector/lc-node-18 backup finished file=/vault/weekly/payments_2026w36.tar.zst size_mb=48096 checksum=0f8ee532
+2026-10-11T07:19:34 INFO  log-collector/lc-node-23 config applied key=queue.visibility_s value=10 by=ejlim
+2026-10-11T07:19:35 WARN  log-collector/lc-node-24 alert fired rule=p99_latency_high value=75ms threshold=62ms
+2026-10-11T07:19:37 INFO  log-collector/lc-node-05 deploy step release=log-collector-4.20.6 step=healthcheck result=ok took_s=129
+2026-10-11T07:19:42 INFO  log-collector/lc-node-20 request done id=req-abad8021 route=/log-collector/v1/cancel status=200 latency_ms=100
+2026-10-11T07:19:43 INFO  log-collector/lc-node-05 deploy step release=log-collector-4.22.9 step=shift_traffic_10 result=ok took_s=126
+2026-10-11T07:19:48 INFO  log-collector/lc-node-08 config applied key=gc.pause_target_ms value=45% by=dwjung
+2026-10-11T07:19:53 INFO  log-collector/lc-node-15 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=48153 checksum=8e64338a
+2026-10-11T07:19:54 INFO  log-collector/lc-node-14 deploy step release=log-collector-4.18.1 step=migrate result=ok took_s=116
+2026-10-11T07:20:00 INFO  log-collector/lc-node-20 deploy step release=log-collector-4.13.9 step=shift_traffic_100 result=ok took_s=4
+2026-10-11T07:20:02 INFO  log-collector/lc-node-04 request done id=req-75645711 route=/log-collector/v1/get status=503 latency_ms=364
+2026-10-11T07:20:05 INFO  log-collector/lc-node-12 request done id=req-70b4699c route=/log-collector/v1/status status=409 latency_ms=29
+2026-10-11T07:20:08 INFO  log-collector/lc-node-13 pool resize target=log-collector-worker max_pool_size=67 prev=36
+2026-10-11T07:20:09 INFO  log-collector/lc-node-22 cache stats region=ap-ne-2b hit_ratio=88.9% evictions=34201
+2026-10-11T07:20:10 INFO  log-collector/lc-node-12 request done id=req-da7d7494 route=/log-collector/v1/verify status=200 latency_ms=218
+2026-10-11T07:20:11 INFO  log-collector/lc-node-19 request done id=req-c56a8cd5 route=/log-collector/v1/verify status=200 latency_ms=104
+2026-10-11T07:20:12 INFO  log-collector/lc-node-08 deploy step release=log-collector-4.14.0 step=healthcheck result=ok took_s=201
+2026-10-11T07:20:19 INFO  log-collector/lc-node-02 ticket linked id=OPS-49080 reason=node_drain
+2026-10-11T07:20:21 WARN  log-collector/lc-node-21 alert fired rule=fd_usage_high value=61% threshold=52%
+2026-10-11T07:20:28 INFO  log-collector/lc-node-03 cache stats region=ap-ne-2a hit_ratio=98.2% evictions=15797
+2026-10-11T07:20:29 NOTE  log-collector/lc-node-10 operator=ejlim memo="동시 처리 수를 76에서 37로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-11T07:20:36 INFO  log-collector/lc-node-10 request done id=req-a1404aa9 route=/log-collector/v1/verify status=200 latency_ms=181
+2026-10-11T07:20:43 INFO  log-collector/lc-node-08 request done id=req-72a7ad37 route=/log-collector/v1/list status=400 latency_ms=173
+2026-10-11T07:20:46 WARN  log-collector/lc-node-17 alert fired rule=queue_depth_high value=84 threshold=82
+2026-10-11T07:20:51 ERROR log-collector/lc-node-10 job failed job=log-collector-rollup attempt=3 cause=upstream_timeout
+2026-10-11T07:20:52 INFO  log-collector/lc-node-01 request done id=req-0b7cdf44 route=/log-collector/v1/cancel status=200 latency_ms=247
+2026-10-11T07:20:53 INFO  log-collector/lc-node-01 request done id=req-60720a93 route=/log-collector/v1/sync status=503 latency_ms=91
+2026-10-11T07:20:59 INFO  log-collector/lc-node-18 request done id=req-fb9b9ab0 route=/log-collector/v1/update status=200 latency_ms=572
+2026-10-11T07:21:00 INFO  log-collector/lc-node-12 request done id=req-dc903c3b route=/log-collector/v1/status status=200 latency_ms=112
+2026-10-11T07:21:05 INFO  log-collector/lc-node-06 request done id=req-20290ebe route=/log-collector/v1/update status=200 latency_ms=61
+2026-10-11T07:21:06 INFO  log-collector/lc-node-09 config applied key=limiter.burst value=true by=hbyoon
+2026-10-11T07:21:09 WARN  log-collector/lc-node-11 alert fired rule=disk_usage_warning value=75% threshold=62%
+2026-10-11T07:21:16 INFO  log-collector/lc-node-06 request done id=req-19954947 route=/log-collector/v1/verify status=200 latency_ms=337
+2026-10-11T07:21:20 INFO  log-collector/lc-node-11 ticket linked id=OPS-48735 reason=schema_change
+2026-10-11T07:21:27 INFO  log-collector/lc-node-19 request done id=req-eae37784 route=/log-collector/v1/verify status=200 latency_ms=146
+2026-10-11T07:21:29 INFO  log-collector/lc-node-17 pool resize target=log-collector-queue max_pool_size=29 prev=44
+2026-10-11T07:21:33 WARN  log-collector/lc-node-20 alert fired rule=fd_usage_high value=52% threshold=44%
+2026-10-11T07:21:36 INFO  log-collector/lc-node-23 deploy step release=log-collector-4.16.1 step=drain result=ok took_s=210
+2026-10-11T07:21:38 INFO  log-collector/lc-node-18 request done id=req-a5e1f866 route=/log-collector/v1/update status=429 latency_ms=69
+2026-10-11T07:21:45 INFO  log-collector/lc-node-08 request done id=req-f595b80e route=/log-collector/v1/get status=200 latency_ms=502
+2026-10-11T07:21:52 INFO  log-collector/lc-node-24 request done id=req-005ff792 route=/log-collector/v1/create status=200 latency_ms=105
+2026-10-11T07:21:56 INFO  log-collector/lc-node-09 request done id=req-3270a43c route=/log-collector/v1/create status=429 latency_ms=40
+2026-10-11T07:22:03 INFO  log-collector/lc-node-17 deploy step release=log-collector-4.12.9 step=drain result=ok took_s=102
+2026-10-11T07:22:08 INFO  log-collector/lc-node-11 ticket linked id=OPS-48573 reason=flaky_healthcheck
+2026-10-11T07:22:09 WARN  log-collector/lc-node-17 alert fired rule=gc_pause_long value=84ms threshold=80ms
+2026-10-11T07:22:14 INFO  log-collector/lc-node-10 request done id=req-954d02dc route=/log-collector/v1/sync status=200 latency_ms=197
+2026-10-11T07:22:20 INFO  log-collector/lc-node-01 request done id=req-f65053dd route=/log-collector/v1/verify status=200 latency_ms=196
+2026-10-11T07:22:21 INFO  log-collector/lc-node-02 request done id=req-94f93f6f route=/log-collector/v1/verify status=204 latency_ms=215
+2026-10-11T07:22:22 WARN  log-collector/lc-node-05 alert fired rule=cpu_steal_high value=65% threshold=58%
+2026-10-11T07:22:25 INFO  log-collector/lc-node-08 request done id=req-21a0bf73 route=/log-collector/v1/sync status=200 latency_ms=128
+2026-10-11T07:22:28 INFO  log-collector/lc-node-14 request done id=req-174a2c7d route=/log-collector/v1/sync status=200 latency_ms=53
+2026-10-11T07:22:32 INFO  log-collector/lc-node-10 request done id=req-24dd8f66 route=/log-collector/v1/sync status=200 latency_ms=169
+2026-10-11T07:22:37 INFO  log-collector/lc-node-18 request done id=req-7722a7ae route=/log-collector/v1/get status=200 latency_ms=117
+2026-10-11T07:22:43 INFO  log-collector/lc-node-13 request done id=req-7aa31132 route=/log-collector/v1/list status=200 latency_ms=125
+2026-10-11T07:22:47 INFO  log-collector/lc-node-11 deploy step release=log-collector-4.17.6 step=verify result=ok took_s=206
+2026-10-11T07:22:52 INFO  log-collector/lc-node-15 request done id=req-094007dc route=/log-collector/v1/update status=200 latency_ms=259
+2026-10-11T07:22:55 INFO  log-collector/lc-node-16 backup finished file=/vault/daily/orders_20261015.tar.zst size_mb=8912 checksum=1bb7b958
+2026-10-11T07:22:57 INFO  log-collector/lc-node-05 deploy step release=log-collector-4.13.6 step=shift_traffic_10 result=ok took_s=150
+2026-10-11T07:23:01 INFO  log-collector/lc-node-13 ticket linked id=OPS-48078 reason=dependency_upgrade
+2026-10-11T07:23:02 INFO  log-collector/lc-node-07 deploy step release=log-collector-4.15.6 step=migrate result=ok took_s=146
+2026-10-11T07:23:04 INFO  log-collector/lc-node-14 request done id=req-9e4096ed route=/log-collector/v1/status status=200 latency_ms=90
+2026-10-11T07:23:09 INFO  log-collector/lc-node-08 ticket linked id=OPS-48295 reason=node_drain
+2026-10-11T07:23:12 INFO  log-collector/lc-node-21 request done id=req-d30ba665 route=/log-collector/v1/verify status=404 latency_ms=45
+2026-10-11T07:23:17 WARN  log-collector/lc-node-01 alert fired rule=disk_usage_warning value=62% threshold=50%
+2026-10-11T07:23:20 INFO  log-collector/lc-node-18 request done id=req-55c1146b route=/log-collector/v1/sync status=500 latency_ms=266
+2026-10-11T07:23:27 INFO  log-collector/lc-node-16 request done id=req-8a5ff2cb route=/log-collector/v1/get status=404 latency_ms=382
+2026-10-11T07:23:31 INFO  log-collector/lc-node-15 deploy step release=log-collector-4.20.6 step=shift_traffic_50 result=ok took_s=198
+2026-10-11T07:23:33 INFO  log-collector/lc-node-23 request done id=req-abce6a29 route=/log-collector/v1/sync status=200 latency_ms=106
+2026-10-11T07:23:40 WARN  log-collector/lc-node-02 alert fired rule=disk_usage_warning value=93% threshold=81%
+2026-10-11T07:23:45 INFO  log-collector/lc-node-23 request done id=req-cb3bd58d route=/log-collector/v1/status status=500 latency_ms=112
+2026-10-11T07:23:50 INFO  log-collector/lc-node-21 config applied key=cache.ttl_s value=false by=shkim
+2026-10-11T07:23:56 INFO  log-collector/lc-node-22 backup finished file=/vault/daily/inventory_20261009.tar.zst size_mb=41251 checksum=68d4391f
+2026-10-11T07:23:59 INFO  log-collector/lc-node-06 config applied key=dns.ttl_s value=3352 by=jhpark
+2026-10-11T07:24:01 INFO  log-collector/lc-node-03 request done id=req-4a3d9927 route=/log-collector/v1/cancel status=404 latency_ms=95
+2026-10-11T07:24:04 INFO  log-collector/lc-node-17 config applied key=shard.count value=true by=mjlee
+2026-10-11T07:24:06 INFO  log-collector/lc-node-18 pool resize target=log-collector-cache max_pool_size=201 prev=167
+2026-10-11T07:24:09 NOTE  log-collector/lc-node-20 operator=sykang memo="타임아웃을 49ms에서 79ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-11T07:24:15 INFO  log-collector/lc-node-19 request done id=req-cc03071d route=/log-collector/v1/create status=200 latency_ms=276
+2026-10-11T07:24:17 INFO  log-collector/lc-node-05 request done id=req-24636f4f route=/log-collector/v1/update status=200 latency_ms=564
+2026-10-11T07:24:19 INFO  log-collector/lc-node-14 request done id=req-4007b803 route=/log-collector/v1/get status=200 latency_ms=103
+2026-10-11T07:24:20 INFO  log-collector/lc-node-05 request done id=req-ba7a9feb route=/log-collector/v1/sync status=409 latency_ms=99
+2026-10-11T07:24:21 WARN  log-collector/lc-node-09 alert fired rule=conn_pool_saturated value=52% threshold=44%
+2026-10-11T07:24:22 INFO  log-collector/lc-node-22 config applied key=gc.pause_target_ms value=7070 by=hbyoon
+2026-10-11T07:24:23 INFO  log-collector/lc-node-16 request done id=req-4466c26e route=/log-collector/v1/sync status=404 latency_ms=31
+2026-10-11T07:24:29 INFO  log-collector/lc-node-20 request done id=req-c4a05c5c route=/log-collector/v1/sync status=200 latency_ms=67
+2026-10-11T07:24:36 INFO  log-collector/lc-node-08 request done id=req-df4d76c1 route=/log-collector/v1/status status=200 latency_ms=438
+2026-10-11T07:24:38 WARN  log-collector/lc-node-04 alert fired rule=queue_depth_high value=92 threshold=86
+2026-10-11T07:24:42 INFO  log-collector/lc-node-05 request done id=req-b72615df route=/log-collector/v1/cancel status=204 latency_ms=55
+2026-10-11T07:24:45 INFO  log-collector/lc-node-17 pool resize target=log-collector-upstream max_pool_size=293 prev=240
+2026-10-11T07:24:52 INFO  log-collector/lc-node-14 request done id=req-eb112dc6 route=/log-collector/v1/create status=200 latency_ms=451
+2026-10-11T07:24:57 WARN  log-collector/lc-node-17 alert fired rule=disk_usage_warning value=88% threshold=73%
+2026-10-11T07:25:03 INFO  log-collector/lc-node-22 pool resize target=log-collector-upstream max_pool_size=355 prev=415
+2026-10-11T07:25:08 INFO  log-collector/lc-node-08 deploy step release=log-collector-4.15.8 step=start result=ok took_s=109
+2026-10-11T07:25:10 INFO  log-collector/lc-node-02 request done id=req-a3920fd8 route=/log-collector/v1/verify status=201 latency_ms=60
+2026-10-11T07:25:15 INFO  log-collector/lc-node-06 request done id=req-4a3f1c86 route=/log-collector/v1/get status=200 latency_ms=122
+2026-10-11T07:25:20 INFO  log-collector/lc-node-22 request done id=req-6987b8f7 route=/log-collector/v1/cancel status=200 latency_ms=87
+2026-10-11T07:25:26 INFO  log-collector/lc-node-21 request done id=req-8396f7e0 route=/log-collector/v1/status status=200 latency_ms=102
+2026-10-11T07:25:30 INFO  log-collector/lc-node-23 request done id=req-9e393e9d route=/log-collector/v1/update status=200 latency_ms=156
+2026-10-11T07:25:36 WARN  log-collector/lc-node-21 alert fired rule=cpu_steal_high value=69% threshold=55%
+2026-10-11T07:25:37 INFO  log-collector/lc-node-19 config applied key=worker.concurrency value=false by=dwjung
+2026-10-11T07:25:40 INFO  log-collector/lc-node-05 deploy step release=log-collector-4.20.8 step=healthcheck result=ok took_s=169
+2026-10-11T07:25:45 INFO  log-collector/lc-node-14 request done id=req-5dad90c5 route=/log-collector/v1/list status=200 latency_ms=180
+2026-10-11T07:25:50 INFO  log-collector/lc-node-01 request done id=req-5ca3e771 route=/log-collector/v1/sync status=400 latency_ms=75
+2026-10-11T07:25:55 NOTE  log-collector/lc-node-13 operator=jhpark memo="lc-node-13 재기동 후 지표 정상 확인."
+2026-10-11T07:26:02 INFO  log-collector/lc-node-02 request done id=req-78eb0ce9 route=/log-collector/v1/list status=400 latency_ms=146
+2026-10-11T07:26:08 INFO  log-collector/lc-node-04 deploy step release=log-collector-4.20.5 step=warmup result=ok took_s=152
+2026-10-11T07:26:15 INFO  log-collector/lc-node-04 request done id=req-1b81a78e route=/log-collector/v1/update status=503 latency_ms=87
+2026-10-11T07:26:22 INFO  log-collector/lc-node-02 config applied key=retry.max_attempts value=true by=yjchoi
+2026-10-11T07:26:25 INFO  log-collector/lc-node-03 request done id=req-a196a6b9 route=/log-collector/v1/list status=200 latency_ms=152
+2026-10-11T07:26:31 INFO  log-collector/lc-node-12 request done id=req-6829a193 route=/log-collector/v1/cancel status=200 latency_ms=111
+2026-10-11T07:26:36 WARN  log-collector/lc-node-09 alert fired rule=replica_lag_high value=82s threshold=79s
+2026-10-11T07:26:37 INFO  log-collector/lc-node-05 config applied key=shard.count value=false by=sykang
+2026-10-11T07:26:44 INFO  log-collector/lc-node-24 request done id=req-8ffa7de6 route=/log-collector/v1/cancel status=429 latency_ms=112
+2026-10-11T07:26:50 INFO  log-collector/lc-node-05 config applied key=retry.backoff_ms value=69% by=sykang
+2026-10-11T07:26:54 INFO  log-collector/lc-node-22 config applied key=canary.latency_p99_threshold_ms value=55 by=sykang
+2026-10-11T07:26:57 INFO  log-collector/lc-node-07 request done id=req-52e10ad9 route=/log-collector/v1/update status=201 latency_ms=123
+2026-10-11T07:26:59 INFO  log-collector/lc-node-17 config applied key=retry.max_attempts value=false by=mjlee
+2026-10-11T07:27:00 INFO  log-collector/lc-node-09 request done id=req-c97bc933 route=/log-collector/v1/list status=200 latency_ms=186
+2026-10-11T07:27:01 INFO  log-collector/lc-node-10 request done id=req-b80755c7 route=/log-collector/v1/verify status=200 latency_ms=55
+2026-10-11T07:27:04 INFO  log-collector/lc-node-07 deploy step release=log-collector-4.22.2 step=verify result=ok took_s=35
+2026-10-11T07:27:10 INFO  log-collector/lc-node-02 deploy step release=log-collector-4.14.5 step=start result=ok took_s=207
+2026-10-11T07:27:12 INFO  log-collector/lc-node-23 request done id=req-dc098861 route=/log-collector/v1/get status=200 latency_ms=29
+2026-10-11T07:27:16 INFO  log-collector/lc-node-02 deploy step release=log-collector-4.13.8 step=healthcheck result=ok took_s=187
+2026-10-11T07:27:17 INFO  log-collector/lc-node-16 request done id=req-1bcf638c route=/log-collector/v1/cancel status=503 latency_ms=82
+2026-10-11T07:27:24 INFO  log-collector/lc-node-16 request done id=req-de853a6f route=/log-collector/v1/update status=200 latency_ms=75
+2026-10-11T07:27:31 INFO  log-collector/lc-node-24 request done id=req-4567f94c route=/log-collector/v1/list status=503 latency_ms=267
+2026-10-11T07:27:36 INFO  log-collector/lc-node-22 request done id=req-ea474994 route=/log-collector/v1/create status=200 latency_ms=474
+2026-10-11T07:27:41 NOTE  log-collector/lc-node-21 operator=shkim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-11T07:27:42 INFO  log-collector/lc-node-22 cache stats region=ap-ne-2b hit_ratio=93.5% evictions=5747
+2026-10-11T07:27:47 INFO  log-collector/lc-node-01 request done id=req-0d04a079 route=/log-collector/v1/sync status=200 latency_ms=198
+2026-10-11T07:27:48 INFO  log-collector/lc-node-24 deploy step release=log-collector-4.11.1 step=warmup result=ok took_s=73
+2026-10-11T07:27:49 INFO  log-collector/lc-node-15 request done id=req-ad4026ac route=/log-collector/v1/get status=200 latency_ms=523
+2026-10-11T07:27:51 INFO  log-collector/lc-node-20 request done id=req-af1daaad route=/log-collector/v1/get status=400 latency_ms=91
+2026-10-11T07:27:56 INFO  log-collector/lc-node-07 request done id=req-05040f16 route=/log-collector/v1/list status=200 latency_ms=530
+2026-10-11T07:28:00 INFO  log-collector/lc-node-19 request done id=req-f1853150 route=/log-collector/v1/list status=200 latency_ms=127
+2026-10-11T07:28:05 INFO  log-collector/lc-node-09 request done id=req-7551aacd route=/log-collector/v1/verify status=429 latency_ms=132
+2026-10-11T07:28:10 INFO  log-collector/lc-node-05 request done id=req-8dbfbca2 route=/log-collector/v1/list status=201 latency_ms=216
+2026-10-11T07:28:11 INFO  log-collector/lc-node-16 pool resize target=log-collector-upstream max_pool_size=158 prev=168
+2026-10-11T07:28:14 INFO  log-collector/lc-node-05 request done id=req-c97c3464 route=/log-collector/v1/sync status=204 latency_ms=39
+2026-10-11T07:28:15 INFO  log-collector/lc-node-02 request done id=req-ed95975d route=/log-collector/v1/list status=429 latency_ms=128
+2026-10-11T07:28:21 INFO  log-collector/lc-node-20 request done id=req-06279e6d route=/log-collector/v1/status status=200 latency_ms=93
+2026-10-11T07:28:22 ERROR log-collector/lc-node-18 job failed job=log-collector-cleanup attempt=2 cause=bad_checksum
+2026-10-11T07:28:26 ERROR log-collector/lc-node-18 job failed job=log-collector-reindex attempt=4 cause=quota_exceeded
+2026-10-11T07:28:30 INFO  log-collector/lc-node-20 ticket linked id=OPS-49905 reason=node_drain
+2026-10-11T07:28:35 INFO  log-collector/lc-node-08 ticket linked id=OPS-48077 reason=dns_ttl_change
+2026-10-11T07:28:38 INFO  log-collector/lc-node-24 pool resize target=log-collector-cache max_pool_size=323 prev=317
+2026-10-11T07:28:45 INFO  log-collector/lc-node-07 request done id=req-05bd5358 route=/log-collector/v1/cancel status=200 latency_ms=122
+2026-10-11T07:28:52 INFO  log-collector/lc-node-21 request done id=req-09f1498c route=/log-collector/v1/list status=200 latency_ms=159
+2026-10-11T07:28:53 INFO  log-collector/lc-node-06 cache stats region=ap-ne-2c hit_ratio=71.3% evictions=11432
+2026-10-11T07:28:58 INFO  log-collector/lc-node-19 deploy step release=log-collector-4.16.4 step=healthcheck result=ok took_s=56
+2026-10-11T07:29:04 INFO  log-collector/lc-node-18 request done id=req-1c42a1e7 route=/log-collector/v1/status status=200 latency_ms=510
+2026-10-11T07:29:08 WARN  log-collector/lc-node-19 alert fired rule=cpu_steal_high value=67% threshold=64%
+2026-10-11T07:29:15 WARN  log-collector/lc-node-13 alert fired rule=queue_depth_high value=56 threshold=50
+2026-10-11T07:29:20 INFO  log-collector/lc-node-07 pool resize target=log-collector-cache max_pool_size=58 prev=45
+2026-10-11T07:29:24 INFO  log-collector/lc-node-11 request done id=req-961fc42e route=/log-collector/v1/get status=404 latency_ms=477
+2026-10-11T07:29:29 INFO  log-collector/lc-node-04 ticket linked id=OPS-49374 reason=cert_rotation
+2026-10-11T07:29:35 NOTE  log-collector/lc-node-14 operator=yjchoi memo="타임아웃을 10ms에서 32ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-11T07:29:42 INFO  log-collector/lc-node-22 cache stats region=ap-ne-2b hit_ratio=76.8% evictions=2876
+2026-10-11T07:29:49 INFO  log-collector/lc-node-06 request done id=req-7bdd7b75 route=/log-collector/v1/sync status=200 latency_ms=204
+2026-10-11T07:29:54 INFO  log-collector/lc-node-13 request done id=req-51e83d2b route=/log-collector/v1/update status=200 latency_ms=71
+2026-10-11T07:29:58 INFO  log-collector/lc-node-07 request done id=req-49486eb2 route=/log-collector/v1/get status=409 latency_ms=232
+2026-10-11T07:30:00 INFO  log-collector/lc-node-07 request done id=req-fd484cc0 route=/log-collector/v1/sync status=200 latency_ms=99
+2026-10-11T07:30:01 INFO  log-collector/lc-node-08 deploy step release=log-collector-4.16.7 step=pull_image result=ok took_s=130
+2026-10-11T07:30:03 INFO  log-collector/lc-node-22 request done id=req-78f53561 route=/log-collector/v1/cancel status=409 latency_ms=251
+2026-10-11T07:30:09 NOTE  log-collector/lc-node-14 operator=hbyoon memo="점검 창을 15분 연장함. 승인: 류태경 팀장."
+2026-10-11T07:30:13 INFO  log-collector/lc-node-20 request done id=req-d37500d3 route=/log-collector/v1/sync status=200 latency_ms=333
+2026-10-11T07:30:17 NOTE  log-collector/lc-node-08 operator=yjchoi memo="연동 팀에 변경 공지 완료."
+2026-10-11T07:30:22 INFO  log-collector/lc-node-23 pool resize target=log-collector-worker max_pool_size=319 prev=333
+2026-10-11T07:30:25 WARN  log-collector/lc-node-14 alert fired rule=queue_depth_high value=72 threshold=59
+2026-10-11T07:30:29 WARN  log-collector/lc-node-17 alert fired rule=gc_pause_long value=56ms threshold=50ms
+2026-10-11T07:30:32 INFO  log-collector/lc-node-19 config applied key=queue.visibility_s value=38 by=jhpark
+2026-10-11T07:30:34 INFO  log-collector/lc-node-12 pool resize target=log-collector-upstream max_pool_size=312 prev=259
+2026-10-11T07:30:40 INFO  log-collector/lc-node-07 request done id=req-bb875ff9 route=/log-collector/v1/cancel status=200 latency_ms=68
+2026-10-11T07:30:45 INFO  log-collector/lc-node-18 request done id=req-34be89f9 route=/log-collector/v1/verify status=404 latency_ms=163
+2026-10-11T07:30:52 INFO  log-collector/lc-node-08 deploy step release=log-collector-4.22.3 step=migrate result=ok took_s=71
+2026-10-11T07:30:54 INFO  log-collector/lc-node-19 request done id=req-ccc2e959 route=/log-collector/v1/list status=429 latency_ms=76
+2026-10-11T07:30:56 INFO  log-collector/lc-node-17 request done id=req-f4778a4f route=/log-collector/v1/create status=409 latency_ms=168
+2026-10-11T07:30:57 INFO  log-collector/lc-node-03 deploy step release=log-collector-4.18.4 step=migrate result=ok took_s=188
+2026-10-11T07:31:04 NOTE  log-collector/lc-node-06 operator=dwjung memo="배치 시작 시각을 49시 74분으로 고정함."
+2026-10-11T07:31:07 INFO  log-collector/lc-node-01 pool resize target=log-collector-upstream max_pool_size=266 prev=247
+2026-10-11T07:31:14 WARN  log-collector/lc-node-01 alert fired rule=heap_used_high value=89% threshold=83%
+2026-10-11T07:31:17 INFO  log-collector/lc-node-09 request done id=req-967664a7 route=/log-collector/v1/cancel status=400 latency_ms=42
+2026-10-11T07:31:20 INFO  log-collector/lc-node-04 request done id=req-4e875a6e route=/log-collector/v1/status status=200 latency_ms=186
+2026-10-11T07:31:22 INFO  log-collector/lc-node-13 backup finished file=/vault/daily/orders_20261014.tar.zst size_mb=10608 checksum=951bc7fc
+2026-10-11T07:31:23 INFO  log-collector/lc-node-01 deploy step release=log-collector-4.21.7 step=shift_traffic_100 result=ok took_s=25
+2026-10-11T07:31:28 INFO  log-collector/lc-node-05 backup finished file=/vault/daily/sessions_20261005.tar.zst size_mb=72519 checksum=9e838f49
+2026-10-11T07:31:31 INFO  log-collector/lc-node-01 deploy step release=log-collector-4.14.7 step=start result=ok took_s=127
+2026-10-11T07:31:38 INFO  log-collector/lc-node-11 request done id=req-0677619f route=/log-collector/v1/verify status=200 latency_ms=274
+2026-10-11T07:31:40 INFO  log-collector/lc-node-16 ticket linked id=OPS-48037 reason=log_volume_spike
+2026-10-11T07:31:41 INFO  log-collector/lc-node-04 request done id=req-207470ea route=/log-collector/v1/sync status=201 latency_ms=150
+2026-10-11T07:31:47 ERROR log-collector/lc-node-21 job failed job=log-collector-rollup attempt=4 cause=lock_wait_exceeded
+2026-10-11T07:31:54 INFO  log-collector/lc-node-19 deploy step release=log-collector-4.17.2 step=shift_traffic_100 result=ok took_s=145
+2026-10-11T07:31:57 INFO  log-collector/lc-node-17 request done id=req-5ebab64f route=/log-collector/v1/update status=200 latency_ms=210
+2026-10-11T07:32:03 INFO  log-collector/lc-node-01 backup finished file=/vault/weekly/orders_2026w30.tar.zst size_mb=77490 checksum=2f9d2920
+2026-10-11T07:32:08 INFO  log-collector/lc-node-13 pool resize target=log-collector-queue max_pool_size=16 prev=4
+2026-10-11T07:32:15 WARN  log-collector/lc-node-10 alert fired rule=heap_used_high value=61% threshold=55%
+2026-10-11T07:32:17 INFO  log-collector/lc-node-21 deploy step release=log-collector-4.15.6 step=shift_traffic_10 result=ok took_s=14
+2026-10-11T07:32:24 INFO  log-collector/lc-node-16 request done id=req-932dcbb6 route=/log-collector/v1/verify status=200 latency_ms=139
+2026-10-11T07:32:26 INFO  log-collector/lc-node-14 deploy step release=log-collector-4.17.9 step=pull_image result=ok took_s=101
+2026-10-11T07:32:27 INFO  log-collector/lc-node-05 config applied key=breaker.open_ratio value=false by=sykang
+2026-10-11T07:32:33 INFO  log-collector/lc-node-06 request done id=req-dd9d2691 route=/log-collector/v1/get status=200 latency_ms=58
+2026-10-11T07:32:40 WARN  log-collector/lc-node-21 alert fired rule=fd_usage_high value=92% threshold=83%
+2026-10-11T07:32:46 INFO  log-collector/lc-node-07 request done id=req-00e4b978 route=/log-collector/v1/cancel status=503 latency_ms=55
+2026-10-11T07:32:50 INFO  log-collector/lc-node-18 request done id=req-2633b646 route=/log-collector/v1/status status=200 latency_ms=64
+2026-10-11T07:32:52 WARN  log-collector/lc-node-15 alert fired rule=conn_pool_saturated value=80% threshold=75%
+2026-10-11T07:32:55 INFO  log-collector/lc-node-05 request done id=req-215958d7 route=/log-collector/v1/update status=204 latency_ms=97
+2026-10-11T07:32:59 INFO  log-collector/lc-node-13 request done id=req-98cb8f1f route=/log-collector/v1/cancel status=200 latency_ms=186
+2026-10-11T07:33:04 INFO  log-collector/lc-node-20 deploy step release=log-collector-4.18.0 step=start result=ok took_s=201
+2026-10-11T07:33:09 INFO  log-collector/lc-node-21 request done id=req-691662c0 route=/log-collector/v1/get status=200 latency_ms=98
+2026-10-11T07:33:10 NOTE  log-collector/lc-node-18 operator=hbyoon memo="헬스체크 간격을 23초에서 53초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-11T07:33:12 INFO  log-collector/lc-node-04 ticket linked id=OPS-48782 reason=log_volume_spike
+2026-10-11T07:33:17 INFO  log-collector/lc-node-01 backup finished file=/vault/weekly/sessions_2026w31.tar.zst size_mb=61769 checksum=6cf42dd6
+2026-10-11T07:33:19 NOTE  log-collector/lc-node-14 operator=jhpark memo="임시 증설 2대 추가. 내일 오전 회수 예정."
+2026-10-11T07:33:21 INFO  log-collector/lc-node-05 request done id=req-1f509590 route=/log-collector/v1/create status=200 latency_ms=544
+2026-10-11T07:33:27 INFO  log-collector/lc-node-23 request done id=req-345e76a7 route=/log-collector/v1/status status=200 latency_ms=148
+2026-10-11T07:33:30 INFO  log-collector/lc-node-17 request done id=req-5ea3bee9 route=/log-collector/v1/get status=404 latency_ms=41
+2026-10-11T07:33:36 INFO  log-collector/lc-node-20 request done id=req-1df27d96 route=/log-collector/v1/cancel status=200 latency_ms=412
+2026-10-11T07:33:40 INFO  log-collector/lc-node-06 request done id=req-322eff58 route=/log-collector/v1/get status=200 latency_ms=34
+2026-10-11T07:33:45 INFO  log-collector/lc-node-08 backup finished file=/vault/daily/orders_20261002.tar.zst size_mb=67808 checksum=0e4e97a3
+2026-10-11T07:33:46 INFO  log-collector/lc-node-09 request done id=req-2bbe4c29 route=/log-collector/v1/get status=409 latency_ms=92
+2026-10-11T07:33:49 WARN  log-collector/lc-node-08 alert fired rule=gc_pause_long value=81ms threshold=79ms
+2026-10-11T07:33:50 INFO  log-collector/lc-node-05 request done id=req-8f69857d route=/log-collector/v1/cancel status=200 latency_ms=61
+2026-10-11T07:33:51 INFO  log-collector/lc-node-02 deploy step release=log-collector-4.14.7 step=pull_image result=ok took_s=137
+2026-10-11T07:33:55 INFO  log-collector/lc-node-19 deploy step release=log-collector-4.11.3 step=shift_traffic_50 result=ok took_s=142
+2026-10-11T07:33:57 INFO  log-collector/lc-node-24 request done id=req-49cccfa2 route=/log-collector/v1/list status=200 latency_ms=90
+2026-10-11T07:34:01 INFO  log-collector/lc-node-17 request done id=req-fc29b5d0 route=/log-collector/v1/sync status=400 latency_ms=122
+2026-10-11T07:34:04 INFO  log-collector/lc-node-22 request done id=req-96c875bf route=/log-collector/v1/get status=404 latency_ms=149
+2026-10-11T07:34:06 ERROR log-collector/lc-node-02 job failed job=log-collector-rollup attempt=5 cause=quota_exceeded
+2026-10-11T07:34:11 NOTE  log-collector/lc-node-01 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-11T07:34:17 INFO  log-collector/lc-node-02 pool resize target=log-collector-cache max_pool_size=140 prev=177
+2026-10-11T07:34:21 INFO  log-collector/lc-node-24 deploy step release=log-collector-4.22.1 step=shift_traffic_100 result=ok took_s=68
+2026-10-11T07:34:28 INFO  log-collector/lc-node-18 request done id=req-a8f7099c route=/log-collector/v1/cancel status=200 latency_ms=246
+2026-10-11T07:34:29 INFO  log-collector/lc-node-11 ticket linked id=OPS-48209 reason=dependency_upgrade
+2026-10-11T07:34:31 INFO  log-collector/lc-node-13 request done id=req-eef3dcd1 route=/log-collector/v1/cancel status=200 latency_ms=145
+2026-10-11T07:34:33 INFO  log-collector/lc-node-22 request done id=req-c2d40768 route=/log-collector/v1/list status=200 latency_ms=60
+2026-10-11T07:34:37 WARN  log-collector/lc-node-03 alert fired rule=fd_usage_high value=55% threshold=51%
+2026-10-11T07:34:44 INFO  log-collector/lc-node-01 request done id=req-3f0fd030 route=/log-collector/v1/list status=200 latency_ms=45
+2026-10-11T07:34:46 INFO  log-collector/lc-node-13 cache stats region=ap-se-1a hit_ratio=92.4% evictions=4941
+2026-10-11T07:34:48 INFO  log-collector/lc-node-03 request done id=req-be300f47 route=/log-collector/v1/sync status=200 latency_ms=194
+2026-10-11T07:34:52 WARN  log-collector/lc-node-04 alert fired rule=p99_latency_high value=91ms threshold=76ms
+2026-10-11T07:34:57 INFO  log-collector/lc-node-07 request done id=req-51d3607f route=/log-collector/v1/verify status=200 latency_ms=28
+2026-10-11T07:35:03 INFO  log-collector/lc-node-04 request done id=req-90d98895 route=/log-collector/v1/status status=201 latency_ms=219
+2026-10-11T07:35:07 INFO  log-collector/lc-node-06 request done id=req-1a1f4824 route=/log-collector/v1/list status=400 latency_ms=160
+2026-10-11T07:35:11 INFO  log-collector/lc-node-11 request done id=req-ff72b152 route=/log-collector/v1/create status=200 latency_ms=183
+2026-10-11T07:35:16 WARN  log-collector/lc-node-06 alert fired rule=p99_latency_high value=57ms threshold=56ms
+2026-10-11T07:35:17 INFO  log-collector/lc-node-19 request done id=req-85e5cf09 route=/log-collector/v1/get status=200 latency_ms=321
+2026-10-11T07:35:18 INFO  log-collector/lc-node-14 request done id=req-d82700fc route=/log-collector/v1/create status=201 latency_ms=246
+2026-10-11T07:35:22 INFO  log-collector/lc-node-17 request done id=req-26a07c07 route=/log-collector/v1/cancel status=200 latency_ms=75
+2026-10-11T07:35:24 INFO  log-collector/lc-node-04 config applied key=breaker.open_ratio value=52 by=shkim
+2026-10-11T07:35:27 INFO  log-collector/lc-node-08 pool resize target=log-collector-queue max_pool_size=362 prev=363
+2026-10-11T07:35:31 INFO  log-collector/lc-node-11 request done id=req-59e70b40 route=/log-collector/v1/cancel status=200 latency_ms=541
+2026-10-11T07:35:34 NOTE  log-collector/lc-node-16 operator=jhpark memo="헬스체크 간격을 33초에서 60초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-11T07:35:41 INFO  log-collector/lc-node-17 request done id=req-a0320eb2 route=/log-collector/v1/update status=200 latency_ms=858
+2026-10-11T07:35:47 INFO  log-collector/lc-node-14 pool resize target=log-collector-queue max_pool_size=207 prev=258
+2026-10-11T07:35:53 INFO  log-collector/lc-node-01 request done id=req-a8a97629 route=/log-collector/v1/verify status=404 latency_ms=52
+2026-10-11T07:35:58 WARN  log-collector/lc-node-24 alert fired rule=disk_usage_warning value=69% threshold=62%
+2026-10-11T07:36:03 WARN  log-collector/lc-node-07 alert fired rule=queue_depth_high value=76 threshold=64
+2026-10-11T07:36:07 INFO  log-collector/lc-node-10 request done id=req-e529200c route=/log-collector/v1/verify status=201 latency_ms=147
+2026-10-11T07:36:14 WARN  log-collector/lc-node-08 alert fired rule=heap_used_high value=86% threshold=77%
+2026-10-11T07:36:15 INFO  log-collector/lc-node-01 deploy step release=log-collector-4.18.0 step=shift_traffic_100 result=ok took_s=137
+2026-10-11T07:36:22 WARN  log-collector/lc-node-14 alert fired rule=replica_lag_high value=59s threshold=44s
+2026-10-11T07:36:27 ERROR log-collector/lc-node-18 job failed job=log-collector-reindex attempt=4 cause=upstream_timeout
+2026-10-11T07:36:29 NOTE  log-collector/lc-node-17 operator=hbyoon memo="로그 보존 기간은 18일로 유지하기로 함."
+2026-10-11T07:36:32 WARN  log-collector/lc-node-10 alert fired rule=p99_latency_high value=96ms threshold=83ms
+2026-10-11T07:36:34 WARN  log-collector/lc-node-11 alert fired rule=queue_depth_high value=56 threshold=43
+2026-10-11T07:36:39 INFO  log-collector/lc-node-02 request done id=req-0654e5a0 route=/log-collector/v1/get status=429 latency_ms=135
+2026-10-11T07:36:41 INFO  log-collector/lc-node-17 request done id=req-41ad1e70 route=/log-collector/v1/cancel status=200 latency_ms=124
+2026-10-11T07:36:45 INFO  log-collector/lc-node-13 deploy step release=log-collector-4.19.1 step=healthcheck result=ok took_s=9
+2026-10-11T07:36:52 INFO  log-collector/lc-node-17 deploy step release=log-collector-4.13.1 step=start result=ok took_s=18
+2026-10-11T07:36:54 INFO  log-collector/lc-node-03 request done id=req-db8c1476 route=/log-collector/v1/create status=200 latency_ms=141
+2026-10-11T07:36:57 INFO  log-collector/lc-node-05 request done id=req-345aeb97 route=/log-collector/v1/status status=200 latency_ms=121
+2026-10-11T07:37:01 INFO  log-collector/lc-node-06 ticket linked id=OPS-49857 reason=dependency_upgrade
+2026-10-11T07:37:08 INFO  log-collector/lc-node-14 request done id=req-ad5cd65b route=/log-collector/v1/cancel status=200 latency_ms=54
+2026-10-11T07:37:15 NOTE  log-collector/lc-node-02 operator=jhpark memo="헬스체크 간격을 52초에서 79초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-11T07:37:16 INFO  log-collector/lc-node-02 cache stats region=ap-ne-2b hit_ratio=71.0% evictions=38038
+2026-10-11T07:37:21 INFO  log-collector/lc-node-21 deploy step release=log-collector-4.13.4 step=migrate result=ok took_s=36
+2026-10-11T07:37:24 INFO  log-collector/lc-node-24 pool resize target=log-collector-upstream max_pool_size=250 prev=245
+2026-10-11T07:37:25 INFO  log-collector/lc-node-07 request done id=req-b140dfaf route=/log-collector/v1/cancel status=200 latency_ms=141
+2026-10-11T07:37:32 INFO  log-collector/lc-node-06 request done id=req-9521a84a route=/log-collector/v1/get status=500 latency_ms=68
+2026-10-11T07:37:37 ERROR log-collector/lc-node-17 job failed job=log-collector-export attempt=2 cause=oom_killed
+2026-10-11T07:37:44 INFO  log-collector/lc-node-07 deploy step release=log-collector-4.18.2 step=verify result=ok took_s=213
+2026-10-11T07:37:48 WARN  log-collector/lc-node-15 alert fired rule=disk_usage_warning value=58% threshold=56%
+2026-10-11T07:37:49 NOTE  log-collector/lc-node-22 operator=hbyoon memo="점검 창을 16분 연장함. 승인: 류태경 팀장."
+2026-10-11T07:37:55 INFO  log-collector/lc-node-05 config applied key=worker.concurrency value=8200 by=sykang
+2026-10-11T07:37:58 INFO  log-collector/lc-node-01 request done id=req-03b54a65 route=/log-collector/v1/list status=200 latency_ms=455
+2026-10-11T07:38:00 INFO  log-collector/lc-node-14 request done id=req-3131c317 route=/log-collector/v1/get status=429 latency_ms=305
+2026-10-11T07:38:03 INFO  log-collector/lc-node-07 request done id=req-85b24d8e route=/log-collector/v1/get status=500 latency_ms=74
+2026-10-11T07:38:10 INFO  log-collector/lc-node-21 request done id=req-c7bbdf71 route=/log-collector/v1/status status=409 latency_ms=114
+2026-10-11T07:38:17 INFO  log-collector/lc-node-17 config applied key=canary.traffic_percent value=65% by=hbyoon
+2026-10-11T07:38:19 INFO  log-collector/lc-node-01 backup finished file=/vault/daily/users_20261005.tar.zst size_mb=81196 checksum=b1f6b2db
+2026-10-11T07:38:25 WARN  log-collector/lc-node-11 alert fired rule=fd_usage_high value=73% threshold=64%
+2026-10-11T07:38:27 INFO  log-collector/lc-node-24 request done id=req-86efcbc9 route=/log-collector/v1/status status=200 latency_ms=169
+2026-10-11T07:38:28 INFO  log-collector/lc-node-11 pool resize target=log-collector-db max_pool_size=164 prev=110
+2026-10-11T07:38:33 INFO  log-collector/lc-node-15 request done id=req-826861dc route=/log-collector/v1/cancel status=200 latency_ms=50
+2026-10-11T07:38:35 INFO  log-collector/lc-node-20 request done id=req-60d06b45 route=/log-collector/v1/update status=200 latency_ms=21
+2026-10-11T07:38:39 WARN  log-collector/lc-node-10 alert fired rule=conn_pool_saturated value=76% threshold=72%
+2026-10-11T07:38:42 INFO  log-collector/lc-node-21 deploy step release=log-collector-4.14.1 step=shift_traffic_100 result=ok took_s=38
+2026-10-11T07:38:47 INFO  log-collector/lc-node-11 pool resize target=log-collector-queue max_pool_size=15 prev=12
+2026-10-11T07:38:48 INFO  log-collector/lc-node-08 backup finished file=/vault/daily/audit_20261013.tar.zst size_mb=67899 checksum=5f47e549
+2026-10-11T07:38:53 ERROR log-collector/lc-node-01 job failed job=log-collector-export attempt=1 cause=quota_exceeded
+2026-10-11T07:38:55 INFO  log-collector/lc-node-20 request done id=req-a3bce0c1 route=/log-collector/v1/cancel status=409 latency_ms=9
+2026-10-11T07:39:02 INFO  log-collector/lc-node-07 request done id=req-d4715554 route=/log-collector/v1/get status=200 latency_ms=350
+2026-10-11T07:39:06 INFO  log-collector/lc-node-03 request done id=req-216a319c route=/log-collector/v1/update status=200 latency_ms=56
+2026-10-11T07:39:07 INFO  log-collector/lc-node-10 request done id=req-1f41c542 route=/log-collector/v1/sync status=500 latency_ms=181
+2026-10-11T07:39:13 INFO  log-collector/lc-node-18 request done id=req-8b2f56ca route=/log-collector/v1/get status=200 latency_ms=99
+2026-10-11T07:39:19 INFO  log-collector/lc-node-03 deploy step release=log-collector-4.16.2 step=shift_traffic_10 result=ok took_s=179
+2026-10-11T07:39:26 NOTE  log-collector/lc-node-17 operator=yjchoi memo="캐시 TTL을 57초로 되돌림. 오래된 응답이 보고됨."
+2026-10-11T07:39:30 INFO  log-collector/lc-node-21 request done id=req-5407f970 route=/log-collector/v1/status status=200 latency_ms=93
+2026-10-11T07:39:36 INFO  log-collector/lc-node-23 request done id=req-742a741d route=/log-collector/v1/list status=200 latency_ms=113
+2026-10-11T07:39:40 INFO  log-collector/lc-node-23 request done id=req-f6d94545 route=/log-collector/v1/sync status=200 latency_ms=66
+2026-10-11T07:39:44 INFO  log-collector/lc-node-09 request done id=req-165fafe0 route=/log-collector/v1/update status=200 latency_ms=178
+2026-10-11T07:39:49 INFO  log-collector/lc-node-07 pool resize target=log-collector-db max_pool_size=51 prev=54
+2026-10-11T07:39:54 INFO  log-collector/lc-node-13 request done id=req-a5c489df route=/log-collector/v1/list status=400 latency_ms=67
+2026-10-11T07:40:01 INFO  log-collector/lc-node-20 request done id=req-a8e52106 route=/log-collector/v1/get status=429 latency_ms=106
+2026-10-11T07:40:04 INFO  log-collector/lc-node-08 request done id=req-bd337144 route=/log-collector/v1/update status=400 latency_ms=283
+2026-10-11T07:40:07 INFO  log-collector/lc-node-05 deploy step release=log-collector-4.11.8 step=healthcheck result=ok took_s=69
+2026-10-11T07:40:13 INFO  log-collector/lc-node-14 config applied key=retry.max_attempts value=true by=hbyoon
+2026-10-11T07:40:17 INFO  log-collector/lc-node-11 deploy step release=log-collector-4.13.1 step=shift_traffic_10 result=ok took_s=236
+2026-10-11T07:40:18 INFO  log-collector/lc-node-10 request done id=req-b6f98657 route=/log-collector/v1/status status=429 latency_ms=211
+2026-10-11T07:40:24 INFO  log-collector/lc-node-16 request done id=req-da12e5af route=/log-collector/v1/status status=204 latency_ms=59
+2026-10-11T07:40:27 INFO  log-collector/lc-node-23 request done id=req-792e6d2f route=/log-collector/v1/cancel status=200 latency_ms=319
+2026-10-11T07:40:30 INFO  log-collector/lc-node-04 cache stats region=ap-ne-2c hit_ratio=68.4% evictions=27541
+2026-10-11T07:40:35 NOTE  log-collector/lc-node-05 operator=ejlim memo="임시 증설 43대 추가. 내일 오전 회수 예정."
+2026-10-11T07:40:38 INFO  log-collector/lc-node-17 request done id=req-42f35fae route=/log-collector/v1/list status=200 latency_ms=63
+2026-10-11T07:40:45 ERROR log-collector/lc-node-18 job failed job=log-collector-rollup attempt=2 cause=oom_killed
+2026-10-11T07:40:51 INFO  log-collector/lc-node-03 request done id=req-70607e75 route=/log-collector/v1/verify status=500 latency_ms=97
+2026-10-11T07:40:55 INFO  log-collector/lc-node-16 pool resize target=log-collector-upstream max_pool_size=347 prev=304
+2026-10-11T07:41:01 INFO  log-collector/lc-node-08 ticket linked id=OPS-48184 reason=quota_increase
+2026-10-11T07:41:08 INFO  log-collector/lc-node-19 request done id=req-59c15247 route=/log-collector/v1/verify status=503 latency_ms=93
+2026-10-11T07:41:14 INFO  log-collector/lc-node-16 pool resize target=log-collector-queue max_pool_size=377 prev=389
+2026-10-11T07:41:21 INFO  log-collector/lc-node-19 ticket linked id=OPS-47546 reason=cert_rotation
+2026-10-11T07:41:28 ERROR log-collector/lc-node-03 job failed job=log-collector-cleanup attempt=4 cause=quota_exceeded
+2026-10-11T07:41:30 INFO  log-collector/lc-node-23 pool resize target=log-collector-db max_pool_size=380 prev=375
+2026-10-11T07:41:34 INFO  log-collector/lc-node-22 deploy step release=log-collector-4.10.8 step=shift_traffic_10 result=ok took_s=27
+2026-10-11T07:41:39 INFO  log-collector/lc-node-03 request done id=req-7d330e11 route=/log-collector/v1/verify status=200 latency_ms=40
+2026-10-11T07:41:44 INFO  log-collector/lc-node-03 request done id=req-6e4d7c63 route=/log-collector/v1/create status=200 latency_ms=119
+2026-10-11T07:41:48 INFO  log-collector/lc-node-08 ticket linked id=OPS-48523 reason=log_volume_spike
+2026-10-11T07:41:51 INFO  log-collector/lc-node-16 pool resize target=log-collector-cache max_pool_size=113 prev=95
+2026-10-11T07:41:55 INFO  log-collector/lc-node-22 request done id=req-df9e5ef0 route=/log-collector/v1/update status=503 latency_ms=61
+2026-10-11T07:41:58 INFO  log-collector/lc-node-13 ticket linked id=OPS-47523 reason=flaky_healthcheck
+2026-10-11T07:42:05 INFO  log-collector/lc-node-17 pool resize target=log-collector-worker max_pool_size=314 prev=362
+2026-10-11T07:42:10 INFO  log-collector/lc-node-13 pool resize target=log-collector-worker max_pool_size=152 prev=145
+2026-10-11T07:42:14 INFO  log-collector/lc-node-04 request done id=req-6f92f876 route=/log-collector/v1/sync status=404 latency_ms=59
+2026-10-11T07:42:20 INFO  log-collector/lc-node-04 pool resize target=log-collector-worker max_pool_size=388 prev=396
+2026-10-11T07:42:23 INFO  log-collector/lc-node-20 request done id=req-75195bc0 route=/log-collector/v1/create status=500 latency_ms=69
+2026-10-11T07:42:24 WARN  log-collector/lc-node-15 alert fired rule=fd_usage_high value=79% threshold=78%
+2026-10-11T07:42:29 INFO  log-collector/lc-node-19 config applied key=breaker.open_ratio value=true by=hbyoon
+2026-10-11T07:42:33 INFO  log-collector/lc-node-10 request done id=req-4d982807 route=/log-collector/v1/cancel status=500 latency_ms=28
+2026-10-11T07:42:35 INFO  log-collector/lc-node-10 backup finished file=/vault/weekly/inventory_2026w42.tar.zst size_mb=47214 checksum=8157e74d
+2026-10-11T07:42:40 INFO  log-collector/lc-node-17 deploy step release=log-collector-4.22.3 step=shift_traffic_50 result=ok took_s=111
+2026-10-11T07:42:41 INFO  log-collector/lc-node-23 backup finished file=/vault/weekly/sessions_2026w44.tar.zst size_mb=14218 checksum=d36b9ee1
+2026-10-11T07:42:47 INFO  log-collector/lc-node-24 request done id=req-bbc1658e route=/log-collector/v1/list status=503 latency_ms=283
+2026-10-11T07:42:52 INFO  log-collector/lc-node-15 deploy step release=log-collector-4.22.3 step=verify result=ok took_s=124
+2026-10-11T07:42:58 INFO  log-collector/lc-node-12 ticket linked id=OPS-48122 reason=oncall_handoff
+2026-10-11T07:43:02 INFO  log-collector/lc-node-17 request done id=req-0d118d94 route=/log-collector/v1/list status=200 latency_ms=276
+2026-10-11T07:43:06 NOTE  log-collector/lc-node-15 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-11T07:43:08 INFO  log-collector/lc-node-12 request done id=req-69b134d0 route=/log-collector/v1/get status=429 latency_ms=334
+2026-10-11T07:43:12 INFO  log-collector/lc-node-07 request done id=req-778c39ab route=/log-collector/v1/verify status=503 latency_ms=151
+2026-10-11T07:43:19 INFO  log-collector/lc-node-22 config applied key=worker.concurrency value=9% by=shkim
+2026-10-11T07:43:24 INFO  log-collector/lc-node-12 request done id=req-ca2ec751 route=/log-collector/v1/verify status=201 latency_ms=157
+2026-10-11T07:43:27 INFO  log-collector/lc-node-09 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=15618 checksum=51ff9875
+2026-10-11T07:43:31 INFO  log-collector/lc-node-01 pool resize target=log-collector-db max_pool_size=59 prev=97
+2026-10-11T07:43:33 INFO  log-collector/lc-node-18 request done id=req-6edcf226 route=/log-collector/v1/status status=404 latency_ms=610
+2026-10-11T07:43:36 INFO  log-collector/lc-node-17 request done id=req-f71a84fd route=/log-collector/v1/sync status=200 latency_ms=62
+2026-10-11T07:43:41 INFO  log-collector/lc-node-23 backup finished file=/vault/weekly/audit_2026w35.tar.zst size_mb=19991 checksum=571fb285
+2026-10-11T07:43:48 INFO  log-collector/lc-node-06 ticket linked id=OPS-48629 reason=schema_change
+2026-10-11T07:43:53 INFO  log-collector/lc-node-05 request done id=req-60cb2c33 route=/log-collector/v1/status status=200 latency_ms=1353
+2026-10-11T07:43:54 INFO  log-collector/lc-node-17 pool resize target=log-collector-upstream max_pool_size=62 prev=116
+2026-10-11T07:43:56 INFO  log-collector/lc-node-01 request done id=req-aaeb40fc route=/log-collector/v1/create status=409 latency_ms=189
+2026-10-11T07:44:02 INFO  log-collector/lc-node-10 pool resize target=log-collector-queue max_pool_size=17 prev=4
+2026-10-11T07:44:04 INFO  log-collector/lc-node-01 request done id=req-5b7756a6 route=/log-collector/v1/list status=200 latency_ms=494
+2026-10-11T07:44:09 INFO  log-collector/lc-node-12 request done id=req-e0aec13e route=/log-collector/v1/list status=200 latency_ms=292
+2026-10-11T07:44:13 INFO  log-collector/lc-node-16 pool resize target=log-collector-db max_pool_size=164 prev=140
+2026-10-11T07:44:16 INFO  log-collector/lc-node-22 deploy step release=log-collector-4.20.4 step=migrate result=ok took_s=149
+2026-10-11T07:44:21 INFO  log-collector/lc-node-18 config applied key=log.sample_rate value=false by=yjchoi
+2026-10-11T07:44:23 INFO  log-collector/lc-node-23 pool resize target=log-collector-queue max_pool_size=66 prev=39
+2026-10-11T07:44:26 INFO  log-collector/lc-node-22 cache stats region=ap-ne-2b hit_ratio=98.4% evictions=3136
+2026-10-11T07:44:31 WARN  log-collector/lc-node-14 alert fired rule=error_ratio_high value=66% threshold=56%
+2026-10-11T07:44:38 INFO  log-collector/lc-node-12 request done id=req-3d81c26b route=/log-collector/v1/get status=429 latency_ms=40
+2026-10-11T07:44:41 INFO  log-collector/lc-node-08 request done id=req-da823f0b route=/log-collector/v1/update status=201 latency_ms=186
+2026-10-11T07:44:44 INFO  log-collector/lc-node-14 config applied key=retry.max_attempts value=false by=ejlim
+2026-10-11T07:44:51 INFO  log-collector/lc-node-24 request done id=req-2dede34a route=/log-collector/v1/update status=204 latency_ms=56
+2026-10-11T07:44:53 INFO  log-collector/lc-node-10 request done id=req-ff9f0ba1 route=/log-collector/v1/get status=200 latency_ms=80
+2026-10-11T07:44:57 INFO  log-collector/lc-node-06 request done id=req-7eddd9ff route=/log-collector/v1/update status=400 latency_ms=42
+2026-10-11T07:45:04 NOTE  log-collector/lc-node-21 operator=yjchoi memo="로그 보존 기간은 53일로 유지하기로 함."
+2026-10-11T07:45:08 NOTE  log-collector/lc-node-18 operator=ejlim memo="연동 팀에 변경 공지 완료."
+2026-10-11T07:45:14 NOTE  log-collector/lc-node-13 operator=shkim memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-11T07:45:19 INFO  log-collector/lc-node-11 request done id=req-9008fe25 route=/log-collector/v1/create status=200 latency_ms=56
+2026-10-11T07:45:24 INFO  log-collector/lc-node-15 deploy step release=log-collector-4.17.3 step=warmup result=ok took_s=20
+2026-10-11T07:45:27 INFO  log-collector/lc-node-04 request done id=req-bba2de53 route=/log-collector/v1/sync status=409 latency_ms=140
+2026-10-11T07:45:33 INFO  log-collector/lc-node-04 config applied key=retry.max_attempts value=5605 by=sykang
+2026-10-11T07:45:36 NOTE  log-collector/lc-node-02 operator=yjchoi memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-11T07:45:38 INFO  log-collector/lc-node-01 request done id=req-8a015d95 route=/log-collector/v1/list status=200 latency_ms=550
+2026-10-11T07:45:41 INFO  log-collector/lc-node-11 config applied key=dns.ttl_s value=true by=ejlim
+2026-10-11T07:45:44 INFO  log-collector/lc-node-09 request done id=req-c07adeb7 route=/log-collector/v1/update status=400 latency_ms=1414
+2026-10-11T07:45:51 INFO  log-collector/lc-node-10 deploy step release=log-collector-4.12.3 step=drain result=ok took_s=5
+2026-10-11T07:45:58 INFO  log-collector/lc-node-10 request done id=req-9c3dd722 route=/log-collector/v1/verify status=503 latency_ms=87
+2026-10-11T07:46:00 NOTE  log-collector/lc-node-23 operator=mjlee memo="로그 보존 기간은 21일로 유지하기로 함."
+2026-10-11T07:46:01 INFO  log-collector/lc-node-22 ticket linked id=OPS-49941 reason=dns_ttl_change
+2026-10-11T07:46:06 INFO  log-collector/lc-node-02 request done id=req-760d290c route=/log-collector/v1/cancel status=200 latency_ms=303
+2026-10-11T07:46:13 WARN  log-collector/lc-node-23 alert fired rule=p99_latency_high value=85ms threshold=77ms
+2026-10-11T07:46:20 INFO  log-collector/lc-node-14 config applied key=breaker.half_open_s value=7426 by=mjlee
+2026-10-11T07:46:24 INFO  log-collector/lc-node-12 pool resize target=log-collector-db max_pool_size=126 prev=120
+2026-10-11T07:46:25 INFO  log-collector/lc-node-15 pool resize target=log-collector-queue max_pool_size=377 prev=392
+2026-10-11T07:46:31 INFO  log-collector/lc-node-13 request done id=req-ece72090 route=/log-collector/v1/status status=200 latency_ms=81
+2026-10-11T07:46:35 INFO  log-collector/lc-node-20 request done id=req-dcf61b93 route=/log-collector/v1/cancel status=200 latency_ms=80
+2026-10-11T07:46:42 INFO  log-collector/lc-node-19 config applied key=queue.visibility_s value=true by=mjlee
+2026-10-11T07:46:48 INFO  log-collector/lc-node-03 request done id=req-e0f6c494 route=/log-collector/v1/sync status=200 latency_ms=317
+2026-10-11T07:46:51 INFO  log-collector/lc-node-03 config applied key=cache.ttl_s value=false by=yjchoi
+2026-10-11T07:46:52 INFO  log-collector/lc-node-02 request done id=req-f250aa27 route=/log-collector/v1/status status=400 latency_ms=99
+2026-10-11T07:46:58 INFO  log-collector/lc-node-19 request done id=req-afe11ed7 route=/log-collector/v1/sync status=200 latency_ms=212
+2026-10-11T07:47:00 INFO  log-collector/lc-node-16 config applied key=queue.batch_size value=20% by=yjchoi
+2026-10-11T07:47:05 INFO  log-collector/lc-node-21 deploy step release=log-collector-4.15.5 step=verify result=ok took_s=213
+2026-10-11T07:47:12 INFO  log-collector/lc-node-05 request done id=req-d155a24e route=/log-collector/v1/cancel status=204 latency_ms=86
+2026-10-11T07:47:13 INFO  log-collector/lc-node-05 config applied key=dns.ttl_s value=3% by=dwjung
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

@@ -1,0 +1,424 @@
+참고용 로그 09: 재고 동기화(stock-sync) API 점검 구간. '확인'이라고만 답해 줘.
+
+2026-10-13T11:05:08 INFO  stock-sync/ss-node-14 ticket linked id=OPS-48724 reason=flaky_healthcheck
+2026-10-13T11:05:13 NOTE  stock-sync/ss-node-16 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-13T11:05:19 INFO  stock-sync/ss-node-04 request done id=req-b2eb8678 route=/stock-sync/v1/list status=429 latency_ms=518
+2026-10-13T11:05:26 INFO  stock-sync/ss-node-06 request done id=req-f39ea38a route=/stock-sync/v1/create status=409 latency_ms=681
+2026-10-13T11:05:32 INFO  stock-sync/ss-node-05 deploy step release=stock-sync-4.17.6 step=drain result=ok took_s=189
+2026-10-13T11:05:38 ERROR stock-sync/ss-node-02 job failed job=stock-sync-cleanup attempt=1 cause=oom_killed
+2026-10-13T11:05:39 WARN  stock-sync/ss-node-14 alert fired rule=p99_latency_high value=73ms threshold=58ms
+2026-10-13T11:05:44 INFO  stock-sync/ss-node-20 ticket linked id=OPS-47083 reason=oncall_handoff
+2026-10-13T11:05:51 INFO  stock-sync/ss-node-08 cache stats region=ap-se-1a hit_ratio=86.1% evictions=21229
+2026-10-13T11:05:57 INFO  stock-sync/ss-node-02 request done id=req-cc173b08 route=/stock-sync/v1/update status=200 latency_ms=109
+2026-10-13T11:06:02 INFO  stock-sync/ss-node-08 request done id=req-38713285 route=/stock-sync/v1/update status=503 latency_ms=200
+2026-10-13T11:06:04 INFO  stock-sync/ss-node-08 request done id=req-a8629d22 route=/stock-sync/v1/list status=200 latency_ms=35
+2026-10-13T11:06:07 INFO  stock-sync/ss-node-20 request done id=req-f58a7586 route=/stock-sync/v1/update status=200 latency_ms=49
+2026-10-13T11:06:12 INFO  stock-sync/ss-node-20 request done id=req-cc5aafd6 route=/stock-sync/v1/get status=400 latency_ms=177
+2026-10-13T11:06:15 INFO  stock-sync/ss-node-19 pool resize target=stock-sync-cache max_pool_size=59 prev=4
+2026-10-13T11:06:20 INFO  stock-sync/ss-node-21 pool resize target=stock-sync-cache max_pool_size=132 prev=119
+2026-10-13T11:06:21 WARN  stock-sync/ss-node-04 alert fired rule=p99_latency_high value=64ms threshold=57ms
+2026-10-13T11:06:28 INFO  stock-sync/ss-node-08 request done id=req-da1093e2 route=/stock-sync/v1/sync status=500 latency_ms=37
+2026-10-13T11:06:34 NOTE  stock-sync/ss-node-14 operator=hbyoon memo="ss-node-14 재기동 후 지표 정상 확인."
+2026-10-13T11:06:36 INFO  stock-sync/ss-node-11 request done id=req-513bcecb route=/stock-sync/v1/sync status=429 latency_ms=97
+2026-10-13T11:06:40 INFO  stock-sync/ss-node-23 ticket linked id=OPS-49628 reason=flaky_healthcheck
+2026-10-13T11:06:43 INFO  stock-sync/ss-node-06 request done id=req-8b21e45f route=/stock-sync/v1/status status=409 latency_ms=241
+2026-10-13T11:06:49 INFO  stock-sync/ss-node-03 request done id=req-4ba56b92 route=/stock-sync/v1/update status=204 latency_ms=132
+2026-10-13T11:06:56 WARN  stock-sync/ss-node-16 alert fired rule=disk_usage_warning value=70% threshold=63%
+2026-10-13T11:06:58 INFO  stock-sync/ss-node-13 request done id=req-7f9ef8c7 route=/stock-sync/v1/status status=200 latency_ms=178
+2026-10-13T11:07:03 INFO  stock-sync/ss-node-15 request done id=req-91da2c54 route=/stock-sync/v1/create status=200 latency_ms=464
+2026-10-13T11:07:04 INFO  stock-sync/ss-node-03 cache stats region=ap-ne-2b hit_ratio=84.1% evictions=29879
+2026-10-13T11:07:07 INFO  stock-sync/ss-node-23 config applied key=limiter.rps value=false by=sykang
+2026-10-13T11:07:10 INFO  stock-sync/ss-node-22 deploy step release=stock-sync-4.20.2 step=start result=ok took_s=161
+2026-10-13T11:07:11 INFO  stock-sync/ss-node-22 config applied key=flush.interval_ms value=63 by=yjchoi
+2026-10-13T11:07:14 INFO  stock-sync/ss-node-24 config applied key=retry.max_attempts value=4129 by=mjlee
+2026-10-13T11:07:21 INFO  stock-sync/ss-node-14 request done id=req-c81a2d2f route=/stock-sync/v1/status status=200 latency_ms=48
+2026-10-13T11:07:25 INFO  stock-sync/ss-node-06 request done id=req-103909be route=/stock-sync/v1/status status=204 latency_ms=68
+2026-10-13T11:07:32 INFO  stock-sync/ss-node-12 request done id=req-ea040237 route=/stock-sync/v1/update status=201 latency_ms=24
+2026-10-13T11:07:34 INFO  stock-sync/ss-node-24 request done id=req-1d811703 route=/stock-sync/v1/list status=200 latency_ms=142
+2026-10-13T11:07:35 INFO  stock-sync/ss-node-20 request done id=req-8b4aca87 route=/stock-sync/v1/cancel status=200 latency_ms=51
+2026-10-13T11:07:36 INFO  stock-sync/ss-node-14 config applied key=worker.concurrency value=true by=mjlee
+2026-10-13T11:07:38 INFO  stock-sync/ss-node-24 request done id=req-b7f9d7d0 route=/stock-sync/v1/create status=200 latency_ms=120
+2026-10-13T11:07:40 WARN  stock-sync/ss-node-15 alert fired rule=heap_used_high value=51% threshold=45%
+2026-10-13T11:07:41 INFO  stock-sync/ss-node-15 deploy step release=stock-sync-4.17.5 step=healthcheck result=ok took_s=134
+2026-10-13T11:07:43 INFO  stock-sync/ss-node-22 request done id=req-f2b15ef5 route=/stock-sync/v1/cancel status=503 latency_ms=157
+2026-10-13T11:07:49 INFO  stock-sync/ss-node-16 request done id=req-56dca9c8 route=/stock-sync/v1/sync status=200 latency_ms=36
+2026-10-13T11:07:54 INFO  stock-sync/ss-node-15 request done id=req-83f6f44e route=/stock-sync/v1/status status=404 latency_ms=170
+2026-10-13T11:07:58 INFO  stock-sync/ss-node-16 request done id=req-41d236d5 route=/stock-sync/v1/cancel status=200 latency_ms=51
+2026-10-13T11:08:01 WARN  stock-sync/ss-node-05 alert fired rule=error_ratio_high value=65% threshold=52%
+2026-10-13T11:08:02 INFO  stock-sync/ss-node-21 backup finished file=/vault/weekly/users_2026w42.tar.zst size_mb=68557 checksum=a49d9bc6
+2026-10-13T11:08:03 INFO  stock-sync/ss-node-17 request done id=req-057a526e route=/stock-sync/v1/verify status=200 latency_ms=27
+2026-10-13T11:08:07 INFO  stock-sync/ss-node-02 request done id=req-79d8201f route=/stock-sync/v1/get status=200 latency_ms=29
+2026-10-13T11:08:11 WARN  stock-sync/ss-node-09 alert fired rule=heap_used_high value=92% threshold=82%
+2026-10-13T11:08:18 INFO  stock-sync/ss-node-05 cache stats region=ap-ne-2a hit_ratio=67.9% evictions=10402
+2026-10-13T11:08:20 INFO  stock-sync/ss-node-18 deploy step release=stock-sync-4.12.4 step=healthcheck result=ok took_s=19
+2026-10-13T11:08:22 WARN  stock-sync/ss-node-24 alert fired rule=fd_usage_high value=55% threshold=47%
+2026-10-13T11:08:25 INFO  stock-sync/ss-node-14 cache stats region=ap-ne-2c hit_ratio=98.9% evictions=16987
+2026-10-13T11:08:32 INFO  stock-sync/ss-node-10 config applied key=worker.concurrency value=false by=jhpark
+2026-10-13T11:08:37 INFO  stock-sync/ss-node-10 request done id=req-e8959a3c route=/stock-sync/v1/create status=201 latency_ms=20
+2026-10-13T11:08:44 INFO  stock-sync/ss-node-15 backup finished file=/vault/daily/users_20261024.tar.zst size_mb=88237 checksum=9108d5ac
+2026-10-13T11:08:46 INFO  stock-sync/ss-node-14 request done id=req-3c86401e route=/stock-sync/v1/create status=200 latency_ms=239
+2026-10-13T11:08:49 INFO  stock-sync/ss-node-15 request done id=req-3e28f2cd route=/stock-sync/v1/sync status=503 latency_ms=110
+2026-10-13T11:08:51 INFO  stock-sync/ss-node-18 request done id=req-656e9ba9 route=/stock-sync/v1/status status=200 latency_ms=501
+2026-10-13T11:08:58 WARN  stock-sync/ss-node-10 alert fired rule=p99_latency_high value=53ms threshold=42ms
+2026-10-13T11:09:04 INFO  stock-sync/ss-node-05 request done id=req-05290ef9 route=/stock-sync/v1/cancel status=200 latency_ms=64
+2026-10-13T11:09:10 WARN  stock-sync/ss-node-23 alert fired rule=gc_pause_long value=80ms threshold=72ms
+2026-10-13T11:09:13 INFO  stock-sync/ss-node-03 request done id=req-24df9c84 route=/stock-sync/v1/update status=200 latency_ms=204
+2026-10-13T11:09:20 INFO  stock-sync/ss-node-03 pool resize target=stock-sync-upstream max_pool_size=92 prev=148
+2026-10-13T11:09:26 INFO  stock-sync/ss-node-01 cache stats region=ap-ne-2c hit_ratio=89.9% evictions=9074
+2026-10-13T11:09:30 INFO  stock-sync/ss-node-18 config applied key=breaker.half_open_s value=2586 by=dwjung
+2026-10-13T11:09:34 INFO  stock-sync/ss-node-16 request done id=req-8452e7b8 route=/stock-sync/v1/verify status=200 latency_ms=54
+2026-10-13T11:09:35 INFO  stock-sync/ss-node-20 request done id=req-b3fb210c route=/stock-sync/v1/verify status=200 latency_ms=42
+2026-10-13T11:09:38 INFO  stock-sync/ss-node-10 request done id=req-37abb805 route=/stock-sync/v1/verify status=404 latency_ms=41
+2026-10-13T11:09:42 WARN  stock-sync/ss-node-12 alert fired rule=replica_lag_high value=84s threshold=77s
+2026-10-13T11:09:47 INFO  stock-sync/ss-node-23 request done id=req-34453a98 route=/stock-sync/v1/status status=200 latency_ms=67
+2026-10-13T11:09:49 INFO  stock-sync/ss-node-08 config applied key=limiter.rps value=14% by=shkim
+2026-10-13T11:09:51 WARN  stock-sync/ss-node-16 alert fired rule=cpu_steal_high value=67% threshold=53%
+2026-10-13T11:09:57 WARN  stock-sync/ss-node-07 alert fired rule=cpu_steal_high value=92% threshold=82%
+2026-10-13T11:10:03 INFO  stock-sync/ss-node-02 backup finished file=/vault/weekly/users_2026w32.tar.zst size_mb=85794 checksum=46bc2322
+2026-10-13T11:10:10 INFO  stock-sync/ss-node-13 pool resize target=stock-sync-db max_pool_size=395 prev=373
+2026-10-13T11:10:11 INFO  stock-sync/ss-node-18 deploy step release=stock-sync-4.19.7 step=pull_image result=ok took_s=35
+2026-10-13T11:10:18 INFO  stock-sync/ss-node-06 request done id=req-c80e6852 route=/stock-sync/v1/list status=429 latency_ms=366
+2026-10-13T11:10:23 INFO  stock-sync/ss-node-15 config applied key=limiter.burst value=true by=ejlim
+2026-10-13T11:10:25 INFO  stock-sync/ss-node-20 backup finished file=/vault/daily/users_20261010.tar.zst size_mb=83318 checksum=6ab64a06
+2026-10-13T11:10:28 INFO  stock-sync/ss-node-24 ticket linked id=OPS-47113 reason=oncall_handoff
+2026-10-13T11:10:32 INFO  stock-sync/ss-node-12 request done id=req-af715c00 route=/stock-sync/v1/cancel status=200 latency_ms=24
+2026-10-13T11:10:36 INFO  stock-sync/ss-node-03 request done id=req-ef4973cf route=/stock-sync/v1/verify status=201 latency_ms=246
+2026-10-13T11:10:43 INFO  stock-sync/ss-node-04 request done id=req-7168b933 route=/stock-sync/v1/sync status=200 latency_ms=154
+2026-10-13T11:10:44 INFO  stock-sync/ss-node-02 request done id=req-d1cf2b68 route=/stock-sync/v1/list status=200 latency_ms=42
+2026-10-13T11:10:51 INFO  stock-sync/ss-node-15 request done id=req-7ca7665d route=/stock-sync/v1/verify status=200 latency_ms=71
+2026-10-13T11:10:57 INFO  stock-sync/ss-node-09 ticket linked id=OPS-49130 reason=dependency_upgrade
+2026-10-13T11:11:01 INFO  stock-sync/ss-node-21 config applied key=log.sample_rate value=57% by=ejlim
+2026-10-13T11:11:03 INFO  stock-sync/ss-node-07 request done id=req-95d4af71 route=/stock-sync/v1/create status=200 latency_ms=63
+2026-10-13T11:11:08 INFO  stock-sync/ss-node-12 request done id=req-dd70122a route=/stock-sync/v1/update status=201 latency_ms=59
+2026-10-13T11:11:09 INFO  stock-sync/ss-node-12 pool resize target=stock-sync-cache max_pool_size=158 prev=190
+2026-10-13T11:11:16 INFO  stock-sync/ss-node-24 config applied key=limiter.burst value=false by=mjlee
+2026-10-13T11:11:22 INFO  stock-sync/ss-node-09 request done id=req-1bf97ef4 route=/stock-sync/v1/cancel status=200 latency_ms=225
+2026-10-13T11:11:29 INFO  stock-sync/ss-node-20 request done id=req-398a6b82 route=/stock-sync/v1/update status=200 latency_ms=858
+2026-10-13T11:11:33 INFO  stock-sync/ss-node-02 request done id=req-80e33a0e route=/stock-sync/v1/get status=200 latency_ms=112
+2026-10-13T11:11:35 INFO  stock-sync/ss-node-09 request done id=req-c8e221ef route=/stock-sync/v1/verify status=200 latency_ms=83
+2026-10-13T11:11:38 INFO  stock-sync/ss-node-23 request done id=req-e063b66e route=/stock-sync/v1/create status=503 latency_ms=71
+2026-10-13T11:11:41 INFO  stock-sync/ss-node-15 request done id=req-41fc5268 route=/stock-sync/v1/sync status=200 latency_ms=142
+2026-10-13T11:11:43 INFO  stock-sync/ss-node-07 config applied key=queue.batch_size value=true by=hbyoon
+2026-10-13T11:11:47 INFO  stock-sync/ss-node-11 request done id=req-649ea433 route=/stock-sync/v1/update status=200 latency_ms=139
+2026-10-13T11:11:49 INFO  stock-sync/ss-node-08 request done id=req-55273dd2 route=/stock-sync/v1/sync status=200 latency_ms=227
+2026-10-13T11:11:52 INFO  stock-sync/ss-node-20 request done id=req-f4a1ff94 route=/stock-sync/v1/status status=200 latency_ms=98
+2026-10-13T11:11:54 ERROR stock-sync/ss-node-03 job failed job=stock-sync-reindex attempt=5 cause=dns_failure
+2026-10-13T11:11:57 INFO  stock-sync/ss-node-13 request done id=req-61e0a0f7 route=/stock-sync/v1/update status=200 latency_ms=249
+2026-10-13T11:12:01 INFO  stock-sync/ss-node-17 config applied key=flush.interval_ms value=4313 by=ejlim
+2026-10-13T11:12:03 INFO  stock-sync/ss-node-09 request done id=req-80403d7c route=/stock-sync/v1/sync status=503 latency_ms=104
+2026-10-13T11:12:04 INFO  stock-sync/ss-node-14 request done id=req-076d4106 route=/stock-sync/v1/status status=200 latency_ms=170
+2026-10-13T11:12:10 INFO  stock-sync/ss-node-17 config applied key=queue.visibility_s value=false by=mjlee
+2026-10-13T11:12:16 INFO  stock-sync/ss-node-15 request done id=req-6007e20e route=/stock-sync/v1/create status=500 latency_ms=156
+2026-10-13T11:12:23 INFO  stock-sync/ss-node-03 ticket linked id=OPS-49087 reason=dependency_upgrade
+2026-10-13T11:12:30 WARN  stock-sync/ss-node-16 alert fired rule=conn_pool_saturated value=82% threshold=77%
+2026-10-13T11:12:37 INFO  stock-sync/ss-node-06 request done id=req-6dee26e3 route=/stock-sync/v1/status status=500 latency_ms=57
+2026-10-13T11:12:41 INFO  stock-sync/ss-node-12 backup finished file=/vault/weekly/payments_2026w30.tar.zst size_mb=48198 checksum=9dda3285
+2026-10-13T11:12:43 INFO  stock-sync/ss-node-05 config applied key=gc.pause_target_ms value=58% by=ejlim
+2026-10-13T11:12:48 NOTE  stock-sync/ss-node-09 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-13T11:12:54 WARN  stock-sync/ss-node-12 alert fired rule=error_ratio_high value=50% threshold=35%
+2026-10-13T11:13:01 INFO  stock-sync/ss-node-06 request done id=req-b6cca85e route=/stock-sync/v1/update status=503 latency_ms=63
+2026-10-13T11:13:03 INFO  stock-sync/ss-node-02 config applied key=http.max_conns value=25 by=jhpark
+2026-10-13T11:13:10 INFO  stock-sync/ss-node-15 request done id=req-f454d17c route=/stock-sync/v1/sync status=200 latency_ms=338
+2026-10-13T11:13:12 INFO  stock-sync/ss-node-08 pool resize target=stock-sync-db max_pool_size=243 prev=232
+2026-10-13T11:13:15 INFO  stock-sync/ss-node-05 config applied key=tls.session_cache value=true by=hbyoon
+2026-10-13T11:13:21 INFO  stock-sync/ss-node-18 request done id=req-e4ed90cd route=/stock-sync/v1/create status=200 latency_ms=101
+2026-10-13T11:13:22 INFO  stock-sync/ss-node-20 request done id=req-58075bb6 route=/stock-sync/v1/cancel status=400 latency_ms=17
+2026-10-13T11:13:25 INFO  stock-sync/ss-node-22 request done id=req-bd8deef2 route=/stock-sync/v1/get status=200 latency_ms=300
+2026-10-13T11:13:30 INFO  stock-sync/ss-node-15 request done id=req-59c6e476 route=/stock-sync/v1/list status=200 latency_ms=222
+2026-10-13T11:13:33 INFO  stock-sync/ss-node-24 deploy step release=stock-sync-4.11.6 step=verify result=ok took_s=210
+2026-10-13T11:13:40 INFO  stock-sync/ss-node-07 config applied key=log.sample_rate value=1661 by=jhpark
+2026-10-13T11:13:44 WARN  stock-sync/ss-node-16 alert fired rule=heap_used_high value=53% threshold=40%
+2026-10-13T11:13:48 INFO  stock-sync/ss-node-24 request done id=req-a8626d01 route=/stock-sync/v1/list status=409 latency_ms=22
+2026-10-13T11:13:53 INFO  stock-sync/ss-node-15 request done id=req-fdec4bba route=/stock-sync/v1/cancel status=500 latency_ms=209
+2026-10-13T11:13:56 INFO  stock-sync/ss-node-19 request done id=req-91473da1 route=/stock-sync/v1/get status=200 latency_ms=268
+2026-10-13T11:14:02 INFO  stock-sync/ss-node-12 request done id=req-7d0f4a3d route=/stock-sync/v1/verify status=200 latency_ms=180
+2026-10-13T11:14:08 NOTE  stock-sync/ss-node-02 operator=ejlim memo="캐시 TTL을 42초로 되돌림. 오래된 응답이 보고됨."
+2026-10-13T11:14:13 INFO  stock-sync/ss-node-08 request done id=req-3c02f121 route=/stock-sync/v1/verify status=400 latency_ms=212
+2026-10-13T11:14:17 NOTE  stock-sync/ss-node-12 operator=jhpark memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-13T11:14:21 INFO  stock-sync/ss-node-21 config applied key=cache.ttl_s value=false by=mjlee
+2026-10-13T11:14:24 INFO  stock-sync/ss-node-10 request done id=req-d02fbc23 route=/stock-sync/v1/get status=200 latency_ms=146
+2026-10-13T11:14:30 INFO  stock-sync/ss-node-05 request done id=req-6feae92f route=/stock-sync/v1/list status=200 latency_ms=84
+2026-10-13T11:14:34 INFO  stock-sync/ss-node-13 request done id=req-4a15c39b route=/stock-sync/v1/sync status=200 latency_ms=282
+2026-10-13T11:14:38 INFO  stock-sync/ss-node-22 request done id=req-768cd1be route=/stock-sync/v1/verify status=400 latency_ms=292
+2026-10-13T11:14:40 INFO  stock-sync/ss-node-21 config applied key=flush.interval_ms value=false by=ejlim
+2026-10-13T11:14:46 INFO  stock-sync/ss-node-13 backup finished file=/vault/daily/audit_20261009.tar.zst size_mb=72981 checksum=40428d60
+2026-10-13T11:14:52 INFO  stock-sync/ss-node-11 request done id=req-e336c80b route=/stock-sync/v1/create status=200 latency_ms=141
+2026-10-13T11:14:57 NOTE  stock-sync/ss-node-12 operator=dwjung memo="캐시 TTL을 7초로 되돌림. 오래된 응답이 보고됨."
+2026-10-13T11:15:01 INFO  stock-sync/ss-node-09 config applied key=breaker.open_ratio value=73% by=ejlim
+2026-10-13T11:15:08 INFO  stock-sync/ss-node-14 request done id=req-b674d1e0 route=/stock-sync/v1/verify status=200 latency_ms=230
+2026-10-13T11:15:15 INFO  stock-sync/ss-node-13 backup finished file=/vault/daily/audit_20261003.tar.zst size_mb=4804 checksum=849ff5fa
+2026-10-13T11:15:19 INFO  stock-sync/ss-node-18 request done id=req-4e71193c route=/stock-sync/v1/update status=200 latency_ms=333
+2026-10-13T11:15:25 INFO  stock-sync/ss-node-11 deploy step release=stock-sync-4.14.6 step=warmup result=ok took_s=164
+2026-10-13T11:15:32 INFO  stock-sync/ss-node-11 config applied key=canary.latency_p99_threshold_ms value=true by=shkim
+2026-10-13T11:15:39 INFO  stock-sync/ss-node-16 deploy step release=stock-sync-4.14.7 step=verify result=ok took_s=95
+2026-10-13T11:15:44 INFO  stock-sync/ss-node-13 pool resize target=stock-sync-upstream max_pool_size=252 prev=205
+2026-10-13T11:15:47 WARN  stock-sync/ss-node-23 alert fired rule=p99_latency_high value=62ms threshold=57ms
+2026-10-13T11:15:48 INFO  stock-sync/ss-node-14 deploy step release=stock-sync-4.16.9 step=shift_traffic_100 result=ok took_s=7
+2026-10-13T11:15:50 INFO  stock-sync/ss-node-08 ticket linked id=OPS-47810 reason=log_volume_spike
+2026-10-13T11:15:54 INFO  stock-sync/ss-node-05 request done id=req-6273e414 route=/stock-sync/v1/cancel status=200 latency_ms=110
+2026-10-13T11:15:56 INFO  stock-sync/ss-node-11 request done id=req-f282e06b route=/stock-sync/v1/list status=204 latency_ms=141
+2026-10-13T11:16:00 NOTE  stock-sync/ss-node-07 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-13T11:16:05 INFO  stock-sync/ss-node-02 config applied key=gc.pause_target_ms value=false by=ejlim
+2026-10-13T11:16:09 ERROR stock-sync/ss-node-19 job failed job=stock-sync-rollup attempt=3 cause=dns_failure
+2026-10-13T11:16:16 INFO  stock-sync/ss-node-02 config applied key=canary.latency_p99_threshold_ms value=3480 by=dwjung
+2026-10-13T11:16:18 INFO  stock-sync/ss-node-19 request done id=req-3ae2c21a route=/stock-sync/v1/verify status=201 latency_ms=97
+2026-10-13T11:16:20 ERROR stock-sync/ss-node-01 job failed job=stock-sync-reindex attempt=1 cause=dns_failure
+2026-10-13T11:16:27 INFO  stock-sync/ss-node-06 request done id=req-e3518ca2 route=/stock-sync/v1/sync status=200 latency_ms=188
+2026-10-13T11:16:30 INFO  stock-sync/ss-node-03 config applied key=canary.latency_p99_threshold_ms value=true by=jhpark
+2026-10-13T11:16:33 ERROR stock-sync/ss-node-20 job failed job=stock-sync-export attempt=1 cause=oom_killed
+2026-10-13T11:16:37 INFO  stock-sync/ss-node-16 pool resize target=stock-sync-upstream max_pool_size=16 prev=16
+2026-10-13T11:16:44 INFO  stock-sync/ss-node-06 ticket linked id=OPS-47289 reason=dependency_upgrade
+2026-10-13T11:16:45 WARN  stock-sync/ss-node-10 alert fired rule=cpu_steal_high value=99% threshold=89%
+2026-10-13T11:16:51 INFO  stock-sync/ss-node-06 pool resize target=stock-sync-upstream max_pool_size=277 prev=283
+2026-10-13T11:16:55 INFO  stock-sync/ss-node-12 request done id=req-ee56bf35 route=/stock-sync/v1/verify status=200 latency_ms=713
+2026-10-13T11:17:02 INFO  stock-sync/ss-node-07 config applied key=canary.traffic_percent value=68% by=shkim
+2026-10-13T11:17:06 INFO  stock-sync/ss-node-08 ticket linked id=OPS-48669 reason=node_drain
+2026-10-13T11:17:08 INFO  stock-sync/ss-node-19 pool resize target=stock-sync-cache max_pool_size=285 prev=314
+2026-10-13T11:17:14 NOTE  stock-sync/ss-node-13 operator=jhpark memo="헬스체크 간격을 45초에서 80초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-13T11:17:21 INFO  stock-sync/ss-node-15 request done id=req-e26050fa route=/stock-sync/v1/list status=200 latency_ms=56
+2026-10-13T11:17:28 INFO  stock-sync/ss-node-16 request done id=req-1a95a13f route=/stock-sync/v1/get status=200 latency_ms=255
+2026-10-13T11:17:33 INFO  stock-sync/ss-node-09 config applied key=limiter.rps value=false by=shkim
+2026-10-13T11:17:39 INFO  stock-sync/ss-node-02 config applied key=cache.ttl_s value=61% by=yjchoi
+2026-10-13T11:17:42 INFO  stock-sync/ss-node-04 request done id=req-13bcb597 route=/stock-sync/v1/sync status=200 latency_ms=222
+2026-10-13T11:17:45 WARN  stock-sync/ss-node-02 alert fired rule=cpu_steal_high value=68% threshold=60%
+2026-10-13T11:17:50 INFO  stock-sync/ss-node-19 request done id=req-030b0e84 route=/stock-sync/v1/cancel status=200 latency_ms=219
+2026-10-13T11:17:51 INFO  stock-sync/ss-node-06 config applied key=retry.backoff_ms value=74% by=hbyoon
+2026-10-13T11:17:53 INFO  stock-sync/ss-node-18 backup finished file=/vault/daily/orders_20261026.tar.zst size_mb=87583 checksum=057ede2e
+2026-10-13T11:17:57 NOTE  stock-sync/ss-node-15 operator=ejlim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-13T11:17:59 INFO  stock-sync/ss-node-18 deploy step release=stock-sync-4.15.1 step=warmup result=ok took_s=233
+2026-10-13T11:18:04 INFO  stock-sync/ss-node-20 request done id=req-680bc8c8 route=/stock-sync/v1/cancel status=200 latency_ms=36
+2026-10-13T11:18:06 INFO  stock-sync/ss-node-14 config applied key=retry.backoff_ms value=57 by=dwjung
+2026-10-13T11:18:13 INFO  stock-sync/ss-node-03 request done id=req-b9027f0c route=/stock-sync/v1/create status=201 latency_ms=37
+2026-10-13T11:18:17 INFO  stock-sync/ss-node-01 request done id=req-a4b44fc2 route=/stock-sync/v1/cancel status=200 latency_ms=104
+2026-10-13T11:18:19 INFO  stock-sync/ss-node-22 pool resize target=stock-sync-queue max_pool_size=222 prev=220
+2026-10-13T11:18:25 INFO  stock-sync/ss-node-01 request done id=req-a6ff49b0 route=/stock-sync/v1/verify status=404 latency_ms=77
+2026-10-13T11:18:31 INFO  stock-sync/ss-node-12 deploy step release=stock-sync-4.15.4 step=drain result=ok took_s=53
+2026-10-13T11:18:35 INFO  stock-sync/ss-node-11 request done id=req-ce507605 route=/stock-sync/v1/get status=200 latency_ms=44
+2026-10-13T11:18:37 INFO  stock-sync/ss-node-15 backup finished file=/vault/daily/users_20261001.tar.zst size_mb=40942 checksum=f1d8753e
+2026-10-13T11:18:42 INFO  stock-sync/ss-node-18 request done id=req-5fca55cd route=/stock-sync/v1/verify status=200 latency_ms=174
+2026-10-13T11:18:48 INFO  stock-sync/ss-node-14 request done id=req-c1f07732 route=/stock-sync/v1/status status=200 latency_ms=180
+2026-10-13T11:18:52 WARN  stock-sync/ss-node-23 alert fired rule=heap_used_high value=55% threshold=52%
+2026-10-13T11:18:57 INFO  stock-sync/ss-node-11 deploy step release=stock-sync-4.20.4 step=pull_image result=ok took_s=104
+2026-10-13T11:18:58 INFO  stock-sync/ss-node-09 request done id=req-dabda9fe route=/stock-sync/v1/verify status=200 latency_ms=34
+2026-10-13T11:19:02 INFO  stock-sync/ss-node-05 request done id=req-d3cd8728 route=/stock-sync/v1/verify status=200 latency_ms=198
+2026-10-13T11:19:07 INFO  stock-sync/ss-node-18 request done id=req-97cd7a56 route=/stock-sync/v1/create status=200 latency_ms=246
+2026-10-13T11:19:09 INFO  stock-sync/ss-node-05 request done id=req-16fade29 route=/stock-sync/v1/verify status=201 latency_ms=11
+2026-10-13T11:19:15 INFO  stock-sync/ss-node-23 cache stats region=us-we-2b hit_ratio=93.0% evictions=1839
+2026-10-13T11:19:21 INFO  stock-sync/ss-node-17 backup finished file=/vault/weekly/orders_2026w37.tar.zst size_mb=5904 checksum=4e979bdb
+2026-10-13T11:19:25 INFO  stock-sync/ss-node-07 request done id=req-79a4a97d route=/stock-sync/v1/create status=200 latency_ms=362
+2026-10-13T11:19:27 INFO  stock-sync/ss-node-22 request done id=req-d05e9b7c route=/stock-sync/v1/update status=200 latency_ms=211
+2026-10-13T11:19:29 INFO  stock-sync/ss-node-22 config applied key=http.max_conns value=70% by=shkim
+2026-10-13T11:19:34 NOTE  stock-sync/ss-node-18 operator=dwjung memo="타임아웃을 52ms에서 78ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-13T11:19:40 INFO  stock-sync/ss-node-16 deploy step release=stock-sync-4.21.0 step=shift_traffic_50 result=ok took_s=189
+2026-10-13T11:19:41 INFO  stock-sync/ss-node-05 config applied key=queue.batch_size value=30% by=ejlim
+2026-10-13T11:19:44 INFO  stock-sync/ss-node-04 pool resize target=stock-sync-db max_pool_size=353 prev=317
+2026-10-13T11:19:49 INFO  stock-sync/ss-node-20 backup finished file=/vault/weekly/inventory_2026w36.tar.zst size_mb=4854 checksum=f012cf47
+2026-10-13T11:19:52 INFO  stock-sync/ss-node-06 request done id=req-bbb0e586 route=/stock-sync/v1/cancel status=429 latency_ms=202
+2026-10-13T11:19:57 INFO  stock-sync/ss-node-24 ticket linked id=OPS-48088 reason=log_volume_spike
+2026-10-13T11:20:04 INFO  stock-sync/ss-node-01 request done id=req-fc547417 route=/stock-sync/v1/verify status=200 latency_ms=420
+2026-10-13T11:20:11 INFO  stock-sync/ss-node-16 request done id=req-0799de65 route=/stock-sync/v1/create status=200 latency_ms=413
+2026-10-13T11:20:16 INFO  stock-sync/ss-node-19 request done id=req-297455da route=/stock-sync/v1/update status=503 latency_ms=130
+2026-10-13T11:20:23 INFO  stock-sync/ss-node-06 pool resize target=stock-sync-cache max_pool_size=213 prev=264
+2026-10-13T11:20:25 INFO  stock-sync/ss-node-09 deploy step release=stock-sync-4.16.3 step=drain result=ok took_s=188
+2026-10-13T11:20:27 INFO  stock-sync/ss-node-03 pool resize target=stock-sync-upstream max_pool_size=22 prev=64
+2026-10-13T11:20:32 INFO  stock-sync/ss-node-21 request done id=req-1171f1ca route=/stock-sync/v1/get status=200 latency_ms=101
+2026-10-13T11:20:35 INFO  stock-sync/ss-node-14 request done id=req-94c743d7 route=/stock-sync/v1/list status=404 latency_ms=215
+2026-10-13T11:20:40 WARN  stock-sync/ss-node-19 alert fired rule=cpu_steal_high value=76% threshold=70%
+2026-10-13T11:20:47 INFO  stock-sync/ss-node-11 config applied key=retry.max_attempts value=4586 by=mjlee
+2026-10-13T11:20:48 NOTE  stock-sync/ss-node-12 operator=jhpark memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-13T11:20:54 INFO  stock-sync/ss-node-02 ticket linked id=OPS-47197 reason=dependency_upgrade
+2026-10-13T11:20:56 INFO  stock-sync/ss-node-01 config applied key=breaker.open_ratio value=false by=sykang
+2026-10-13T11:20:59 INFO  stock-sync/ss-node-11 request done id=req-b2fe2bce route=/stock-sync/v1/list status=201 latency_ms=61
+2026-10-13T11:21:04 INFO  stock-sync/ss-node-03 request done id=req-ad945c33 route=/stock-sync/v1/verify status=200 latency_ms=67
+2026-10-13T11:21:09 INFO  stock-sync/ss-node-10 config applied key=log.sample_rate value=false by=sykang
+2026-10-13T11:21:16 INFO  stock-sync/ss-node-05 request done id=req-a69a07c6 route=/stock-sync/v1/status status=200 latency_ms=72
+2026-10-13T11:21:19 WARN  stock-sync/ss-node-11 alert fired rule=cpu_steal_high value=55% threshold=44%
+2026-10-13T11:21:20 INFO  stock-sync/ss-node-09 ticket linked id=OPS-48201 reason=quota_increase
+2026-10-13T11:21:22 NOTE  stock-sync/ss-node-19 operator=jhpark memo="점검 창을 50분 연장함. 승인: 민도현 파트장."
+2026-10-13T11:21:24 INFO  stock-sync/ss-node-24 ticket linked id=OPS-48228 reason=runbook_update
+2026-10-13T11:21:29 ERROR stock-sync/ss-node-23 job failed job=stock-sync-export attempt=1 cause=lock_wait_exceeded
+2026-10-13T11:21:30 INFO  stock-sync/ss-node-21 ticket linked id=OPS-47448 reason=node_drain
+2026-10-13T11:21:32 INFO  stock-sync/ss-node-19 request done id=req-1ccbf8c9 route=/stock-sync/v1/verify status=200 latency_ms=201
+2026-10-13T11:21:39 INFO  stock-sync/ss-node-15 deploy step release=stock-sync-4.15.0 step=start result=ok took_s=215
+2026-10-13T11:21:45 INFO  stock-sync/ss-node-24 deploy step release=stock-sync-4.11.0 step=start result=ok took_s=130
+2026-10-13T11:21:51 NOTE  stock-sync/ss-node-14 operator=shkim memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-13T11:21:54 INFO  stock-sync/ss-node-08 ticket linked id=OPS-49493 reason=runbook_update
+2026-10-13T11:21:56 INFO  stock-sync/ss-node-21 request done id=req-3d8663e5 route=/stock-sync/v1/update status=204 latency_ms=168
+2026-10-13T11:21:59 INFO  stock-sync/ss-node-08 request done id=req-629492ad route=/stock-sync/v1/create status=404 latency_ms=230
+2026-10-13T11:22:01 INFO  stock-sync/ss-node-08 request done id=req-d42b1eaa route=/stock-sync/v1/list status=200 latency_ms=41
+2026-10-13T11:22:04 NOTE  stock-sync/ss-node-10 operator=mjlee memo="연동 팀에 변경 공지 완료."
+2026-10-13T11:22:07 INFO  stock-sync/ss-node-03 request done id=req-652fdc2e route=/stock-sync/v1/list status=200 latency_ms=78
+2026-10-13T11:22:10 INFO  stock-sync/ss-node-02 request done id=req-d7131d74 route=/stock-sync/v1/update status=400 latency_ms=1031
+2026-10-13T11:22:15 NOTE  stock-sync/ss-node-14 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-13T11:22:17 INFO  stock-sync/ss-node-09 config applied key=log.sample_rate value=true by=yjchoi
+2026-10-13T11:22:20 INFO  stock-sync/ss-node-07 request done id=req-8084fd49 route=/stock-sync/v1/list status=200 latency_ms=871
+2026-10-13T11:22:21 INFO  stock-sync/ss-node-10 request done id=req-4ac4454d route=/stock-sync/v1/cancel status=200 latency_ms=329
+2026-10-13T11:22:27 INFO  stock-sync/ss-node-12 request done id=req-2bad580e route=/stock-sync/v1/get status=200 latency_ms=56
+2026-10-13T11:22:34 INFO  stock-sync/ss-node-11 backup finished file=/vault/weekly/sessions_2026w38.tar.zst size_mb=38394 checksum=60562446
+2026-10-13T11:22:39 INFO  stock-sync/ss-node-05 request done id=req-9745604f route=/stock-sync/v1/list status=200 latency_ms=95
+2026-10-13T11:22:43 INFO  stock-sync/ss-node-08 request done id=req-f15af0a5 route=/stock-sync/v1/sync status=200 latency_ms=77
+2026-10-13T11:22:49 INFO  stock-sync/ss-node-03 ticket linked id=OPS-49207 reason=quota_increase
+2026-10-13T11:22:55 INFO  stock-sync/ss-node-17 request done id=req-09ee6041 route=/stock-sync/v1/status status=400 latency_ms=65
+2026-10-13T11:22:59 INFO  stock-sync/ss-node-04 request done id=req-d2b4b0e1 route=/stock-sync/v1/status status=500 latency_ms=217
+2026-10-13T11:23:01 INFO  stock-sync/ss-node-03 backup finished file=/vault/daily/orders_20261011.tar.zst size_mb=44583 checksum=8b6f0aeb
+2026-10-13T11:23:05 INFO  stock-sync/ss-node-04 request done id=req-5c8132c1 route=/stock-sync/v1/cancel status=200 latency_ms=399
+2026-10-13T11:23:11 INFO  stock-sync/ss-node-02 request done id=req-fb4bc812 route=/stock-sync/v1/verify status=200 latency_ms=84
+2026-10-13T11:23:13 INFO  stock-sync/ss-node-24 request done id=req-4b8f44b8 route=/stock-sync/v1/create status=204 latency_ms=67
+2026-10-13T11:23:18 INFO  stock-sync/ss-node-03 config applied key=log.sample_rate value=98% by=hbyoon
+2026-10-13T11:23:22 ERROR stock-sync/ss-node-21 job failed job=stock-sync-export attempt=3 cause=lock_wait_exceeded
+2026-10-13T11:23:28 INFO  stock-sync/ss-node-23 request done id=req-74d12a06 route=/stock-sync/v1/sync status=200 latency_ms=164
+2026-10-13T11:23:35 INFO  stock-sync/ss-node-23 request done id=req-5e730cdb route=/stock-sync/v1/update status=409 latency_ms=277
+2026-10-13T11:23:40 INFO  stock-sync/ss-node-11 request done id=req-1c960613 route=/stock-sync/v1/list status=429 latency_ms=87
+2026-10-13T11:23:41 INFO  stock-sync/ss-node-06 request done id=req-7c7d50c3 route=/stock-sync/v1/list status=200 latency_ms=197
+2026-10-13T11:23:43 INFO  stock-sync/ss-node-06 config applied key=flush.interval_ms value=6761 by=dwjung
+2026-10-13T11:23:46 INFO  stock-sync/ss-node-11 config applied key=limiter.burst value=57 by=ejlim
+2026-10-13T11:23:50 INFO  stock-sync/ss-node-19 config applied key=canary.latency_p99_threshold_ms value=50 by=mjlee
+2026-10-13T11:23:55 INFO  stock-sync/ss-node-07 request done id=req-81689082 route=/stock-sync/v1/get status=200 latency_ms=51
+2026-10-13T11:23:58 ERROR stock-sync/ss-node-04 job failed job=stock-sync-cleanup attempt=4 cause=lock_wait_exceeded
+2026-10-13T11:23:59 INFO  stock-sync/ss-node-05 request done id=req-d50e8ff6 route=/stock-sync/v1/verify status=200 latency_ms=226
+2026-10-13T11:24:00 INFO  stock-sync/ss-node-17 request done id=req-049d2576 route=/stock-sync/v1/verify status=200 latency_ms=122
+2026-10-13T11:24:05 NOTE  stock-sync/ss-node-06 operator=sykang memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-13T11:24:09 INFO  stock-sync/ss-node-22 request done id=req-4fc14ecb route=/stock-sync/v1/get status=503 latency_ms=298
+2026-10-13T11:24:12 INFO  stock-sync/ss-node-15 backup finished file=/vault/daily/inventory_20261015.tar.zst size_mb=6169 checksum=1cbbf667
+2026-10-13T11:24:14 INFO  stock-sync/ss-node-05 config applied key=http.read_timeout_ms value=21 by=shkim
+2026-10-13T11:24:21 INFO  stock-sync/ss-node-01 request done id=req-fde8c65e route=/stock-sync/v1/update status=200 latency_ms=26
+2026-10-13T11:24:25 INFO  stock-sync/ss-node-06 config applied key=queue.batch_size value=39 by=shkim
+2026-10-13T11:24:26 WARN  stock-sync/ss-node-11 alert fired rule=replica_lag_high value=77s threshold=64s
+2026-10-13T11:24:31 INFO  stock-sync/ss-node-13 backup finished file=/vault/weekly/audit_2026w44.tar.zst size_mb=26520 checksum=8266f9a6
+2026-10-13T11:24:33 WARN  stock-sync/ss-node-21 alert fired rule=queue_depth_high value=81 threshold=75
+2026-10-13T11:24:39 INFO  stock-sync/ss-node-01 ticket linked id=OPS-47979 reason=runbook_update
+2026-10-13T11:24:45 WARN  stock-sync/ss-node-19 alert fired rule=cpu_steal_high value=75% threshold=70%
+2026-10-13T11:24:46 INFO  stock-sync/ss-node-18 request done id=req-90f10ead route=/stock-sync/v1/verify status=400 latency_ms=87
+2026-10-13T11:24:50 INFO  stock-sync/ss-node-17 deploy step release=stock-sync-4.15.3 step=warmup result=ok took_s=13
+2026-10-13T11:24:57 INFO  stock-sync/ss-node-23 request done id=req-ff55e53f route=/stock-sync/v1/update status=200 latency_ms=62
+2026-10-13T11:24:58 INFO  stock-sync/ss-node-01 request done id=req-f9fd065f route=/stock-sync/v1/list status=200 latency_ms=104
+2026-10-13T11:25:05 INFO  stock-sync/ss-node-22 config applied key=queue.batch_size value=true by=ejlim
+2026-10-13T11:25:08 NOTE  stock-sync/ss-node-13 operator=dwjung memo="배치 시작 시각을 36시 54분으로 고정함."
+2026-10-13T11:25:14 INFO  stock-sync/ss-node-15 request done id=req-c4015571 route=/stock-sync/v1/create status=200 latency_ms=127
+2026-10-13T11:25:17 INFO  stock-sync/ss-node-01 request done id=req-98777b14 route=/stock-sync/v1/create status=400 latency_ms=169
+2026-10-13T11:25:24 INFO  stock-sync/ss-node-06 backup finished file=/vault/daily/payments_20261010.tar.zst size_mb=23614 checksum=5a1f6501
+2026-10-13T11:25:27 INFO  stock-sync/ss-node-15 backup finished file=/vault/weekly/payments_2026w32.tar.zst size_mb=82826 checksum=8f7cccd3
+2026-10-13T11:25:28 INFO  stock-sync/ss-node-11 request done id=req-119228d0 route=/stock-sync/v1/cancel status=200 latency_ms=70
+2026-10-13T11:25:33 INFO  stock-sync/ss-node-12 config applied key=shard.count value=13 by=shkim
+2026-10-13T11:25:34 INFO  stock-sync/ss-node-04 backup finished file=/vault/weekly/sessions_2026w43.tar.zst size_mb=80574 checksum=2cb7615c
+2026-10-13T11:25:38 INFO  stock-sync/ss-node-23 request done id=req-4f1d5e8d route=/stock-sync/v1/list status=200 latency_ms=552
+2026-10-13T11:25:45 INFO  stock-sync/ss-node-04 ticket linked id=OPS-49203 reason=oncall_handoff
+2026-10-13T11:25:49 INFO  stock-sync/ss-node-01 request done id=req-25d359a6 route=/stock-sync/v1/update status=200 latency_ms=32
+2026-10-13T11:25:50 INFO  stock-sync/ss-node-04 deploy step release=stock-sync-4.16.1 step=shift_traffic_100 result=ok took_s=80
+2026-10-13T11:25:57 INFO  stock-sync/ss-node-15 request done id=req-e7f58bbf route=/stock-sync/v1/sync status=503 latency_ms=59
+2026-10-13T11:26:00 ERROR stock-sync/ss-node-22 job failed job=stock-sync-reindex attempt=3 cause=bad_checksum
+2026-10-13T11:26:03 INFO  stock-sync/ss-node-06 request done id=req-16050b0b route=/stock-sync/v1/list status=200 latency_ms=425
+2026-10-13T11:26:07 INFO  stock-sync/ss-node-05 request done id=req-111ef8cf route=/stock-sync/v1/update status=201 latency_ms=95
+2026-10-13T11:26:11 INFO  stock-sync/ss-node-11 request done id=req-4ea1ecb5 route=/stock-sync/v1/get status=200 latency_ms=247
+2026-10-13T11:26:13 INFO  stock-sync/ss-node-17 config applied key=retry.max_attempts value=true by=yjchoi
+2026-10-13T11:26:20 INFO  stock-sync/ss-node-08 deploy step release=stock-sync-4.12.6 step=start result=ok took_s=51
+2026-10-13T11:26:25 WARN  stock-sync/ss-node-10 alert fired rule=error_ratio_high value=58% threshold=57%
+2026-10-13T11:26:27 INFO  stock-sync/ss-node-08 ticket linked id=OPS-49267 reason=flaky_healthcheck
+2026-10-13T11:26:31 WARN  stock-sync/ss-node-06 alert fired rule=cpu_steal_high value=50% threshold=40%
+2026-10-13T11:26:33 INFO  stock-sync/ss-node-03 request done id=req-ab7a5971 route=/stock-sync/v1/list status=200 latency_ms=126
+2026-10-13T11:26:34 INFO  stock-sync/ss-node-15 request done id=req-940d00c1 route=/stock-sync/v1/cancel status=200 latency_ms=53
+2026-10-13T11:26:36 INFO  stock-sync/ss-node-13 ticket linked id=OPS-48178 reason=flaky_healthcheck
+2026-10-13T11:26:41 INFO  stock-sync/ss-node-07 config applied key=worker.concurrency value=32% by=shkim
+2026-10-13T11:26:47 INFO  stock-sync/ss-node-05 request done id=req-2fd10352 route=/stock-sync/v1/verify status=200 latency_ms=45
+2026-10-13T11:26:52 INFO  stock-sync/ss-node-20 cache stats region=ap-ne-2a hit_ratio=55.8% evictions=36475
+2026-10-13T11:26:54 NOTE  stock-sync/ss-node-17 operator=jhpark memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-13T11:26:57 INFO  stock-sync/ss-node-09 deploy step release=stock-sync-4.15.5 step=migrate result=ok took_s=65
+2026-10-13T11:26:58 INFO  stock-sync/ss-node-01 backup finished file=/vault/daily/inventory_20261015.tar.zst size_mb=36421 checksum=313a7c84
+2026-10-13T11:27:02 NOTE  stock-sync/ss-node-24 operator=yjchoi memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-13T11:27:06 INFO  stock-sync/ss-node-06 request done id=req-4d59731f route=/stock-sync/v1/update status=200 latency_ms=86
+2026-10-13T11:27:07 INFO  stock-sync/ss-node-09 deploy step release=stock-sync-4.12.0 step=shift_traffic_10 result=ok took_s=55
+2026-10-13T11:27:12 INFO  stock-sync/ss-node-09 pool resize target=stock-sync-upstream max_pool_size=229 prev=178
+2026-10-13T11:27:13 INFO  stock-sync/ss-node-15 request done id=req-43439c9a route=/stock-sync/v1/verify status=404 latency_ms=260
+2026-10-13T11:27:15 INFO  stock-sync/ss-node-08 request done id=req-db14ad75 route=/stock-sync/v1/status status=200 latency_ms=146
+2026-10-13T11:27:16 NOTE  stock-sync/ss-node-15 operator=yjchoi memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-13T11:27:20 INFO  stock-sync/ss-node-08 request done id=req-7fefb273 route=/stock-sync/v1/create status=201 latency_ms=198
+2026-10-13T11:27:26 INFO  stock-sync/ss-node-10 request done id=req-c267ff69 route=/stock-sync/v1/verify status=200 latency_ms=192
+2026-10-13T11:27:33 INFO  stock-sync/ss-node-07 request done id=req-dc381a60 route=/stock-sync/v1/get status=200 latency_ms=33
+2026-10-13T11:27:35 INFO  stock-sync/ss-node-11 request done id=req-85b157ba route=/stock-sync/v1/update status=200 latency_ms=95
+2026-10-13T11:27:37 INFO  stock-sync/ss-node-03 request done id=req-dde38d58 route=/stock-sync/v1/status status=400 latency_ms=72
+2026-10-13T11:27:44 NOTE  stock-sync/ss-node-10 operator=ejlim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-13T11:27:48 INFO  stock-sync/ss-node-06 request done id=req-6421dea5 route=/stock-sync/v1/cancel status=409 latency_ms=228
+2026-10-13T11:27:49 INFO  stock-sync/ss-node-10 request done id=req-837367c8 route=/stock-sync/v1/verify status=201 latency_ms=145
+2026-10-13T11:27:50 INFO  stock-sync/ss-node-24 config applied key=worker.concurrency value=true by=shkim
+2026-10-13T11:27:56 INFO  stock-sync/ss-node-03 request done id=req-4dc93035 route=/stock-sync/v1/list status=500 latency_ms=229
+2026-10-13T11:27:59 ERROR stock-sync/ss-node-09 job failed job=stock-sync-rollup attempt=1 cause=oom_killed
+2026-10-13T11:28:05 WARN  stock-sync/ss-node-01 alert fired rule=disk_usage_warning value=60% threshold=50%
+2026-10-13T11:28:08 INFO  stock-sync/ss-node-23 config applied key=queue.visibility_s value=true by=jhpark
+2026-10-13T11:28:09 NOTE  stock-sync/ss-node-03 operator=jhpark memo="점검 창을 31분 연장함. 승인: 오세린 매니저."
+2026-10-13T11:28:11 INFO  stock-sync/ss-node-16 cache stats region=ap-ne-2c hit_ratio=83.6% evictions=24191
+2026-10-13T11:28:13 INFO  stock-sync/ss-node-15 request done id=req-0b5026a4 route=/stock-sync/v1/status status=503 latency_ms=41
+2026-10-13T11:28:19 WARN  stock-sync/ss-node-15 alert fired rule=gc_pause_long value=54ms threshold=53ms
+2026-10-13T11:28:23 INFO  stock-sync/ss-node-17 request done id=req-cea54007 route=/stock-sync/v1/get status=200 latency_ms=32
+2026-10-13T11:28:26 NOTE  stock-sync/ss-node-03 operator=shkim memo="임시 증설 52대 추가. 내일 오전 회수 예정."
+2026-10-13T11:28:29 INFO  stock-sync/ss-node-16 config applied key=retry.backoff_ms value=false by=ejlim
+2026-10-13T11:28:36 WARN  stock-sync/ss-node-23 alert fired rule=replica_lag_high value=69s threshold=57s
+2026-10-13T11:28:42 INFO  stock-sync/ss-node-16 deploy step release=stock-sync-4.11.6 step=warmup result=ok took_s=129
+2026-10-13T11:28:45 INFO  stock-sync/ss-node-16 request done id=req-a0624265 route=/stock-sync/v1/list status=200 latency_ms=96
+2026-10-13T11:28:47 INFO  stock-sync/ss-node-11 pool resize target=stock-sync-db max_pool_size=369 prev=341
+2026-10-13T11:28:53 INFO  stock-sync/ss-node-10 pool resize target=stock-sync-worker max_pool_size=24 prev=30
+2026-10-13T11:28:56 INFO  stock-sync/ss-node-21 request done id=req-00542b50 route=/stock-sync/v1/list status=200 latency_ms=233
+2026-10-13T11:28:57 WARN  stock-sync/ss-node-04 alert fired rule=disk_usage_warning value=72% threshold=64%
+2026-10-13T11:29:04 INFO  stock-sync/ss-node-08 ticket linked id=OPS-47856 reason=node_drain
+2026-10-13T11:29:08 INFO  stock-sync/ss-node-15 cache stats region=us-we-2b hit_ratio=84.8% evictions=21079
+2026-10-13T11:29:12 INFO  stock-sync/ss-node-19 request done id=req-1b531977 route=/stock-sync/v1/verify status=200 latency_ms=170
+2026-10-13T11:29:14 INFO  stock-sync/ss-node-18 backup finished file=/vault/weekly/audit_2026w32.tar.zst size_mb=3762 checksum=581de0fc
+2026-10-13T11:29:21 WARN  stock-sync/ss-node-20 alert fired rule=heap_used_high value=75% threshold=71%
+2026-10-13T11:29:28 WARN  stock-sync/ss-node-04 alert fired rule=conn_pool_saturated value=95% threshold=90%
+2026-10-13T11:29:30 INFO  stock-sync/ss-node-12 request done id=req-b30e8d50 route=/stock-sync/v1/status status=400 latency_ms=118
+2026-10-13T11:29:35 INFO  stock-sync/ss-node-01 config applied key=cache.ttl_s value=69% by=hbyoon
+2026-10-13T11:29:40 INFO  stock-sync/ss-node-15 request done id=req-8e22ec45 route=/stock-sync/v1/cancel status=200 latency_ms=608
+2026-10-13T11:29:45 INFO  stock-sync/ss-node-13 pool resize target=stock-sync-worker max_pool_size=379 prev=430
+2026-10-13T11:29:48 INFO  stock-sync/ss-node-08 request done id=req-91332280 route=/stock-sync/v1/verify status=404 latency_ms=68
+2026-10-13T11:29:55 INFO  stock-sync/ss-node-20 request done id=req-843ea519 route=/stock-sync/v1/list status=404 latency_ms=76
+2026-10-13T11:30:00 INFO  stock-sync/ss-node-14 pool resize target=stock-sync-cache max_pool_size=93 prev=134
+2026-10-13T11:30:07 INFO  stock-sync/ss-node-18 request done id=req-daf2bfda route=/stock-sync/v1/status status=200 latency_ms=184
+2026-10-13T11:30:14 INFO  stock-sync/ss-node-22 request done id=req-f1de700b route=/stock-sync/v1/sync status=200 latency_ms=271
+2026-10-13T11:30:17 INFO  stock-sync/ss-node-19 request done id=req-7f3859db route=/stock-sync/v1/cancel status=500 latency_ms=95
+2026-10-13T11:30:20 INFO  stock-sync/ss-node-17 deploy step release=stock-sync-4.13.4 step=healthcheck result=ok took_s=70
+2026-10-13T11:30:23 INFO  stock-sync/ss-node-12 pool resize target=stock-sync-worker max_pool_size=278 prev=256
+2026-10-13T11:30:25 INFO  stock-sync/ss-node-14 request done id=req-9f140b57 route=/stock-sync/v1/get status=200 latency_ms=137
+2026-10-13T11:30:30 INFO  stock-sync/ss-node-23 request done id=req-8db23bf1 route=/stock-sync/v1/sync status=200 latency_ms=226
+2026-10-13T11:30:32 INFO  stock-sync/ss-node-10 deploy step release=stock-sync-4.14.1 step=shift_traffic_50 result=ok took_s=168
+2026-10-13T11:30:34 INFO  stock-sync/ss-node-20 request done id=req-9a3230b6 route=/stock-sync/v1/verify status=200 latency_ms=815
+2026-10-13T11:30:38 INFO  stock-sync/ss-node-09 request done id=req-c6cadb21 route=/stock-sync/v1/cancel status=200 latency_ms=74
+2026-10-13T11:30:40 WARN  stock-sync/ss-node-23 alert fired rule=cpu_steal_high value=67% threshold=58%
+2026-10-13T11:30:41 NOTE  stock-sync/ss-node-07 operator=ejlim memo="동시 처리 수를 43에서 5로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-13T11:30:43 INFO  stock-sync/ss-node-04 deploy step release=stock-sync-4.19.7 step=drain result=ok took_s=114
+2026-10-13T11:30:48 INFO  stock-sync/ss-node-10 deploy step release=stock-sync-4.18.4 step=migrate result=ok took_s=96
+2026-10-13T11:30:51 INFO  stock-sync/ss-node-07 request done id=req-bcb5a8d3 route=/stock-sync/v1/sync status=200 latency_ms=33
+2026-10-13T11:30:57 INFO  stock-sync/ss-node-10 backup finished file=/vault/weekly/sessions_2026w34.tar.zst size_mb=10862 checksum=1cd1f6d5
+2026-10-13T11:31:04 INFO  stock-sync/ss-node-17 request done id=req-27fd9f50 route=/stock-sync/v1/list status=200 latency_ms=135
+2026-10-13T11:31:11 INFO  stock-sync/ss-node-08 config applied key=gc.pause_target_ms value=false by=yjchoi
+2026-10-13T11:31:16 INFO  stock-sync/ss-node-24 backup finished file=/vault/daily/sessions_20261012.tar.zst size_mb=45665 checksum=7b09cd32
+2026-10-13T11:31:19 INFO  stock-sync/ss-node-18 request done id=req-1a0b5984 route=/stock-sync/v1/get status=201 latency_ms=304
+2026-10-13T11:31:20 INFO  stock-sync/ss-node-14 deploy step release=stock-sync-4.10.9 step=shift_traffic_10 result=ok took_s=35
+2026-10-13T11:31:25 INFO  stock-sync/ss-node-15 request done id=req-3f91fb5e route=/stock-sync/v1/verify status=200 latency_ms=153
+2026-10-13T11:31:29 INFO  stock-sync/ss-node-02 request done id=req-9d508f62 route=/stock-sync/v1/cancel status=200 latency_ms=229
+2026-10-13T11:31:34 INFO  stock-sync/ss-node-06 request done id=req-c0b2add7 route=/stock-sync/v1/list status=204 latency_ms=81
+2026-10-13T11:31:37 ERROR stock-sync/ss-node-05 job failed job=stock-sync-reindex attempt=2 cause=quota_exceeded
+2026-10-13T11:31:43 INFO  stock-sync/ss-node-21 cache stats region=us-we-2b hit_ratio=68.4% evictions=31538
+2026-10-13T11:31:44 INFO  stock-sync/ss-node-04 request done id=req-6d351e0c route=/stock-sync/v1/verify status=409 latency_ms=34
+2026-10-13T11:31:51 INFO  stock-sync/ss-node-08 config applied key=queue.batch_size value=1770 by=jhpark
+2026-10-13T11:31:57 INFO  stock-sync/ss-node-20 deploy step release=stock-sync-4.22.6 step=migrate result=ok took_s=217
+2026-10-13T11:32:04 INFO  stock-sync/ss-node-02 config applied key=retry.max_attempts value=3411 by=shkim
+2026-10-13T11:32:11 INFO  stock-sync/ss-node-19 deploy step release=stock-sync-4.10.2 step=start result=ok took_s=240
+2026-10-13T11:32:18 INFO  stock-sync/ss-node-05 deploy step release=stock-sync-4.17.2 step=shift_traffic_10 result=ok took_s=120
+2026-10-13T11:32:24 INFO  stock-sync/ss-node-12 backup finished file=/vault/daily/payments_20261008.tar.zst size_mb=44745 checksum=1c680167
+2026-10-13T11:32:30 INFO  stock-sync/ss-node-07 pool resize target=stock-sync-db max_pool_size=357 prev=316
+2026-10-13T11:32:31 INFO  stock-sync/ss-node-16 request done id=req-81545613 route=/stock-sync/v1/get status=204 latency_ms=91
+2026-10-13T11:32:37 INFO  stock-sync/ss-node-15 ticket linked id=OPS-47356 reason=oncall_handoff
+2026-10-13T11:32:43 INFO  stock-sync/ss-node-16 ticket linked id=OPS-48235 reason=dns_ttl_change
+2026-10-13T11:32:46 INFO  stock-sync/ss-node-03 cache stats region=ap-ne-2c hit_ratio=86.7% evictions=25688
+2026-10-13T11:32:48 INFO  stock-sync/ss-node-13 request done id=req-c3f8e8dc route=/stock-sync/v1/cancel status=500 latency_ms=88
+2026-10-13T11:32:49 INFO  stock-sync/ss-node-15 ticket linked id=OPS-48007 reason=cert_rotation
+2026-10-13T11:32:51 INFO  stock-sync/ss-node-05 request done id=req-d23ce635 route=/stock-sync/v1/list status=200 latency_ms=249
+2026-10-13T11:32:53 INFO  stock-sync/ss-node-23 request done id=req-5dbd4206 route=/stock-sync/v1/list status=404 latency_ms=129
+2026-10-13T11:32:58 INFO  stock-sync/ss-node-09 request done id=req-b3c2f2e5 route=/stock-sync/v1/verify status=200 latency_ms=255
+2026-10-13T11:33:04 WARN  stock-sync/ss-node-24 alert fired rule=fd_usage_high value=91% threshold=80%
+2026-10-13T11:33:11 INFO  stock-sync/ss-node-04 request done id=req-74a75aa1 route=/stock-sync/v1/sync status=200 latency_ms=66
+2026-10-13T11:33:13 INFO  stock-sync/ss-node-15 request done id=req-3a216049 route=/stock-sync/v1/cancel status=200 latency_ms=286
+2026-10-13T11:33:19 INFO  stock-sync/ss-node-12 request done id=req-c203d4af route=/stock-sync/v1/sync status=200 latency_ms=358
+2026-10-13T11:33:25 INFO  stock-sync/ss-node-07 request done id=req-5d693979 route=/stock-sync/v1/verify status=200 latency_ms=332
+2026-10-13T11:33:30 INFO  stock-sync/ss-node-17 request done id=req-65020636 route=/stock-sync/v1/cancel status=200 latency_ms=63
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

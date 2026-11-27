@@ -1,0 +1,424 @@
+참고용 로그 10: 메일 발송기(mail-relay) 반송 처리 구간. '확인'이라고만 답해 줘.
+
+2026-10-14T08:04:30 INFO  mail-relay/mr-node-17 backup finished file=/vault/daily/inventory_20261023.tar.zst size_mb=18578 checksum=b208d2b5
+2026-10-14T08:04:31 INFO  mail-relay/mr-node-10 request done id=req-74060c5d route=/mail-relay/v1/sync status=200 latency_ms=89
+2026-10-14T08:04:33 INFO  mail-relay/mr-node-01 ticket linked id=OPS-49197 reason=schema_change
+2026-10-14T08:04:39 INFO  mail-relay/mr-node-14 config applied key=shard.count value=18 by=hbyoon
+2026-10-14T08:04:45 INFO  mail-relay/mr-node-12 cache stats region=ap-se-1a hit_ratio=90.2% evictions=26600
+2026-10-14T08:04:46 INFO  mail-relay/mr-node-07 request done id=req-9f090ac8 route=/mail-relay/v1/update status=200 latency_ms=86
+2026-10-14T08:04:48 INFO  mail-relay/mr-node-13 config applied key=limiter.burst value=13 by=sykang
+2026-10-14T08:04:49 WARN  mail-relay/mr-node-01 alert fired rule=disk_usage_warning value=50% threshold=47%
+2026-10-14T08:04:50 ERROR mail-relay/mr-node-19 job failed job=mail-relay-export attempt=5 cause=quota_exceeded
+2026-10-14T08:04:53 INFO  mail-relay/mr-node-14 ticket linked id=OPS-49601 reason=dependency_upgrade
+2026-10-14T08:04:57 INFO  mail-relay/mr-node-02 request done id=req-7b457e00 route=/mail-relay/v1/get status=404 latency_ms=186
+2026-10-14T08:05:02 INFO  mail-relay/mr-node-20 request done id=req-6f646a9a route=/mail-relay/v1/cancel status=200 latency_ms=166
+2026-10-14T08:05:05 INFO  mail-relay/mr-node-21 request done id=req-faa9c714 route=/mail-relay/v1/create status=200 latency_ms=164
+2026-10-14T08:05:06 WARN  mail-relay/mr-node-02 alert fired rule=heap_used_high value=74% threshold=69%
+2026-10-14T08:05:13 INFO  mail-relay/mr-node-10 request done id=req-139219d2 route=/mail-relay/v1/cancel status=500 latency_ms=497
+2026-10-14T08:05:15 INFO  mail-relay/mr-node-15 request done id=req-be76b42c route=/mail-relay/v1/list status=409 latency_ms=11
+2026-10-14T08:05:20 NOTE  mail-relay/mr-node-15 operator=sykang memo="배치 시작 시각을 9시 47분으로 고정함."
+2026-10-14T08:05:22 INFO  mail-relay/mr-node-08 request done id=req-0ca63101 route=/mail-relay/v1/status status=201 latency_ms=849
+2026-10-14T08:05:28 INFO  mail-relay/mr-node-04 deploy step release=mail-relay-4.15.3 step=warmup result=ok took_s=101
+2026-10-14T08:05:32 INFO  mail-relay/mr-node-02 config applied key=breaker.half_open_s value=false by=hbyoon
+2026-10-14T08:05:35 INFO  mail-relay/mr-node-04 request done id=req-85fded5d route=/mail-relay/v1/list status=200 latency_ms=117
+2026-10-14T08:05:36 WARN  mail-relay/mr-node-01 alert fired rule=disk_usage_warning value=56% threshold=47%
+2026-10-14T08:05:39 INFO  mail-relay/mr-node-14 deploy step release=mail-relay-4.13.9 step=shift_traffic_50 result=ok took_s=42
+2026-10-14T08:05:46 INFO  mail-relay/mr-node-14 request done id=req-50eeb9d6 route=/mail-relay/v1/update status=200 latency_ms=262
+2026-10-14T08:05:49 INFO  mail-relay/mr-node-19 deploy step release=mail-relay-4.12.7 step=pull_image result=ok took_s=12
+2026-10-14T08:05:56 INFO  mail-relay/mr-node-04 request done id=req-13203a4b route=/mail-relay/v1/sync status=429 latency_ms=66
+2026-10-14T08:05:57 INFO  mail-relay/mr-node-02 backup finished file=/vault/daily/inventory_20261022.tar.zst size_mb=81970 checksum=53b4256b
+2026-10-14T08:06:01 INFO  mail-relay/mr-node-15 config applied key=queue.batch_size value=8 by=shkim
+2026-10-14T08:06:05 INFO  mail-relay/mr-node-11 request done id=req-4a0b5b42 route=/mail-relay/v1/create status=200 latency_ms=117
+2026-10-14T08:06:11 INFO  mail-relay/mr-node-15 request done id=req-b5118f86 route=/mail-relay/v1/status status=200 latency_ms=88
+2026-10-14T08:06:13 INFO  mail-relay/mr-node-11 request done id=req-86ab272c route=/mail-relay/v1/status status=400 latency_ms=159
+2026-10-14T08:06:20 INFO  mail-relay/mr-node-06 backup finished file=/vault/weekly/sessions_2026w38.tar.zst size_mb=54846 checksum=7d0b5c9f
+2026-10-14T08:06:24 INFO  mail-relay/mr-node-01 deploy step release=mail-relay-4.15.1 step=shift_traffic_10 result=ok took_s=234
+2026-10-14T08:06:30 INFO  mail-relay/mr-node-12 config applied key=tls.session_cache value=51 by=dwjung
+2026-10-14T08:06:31 INFO  mail-relay/mr-node-09 request done id=req-f908d5f3 route=/mail-relay/v1/get status=204 latency_ms=333
+2026-10-14T08:06:34 INFO  mail-relay/mr-node-20 deploy step release=mail-relay-4.16.0 step=shift_traffic_50 result=ok took_s=88
+2026-10-14T08:06:40 INFO  mail-relay/mr-node-15 pool resize target=mail-relay-upstream max_pool_size=306 prev=289
+2026-10-14T08:06:43 INFO  mail-relay/mr-node-14 request done id=req-b903682c route=/mail-relay/v1/status status=409 latency_ms=44
+2026-10-14T08:06:45 INFO  mail-relay/mr-node-08 request done id=req-357541c5 route=/mail-relay/v1/list status=503 latency_ms=53
+2026-10-14T08:06:49 INFO  mail-relay/mr-node-05 pool resize target=mail-relay-db max_pool_size=315 prev=324
+2026-10-14T08:06:53 INFO  mail-relay/mr-node-05 request done id=req-c99f44db route=/mail-relay/v1/status status=429 latency_ms=39
+2026-10-14T08:06:54 ERROR mail-relay/mr-node-21 job failed job=mail-relay-export attempt=4 cause=lock_wait_exceeded
+2026-10-14T08:07:01 INFO  mail-relay/mr-node-02 request done id=req-65dbd376 route=/mail-relay/v1/update status=200 latency_ms=99
+2026-10-14T08:07:02 WARN  mail-relay/mr-node-05 alert fired rule=heap_used_high value=87% threshold=74%
+2026-10-14T08:07:06 INFO  mail-relay/mr-node-23 ticket linked id=OPS-49118 reason=dns_ttl_change
+2026-10-14T08:07:07 INFO  mail-relay/mr-node-11 backup finished file=/vault/daily/payments_20261012.tar.zst size_mb=13870 checksum=af05ce04
+2026-10-14T08:07:10 INFO  mail-relay/mr-node-17 request done id=req-f55800a6 route=/mail-relay/v1/sync status=200 latency_ms=141
+2026-10-14T08:07:16 INFO  mail-relay/mr-node-15 deploy step release=mail-relay-4.15.0 step=warmup result=ok took_s=148
+2026-10-14T08:07:20 INFO  mail-relay/mr-node-08 config applied key=shard.count value=1183 by=sykang
+2026-10-14T08:07:24 INFO  mail-relay/mr-node-13 request done id=req-4621773f route=/mail-relay/v1/get status=201 latency_ms=31
+2026-10-14T08:07:28 INFO  mail-relay/mr-node-18 request done id=req-5480a702 route=/mail-relay/v1/update status=204 latency_ms=280
+2026-10-14T08:07:30 INFO  mail-relay/mr-node-03 pool resize target=mail-relay-cache max_pool_size=359 prev=391
+2026-10-14T08:07:36 INFO  mail-relay/mr-node-09 ticket linked id=OPS-48702 reason=log_volume_spike
+2026-10-14T08:07:41 NOTE  mail-relay/mr-node-07 operator=jhpark memo="타임아웃을 2ms에서 26ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-14T08:07:42 INFO  mail-relay/mr-node-05 request done id=req-5c6846d1 route=/mail-relay/v1/list status=204 latency_ms=192
+2026-10-14T08:07:45 INFO  mail-relay/mr-node-21 ticket linked id=OPS-48647 reason=oncall_handoff
+2026-10-14T08:07:47 INFO  mail-relay/mr-node-12 pool resize target=mail-relay-upstream max_pool_size=107 prev=70
+2026-10-14T08:07:52 ERROR mail-relay/mr-node-07 job failed job=mail-relay-reindex attempt=1 cause=quota_exceeded
+2026-10-14T08:07:57 INFO  mail-relay/mr-node-05 cache stats region=ap-ne-2a hit_ratio=90.0% evictions=29324
+2026-10-14T08:08:03 INFO  mail-relay/mr-node-17 config applied key=queue.visibility_s value=18 by=sykang
+2026-10-14T08:08:06 INFO  mail-relay/mr-node-22 request done id=req-ba0ae0fb route=/mail-relay/v1/update status=200 latency_ms=31
+2026-10-14T08:08:08 INFO  mail-relay/mr-node-11 request done id=req-46fc00a1 route=/mail-relay/v1/verify status=200 latency_ms=139
+2026-10-14T08:08:15 INFO  mail-relay/mr-node-09 request done id=req-d3025e0c route=/mail-relay/v1/cancel status=409 latency_ms=56
+2026-10-14T08:08:19 INFO  mail-relay/mr-node-17 request done id=req-aa46d54a route=/mail-relay/v1/get status=201 latency_ms=305
+2026-10-14T08:08:20 INFO  mail-relay/mr-node-05 request done id=req-2e1be787 route=/mail-relay/v1/status status=200 latency_ms=324
+2026-10-14T08:08:26 INFO  mail-relay/mr-node-16 request done id=req-adeedef2 route=/mail-relay/v1/status status=200 latency_ms=59
+2026-10-14T08:08:32 ERROR mail-relay/mr-node-02 job failed job=mail-relay-reindex attempt=2 cause=lock_wait_exceeded
+2026-10-14T08:08:33 INFO  mail-relay/mr-node-24 config applied key=retry.max_attempts value=7073 by=sykang
+2026-10-14T08:08:35 INFO  mail-relay/mr-node-10 backup finished file=/vault/weekly/users_2026w42.tar.zst size_mb=70528 checksum=f2ea1ac6
+2026-10-14T08:08:36 WARN  mail-relay/mr-node-19 alert fired rule=error_ratio_high value=81% threshold=78%
+2026-10-14T08:08:42 INFO  mail-relay/mr-node-07 request done id=req-91e623c2 route=/mail-relay/v1/update status=200 latency_ms=256
+2026-10-14T08:08:49 INFO  mail-relay/mr-node-04 request done id=req-f2ea07f4 route=/mail-relay/v1/list status=400 latency_ms=170
+2026-10-14T08:08:56 INFO  mail-relay/mr-node-21 config applied key=http.read_timeout_ms value=false by=mjlee
+2026-10-14T08:08:57 WARN  mail-relay/mr-node-02 alert fired rule=queue_depth_high value=95 threshold=93
+2026-10-14T08:08:58 INFO  mail-relay/mr-node-08 pool resize target=mail-relay-db max_pool_size=239 prev=227
+2026-10-14T08:08:59 INFO  mail-relay/mr-node-18 request done id=req-c06fdfcc route=/mail-relay/v1/sync status=404 latency_ms=79
+2026-10-14T08:09:04 INFO  mail-relay/mr-node-16 deploy step release=mail-relay-4.21.7 step=healthcheck result=ok took_s=230
+2026-10-14T08:09:08 INFO  mail-relay/mr-node-02 request done id=req-3ed63c06 route=/mail-relay/v1/get status=200 latency_ms=92
+2026-10-14T08:09:11 INFO  mail-relay/mr-node-11 request done id=req-cf12dca4 route=/mail-relay/v1/cancel status=503 latency_ms=233
+2026-10-14T08:09:14 INFO  mail-relay/mr-node-15 request done id=req-a915ba43 route=/mail-relay/v1/update status=200 latency_ms=71
+2026-10-14T08:09:19 INFO  mail-relay/mr-node-14 ticket linked id=OPS-49977 reason=dependency_upgrade
+2026-10-14T08:09:22 INFO  mail-relay/mr-node-22 request done id=req-a5131c00 route=/mail-relay/v1/list status=503 latency_ms=26
+2026-10-14T08:09:29 INFO  mail-relay/mr-node-13 pool resize target=mail-relay-db max_pool_size=98 prev=49
+2026-10-14T08:09:30 INFO  mail-relay/mr-node-20 pool resize target=mail-relay-cache max_pool_size=240 prev=247
+2026-10-14T08:09:35 INFO  mail-relay/mr-node-03 request done id=req-73249b47 route=/mail-relay/v1/status status=200 latency_ms=476
+2026-10-14T08:09:38 INFO  mail-relay/mr-node-24 config applied key=cache.ttl_s value=true by=ejlim
+2026-10-14T08:09:43 INFO  mail-relay/mr-node-15 request done id=req-e353a744 route=/mail-relay/v1/status status=200 latency_ms=16
+2026-10-14T08:09:46 INFO  mail-relay/mr-node-05 request done id=req-44ef6c93 route=/mail-relay/v1/verify status=409 latency_ms=79
+2026-10-14T08:09:49 INFO  mail-relay/mr-node-07 request done id=req-86f0ee16 route=/mail-relay/v1/update status=200 latency_ms=194
+2026-10-14T08:09:51 INFO  mail-relay/mr-node-17 request done id=req-dc36aefb route=/mail-relay/v1/verify status=200 latency_ms=86
+2026-10-14T08:09:58 INFO  mail-relay/mr-node-07 ticket linked id=OPS-49919 reason=dns_ttl_change
+2026-10-14T08:10:01 NOTE  mail-relay/mr-node-09 operator=mjlee memo="캐시 TTL을 50초로 되돌림. 오래된 응답이 보고됨."
+2026-10-14T08:10:05 ERROR mail-relay/mr-node-16 job failed job=mail-relay-reindex attempt=5 cause=quota_exceeded
+2026-10-14T08:10:07 INFO  mail-relay/mr-node-24 request done id=req-5c9df216 route=/mail-relay/v1/get status=204 latency_ms=129
+2026-10-14T08:10:10 INFO  mail-relay/mr-node-08 request done id=req-18c83f4c route=/mail-relay/v1/sync status=200 latency_ms=86
+2026-10-14T08:10:16 INFO  mail-relay/mr-node-24 deploy step release=mail-relay-4.21.9 step=healthcheck result=ok took_s=62
+2026-10-14T08:10:19 INFO  mail-relay/mr-node-17 deploy step release=mail-relay-4.16.4 step=healthcheck result=ok took_s=190
+2026-10-14T08:10:20 INFO  mail-relay/mr-node-23 request done id=req-142aa94a route=/mail-relay/v1/sync status=200 latency_ms=131
+2026-10-14T08:10:24 INFO  mail-relay/mr-node-13 request done id=req-34c4e951 route=/mail-relay/v1/get status=200 latency_ms=50
+2026-10-14T08:10:29 WARN  mail-relay/mr-node-03 alert fired rule=p99_latency_high value=66ms threshold=54ms
+2026-10-14T08:10:34 INFO  mail-relay/mr-node-15 ticket linked id=OPS-49933 reason=runbook_update
+2026-10-14T08:10:41 INFO  mail-relay/mr-node-14 pool resize target=mail-relay-upstream max_pool_size=241 prev=278
+2026-10-14T08:10:47 INFO  mail-relay/mr-node-05 request done id=req-caea64c3 route=/mail-relay/v1/list status=409 latency_ms=129
+2026-10-14T08:10:50 INFO  mail-relay/mr-node-12 cache stats region=ap-ne-2b hit_ratio=67.3% evictions=9737
+2026-10-14T08:10:52 INFO  mail-relay/mr-node-20 request done id=req-d56eb9bc route=/mail-relay/v1/verify status=200 latency_ms=103
+2026-10-14T08:10:56 INFO  mail-relay/mr-node-15 request done id=req-3ee0111e route=/mail-relay/v1/update status=200 latency_ms=61
+2026-10-14T08:10:57 INFO  mail-relay/mr-node-01 request done id=req-63d6b3aa route=/mail-relay/v1/list status=204 latency_ms=104
+2026-10-14T08:11:02 INFO  mail-relay/mr-node-20 config applied key=dns.ttl_s value=true by=ejlim
+2026-10-14T08:11:08 INFO  mail-relay/mr-node-16 deploy step release=mail-relay-4.11.3 step=shift_traffic_10 result=ok took_s=20
+2026-10-14T08:11:13 WARN  mail-relay/mr-node-20 alert fired rule=cpu_steal_high value=99% threshold=84%
+2026-10-14T08:11:16 INFO  mail-relay/mr-node-12 config applied key=tls.session_cache value=77% by=ejlim
+2026-10-14T08:11:22 INFO  mail-relay/mr-node-20 config applied key=queue.visibility_s value=56 by=mjlee
+2026-10-14T08:11:29 INFO  mail-relay/mr-node-14 cache stats region=ap-se-1a hit_ratio=89.8% evictions=37535
+2026-10-14T08:11:30 INFO  mail-relay/mr-node-07 config applied key=limiter.rps value=3750 by=sykang
+2026-10-14T08:11:36 INFO  mail-relay/mr-node-19 request done id=req-1653a770 route=/mail-relay/v1/status status=200 latency_ms=108
+2026-10-14T08:11:41 ERROR mail-relay/mr-node-05 job failed job=mail-relay-reindex attempt=5 cause=quota_exceeded
+2026-10-14T08:11:47 INFO  mail-relay/mr-node-04 request done id=req-e3af232a route=/mail-relay/v1/list status=201 latency_ms=43
+2026-10-14T08:11:49 INFO  mail-relay/mr-node-24 config applied key=canary.latency_p99_threshold_ms value=8083 by=yjchoi
+2026-10-14T08:11:53 INFO  mail-relay/mr-node-01 ticket linked id=OPS-47467 reason=dns_ttl_change
+2026-10-14T08:11:58 INFO  mail-relay/mr-node-16 request done id=req-8b01450f route=/mail-relay/v1/update status=200 latency_ms=359
+2026-10-14T08:12:03 INFO  mail-relay/mr-node-02 deploy step release=mail-relay-4.10.3 step=shift_traffic_50 result=ok took_s=5
+2026-10-14T08:12:06 INFO  mail-relay/mr-node-02 backup finished file=/vault/daily/audit_20261004.tar.zst size_mb=52011 checksum=0e82caf9
+2026-10-14T08:12:08 WARN  mail-relay/mr-node-19 alert fired rule=cpu_steal_high value=85% threshold=80%
+2026-10-14T08:12:09 INFO  mail-relay/mr-node-19 config applied key=queue.batch_size value=false by=jhpark
+2026-10-14T08:12:14 WARN  mail-relay/mr-node-11 alert fired rule=replica_lag_high value=58s threshold=49s
+2026-10-14T08:12:17 INFO  mail-relay/mr-node-23 config applied key=queue.visibility_s value=false by=jhpark
+2026-10-14T08:12:18 INFO  mail-relay/mr-node-11 request done id=req-b4fa19e7 route=/mail-relay/v1/update status=200 latency_ms=200
+2026-10-14T08:12:24 NOTE  mail-relay/mr-node-07 operator=shkim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-14T08:12:26 WARN  mail-relay/mr-node-17 alert fired rule=p99_latency_high value=82ms threshold=76ms
+2026-10-14T08:12:28 WARN  mail-relay/mr-node-07 alert fired rule=conn_pool_saturated value=97% threshold=92%
+2026-10-14T08:12:35 INFO  mail-relay/mr-node-23 request done id=req-311856c9 route=/mail-relay/v1/status status=400 latency_ms=163
+2026-10-14T08:12:36 NOTE  mail-relay/mr-node-10 operator=hbyoon memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-10-14T08:12:43 INFO  mail-relay/mr-node-01 request done id=req-86ba7564 route=/mail-relay/v1/sync status=404 latency_ms=158
+2026-10-14T08:12:46 INFO  mail-relay/mr-node-15 request done id=req-c6cb5d5e route=/mail-relay/v1/cancel status=204 latency_ms=173
+2026-10-14T08:12:47 INFO  mail-relay/mr-node-09 request done id=req-8da03f64 route=/mail-relay/v1/list status=200 latency_ms=225
+2026-10-14T08:12:52 INFO  mail-relay/mr-node-12 request done id=req-9cdf6712 route=/mail-relay/v1/cancel status=200 latency_ms=397
+2026-10-14T08:12:58 INFO  mail-relay/mr-node-01 ticket linked id=OPS-47188 reason=log_volume_spike
+2026-10-14T08:13:03 INFO  mail-relay/mr-node-05 request done id=req-ed9d5469 route=/mail-relay/v1/verify status=200 latency_ms=79
+2026-10-14T08:13:07 INFO  mail-relay/mr-node-08 pool resize target=mail-relay-upstream max_pool_size=268 prev=308
+2026-10-14T08:13:11 INFO  mail-relay/mr-node-19 request done id=req-7ba13541 route=/mail-relay/v1/list status=409 latency_ms=260
+2026-10-14T08:13:15 WARN  mail-relay/mr-node-14 alert fired rule=fd_usage_high value=91% threshold=82%
+2026-10-14T08:13:21 INFO  mail-relay/mr-node-20 request done id=req-1e5f390f route=/mail-relay/v1/verify status=200 latency_ms=293
+2026-10-14T08:13:23 INFO  mail-relay/mr-node-21 config applied key=tls.session_cache value=true by=sykang
+2026-10-14T08:13:24 NOTE  mail-relay/mr-node-19 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-14T08:13:30 INFO  mail-relay/mr-node-12 ticket linked id=OPS-49564 reason=quota_increase
+2026-10-14T08:13:33 NOTE  mail-relay/mr-node-06 operator=jhpark memo="동시 처리 수를 64에서 54로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-14T08:13:39 WARN  mail-relay/mr-node-10 alert fired rule=error_ratio_high value=98% threshold=88%
+2026-10-14T08:13:40 INFO  mail-relay/mr-node-17 request done id=req-f84a67c1 route=/mail-relay/v1/create status=200 latency_ms=58
+2026-10-14T08:13:45 INFO  mail-relay/mr-node-22 request done id=req-7867b892 route=/mail-relay/v1/create status=503 latency_ms=37
+2026-10-14T08:13:46 INFO  mail-relay/mr-node-09 backup finished file=/vault/weekly/payments_2026w36.tar.zst size_mb=58382 checksum=70dcde23
+2026-10-14T08:13:52 INFO  mail-relay/mr-node-11 cache stats region=ap-se-1a hit_ratio=75.2% evictions=13939
+2026-10-14T08:13:57 INFO  mail-relay/mr-node-20 request done id=req-6354d540 route=/mail-relay/v1/list status=201 latency_ms=59
+2026-10-14T08:13:59 INFO  mail-relay/mr-node-19 request done id=req-be505875 route=/mail-relay/v1/get status=200 latency_ms=303
+2026-10-14T08:14:02 INFO  mail-relay/mr-node-11 request done id=req-c12bff5f route=/mail-relay/v1/create status=404 latency_ms=83
+2026-10-14T08:14:04 ERROR mail-relay/mr-node-08 job failed job=mail-relay-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-14T08:14:11 INFO  mail-relay/mr-node-14 request done id=req-c018abb3 route=/mail-relay/v1/create status=204 latency_ms=56
+2026-10-14T08:14:14 INFO  mail-relay/mr-node-20 ticket linked id=OPS-48573 reason=quota_increase
+2026-10-14T08:14:21 INFO  mail-relay/mr-node-08 request done id=req-a9af3811 route=/mail-relay/v1/cancel status=200 latency_ms=166
+2026-10-14T08:14:26 INFO  mail-relay/mr-node-16 request done id=req-6c44fc65 route=/mail-relay/v1/get status=200 latency_ms=26
+2026-10-14T08:14:30 INFO  mail-relay/mr-node-24 request done id=req-8df2da8a route=/mail-relay/v1/status status=200 latency_ms=519
+2026-10-14T08:14:36 WARN  mail-relay/mr-node-14 alert fired rule=cpu_steal_high value=62% threshold=54%
+2026-10-14T08:14:41 WARN  mail-relay/mr-node-12 alert fired rule=fd_usage_high value=73% threshold=68%
+2026-10-14T08:14:42 INFO  mail-relay/mr-node-04 request done id=req-482cc12a route=/mail-relay/v1/list status=200 latency_ms=39
+2026-10-14T08:14:47 INFO  mail-relay/mr-node-03 request done id=req-11ad1508 route=/mail-relay/v1/status status=400 latency_ms=116
+2026-10-14T08:14:54 ERROR mail-relay/mr-node-14 job failed job=mail-relay-cleanup attempt=4 cause=upstream_timeout
+2026-10-14T08:15:01 INFO  mail-relay/mr-node-19 request done id=req-b89d0994 route=/mail-relay/v1/verify status=200 latency_ms=86
+2026-10-14T08:15:06 INFO  mail-relay/mr-node-22 request done id=req-edf12d06 route=/mail-relay/v1/get status=500 latency_ms=38
+2026-10-14T08:15:08 WARN  mail-relay/mr-node-06 alert fired rule=heap_used_high value=74% threshold=66%
+2026-10-14T08:15:11 INFO  mail-relay/mr-node-09 request done id=req-e993ebcf route=/mail-relay/v1/update status=200 latency_ms=412
+2026-10-14T08:15:14 ERROR mail-relay/mr-node-18 job failed job=mail-relay-rollup attempt=5 cause=oom_killed
+2026-10-14T08:15:18 INFO  mail-relay/mr-node-15 config applied key=retry.backoff_ms value=false by=sykang
+2026-10-14T08:15:25 WARN  mail-relay/mr-node-11 alert fired rule=heap_used_high value=95% threshold=89%
+2026-10-14T08:15:31 INFO  mail-relay/mr-node-20 request done id=req-27065a85 route=/mail-relay/v1/cancel status=500 latency_ms=164
+2026-10-14T08:15:35 INFO  mail-relay/mr-node-09 request done id=req-24e6eafd route=/mail-relay/v1/list status=200 latency_ms=27
+2026-10-14T08:15:38 WARN  mail-relay/mr-node-03 alert fired rule=disk_usage_warning value=97% threshold=88%
+2026-10-14T08:15:41 INFO  mail-relay/mr-node-13 request done id=req-b19712ba route=/mail-relay/v1/list status=200 latency_ms=59
+2026-10-14T08:15:44 INFO  mail-relay/mr-node-17 request done id=req-79be34dc route=/mail-relay/v1/get status=200 latency_ms=125
+2026-10-14T08:15:46 NOTE  mail-relay/mr-node-06 operator=mjlee memo="mr-node-06 재기동 후 지표 정상 확인."
+2026-10-14T08:15:50 INFO  mail-relay/mr-node-12 request done id=req-05db647a route=/mail-relay/v1/sync status=200 latency_ms=52
+2026-10-14T08:15:57 INFO  mail-relay/mr-node-24 request done id=req-5387344c route=/mail-relay/v1/create status=409 latency_ms=108
+2026-10-14T08:16:02 INFO  mail-relay/mr-node-17 deploy step release=mail-relay-4.17.4 step=shift_traffic_50 result=ok took_s=11
+2026-10-14T08:16:09 INFO  mail-relay/mr-node-12 request done id=req-65cc0ec5 route=/mail-relay/v1/list status=500 latency_ms=24
+2026-10-14T08:16:16 INFO  mail-relay/mr-node-04 request done id=req-f3a02f7a route=/mail-relay/v1/verify status=503 latency_ms=46
+2026-10-14T08:16:17 INFO  mail-relay/mr-node-03 ticket linked id=OPS-47208 reason=dependency_upgrade
+2026-10-14T08:16:18 ERROR mail-relay/mr-node-23 job failed job=mail-relay-reindex attempt=1 cause=dns_failure
+2026-10-14T08:16:21 INFO  mail-relay/mr-node-04 request done id=req-647094c9 route=/mail-relay/v1/cancel status=200 latency_ms=103
+2026-10-14T08:16:26 INFO  mail-relay/mr-node-04 ticket linked id=OPS-49525 reason=oncall_handoff
+2026-10-14T08:16:33 INFO  mail-relay/mr-node-05 request done id=req-99078cbe route=/mail-relay/v1/get status=200 latency_ms=94
+2026-10-14T08:16:39 NOTE  mail-relay/mr-node-06 operator=dwjung memo="임시 증설 20대 추가. 내일 오전 회수 예정."
+2026-10-14T08:16:42 INFO  mail-relay/mr-node-19 config applied key=tls.session_cache value=false by=hbyoon
+2026-10-14T08:16:44 INFO  mail-relay/mr-node-01 request done id=req-a7ad3c41 route=/mail-relay/v1/status status=400 latency_ms=123
+2026-10-14T08:16:45 INFO  mail-relay/mr-node-03 request done id=req-022ea167 route=/mail-relay/v1/status status=200 latency_ms=127
+2026-10-14T08:16:48 INFO  mail-relay/mr-node-19 request done id=req-9322b330 route=/mail-relay/v1/cancel status=200 latency_ms=178
+2026-10-14T08:16:50 INFO  mail-relay/mr-node-18 pool resize target=mail-relay-queue max_pool_size=290 prev=314
+2026-10-14T08:16:55 INFO  mail-relay/mr-node-03 request done id=req-e3ea5c0b route=/mail-relay/v1/status status=200 latency_ms=110
+2026-10-14T08:16:57 INFO  mail-relay/mr-node-19 request done id=req-8b49b46d route=/mail-relay/v1/list status=200 latency_ms=137
+2026-10-14T08:17:03 INFO  mail-relay/mr-node-16 pool resize target=mail-relay-upstream max_pool_size=11 prev=36
+2026-10-14T08:17:10 INFO  mail-relay/mr-node-14 request done id=req-fb48899b route=/mail-relay/v1/get status=409 latency_ms=332
+2026-10-14T08:17:14 NOTE  mail-relay/mr-node-12 operator=sykang memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-14T08:17:18 INFO  mail-relay/mr-node-08 config applied key=limiter.burst value=true by=hbyoon
+2026-10-14T08:17:21 INFO  mail-relay/mr-node-14 request done id=req-6bf2dde6 route=/mail-relay/v1/verify status=201 latency_ms=125
+2026-10-14T08:17:25 INFO  mail-relay/mr-node-10 request done id=req-690906ef route=/mail-relay/v1/sync status=200 latency_ms=194
+2026-10-14T08:17:27 INFO  mail-relay/mr-node-18 request done id=req-84089c5e route=/mail-relay/v1/sync status=200 latency_ms=176
+2026-10-14T08:17:28 INFO  mail-relay/mr-node-13 pool resize target=mail-relay-cache max_pool_size=282 prev=242
+2026-10-14T08:17:31 INFO  mail-relay/mr-node-10 ticket linked id=OPS-47060 reason=quota_increase
+2026-10-14T08:17:33 INFO  mail-relay/mr-node-21 request done id=req-7bcb9385 route=/mail-relay/v1/get status=201 latency_ms=100
+2026-10-14T08:17:35 INFO  mail-relay/mr-node-14 request done id=req-8de39834 route=/mail-relay/v1/create status=429 latency_ms=169
+2026-10-14T08:17:40 INFO  mail-relay/mr-node-21 ticket linked id=OPS-47496 reason=flaky_healthcheck
+2026-10-14T08:17:46 WARN  mail-relay/mr-node-21 alert fired rule=error_ratio_high value=99% threshold=89%
+2026-10-14T08:17:53 INFO  mail-relay/mr-node-11 config applied key=canary.traffic_percent value=3 by=jhpark
+2026-10-14T08:17:54 INFO  mail-relay/mr-node-10 request done id=req-a0cbda8f route=/mail-relay/v1/create status=201 latency_ms=88
+2026-10-14T08:17:58 INFO  mail-relay/mr-node-24 pool resize target=mail-relay-queue max_pool_size=292 prev=277
+2026-10-14T08:17:59 INFO  mail-relay/mr-node-03 request done id=req-27bb5eee route=/mail-relay/v1/list status=200 latency_ms=129
+2026-10-14T08:18:05 INFO  mail-relay/mr-node-15 config applied key=breaker.open_ratio value=8898 by=mjlee
+2026-10-14T08:18:08 INFO  mail-relay/mr-node-05 request done id=req-3af82592 route=/mail-relay/v1/verify status=404 latency_ms=49
+2026-10-14T08:18:10 NOTE  mail-relay/mr-node-24 operator=sykang memo="mr-node-24 재기동 후 지표 정상 확인."
+2026-10-14T08:18:15 INFO  mail-relay/mr-node-18 config applied key=retry.backoff_ms value=28% by=sykang
+2026-10-14T08:18:20 WARN  mail-relay/mr-node-13 alert fired rule=conn_pool_saturated value=56% threshold=44%
+2026-10-14T08:18:22 INFO  mail-relay/mr-node-20 backup finished file=/vault/daily/sessions_20261008.tar.zst size_mb=42284 checksum=590f850b
+2026-10-14T08:18:23 ERROR mail-relay/mr-node-19 job failed job=mail-relay-cleanup attempt=3 cause=upstream_timeout
+2026-10-14T08:18:29 INFO  mail-relay/mr-node-02 request done id=req-26bf5d50 route=/mail-relay/v1/update status=400 latency_ms=38
+2026-10-14T08:18:34 INFO  mail-relay/mr-node-04 request done id=req-34c5f74c route=/mail-relay/v1/cancel status=200 latency_ms=261
+2026-10-14T08:18:38 INFO  mail-relay/mr-node-10 config applied key=tls.session_cache value=15 by=hbyoon
+2026-10-14T08:18:44 ERROR mail-relay/mr-node-18 job failed job=mail-relay-reindex attempt=1 cause=bad_checksum
+2026-10-14T08:18:51 INFO  mail-relay/mr-node-22 request done id=req-61885ac9 route=/mail-relay/v1/verify status=200 latency_ms=332
+2026-10-14T08:18:54 INFO  mail-relay/mr-node-06 request done id=req-ad8687e4 route=/mail-relay/v1/create status=200 latency_ms=294
+2026-10-14T08:18:55 INFO  mail-relay/mr-node-05 config applied key=tls.session_cache value=23% by=yjchoi
+2026-10-14T08:18:56 INFO  mail-relay/mr-node-19 config applied key=flush.interval_ms value=6268 by=yjchoi
+2026-10-14T08:18:57 INFO  mail-relay/mr-node-03 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=38279 checksum=207d9dec
+2026-10-14T08:19:01 INFO  mail-relay/mr-node-23 request done id=req-c1a1b0ee route=/mail-relay/v1/sync status=404 latency_ms=67
+2026-10-14T08:19:05 INFO  mail-relay/mr-node-18 cache stats region=ap-ne-2a hit_ratio=55.7% evictions=22993
+2026-10-14T08:19:09 INFO  mail-relay/mr-node-18 request done id=req-a236fa95 route=/mail-relay/v1/sync status=200 latency_ms=79
+2026-10-14T08:19:10 INFO  mail-relay/mr-node-01 request done id=req-9109968d route=/mail-relay/v1/verify status=200 latency_ms=700
+2026-10-14T08:19:13 INFO  mail-relay/mr-node-03 request done id=req-b5eed958 route=/mail-relay/v1/get status=200 latency_ms=23
+2026-10-14T08:19:17 WARN  mail-relay/mr-node-21 alert fired rule=replica_lag_high value=56s threshold=42s
+2026-10-14T08:19:18 WARN  mail-relay/mr-node-21 alert fired rule=error_ratio_high value=66% threshold=63%
+2026-10-14T08:19:22 INFO  mail-relay/mr-node-22 request done id=req-66c0525a route=/mail-relay/v1/cancel status=200 latency_ms=348
+2026-10-14T08:19:29 INFO  mail-relay/mr-node-13 cache stats region=us-we-2b hit_ratio=96.8% evictions=22431
+2026-10-14T08:19:35 INFO  mail-relay/mr-node-05 request done id=req-0416d560 route=/mail-relay/v1/list status=204 latency_ms=121
+2026-10-14T08:19:39 INFO  mail-relay/mr-node-04 pool resize target=mail-relay-queue max_pool_size=243 prev=200
+2026-10-14T08:19:42 INFO  mail-relay/mr-node-02 request done id=req-d7aa9aaf route=/mail-relay/v1/create status=200 latency_ms=199
+2026-10-14T08:19:47 INFO  mail-relay/mr-node-23 request done id=req-c5673dd8 route=/mail-relay/v1/cancel status=409 latency_ms=50
+2026-10-14T08:19:51 INFO  mail-relay/mr-node-03 ticket linked id=OPS-48782 reason=cert_rotation
+2026-10-14T08:19:57 NOTE  mail-relay/mr-node-23 operator=dwjung memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-14T08:20:03 INFO  mail-relay/mr-node-16 request done id=req-c2e5fed5 route=/mail-relay/v1/sync status=400 latency_ms=326
+2026-10-14T08:20:09 INFO  mail-relay/mr-node-24 request done id=req-e16ac9bd route=/mail-relay/v1/cancel status=200 latency_ms=65
+2026-10-14T08:20:12 INFO  mail-relay/mr-node-08 request done id=req-3c885ea2 route=/mail-relay/v1/list status=200 latency_ms=479
+2026-10-14T08:20:14 INFO  mail-relay/mr-node-24 pool resize target=mail-relay-upstream max_pool_size=399 prev=342
+2026-10-14T08:20:20 INFO  mail-relay/mr-node-09 pool resize target=mail-relay-worker max_pool_size=239 prev=183
+2026-10-14T08:20:22 INFO  mail-relay/mr-node-08 pool resize target=mail-relay-cache max_pool_size=132 prev=174
+2026-10-14T08:20:29 NOTE  mail-relay/mr-node-02 operator=dwjung memo="점검 창을 23분 연장함. 승인: 민도현 파트장."
+2026-10-14T08:20:33 INFO  mail-relay/mr-node-17 request done id=req-251760c7 route=/mail-relay/v1/create status=409 latency_ms=31
+2026-10-14T08:20:35 INFO  mail-relay/mr-node-14 request done id=req-0e08489e route=/mail-relay/v1/create status=200 latency_ms=73
+2026-10-14T08:20:37 ERROR mail-relay/mr-node-11 job failed job=mail-relay-export attempt=2 cause=quota_exceeded
+2026-10-14T08:20:44 INFO  mail-relay/mr-node-22 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=78960 checksum=4c3a5fc2
+2026-10-14T08:20:47 INFO  mail-relay/mr-node-11 cache stats region=ap-ne-2a hit_ratio=87.4% evictions=15401
+2026-10-14T08:20:49 INFO  mail-relay/mr-node-03 request done id=req-ef59b690 route=/mail-relay/v1/create status=200 latency_ms=46
+2026-10-14T08:20:54 INFO  mail-relay/mr-node-03 request done id=req-63f7ad9e route=/mail-relay/v1/cancel status=400 latency_ms=88
+2026-10-14T08:20:59 INFO  mail-relay/mr-node-24 ticket linked id=OPS-49115 reason=log_volume_spike
+2026-10-14T08:21:02 WARN  mail-relay/mr-node-20 alert fired rule=p99_latency_high value=73ms threshold=71ms
+2026-10-14T08:21:06 INFO  mail-relay/mr-node-06 ticket linked id=OPS-47576 reason=schema_change
+2026-10-14T08:21:11 INFO  mail-relay/mr-node-11 deploy step release=mail-relay-4.20.1 step=migrate result=ok took_s=51
+2026-10-14T08:21:18 INFO  mail-relay/mr-node-17 request done id=req-2cb1747e route=/mail-relay/v1/list status=404 latency_ms=314
+2026-10-14T08:21:19 INFO  mail-relay/mr-node-05 cache stats region=us-we-2b hit_ratio=77.6% evictions=32592
+2026-10-14T08:21:21 INFO  mail-relay/mr-node-05 request done id=req-9428a37a route=/mail-relay/v1/sync status=200 latency_ms=84
+2026-10-14T08:21:27 INFO  mail-relay/mr-node-24 cache stats region=ap-ne-2c hit_ratio=58.7% evictions=39720
+2026-10-14T08:21:34 INFO  mail-relay/mr-node-06 pool resize target=mail-relay-db max_pool_size=48 prev=6
+2026-10-14T08:21:40 WARN  mail-relay/mr-node-11 alert fired rule=p99_latency_high value=73ms threshold=68ms
+2026-10-14T08:21:41 INFO  mail-relay/mr-node-19 request done id=req-cd618110 route=/mail-relay/v1/status status=404 latency_ms=477
+2026-10-14T08:21:45 INFO  mail-relay/mr-node-22 request done id=req-df973145 route=/mail-relay/v1/get status=429 latency_ms=191
+2026-10-14T08:21:46 INFO  mail-relay/mr-node-08 request done id=req-d177f932 route=/mail-relay/v1/create status=400 latency_ms=89
+2026-10-14T08:21:49 INFO  mail-relay/mr-node-12 request done id=req-a7ea1daf route=/mail-relay/v1/verify status=204 latency_ms=70
+2026-10-14T08:21:51 INFO  mail-relay/mr-node-15 request done id=req-496fe032 route=/mail-relay/v1/cancel status=200 latency_ms=143
+2026-10-14T08:21:57 INFO  mail-relay/mr-node-09 request done id=req-b7aa1443 route=/mail-relay/v1/cancel status=200 latency_ms=155
+2026-10-14T08:21:58 INFO  mail-relay/mr-node-10 deploy step release=mail-relay-4.16.7 step=verify result=ok took_s=174
+2026-10-14T08:22:05 INFO  mail-relay/mr-node-17 request done id=req-4d091604 route=/mail-relay/v1/sync status=200 latency_ms=213
+2026-10-14T08:22:09 INFO  mail-relay/mr-node-16 request done id=req-935d2091 route=/mail-relay/v1/verify status=200 latency_ms=127
+2026-10-14T08:22:14 INFO  mail-relay/mr-node-18 request done id=req-77a2b394 route=/mail-relay/v1/verify status=200 latency_ms=137
+2026-10-14T08:22:16 INFO  mail-relay/mr-node-01 ticket linked id=OPS-48540 reason=runbook_update
+2026-10-14T08:22:18 NOTE  mail-relay/mr-node-19 operator=sykang memo="임시 증설 6대 추가. 내일 오전 회수 예정."
+2026-10-14T08:22:23 INFO  mail-relay/mr-node-08 request done id=req-590cef8f route=/mail-relay/v1/status status=200 latency_ms=218
+2026-10-14T08:22:27 INFO  mail-relay/mr-node-07 pool resize target=mail-relay-cache max_pool_size=257 prev=287
+2026-10-14T08:22:34 INFO  mail-relay/mr-node-16 cache stats region=ap-ne-2a hit_ratio=83.5% evictions=14160
+2026-10-14T08:22:37 INFO  mail-relay/mr-node-14 config applied key=retry.backoff_ms value=false by=ejlim
+2026-10-14T08:22:38 INFO  mail-relay/mr-node-15 deploy step release=mail-relay-4.14.3 step=healthcheck result=ok took_s=237
+2026-10-14T08:22:41 INFO  mail-relay/mr-node-23 request done id=req-4d9cdd5c route=/mail-relay/v1/status status=204 latency_ms=63
+2026-10-14T08:22:46 INFO  mail-relay/mr-node-07 request done id=req-23f4d737 route=/mail-relay/v1/status status=200 latency_ms=54
+2026-10-14T08:22:48 INFO  mail-relay/mr-node-08 config applied key=gc.pause_target_ms value=6432 by=dwjung
+2026-10-14T08:22:53 INFO  mail-relay/mr-node-08 deploy step release=mail-relay-4.11.0 step=warmup result=ok took_s=236
+2026-10-14T08:22:56 INFO  mail-relay/mr-node-20 request done id=req-398f3deb route=/mail-relay/v1/sync status=200 latency_ms=93
+2026-10-14T08:22:57 INFO  mail-relay/mr-node-06 request done id=req-18ac3c59 route=/mail-relay/v1/update status=200 latency_ms=595
+2026-10-14T08:23:02 INFO  mail-relay/mr-node-10 request done id=req-203d894f route=/mail-relay/v1/create status=400 latency_ms=122
+2026-10-14T08:23:04 INFO  mail-relay/mr-node-18 deploy step release=mail-relay-4.12.1 step=warmup result=ok took_s=77
+2026-10-14T08:23:05 INFO  mail-relay/mr-node-01 request done id=req-22e97b04 route=/mail-relay/v1/list status=200 latency_ms=71
+2026-10-14T08:23:11 INFO  mail-relay/mr-node-01 pool resize target=mail-relay-worker max_pool_size=149 prev=149
+2026-10-14T08:23:17 INFO  mail-relay/mr-node-21 config applied key=limiter.rps value=false by=dwjung
+2026-10-14T08:23:18 INFO  mail-relay/mr-node-15 deploy step release=mail-relay-4.13.8 step=drain result=ok took_s=128
+2026-10-14T08:23:20 INFO  mail-relay/mr-node-11 config applied key=gc.pause_target_ms value=false by=yjchoi
+2026-10-14T08:23:21 INFO  mail-relay/mr-node-07 request done id=req-e9d335a8 route=/mail-relay/v1/create status=200 latency_ms=107
+2026-10-14T08:23:27 INFO  mail-relay/mr-node-24 request done id=req-857d8623 route=/mail-relay/v1/cancel status=200 latency_ms=26
+2026-10-14T08:23:34 INFO  mail-relay/mr-node-05 pool resize target=mail-relay-upstream max_pool_size=200 prev=207
+2026-10-14T08:23:38 INFO  mail-relay/mr-node-22 request done id=req-81e1e262 route=/mail-relay/v1/update status=200 latency_ms=131
+2026-10-14T08:23:42 INFO  mail-relay/mr-node-16 pool resize target=mail-relay-cache max_pool_size=340 prev=337
+2026-10-14T08:23:46 NOTE  mail-relay/mr-node-11 operator=hbyoon memo="임시 증설 16대 추가. 내일 오전 회수 예정."
+2026-10-14T08:23:47 ERROR mail-relay/mr-node-15 job failed job=mail-relay-reindex attempt=4 cause=bad_checksum
+2026-10-14T08:23:54 INFO  mail-relay/mr-node-07 config applied key=breaker.half_open_s value=47% by=jhpark
+2026-10-14T08:24:01 NOTE  mail-relay/mr-node-08 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-14T08:24:04 NOTE  mail-relay/mr-node-21 operator=jhpark memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-14T08:24:06 WARN  mail-relay/mr-node-03 alert fired rule=heap_used_high value=56% threshold=52%
+2026-10-14T08:24:08 INFO  mail-relay/mr-node-21 config applied key=shard.count value=false by=hbyoon
+2026-10-14T08:24:10 INFO  mail-relay/mr-node-15 deploy step release=mail-relay-4.11.7 step=pull_image result=ok took_s=232
+2026-10-14T08:24:11 INFO  mail-relay/mr-node-09 request done id=req-913761c3 route=/mail-relay/v1/cancel status=200 latency_ms=383
+2026-10-14T08:24:12 WARN  mail-relay/mr-node-06 alert fired rule=fd_usage_high value=73% threshold=63%
+2026-10-14T08:24:19 INFO  mail-relay/mr-node-02 cache stats region=ap-ne-2c hit_ratio=74.2% evictions=13461
+2026-10-14T08:24:25 INFO  mail-relay/mr-node-04 ticket linked id=OPS-48352 reason=node_drain
+2026-10-14T08:24:26 INFO  mail-relay/mr-node-02 request done id=req-61f87c64 route=/mail-relay/v1/sync status=409 latency_ms=206
+2026-10-14T08:24:31 NOTE  mail-relay/mr-node-04 operator=shkim memo="배치 시작 시각을 14시 33분으로 고정함."
+2026-10-14T08:24:32 INFO  mail-relay/mr-node-13 request done id=req-ce889c09 route=/mail-relay/v1/create status=200 latency_ms=326
+2026-10-14T08:24:35 INFO  mail-relay/mr-node-05 request done id=req-f0a62139 route=/mail-relay/v1/create status=404 latency_ms=377
+2026-10-14T08:24:39 INFO  mail-relay/mr-node-10 request done id=req-b80f3083 route=/mail-relay/v1/create status=409 latency_ms=315
+2026-10-14T08:24:46 INFO  mail-relay/mr-node-17 pool resize target=mail-relay-upstream max_pool_size=259 prev=264
+2026-10-14T08:24:47 INFO  mail-relay/mr-node-03 request done id=req-10f7ab6a route=/mail-relay/v1/get status=200 latency_ms=845
+2026-10-14T08:24:48 INFO  mail-relay/mr-node-04 request done id=req-9affe2fc route=/mail-relay/v1/get status=200 latency_ms=218
+2026-10-14T08:24:51 INFO  mail-relay/mr-node-19 pool resize target=mail-relay-cache max_pool_size=391 prev=396
+2026-10-14T08:24:55 INFO  mail-relay/mr-node-02 config applied key=tls.session_cache value=true by=ejlim
+2026-10-14T08:25:00 WARN  mail-relay/mr-node-14 alert fired rule=fd_usage_high value=76% threshold=65%
+2026-10-14T08:25:06 INFO  mail-relay/mr-node-01 request done id=req-babed06f route=/mail-relay/v1/verify status=200 latency_ms=152
+2026-10-14T08:25:07 INFO  mail-relay/mr-node-14 request done id=req-4cf1186c route=/mail-relay/v1/verify status=200 latency_ms=231
+2026-10-14T08:25:14 INFO  mail-relay/mr-node-07 request done id=req-bdf87c87 route=/mail-relay/v1/sync status=400 latency_ms=242
+2026-10-14T08:25:20 INFO  mail-relay/mr-node-05 backup finished file=/vault/daily/audit_20261018.tar.zst size_mb=13618 checksum=26c63f79
+2026-10-14T08:25:23 INFO  mail-relay/mr-node-15 backup finished file=/vault/weekly/payments_2026w41.tar.zst size_mb=60854 checksum=59b09306
+2026-10-14T08:25:30 INFO  mail-relay/mr-node-02 request done id=req-2c3a28e2 route=/mail-relay/v1/sync status=500 latency_ms=80
+2026-10-14T08:25:34 INFO  mail-relay/mr-node-05 request done id=req-635f902a route=/mail-relay/v1/verify status=200 latency_ms=45
+2026-10-14T08:25:38 INFO  mail-relay/mr-node-04 request done id=req-2bca3ef1 route=/mail-relay/v1/get status=200 latency_ms=30
+2026-10-14T08:25:40 INFO  mail-relay/mr-node-21 request done id=req-dfc1fd0f route=/mail-relay/v1/update status=200 latency_ms=400
+2026-10-14T08:25:47 INFO  mail-relay/mr-node-11 request done id=req-08fad6a2 route=/mail-relay/v1/update status=200 latency_ms=136
+2026-10-14T08:25:49 WARN  mail-relay/mr-node-10 alert fired rule=gc_pause_long value=74ms threshold=59ms
+2026-10-14T08:25:54 NOTE  mail-relay/mr-node-16 operator=ejlim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-14T08:26:01 NOTE  mail-relay/mr-node-22 operator=dwjung memo="타임아웃을 50ms에서 74ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-14T08:26:06 INFO  mail-relay/mr-node-07 request done id=req-b3f7726c route=/mail-relay/v1/verify status=204 latency_ms=549
+2026-10-14T08:26:07 NOTE  mail-relay/mr-node-21 operator=jhpark memo="동시 처리 수를 63에서 39로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-14T08:26:11 INFO  mail-relay/mr-node-23 request done id=req-add0ad77 route=/mail-relay/v1/verify status=200 latency_ms=71
+2026-10-14T08:26:16 INFO  mail-relay/mr-node-23 request done id=req-2661364b route=/mail-relay/v1/verify status=201 latency_ms=45
+2026-10-14T08:26:22 INFO  mail-relay/mr-node-14 request done id=req-b66b1f2b route=/mail-relay/v1/verify status=200 latency_ms=346
+2026-10-14T08:26:24 INFO  mail-relay/mr-node-15 cache stats region=ap-ne-2a hit_ratio=95.8% evictions=34248
+2026-10-14T08:26:25 INFO  mail-relay/mr-node-10 request done id=req-ada1066e route=/mail-relay/v1/status status=200 latency_ms=92
+2026-10-14T08:26:27 ERROR mail-relay/mr-node-11 job failed job=mail-relay-rollup attempt=3 cause=dns_failure
+2026-10-14T08:26:31 NOTE  mail-relay/mr-node-07 operator=hbyoon memo="동시 처리 수를 91에서 52로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-14T08:26:34 INFO  mail-relay/mr-node-04 request done id=req-7391abad route=/mail-relay/v1/create status=200 latency_ms=165
+2026-10-14T08:26:40 INFO  mail-relay/mr-node-20 request done id=req-4355157f route=/mail-relay/v1/sync status=200 latency_ms=177
+2026-10-14T08:26:41 INFO  mail-relay/mr-node-04 request done id=req-66d349e7 route=/mail-relay/v1/status status=200 latency_ms=126
+2026-10-14T08:26:42 INFO  mail-relay/mr-node-21 request done id=req-abc7dd0f route=/mail-relay/v1/update status=200 latency_ms=435
+2026-10-14T08:26:46 INFO  mail-relay/mr-node-03 config applied key=queue.visibility_s value=74% by=dwjung
+2026-10-14T08:26:47 INFO  mail-relay/mr-node-19 request done id=req-f9e55584 route=/mail-relay/v1/verify status=200 latency_ms=45
+2026-10-14T08:26:50 INFO  mail-relay/mr-node-10 config applied key=log.sample_rate value=2 by=shkim
+2026-10-14T08:26:55 INFO  mail-relay/mr-node-22 config applied key=retry.backoff_ms value=true by=yjchoi
+2026-10-14T08:26:58 INFO  mail-relay/mr-node-04 deploy step release=mail-relay-4.11.5 step=pull_image result=ok took_s=86
+2026-10-14T08:26:59 INFO  mail-relay/mr-node-12 pool resize target=mail-relay-worker max_pool_size=27 prev=66
+2026-10-14T08:27:04 INFO  mail-relay/mr-node-19 request done id=req-65f07058 route=/mail-relay/v1/create status=200 latency_ms=68
+2026-10-14T08:27:07 INFO  mail-relay/mr-node-22 config applied key=http.max_conns value=32 by=dwjung
+2026-10-14T08:27:08 INFO  mail-relay/mr-node-20 config applied key=gc.pause_target_ms value=true by=mjlee
+2026-10-14T08:27:15 INFO  mail-relay/mr-node-21 config applied key=queue.visibility_s value=5062 by=ejlim
+2026-10-14T08:27:19 INFO  mail-relay/mr-node-15 config applied key=log.sample_rate value=7742 by=hbyoon
+2026-10-14T08:27:23 INFO  mail-relay/mr-node-02 request done id=req-21479dff route=/mail-relay/v1/sync status=200 latency_ms=91
+2026-10-14T08:27:29 INFO  mail-relay/mr-node-15 request done id=req-3ad1d724 route=/mail-relay/v1/verify status=200 latency_ms=633
+2026-10-14T08:27:35 INFO  mail-relay/mr-node-04 pool resize target=mail-relay-worker max_pool_size=82 prev=63
+2026-10-14T08:27:41 INFO  mail-relay/mr-node-12 request done id=req-d965f5e9 route=/mail-relay/v1/create status=200 latency_ms=54
+2026-10-14T08:27:43 INFO  mail-relay/mr-node-15 request done id=req-a4abb586 route=/mail-relay/v1/status status=200 latency_ms=51
+2026-10-14T08:27:48 INFO  mail-relay/mr-node-04 pool resize target=mail-relay-cache max_pool_size=353 prev=410
+2026-10-14T08:27:53 WARN  mail-relay/mr-node-21 alert fired rule=queue_depth_high value=94 threshold=85
+2026-10-14T08:27:58 INFO  mail-relay/mr-node-24 request done id=req-f75a2f5e route=/mail-relay/v1/get status=200 latency_ms=296
+2026-10-14T08:28:00 INFO  mail-relay/mr-node-03 config applied key=limiter.rps value=40 by=shkim
+2026-10-14T08:28:02 INFO  mail-relay/mr-node-23 pool resize target=mail-relay-db max_pool_size=283 prev=258
+2026-10-14T08:28:03 INFO  mail-relay/mr-node-02 request done id=req-cd822885 route=/mail-relay/v1/update status=204 latency_ms=49
+2026-10-14T08:28:07 INFO  mail-relay/mr-node-17 request done id=req-39ca6174 route=/mail-relay/v1/update status=503 latency_ms=138
+2026-10-14T08:28:11 INFO  mail-relay/mr-node-15 request done id=req-969fcbab route=/mail-relay/v1/verify status=200 latency_ms=175
+2026-10-14T08:28:17 INFO  mail-relay/mr-node-17 deploy step release=mail-relay-4.11.1 step=start result=ok took_s=47
+2026-10-14T08:28:23 INFO  mail-relay/mr-node-11 request done id=req-63267c5a route=/mail-relay/v1/get status=200 latency_ms=33
+2026-10-14T08:28:28 INFO  mail-relay/mr-node-01 request done id=req-da6fd95c route=/mail-relay/v1/sync status=200 latency_ms=303
+2026-10-14T08:28:30 WARN  mail-relay/mr-node-24 alert fired rule=heap_used_high value=97% threshold=94%
+2026-10-14T08:28:33 INFO  mail-relay/mr-node-20 request done id=req-2388aba5 route=/mail-relay/v1/status status=200 latency_ms=38
+2026-10-14T08:28:36 INFO  mail-relay/mr-node-22 deploy step release=mail-relay-4.20.8 step=migrate result=ok took_s=79
+2026-10-14T08:28:43 INFO  mail-relay/mr-node-21 request done id=req-0375bf2d route=/mail-relay/v1/create status=409 latency_ms=66
+2026-10-14T08:28:48 INFO  mail-relay/mr-node-02 request done id=req-d92fc48e route=/mail-relay/v1/verify status=200 latency_ms=117
+2026-10-14T08:28:54 INFO  mail-relay/mr-node-11 request done id=req-22f77ddd route=/mail-relay/v1/cancel status=200 latency_ms=34
+2026-10-14T08:29:01 INFO  mail-relay/mr-node-06 ticket linked id=OPS-48590 reason=runbook_update
+2026-10-14T08:29:08 INFO  mail-relay/mr-node-09 request done id=req-1e6d4a63 route=/mail-relay/v1/cancel status=409 latency_ms=87
+2026-10-14T08:29:15 INFO  mail-relay/mr-node-04 request done id=req-573a1ce9 route=/mail-relay/v1/status status=409 latency_ms=83
+2026-10-14T08:29:22 INFO  mail-relay/mr-node-17 request done id=req-a35a2cf3 route=/mail-relay/v1/verify status=200 latency_ms=119
+2026-10-14T08:29:29 INFO  mail-relay/mr-node-08 pool resize target=mail-relay-cache max_pool_size=220 prev=234
+2026-10-14T08:29:36 INFO  mail-relay/mr-node-22 pool resize target=mail-relay-worker max_pool_size=374 prev=321
+2026-10-14T08:29:40 INFO  mail-relay/mr-node-09 ticket linked id=OPS-48198 reason=oncall_handoff
+2026-10-14T08:29:47 INFO  mail-relay/mr-node-04 cache stats region=ap-se-1a hit_ratio=65.5% evictions=443
+2026-10-14T08:29:53 ERROR mail-relay/mr-node-24 job failed job=mail-relay-rollup attempt=1 cause=dns_failure
+2026-10-14T08:29:54 INFO  mail-relay/mr-node-19 request done id=req-32d8b9c3 route=/mail-relay/v1/get status=200 latency_ms=41
+2026-10-14T08:29:59 INFO  mail-relay/mr-node-07 request done id=req-0cbb6f43 route=/mail-relay/v1/status status=400 latency_ms=222
+2026-10-14T08:30:05 INFO  mail-relay/mr-node-23 config applied key=http.read_timeout_ms value=61 by=jhpark
+2026-10-14T08:30:10 WARN  mail-relay/mr-node-21 alert fired rule=conn_pool_saturated value=77% threshold=76%
+2026-10-14T08:30:15 INFO  mail-relay/mr-node-22 pool resize target=mail-relay-upstream max_pool_size=122 prev=135
+2026-10-14T08:30:16 INFO  mail-relay/mr-node-03 deploy step release=mail-relay-4.20.5 step=verify result=ok took_s=147
+2026-10-14T08:30:20 WARN  mail-relay/mr-node-11 alert fired rule=p99_latency_high value=75ms threshold=67ms
+2026-10-14T08:30:26 INFO  mail-relay/mr-node-02 deploy step release=mail-relay-4.18.2 step=shift_traffic_10 result=ok took_s=136
+2026-10-14T08:30:33 INFO  mail-relay/mr-node-04 request done id=req-a9dcf998 route=/mail-relay/v1/cancel status=500 latency_ms=214
+2026-10-14T08:30:38 INFO  mail-relay/mr-node-09 request done id=req-11d23f24 route=/mail-relay/v1/create status=200 latency_ms=120
+2026-10-14T08:30:44 INFO  mail-relay/mr-node-22 request done id=req-ac3022a4 route=/mail-relay/v1/get status=400 latency_ms=294
+2026-10-14T08:30:51 WARN  mail-relay/mr-node-06 alert fired rule=error_ratio_high value=96% threshold=81%
+2026-10-14T08:30:55 INFO  mail-relay/mr-node-12 cache stats region=us-we-2b hit_ratio=81.8% evictions=35300
+2026-10-14T08:31:02 INFO  mail-relay/mr-node-15 request done id=req-21e58c96 route=/mail-relay/v1/status status=409 latency_ms=199
+2026-10-14T08:31:04 INFO  mail-relay/mr-node-20 request done id=req-f1eb2df8 route=/mail-relay/v1/get status=200 latency_ms=252
+2026-10-14T08:31:11 NOTE  mail-relay/mr-node-23 operator=mjlee memo="mr-node-23 재기동 후 지표 정상 확인."
+2026-10-14T08:31:14 INFO  mail-relay/mr-node-02 request done id=req-8e0da943 route=/mail-relay/v1/get status=200 latency_ms=79
+2026-10-14T08:31:18 INFO  mail-relay/mr-node-04 request done id=req-4bc60614 route=/mail-relay/v1/create status=200 latency_ms=184
+2026-10-14T08:31:21 ERROR mail-relay/mr-node-22 job failed job=mail-relay-export attempt=1 cause=bad_checksum
+2026-10-14T08:31:27 INFO  mail-relay/mr-node-13 config applied key=limiter.rps value=4 by=ejlim
+2026-10-14T08:31:33 INFO  mail-relay/mr-node-18 cache stats region=ap-se-1a hit_ratio=65.4% evictions=2050
+2026-10-14T08:31:39 INFO  mail-relay/mr-node-24 pool resize target=mail-relay-cache max_pool_size=177 prev=118
+2026-10-14T08:31:40 INFO  mail-relay/mr-node-15 request done id=req-b7a34046 route=/mail-relay/v1/get status=409 latency_ms=167
+2026-10-14T08:31:41 INFO  mail-relay/mr-node-19 request done id=req-233e81c9 route=/mail-relay/v1/update status=503 latency_ms=106
+2026-10-14T08:31:44 INFO  mail-relay/mr-node-23 config applied key=dns.ttl_s value=7544 by=hbyoon
+2026-10-14T08:31:51 INFO  mail-relay/mr-node-22 deploy step release=mail-relay-4.10.8 step=shift_traffic_50 result=ok took_s=156
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

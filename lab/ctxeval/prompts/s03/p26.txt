@@ -1,0 +1,424 @@
+참고용 로그 26: 위치 조회(geo-lookup) 캐시 워밍 구간. '확인'이라고만 답해 줘.
+
+2026-10-30T02:41:45 INFO  geo-lookup/gl-node-14 backup finished file=/vault/weekly/users_2026w36.tar.zst size_mb=6837 checksum=fb77ae56
+2026-10-30T02:41:47 WARN  geo-lookup/gl-node-05 alert fired rule=fd_usage_high value=77% threshold=67%
+2026-10-30T02:41:50 WARN  geo-lookup/gl-node-13 alert fired rule=gc_pause_long value=60ms threshold=46ms
+2026-10-30T02:41:53 WARN  geo-lookup/gl-node-07 alert fired rule=gc_pause_long value=50ms threshold=41ms
+2026-10-30T02:41:56 ERROR geo-lookup/gl-node-16 job failed job=geo-lookup-rollup attempt=3 cause=lock_wait_exceeded
+2026-10-30T02:41:58 INFO  geo-lookup/gl-node-20 deploy step release=geo-lookup-4.16.4 step=shift_traffic_10 result=ok took_s=208
+2026-10-30T02:42:03 INFO  geo-lookup/gl-node-01 backup finished file=/vault/daily/sessions_20261007.tar.zst size_mb=35092 checksum=672ee38e
+2026-10-30T02:42:10 INFO  geo-lookup/gl-node-14 request done id=req-af584785 route=/geo-lookup/v1/update status=200 latency_ms=28
+2026-10-30T02:42:13 INFO  geo-lookup/gl-node-13 config applied key=canary.traffic_percent value=true by=dwjung
+2026-10-30T02:42:18 INFO  geo-lookup/gl-node-10 request done id=req-e1968f62 route=/geo-lookup/v1/create status=200 latency_ms=71
+2026-10-30T02:42:20 INFO  geo-lookup/gl-node-20 request done id=req-2a4f4e79 route=/geo-lookup/v1/get status=200 latency_ms=380
+2026-10-30T02:42:21 INFO  geo-lookup/gl-node-17 config applied key=log.sample_rate value=6334 by=dwjung
+2026-10-30T02:42:28 INFO  geo-lookup/gl-node-04 request done id=req-80abe70f route=/geo-lookup/v1/cancel status=200 latency_ms=65
+2026-10-30T02:42:33 INFO  geo-lookup/gl-node-21 request done id=req-e645f450 route=/geo-lookup/v1/create status=200 latency_ms=24
+2026-10-30T02:42:40 INFO  geo-lookup/gl-node-23 request done id=req-fb7dba50 route=/geo-lookup/v1/list status=200 latency_ms=206
+2026-10-30T02:42:47 INFO  geo-lookup/gl-node-08 request done id=req-b0767f14 route=/geo-lookup/v1/status status=200 latency_ms=160
+2026-10-30T02:42:48 NOTE  geo-lookup/gl-node-24 operator=dwjung memo="임시 증설 6대 추가. 내일 오전 회수 예정."
+2026-10-30T02:42:53 INFO  geo-lookup/gl-node-14 request done id=req-677d5909 route=/geo-lookup/v1/cancel status=200 latency_ms=66
+2026-10-30T02:42:54 INFO  geo-lookup/gl-node-12 request done id=req-442f0356 route=/geo-lookup/v1/list status=200 latency_ms=169
+2026-10-30T02:42:57 WARN  geo-lookup/gl-node-23 alert fired rule=cpu_steal_high value=53% threshold=47%
+2026-10-30T02:43:03 INFO  geo-lookup/gl-node-06 request done id=req-422f24c5 route=/geo-lookup/v1/create status=200 latency_ms=48
+2026-10-30T02:43:08 INFO  geo-lookup/gl-node-05 deploy step release=geo-lookup-4.20.1 step=drain result=ok took_s=197
+2026-10-30T02:43:13 INFO  geo-lookup/gl-node-11 request done id=req-2480e2a7 route=/geo-lookup/v1/create status=500 latency_ms=99
+2026-10-30T02:43:14 INFO  geo-lookup/gl-node-23 pool resize target=geo-lookup-queue max_pool_size=11 prev=4
+2026-10-30T02:43:18 INFO  geo-lookup/gl-node-16 pool resize target=geo-lookup-worker max_pool_size=393 prev=372
+2026-10-30T02:43:19 INFO  geo-lookup/gl-node-23 request done id=req-6ad52917 route=/geo-lookup/v1/update status=200 latency_ms=419
+2026-10-30T02:43:20 ERROR geo-lookup/gl-node-11 job failed job=geo-lookup-export attempt=4 cause=bad_checksum
+2026-10-30T02:43:26 INFO  geo-lookup/gl-node-19 request done id=req-327000cf route=/geo-lookup/v1/status status=200 latency_ms=179
+2026-10-30T02:43:31 INFO  geo-lookup/gl-node-09 request done id=req-c2a285c9 route=/geo-lookup/v1/cancel status=200 latency_ms=302
+2026-10-30T02:43:33 INFO  geo-lookup/gl-node-21 request done id=req-7c1b8715 route=/geo-lookup/v1/list status=200 latency_ms=129
+2026-10-30T02:43:36 WARN  geo-lookup/gl-node-11 alert fired rule=cpu_steal_high value=87% threshold=86%
+2026-10-30T02:43:37 INFO  geo-lookup/gl-node-20 request done id=req-27cf03aa route=/geo-lookup/v1/list status=400 latency_ms=132
+2026-10-30T02:43:44 INFO  geo-lookup/gl-node-10 request done id=req-5dde9554 route=/geo-lookup/v1/verify status=404 latency_ms=332
+2026-10-30T02:43:45 INFO  geo-lookup/gl-node-06 request done id=req-3e6f8a1d route=/geo-lookup/v1/list status=200 latency_ms=22
+2026-10-30T02:43:50 INFO  geo-lookup/gl-node-21 request done id=req-68515e1c route=/geo-lookup/v1/get status=500 latency_ms=246
+2026-10-30T02:43:53 INFO  geo-lookup/gl-node-21 config applied key=breaker.half_open_s value=32 by=ejlim
+2026-10-30T02:44:00 INFO  geo-lookup/gl-node-09 request done id=req-9bc11e8a route=/geo-lookup/v1/create status=201 latency_ms=142
+2026-10-30T02:44:06 INFO  geo-lookup/gl-node-15 pool resize target=geo-lookup-cache max_pool_size=87 prev=145
+2026-10-30T02:44:13 INFO  geo-lookup/gl-node-10 ticket linked id=OPS-47907 reason=node_drain
+2026-10-30T02:44:16 INFO  geo-lookup/gl-node-14 request done id=req-4b3ceb1d route=/geo-lookup/v1/cancel status=503 latency_ms=71
+2026-10-30T02:44:17 INFO  geo-lookup/gl-node-22 request done id=req-31757dbf route=/geo-lookup/v1/cancel status=400 latency_ms=38
+2026-10-30T02:44:19 INFO  geo-lookup/gl-node-04 deploy step release=geo-lookup-4.10.6 step=shift_traffic_10 result=ok took_s=87
+2026-10-30T02:44:25 INFO  geo-lookup/gl-node-07 request done id=req-95576026 route=/geo-lookup/v1/status status=200 latency_ms=83
+2026-10-30T02:44:27 INFO  geo-lookup/gl-node-09 ticket linked id=OPS-48446 reason=runbook_update
+2026-10-30T02:44:32 INFO  geo-lookup/gl-node-08 config applied key=limiter.burst value=false by=ejlim
+2026-10-30T02:44:37 INFO  geo-lookup/gl-node-08 deploy step release=geo-lookup-4.16.5 step=healthcheck result=ok took_s=4
+2026-10-30T02:44:40 INFO  geo-lookup/gl-node-07 request done id=req-90155a70 route=/geo-lookup/v1/sync status=200 latency_ms=834
+2026-10-30T02:44:46 INFO  geo-lookup/gl-node-01 pool resize target=geo-lookup-cache max_pool_size=20 prev=4
+2026-10-30T02:44:48 INFO  geo-lookup/gl-node-18 request done id=req-919ffa77 route=/geo-lookup/v1/update status=200 latency_ms=178
+2026-10-30T02:44:51 INFO  geo-lookup/gl-node-18 cache stats region=ap-se-1a hit_ratio=58.8% evictions=12401
+2026-10-30T02:44:58 INFO  geo-lookup/gl-node-22 request done id=req-3a0a12b6 route=/geo-lookup/v1/sync status=200 latency_ms=25
+2026-10-30T02:45:01 INFO  geo-lookup/gl-node-12 config applied key=canary.latency_p99_threshold_ms value=91% by=mjlee
+2026-10-30T02:45:03 INFO  geo-lookup/gl-node-11 request done id=req-9d26ce82 route=/geo-lookup/v1/update status=200 latency_ms=69
+2026-10-30T02:45:05 INFO  geo-lookup/gl-node-06 ticket linked id=OPS-49681 reason=flaky_healthcheck
+2026-10-30T02:45:11 NOTE  geo-lookup/gl-node-04 operator=yjchoi memo="캐시 TTL을 51초로 되돌림. 오래된 응답이 보고됨."
+2026-10-30T02:45:14 INFO  geo-lookup/gl-node-06 ticket linked id=OPS-49358 reason=oncall_handoff
+2026-10-30T02:45:17 INFO  geo-lookup/gl-node-07 deploy step release=geo-lookup-4.20.6 step=migrate result=ok took_s=91
+2026-10-30T02:45:19 WARN  geo-lookup/gl-node-12 alert fired rule=fd_usage_high value=52% threshold=46%
+2026-10-30T02:45:26 NOTE  geo-lookup/gl-node-05 operator=hbyoon memo="인증서 갱신 일정 확인. 만료까지 26일 남음."
+2026-10-30T02:45:31 NOTE  geo-lookup/gl-node-17 operator=mjlee memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-30T02:45:33 INFO  geo-lookup/gl-node-01 config applied key=canary.latency_p99_threshold_ms value=true by=hbyoon
+2026-10-30T02:45:39 INFO  geo-lookup/gl-node-23 request done id=req-b5036abc route=/geo-lookup/v1/update status=503 latency_ms=329
+2026-10-30T02:45:44 INFO  geo-lookup/gl-node-15 request done id=req-5cabff8b route=/geo-lookup/v1/verify status=500 latency_ms=315
+2026-10-30T02:45:49 INFO  geo-lookup/gl-node-07 request done id=req-6529de26 route=/geo-lookup/v1/cancel status=200 latency_ms=376
+2026-10-30T02:45:52 INFO  geo-lookup/gl-node-22 cache stats region=ap-ne-2c hit_ratio=75.8% evictions=16849
+2026-10-30T02:45:58 ERROR geo-lookup/gl-node-07 job failed job=geo-lookup-rollup attempt=2 cause=lock_wait_exceeded
+2026-10-30T02:46:03 INFO  geo-lookup/gl-node-19 deploy step release=geo-lookup-4.19.5 step=migrate result=ok took_s=201
+2026-10-30T02:46:10 INFO  geo-lookup/gl-node-11 deploy step release=geo-lookup-4.11.4 step=shift_traffic_50 result=ok took_s=104
+2026-10-30T02:46:15 INFO  geo-lookup/gl-node-17 request done id=req-842e253e route=/geo-lookup/v1/list status=200 latency_ms=129
+2026-10-30T02:46:18 WARN  geo-lookup/gl-node-07 alert fired rule=cpu_steal_high value=70% threshold=61%
+2026-10-30T02:46:25 INFO  geo-lookup/gl-node-20 request done id=req-c9ed1b3a route=/geo-lookup/v1/sync status=200 latency_ms=289
+2026-10-30T02:46:31 INFO  geo-lookup/gl-node-18 ticket linked id=OPS-47689 reason=dns_ttl_change
+2026-10-30T02:46:33 INFO  geo-lookup/gl-node-04 request done id=req-86b0a3c9 route=/geo-lookup/v1/cancel status=500 latency_ms=389
+2026-10-30T02:46:36 WARN  geo-lookup/gl-node-14 alert fired rule=conn_pool_saturated value=89% threshold=86%
+2026-10-30T02:46:43 INFO  geo-lookup/gl-node-05 request done id=req-3e4f2949 route=/geo-lookup/v1/get status=200 latency_ms=216
+2026-10-30T02:46:46 INFO  geo-lookup/gl-node-16 cache stats region=ap-ne-2a hit_ratio=56.0% evictions=26598
+2026-10-30T02:46:50 INFO  geo-lookup/gl-node-06 request done id=req-4a20f7bc route=/geo-lookup/v1/update status=200 latency_ms=590
+2026-10-30T02:46:55 NOTE  geo-lookup/gl-node-10 operator=hbyoon memo="점검 창을 48분 연장함. 승인: 한지우 리드."
+2026-10-30T02:47:00 NOTE  geo-lookup/gl-node-15 operator=mjlee memo="점검 창을 27분 연장함. 승인: 한지우 리드."
+2026-10-30T02:47:01 INFO  geo-lookup/gl-node-22 ticket linked id=OPS-49571 reason=node_drain
+2026-10-30T02:47:04 INFO  geo-lookup/gl-node-23 request done id=req-8a8cf5fc route=/geo-lookup/v1/status status=409 latency_ms=127
+2026-10-30T02:47:10 NOTE  geo-lookup/gl-node-10 operator=mjlee memo="로그 보존 기간은 3일로 유지하기로 함."
+2026-10-30T02:47:16 INFO  geo-lookup/gl-node-21 request done id=req-3d55e393 route=/geo-lookup/v1/update status=500 latency_ms=296
+2026-10-30T02:47:17 INFO  geo-lookup/gl-node-16 request done id=req-9ade4d94 route=/geo-lookup/v1/cancel status=200 latency_ms=187
+2026-10-30T02:47:19 WARN  geo-lookup/gl-node-22 alert fired rule=fd_usage_high value=84% threshold=81%
+2026-10-30T02:47:21 INFO  geo-lookup/gl-node-10 cache stats region=ap-ne-2a hit_ratio=93.3% evictions=38579
+2026-10-30T02:47:27 NOTE  geo-lookup/gl-node-21 operator=ejlim memo="로그 보존 기간은 35일로 유지하기로 함."
+2026-10-30T02:47:29 INFO  geo-lookup/gl-node-22 config applied key=queue.visibility_s value=37% by=dwjung
+2026-10-30T02:47:34 WARN  geo-lookup/gl-node-22 alert fired rule=queue_depth_high value=53 threshold=40
+2026-10-30T02:47:36 INFO  geo-lookup/gl-node-10 request done id=req-553e4d2c route=/geo-lookup/v1/verify status=200 latency_ms=65
+2026-10-30T02:47:43 INFO  geo-lookup/gl-node-15 request done id=req-c566e7e7 route=/geo-lookup/v1/status status=204 latency_ms=192
+2026-10-30T02:47:45 INFO  geo-lookup/gl-node-23 ticket linked id=OPS-47387 reason=quota_increase
+2026-10-30T02:47:48 INFO  geo-lookup/gl-node-14 request done id=req-fdd45c4a route=/geo-lookup/v1/cancel status=400 latency_ms=155
+2026-10-30T02:47:52 INFO  geo-lookup/gl-node-01 request done id=req-25b59a44 route=/geo-lookup/v1/create status=200 latency_ms=238
+2026-10-30T02:47:54 INFO  geo-lookup/gl-node-19 config applied key=retry.backoff_ms value=5930 by=yjchoi
+2026-10-30T02:47:59 INFO  geo-lookup/gl-node-02 cache stats region=us-we-2b hit_ratio=98.0% evictions=10416
+2026-10-30T02:48:00 INFO  geo-lookup/gl-node-01 pool resize target=geo-lookup-queue max_pool_size=26 prev=4
+2026-10-30T02:48:03 WARN  geo-lookup/gl-node-17 alert fired rule=cpu_steal_high value=53% threshold=42%
+2026-10-30T02:48:05 INFO  geo-lookup/gl-node-23 deploy step release=geo-lookup-4.20.4 step=migrate result=ok took_s=46
+2026-10-30T02:48:10 NOTE  geo-lookup/gl-node-04 operator=sykang memo="임시 증설 24대 추가. 내일 오전 회수 예정."
+2026-10-30T02:48:17 INFO  geo-lookup/gl-node-05 request done id=req-e4583b08 route=/geo-lookup/v1/status status=204 latency_ms=214
+2026-10-30T02:48:19 WARN  geo-lookup/gl-node-22 alert fired rule=error_ratio_high value=66% threshold=55%
+2026-10-30T02:48:20 INFO  geo-lookup/gl-node-11 request done id=req-8e81fe0f route=/geo-lookup/v1/create status=429 latency_ms=181
+2026-10-30T02:48:22 ERROR geo-lookup/gl-node-17 job failed job=geo-lookup-reindex attempt=2 cause=lock_wait_exceeded
+2026-10-30T02:48:29 INFO  geo-lookup/gl-node-12 request done id=req-f368193f route=/geo-lookup/v1/verify status=503 latency_ms=173
+2026-10-30T02:48:35 INFO  geo-lookup/gl-node-04 ticket linked id=OPS-47813 reason=quota_increase
+2026-10-30T02:48:39 INFO  geo-lookup/gl-node-10 request done id=req-c0fb142f route=/geo-lookup/v1/sync status=400 latency_ms=447
+2026-10-30T02:48:44 INFO  geo-lookup/gl-node-01 config applied key=limiter.rps value=25% by=sykang
+2026-10-30T02:48:50 INFO  geo-lookup/gl-node-19 cache stats region=ap-ne-2c hit_ratio=77.4% evictions=37987
+2026-10-30T02:48:51 INFO  geo-lookup/gl-node-14 pool resize target=geo-lookup-db max_pool_size=317 prev=316
+2026-10-30T02:48:56 NOTE  geo-lookup/gl-node-22 operator=hbyoon memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-30T02:49:02 INFO  geo-lookup/gl-node-03 request done id=req-9787c5c8 route=/geo-lookup/v1/update status=200 latency_ms=42
+2026-10-30T02:49:08 INFO  geo-lookup/gl-node-02 request done id=req-cdbd0397 route=/geo-lookup/v1/list status=200 latency_ms=62
+2026-10-30T02:49:13 INFO  geo-lookup/gl-node-09 ticket linked id=OPS-48002 reason=oncall_handoff
+2026-10-30T02:49:17 INFO  geo-lookup/gl-node-08 pool resize target=geo-lookup-db max_pool_size=331 prev=357
+2026-10-30T02:49:19 INFO  geo-lookup/gl-node-17 request done id=req-8b23b285 route=/geo-lookup/v1/cancel status=200 latency_ms=17
+2026-10-30T02:49:26 WARN  geo-lookup/gl-node-02 alert fired rule=heap_used_high value=75% threshold=70%
+2026-10-30T02:49:32 INFO  geo-lookup/gl-node-02 request done id=req-033a4d08 route=/geo-lookup/v1/create status=409 latency_ms=122
+2026-10-30T02:49:36 INFO  geo-lookup/gl-node-18 request done id=req-d9088cd9 route=/geo-lookup/v1/list status=500 latency_ms=259
+2026-10-30T02:49:38 INFO  geo-lookup/gl-node-14 ticket linked id=OPS-47438 reason=dependency_upgrade
+2026-10-30T02:49:45 INFO  geo-lookup/gl-node-07 request done id=req-b4a1387d route=/geo-lookup/v1/cancel status=200 latency_ms=77
+2026-10-30T02:49:50 INFO  geo-lookup/gl-node-18 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=17622 checksum=921c7640
+2026-10-30T02:49:51 INFO  geo-lookup/gl-node-19 request done id=req-db3e5d40 route=/geo-lookup/v1/cancel status=200 latency_ms=23
+2026-10-30T02:49:54 INFO  geo-lookup/gl-node-06 request done id=req-8a45ff32 route=/geo-lookup/v1/sync status=503 latency_ms=124
+2026-10-30T02:49:55 INFO  geo-lookup/gl-node-18 deploy step release=geo-lookup-4.16.3 step=start result=ok took_s=201
+2026-10-30T02:50:00 INFO  geo-lookup/gl-node-22 request done id=req-e4e2de9b route=/geo-lookup/v1/cancel status=204 latency_ms=233
+2026-10-30T02:50:02 INFO  geo-lookup/gl-node-20 pool resize target=geo-lookup-db max_pool_size=301 prev=356
+2026-10-30T02:50:09 INFO  geo-lookup/gl-node-20 request done id=req-2979351f route=/geo-lookup/v1/sync status=200 latency_ms=44
+2026-10-30T02:50:11 INFO  geo-lookup/gl-node-20 request done id=req-c35c9a93 route=/geo-lookup/v1/update status=429 latency_ms=589
+2026-10-30T02:50:12 INFO  geo-lookup/gl-node-19 deploy step release=geo-lookup-4.11.5 step=pull_image result=ok took_s=15
+2026-10-30T02:50:15 INFO  geo-lookup/gl-node-09 deploy step release=geo-lookup-4.17.7 step=start result=ok took_s=153
+2026-10-30T02:50:20 INFO  geo-lookup/gl-node-05 ticket linked id=OPS-47372 reason=schema_change
+2026-10-30T02:50:24 INFO  geo-lookup/gl-node-02 request done id=req-4fb311e7 route=/geo-lookup/v1/verify status=200 latency_ms=120
+2026-10-30T02:50:31 NOTE  geo-lookup/gl-node-15 operator=hbyoon memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-30T02:50:37 ERROR geo-lookup/gl-node-21 job failed job=geo-lookup-reindex attempt=3 cause=dns_failure
+2026-10-30T02:50:41 INFO  geo-lookup/gl-node-10 request done id=req-ff70a8be route=/geo-lookup/v1/status status=200 latency_ms=57
+2026-10-30T02:50:44 INFO  geo-lookup/gl-node-06 backup finished file=/vault/weekly/sessions_2026w30.tar.zst size_mb=53456 checksum=a1f86080
+2026-10-30T02:50:47 WARN  geo-lookup/gl-node-21 alert fired rule=p99_latency_high value=60ms threshold=48ms
+2026-10-30T02:50:50 INFO  geo-lookup/gl-node-23 config applied key=flush.interval_ms value=false by=jhpark
+2026-10-30T02:50:51 INFO  geo-lookup/gl-node-13 request done id=req-070c7c60 route=/geo-lookup/v1/sync status=200 latency_ms=45
+2026-10-30T02:50:54 INFO  geo-lookup/gl-node-17 request done id=req-07486d92 route=/geo-lookup/v1/cancel status=200 latency_ms=8
+2026-10-30T02:50:59 INFO  geo-lookup/gl-node-04 request done id=req-9ed7a353 route=/geo-lookup/v1/update status=200 latency_ms=143
+2026-10-30T02:51:04 INFO  geo-lookup/gl-node-21 request done id=req-e5093680 route=/geo-lookup/v1/cancel status=200 latency_ms=66
+2026-10-30T02:51:05 INFO  geo-lookup/gl-node-13 config applied key=retry.max_attempts value=true by=jhpark
+2026-10-30T02:51:10 INFO  geo-lookup/gl-node-22 request done id=req-8f5c502b route=/geo-lookup/v1/list status=200 latency_ms=130
+2026-10-30T02:51:14 NOTE  geo-lookup/gl-node-23 operator=dwjung memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-30T02:51:18 INFO  geo-lookup/gl-node-21 request done id=req-20cd789f route=/geo-lookup/v1/list status=200 latency_ms=134
+2026-10-30T02:51:25 INFO  geo-lookup/gl-node-21 pool resize target=geo-lookup-worker max_pool_size=63 prev=79
+2026-10-30T02:51:29 INFO  geo-lookup/gl-node-05 request done id=req-a18d7ff7 route=/geo-lookup/v1/get status=404 latency_ms=227
+2026-10-30T02:51:35 INFO  geo-lookup/gl-node-13 ticket linked id=OPS-48060 reason=dependency_upgrade
+2026-10-30T02:51:41 INFO  geo-lookup/gl-node-08 deploy step release=geo-lookup-4.16.6 step=shift_traffic_100 result=ok took_s=212
+2026-10-30T02:51:45 INFO  geo-lookup/gl-node-12 request done id=req-40047d29 route=/geo-lookup/v1/cancel status=409 latency_ms=443
+2026-10-30T02:51:52 WARN  geo-lookup/gl-node-05 alert fired rule=disk_usage_warning value=95% threshold=80%
+2026-10-30T02:51:56 INFO  geo-lookup/gl-node-15 pool resize target=geo-lookup-queue max_pool_size=299 prev=333
+2026-10-30T02:52:00 INFO  geo-lookup/gl-node-21 request done id=req-28876e7e route=/geo-lookup/v1/cancel status=204 latency_ms=58
+2026-10-30T02:52:05 INFO  geo-lookup/gl-node-16 pool resize target=geo-lookup-db max_pool_size=51 prev=58
+2026-10-30T02:52:11 INFO  geo-lookup/gl-node-04 request done id=req-d400eda3 route=/geo-lookup/v1/verify status=201 latency_ms=20
+2026-10-30T02:52:17 INFO  geo-lookup/gl-node-20 backup finished file=/vault/weekly/orders_2026w34.tar.zst size_mb=4634 checksum=91de16bf
+2026-10-30T02:52:21 INFO  geo-lookup/gl-node-03 config applied key=flush.interval_ms value=3557 by=ejlim
+2026-10-30T02:52:28 INFO  geo-lookup/gl-node-09 deploy step release=geo-lookup-4.19.6 step=shift_traffic_50 result=ok took_s=84
+2026-10-30T02:52:30 INFO  geo-lookup/gl-node-20 deploy step release=geo-lookup-4.14.0 step=migrate result=ok took_s=25
+2026-10-30T02:52:36 NOTE  geo-lookup/gl-node-23 operator=ejlim memo="로그 보존 기간은 12일로 유지하기로 함."
+2026-10-30T02:52:42 INFO  geo-lookup/gl-node-05 config applied key=http.read_timeout_ms value=false by=dwjung
+2026-10-30T02:52:43 INFO  geo-lookup/gl-node-19 request done id=req-933821be route=/geo-lookup/v1/update status=200 latency_ms=770
+2026-10-30T02:52:47 INFO  geo-lookup/gl-node-05 config applied key=shard.count value=2307 by=ejlim
+2026-10-30T02:52:49 INFO  geo-lookup/gl-node-02 request done id=req-ac32779d route=/geo-lookup/v1/sync status=200 latency_ms=34
+2026-10-30T02:52:54 INFO  geo-lookup/gl-node-13 request done id=req-4e9e836a route=/geo-lookup/v1/sync status=200 latency_ms=93
+2026-10-30T02:52:58 INFO  geo-lookup/gl-node-02 request done id=req-033684fd route=/geo-lookup/v1/sync status=200 latency_ms=59
+2026-10-30T02:53:00 INFO  geo-lookup/gl-node-14 config applied key=tls.session_cache value=20 by=hbyoon
+2026-10-30T02:53:01 INFO  geo-lookup/gl-node-04 pool resize target=geo-lookup-upstream max_pool_size=393 prev=337
+2026-10-30T02:53:06 INFO  geo-lookup/gl-node-15 request done id=req-571d33a8 route=/geo-lookup/v1/verify status=500 latency_ms=230
+2026-10-30T02:53:13 INFO  geo-lookup/gl-node-20 request done id=req-fca67b95 route=/geo-lookup/v1/get status=200 latency_ms=71
+2026-10-30T02:53:18 ERROR geo-lookup/gl-node-03 job failed job=geo-lookup-cleanup attempt=4 cause=quota_exceeded
+2026-10-30T02:53:23 INFO  geo-lookup/gl-node-17 request done id=req-d953046a route=/geo-lookup/v1/create status=200 latency_ms=54
+2026-10-30T02:53:25 INFO  geo-lookup/gl-node-13 request done id=req-3c50c720 route=/geo-lookup/v1/list status=400 latency_ms=165
+2026-10-30T02:53:26 WARN  geo-lookup/gl-node-19 alert fired rule=heap_used_high value=58% threshold=44%
+2026-10-30T02:53:30 WARN  geo-lookup/gl-node-06 alert fired rule=queue_depth_high value=58 threshold=45
+2026-10-30T02:53:37 INFO  geo-lookup/gl-node-08 pool resize target=geo-lookup-db max_pool_size=199 prev=249
+2026-10-30T02:53:43 INFO  geo-lookup/gl-node-14 request done id=req-43548367 route=/geo-lookup/v1/create status=201 latency_ms=62
+2026-10-30T02:53:44 INFO  geo-lookup/gl-node-24 pool resize target=geo-lookup-cache max_pool_size=278 prev=243
+2026-10-30T02:53:48 INFO  geo-lookup/gl-node-06 request done id=req-04096196 route=/geo-lookup/v1/update status=200 latency_ms=86
+2026-10-30T02:53:49 INFO  geo-lookup/gl-node-19 deploy step release=geo-lookup-4.18.7 step=shift_traffic_50 result=ok took_s=88
+2026-10-30T02:53:50 INFO  geo-lookup/gl-node-04 request done id=req-30095650 route=/geo-lookup/v1/get status=200 latency_ms=62
+2026-10-30T02:53:57 ERROR geo-lookup/gl-node-03 job failed job=geo-lookup-reindex attempt=2 cause=oom_killed
+2026-10-30T02:54:00 INFO  geo-lookup/gl-node-14 request done id=req-23de9c8b route=/geo-lookup/v1/list status=400 latency_ms=17
+2026-10-30T02:54:07 INFO  geo-lookup/gl-node-05 config applied key=tls.session_cache value=52% by=ejlim
+2026-10-30T02:54:14 INFO  geo-lookup/gl-node-24 ticket linked id=OPS-47944 reason=log_volume_spike
+2026-10-30T02:54:18 WARN  geo-lookup/gl-node-23 alert fired rule=replica_lag_high value=87s threshold=79s
+2026-10-30T02:54:22 INFO  geo-lookup/gl-node-14 ticket linked id=OPS-47306 reason=log_volume_spike
+2026-10-30T02:54:26 INFO  geo-lookup/gl-node-19 request done id=req-6012b3ce route=/geo-lookup/v1/verify status=400 latency_ms=143
+2026-10-30T02:54:27 INFO  geo-lookup/gl-node-11 request done id=req-8cc02f05 route=/geo-lookup/v1/create status=200 latency_ms=92
+2026-10-30T02:54:29 ERROR geo-lookup/gl-node-11 job failed job=geo-lookup-rollup attempt=3 cause=bad_checksum
+2026-10-30T02:54:30 INFO  geo-lookup/gl-node-15 pool resize target=geo-lookup-upstream max_pool_size=74 prev=65
+2026-10-30T02:54:32 WARN  geo-lookup/gl-node-05 alert fired rule=heap_used_high value=56% threshold=44%
+2026-10-30T02:54:38 INFO  geo-lookup/gl-node-18 request done id=req-c18948ef route=/geo-lookup/v1/status status=503 latency_ms=74
+2026-10-30T02:54:39 INFO  geo-lookup/gl-node-17 request done id=req-e10487ac route=/geo-lookup/v1/verify status=200 latency_ms=70
+2026-10-30T02:54:46 INFO  geo-lookup/gl-node-12 request done id=req-6ad08598 route=/geo-lookup/v1/verify status=404 latency_ms=330
+2026-10-30T02:54:48 INFO  geo-lookup/gl-node-15 deploy step release=geo-lookup-4.17.5 step=start result=ok took_s=221
+2026-10-30T02:54:51 INFO  geo-lookup/gl-node-01 request done id=req-74d1a952 route=/geo-lookup/v1/update status=200 latency_ms=124
+2026-10-30T02:54:53 WARN  geo-lookup/gl-node-19 alert fired rule=fd_usage_high value=71% threshold=69%
+2026-10-30T02:55:00 INFO  geo-lookup/gl-node-05 deploy step release=geo-lookup-4.22.5 step=shift_traffic_50 result=ok took_s=225
+2026-10-30T02:55:05 INFO  geo-lookup/gl-node-13 request done id=req-11e9eba9 route=/geo-lookup/v1/update status=200 latency_ms=47
+2026-10-30T02:55:11 INFO  geo-lookup/gl-node-04 pool resize target=geo-lookup-worker max_pool_size=225 prev=189
+2026-10-30T02:55:13 INFO  geo-lookup/gl-node-17 deploy step release=geo-lookup-4.16.9 step=shift_traffic_50 result=ok took_s=182
+2026-10-30T02:55:17 INFO  geo-lookup/gl-node-05 config applied key=limiter.burst value=false by=dwjung
+2026-10-30T02:55:20 INFO  geo-lookup/gl-node-05 request done id=req-22e66497 route=/geo-lookup/v1/status status=200 latency_ms=319
+2026-10-30T02:55:25 INFO  geo-lookup/gl-node-05 request done id=req-89442c7f route=/geo-lookup/v1/sync status=200 latency_ms=666
+2026-10-30T02:55:28 WARN  geo-lookup/gl-node-05 alert fired rule=gc_pause_long value=97ms threshold=95ms
+2026-10-30T02:55:35 INFO  geo-lookup/gl-node-13 request done id=req-e8f9cd4a route=/geo-lookup/v1/status status=204 latency_ms=40
+2026-10-30T02:55:36 INFO  geo-lookup/gl-node-24 backup finished file=/vault/weekly/orders_2026w38.tar.zst size_mb=21897 checksum=74c8350e
+2026-10-30T02:55:43 INFO  geo-lookup/gl-node-23 request done id=req-e31988e9 route=/geo-lookup/v1/sync status=404 latency_ms=92
+2026-10-30T02:55:47 INFO  geo-lookup/gl-node-21 request done id=req-92a3e546 route=/geo-lookup/v1/verify status=200 latency_ms=61
+2026-10-30T02:55:52 INFO  geo-lookup/gl-node-07 request done id=req-c54a5c3f route=/geo-lookup/v1/cancel status=400 latency_ms=122
+2026-10-30T02:55:55 INFO  geo-lookup/gl-node-19 request done id=req-150d019a route=/geo-lookup/v1/status status=200 latency_ms=21
+2026-10-30T02:55:59 INFO  geo-lookup/gl-node-01 deploy step release=geo-lookup-4.12.9 step=verify result=ok took_s=5
+2026-10-30T02:56:03 INFO  geo-lookup/gl-node-16 request done id=req-0249798c route=/geo-lookup/v1/get status=200 latency_ms=36
+2026-10-30T02:56:06 INFO  geo-lookup/gl-node-11 request done id=req-5ba9cc5b route=/geo-lookup/v1/status status=204 latency_ms=533
+2026-10-30T02:56:11 INFO  geo-lookup/gl-node-08 config applied key=retry.backoff_ms value=4 by=yjchoi
+2026-10-30T02:56:16 INFO  geo-lookup/gl-node-03 request done id=req-e96492ce route=/geo-lookup/v1/list status=200 latency_ms=69
+2026-10-30T02:56:22 INFO  geo-lookup/gl-node-14 request done id=req-04522fd7 route=/geo-lookup/v1/cancel status=503 latency_ms=53
+2026-10-30T02:56:24 INFO  geo-lookup/gl-node-21 backup finished file=/vault/daily/inventory_20261006.tar.zst size_mb=76713 checksum=a446011f
+2026-10-30T02:56:25 INFO  geo-lookup/gl-node-22 request done id=req-f008c20b route=/geo-lookup/v1/sync status=200 latency_ms=36
+2026-10-30T02:56:27 INFO  geo-lookup/gl-node-09 config applied key=tls.session_cache value=false by=jhpark
+2026-10-30T02:56:29 INFO  geo-lookup/gl-node-07 request done id=req-57eaaf13 route=/geo-lookup/v1/create status=200 latency_ms=302
+2026-10-30T02:56:30 INFO  geo-lookup/gl-node-19 request done id=req-8cf01236 route=/geo-lookup/v1/get status=200 latency_ms=233
+2026-10-30T02:56:34 INFO  geo-lookup/gl-node-08 pool resize target=geo-lookup-cache max_pool_size=366 prev=392
+2026-10-30T02:56:39 INFO  geo-lookup/gl-node-05 pool resize target=geo-lookup-cache max_pool_size=105 prev=50
+2026-10-30T02:56:46 INFO  geo-lookup/gl-node-15 request done id=req-7422ec0d route=/geo-lookup/v1/get status=404 latency_ms=36
+2026-10-30T02:56:48 INFO  geo-lookup/gl-node-07 deploy step release=geo-lookup-4.17.7 step=shift_traffic_100 result=ok took_s=33
+2026-10-30T02:56:49 WARN  geo-lookup/gl-node-15 alert fired rule=replica_lag_high value=58s threshold=47s
+2026-10-30T02:56:51 INFO  geo-lookup/gl-node-11 request done id=req-3fe8945c route=/geo-lookup/v1/status status=500 latency_ms=77
+2026-10-30T02:56:54 INFO  geo-lookup/gl-node-04 pool resize target=geo-lookup-worker max_pool_size=16 prev=4
+2026-10-30T02:56:57 INFO  geo-lookup/gl-node-09 ticket linked id=OPS-48227 reason=node_drain
+2026-10-30T02:57:02 INFO  geo-lookup/gl-node-11 request done id=req-541db653 route=/geo-lookup/v1/create status=200 latency_ms=143
+2026-10-30T02:57:08 INFO  geo-lookup/gl-node-08 request done id=req-b3929e57 route=/geo-lookup/v1/update status=201 latency_ms=120
+2026-10-30T02:57:10 ERROR geo-lookup/gl-node-16 job failed job=geo-lookup-reindex attempt=4 cause=dns_failure
+2026-10-30T02:57:16 INFO  geo-lookup/gl-node-04 ticket linked id=OPS-48321 reason=cert_rotation
+2026-10-30T02:57:23 INFO  geo-lookup/gl-node-15 request done id=req-3a407c50 route=/geo-lookup/v1/sync status=503 latency_ms=179
+2026-10-30T02:57:28 NOTE  geo-lookup/gl-node-12 operator=mjlee memo="캐시 TTL을 43초로 되돌림. 오래된 응답이 보고됨."
+2026-10-30T02:57:30 INFO  geo-lookup/gl-node-24 request done id=req-8132cf32 route=/geo-lookup/v1/status status=200 latency_ms=71
+2026-10-30T02:57:37 INFO  geo-lookup/gl-node-02 pool resize target=geo-lookup-queue max_pool_size=143 prev=124
+2026-10-30T02:57:40 INFO  geo-lookup/gl-node-18 config applied key=shard.count value=39 by=ejlim
+2026-10-30T02:57:43 INFO  geo-lookup/gl-node-01 request done id=req-308ac7c2 route=/geo-lookup/v1/sync status=200 latency_ms=187
+2026-10-30T02:57:46 WARN  geo-lookup/gl-node-12 alert fired rule=queue_depth_high value=84 threshold=77
+2026-10-30T02:57:52 WARN  geo-lookup/gl-node-20 alert fired rule=queue_depth_high value=97 threshold=86
+2026-10-30T02:57:53 INFO  geo-lookup/gl-node-02 deploy step release=geo-lookup-4.22.7 step=healthcheck result=ok took_s=195
+2026-10-30T02:57:55 NOTE  geo-lookup/gl-node-13 operator=sykang memo="트래픽 전환 비율 상향은 민도현 파트장 승인."
+2026-10-30T02:57:59 INFO  geo-lookup/gl-node-11 request done id=req-e674774b route=/geo-lookup/v1/create status=409 latency_ms=33
+2026-10-30T02:58:02 INFO  geo-lookup/gl-node-11 request done id=req-28bcdcfc route=/geo-lookup/v1/create status=200 latency_ms=18
+2026-10-30T02:58:04 INFO  geo-lookup/gl-node-15 request done id=req-64834cd0 route=/geo-lookup/v1/create status=200 latency_ms=267
+2026-10-30T02:58:11 INFO  geo-lookup/gl-node-19 backup finished file=/vault/weekly/users_2026w43.tar.zst size_mb=84682 checksum=f984ef1e
+2026-10-30T02:58:14 INFO  geo-lookup/gl-node-17 config applied key=canary.latency_p99_threshold_ms value=83% by=mjlee
+2026-10-30T02:58:19 INFO  geo-lookup/gl-node-20 config applied key=flush.interval_ms value=8758 by=shkim
+2026-10-30T02:58:21 INFO  geo-lookup/gl-node-15 deploy step release=geo-lookup-4.11.5 step=migrate result=ok took_s=212
+2026-10-30T02:58:26 INFO  geo-lookup/gl-node-08 deploy step release=geo-lookup-4.22.1 step=pull_image result=ok took_s=111
+2026-10-30T02:58:27 WARN  geo-lookup/gl-node-14 alert fired rule=gc_pause_long value=72ms threshold=69ms
+2026-10-30T02:58:28 INFO  geo-lookup/gl-node-18 backup finished file=/vault/weekly/audit_2026w31.tar.zst size_mb=23708 checksum=7217fd05
+2026-10-30T02:58:35 INFO  geo-lookup/gl-node-18 request done id=req-0af332c4 route=/geo-lookup/v1/cancel status=429 latency_ms=87
+2026-10-30T02:58:39 INFO  geo-lookup/gl-node-01 cache stats region=ap-ne-2a hit_ratio=73.0% evictions=20113
+2026-10-30T02:58:40 INFO  geo-lookup/gl-node-11 request done id=req-892e9e22 route=/geo-lookup/v1/cancel status=200 latency_ms=158
+2026-10-30T02:58:42 INFO  geo-lookup/gl-node-12 request done id=req-6ab61a9d route=/geo-lookup/v1/create status=200 latency_ms=195
+2026-10-30T02:58:48 INFO  geo-lookup/gl-node-06 deploy step release=geo-lookup-4.16.6 step=shift_traffic_50 result=ok took_s=175
+2026-10-30T02:58:52 INFO  geo-lookup/gl-node-11 request done id=req-03ea7ced route=/geo-lookup/v1/cancel status=503 latency_ms=37
+2026-10-30T02:58:56 WARN  geo-lookup/gl-node-05 alert fired rule=replica_lag_high value=66s threshold=62s
+2026-10-30T02:59:00 INFO  geo-lookup/gl-node-05 config applied key=queue.batch_size value=49% by=ejlim
+2026-10-30T02:59:07 INFO  geo-lookup/gl-node-09 request done id=req-3d4ee2ca route=/geo-lookup/v1/update status=200 latency_ms=108
+2026-10-30T02:59:11 WARN  geo-lookup/gl-node-02 alert fired rule=disk_usage_warning value=67% threshold=57%
+2026-10-30T02:59:15 INFO  geo-lookup/gl-node-20 request done id=req-ccd42db2 route=/geo-lookup/v1/verify status=200 latency_ms=196
+2026-10-30T02:59:19 INFO  geo-lookup/gl-node-05 pool resize target=geo-lookup-worker max_pool_size=237 prev=210
+2026-10-30T02:59:21 INFO  geo-lookup/gl-node-17 request done id=req-e91baff7 route=/geo-lookup/v1/status status=200 latency_ms=49
+2026-10-30T02:59:26 INFO  geo-lookup/gl-node-14 pool resize target=geo-lookup-queue max_pool_size=115 prev=56
+2026-10-30T02:59:29 INFO  geo-lookup/gl-node-07 request done id=req-6b431b61 route=/geo-lookup/v1/create status=200 latency_ms=55
+2026-10-30T02:59:36 INFO  geo-lookup/gl-node-12 pool resize target=geo-lookup-queue max_pool_size=182 prev=235
+2026-10-30T02:59:38 INFO  geo-lookup/gl-node-02 request done id=req-6c4a4bfd route=/geo-lookup/v1/cancel status=409 latency_ms=261
+2026-10-30T02:59:40 INFO  geo-lookup/gl-node-10 deploy step release=geo-lookup-4.13.9 step=warmup result=ok took_s=59
+2026-10-30T02:59:41 INFO  geo-lookup/gl-node-24 ticket linked id=OPS-47317 reason=oncall_handoff
+2026-10-30T02:59:44 INFO  geo-lookup/gl-node-23 request done id=req-7a32381e route=/geo-lookup/v1/create status=200 latency_ms=94
+2026-10-30T02:59:48 INFO  geo-lookup/gl-node-02 pool resize target=geo-lookup-queue max_pool_size=227 prev=262
+2026-10-30T02:59:50 INFO  geo-lookup/gl-node-22 request done id=req-e1bb2476 route=/geo-lookup/v1/get status=201 latency_ms=194
+2026-10-30T02:59:56 INFO  geo-lookup/gl-node-20 ticket linked id=OPS-49508 reason=flaky_healthcheck
+2026-10-30T02:59:57 NOTE  geo-lookup/gl-node-04 operator=yjchoi memo="캐시 TTL을 44초로 되돌림. 오래된 응답이 보고됨."
+2026-10-30T02:59:58 INFO  geo-lookup/gl-node-13 request done id=req-11950fce route=/geo-lookup/v1/create status=200 latency_ms=89
+2026-10-30T02:59:59 INFO  geo-lookup/gl-node-21 config applied key=log.sample_rate value=false by=yjchoi
+2026-10-30T03:00:06 INFO  geo-lookup/gl-node-06 backup finished file=/vault/daily/audit_20261021.tar.zst size_mb=65655 checksum=56ec76fa
+2026-10-30T03:00:13 NOTE  geo-lookup/gl-node-02 operator=sykang memo="점검 창을 35분 연장함. 승인: 류태경 팀장."
+2026-10-30T03:00:18 INFO  geo-lookup/gl-node-24 request done id=req-39f7aaa6 route=/geo-lookup/v1/update status=503 latency_ms=347
+2026-10-30T03:00:25 INFO  geo-lookup/gl-node-22 pool resize target=geo-lookup-upstream max_pool_size=223 prev=281
+2026-10-30T03:00:30 INFO  geo-lookup/gl-node-16 deploy step release=geo-lookup-4.21.8 step=healthcheck result=ok took_s=31
+2026-10-30T03:00:34 INFO  geo-lookup/gl-node-07 ticket linked id=OPS-48561 reason=dependency_upgrade
+2026-10-30T03:00:39 INFO  geo-lookup/gl-node-01 request done id=req-d5a39432 route=/geo-lookup/v1/verify status=200 latency_ms=106
+2026-10-30T03:00:46 INFO  geo-lookup/gl-node-21 backup finished file=/vault/weekly/users_2026w33.tar.zst size_mb=6470 checksum=58a6fe6f
+2026-10-30T03:00:53 INFO  geo-lookup/gl-node-14 request done id=req-d8f74498 route=/geo-lookup/v1/get status=204 latency_ms=104
+2026-10-30T03:00:58 INFO  geo-lookup/gl-node-08 request done id=req-541d24fe route=/geo-lookup/v1/list status=200 latency_ms=166
+2026-10-30T03:01:02 INFO  geo-lookup/gl-node-01 request done id=req-599fb364 route=/geo-lookup/v1/create status=200 latency_ms=29
+2026-10-30T03:01:09 INFO  geo-lookup/gl-node-20 request done id=req-bb6cc51d route=/geo-lookup/v1/get status=200 latency_ms=72
+2026-10-30T03:01:16 INFO  geo-lookup/gl-node-08 pool resize target=geo-lookup-upstream max_pool_size=398 prev=346
+2026-10-30T03:01:23 INFO  geo-lookup/gl-node-17 ticket linked id=OPS-48618 reason=oncall_handoff
+2026-10-30T03:01:24 INFO  geo-lookup/gl-node-11 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=64014 checksum=caae5c96
+2026-10-30T03:01:31 INFO  geo-lookup/gl-node-20 request done id=req-8ffc439d route=/geo-lookup/v1/list status=200 latency_ms=16
+2026-10-30T03:01:35 WARN  geo-lookup/gl-node-24 alert fired rule=queue_depth_high value=82 threshold=67
+2026-10-30T03:01:42 INFO  geo-lookup/gl-node-13 config applied key=retry.backoff_ms value=true by=dwjung
+2026-10-30T03:01:47 WARN  geo-lookup/gl-node-09 alert fired rule=p99_latency_high value=53ms threshold=50ms
+2026-10-30T03:01:54 INFO  geo-lookup/gl-node-24 config applied key=breaker.half_open_s value=6552 by=sykang
+2026-10-30T03:02:00 INFO  geo-lookup/gl-node-02 deploy step release=geo-lookup-4.13.9 step=shift_traffic_50 result=ok took_s=108
+2026-10-30T03:02:02 INFO  geo-lookup/gl-node-20 config applied key=worker.concurrency value=false by=ejlim
+2026-10-30T03:02:07 INFO  geo-lookup/gl-node-16 request done id=req-fa8cd273 route=/geo-lookup/v1/update status=200 latency_ms=292
+2026-10-30T03:02:08 WARN  geo-lookup/gl-node-06 alert fired rule=gc_pause_long value=50ms threshold=47ms
+2026-10-30T03:02:12 INFO  geo-lookup/gl-node-07 request done id=req-967ccd26 route=/geo-lookup/v1/get status=200 latency_ms=340
+2026-10-30T03:02:15 NOTE  geo-lookup/gl-node-19 operator=ejlim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-30T03:02:18 INFO  geo-lookup/gl-node-16 ticket linked id=OPS-47996 reason=log_volume_spike
+2026-10-30T03:02:25 INFO  geo-lookup/gl-node-09 config applied key=tls.session_cache value=4661 by=jhpark
+2026-10-30T03:02:30 NOTE  geo-lookup/gl-node-12 operator=yjchoi memo="점검 창을 18분 연장함. 승인: 민도현 파트장."
+2026-10-30T03:02:36 INFO  geo-lookup/gl-node-08 request done id=req-58b82440 route=/geo-lookup/v1/verify status=200 latency_ms=633
+2026-10-30T03:02:38 INFO  geo-lookup/gl-node-05 pool resize target=geo-lookup-queue max_pool_size=244 prev=190
+2026-10-30T03:02:44 INFO  geo-lookup/gl-node-23 request done id=req-b9c3be69 route=/geo-lookup/v1/list status=200 latency_ms=246
+2026-10-30T03:02:51 INFO  geo-lookup/gl-node-04 request done id=req-c5e0c356 route=/geo-lookup/v1/create status=200 latency_ms=362
+2026-10-30T03:02:52 INFO  geo-lookup/gl-node-06 request done id=req-2dd9279a route=/geo-lookup/v1/get status=409 latency_ms=57
+2026-10-30T03:02:58 INFO  geo-lookup/gl-node-11 config applied key=limiter.rps value=3603 by=shkim
+2026-10-30T03:03:00 INFO  geo-lookup/gl-node-22 request done id=req-76b94a5c route=/geo-lookup/v1/status status=429 latency_ms=230
+2026-10-30T03:03:01 NOTE  geo-lookup/gl-node-06 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 53일 남음."
+2026-10-30T03:03:08 WARN  geo-lookup/gl-node-01 alert fired rule=error_ratio_high value=68% threshold=65%
+2026-10-30T03:03:12 INFO  geo-lookup/gl-node-11 config applied key=cache.ttl_s value=9 by=dwjung
+2026-10-30T03:03:18 INFO  geo-lookup/gl-node-04 config applied key=http.max_conns value=44% by=jhpark
+2026-10-30T03:03:25 INFO  geo-lookup/gl-node-24 pool resize target=geo-lookup-db max_pool_size=360 prev=348
+2026-10-30T03:03:32 INFO  geo-lookup/gl-node-16 request done id=req-069f9cd9 route=/geo-lookup/v1/status status=429 latency_ms=371
+2026-10-30T03:03:39 NOTE  geo-lookup/gl-node-06 operator=mjlee memo="gl-node-06 재기동 후 지표 정상 확인."
+2026-10-30T03:03:43 INFO  geo-lookup/gl-node-16 request done id=req-0c5e9d48 route=/geo-lookup/v1/create status=400 latency_ms=229
+2026-10-30T03:03:47 NOTE  geo-lookup/gl-node-11 operator=mjlee memo="임시 증설 15대 추가. 내일 오전 회수 예정."
+2026-10-30T03:03:54 INFO  geo-lookup/gl-node-10 request done id=req-7c75bca3 route=/geo-lookup/v1/sync status=200 latency_ms=59
+2026-10-30T03:03:56 INFO  geo-lookup/gl-node-09 request done id=req-7ebc538c route=/geo-lookup/v1/sync status=200 latency_ms=71
+2026-10-30T03:03:58 INFO  geo-lookup/gl-node-23 deploy step release=geo-lookup-4.14.4 step=migrate result=ok took_s=146
+2026-10-30T03:04:00 INFO  geo-lookup/gl-node-09 pool resize target=geo-lookup-db max_pool_size=334 prev=359
+2026-10-30T03:04:02 INFO  geo-lookup/gl-node-13 request done id=req-dcf52d3d route=/geo-lookup/v1/create status=429 latency_ms=375
+2026-10-30T03:04:05 INFO  geo-lookup/gl-node-19 request done id=req-b0d3fa6f route=/geo-lookup/v1/update status=200 latency_ms=19
+2026-10-30T03:04:08 NOTE  geo-lookup/gl-node-24 operator=ejlim memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-30T03:04:14 INFO  geo-lookup/gl-node-20 config applied key=limiter.burst value=5980 by=mjlee
+2026-10-30T03:04:18 ERROR geo-lookup/gl-node-13 job failed job=geo-lookup-reindex attempt=1 cause=dns_failure
+2026-10-30T03:04:25 INFO  geo-lookup/gl-node-08 request done id=req-6be590a6 route=/geo-lookup/v1/cancel status=404 latency_ms=121
+2026-10-30T03:04:29 WARN  geo-lookup/gl-node-16 alert fired rule=fd_usage_high value=96% threshold=87%
+2026-10-30T03:04:35 INFO  geo-lookup/gl-node-20 pool resize target=geo-lookup-worker max_pool_size=147 prev=150
+2026-10-30T03:04:41 INFO  geo-lookup/gl-node-15 request done id=req-68f0818e route=/geo-lookup/v1/sync status=200 latency_ms=117
+2026-10-30T03:04:45 INFO  geo-lookup/gl-node-10 deploy step release=geo-lookup-4.18.0 step=start result=ok took_s=89
+2026-10-30T03:04:50 INFO  geo-lookup/gl-node-09 ticket linked id=OPS-49904 reason=dns_ttl_change
+2026-10-30T03:04:51 INFO  geo-lookup/gl-node-23 request done id=req-f14ab991 route=/geo-lookup/v1/list status=200 latency_ms=327
+2026-10-30T03:04:55 NOTE  geo-lookup/gl-node-08 operator=yjchoi memo="로그 보존 기간은 9일로 유지하기로 함."
+2026-10-30T03:04:57 INFO  geo-lookup/gl-node-18 pool resize target=geo-lookup-db max_pool_size=16 prev=67
+2026-10-30T03:05:00 INFO  geo-lookup/gl-node-10 ticket linked id=OPS-48220 reason=oncall_handoff
+2026-10-30T03:05:02 INFO  geo-lookup/gl-node-24 pool resize target=geo-lookup-upstream max_pool_size=288 prev=237
+2026-10-30T03:05:06 INFO  geo-lookup/gl-node-18 request done id=req-7de367b2 route=/geo-lookup/v1/cancel status=200 latency_ms=35
+2026-10-30T03:05:11 ERROR geo-lookup/gl-node-17 job failed job=geo-lookup-export attempt=4 cause=lock_wait_exceeded
+2026-10-30T03:05:14 INFO  geo-lookup/gl-node-20 request done id=req-c7c84001 route=/geo-lookup/v1/status status=503 latency_ms=45
+2026-10-30T03:05:19 INFO  geo-lookup/gl-node-06 pool resize target=geo-lookup-upstream max_pool_size=74 prev=125
+2026-10-30T03:05:21 INFO  geo-lookup/gl-node-15 ticket linked id=OPS-48097 reason=node_drain
+2026-10-30T03:05:25 INFO  geo-lookup/gl-node-15 request done id=req-9bac1de9 route=/geo-lookup/v1/list status=200 latency_ms=39
+2026-10-30T03:05:29 INFO  geo-lookup/gl-node-21 ticket linked id=OPS-47489 reason=quota_increase
+2026-10-30T03:05:34 WARN  geo-lookup/gl-node-18 alert fired rule=disk_usage_warning value=61% threshold=47%
+2026-10-30T03:05:41 INFO  geo-lookup/gl-node-01 pool resize target=geo-lookup-upstream max_pool_size=114 prev=148
+2026-10-30T03:05:47 INFO  geo-lookup/gl-node-10 request done id=req-116273d6 route=/geo-lookup/v1/create status=200 latency_ms=391
+2026-10-30T03:05:48 INFO  geo-lookup/gl-node-03 request done id=req-f26fff9d route=/geo-lookup/v1/list status=200 latency_ms=60
+2026-10-30T03:05:53 INFO  geo-lookup/gl-node-23 backup finished file=/vault/daily/audit_20261007.tar.zst size_mb=24690 checksum=50896d56
+2026-10-30T03:05:57 INFO  geo-lookup/gl-node-23 request done id=req-a13c6b13 route=/geo-lookup/v1/list status=200 latency_ms=107
+2026-10-30T03:06:04 INFO  geo-lookup/gl-node-11 deploy step release=geo-lookup-4.17.3 step=drain result=ok took_s=143
+2026-10-30T03:06:06 INFO  geo-lookup/gl-node-04 request done id=req-09a54c71 route=/geo-lookup/v1/list status=200 latency_ms=34
+2026-10-30T03:06:07 INFO  geo-lookup/gl-node-19 backup finished file=/vault/weekly/audit_2026w32.tar.zst size_mb=87901 checksum=2b94a86b
+2026-10-30T03:06:09 INFO  geo-lookup/gl-node-11 request done id=req-4d75e1fc route=/geo-lookup/v1/cancel status=429 latency_ms=519
+2026-10-30T03:06:15 WARN  geo-lookup/gl-node-22 alert fired rule=gc_pause_long value=87ms threshold=76ms
+2026-10-30T03:06:17 INFO  geo-lookup/gl-node-10 ticket linked id=OPS-48840 reason=schema_change
+2026-10-30T03:06:21 INFO  geo-lookup/gl-node-12 config applied key=breaker.open_ratio value=7 by=dwjung
+2026-10-30T03:06:22 INFO  geo-lookup/gl-node-13 deploy step release=geo-lookup-4.15.1 step=migrate result=ok took_s=155
+2026-10-30T03:06:28 INFO  geo-lookup/gl-node-08 cache stats region=ap-ne-2c hit_ratio=87.0% evictions=31984
+2026-10-30T03:06:31 INFO  geo-lookup/gl-node-09 backup finished file=/vault/weekly/orders_2026w31.tar.zst size_mb=76291 checksum=458c4a7c
+2026-10-30T03:06:35 INFO  geo-lookup/gl-node-10 request done id=req-6067a8af route=/geo-lookup/v1/get status=400 latency_ms=228
+2026-10-30T03:06:37 INFO  geo-lookup/gl-node-03 pool resize target=geo-lookup-upstream max_pool_size=136 prev=124
+2026-10-30T03:06:42 INFO  geo-lookup/gl-node-02 pool resize target=geo-lookup-db max_pool_size=286 prev=262
+2026-10-30T03:06:44 INFO  geo-lookup/gl-node-16 deploy step release=geo-lookup-4.19.6 step=start result=ok took_s=164
+2026-10-30T03:06:51 INFO  geo-lookup/gl-node-03 request done id=req-dc8fee02 route=/geo-lookup/v1/list status=429 latency_ms=42
+2026-10-30T03:06:58 INFO  geo-lookup/gl-node-21 pool resize target=geo-lookup-db max_pool_size=101 prev=42
+2026-10-30T03:06:59 INFO  geo-lookup/gl-node-01 backup finished file=/vault/daily/payments_20261015.tar.zst size_mb=22052 checksum=7944e7ca
+2026-10-30T03:07:00 INFO  geo-lookup/gl-node-24 config applied key=limiter.burst value=4042 by=hbyoon
+2026-10-30T03:07:06 INFO  geo-lookup/gl-node-20 request done id=req-66e29662 route=/geo-lookup/v1/get status=200 latency_ms=511
+2026-10-30T03:07:07 INFO  geo-lookup/gl-node-17 deploy step release=geo-lookup-4.12.8 step=drain result=ok took_s=221
+2026-10-30T03:07:11 WARN  geo-lookup/gl-node-08 alert fired rule=conn_pool_saturated value=50% threshold=39%
+2026-10-30T03:07:14 INFO  geo-lookup/gl-node-09 pool resize target=geo-lookup-worker max_pool_size=281 prev=311
+2026-10-30T03:07:19 NOTE  geo-lookup/gl-node-22 operator=shkim memo="연동 팀에 변경 공지 완료."
+2026-10-30T03:07:24 INFO  geo-lookup/gl-node-15 deploy step release=geo-lookup-4.12.3 step=start result=ok took_s=170
+2026-10-30T03:07:27 INFO  geo-lookup/gl-node-20 request done id=req-60b98951 route=/geo-lookup/v1/sync status=201 latency_ms=319
+2026-10-30T03:07:30 INFO  geo-lookup/gl-node-08 request done id=req-a9939c81 route=/geo-lookup/v1/update status=200 latency_ms=182
+2026-10-30T03:07:35 INFO  geo-lookup/gl-node-19 request done id=req-88be7c60 route=/geo-lookup/v1/update status=500 latency_ms=210
+2026-10-30T03:07:41 INFO  geo-lookup/gl-node-08 request done id=req-1a70a666 route=/geo-lookup/v1/verify status=200 latency_ms=273
+2026-10-30T03:07:48 INFO  geo-lookup/gl-node-18 deploy step release=geo-lookup-4.16.2 step=pull_image result=ok took_s=3
+2026-10-30T03:07:53 INFO  geo-lookup/gl-node-13 request done id=req-e89df93c route=/geo-lookup/v1/status status=500 latency_ms=239
+2026-10-30T03:08:00 INFO  geo-lookup/gl-node-07 request done id=req-f2dd0363 route=/geo-lookup/v1/get status=200 latency_ms=44
+2026-10-30T03:08:03 WARN  geo-lookup/gl-node-24 alert fired rule=error_ratio_high value=91% threshold=78%
+2026-10-30T03:08:09 INFO  geo-lookup/gl-node-19 request done id=req-584684a7 route=/geo-lookup/v1/update status=200 latency_ms=73
+2026-10-30T03:08:14 INFO  geo-lookup/gl-node-16 pool resize target=geo-lookup-worker max_pool_size=94 prev=34
+2026-10-30T03:08:20 WARN  geo-lookup/gl-node-08 alert fired rule=error_ratio_high value=71% threshold=60%
+2026-10-30T03:08:26 INFO  geo-lookup/gl-node-10 config applied key=breaker.half_open_s value=20 by=dwjung
+2026-10-30T03:08:33 WARN  geo-lookup/gl-node-02 alert fired rule=queue_depth_high value=61 threshold=55
+2026-10-30T03:08:38 INFO  geo-lookup/gl-node-08 cache stats region=ap-ne-2b hit_ratio=92.9% evictions=22585
+2026-10-30T03:08:40 INFO  geo-lookup/gl-node-02 request done id=req-9f59e09f route=/geo-lookup/v1/status status=200 latency_ms=308
+2026-10-30T03:08:46 INFO  geo-lookup/gl-node-16 request done id=req-9d8dead5 route=/geo-lookup/v1/get status=200 latency_ms=133
+2026-10-30T03:08:49 INFO  geo-lookup/gl-node-07 request done id=req-f7c5d886 route=/geo-lookup/v1/list status=400 latency_ms=90
+2026-10-30T03:08:52 INFO  geo-lookup/gl-node-13 config applied key=dns.ttl_s value=true by=shkim
+2026-10-30T03:08:54 INFO  geo-lookup/gl-node-10 request done id=req-f79f7ce0 route=/geo-lookup/v1/create status=409 latency_ms=95
+2026-10-30T03:08:55 INFO  geo-lookup/gl-node-21 request done id=req-e9d93a9d route=/geo-lookup/v1/update status=200 latency_ms=103
+2026-10-30T03:08:59 INFO  geo-lookup/gl-node-12 request done id=req-94e58faf route=/geo-lookup/v1/sync status=200 latency_ms=16
+2026-10-30T03:09:04 INFO  geo-lookup/gl-node-04 request done id=req-1e5e9c38 route=/geo-lookup/v1/status status=200 latency_ms=278
+2026-10-30T03:09:08 INFO  geo-lookup/gl-node-24 request done id=req-0eb460eb route=/geo-lookup/v1/get status=200 latency_ms=69
+2026-10-30T03:09:13 INFO  geo-lookup/gl-node-14 pool resize target=geo-lookup-upstream max_pool_size=12 prev=4
+2026-10-30T03:09:18 INFO  geo-lookup/gl-node-21 request done id=req-9cdfb48e route=/geo-lookup/v1/cancel status=204 latency_ms=58
+2026-10-30T03:09:24 INFO  geo-lookup/gl-node-06 config applied key=shard.count value=2154 by=ejlim
+2026-10-30T03:09:29 INFO  geo-lookup/gl-node-20 request done id=req-ea936099 route=/geo-lookup/v1/status status=200 latency_ms=355
+2026-10-30T03:09:32 INFO  geo-lookup/gl-node-17 request done id=req-1ec2ae35 route=/geo-lookup/v1/verify status=200 latency_ms=470
+2026-10-30T03:09:37 INFO  geo-lookup/gl-node-11 request done id=req-97340b88 route=/geo-lookup/v1/get status=200 latency_ms=176
+2026-10-30T03:09:43 INFO  geo-lookup/gl-node-06 request done id=req-2cb47227 route=/geo-lookup/v1/sync status=429 latency_ms=61
+2026-10-30T03:09:47 INFO  geo-lookup/gl-node-11 request done id=req-754360d4 route=/geo-lookup/v1/get status=200 latency_ms=402
+2026-10-30T03:09:49 INFO  geo-lookup/gl-node-04 request done id=req-b189d2ae route=/geo-lookup/v1/status status=200 latency_ms=48
+2026-10-30T03:09:51 INFO  geo-lookup/gl-node-06 request done id=req-bbab8111 route=/geo-lookup/v1/list status=200 latency_ms=18
+2026-10-30T03:09:58 INFO  geo-lookup/gl-node-15 deploy step release=geo-lookup-4.10.8 step=verify result=ok took_s=114
+2026-10-30T03:10:04 INFO  geo-lookup/gl-node-05 deploy step release=geo-lookup-4.22.1 step=shift_traffic_10 result=ok took_s=147
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

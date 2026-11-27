@@ -1,0 +1,424 @@
+참고용 로그 17: 검색 API(search-api) 색인 재구축 구간. '확인'이라고만 답해 줘.
+
+2026-10-21T16:56:56 NOTE  search-api/sa-node-24 operator=sykang memo="헬스체크 간격을 8초에서 34초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-21T16:57:01 INFO  search-api/sa-node-23 request done id=req-be84762b route=/search-api/v1/status status=200 latency_ms=179
+2026-10-21T16:57:05 INFO  search-api/sa-node-09 request done id=req-99ba695a route=/search-api/v1/list status=400 latency_ms=98
+2026-10-21T16:57:08 INFO  search-api/sa-node-06 deploy step release=search-api-4.20.5 step=verify result=ok took_s=59
+2026-10-21T16:57:10 INFO  search-api/sa-node-14 request done id=req-2ea2038c route=/search-api/v1/sync status=200 latency_ms=269
+2026-10-21T16:57:17 INFO  search-api/sa-node-08 config applied key=http.max_conns value=7838 by=yjchoi
+2026-10-21T16:57:19 NOTE  search-api/sa-node-03 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-21T16:57:25 INFO  search-api/sa-node-01 request done id=req-ea602675 route=/search-api/v1/list status=200 latency_ms=175
+2026-10-21T16:57:28 INFO  search-api/sa-node-11 ticket linked id=OPS-47674 reason=cert_rotation
+2026-10-21T16:57:35 INFO  search-api/sa-node-22 request done id=req-ca9e67f6 route=/search-api/v1/get status=404 latency_ms=44
+2026-10-21T16:57:39 WARN  search-api/sa-node-18 alert fired rule=fd_usage_high value=75% threshold=67%
+2026-10-21T16:57:40 INFO  search-api/sa-node-12 request done id=req-0c2cf268 route=/search-api/v1/sync status=200 latency_ms=334
+2026-10-21T16:57:46 NOTE  search-api/sa-node-02 operator=jhpark memo="동시 처리 수를 83에서 52로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-21T16:57:50 INFO  search-api/sa-node-16 config applied key=canary.latency_p99_threshold_ms value=false by=dwjung
+2026-10-21T16:57:54 INFO  search-api/sa-node-05 request done id=req-de96e2b5 route=/search-api/v1/list status=429 latency_ms=923
+2026-10-21T16:58:01 WARN  search-api/sa-node-05 alert fired rule=heap_used_high value=51% threshold=37%
+2026-10-21T16:58:08 INFO  search-api/sa-node-03 request done id=req-593603e6 route=/search-api/v1/verify status=200 latency_ms=350
+2026-10-21T16:58:09 INFO  search-api/sa-node-12 ticket linked id=OPS-49695 reason=dns_ttl_change
+2026-10-21T16:58:14 INFO  search-api/sa-node-08 request done id=req-9950f030 route=/search-api/v1/sync status=409 latency_ms=47
+2026-10-21T16:58:20 INFO  search-api/sa-node-11 pool resize target=search-api-db max_pool_size=367 prev=329
+2026-10-21T16:58:21 INFO  search-api/sa-node-02 pool resize target=search-api-db max_pool_size=279 prev=278
+2026-10-21T16:58:25 INFO  search-api/sa-node-17 request done id=req-8048982f route=/search-api/v1/verify status=204 latency_ms=263
+2026-10-21T16:58:27 INFO  search-api/sa-node-05 deploy step release=search-api-4.19.6 step=start result=ok took_s=115
+2026-10-21T16:58:33 INFO  search-api/sa-node-23 cache stats region=ap-ne-2c hit_ratio=68.0% evictions=39027
+2026-10-21T16:58:39 INFO  search-api/sa-node-07 ticket linked id=OPS-49401 reason=dependency_upgrade
+2026-10-21T16:58:45 INFO  search-api/sa-node-03 config applied key=gc.pause_target_ms value=false by=dwjung
+2026-10-21T16:58:49 INFO  search-api/sa-node-11 request done id=req-8ae72d88 route=/search-api/v1/cancel status=200 latency_ms=166
+2026-10-21T16:58:51 INFO  search-api/sa-node-18 request done id=req-2e9070bf route=/search-api/v1/cancel status=404 latency_ms=58
+2026-10-21T16:58:58 INFO  search-api/sa-node-03 request done id=req-010b0136 route=/search-api/v1/verify status=200 latency_ms=78
+2026-10-21T16:59:00 INFO  search-api/sa-node-11 request done id=req-945434d8 route=/search-api/v1/status status=200 latency_ms=950
+2026-10-21T16:59:05 INFO  search-api/sa-node-07 deploy step release=search-api-4.17.8 step=shift_traffic_50 result=ok took_s=107
+2026-10-21T16:59:10 INFO  search-api/sa-node-09 ticket linked id=OPS-48454 reason=log_volume_spike
+2026-10-21T16:59:17 INFO  search-api/sa-node-06 cache stats region=ap-ne-2a hit_ratio=65.6% evictions=3745
+2026-10-21T16:59:18 INFO  search-api/sa-node-15 request done id=req-26d4d0f1 route=/search-api/v1/cancel status=200 latency_ms=48
+2026-10-21T16:59:25 WARN  search-api/sa-node-15 alert fired rule=heap_used_high value=87% threshold=81%
+2026-10-21T16:59:32 INFO  search-api/sa-node-02 pool resize target=search-api-queue max_pool_size=70 prev=30
+2026-10-21T16:59:39 INFO  search-api/sa-node-07 request done id=req-47295745 route=/search-api/v1/create status=429 latency_ms=52
+2026-10-21T16:59:42 WARN  search-api/sa-node-16 alert fired rule=error_ratio_high value=50% threshold=43%
+2026-10-21T16:59:46 NOTE  search-api/sa-node-05 operator=yjchoi memo="연동 팀에 변경 공지 완료."
+2026-10-21T16:59:48 INFO  search-api/sa-node-22 deploy step release=search-api-4.10.0 step=start result=ok took_s=161
+2026-10-21T16:59:53 INFO  search-api/sa-node-23 request done id=req-3184bff6 route=/search-api/v1/create status=409 latency_ms=69
+2026-10-21T16:59:55 INFO  search-api/sa-node-04 pool resize target=search-api-queue max_pool_size=153 prev=160
+2026-10-21T17:00:00 INFO  search-api/sa-node-01 cache stats region=ap-se-1a hit_ratio=76.7% evictions=25017
+2026-10-21T17:00:06 INFO  search-api/sa-node-06 request done id=req-0ec9e156 route=/search-api/v1/cancel status=200 latency_ms=95
+2026-10-21T17:00:09 INFO  search-api/sa-node-14 pool resize target=search-api-cache max_pool_size=111 prev=133
+2026-10-21T17:00:11 INFO  search-api/sa-node-11 request done id=req-c45aa9eb route=/search-api/v1/status status=503 latency_ms=102
+2026-10-21T17:00:16 WARN  search-api/sa-node-05 alert fired rule=replica_lag_high value=64s threshold=49s
+2026-10-21T17:00:22 NOTE  search-api/sa-node-22 operator=mjlee memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-21T17:00:24 INFO  search-api/sa-node-16 config applied key=retry.max_attempts value=true by=mjlee
+2026-10-21T17:00:30 INFO  search-api/sa-node-04 request done id=req-b2a3ed5f route=/search-api/v1/get status=201 latency_ms=56
+2026-10-21T17:00:34 NOTE  search-api/sa-node-04 operator=ejlim memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-21T17:00:35 INFO  search-api/sa-node-14 request done id=req-fd9c5db5 route=/search-api/v1/create status=404 latency_ms=243
+2026-10-21T17:00:36 INFO  search-api/sa-node-11 request done id=req-7c6209fd route=/search-api/v1/cancel status=404 latency_ms=176
+2026-10-21T17:00:37 ERROR search-api/sa-node-10 job failed job=search-api-export attempt=3 cause=dns_failure
+2026-10-21T17:00:44 INFO  search-api/sa-node-04 ticket linked id=OPS-48636 reason=dns_ttl_change
+2026-10-21T17:00:51 INFO  search-api/sa-node-06 deploy step release=search-api-4.15.2 step=shift_traffic_100 result=ok took_s=4
+2026-10-21T17:00:53 INFO  search-api/sa-node-19 request done id=req-b1d12587 route=/search-api/v1/get status=200 latency_ms=271
+2026-10-21T17:00:58 INFO  search-api/sa-node-10 request done id=req-5d137ebb route=/search-api/v1/list status=200 latency_ms=283
+2026-10-21T17:01:05 INFO  search-api/sa-node-04 request done id=req-cb2e3ec0 route=/search-api/v1/create status=500 latency_ms=147
+2026-10-21T17:01:06 INFO  search-api/sa-node-12 request done id=req-87afb72f route=/search-api/v1/status status=200 latency_ms=109
+2026-10-21T17:01:12 INFO  search-api/sa-node-02 request done id=req-1345bde9 route=/search-api/v1/create status=503 latency_ms=88
+2026-10-21T17:01:13 INFO  search-api/sa-node-14 config applied key=breaker.open_ratio value=1998 by=sykang
+2026-10-21T17:01:18 INFO  search-api/sa-node-21 request done id=req-a20b26f6 route=/search-api/v1/list status=200 latency_ms=222
+2026-10-21T17:01:24 INFO  search-api/sa-node-22 request done id=req-61f4c028 route=/search-api/v1/sync status=404 latency_ms=67
+2026-10-21T17:01:29 INFO  search-api/sa-node-16 request done id=req-fdf9fbab route=/search-api/v1/sync status=404 latency_ms=103
+2026-10-21T17:01:36 INFO  search-api/sa-node-05 backup finished file=/vault/daily/orders_20261008.tar.zst size_mb=61443 checksum=d9a792bd
+2026-10-21T17:01:40 WARN  search-api/sa-node-17 alert fired rule=replica_lag_high value=81s threshold=74s
+2026-10-21T17:01:43 INFO  search-api/sa-node-15 pool resize target=search-api-upstream max_pool_size=262 prev=222
+2026-10-21T17:01:49 INFO  search-api/sa-node-19 backup finished file=/vault/daily/inventory_20261017.tar.zst size_mb=57739 checksum=0bb2af4c
+2026-10-21T17:01:51 INFO  search-api/sa-node-06 request done id=req-669ea3a9 route=/search-api/v1/list status=409 latency_ms=44
+2026-10-21T17:01:52 INFO  search-api/sa-node-14 backup finished file=/vault/daily/inventory_20261007.tar.zst size_mb=19688 checksum=0a76dd90
+2026-10-21T17:01:54 ERROR search-api/sa-node-11 job failed job=search-api-rollup attempt=4 cause=lock_wait_exceeded
+2026-10-21T17:01:56 INFO  search-api/sa-node-07 pool resize target=search-api-db max_pool_size=253 prev=259
+2026-10-21T17:02:02 INFO  search-api/sa-node-22 request done id=req-4326c004 route=/search-api/v1/list status=200 latency_ms=673
+2026-10-21T17:02:04 INFO  search-api/sa-node-16 pool resize target=search-api-db max_pool_size=276 prev=319
+2026-10-21T17:02:07 INFO  search-api/sa-node-24 request done id=req-4e1ceded route=/search-api/v1/update status=200 latency_ms=74
+2026-10-21T17:02:11 INFO  search-api/sa-node-23 request done id=req-64759a4c route=/search-api/v1/create status=200 latency_ms=71
+2026-10-21T17:02:18 INFO  search-api/sa-node-14 request done id=req-bfb70753 route=/search-api/v1/create status=200 latency_ms=284
+2026-10-21T17:02:24 INFO  search-api/sa-node-14 request done id=req-0a1c7cad route=/search-api/v1/verify status=200 latency_ms=131
+2026-10-21T17:02:28 INFO  search-api/sa-node-16 request done id=req-1a90c13c route=/search-api/v1/create status=200 latency_ms=46
+2026-10-21T17:02:35 INFO  search-api/sa-node-23 deploy step release=search-api-4.17.6 step=shift_traffic_10 result=ok took_s=145
+2026-10-21T17:02:36 INFO  search-api/sa-node-02 request done id=req-382aa256 route=/search-api/v1/update status=200 latency_ms=106
+2026-10-21T17:02:40 INFO  search-api/sa-node-13 deploy step release=search-api-4.21.7 step=healthcheck result=ok took_s=75
+2026-10-21T17:02:46 INFO  search-api/sa-node-09 config applied key=http.read_timeout_ms value=true by=ejlim
+2026-10-21T17:02:52 INFO  search-api/sa-node-19 deploy step release=search-api-4.20.1 step=shift_traffic_100 result=ok took_s=63
+2026-10-21T17:02:55 NOTE  search-api/sa-node-20 operator=mjlee memo="배치 시작 시각을 23시 59분으로 고정함."
+2026-10-21T17:03:02 INFO  search-api/sa-node-23 request done id=req-8c3b9f65 route=/search-api/v1/sync status=201 latency_ms=374
+2026-10-21T17:03:06 INFO  search-api/sa-node-02 ticket linked id=OPS-47641 reason=flaky_healthcheck
+2026-10-21T17:03:12 WARN  search-api/sa-node-24 alert fired rule=replica_lag_high value=80s threshold=75s
+2026-10-21T17:03:13 ERROR search-api/sa-node-19 job failed job=search-api-rollup attempt=5 cause=upstream_timeout
+2026-10-21T17:03:18 INFO  search-api/sa-node-11 request done id=req-13bf30b6 route=/search-api/v1/update status=500 latency_ms=407
+2026-10-21T17:03:20 INFO  search-api/sa-node-12 request done id=req-a92eb0ba route=/search-api/v1/get status=200 latency_ms=164
+2026-10-21T17:03:23 INFO  search-api/sa-node-21 request done id=req-24787b84 route=/search-api/v1/verify status=500 latency_ms=124
+2026-10-21T17:03:25 INFO  search-api/sa-node-07 cache stats region=ap-ne-2b hit_ratio=90.3% evictions=36434
+2026-10-21T17:03:27 INFO  search-api/sa-node-18 request done id=req-20718983 route=/search-api/v1/status status=200 latency_ms=150
+2026-10-21T17:03:32 INFO  search-api/sa-node-18 pool resize target=search-api-queue max_pool_size=384 prev=442
+2026-10-21T17:03:39 INFO  search-api/sa-node-04 pool resize target=search-api-upstream max_pool_size=246 prev=259
+2026-10-21T17:03:46 INFO  search-api/sa-node-04 request done id=req-380430cb route=/search-api/v1/sync status=200 latency_ms=131
+2026-10-21T17:03:52 INFO  search-api/sa-node-09 request done id=req-3c5701bb route=/search-api/v1/create status=200 latency_ms=88
+2026-10-21T17:03:58 INFO  search-api/sa-node-07 deploy step release=search-api-4.22.4 step=pull_image result=ok took_s=23
+2026-10-21T17:04:05 INFO  search-api/sa-node-04 request done id=req-a9fa1a5a route=/search-api/v1/status status=200 latency_ms=316
+2026-10-21T17:04:11 INFO  search-api/sa-node-07 config applied key=flush.interval_ms value=true by=sykang
+2026-10-21T17:04:16 INFO  search-api/sa-node-15 request done id=req-1fdd30d7 route=/search-api/v1/status status=503 latency_ms=178
+2026-10-21T17:04:17 ERROR search-api/sa-node-22 job failed job=search-api-reindex attempt=3 cause=dns_failure
+2026-10-21T17:04:21 INFO  search-api/sa-node-08 request done id=req-9bc1dd3d route=/search-api/v1/verify status=200 latency_ms=84
+2026-10-21T17:04:23 INFO  search-api/sa-node-12 config applied key=log.sample_rate value=70% by=dwjung
+2026-10-21T17:04:28 INFO  search-api/sa-node-08 deploy step release=search-api-4.14.3 step=start result=ok took_s=220
+2026-10-21T17:04:31 INFO  search-api/sa-node-10 config applied key=http.read_timeout_ms value=41 by=hbyoon
+2026-10-21T17:04:36 INFO  search-api/sa-node-14 ticket linked id=OPS-48126 reason=log_volume_spike
+2026-10-21T17:04:41 INFO  search-api/sa-node-21 cache stats region=ap-ne-2b hit_ratio=75.7% evictions=34827
+2026-10-21T17:04:44 INFO  search-api/sa-node-09 request done id=req-619cd84e route=/search-api/v1/verify status=409 latency_ms=237
+2026-10-21T17:04:47 INFO  search-api/sa-node-13 cache stats region=us-we-2b hit_ratio=98.6% evictions=2672
+2026-10-21T17:04:48 INFO  search-api/sa-node-06 request done id=req-e5ba7adb route=/search-api/v1/get status=200 latency_ms=82
+2026-10-21T17:04:53 INFO  search-api/sa-node-17 request done id=req-c2e1f8d9 route=/search-api/v1/cancel status=201 latency_ms=98
+2026-10-21T17:04:56 INFO  search-api/sa-node-03 backup finished file=/vault/daily/orders_20261023.tar.zst size_mb=79419 checksum=0130331b
+2026-10-21T17:04:59 INFO  search-api/sa-node-22 request done id=req-cce78ab1 route=/search-api/v1/sync status=503 latency_ms=229
+2026-10-21T17:05:01 INFO  search-api/sa-node-07 request done id=req-297da98d route=/search-api/v1/get status=200 latency_ms=158
+2026-10-21T17:05:06 INFO  search-api/sa-node-23 request done id=req-8634bedf route=/search-api/v1/create status=200 latency_ms=95
+2026-10-21T17:05:08 INFO  search-api/sa-node-15 pool resize target=search-api-db max_pool_size=95 prev=49
+2026-10-21T17:05:13 INFO  search-api/sa-node-23 request done id=req-f4a45bc4 route=/search-api/v1/list status=200 latency_ms=63
+2026-10-21T17:05:16 NOTE  search-api/sa-node-22 operator=yjchoi memo="캐시 TTL을 57초로 되돌림. 오래된 응답이 보고됨."
+2026-10-21T17:05:21 INFO  search-api/sa-node-14 request done id=req-6bbd7e1f route=/search-api/v1/update status=200 latency_ms=83
+2026-10-21T17:05:26 INFO  search-api/sa-node-21 request done id=req-9a0470e7 route=/search-api/v1/verify status=200 latency_ms=338
+2026-10-21T17:05:33 INFO  search-api/sa-node-12 deploy step release=search-api-4.16.2 step=start result=ok took_s=179
+2026-10-21T17:05:38 INFO  search-api/sa-node-08 request done id=req-2cee1886 route=/search-api/v1/sync status=404 latency_ms=64
+2026-10-21T17:05:44 INFO  search-api/sa-node-22 deploy step release=search-api-4.11.6 step=shift_traffic_10 result=ok took_s=169
+2026-10-21T17:05:48 INFO  search-api/sa-node-21 deploy step release=search-api-4.20.0 step=warmup result=ok took_s=40
+2026-10-21T17:05:51 INFO  search-api/sa-node-01 request done id=req-516b7bd3 route=/search-api/v1/verify status=200 latency_ms=256
+2026-10-21T17:05:54 INFO  search-api/sa-node-20 request done id=req-9824540f route=/search-api/v1/list status=200 latency_ms=32
+2026-10-21T17:05:57 INFO  search-api/sa-node-12 request done id=req-af8abac8 route=/search-api/v1/verify status=204 latency_ms=50
+2026-10-21T17:05:59 INFO  search-api/sa-node-11 pool resize target=search-api-cache max_pool_size=350 prev=349
+2026-10-21T17:06:05 INFO  search-api/sa-node-11 config applied key=http.read_timeout_ms value=false by=yjchoi
+2026-10-21T17:06:12 INFO  search-api/sa-node-02 request done id=req-4038cfd6 route=/search-api/v1/get status=200 latency_ms=53
+2026-10-21T17:06:15 INFO  search-api/sa-node-06 request done id=req-75e80c45 route=/search-api/v1/cancel status=200 latency_ms=152
+2026-10-21T17:06:22 NOTE  search-api/sa-node-20 operator=hbyoon memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-21T17:06:29 INFO  search-api/sa-node-21 request done id=req-6b68582b route=/search-api/v1/cancel status=429 latency_ms=242
+2026-10-21T17:06:32 INFO  search-api/sa-node-17 request done id=req-7ecd49ff route=/search-api/v1/status status=200 latency_ms=216
+2026-10-21T17:06:39 INFO  search-api/sa-node-07 pool resize target=search-api-upstream max_pool_size=395 prev=348
+2026-10-21T17:06:46 INFO  search-api/sa-node-20 deploy step release=search-api-4.12.7 step=healthcheck result=ok took_s=96
+2026-10-21T17:06:52 INFO  search-api/sa-node-07 request done id=req-4bd13609 route=/search-api/v1/sync status=200 latency_ms=100
+2026-10-21T17:06:53 INFO  search-api/sa-node-20 request done id=req-66474506 route=/search-api/v1/list status=200 latency_ms=506
+2026-10-21T17:07:00 INFO  search-api/sa-node-22 pool resize target=search-api-upstream max_pool_size=134 prev=179
+2026-10-21T17:07:04 INFO  search-api/sa-node-04 config applied key=dns.ttl_s value=35 by=ejlim
+2026-10-21T17:07:09 WARN  search-api/sa-node-18 alert fired rule=cpu_steal_high value=97% threshold=92%
+2026-10-21T17:07:12 INFO  search-api/sa-node-15 request done id=req-835906a8 route=/search-api/v1/create status=200 latency_ms=45
+2026-10-21T17:07:16 WARN  search-api/sa-node-06 alert fired rule=disk_usage_warning value=56% threshold=43%
+2026-10-21T17:07:23 INFO  search-api/sa-node-03 request done id=req-4f7ec094 route=/search-api/v1/list status=503 latency_ms=46
+2026-10-21T17:07:26 ERROR search-api/sa-node-22 job failed job=search-api-cleanup attempt=2 cause=oom_killed
+2026-10-21T17:07:28 NOTE  search-api/sa-node-14 operator=hbyoon memo="캐시 TTL을 24초로 되돌림. 오래된 응답이 보고됨."
+2026-10-21T17:07:33 INFO  search-api/sa-node-15 deploy step release=search-api-4.16.4 step=migrate result=ok took_s=74
+2026-10-21T17:07:34 INFO  search-api/sa-node-20 ticket linked id=OPS-49672 reason=cert_rotation
+2026-10-21T17:07:39 INFO  search-api/sa-node-02 deploy step release=search-api-4.18.4 step=pull_image result=ok took_s=41
+2026-10-21T17:07:42 INFO  search-api/sa-node-14 ticket linked id=OPS-47696 reason=oncall_handoff
+2026-10-21T17:07:44 INFO  search-api/sa-node-12 request done id=req-ebd1bafa route=/search-api/v1/verify status=200 latency_ms=44
+2026-10-21T17:07:47 INFO  search-api/sa-node-07 pool resize target=search-api-worker max_pool_size=159 prev=113
+2026-10-21T17:07:51 INFO  search-api/sa-node-20 ticket linked id=OPS-49641 reason=dependency_upgrade
+2026-10-21T17:07:56 NOTE  search-api/sa-node-10 operator=yjchoi memo="sa-node-10 재기동 후 지표 정상 확인."
+2026-10-21T17:07:59 INFO  search-api/sa-node-18 backup finished file=/vault/weekly/orders_2026w30.tar.zst size_mb=30956 checksum=7e341cd9
+2026-10-21T17:08:04 INFO  search-api/sa-node-01 request done id=req-7530e31e route=/search-api/v1/create status=200 latency_ms=31
+2026-10-21T17:08:10 INFO  search-api/sa-node-18 config applied key=canary.traffic_percent value=51 by=hbyoon
+2026-10-21T17:08:14 INFO  search-api/sa-node-01 request done id=req-2df8c155 route=/search-api/v1/sync status=404 latency_ms=84
+2026-10-21T17:08:17 INFO  search-api/sa-node-24 request done id=req-c003f50f route=/search-api/v1/list status=200 latency_ms=52
+2026-10-21T17:08:21 INFO  search-api/sa-node-06 request done id=req-96ac0f6e route=/search-api/v1/cancel status=200 latency_ms=164
+2026-10-21T17:08:27 INFO  search-api/sa-node-16 pool resize target=search-api-db max_pool_size=93 prev=137
+2026-10-21T17:08:31 INFO  search-api/sa-node-21 deploy step release=search-api-4.14.6 step=drain result=ok took_s=153
+2026-10-21T17:08:32 INFO  search-api/sa-node-16 request done id=req-9210c91a route=/search-api/v1/get status=200 latency_ms=112
+2026-10-21T17:08:39 INFO  search-api/sa-node-11 request done id=req-e54ad2e3 route=/search-api/v1/status status=204 latency_ms=692
+2026-10-21T17:08:42 INFO  search-api/sa-node-04 cache stats region=ap-ne-2c hit_ratio=92.2% evictions=33827
+2026-10-21T17:08:45 INFO  search-api/sa-node-11 config applied key=queue.batch_size value=16% by=shkim
+2026-10-21T17:08:49 INFO  search-api/sa-node-20 config applied key=breaker.open_ratio value=false by=yjchoi
+2026-10-21T17:08:54 INFO  search-api/sa-node-19 request done id=req-88b124e9 route=/search-api/v1/sync status=200 latency_ms=71
+2026-10-21T17:08:59 INFO  search-api/sa-node-11 request done id=req-e67d5464 route=/search-api/v1/status status=200 latency_ms=349
+2026-10-21T17:09:02 INFO  search-api/sa-node-16 pool resize target=search-api-upstream max_pool_size=67 prev=40
+2026-10-21T17:09:03 INFO  search-api/sa-node-08 request done id=req-0907765e route=/search-api/v1/get status=429 latency_ms=509
+2026-10-21T17:09:05 INFO  search-api/sa-node-01 request done id=req-867c573c route=/search-api/v1/status status=200 latency_ms=169
+2026-10-21T17:09:11 INFO  search-api/sa-node-20 request done id=req-4e0a5c3d route=/search-api/v1/list status=200 latency_ms=110
+2026-10-21T17:09:16 INFO  search-api/sa-node-01 deploy step release=search-api-4.12.9 step=warmup result=ok took_s=29
+2026-10-21T17:09:18 INFO  search-api/sa-node-07 request done id=req-28e02253 route=/search-api/v1/sync status=200 latency_ms=106
+2026-10-21T17:09:25 INFO  search-api/sa-node-04 request done id=req-85c8f2a2 route=/search-api/v1/verify status=200 latency_ms=1102
+2026-10-21T17:09:29 INFO  search-api/sa-node-07 ticket linked id=OPS-49724 reason=cert_rotation
+2026-10-21T17:09:32 INFO  search-api/sa-node-11 pool resize target=search-api-worker max_pool_size=8 prev=65
+2026-10-21T17:09:35 ERROR search-api/sa-node-08 job failed job=search-api-export attempt=1 cause=oom_killed
+2026-10-21T17:09:41 INFO  search-api/sa-node-12 request done id=req-cd65fed0 route=/search-api/v1/cancel status=200 latency_ms=163
+2026-10-21T17:09:48 WARN  search-api/sa-node-20 alert fired rule=conn_pool_saturated value=68% threshold=61%
+2026-10-21T17:09:50 INFO  search-api/sa-node-04 pool resize target=search-api-upstream max_pool_size=130 prev=128
+2026-10-21T17:09:52 NOTE  search-api/sa-node-14 operator=jhpark memo="점검 창을 24분 연장함. 승인: 오세린 매니저."
+2026-10-21T17:09:53 INFO  search-api/sa-node-18 request done id=req-aed26ea8 route=/search-api/v1/create status=429 latency_ms=42
+2026-10-21T17:09:58 NOTE  search-api/sa-node-07 operator=ejlim memo="배치 시작 시각을 10시 37분으로 고정함."
+2026-10-21T17:10:00 INFO  search-api/sa-node-21 request done id=req-b1c81037 route=/search-api/v1/status status=200 latency_ms=1012
+2026-10-21T17:10:07 INFO  search-api/sa-node-11 config applied key=limiter.rps value=43 by=hbyoon
+2026-10-21T17:10:11 INFO  search-api/sa-node-10 deploy step release=search-api-4.21.0 step=shift_traffic_10 result=ok took_s=186
+2026-10-21T17:10:18 INFO  search-api/sa-node-20 request done id=req-460b9d8f route=/search-api/v1/status status=204 latency_ms=56
+2026-10-21T17:10:20 INFO  search-api/sa-node-09 deploy step release=search-api-4.21.2 step=start result=ok took_s=81
+2026-10-21T17:10:27 NOTE  search-api/sa-node-01 operator=jhpark memo="인증서 갱신 일정 확인. 만료까지 50일 남음."
+2026-10-21T17:10:28 INFO  search-api/sa-node-15 request done id=req-2ef13f45 route=/search-api/v1/create status=200 latency_ms=54
+2026-10-21T17:10:35 INFO  search-api/sa-node-01 request done id=req-a9ad4536 route=/search-api/v1/status status=503 latency_ms=408
+2026-10-21T17:10:39 INFO  search-api/sa-node-04 deploy step release=search-api-4.13.0 step=pull_image result=ok took_s=144
+2026-10-21T17:10:45 INFO  search-api/sa-node-13 pool resize target=search-api-db max_pool_size=292 prev=287
+2026-10-21T17:10:51 INFO  search-api/sa-node-11 request done id=req-4003a081 route=/search-api/v1/get status=200 latency_ms=55
+2026-10-21T17:10:54 NOTE  search-api/sa-node-19 operator=yjchoi memo="헬스체크 간격을 45초에서 80초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-21T17:11:01 INFO  search-api/sa-node-02 pool resize target=search-api-db max_pool_size=51 prev=4
+2026-10-21T17:11:07 INFO  search-api/sa-node-07 ticket linked id=OPS-49239 reason=log_volume_spike
+2026-10-21T17:11:12 INFO  search-api/sa-node-10 request done id=req-2627a729 route=/search-api/v1/verify status=200 latency_ms=144
+2026-10-21T17:11:17 INFO  search-api/sa-node-06 config applied key=shard.count value=true by=yjchoi
+2026-10-21T17:11:20 INFO  search-api/sa-node-19 request done id=req-8bd4c8c8 route=/search-api/v1/get status=409 latency_ms=139
+2026-10-21T17:11:26 INFO  search-api/sa-node-24 pool resize target=search-api-worker max_pool_size=27 prev=63
+2026-10-21T17:11:32 WARN  search-api/sa-node-24 alert fired rule=cpu_steal_high value=51% threshold=46%
+2026-10-21T17:11:34 INFO  search-api/sa-node-11 config applied key=gc.pause_target_ms value=55 by=ejlim
+2026-10-21T17:11:41 INFO  search-api/sa-node-23 request done id=req-0580303a route=/search-api/v1/get status=201 latency_ms=129
+2026-10-21T17:11:47 INFO  search-api/sa-node-12 ticket linked id=OPS-49873 reason=dns_ttl_change
+2026-10-21T17:11:54 INFO  search-api/sa-node-18 deploy step release=search-api-4.17.7 step=shift_traffic_10 result=ok took_s=173
+2026-10-21T17:12:00 INFO  search-api/sa-node-03 request done id=req-089b67c0 route=/search-api/v1/verify status=200 latency_ms=64
+2026-10-21T17:12:07 INFO  search-api/sa-node-16 backup finished file=/vault/daily/inventory_20261010.tar.zst size_mb=40703 checksum=2840c556
+2026-10-21T17:12:08 INFO  search-api/sa-node-05 ticket linked id=OPS-47024 reason=flaky_healthcheck
+2026-10-21T17:12:13 INFO  search-api/sa-node-02 request done id=req-bb87132e route=/search-api/v1/update status=200 latency_ms=190
+2026-10-21T17:12:19 INFO  search-api/sa-node-22 request done id=req-5a163ee7 route=/search-api/v1/cancel status=200 latency_ms=66
+2026-10-21T17:12:24 NOTE  search-api/sa-node-07 operator=yjchoi memo="로그 보존 기간은 31일로 유지하기로 함."
+2026-10-21T17:12:29 INFO  search-api/sa-node-06 request done id=req-9ed9018d route=/search-api/v1/status status=201 latency_ms=114
+2026-10-21T17:12:36 INFO  search-api/sa-node-08 backup finished file=/vault/weekly/payments_2026w39.tar.zst size_mb=25175 checksum=b29b04e4
+2026-10-21T17:12:42 INFO  search-api/sa-node-05 deploy step release=search-api-4.15.8 step=pull_image result=ok took_s=67
+2026-10-21T17:12:47 INFO  search-api/sa-node-03 cache stats region=ap-ne-2b hit_ratio=63.0% evictions=8094
+2026-10-21T17:12:49 WARN  search-api/sa-node-03 alert fired rule=conn_pool_saturated value=98% threshold=87%
+2026-10-21T17:12:50 WARN  search-api/sa-node-07 alert fired rule=error_ratio_high value=80% threshold=76%
+2026-10-21T17:12:51 INFO  search-api/sa-node-03 config applied key=retry.max_attempts value=false by=mjlee
+2026-10-21T17:12:55 INFO  search-api/sa-node-08 request done id=req-5388f1f5 route=/search-api/v1/get status=404 latency_ms=61
+2026-10-21T17:12:58 INFO  search-api/sa-node-06 request done id=req-665e1a8c route=/search-api/v1/list status=200 latency_ms=252
+2026-10-21T17:13:00 NOTE  search-api/sa-node-14 operator=mjlee memo="점검 창을 34분 연장함. 승인: 류태경 팀장."
+2026-10-21T17:13:02 INFO  search-api/sa-node-17 request done id=req-30e7939c route=/search-api/v1/list status=201 latency_ms=267
+2026-10-21T17:13:04 ERROR search-api/sa-node-11 job failed job=search-api-cleanup attempt=5 cause=lock_wait_exceeded
+2026-10-21T17:13:08 INFO  search-api/sa-node-04 cache stats region=ap-ne-2b hit_ratio=96.9% evictions=34951
+2026-10-21T17:13:14 INFO  search-api/sa-node-17 backup finished file=/vault/weekly/sessions_2026w39.tar.zst size_mb=82731 checksum=d0a9679c
+2026-10-21T17:13:15 INFO  search-api/sa-node-03 request done id=req-4618b3bb route=/search-api/v1/update status=200 latency_ms=62
+2026-10-21T17:13:20 INFO  search-api/sa-node-24 ticket linked id=OPS-47028 reason=dependency_upgrade
+2026-10-21T17:13:25 INFO  search-api/sa-node-19 deploy step release=search-api-4.10.1 step=shift_traffic_50 result=ok took_s=22
+2026-10-21T17:13:29 INFO  search-api/sa-node-15 request done id=req-948cf636 route=/search-api/v1/sync status=200 latency_ms=78
+2026-10-21T17:13:35 INFO  search-api/sa-node-11 ticket linked id=OPS-47483 reason=runbook_update
+2026-10-21T17:13:42 INFO  search-api/sa-node-09 ticket linked id=OPS-49832 reason=schema_change
+2026-10-21T17:13:49 INFO  search-api/sa-node-22 request done id=req-bd0c5cbb route=/search-api/v1/update status=500 latency_ms=64
+2026-10-21T17:13:50 INFO  search-api/sa-node-07 ticket linked id=OPS-47993 reason=dns_ttl_change
+2026-10-21T17:13:51 INFO  search-api/sa-node-21 ticket linked id=OPS-47747 reason=quota_increase
+2026-10-21T17:13:52 INFO  search-api/sa-node-18 config applied key=breaker.open_ratio value=1438 by=dwjung
+2026-10-21T17:13:54 INFO  search-api/sa-node-16 pool resize target=search-api-cache max_pool_size=91 prev=74
+2026-10-21T17:13:58 INFO  search-api/sa-node-02 request done id=req-58689606 route=/search-api/v1/get status=429 latency_ms=144
+2026-10-21T17:14:01 INFO  search-api/sa-node-08 request done id=req-bee3dbce route=/search-api/v1/verify status=200 latency_ms=216
+2026-10-21T17:14:04 INFO  search-api/sa-node-18 request done id=req-c27f7eb3 route=/search-api/v1/list status=429 latency_ms=131
+2026-10-21T17:14:08 INFO  search-api/sa-node-23 request done id=req-d6f82ba9 route=/search-api/v1/create status=409 latency_ms=99
+2026-10-21T17:14:10 INFO  search-api/sa-node-08 config applied key=flush.interval_ms value=false by=yjchoi
+2026-10-21T17:14:13 WARN  search-api/sa-node-16 alert fired rule=gc_pause_long value=50ms threshold=49ms
+2026-10-21T17:14:20 INFO  search-api/sa-node-01 request done id=req-24e35e3c route=/search-api/v1/update status=200 latency_ms=74
+2026-10-21T17:14:26 INFO  search-api/sa-node-09 request done id=req-51a5f42c route=/search-api/v1/status status=200 latency_ms=56
+2026-10-21T17:14:29 ERROR search-api/sa-node-21 job failed job=search-api-reindex attempt=2 cause=quota_exceeded
+2026-10-21T17:14:35 INFO  search-api/sa-node-08 request done id=req-5b3c4c5a route=/search-api/v1/status status=200 latency_ms=721
+2026-10-21T17:14:40 INFO  search-api/sa-node-21 request done id=req-1bf9dff5 route=/search-api/v1/list status=200 latency_ms=762
+2026-10-21T17:14:41 INFO  search-api/sa-node-05 deploy step release=search-api-4.18.8 step=drain result=ok took_s=211
+2026-10-21T17:14:48 INFO  search-api/sa-node-04 request done id=req-f412a252 route=/search-api/v1/verify status=200 latency_ms=232
+2026-10-21T17:14:55 INFO  search-api/sa-node-21 request done id=req-84603e2c route=/search-api/v1/update status=200 latency_ms=149
+2026-10-21T17:14:58 INFO  search-api/sa-node-04 ticket linked id=OPS-49174 reason=log_volume_spike
+2026-10-21T17:15:00 WARN  search-api/sa-node-16 alert fired rule=disk_usage_warning value=84% threshold=73%
+2026-10-21T17:15:02 INFO  search-api/sa-node-04 request done id=req-101ff2c5 route=/search-api/v1/get status=200 latency_ms=96
+2026-10-21T17:15:03 INFO  search-api/sa-node-23 request done id=req-02a09747 route=/search-api/v1/update status=204 latency_ms=114
+2026-10-21T17:15:06 INFO  search-api/sa-node-14 ticket linked id=OPS-47398 reason=quota_increase
+2026-10-21T17:15:08 INFO  search-api/sa-node-02 request done id=req-484b8a32 route=/search-api/v1/get status=503 latency_ms=987
+2026-10-21T17:15:13 INFO  search-api/sa-node-19 cache stats region=us-we-2b hit_ratio=76.6% evictions=17545
+2026-10-21T17:15:16 INFO  search-api/sa-node-09 request done id=req-4a9aee4f route=/search-api/v1/cancel status=201 latency_ms=31
+2026-10-21T17:15:23 INFO  search-api/sa-node-19 deploy step release=search-api-4.12.3 step=warmup result=ok took_s=175
+2026-10-21T17:15:25 INFO  search-api/sa-node-07 request done id=req-40425ef3 route=/search-api/v1/cancel status=200 latency_ms=100
+2026-10-21T17:15:32 INFO  search-api/sa-node-18 config applied key=breaker.half_open_s value=98% by=jhpark
+2026-10-21T17:15:37 INFO  search-api/sa-node-16 ticket linked id=OPS-48558 reason=dns_ttl_change
+2026-10-21T17:15:43 WARN  search-api/sa-node-14 alert fired rule=gc_pause_long value=52ms threshold=49ms
+2026-10-21T17:15:48 INFO  search-api/sa-node-09 request done id=req-c9972008 route=/search-api/v1/cancel status=404 latency_ms=74
+2026-10-21T17:15:55 INFO  search-api/sa-node-04 pool resize target=search-api-queue max_pool_size=122 prev=109
+2026-10-21T17:15:57 WARN  search-api/sa-node-14 alert fired rule=error_ratio_high value=63% threshold=59%
+2026-10-21T17:16:02 INFO  search-api/sa-node-16 pool resize target=search-api-cache max_pool_size=12 prev=4
+2026-10-21T17:16:06 INFO  search-api/sa-node-19 backup finished file=/vault/daily/orders_20261028.tar.zst size_mb=53060 checksum=cebe51a7
+2026-10-21T17:16:12 INFO  search-api/sa-node-10 pool resize target=search-api-worker max_pool_size=227 prev=173
+2026-10-21T17:16:16 INFO  search-api/sa-node-21 request done id=req-4766d9a2 route=/search-api/v1/get status=200 latency_ms=55
+2026-10-21T17:16:17 INFO  search-api/sa-node-19 config applied key=retry.backoff_ms value=19% by=yjchoi
+2026-10-21T17:16:19 INFO  search-api/sa-node-21 config applied key=retry.backoff_ms value=true by=yjchoi
+2026-10-21T17:16:26 INFO  search-api/sa-node-13 request done id=req-335d8158 route=/search-api/v1/update status=200 latency_ms=151
+2026-10-21T17:16:31 INFO  search-api/sa-node-14 config applied key=queue.visibility_s value=60 by=yjchoi
+2026-10-21T17:16:36 INFO  search-api/sa-node-13 request done id=req-8a370af6 route=/search-api/v1/list status=404 latency_ms=494
+2026-10-21T17:16:40 INFO  search-api/sa-node-16 request done id=req-47936930 route=/search-api/v1/list status=200 latency_ms=184
+2026-10-21T17:16:44 INFO  search-api/sa-node-01 request done id=req-beca2495 route=/search-api/v1/sync status=200 latency_ms=119
+2026-10-21T17:16:47 INFO  search-api/sa-node-15 request done id=req-0f47377d route=/search-api/v1/create status=429 latency_ms=772
+2026-10-21T17:16:50 INFO  search-api/sa-node-01 request done id=req-21ff937e route=/search-api/v1/cancel status=200 latency_ms=282
+2026-10-21T17:16:55 INFO  search-api/sa-node-17 pool resize target=search-api-queue max_pool_size=287 prev=315
+2026-10-21T17:17:01 NOTE  search-api/sa-node-24 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-21T17:17:04 INFO  search-api/sa-node-07 request done id=req-f9387a81 route=/search-api/v1/update status=404 latency_ms=85
+2026-10-21T17:17:09 INFO  search-api/sa-node-17 request done id=req-79c708d7 route=/search-api/v1/create status=409 latency_ms=121
+2026-10-21T17:17:13 NOTE  search-api/sa-node-15 operator=yjchoi memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-21T17:17:15 INFO  search-api/sa-node-09 request done id=req-c9d79e67 route=/search-api/v1/cancel status=200 latency_ms=223
+2026-10-21T17:17:22 INFO  search-api/sa-node-21 config applied key=breaker.open_ratio value=true by=sykang
+2026-10-21T17:17:23 NOTE  search-api/sa-node-10 operator=jhpark memo="연동 팀에 변경 공지 완료."
+2026-10-21T17:17:24 INFO  search-api/sa-node-18 request done id=req-35989651 route=/search-api/v1/sync status=200 latency_ms=127
+2026-10-21T17:17:27 INFO  search-api/sa-node-19 deploy step release=search-api-4.20.3 step=shift_traffic_50 result=ok took_s=80
+2026-10-21T17:17:33 INFO  search-api/sa-node-02 request done id=req-fce6c95e route=/search-api/v1/verify status=200 latency_ms=58
+2026-10-21T17:17:36 INFO  search-api/sa-node-02 request done id=req-21012af8 route=/search-api/v1/create status=503 latency_ms=222
+2026-10-21T17:17:41 ERROR search-api/sa-node-21 job failed job=search-api-cleanup attempt=3 cause=oom_killed
+2026-10-21T17:17:48 INFO  search-api/sa-node-08 request done id=req-b0830b18 route=/search-api/v1/cancel status=400 latency_ms=57
+2026-10-21T17:17:50 INFO  search-api/sa-node-21 request done id=req-0fc57655 route=/search-api/v1/create status=200 latency_ms=34
+2026-10-21T17:17:54 INFO  search-api/sa-node-02 config applied key=dns.ttl_s value=29 by=sykang
+2026-10-21T17:17:55 INFO  search-api/sa-node-19 cache stats region=ap-ne-2a hit_ratio=67.9% evictions=33732
+2026-10-21T17:17:58 INFO  search-api/sa-node-03 deploy step release=search-api-4.18.4 step=start result=ok took_s=89
+2026-10-21T17:18:02 INFO  search-api/sa-node-09 request done id=req-ce252d62 route=/search-api/v1/sync status=503 latency_ms=285
+2026-10-21T17:18:05 INFO  search-api/sa-node-01 request done id=req-f46ae2f9 route=/search-api/v1/update status=400 latency_ms=275
+2026-10-21T17:18:12 INFO  search-api/sa-node-20 cache stats region=ap-ne-2a hit_ratio=68.3% evictions=4460
+2026-10-21T17:18:19 INFO  search-api/sa-node-12 config applied key=breaker.open_ratio value=25 by=sykang
+2026-10-21T17:18:24 INFO  search-api/sa-node-04 config applied key=retry.max_attempts value=true by=yjchoi
+2026-10-21T17:18:26 INFO  search-api/sa-node-18 request done id=req-08685ed0 route=/search-api/v1/cancel status=200 latency_ms=175
+2026-10-21T17:18:32 INFO  search-api/sa-node-19 request done id=req-db4755ba route=/search-api/v1/list status=200 latency_ms=347
+2026-10-21T17:18:39 INFO  search-api/sa-node-23 request done id=req-10f8b1f7 route=/search-api/v1/list status=200 latency_ms=680
+2026-10-21T17:18:40 INFO  search-api/sa-node-22 request done id=req-495b8b9a route=/search-api/v1/get status=204 latency_ms=124
+2026-10-21T17:18:45 INFO  search-api/sa-node-14 config applied key=queue.visibility_s value=3594 by=yjchoi
+2026-10-21T17:18:48 INFO  search-api/sa-node-17 request done id=req-0ccb6290 route=/search-api/v1/update status=200 latency_ms=104
+2026-10-21T17:18:50 NOTE  search-api/sa-node-07 operator=dwjung memo="임시 증설 26대 추가. 내일 오전 회수 예정."
+2026-10-21T17:18:53 INFO  search-api/sa-node-07 deploy step release=search-api-4.13.4 step=pull_image result=ok took_s=6
+2026-10-21T17:18:58 INFO  search-api/sa-node-03 pool resize target=search-api-queue max_pool_size=49 prev=4
+2026-10-21T17:19:04 INFO  search-api/sa-node-12 request done id=req-f196b75e route=/search-api/v1/list status=404 latency_ms=101
+2026-10-21T17:19:05 INFO  search-api/sa-node-23 request done id=req-2d9bcb0f route=/search-api/v1/create status=200 latency_ms=13
+2026-10-21T17:19:09 NOTE  search-api/sa-node-01 operator=mjlee memo="로그 보존 기간은 7일로 유지하기로 함."
+2026-10-21T17:19:16 INFO  search-api/sa-node-03 request done id=req-fe312602 route=/search-api/v1/create status=200 latency_ms=160
+2026-10-21T17:19:18 INFO  search-api/sa-node-03 config applied key=log.sample_rate value=false by=mjlee
+2026-10-21T17:19:19 INFO  search-api/sa-node-15 request done id=req-8b4300fe route=/search-api/v1/cancel status=200 latency_ms=18
+2026-10-21T17:19:20 INFO  search-api/sa-node-15 request done id=req-76de14f0 route=/search-api/v1/create status=200 latency_ms=159
+2026-10-21T17:19:25 WARN  search-api/sa-node-09 alert fired rule=conn_pool_saturated value=77% threshold=68%
+2026-10-21T17:19:31 WARN  search-api/sa-node-12 alert fired rule=p99_latency_high value=58ms threshold=50ms
+2026-10-21T17:19:34 INFO  search-api/sa-node-02 request done id=req-c7137d74 route=/search-api/v1/verify status=200 latency_ms=61
+2026-10-21T17:19:35 WARN  search-api/sa-node-01 alert fired rule=p99_latency_high value=78ms threshold=66ms
+2026-10-21T17:19:38 WARN  search-api/sa-node-18 alert fired rule=replica_lag_high value=92s threshold=80s
+2026-10-21T17:19:43 INFO  search-api/sa-node-22 request done id=req-fbd5e604 route=/search-api/v1/status status=201 latency_ms=94
+2026-10-21T17:19:49 INFO  search-api/sa-node-16 request done id=req-26fb7e1b route=/search-api/v1/update status=200 latency_ms=207
+2026-10-21T17:19:55 INFO  search-api/sa-node-09 deploy step release=search-api-4.14.0 step=verify result=ok took_s=222
+2026-10-21T17:19:56 INFO  search-api/sa-node-17 deploy step release=search-api-4.17.6 step=shift_traffic_100 result=ok took_s=43
+2026-10-21T17:20:00 INFO  search-api/sa-node-18 request done id=req-5b452f5d route=/search-api/v1/cancel status=200 latency_ms=220
+2026-10-21T17:20:02 ERROR search-api/sa-node-14 job failed job=search-api-reindex attempt=2 cause=lock_wait_exceeded
+2026-10-21T17:20:07 INFO  search-api/sa-node-16 deploy step release=search-api-4.12.7 step=drain result=ok took_s=45
+2026-10-21T17:20:14 INFO  search-api/sa-node-23 config applied key=worker.concurrency value=3 by=mjlee
+2026-10-21T17:20:15 INFO  search-api/sa-node-18 request done id=req-22441c9f route=/search-api/v1/status status=500 latency_ms=142
+2026-10-21T17:20:22 INFO  search-api/sa-node-12 request done id=req-5f8b54a0 route=/search-api/v1/list status=204 latency_ms=333
+2026-10-21T17:20:24 INFO  search-api/sa-node-13 request done id=req-296df67c route=/search-api/v1/sync status=200 latency_ms=222
+2026-10-21T17:20:30 INFO  search-api/sa-node-17 deploy step release=search-api-4.13.3 step=shift_traffic_10 result=ok took_s=229
+2026-10-21T17:20:32 INFO  search-api/sa-node-18 cache stats region=ap-ne-2c hit_ratio=66.2% evictions=39443
+2026-10-21T17:20:36 INFO  search-api/sa-node-12 deploy step release=search-api-4.10.4 step=shift_traffic_100 result=ok took_s=63
+2026-10-21T17:20:41 INFO  search-api/sa-node-06 request done id=req-6d3e07fd route=/search-api/v1/update status=200 latency_ms=215
+2026-10-21T17:20:42 INFO  search-api/sa-node-15 request done id=req-174484b7 route=/search-api/v1/sync status=200 latency_ms=22
+2026-10-21T17:20:45 NOTE  search-api/sa-node-22 operator=shkim memo="임시 증설 55대 추가. 내일 오전 회수 예정."
+2026-10-21T17:20:47 INFO  search-api/sa-node-12 request done id=req-920c07eb route=/search-api/v1/verify status=200 latency_ms=131
+2026-10-21T17:20:50 INFO  search-api/sa-node-12 request done id=req-cd8ce863 route=/search-api/v1/verify status=200 latency_ms=139
+2026-10-21T17:20:53 INFO  search-api/sa-node-06 pool resize target=search-api-worker max_pool_size=9 prev=4
+2026-10-21T17:20:58 INFO  search-api/sa-node-10 backup finished file=/vault/daily/inventory_20261005.tar.zst size_mb=39629 checksum=26a5e31b
+2026-10-21T17:21:00 INFO  search-api/sa-node-03 request done id=req-9df11a70 route=/search-api/v1/verify status=204 latency_ms=38
+2026-10-21T17:21:05 INFO  search-api/sa-node-05 deploy step release=search-api-4.12.7 step=warmup result=ok took_s=82
+2026-10-21T17:21:12 INFO  search-api/sa-node-05 request done id=req-a485d583 route=/search-api/v1/sync status=200 latency_ms=82
+2026-10-21T17:21:17 INFO  search-api/sa-node-08 deploy step release=search-api-4.11.9 step=shift_traffic_50 result=ok took_s=46
+2026-10-21T17:21:22 INFO  search-api/sa-node-21 pool resize target=search-api-queue max_pool_size=198 prev=194
+2026-10-21T17:21:25 INFO  search-api/sa-node-06 ticket linked id=OPS-47149 reason=oncall_handoff
+2026-10-21T17:21:28 INFO  search-api/sa-node-06 request done id=req-cb0179b8 route=/search-api/v1/list status=204 latency_ms=455
+2026-10-21T17:21:29 INFO  search-api/sa-node-04 request done id=req-ffda7d8b route=/search-api/v1/cancel status=200 latency_ms=380
+2026-10-21T17:21:32 INFO  search-api/sa-node-22 request done id=req-7c12960a route=/search-api/v1/get status=404 latency_ms=30
+2026-10-21T17:21:35 INFO  search-api/sa-node-07 config applied key=canary.traffic_percent value=23 by=sykang
+2026-10-21T17:21:42 INFO  search-api/sa-node-03 pool resize target=search-api-db max_pool_size=322 prev=339
+2026-10-21T17:21:47 INFO  search-api/sa-node-16 request done id=req-63e84275 route=/search-api/v1/verify status=200 latency_ms=207
+2026-10-21T17:21:54 WARN  search-api/sa-node-18 alert fired rule=queue_depth_high value=91 threshold=82
+2026-10-21T17:21:57 NOTE  search-api/sa-node-07 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 20일 남음."
+2026-10-21T17:21:58 INFO  search-api/sa-node-20 request done id=req-52b90010 route=/search-api/v1/update status=404 latency_ms=36
+2026-10-21T17:22:00 INFO  search-api/sa-node-11 request done id=req-c64c6536 route=/search-api/v1/create status=200 latency_ms=192
+2026-10-21T17:22:04 INFO  search-api/sa-node-12 backup finished file=/vault/weekly/payments_2026w34.tar.zst size_mb=67463 checksum=8a2690ab
+2026-10-21T17:22:08 INFO  search-api/sa-node-18 config applied key=limiter.rps value=17% by=hbyoon
+2026-10-21T17:22:13 INFO  search-api/sa-node-01 request done id=req-730b5919 route=/search-api/v1/create status=201 latency_ms=52
+2026-10-21T17:22:19 INFO  search-api/sa-node-02 request done id=req-f2ab832a route=/search-api/v1/get status=503 latency_ms=98
+2026-10-21T17:22:26 ERROR search-api/sa-node-07 job failed job=search-api-export attempt=1 cause=quota_exceeded
+2026-10-21T17:22:33 INFO  search-api/sa-node-24 cache stats region=ap-ne-2a hit_ratio=75.5% evictions=26721
+2026-10-21T17:22:35 INFO  search-api/sa-node-08 deploy step release=search-api-4.20.4 step=pull_image result=ok took_s=210
+2026-10-21T17:22:39 INFO  search-api/sa-node-03 request done id=req-ccb8d40d route=/search-api/v1/status status=200 latency_ms=65
+2026-10-21T17:22:40 INFO  search-api/sa-node-13 cache stats region=ap-ne-2a hit_ratio=64.8% evictions=14701
+2026-10-21T17:22:43 INFO  search-api/sa-node-12 backup finished file=/vault/daily/users_20261007.tar.zst size_mb=73998 checksum=b61a8124
+2026-10-21T17:22:48 INFO  search-api/sa-node-09 pool resize target=search-api-db max_pool_size=110 prev=101
+2026-10-21T17:22:52 INFO  search-api/sa-node-22 request done id=req-5ce3f8e8 route=/search-api/v1/sync status=200 latency_ms=151
+2026-10-21T17:22:54 INFO  search-api/sa-node-04 deploy step release=search-api-4.15.0 step=shift_traffic_50 result=ok took_s=161
+2026-10-21T17:23:00 INFO  search-api/sa-node-09 backup finished file=/vault/weekly/orders_2026w35.tar.zst size_mb=46145 checksum=e7b5a114
+2026-10-21T17:23:02 WARN  search-api/sa-node-02 alert fired rule=p99_latency_high value=92ms threshold=84ms
+2026-10-21T17:23:09 INFO  search-api/sa-node-05 deploy step release=search-api-4.14.9 step=shift_traffic_10 result=ok took_s=197
+2026-10-21T17:23:13 WARN  search-api/sa-node-13 alert fired rule=p99_latency_high value=67ms threshold=63ms
+2026-10-21T17:23:18 INFO  search-api/sa-node-19 ticket linked id=OPS-47785 reason=schema_change
+2026-10-21T17:23:23 INFO  search-api/sa-node-19 deploy step release=search-api-4.18.4 step=drain result=ok took_s=83
+2026-10-21T17:23:24 INFO  search-api/sa-node-08 config applied key=breaker.open_ratio value=88% by=dwjung
+2026-10-21T17:23:28 INFO  search-api/sa-node-03 request done id=req-4b275590 route=/search-api/v1/get status=200 latency_ms=28
+2026-10-21T17:23:33 INFO  search-api/sa-node-14 deploy step release=search-api-4.20.6 step=pull_image result=ok took_s=9
+2026-10-21T17:23:34 INFO  search-api/sa-node-20 ticket linked id=OPS-49933 reason=oncall_handoff
+2026-10-21T17:23:40 INFO  search-api/sa-node-13 backup finished file=/vault/weekly/audit_2026w34.tar.zst size_mb=15862 checksum=7d5af0b7
+2026-10-21T17:23:44 INFO  search-api/sa-node-08 request done id=req-d01144a7 route=/search-api/v1/status status=200 latency_ms=121
+2026-10-21T17:23:47 INFO  search-api/sa-node-05 request done id=req-d45694a1 route=/search-api/v1/verify status=500 latency_ms=40
+2026-10-21T17:23:52 INFO  search-api/sa-node-22 pool resize target=search-api-worker max_pool_size=311 prev=347
+2026-10-21T17:23:58 INFO  search-api/sa-node-22 request done id=req-1039475c route=/search-api/v1/list status=200 latency_ms=481
+2026-10-21T17:24:02 ERROR search-api/sa-node-18 job failed job=search-api-rollup attempt=4 cause=quota_exceeded
+2026-10-21T17:24:09 WARN  search-api/sa-node-05 alert fired rule=error_ratio_high value=78% threshold=76%
+2026-10-21T17:24:15 WARN  search-api/sa-node-20 alert fired rule=replica_lag_high value=82s threshold=79s
+2026-10-21T17:24:16 WARN  search-api/sa-node-24 alert fired rule=gc_pause_long value=69ms threshold=61ms
+2026-10-21T17:24:18 INFO  search-api/sa-node-06 request done id=req-88a268f1 route=/search-api/v1/create status=500 latency_ms=162
+2026-10-21T17:24:25 INFO  search-api/sa-node-07 request done id=req-941df955 route=/search-api/v1/get status=503 latency_ms=64
+2026-10-21T17:24:32 INFO  search-api/sa-node-04 pool resize target=search-api-db max_pool_size=259 prev=300
+2026-10-21T17:24:38 INFO  search-api/sa-node-18 deploy step release=search-api-4.14.9 step=pull_image result=ok took_s=74
+2026-10-21T17:24:39 INFO  search-api/sa-node-18 request done id=req-891ee052 route=/search-api/v1/sync status=200 latency_ms=89
+2026-10-21T17:24:41 INFO  search-api/sa-node-03 request done id=req-591d42e1 route=/search-api/v1/update status=200 latency_ms=64
+2026-10-21T17:24:47 INFO  search-api/sa-node-06 request done id=req-15acd9a1 route=/search-api/v1/list status=200 latency_ms=49
+2026-10-21T17:24:49 INFO  search-api/sa-node-21 request done id=req-d979303a route=/search-api/v1/sync status=200 latency_ms=180
+2026-10-21T17:24:51 INFO  search-api/sa-node-18 request done id=req-d81f3fd8 route=/search-api/v1/cancel status=200 latency_ms=280
+2026-10-21T17:24:55 INFO  search-api/sa-node-16 request done id=req-d77e968b route=/search-api/v1/status status=200 latency_ms=101
+2026-10-21T17:25:02 INFO  search-api/sa-node-21 request done id=req-0377a701 route=/search-api/v1/verify status=404 latency_ms=25
+2026-10-21T17:25:09 INFO  search-api/sa-node-12 request done id=req-7c402b87 route=/search-api/v1/get status=200 latency_ms=24
+2026-10-21T17:25:10 INFO  search-api/sa-node-15 deploy step release=search-api-4.15.3 step=shift_traffic_10 result=ok took_s=121
+2026-10-21T17:25:16 INFO  search-api/sa-node-16 request done id=req-2abe64f0 route=/search-api/v1/get status=200 latency_ms=212
+2026-10-21T17:25:23 INFO  search-api/sa-node-06 backup finished file=/vault/daily/inventory_20261018.tar.zst size_mb=16417 checksum=d66dc11e
+2026-10-21T17:25:27 INFO  search-api/sa-node-04 ticket linked id=OPS-47099 reason=dependency_upgrade
+2026-10-21T17:25:28 INFO  search-api/sa-node-02 request done id=req-ee4423d0 route=/search-api/v1/create status=200 latency_ms=118
+2026-10-21T17:25:31 INFO  search-api/sa-node-17 request done id=req-d0571a97 route=/search-api/v1/get status=404 latency_ms=560
+2026-10-21T17:25:32 INFO  search-api/sa-node-03 config applied key=shard.count value=45 by=yjchoi
+2026-10-21T17:25:33 INFO  search-api/sa-node-18 request done id=req-97f6b2ef route=/search-api/v1/verify status=200 latency_ms=152
+2026-10-21T17:25:37 INFO  search-api/sa-node-09 config applied key=breaker.open_ratio value=8 by=shkim
+2026-10-21T17:25:38 INFO  search-api/sa-node-08 request done id=req-1e220378 route=/search-api/v1/verify status=200 latency_ms=174
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

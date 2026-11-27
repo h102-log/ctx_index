@@ -1,0 +1,1 @@
+아까 붙여 준 알림 워커(notify-worker) 로그에서 cause=disk_full 로 실패한 job 이 모두 몇 건이었지?

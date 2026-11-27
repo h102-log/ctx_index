@@ -1,0 +1,424 @@
+참고용 로그 01: 결제 게이트웨이(pay-gw) v4.18 배포 구간. '확인'이라고만 답해 줘.
+
+2026-10-05T01:30:38 WARN  pay-gw/pg-node-10 alert fired rule=queue_depth_high value=60 threshold=55
+2026-10-05T01:30:42 ERROR pay-gw/pg-node-08 job failed job=pay-gw-export attempt=1 cause=lock_wait_exceeded
+2026-10-05T01:30:46 ERROR pay-gw/pg-node-02 job failed job=pay-gw-reindex attempt=2 cause=upstream_timeout
+2026-10-05T01:30:51 INFO  pay-gw/pg-node-24 config applied key=flush.interval_ms value=true by=dwjung
+2026-10-05T01:30:55 INFO  pay-gw/pg-node-23 request done id=req-08050a4e route=/pay-gw/v1/verify status=200 latency_ms=194
+2026-10-05T01:30:58 INFO  pay-gw/pg-node-05 request done id=req-68b49734 route=/pay-gw/v1/create status=201 latency_ms=152
+2026-10-05T01:31:05 INFO  pay-gw/pg-node-17 pool resize target=pay-gw-upstream max_pool_size=349 prev=301
+2026-10-05T01:31:12 INFO  pay-gw/pg-node-05 request done id=req-1463b16d route=/pay-gw/v1/verify status=200 latency_ms=135
+2026-10-05T01:31:19 INFO  pay-gw/pg-node-22 ticket linked id=OPS-49871 reason=cert_rotation
+2026-10-05T01:31:26 INFO  pay-gw/pg-node-10 request done id=req-54ffcaa8 route=/pay-gw/v1/verify status=429 latency_ms=143
+2026-10-05T01:31:33 ERROR pay-gw/pg-node-16 job failed job=pay-gw-cleanup attempt=3 cause=lock_wait_exceeded
+2026-10-05T01:31:37 INFO  pay-gw/pg-node-08 backup finished file=/vault/daily/users_20261011.tar.zst size_mb=6184 checksum=e873650d
+2026-10-05T01:31:43 WARN  pay-gw/pg-node-23 alert fired rule=cpu_steal_high value=87% threshold=85%
+2026-10-05T01:31:45 INFO  pay-gw/pg-node-22 request done id=req-8e9082b8 route=/pay-gw/v1/update status=409 latency_ms=46
+2026-10-05T01:31:46 INFO  pay-gw/pg-node-16 request done id=req-b183d775 route=/pay-gw/v1/cancel status=409 latency_ms=54
+2026-10-05T01:31:47 ERROR pay-gw/pg-node-18 job failed job=pay-gw-cleanup attempt=5 cause=quota_exceeded
+2026-10-05T01:31:48 INFO  pay-gw/pg-node-14 request done id=req-50ed7ef0 route=/pay-gw/v1/create status=409 latency_ms=223
+2026-10-05T01:31:55 INFO  pay-gw/pg-node-15 request done id=req-725b4ee7 route=/pay-gw/v1/verify status=200 latency_ms=168
+2026-10-05T01:32:02 NOTE  pay-gw/pg-node-16 operator=ejlim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-05T01:32:03 INFO  pay-gw/pg-node-03 request done id=req-8590ca6f route=/pay-gw/v1/get status=204 latency_ms=336
+2026-10-05T01:32:10 INFO  pay-gw/pg-node-23 request done id=req-4738c92d route=/pay-gw/v1/get status=200 latency_ms=214
+2026-10-05T01:32:15 INFO  pay-gw/pg-node-18 request done id=req-527a65a6 route=/pay-gw/v1/sync status=200 latency_ms=20
+2026-10-05T01:32:20 INFO  pay-gw/pg-node-04 request done id=req-9201d8d5 route=/pay-gw/v1/update status=200 latency_ms=109
+2026-10-05T01:32:26 INFO  pay-gw/pg-node-24 request done id=req-54065fb9 route=/pay-gw/v1/cancel status=200 latency_ms=516
+2026-10-05T01:32:27 ERROR pay-gw/pg-node-23 job failed job=pay-gw-rollup attempt=1 cause=dns_failure
+2026-10-05T01:32:28 INFO  pay-gw/pg-node-14 request done id=req-6e8c26d3 route=/pay-gw/v1/verify status=200 latency_ms=30
+2026-10-05T01:32:32 INFO  pay-gw/pg-node-16 request done id=req-e0a91a9f route=/pay-gw/v1/list status=503 latency_ms=65
+2026-10-05T01:32:37 ERROR pay-gw/pg-node-10 job failed job=pay-gw-rollup attempt=5 cause=bad_checksum
+2026-10-05T01:32:38 INFO  pay-gw/pg-node-02 request done id=req-7aea201f route=/pay-gw/v1/verify status=200 latency_ms=144
+2026-10-05T01:32:40 INFO  pay-gw/pg-node-03 request done id=req-f96fa7df route=/pay-gw/v1/list status=200 latency_ms=36
+2026-10-05T01:32:45 INFO  pay-gw/pg-node-16 request done id=req-39be115d route=/pay-gw/v1/sync status=200 latency_ms=58
+2026-10-05T01:32:48 INFO  pay-gw/pg-node-20 request done id=req-2e51a48e route=/pay-gw/v1/update status=200 latency_ms=214
+2026-10-05T01:32:54 INFO  pay-gw/pg-node-20 pool resize target=pay-gw-worker max_pool_size=364 prev=317
+2026-10-05T01:32:59 INFO  pay-gw/pg-node-08 request done id=req-bea95d97 route=/pay-gw/v1/sync status=429 latency_ms=151
+2026-10-05T01:33:04 INFO  pay-gw/pg-node-09 request done id=req-78f46241 route=/pay-gw/v1/update status=429 latency_ms=99
+2026-10-05T01:33:10 INFO  pay-gw/pg-node-23 deploy step release=pay-gw-4.19.0 step=healthcheck result=ok took_s=26
+2026-10-05T01:33:15 INFO  pay-gw/pg-node-19 request done id=req-93cdba08 route=/pay-gw/v1/list status=200 latency_ms=148
+2026-10-05T01:33:21 INFO  pay-gw/pg-node-17 request done id=req-a9af7d80 route=/pay-gw/v1/get status=201 latency_ms=396
+2026-10-05T01:33:24 INFO  pay-gw/pg-node-19 request done id=req-09a46784 route=/pay-gw/v1/get status=200 latency_ms=280
+2026-10-05T01:33:28 INFO  pay-gw/pg-node-06 deploy step release=pay-gw-4.20.5 step=shift_traffic_100 result=ok took_s=58
+2026-10-05T01:33:31 INFO  pay-gw/pg-node-10 request done id=req-2f936e60 route=/pay-gw/v1/list status=204 latency_ms=103
+2026-10-05T01:33:33 INFO  pay-gw/pg-node-20 request done id=req-4a416f47 route=/pay-gw/v1/get status=200 latency_ms=62
+2026-10-05T01:33:36 NOTE  pay-gw/pg-node-03 operator=shkim memo="임시 증설 5대 추가. 내일 오전 회수 예정."
+2026-10-05T01:33:37 INFO  pay-gw/pg-node-10 request done id=req-9e0b08a9 route=/pay-gw/v1/verify status=200 latency_ms=173
+2026-10-05T01:33:43 INFO  pay-gw/pg-node-03 request done id=req-4b298530 route=/pay-gw/v1/update status=204 latency_ms=785
+2026-10-05T01:33:46 INFO  pay-gw/pg-node-19 config applied key=shard.count value=true by=yjchoi
+2026-10-05T01:33:49 INFO  pay-gw/pg-node-01 pool resize target=pay-gw-cache max_pool_size=93 prev=41
+2026-10-05T01:33:51 INFO  pay-gw/pg-node-03 request done id=req-453c80cd route=/pay-gw/v1/status status=200 latency_ms=138
+2026-10-05T01:33:54 NOTE  pay-gw/pg-node-16 operator=yjchoi memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-05T01:34:01 INFO  pay-gw/pg-node-22 request done id=req-fb0545c6 route=/pay-gw/v1/list status=400 latency_ms=32
+2026-10-05T01:34:06 WARN  pay-gw/pg-node-19 alert fired rule=replica_lag_high value=71s threshold=61s
+2026-10-05T01:34:11 INFO  pay-gw/pg-node-03 request done id=req-80627d14 route=/pay-gw/v1/verify status=429 latency_ms=300
+2026-10-05T01:34:16 NOTE  pay-gw/pg-node-20 operator=shkim memo="헬스체크 간격을 53초에서 68초로 조정함. 배포 중 오탐이 잦았음."
+2026-10-05T01:34:18 INFO  pay-gw/pg-node-04 request done id=req-5d5f326e route=/pay-gw/v1/sync status=200 latency_ms=176
+2026-10-05T01:34:22 INFO  pay-gw/pg-node-12 request done id=req-62297f3d route=/pay-gw/v1/create status=201 latency_ms=368
+2026-10-05T01:34:28 INFO  pay-gw/pg-node-15 pool resize target=pay-gw-db max_pool_size=68 prev=120
+2026-10-05T01:34:32 INFO  pay-gw/pg-node-17 request done id=req-dd94c576 route=/pay-gw/v1/list status=409 latency_ms=232
+2026-10-05T01:34:36 INFO  pay-gw/pg-node-04 request done id=req-7f3dde7b route=/pay-gw/v1/cancel status=201 latency_ms=66
+2026-10-05T01:34:40 INFO  pay-gw/pg-node-08 request done id=req-de1c07c7 route=/pay-gw/v1/list status=503 latency_ms=148
+2026-10-05T01:34:41 INFO  pay-gw/pg-node-21 pool resize target=pay-gw-cache max_pool_size=189 prev=239
+2026-10-05T01:34:42 ERROR pay-gw/pg-node-11 job failed job=pay-gw-reindex attempt=1 cause=dns_failure
+2026-10-05T01:34:48 NOTE  pay-gw/pg-node-03 operator=sykang memo="임시 증설 31대 추가. 내일 오전 회수 예정."
+2026-10-05T01:34:52 INFO  pay-gw/pg-node-20 request done id=req-79b52924 route=/pay-gw/v1/create status=200 latency_ms=324
+2026-10-05T01:34:55 INFO  pay-gw/pg-node-24 request done id=req-61dc0be3 route=/pay-gw/v1/update status=200 latency_ms=179
+2026-10-05T01:34:57 INFO  pay-gw/pg-node-01 request done id=req-747067f7 route=/pay-gw/v1/update status=200 latency_ms=182
+2026-10-05T01:35:01 INFO  pay-gw/pg-node-23 request done id=req-7b319717 route=/pay-gw/v1/sync status=500 latency_ms=42
+2026-10-05T01:35:07 INFO  pay-gw/pg-node-19 config applied key=flush.interval_ms value=false by=hbyoon
+2026-10-05T01:35:13 INFO  pay-gw/pg-node-05 request done id=req-14951ceb route=/pay-gw/v1/cancel status=400 latency_ms=353
+2026-10-05T01:35:17 INFO  pay-gw/pg-node-20 request done id=req-20ea4c1b route=/pay-gw/v1/get status=200 latency_ms=178
+2026-10-05T01:35:22 INFO  pay-gw/pg-node-22 request done id=req-913c2faf route=/pay-gw/v1/update status=200 latency_ms=429
+2026-10-05T01:35:28 INFO  pay-gw/pg-node-11 request done id=req-5162ee2b route=/pay-gw/v1/list status=204 latency_ms=251
+2026-10-05T01:35:29 INFO  pay-gw/pg-node-04 request done id=req-3c705101 route=/pay-gw/v1/cancel status=200 latency_ms=94
+2026-10-05T01:35:34 INFO  pay-gw/pg-node-02 request done id=req-0c2913dc route=/pay-gw/v1/verify status=200 latency_ms=61
+2026-10-05T01:35:40 INFO  pay-gw/pg-node-21 request done id=req-cfa3b10a route=/pay-gw/v1/update status=200 latency_ms=266
+2026-10-05T01:35:44 INFO  pay-gw/pg-node-20 backup finished file=/vault/daily/payments_20261011.tar.zst size_mb=63912 checksum=d3a3d311
+2026-10-05T01:35:51 INFO  pay-gw/pg-node-24 cache stats region=us-we-2b hit_ratio=66.2% evictions=35660
+2026-10-05T01:35:52 NOTE  pay-gw/pg-node-20 operator=jhpark memo="로그 보존 기간은 48일로 유지하기로 함."
+2026-10-05T01:35:53 INFO  pay-gw/pg-node-13 config applied key=limiter.burst value=6898 by=dwjung
+2026-10-05T01:35:59 INFO  pay-gw/pg-node-11 request done id=req-93cd4801 route=/pay-gw/v1/sync status=200 latency_ms=753
+2026-10-05T01:36:00 INFO  pay-gw/pg-node-07 request done id=req-822f6640 route=/pay-gw/v1/verify status=503 latency_ms=134
+2026-10-05T01:36:07 INFO  pay-gw/pg-node-02 request done id=req-d1fc64d9 route=/pay-gw/v1/get status=200 latency_ms=120
+2026-10-05T01:36:10 INFO  pay-gw/pg-node-22 pool resize target=pay-gw-upstream max_pool_size=48 prev=25
+2026-10-05T01:36:11 WARN  pay-gw/pg-node-22 alert fired rule=replica_lag_high value=91s threshold=87s
+2026-10-05T01:36:16 INFO  pay-gw/pg-node-22 config applied key=breaker.open_ratio value=true by=dwjung
+2026-10-05T01:36:17 INFO  pay-gw/pg-node-09 request done id=req-d885a37e route=/pay-gw/v1/verify status=200 latency_ms=147
+2026-10-05T01:36:20 INFO  pay-gw/pg-node-04 pool resize target=pay-gw-db max_pool_size=310 prev=346
+2026-10-05T01:36:21 WARN  pay-gw/pg-node-18 alert fired rule=fd_usage_high value=63% threshold=59%
+2026-10-05T01:36:28 INFO  pay-gw/pg-node-05 ticket linked id=OPS-49316 reason=cert_rotation
+2026-10-05T01:36:34 INFO  pay-gw/pg-node-18 request done id=req-0b8a5567 route=/pay-gw/v1/status status=200 latency_ms=189
+2026-10-05T01:36:38 ERROR pay-gw/pg-node-10 job failed job=pay-gw-cleanup attempt=1 cause=dns_failure
+2026-10-05T01:36:40 INFO  pay-gw/pg-node-21 backup finished file=/vault/weekly/sessions_2026w31.tar.zst size_mb=88133 checksum=3c366cbc
+2026-10-05T01:36:47 INFO  pay-gw/pg-node-06 cache stats region=ap-ne-2c hit_ratio=93.5% evictions=868
+2026-10-05T01:36:52 INFO  pay-gw/pg-node-22 request done id=req-a4fcc8db route=/pay-gw/v1/cancel status=200 latency_ms=57
+2026-10-05T01:36:55 INFO  pay-gw/pg-node-10 request done id=req-806ea34e route=/pay-gw/v1/update status=200 latency_ms=31
+2026-10-05T01:36:59 INFO  pay-gw/pg-node-04 pool resize target=pay-gw-upstream max_pool_size=375 prev=406
+2026-10-05T01:37:06 ERROR pay-gw/pg-node-10 job failed job=pay-gw-export attempt=3 cause=dns_failure
+2026-10-05T01:37:12 INFO  pay-gw/pg-node-14 deploy step release=pay-gw-4.20.3 step=shift_traffic_100 result=ok took_s=178
+2026-10-05T01:37:17 INFO  pay-gw/pg-node-09 deploy step release=pay-gw-4.12.0 step=drain result=ok took_s=78
+2026-10-05T01:37:19 INFO  pay-gw/pg-node-19 pool resize target=pay-gw-db max_pool_size=308 prev=324
+2026-10-05T01:37:21 INFO  pay-gw/pg-node-02 request done id=req-0d5a938a route=/pay-gw/v1/update status=200 latency_ms=87
+2026-10-05T01:37:25 INFO  pay-gw/pg-node-21 request done id=req-8b1ab983 route=/pay-gw/v1/list status=204 latency_ms=292
+2026-10-05T01:37:32 INFO  pay-gw/pg-node-13 request done id=req-2d240469 route=/pay-gw/v1/create status=503 latency_ms=33
+2026-10-05T01:37:39 INFO  pay-gw/pg-node-15 request done id=req-24341834 route=/pay-gw/v1/create status=200 latency_ms=28
+2026-10-05T01:37:42 INFO  pay-gw/pg-node-05 request done id=req-45b718c7 route=/pay-gw/v1/list status=500 latency_ms=128
+2026-10-05T01:37:48 INFO  pay-gw/pg-node-10 request done id=req-70ce7bdd route=/pay-gw/v1/list status=201 latency_ms=267
+2026-10-05T01:37:53 ERROR pay-gw/pg-node-14 job failed job=pay-gw-export attempt=3 cause=lock_wait_exceeded
+2026-10-05T01:37:58 INFO  pay-gw/pg-node-18 backup finished file=/vault/weekly/sessions_2026w30.tar.zst size_mb=43739 checksum=f211140c
+2026-10-05T01:38:00 INFO  pay-gw/pg-node-24 config applied key=http.max_conns value=true by=shkim
+2026-10-05T01:38:07 INFO  pay-gw/pg-node-18 config applied key=retry.max_attempts value=false by=sykang
+2026-10-05T01:38:11 INFO  pay-gw/pg-node-23 deploy step release=pay-gw-4.10.1 step=start result=ok took_s=147
+2026-10-05T01:38:17 INFO  pay-gw/pg-node-04 request done id=req-8693bbd2 route=/pay-gw/v1/create status=200 latency_ms=88
+2026-10-05T01:38:19 INFO  pay-gw/pg-node-04 pool resize target=pay-gw-upstream max_pool_size=85 prev=59
+2026-10-05T01:38:22 INFO  pay-gw/pg-node-03 request done id=req-ed4edc25 route=/pay-gw/v1/get status=429 latency_ms=16
+2026-10-05T01:38:29 INFO  pay-gw/pg-node-22 request done id=req-a9c3bd25 route=/pay-gw/v1/list status=200 latency_ms=163
+2026-10-05T01:38:35 INFO  pay-gw/pg-node-18 deploy step release=pay-gw-4.22.8 step=healthcheck result=ok took_s=102
+2026-10-05T01:38:38 NOTE  pay-gw/pg-node-19 operator=sykang memo="타임아웃을 6ms에서 24ms로 올림. 상위 서비스 응답 지연 때문."
+2026-10-05T01:38:44 INFO  pay-gw/pg-node-09 request done id=req-7b0d3ed7 route=/pay-gw/v1/sync status=200 latency_ms=121
+2026-10-05T01:38:45 ERROR pay-gw/pg-node-01 job failed job=pay-gw-rollup attempt=2 cause=dns_failure
+2026-10-05T01:38:51 INFO  pay-gw/pg-node-14 request done id=req-258da414 route=/pay-gw/v1/cancel status=200 latency_ms=359
+2026-10-05T01:38:57 INFO  pay-gw/pg-node-13 backup finished file=/vault/weekly/audit_2026w41.tar.zst size_mb=28438 checksum=8fa95759
+2026-10-05T01:39:02 INFO  pay-gw/pg-node-01 request done id=req-d344d42b route=/pay-gw/v1/cancel status=200 latency_ms=181
+2026-10-05T01:39:03 INFO  pay-gw/pg-node-01 config applied key=queue.batch_size value=false by=dwjung
+2026-10-05T01:39:04 INFO  pay-gw/pg-node-22 config applied key=flush.interval_ms value=false by=yjchoi
+2026-10-05T01:39:08 INFO  pay-gw/pg-node-22 request done id=req-57d3c685 route=/pay-gw/v1/verify status=204 latency_ms=72
+2026-10-05T01:39:09 NOTE  pay-gw/pg-node-18 operator=yjchoi memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-05T01:39:16 INFO  pay-gw/pg-node-21 request done id=req-eb552bfc route=/pay-gw/v1/sync status=200 latency_ms=59
+2026-10-05T01:39:19 INFO  pay-gw/pg-node-15 ticket linked id=OPS-48780 reason=quota_increase
+2026-10-05T01:39:22 INFO  pay-gw/pg-node-15 deploy step release=pay-gw-4.13.9 step=pull_image result=ok took_s=40
+2026-10-05T01:39:27 INFO  pay-gw/pg-node-02 config applied key=dns.ttl_s value=false by=mjlee
+2026-10-05T01:39:31 INFO  pay-gw/pg-node-24 request done id=req-29fb0246 route=/pay-gw/v1/get status=404 latency_ms=45
+2026-10-05T01:39:38 WARN  pay-gw/pg-node-01 alert fired rule=heap_used_high value=65% threshold=61%
+2026-10-05T01:39:40 INFO  pay-gw/pg-node-02 request done id=req-333139f6 route=/pay-gw/v1/update status=200 latency_ms=271
+2026-10-05T01:39:45 INFO  pay-gw/pg-node-07 request done id=req-69480bc9 route=/pay-gw/v1/list status=500 latency_ms=104
+2026-10-05T01:39:46 ERROR pay-gw/pg-node-16 job failed job=pay-gw-cleanup attempt=5 cause=dns_failure
+2026-10-05T01:39:53 INFO  pay-gw/pg-node-01 pool resize target=pay-gw-cache max_pool_size=281 prev=322
+2026-10-05T01:39:57 WARN  pay-gw/pg-node-02 alert fired rule=conn_pool_saturated value=60% threshold=57%
+2026-10-05T01:40:03 INFO  pay-gw/pg-node-03 request done id=req-7ce98b93 route=/pay-gw/v1/list status=200 latency_ms=52
+2026-10-05T01:40:06 INFO  pay-gw/pg-node-10 request done id=req-17771f18 route=/pay-gw/v1/cancel status=200 latency_ms=96
+2026-10-05T01:40:08 INFO  pay-gw/pg-node-06 config applied key=worker.concurrency value=true by=yjchoi
+2026-10-05T01:40:09 INFO  pay-gw/pg-node-06 request done id=req-5a8c7a03 route=/pay-gw/v1/create status=200 latency_ms=69
+2026-10-05T01:40:14 ERROR pay-gw/pg-node-24 job failed job=pay-gw-export attempt=1 cause=quota_exceeded
+2026-10-05T01:40:17 INFO  pay-gw/pg-node-03 request done id=req-693ad3b6 route=/pay-gw/v1/list status=200 latency_ms=39
+2026-10-05T01:40:20 WARN  pay-gw/pg-node-21 alert fired rule=replica_lag_high value=56s threshold=47s
+2026-10-05T01:40:25 INFO  pay-gw/pg-node-09 deploy step release=pay-gw-4.17.8 step=shift_traffic_10 result=ok took_s=150
+2026-10-05T01:40:30 WARN  pay-gw/pg-node-02 alert fired rule=heap_used_high value=74% threshold=71%
+2026-10-05T01:40:34 INFO  pay-gw/pg-node-15 request done id=req-31ee4ff5 route=/pay-gw/v1/update status=429 latency_ms=474
+2026-10-05T01:40:40 INFO  pay-gw/pg-node-04 deploy step release=pay-gw-4.14.7 step=verify result=ok took_s=129
+2026-10-05T01:40:46 INFO  pay-gw/pg-node-01 request done id=req-81cd14a9 route=/pay-gw/v1/status status=200 latency_ms=322
+2026-10-05T01:40:49 INFO  pay-gw/pg-node-13 ticket linked id=OPS-48220 reason=runbook_update
+2026-10-05T01:40:50 INFO  pay-gw/pg-node-01 pool resize target=pay-gw-upstream max_pool_size=210 prev=178
+2026-10-05T01:40:53 INFO  pay-gw/pg-node-16 request done id=req-e5657ae0 route=/pay-gw/v1/sync status=200 latency_ms=183
+2026-10-05T01:40:58 INFO  pay-gw/pg-node-18 pool resize target=pay-gw-db max_pool_size=18 prev=10
+2026-10-05T01:41:00 INFO  pay-gw/pg-node-12 request done id=req-f13a1c3f route=/pay-gw/v1/cancel status=200 latency_ms=254
+2026-10-05T01:41:06 INFO  pay-gw/pg-node-06 config applied key=log.sample_rate value=true by=dwjung
+2026-10-05T01:41:12 INFO  pay-gw/pg-node-20 request done id=req-4e9ea931 route=/pay-gw/v1/status status=200 latency_ms=207
+2026-10-05T01:41:14 NOTE  pay-gw/pg-node-18 operator=sykang memo="로그 보존 기간은 32일로 유지하기로 함."
+2026-10-05T01:41:18 INFO  pay-gw/pg-node-20 config applied key=breaker.half_open_s value=6409 by=yjchoi
+2026-10-05T01:41:24 INFO  pay-gw/pg-node-12 deploy step release=pay-gw-4.15.8 step=warmup result=ok took_s=193
+2026-10-05T01:41:30 INFO  pay-gw/pg-node-12 backup finished file=/vault/daily/sessions_20261004.tar.zst size_mb=53052 checksum=0b56faf8
+2026-10-05T01:41:33 INFO  pay-gw/pg-node-07 deploy step release=pay-gw-4.11.0 step=shift_traffic_10 result=ok took_s=78
+2026-10-05T01:41:34 INFO  pay-gw/pg-node-19 request done id=req-4668698e route=/pay-gw/v1/cancel status=400 latency_ms=217
+2026-10-05T01:41:41 INFO  pay-gw/pg-node-09 cache stats region=ap-se-1a hit_ratio=61.9% evictions=26396
+2026-10-05T01:41:42 INFO  pay-gw/pg-node-20 request done id=req-eb3a3d3d route=/pay-gw/v1/create status=429 latency_ms=48
+2026-10-05T01:41:48 INFO  pay-gw/pg-node-23 request done id=req-087ca1f1 route=/pay-gw/v1/status status=404 latency_ms=211
+2026-10-05T01:41:51 INFO  pay-gw/pg-node-18 request done id=req-99934f19 route=/pay-gw/v1/cancel status=200 latency_ms=51
+2026-10-05T01:41:52 INFO  pay-gw/pg-node-11 deploy step release=pay-gw-4.20.8 step=shift_traffic_10 result=ok took_s=120
+2026-10-05T01:41:53 INFO  pay-gw/pg-node-17 request done id=req-68c0ca6d route=/pay-gw/v1/create status=200 latency_ms=298
+2026-10-05T01:41:55 INFO  pay-gw/pg-node-04 request done id=req-5629b8cc route=/pay-gw/v1/verify status=200 latency_ms=142
+2026-10-05T01:41:56 WARN  pay-gw/pg-node-09 alert fired rule=error_ratio_high value=51% threshold=48%
+2026-10-05T01:41:57 INFO  pay-gw/pg-node-24 deploy step release=pay-gw-4.10.7 step=pull_image result=ok took_s=209
+2026-10-05T01:41:59 INFO  pay-gw/pg-node-19 request done id=req-705d7380 route=/pay-gw/v1/cancel status=200 latency_ms=64
+2026-10-05T01:42:04 INFO  pay-gw/pg-node-13 request done id=req-a7cccacc route=/pay-gw/v1/list status=404 latency_ms=43
+2026-10-05T01:42:10 INFO  pay-gw/pg-node-21 config applied key=limiter.burst value=17 by=ejlim
+2026-10-05T01:42:12 INFO  pay-gw/pg-node-05 request done id=req-6492c0d9 route=/pay-gw/v1/cancel status=500 latency_ms=28
+2026-10-05T01:42:13 INFO  pay-gw/pg-node-19 config applied key=retry.backoff_ms value=2% by=jhpark
+2026-10-05T01:42:17 INFO  pay-gw/pg-node-03 request done id=req-9eb1319c route=/pay-gw/v1/list status=200 latency_ms=295
+2026-10-05T01:42:21 INFO  pay-gw/pg-node-06 deploy step release=pay-gw-4.17.7 step=healthcheck result=ok took_s=36
+2026-10-05T01:42:22 INFO  pay-gw/pg-node-05 deploy step release=pay-gw-4.19.3 step=healthcheck result=ok took_s=74
+2026-10-05T01:42:25 INFO  pay-gw/pg-node-12 cache stats region=ap-ne-2b hit_ratio=58.2% evictions=12305
+2026-10-05T01:42:30 WARN  pay-gw/pg-node-19 alert fired rule=gc_pause_long value=72ms threshold=64ms
+2026-10-05T01:42:32 INFO  pay-gw/pg-node-17 request done id=req-c5889764 route=/pay-gw/v1/verify status=200 latency_ms=75
+2026-10-05T01:42:39 INFO  pay-gw/pg-node-03 request done id=req-b20f382f route=/pay-gw/v1/update status=200 latency_ms=63
+2026-10-05T01:42:43 INFO  pay-gw/pg-node-14 config applied key=cache.ttl_s value=96% by=ejlim
+2026-10-05T01:42:50 INFO  pay-gw/pg-node-08 request done id=req-59690076 route=/pay-gw/v1/cancel status=200 latency_ms=40
+2026-10-05T01:42:53 INFO  pay-gw/pg-node-01 config applied key=canary.traffic_percent value=false by=jhpark
+2026-10-05T01:42:55 INFO  pay-gw/pg-node-24 request done id=req-76da3ccf route=/pay-gw/v1/get status=200 latency_ms=96
+2026-10-05T01:42:57 INFO  pay-gw/pg-node-09 cache stats region=ap-se-1a hit_ratio=98.1% evictions=36461
+2026-10-05T01:43:02 ERROR pay-gw/pg-node-06 job failed job=pay-gw-rollup attempt=5 cause=dns_failure
+2026-10-05T01:43:04 INFO  pay-gw/pg-node-03 request done id=req-48f8adf8 route=/pay-gw/v1/verify status=200 latency_ms=116
+2026-10-05T01:43:08 INFO  pay-gw/pg-node-10 request done id=req-29487ef3 route=/pay-gw/v1/create status=201 latency_ms=221
+2026-10-05T01:43:15 INFO  pay-gw/pg-node-10 request done id=req-18167f65 route=/pay-gw/v1/get status=200 latency_ms=199
+2026-10-05T01:43:22 INFO  pay-gw/pg-node-22 ticket linked id=OPS-48565 reason=cert_rotation
+2026-10-05T01:43:24 WARN  pay-gw/pg-node-20 alert fired rule=cpu_steal_high value=98% threshold=87%
+2026-10-05T01:43:26 INFO  pay-gw/pg-node-03 pool resize target=pay-gw-queue max_pool_size=237 prev=200
+2026-10-05T01:43:28 INFO  pay-gw/pg-node-01 config applied key=cache.ttl_s value=7005 by=shkim
+2026-10-05T01:43:34 INFO  pay-gw/pg-node-24 request done id=req-ddaac8e0 route=/pay-gw/v1/sync status=200 latency_ms=78
+2026-10-05T01:43:35 INFO  pay-gw/pg-node-15 request done id=req-77f6ec74 route=/pay-gw/v1/cancel status=204 latency_ms=151
+2026-10-05T01:43:41 INFO  pay-gw/pg-node-09 cache stats region=ap-se-1a hit_ratio=83.6% evictions=8323
+2026-10-05T01:43:42 INFO  pay-gw/pg-node-13 deploy step release=pay-gw-4.10.7 step=healthcheck result=ok took_s=66
+2026-10-05T01:43:45 INFO  pay-gw/pg-node-19 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=49683 checksum=0ce3d98e
+2026-10-05T01:43:49 INFO  pay-gw/pg-node-24 backup finished file=/vault/daily/orders_20261007.tar.zst size_mb=38088 checksum=7202f395
+2026-10-05T01:43:50 INFO  pay-gw/pg-node-23 config applied key=breaker.open_ratio value=54 by=mjlee
+2026-10-05T01:43:51 INFO  pay-gw/pg-node-06 request done id=req-ffd23657 route=/pay-gw/v1/verify status=200 latency_ms=131
+2026-10-05T01:43:58 INFO  pay-gw/pg-node-08 backup finished file=/vault/weekly/payments_2026w35.tar.zst size_mb=61081 checksum=3a95c8fd
+2026-10-05T01:43:59 INFO  pay-gw/pg-node-15 cache stats region=ap-ne-2a hit_ratio=86.5% evictions=5974
+2026-10-05T01:44:05 INFO  pay-gw/pg-node-17 request done id=req-c4ea4f1a route=/pay-gw/v1/cancel status=200 latency_ms=56
+2026-10-05T01:44:10 INFO  pay-gw/pg-node-21 request done id=req-d351127c route=/pay-gw/v1/create status=200 latency_ms=71
+2026-10-05T01:44:16 ERROR pay-gw/pg-node-09 job failed job=pay-gw-export attempt=1 cause=dns_failure
+2026-10-05T01:44:17 INFO  pay-gw/pg-node-24 request done id=req-8c4be1ef route=/pay-gw/v1/get status=400 latency_ms=109
+2026-10-05T01:44:20 INFO  pay-gw/pg-node-23 request done id=req-e6c032bf route=/pay-gw/v1/verify status=200 latency_ms=159
+2026-10-05T01:44:23 INFO  pay-gw/pg-node-16 config applied key=queue.visibility_s value=true by=shkim
+2026-10-05T01:44:27 INFO  pay-gw/pg-node-13 pool resize target=pay-gw-queue max_pool_size=270 prev=222
+2026-10-05T01:44:28 INFO  pay-gw/pg-node-21 cache stats region=ap-ne-2c hit_ratio=92.1% evictions=13908
+2026-10-05T01:44:35 WARN  pay-gw/pg-node-16 alert fired rule=heap_used_high value=95% threshold=94%
+2026-10-05T01:44:41 INFO  pay-gw/pg-node-13 config applied key=breaker.half_open_s value=1418 by=mjlee
+2026-10-05T01:44:42 INFO  pay-gw/pg-node-20 request done id=req-3a18177a route=/pay-gw/v1/status status=429 latency_ms=39
+2026-10-05T01:44:49 NOTE  pay-gw/pg-node-09 operator=shkim memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-10-05T01:44:50 INFO  pay-gw/pg-node-17 request done id=req-9061e0cb route=/pay-gw/v1/cancel status=200 latency_ms=175
+2026-10-05T01:44:54 INFO  pay-gw/pg-node-05 cache stats region=us-we-2b hit_ratio=68.0% evictions=21413
+2026-10-05T01:45:01 INFO  pay-gw/pg-node-06 request done id=req-528bb73f route=/pay-gw/v1/cancel status=200 latency_ms=92
+2026-10-05T01:45:02 INFO  pay-gw/pg-node-12 backup finished file=/vault/daily/inventory_20261004.tar.zst size_mb=9151 checksum=50246d10
+2026-10-05T01:45:08 WARN  pay-gw/pg-node-08 alert fired rule=replica_lag_high value=78s threshold=65s
+2026-10-05T01:45:12 INFO  pay-gw/pg-node-02 request done id=req-1f762db4 route=/pay-gw/v1/status status=400 latency_ms=129
+2026-10-05T01:45:17 ERROR pay-gw/pg-node-01 job failed job=pay-gw-reindex attempt=2 cause=bad_checksum
+2026-10-05T01:45:22 INFO  pay-gw/pg-node-06 pool resize target=pay-gw-upstream max_pool_size=294 prev=352
+2026-10-05T01:45:24 INFO  pay-gw/pg-node-16 config applied key=breaker.half_open_s value=26% by=sykang
+2026-10-05T01:45:25 INFO  pay-gw/pg-node-01 cache stats region=ap-ne-2c hit_ratio=65.8% evictions=4681
+2026-10-05T01:45:30 WARN  pay-gw/pg-node-01 alert fired rule=p99_latency_high value=55ms threshold=44ms
+2026-10-05T01:45:37 INFO  pay-gw/pg-node-03 request done id=req-8c3e12b9 route=/pay-gw/v1/status status=200 latency_ms=75
+2026-10-05T01:45:41 INFO  pay-gw/pg-node-24 request done id=req-bf5bcd68 route=/pay-gw/v1/sync status=200 latency_ms=46
+2026-10-05T01:45:47 INFO  pay-gw/pg-node-17 request done id=req-fa99270d route=/pay-gw/v1/status status=204 latency_ms=121
+2026-10-05T01:45:51 INFO  pay-gw/pg-node-11 request done id=req-042f37f4 route=/pay-gw/v1/verify status=429 latency_ms=94
+2026-10-05T01:45:57 INFO  pay-gw/pg-node-23 request done id=req-516b41c3 route=/pay-gw/v1/verify status=200 latency_ms=57
+2026-10-05T01:45:58 INFO  pay-gw/pg-node-16 request done id=req-862220ef route=/pay-gw/v1/sync status=503 latency_ms=104
+2026-10-05T01:46:02 INFO  pay-gw/pg-node-03 request done id=req-897b2041 route=/pay-gw/v1/sync status=500 latency_ms=90
+2026-10-05T01:46:04 INFO  pay-gw/pg-node-08 request done id=req-2a51e0f2 route=/pay-gw/v1/sync status=200 latency_ms=147
+2026-10-05T01:46:05 INFO  pay-gw/pg-node-23 request done id=req-0fc3d341 route=/pay-gw/v1/get status=200 latency_ms=601
+2026-10-05T01:46:10 INFO  pay-gw/pg-node-22 request done id=req-8bdf5b14 route=/pay-gw/v1/update status=200 latency_ms=115
+2026-10-05T01:46:15 INFO  pay-gw/pg-node-24 cache stats region=ap-ne-2b hit_ratio=65.0% evictions=36892
+2026-10-05T01:46:18 INFO  pay-gw/pg-node-04 request done id=req-96be9c64 route=/pay-gw/v1/cancel status=200 latency_ms=240
+2026-10-05T01:46:20 INFO  pay-gw/pg-node-11 request done id=req-ed2ab671 route=/pay-gw/v1/verify status=404 latency_ms=72
+2026-10-05T01:46:23 INFO  pay-gw/pg-node-03 deploy step release=pay-gw-4.17.6 step=drain result=ok took_s=111
+2026-10-05T01:46:28 INFO  pay-gw/pg-node-19 deploy step release=pay-gw-4.17.4 step=warmup result=ok took_s=186
+2026-10-05T01:46:32 INFO  pay-gw/pg-node-13 request done id=req-28dc9457 route=/pay-gw/v1/create status=500 latency_ms=155
+2026-10-05T01:46:34 WARN  pay-gw/pg-node-09 alert fired rule=p99_latency_high value=81ms threshold=76ms
+2026-10-05T01:46:38 INFO  pay-gw/pg-node-21 request done id=req-58167eb6 route=/pay-gw/v1/status status=200 latency_ms=179
+2026-10-05T01:46:41 INFO  pay-gw/pg-node-03 request done id=req-ca70e388 route=/pay-gw/v1/get status=200 latency_ms=184
+2026-10-05T01:46:44 WARN  pay-gw/pg-node-08 alert fired rule=fd_usage_high value=83% threshold=74%
+2026-10-05T01:46:50 ERROR pay-gw/pg-node-07 job failed job=pay-gw-rollup attempt=4 cause=upstream_timeout
+2026-10-05T01:46:53 INFO  pay-gw/pg-node-07 ticket linked id=OPS-47394 reason=oncall_handoff
+2026-10-05T01:47:00 INFO  pay-gw/pg-node-22 request done id=req-53cec3a1 route=/pay-gw/v1/verify status=404 latency_ms=121
+2026-10-05T01:47:05 INFO  pay-gw/pg-node-09 pool resize target=pay-gw-worker max_pool_size=22 prev=51
+2026-10-05T01:47:07 INFO  pay-gw/pg-node-06 config applied key=breaker.open_ratio value=3022 by=shkim
+2026-10-05T01:47:14 INFO  pay-gw/pg-node-17 ticket linked id=OPS-49634 reason=schema_change
+2026-10-05T01:47:18 INFO  pay-gw/pg-node-17 deploy step release=pay-gw-4.16.7 step=start result=ok took_s=62
+2026-10-05T01:47:23 INFO  pay-gw/pg-node-21 deploy step release=pay-gw-4.12.3 step=shift_traffic_10 result=ok took_s=86
+2026-10-05T01:47:26 INFO  pay-gw/pg-node-09 request done id=req-fc51bb2a route=/pay-gw/v1/get status=409 latency_ms=111
+2026-10-05T01:47:28 INFO  pay-gw/pg-node-06 config applied key=limiter.rps value=96% by=jhpark
+2026-10-05T01:47:32 INFO  pay-gw/pg-node-21 request done id=req-295852e0 route=/pay-gw/v1/cancel status=200 latency_ms=80
+2026-10-05T01:47:33 NOTE  pay-gw/pg-node-02 operator=jhpark memo="인증서 갱신 일정 확인. 만료까지 49일 남음."
+2026-10-05T01:47:39 INFO  pay-gw/pg-node-21 pool resize target=pay-gw-cache max_pool_size=312 prev=257
+2026-10-05T01:47:42 INFO  pay-gw/pg-node-02 cache stats region=ap-ne-2b hit_ratio=60.9% evictions=20873
+2026-10-05T01:47:45 INFO  pay-gw/pg-node-02 deploy step release=pay-gw-4.12.9 step=start result=ok took_s=37
+2026-10-05T01:47:51 INFO  pay-gw/pg-node-22 request done id=req-41bf58cd route=/pay-gw/v1/verify status=400 latency_ms=335
+2026-10-05T01:47:57 INFO  pay-gw/pg-node-11 deploy step release=pay-gw-4.19.2 step=pull_image result=ok took_s=52
+2026-10-05T01:47:59 INFO  pay-gw/pg-node-02 request done id=req-76ddd6d2 route=/pay-gw/v1/verify status=429 latency_ms=223
+2026-10-05T01:48:01 INFO  pay-gw/pg-node-11 request done id=req-43c84ae3 route=/pay-gw/v1/cancel status=200 latency_ms=179
+2026-10-05T01:48:04 INFO  pay-gw/pg-node-18 request done id=req-708b0b77 route=/pay-gw/v1/create status=429 latency_ms=52
+2026-10-05T01:48:11 INFO  pay-gw/pg-node-10 request done id=req-c720a9b2 route=/pay-gw/v1/get status=200 latency_ms=60
+2026-10-05T01:48:13 INFO  pay-gw/pg-node-15 pool resize target=pay-gw-upstream max_pool_size=152 prev=122
+2026-10-05T01:48:17 INFO  pay-gw/pg-node-08 request done id=req-4fd2220e route=/pay-gw/v1/sync status=200 latency_ms=51
+2026-10-05T01:48:21 INFO  pay-gw/pg-node-22 request done id=req-18d04313 route=/pay-gw/v1/cancel status=200 latency_ms=342
+2026-10-05T01:48:28 INFO  pay-gw/pg-node-14 request done id=req-cc1b9d81 route=/pay-gw/v1/create status=200 latency_ms=221
+2026-10-05T01:48:30 INFO  pay-gw/pg-node-19 request done id=req-8abbc346 route=/pay-gw/v1/update status=400 latency_ms=97
+2026-10-05T01:48:35 INFO  pay-gw/pg-node-17 request done id=req-397cc278 route=/pay-gw/v1/list status=200 latency_ms=100
+2026-10-05T01:48:36 INFO  pay-gw/pg-node-24 deploy step release=pay-gw-4.14.6 step=drain result=ok took_s=221
+2026-10-05T01:48:40 INFO  pay-gw/pg-node-17 request done id=req-c481d053 route=/pay-gw/v1/update status=200 latency_ms=54
+2026-10-05T01:48:44 INFO  pay-gw/pg-node-09 config applied key=canary.error_rate_threshold value=2.7% by=jhpark
+2026-10-05T01:48:50 NOTE  pay-gw/pg-node-01 operator=shkim memo="트래픽 전환 비율 상향은 류태경 팀장 승인."
+2026-10-05T01:48:57 INFO  pay-gw/pg-node-18 request done id=req-33cd2dbc route=/pay-gw/v1/cancel status=200 latency_ms=113
+2026-10-05T01:48:59 INFO  pay-gw/pg-node-02 backup finished file=/vault/weekly/inventory_2026w31.tar.zst size_mb=28030 checksum=07dcbee7
+2026-10-05T01:49:03 INFO  pay-gw/pg-node-03 request done id=req-a145aea9 route=/pay-gw/v1/status status=503 latency_ms=28
+2026-10-05T01:49:04 INFO  pay-gw/pg-node-11 deploy step release=pay-gw-4.12.9 step=shift_traffic_100 result=ok took_s=189
+2026-10-05T01:49:06 INFO  pay-gw/pg-node-24 request done id=req-d37785ab route=/pay-gw/v1/verify status=200 latency_ms=105
+2026-10-05T01:49:12 INFO  pay-gw/pg-node-13 request done id=req-e1c2a3c4 route=/pay-gw/v1/cancel status=200 latency_ms=40
+2026-10-05T01:49:14 NOTE  pay-gw/pg-node-09 operator=ejlim memo="인증서 갱신 일정 확인. 만료까지 38일 남음."
+2026-10-05T01:49:19 INFO  pay-gw/pg-node-24 request done id=req-0d5e0940 route=/pay-gw/v1/create status=200 latency_ms=121
+2026-10-05T01:49:21 INFO  pay-gw/pg-node-03 request done id=req-d41de692 route=/pay-gw/v1/status status=200 latency_ms=385
+2026-10-05T01:49:23 NOTE  pay-gw/pg-node-19 operator=shkim memo="캐시 TTL을 6초로 되돌림. 오래된 응답이 보고됨."
+2026-10-05T01:49:30 WARN  pay-gw/pg-node-22 alert fired rule=queue_depth_high value=75 threshold=65
+2026-10-05T01:49:31 INFO  pay-gw/pg-node-04 request done id=req-318a4008 route=/pay-gw/v1/create status=200 latency_ms=174
+2026-10-05T01:49:34 INFO  pay-gw/pg-node-11 request done id=req-6cd8f710 route=/pay-gw/v1/create status=204 latency_ms=43
+2026-10-05T01:49:41 INFO  pay-gw/pg-node-05 config applied key=flush.interval_ms value=true by=sykang
+2026-10-05T01:49:46 INFO  pay-gw/pg-node-09 pool resize target=pay-gw-db max_pool_size=299 prev=290
+2026-10-05T01:49:52 INFO  pay-gw/pg-node-11 request done id=req-1e5c8708 route=/pay-gw/v1/get status=200 latency_ms=71
+2026-10-05T01:49:58 INFO  pay-gw/pg-node-09 request done id=req-7722052b route=/pay-gw/v1/status status=404 latency_ms=103
+2026-10-05T01:50:04 INFO  pay-gw/pg-node-11 cache stats region=ap-ne-2a hit_ratio=64.9% evictions=7921
+2026-10-05T01:50:05 INFO  pay-gw/pg-node-06 deploy step release=pay-gw-4.12.2 step=warmup result=ok took_s=18
+2026-10-05T01:50:07 INFO  pay-gw/pg-node-19 request done id=req-c1a843aa route=/pay-gw/v1/sync status=400 latency_ms=257
+2026-10-05T01:50:09 INFO  pay-gw/pg-node-23 request done id=req-2b629387 route=/pay-gw/v1/verify status=400 latency_ms=192
+2026-10-05T01:50:16 INFO  pay-gw/pg-node-19 request done id=req-5ff97238 route=/pay-gw/v1/cancel status=409 latency_ms=288
+2026-10-05T01:50:22 INFO  pay-gw/pg-node-09 request done id=req-ebc772da route=/pay-gw/v1/status status=200 latency_ms=77
+2026-10-05T01:50:25 INFO  pay-gw/pg-node-06 request done id=req-46de79ab route=/pay-gw/v1/status status=200 latency_ms=143
+2026-10-05T01:50:27 INFO  pay-gw/pg-node-01 request done id=req-905e8912 route=/pay-gw/v1/cancel status=201 latency_ms=120
+2026-10-05T01:50:32 INFO  pay-gw/pg-node-20 config applied key=retry.max_attempts value=true by=mjlee
+2026-10-05T01:50:33 INFO  pay-gw/pg-node-04 config applied key=cache.ttl_s value=5846 by=jhpark
+2026-10-05T01:50:39 INFO  pay-gw/pg-node-12 request done id=req-82c87bef route=/pay-gw/v1/update status=204 latency_ms=309
+2026-10-05T01:50:43 INFO  pay-gw/pg-node-01 request done id=req-903c3840 route=/pay-gw/v1/sync status=409 latency_ms=154
+2026-10-05T01:50:44 INFO  pay-gw/pg-node-15 request done id=req-3465514f route=/pay-gw/v1/status status=200 latency_ms=579
+2026-10-05T01:50:45 INFO  pay-gw/pg-node-19 request done id=req-08e83d55 route=/pay-gw/v1/cancel status=200 latency_ms=212
+2026-10-05T01:50:52 INFO  pay-gw/pg-node-08 cache stats region=ap-se-1a hit_ratio=85.3% evictions=17052
+2026-10-05T01:50:53 INFO  pay-gw/pg-node-15 request done id=req-9480c937 route=/pay-gw/v1/sync status=200 latency_ms=211
+2026-10-05T01:50:55 INFO  pay-gw/pg-node-04 request done id=req-cf13a64b route=/pay-gw/v1/list status=200 latency_ms=195
+2026-10-05T01:50:58 INFO  pay-gw/pg-node-03 backup finished file=/vault/weekly/payments_2026w44.tar.zst size_mb=67569 checksum=6562a149
+2026-10-05T01:51:02 INFO  pay-gw/pg-node-22 deploy step release=pay-gw-4.17.8 step=shift_traffic_10 result=ok took_s=148
+2026-10-05T01:51:07 INFO  pay-gw/pg-node-09 request done id=req-b5c41521 route=/pay-gw/v1/verify status=201 latency_ms=273
+2026-10-05T01:51:12 INFO  pay-gw/pg-node-23 request done id=req-9261af38 route=/pay-gw/v1/cancel status=200 latency_ms=69
+2026-10-05T01:51:18 INFO  pay-gw/pg-node-24 request done id=req-9c76c28f route=/pay-gw/v1/list status=200 latency_ms=66
+2026-10-05T01:51:24 INFO  pay-gw/pg-node-08 request done id=req-a90c69c2 route=/pay-gw/v1/create status=200 latency_ms=99
+2026-10-05T01:51:26 INFO  pay-gw/pg-node-21 request done id=req-ed313f5f route=/pay-gw/v1/sync status=200 latency_ms=62
+2026-10-05T01:51:32 INFO  pay-gw/pg-node-02 pool resize target=pay-gw-queue max_pool_size=106 prev=59
+2026-10-05T01:51:38 INFO  pay-gw/pg-node-20 request done id=req-7708456f route=/pay-gw/v1/create status=400 latency_ms=139
+2026-10-05T01:51:43 INFO  pay-gw/pg-node-18 config applied key=limiter.rps value=27 by=mjlee
+2026-10-05T01:51:49 INFO  pay-gw/pg-node-08 config applied key=canary.traffic_percent value=51 by=yjchoi
+2026-10-05T01:51:56 INFO  pay-gw/pg-node-18 request done id=req-65b73590 route=/pay-gw/v1/sync status=200 latency_ms=80
+2026-10-05T01:52:02 INFO  pay-gw/pg-node-05 pool resize target=pay-gw-cache max_pool_size=133 prev=133
+2026-10-05T01:52:04 INFO  pay-gw/pg-node-03 request done id=req-79efa4c5 route=/pay-gw/v1/create status=400 latency_ms=82
+2026-10-05T01:52:05 INFO  pay-gw/pg-node-24 request done id=req-67aebd78 route=/pay-gw/v1/list status=200 latency_ms=49
+2026-10-05T01:52:11 INFO  pay-gw/pg-node-19 pool resize target=pay-gw-upstream max_pool_size=184 prev=225
+2026-10-05T01:52:13 INFO  pay-gw/pg-node-09 request done id=req-fca89355 route=/pay-gw/v1/cancel status=200 latency_ms=58
+2026-10-05T01:52:19 INFO  pay-gw/pg-node-01 request done id=req-dd1bc233 route=/pay-gw/v1/create status=400 latency_ms=83
+2026-10-05T01:52:26 INFO  pay-gw/pg-node-11 pool resize target=pay-gw-db max_pool_size=343 prev=297
+2026-10-05T01:52:33 ERROR pay-gw/pg-node-14 job failed job=pay-gw-cleanup attempt=3 cause=upstream_timeout
+2026-10-05T01:52:38 INFO  pay-gw/pg-node-02 config applied key=breaker.open_ratio value=49 by=ejlim
+2026-10-05T01:52:40 INFO  pay-gw/pg-node-18 request done id=req-58ba947f route=/pay-gw/v1/verify status=201 latency_ms=129
+2026-10-05T01:52:43 INFO  pay-gw/pg-node-10 deploy step release=pay-gw-4.16.1 step=start result=ok took_s=163
+2026-10-05T01:52:50 WARN  pay-gw/pg-node-20 alert fired rule=disk_usage_warning value=53% threshold=50%
+2026-10-05T01:52:55 INFO  pay-gw/pg-node-16 request done id=req-8192bf52 route=/pay-gw/v1/cancel status=200 latency_ms=155
+2026-10-05T01:52:57 ERROR pay-gw/pg-node-20 job failed job=pay-gw-rollup attempt=4 cause=dns_failure
+2026-10-05T01:53:01 INFO  pay-gw/pg-node-03 config applied key=gc.pause_target_ms value=true by=sykang
+2026-10-05T01:53:02 INFO  pay-gw/pg-node-20 request done id=req-1d52ef9b route=/pay-gw/v1/status status=200 latency_ms=44
+2026-10-05T01:53:07 ERROR pay-gw/pg-node-18 job failed job=pay-gw-rollup attempt=1 cause=lock_wait_exceeded
+2026-10-05T01:53:09 INFO  pay-gw/pg-node-20 request done id=req-0bfb78c9 route=/pay-gw/v1/create status=500 latency_ms=60
+2026-10-05T01:53:10 INFO  pay-gw/pg-node-07 request done id=req-d0c92b73 route=/pay-gw/v1/cancel status=200 latency_ms=1098
+2026-10-05T01:53:15 INFO  pay-gw/pg-node-14 config applied key=log.sample_rate value=5 by=yjchoi
+2026-10-05T01:53:22 INFO  pay-gw/pg-node-17 deploy step release=pay-gw-4.18.0 step=pull_image result=ok took_s=221
+2026-10-05T01:53:24 INFO  pay-gw/pg-node-20 config applied key=http.read_timeout_ms value=578 by=hbyoon
+2026-10-05T01:53:25 INFO  pay-gw/pg-node-02 request done id=req-a6259b73 route=/pay-gw/v1/status status=200 latency_ms=62
+2026-10-05T01:53:32 INFO  pay-gw/pg-node-19 deploy step release=pay-gw-4.17.6 step=drain result=ok took_s=159
+2026-10-05T01:53:35 WARN  pay-gw/pg-node-05 alert fired rule=fd_usage_high value=74% threshold=70%
+2026-10-05T01:53:37 INFO  pay-gw/pg-node-07 config applied key=queue.batch_size value=62 by=jhpark
+2026-10-05T01:53:42 INFO  pay-gw/pg-node-15 request done id=req-f7a189e4 route=/pay-gw/v1/update status=200 latency_ms=143
+2026-10-05T01:53:44 WARN  pay-gw/pg-node-12 alert fired rule=p99_latency_high value=91ms threshold=86ms
+2026-10-05T01:53:47 INFO  pay-gw/pg-node-08 request done id=req-2e5c2823 route=/pay-gw/v1/verify status=200 latency_ms=54
+2026-10-05T01:53:50 INFO  pay-gw/pg-node-06 request done id=req-9b2e4493 route=/pay-gw/v1/list status=200 latency_ms=126
+2026-10-05T01:53:51 WARN  pay-gw/pg-node-15 alert fired rule=gc_pause_long value=71ms threshold=57ms
+2026-10-05T01:53:58 INFO  pay-gw/pg-node-20 deploy step release=pay-gw-4.14.1 step=verify result=ok took_s=195
+2026-10-05T01:54:05 INFO  pay-gw/pg-node-12 request done id=req-994e5106 route=/pay-gw/v1/create status=200 latency_ms=358
+2026-10-05T01:54:10 INFO  pay-gw/pg-node-08 deploy step release=pay-gw-4.11.5 step=healthcheck result=ok took_s=162
+2026-10-05T01:54:17 INFO  pay-gw/pg-node-18 request done id=req-b85b03e7 route=/pay-gw/v1/sync status=404 latency_ms=105
+2026-10-05T01:54:19 INFO  pay-gw/pg-node-16 request done id=req-01476cd5 route=/pay-gw/v1/get status=503 latency_ms=80
+2026-10-05T01:54:21 INFO  pay-gw/pg-node-06 request done id=req-3db62ead route=/pay-gw/v1/create status=200 latency_ms=60
+2026-10-05T01:54:28 INFO  pay-gw/pg-node-18 request done id=req-a1d0d8e7 route=/pay-gw/v1/cancel status=200 latency_ms=270
+2026-10-05T01:54:32 INFO  pay-gw/pg-node-15 deploy step release=pay-gw-4.22.1 step=start result=ok took_s=164
+2026-10-05T01:54:37 ERROR pay-gw/pg-node-08 job failed job=pay-gw-export attempt=5 cause=oom_killed
+2026-10-05T01:54:38 INFO  pay-gw/pg-node-02 request done id=req-ac666b65 route=/pay-gw/v1/get status=404 latency_ms=178
+2026-10-05T01:54:44 INFO  pay-gw/pg-node-12 request done id=req-71b3eb60 route=/pay-gw/v1/get status=200 latency_ms=112
+2026-10-05T01:54:47 WARN  pay-gw/pg-node-03 alert fired rule=p99_latency_high value=93ms threshold=85ms
+2026-10-05T01:54:52 INFO  pay-gw/pg-node-08 deploy step release=pay-gw-4.17.4 step=shift_traffic_10 result=ok took_s=146
+2026-10-05T01:54:53 ERROR pay-gw/pg-node-11 job failed job=pay-gw-reindex attempt=2 cause=lock_wait_exceeded
+2026-10-05T01:54:58 INFO  pay-gw/pg-node-07 config applied key=worker.concurrency value=3308 by=jhpark
+2026-10-05T01:54:59 INFO  pay-gw/pg-node-02 config applied key=flush.interval_ms value=5788 by=ejlim
+2026-10-05T01:55:00 INFO  pay-gw/pg-node-01 request done id=req-7fed4841 route=/pay-gw/v1/list status=404 latency_ms=150
+2026-10-05T01:55:05 INFO  pay-gw/pg-node-19 request done id=req-0a88ce59 route=/pay-gw/v1/update status=200 latency_ms=73
+2026-10-05T01:55:06 INFO  pay-gw/pg-node-13 request done id=req-7a2143ec route=/pay-gw/v1/create status=200 latency_ms=807
+2026-10-05T01:55:10 INFO  pay-gw/pg-node-03 request done id=req-d52877ea route=/pay-gw/v1/cancel status=200 latency_ms=246
+2026-10-05T01:55:11 INFO  pay-gw/pg-node-14 request done id=req-b464f1e9 route=/pay-gw/v1/create status=200 latency_ms=67
+2026-10-05T01:55:12 INFO  pay-gw/pg-node-11 request done id=req-142c7a60 route=/pay-gw/v1/create status=503 latency_ms=88
+2026-10-05T01:55:17 INFO  pay-gw/pg-node-11 config applied key=breaker.open_ratio value=true by=mjlee
+2026-10-05T01:55:24 INFO  pay-gw/pg-node-11 pool resize target=pay-gw-cache max_pool_size=222 prev=200
+2026-10-05T01:55:29 INFO  pay-gw/pg-node-03 ticket linked id=OPS-49226 reason=cert_rotation
+2026-10-05T01:55:30 INFO  pay-gw/pg-node-24 request done id=req-174e97c7 route=/pay-gw/v1/sync status=200 latency_ms=77
+2026-10-05T01:55:35 INFO  pay-gw/pg-node-10 deploy step release=pay-gw-4.10.4 step=warmup result=ok took_s=87
+2026-10-05T01:55:36 INFO  pay-gw/pg-node-03 request done id=req-456091c9 route=/pay-gw/v1/update status=204 latency_ms=46
+2026-10-05T01:55:37 INFO  pay-gw/pg-node-16 ticket linked id=OPS-48475 reason=node_drain
+2026-10-05T01:55:40 INFO  pay-gw/pg-node-05 cache stats region=ap-ne-2c hit_ratio=66.3% evictions=22631
+2026-10-05T01:55:44 INFO  pay-gw/pg-node-02 request done id=req-7f3d691c route=/pay-gw/v1/sync status=200 latency_ms=200
+2026-10-05T01:55:48 INFO  pay-gw/pg-node-13 request done id=req-e0763a79 route=/pay-gw/v1/list status=200 latency_ms=90
+2026-10-05T01:55:51 INFO  pay-gw/pg-node-08 request done id=req-dcfd0b75 route=/pay-gw/v1/verify status=201 latency_ms=161
+2026-10-05T01:55:53 NOTE  pay-gw/pg-node-14 operator=mjlee memo="pg-node-14 재기동 후 지표 정상 확인."
+2026-10-05T01:55:57 INFO  pay-gw/pg-node-02 request done id=req-c72add7f route=/pay-gw/v1/get status=429 latency_ms=44
+2026-10-05T01:55:58 INFO  pay-gw/pg-node-13 config applied key=http.read_timeout_ms value=24 by=sykang
+2026-10-05T01:56:05 INFO  pay-gw/pg-node-13 config applied key=canary.latency_p99_threshold_ms value=true by=ejlim
+2026-10-05T01:56:10 INFO  pay-gw/pg-node-19 config applied key=limiter.rps value=true by=ejlim
+2026-10-05T01:56:17 INFO  pay-gw/pg-node-18 request done id=req-145587c6 route=/pay-gw/v1/get status=200 latency_ms=54
+2026-10-05T01:56:20 INFO  pay-gw/pg-node-04 deploy step release=pay-gw-4.21.1 step=drain result=ok took_s=182
+2026-10-05T01:56:26 INFO  pay-gw/pg-node-15 request done id=req-9968d601 route=/pay-gw/v1/list status=201 latency_ms=83
+2026-10-05T01:56:31 INFO  pay-gw/pg-node-06 pool resize target=pay-gw-worker max_pool_size=217 prev=160
+2026-10-05T01:56:35 INFO  pay-gw/pg-node-21 pool resize target=pay-gw-queue max_pool_size=100 prev=123
+2026-10-05T01:56:38 WARN  pay-gw/pg-node-19 alert fired rule=replica_lag_high value=72s threshold=63s
+2026-10-05T01:56:45 WARN  pay-gw/pg-node-14 alert fired rule=queue_depth_high value=84 threshold=75
+2026-10-05T01:56:48 INFO  pay-gw/pg-node-01 deploy step release=pay-gw-4.16.4 step=warmup result=ok took_s=146
+2026-10-05T01:56:54 INFO  pay-gw/pg-node-23 pool resize target=pay-gw-upstream max_pool_size=329 prev=292
+2026-10-05T01:56:56 WARN  pay-gw/pg-node-17 alert fired rule=gc_pause_long value=59ms threshold=48ms
+2026-10-05T01:57:00 INFO  pay-gw/pg-node-24 pool resize target=pay-gw-cache max_pool_size=318 prev=283
+2026-10-05T01:57:06 INFO  pay-gw/pg-node-12 request done id=req-14c3fb60 route=/pay-gw/v1/cancel status=200 latency_ms=90
+2026-10-05T01:57:09 INFO  pay-gw/pg-node-06 request done id=req-5dbe3420 route=/pay-gw/v1/status status=404 latency_ms=257
+2026-10-05T01:57:14 WARN  pay-gw/pg-node-05 alert fired rule=p99_latency_high value=92ms threshold=85ms
+2026-10-05T01:57:21 INFO  pay-gw/pg-node-05 pool resize target=pay-gw-worker max_pool_size=292 prev=338
+2026-10-05T01:57:28 INFO  pay-gw/pg-node-01 request done id=req-0e540eb5 route=/pay-gw/v1/verify status=200 latency_ms=55
+2026-10-05T01:57:35 INFO  pay-gw/pg-node-08 request done id=req-ee99012c route=/pay-gw/v1/get status=200 latency_ms=72
+2026-10-05T01:57:38 INFO  pay-gw/pg-node-16 request done id=req-f4029aae route=/pay-gw/v1/create status=200 latency_ms=226
+2026-10-05T01:57:43 INFO  pay-gw/pg-node-14 request done id=req-0cf2e668 route=/pay-gw/v1/sync status=200 latency_ms=204
+2026-10-05T01:57:45 INFO  pay-gw/pg-node-12 request done id=req-9e879173 route=/pay-gw/v1/list status=200 latency_ms=105
+2026-10-05T01:57:48 INFO  pay-gw/pg-node-13 request done id=req-da028916 route=/pay-gw/v1/cancel status=200 latency_ms=99
+2026-10-05T01:57:51 INFO  pay-gw/pg-node-17 deploy step release=pay-gw-4.21.1 step=verify result=ok took_s=124
+2026-10-05T01:57:57 WARN  pay-gw/pg-node-17 alert fired rule=error_ratio_high value=66% threshold=52%
+2026-10-05T01:58:01 INFO  pay-gw/pg-node-10 config applied key=flush.interval_ms value=57 by=hbyoon
+2026-10-05T01:58:07 INFO  pay-gw/pg-node-11 request done id=req-5f4492aa route=/pay-gw/v1/update status=201 latency_ms=127
+2026-10-05T01:58:12 INFO  pay-gw/pg-node-06 request done id=req-28e5be69 route=/pay-gw/v1/status status=503 latency_ms=140
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

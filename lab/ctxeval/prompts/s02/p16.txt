@@ -1,0 +1,424 @@
+참고용 로그 16: 스케줄러(cron-hub) 실행 구간. '확인'이라고만 답해 줘.
+
+2026-10-20T15:41:16 WARN  cron-hub/ch-node-18 alert fired rule=heap_used_high value=75% threshold=72%
+2026-10-20T15:41:18 INFO  cron-hub/ch-node-19 config applied key=limiter.rps value=false by=mjlee
+2026-10-20T15:41:25 INFO  cron-hub/ch-node-01 request done id=req-ce3afa2b route=/cron-hub/v1/create status=200 latency_ms=287
+2026-10-20T15:41:32 NOTE  cron-hub/ch-node-16 operator=mjlee memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-20T15:41:34 INFO  cron-hub/ch-node-07 request done id=req-5b9b668f route=/cron-hub/v1/update status=400 latency_ms=138
+2026-10-20T15:41:40 INFO  cron-hub/ch-node-22 ticket linked id=OPS-48503 reason=schema_change
+2026-10-20T15:41:44 ERROR cron-hub/ch-node-04 job failed job=cron-hub-rollup attempt=2 cause=lock_wait_exceeded
+2026-10-20T15:41:46 INFO  cron-hub/ch-node-13 request done id=req-12907bb4 route=/cron-hub/v1/cancel status=429 latency_ms=119
+2026-10-20T15:41:49 INFO  cron-hub/ch-node-02 request done id=req-4c441ccb route=/cron-hub/v1/list status=200 latency_ms=155
+2026-10-20T15:41:55 INFO  cron-hub/ch-node-06 cache stats region=ap-se-1a hit_ratio=61.7% evictions=12721
+2026-10-20T15:41:58 INFO  cron-hub/ch-node-19 request done id=req-17eb4391 route=/cron-hub/v1/sync status=200 latency_ms=697
+2026-10-20T15:42:03 INFO  cron-hub/ch-node-03 cache stats region=ap-ne-2a hit_ratio=96.1% evictions=1533
+2026-10-20T15:42:04 INFO  cron-hub/ch-node-17 deploy step release=cron-hub-4.11.6 step=shift_traffic_50 result=ok took_s=3
+2026-10-20T15:42:05 INFO  cron-hub/ch-node-05 deploy step release=cron-hub-4.15.1 step=healthcheck result=ok took_s=169
+2026-10-20T15:42:11 INFO  cron-hub/ch-node-18 request done id=req-083c2ff3 route=/cron-hub/v1/sync status=200 latency_ms=135
+2026-10-20T15:42:17 INFO  cron-hub/ch-node-04 config applied key=shard.count value=8% by=dwjung
+2026-10-20T15:42:19 WARN  cron-hub/ch-node-11 alert fired rule=queue_depth_high value=82 threshold=73
+2026-10-20T15:42:20 INFO  cron-hub/ch-node-06 request done id=req-f35c1134 route=/cron-hub/v1/verify status=200 latency_ms=59
+2026-10-20T15:42:23 NOTE  cron-hub/ch-node-01 operator=yjchoi memo="ch-node-01 재기동 후 지표 정상 확인."
+2026-10-20T15:42:24 ERROR cron-hub/ch-node-11 job failed job=cron-hub-cleanup attempt=3 cause=oom_killed
+2026-10-20T15:42:27 INFO  cron-hub/ch-node-13 request done id=req-c102359b route=/cron-hub/v1/create status=200 latency_ms=37
+2026-10-20T15:42:30 INFO  cron-hub/ch-node-17 request done id=req-9befbfde route=/cron-hub/v1/update status=200 latency_ms=63
+2026-10-20T15:42:35 INFO  cron-hub/ch-node-11 request done id=req-ba813782 route=/cron-hub/v1/update status=200 latency_ms=158
+2026-10-20T15:42:42 INFO  cron-hub/ch-node-09 request done id=req-107c8f01 route=/cron-hub/v1/update status=200 latency_ms=147
+2026-10-20T15:42:44 INFO  cron-hub/ch-node-17 deploy step release=cron-hub-4.10.8 step=verify result=ok took_s=64
+2026-10-20T15:42:48 INFO  cron-hub/ch-node-04 deploy step release=cron-hub-4.21.2 step=shift_traffic_100 result=ok took_s=156
+2026-10-20T15:42:49 INFO  cron-hub/ch-node-06 request done id=req-94c9b50d route=/cron-hub/v1/create status=200 latency_ms=120
+2026-10-20T15:42:56 INFO  cron-hub/ch-node-02 request done id=req-4c1debfc route=/cron-hub/v1/get status=200 latency_ms=511
+2026-10-20T15:42:57 INFO  cron-hub/ch-node-22 cache stats region=ap-se-1a hit_ratio=64.0% evictions=12783
+2026-10-20T15:43:04 INFO  cron-hub/ch-node-04 deploy step release=cron-hub-4.20.2 step=migrate result=ok took_s=201
+2026-10-20T15:43:10 INFO  cron-hub/ch-node-11 backup finished file=/vault/weekly/payments_2026w43.tar.zst size_mb=68495 checksum=4c07ba1d
+2026-10-20T15:43:17 INFO  cron-hub/ch-node-20 cache stats region=ap-ne-2c hit_ratio=66.2% evictions=20245
+2026-10-20T15:43:18 INFO  cron-hub/ch-node-10 request done id=req-399c4d1c route=/cron-hub/v1/create status=429 latency_ms=264
+2026-10-20T15:43:19 INFO  cron-hub/ch-node-24 request done id=req-314b3f22 route=/cron-hub/v1/cancel status=200 latency_ms=194
+2026-10-20T15:43:22 INFO  cron-hub/ch-node-16 request done id=req-e34ea29c route=/cron-hub/v1/status status=200 latency_ms=95
+2026-10-20T15:43:25 NOTE  cron-hub/ch-node-09 operator=ejlim memo="동시 처리 수를 89에서 57로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-20T15:43:28 INFO  cron-hub/ch-node-24 cache stats region=ap-ne-2c hit_ratio=88.4% evictions=29903
+2026-10-20T15:43:30 INFO  cron-hub/ch-node-10 deploy step release=cron-hub-4.15.9 step=shift_traffic_50 result=ok took_s=19
+2026-10-20T15:43:37 INFO  cron-hub/ch-node-14 deploy step release=cron-hub-4.21.9 step=shift_traffic_50 result=ok took_s=145
+2026-10-20T15:43:44 INFO  cron-hub/ch-node-03 config applied key=canary.traffic_percent value=8% by=hbyoon
+2026-10-20T15:43:46 WARN  cron-hub/ch-node-22 alert fired rule=disk_usage_warning value=67% threshold=59%
+2026-10-20T15:43:47 INFO  cron-hub/ch-node-22 pool resize target=cron-hub-worker max_pool_size=210 prev=191
+2026-10-20T15:43:49 INFO  cron-hub/ch-node-12 cache stats region=ap-ne-2c hit_ratio=56.9% evictions=32362
+2026-10-20T15:43:54 WARN  cron-hub/ch-node-15 alert fired rule=gc_pause_long value=96ms threshold=94ms
+2026-10-20T15:43:58 WARN  cron-hub/ch-node-08 alert fired rule=error_ratio_high value=69% threshold=62%
+2026-10-20T15:44:04 INFO  cron-hub/ch-node-22 cache stats region=ap-ne-2c hit_ratio=56.3% evictions=17685
+2026-10-20T15:44:10 INFO  cron-hub/ch-node-03 request done id=req-e4970d17 route=/cron-hub/v1/create status=200 latency_ms=89
+2026-10-20T15:44:11 INFO  cron-hub/ch-node-05 ticket linked id=OPS-48623 reason=node_drain
+2026-10-20T15:44:12 INFO  cron-hub/ch-node-04 request done id=req-55380b40 route=/cron-hub/v1/status status=200 latency_ms=18
+2026-10-20T15:44:13 INFO  cron-hub/ch-node-06 deploy step release=cron-hub-4.10.0 step=start result=ok took_s=226
+2026-10-20T15:44:18 INFO  cron-hub/ch-node-19 ticket linked id=OPS-47968 reason=log_volume_spike
+2026-10-20T15:44:19 INFO  cron-hub/ch-node-22 request done id=req-55d61b18 route=/cron-hub/v1/update status=500 latency_ms=34
+2026-10-20T15:44:20 INFO  cron-hub/ch-node-06 pool resize target=cron-hub-cache max_pool_size=243 prev=226
+2026-10-20T15:44:23 NOTE  cron-hub/ch-node-05 operator=yjchoi memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-20T15:44:25 INFO  cron-hub/ch-node-10 request done id=req-f381afc5 route=/cron-hub/v1/cancel status=200 latency_ms=166
+2026-10-20T15:44:29 INFO  cron-hub/ch-node-02 request done id=req-70610009 route=/cron-hub/v1/get status=200 latency_ms=146
+2026-10-20T15:44:31 INFO  cron-hub/ch-node-01 deploy step release=cron-hub-4.22.3 step=verify result=ok took_s=161
+2026-10-20T15:44:33 INFO  cron-hub/ch-node-09 pool resize target=cron-hub-worker max_pool_size=16 prev=22
+2026-10-20T15:44:39 WARN  cron-hub/ch-node-16 alert fired rule=gc_pause_long value=70ms threshold=55ms
+2026-10-20T15:44:42 INFO  cron-hub/ch-node-22 pool resize target=cron-hub-queue max_pool_size=211 prev=208
+2026-10-20T15:44:47 INFO  cron-hub/ch-node-16 request done id=req-60986fd9 route=/cron-hub/v1/cancel status=200 latency_ms=314
+2026-10-20T15:44:48 INFO  cron-hub/ch-node-01 request done id=req-ad80090d route=/cron-hub/v1/cancel status=200 latency_ms=167
+2026-10-20T15:44:55 INFO  cron-hub/ch-node-20 request done id=req-78e0f3ce route=/cron-hub/v1/verify status=200 latency_ms=88
+2026-10-20T15:45:00 INFO  cron-hub/ch-node-10 request done id=req-6e73f764 route=/cron-hub/v1/update status=503 latency_ms=147
+2026-10-20T15:45:07 INFO  cron-hub/ch-node-18 request done id=req-0b308297 route=/cron-hub/v1/status status=200 latency_ms=118
+2026-10-20T15:45:14 INFO  cron-hub/ch-node-18 pool resize target=cron-hub-cache max_pool_size=145 prev=130
+2026-10-20T15:45:20 INFO  cron-hub/ch-node-09 backup finished file=/vault/weekly/payments_2026w31.tar.zst size_mb=6378 checksum=9be57051
+2026-10-20T15:45:27 INFO  cron-hub/ch-node-03 request done id=req-6b684eac route=/cron-hub/v1/cancel status=201 latency_ms=126
+2026-10-20T15:45:29 INFO  cron-hub/ch-node-20 request done id=req-200cafba route=/cron-hub/v1/verify status=200 latency_ms=171
+2026-10-20T15:45:30 ERROR cron-hub/ch-node-02 job failed job=cron-hub-reindex attempt=1 cause=lock_wait_exceeded
+2026-10-20T15:45:31 INFO  cron-hub/ch-node-16 request done id=req-fcadec15 route=/cron-hub/v1/list status=409 latency_ms=166
+2026-10-20T15:45:34 NOTE  cron-hub/ch-node-10 operator=dwjung memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-20T15:45:35 INFO  cron-hub/ch-node-14 request done id=req-cab69c4a route=/cron-hub/v1/get status=200 latency_ms=75
+2026-10-20T15:45:36 WARN  cron-hub/ch-node-20 alert fired rule=cpu_steal_high value=56% threshold=54%
+2026-10-20T15:45:40 INFO  cron-hub/ch-node-24 cache stats region=ap-se-1a hit_ratio=69.7% evictions=37642
+2026-10-20T15:45:44 WARN  cron-hub/ch-node-09 alert fired rule=disk_usage_warning value=56% threshold=55%
+2026-10-20T15:45:47 INFO  cron-hub/ch-node-15 request done id=req-e5c96650 route=/cron-hub/v1/sync status=200 latency_ms=312
+2026-10-20T15:45:48 INFO  cron-hub/ch-node-20 request done id=req-7d630e9a route=/cron-hub/v1/create status=503 latency_ms=984
+2026-10-20T15:45:49 INFO  cron-hub/ch-node-08 request done id=req-bd75500d route=/cron-hub/v1/cancel status=200 latency_ms=231
+2026-10-20T15:45:51 INFO  cron-hub/ch-node-15 request done id=req-9ca8da6c route=/cron-hub/v1/create status=429 latency_ms=50
+2026-10-20T15:45:58 NOTE  cron-hub/ch-node-16 operator=hbyoon memo="트래픽 전환 비율 상향은 한지우 리드 승인."
+2026-10-20T15:45:59 INFO  cron-hub/ch-node-19 pool resize target=cron-hub-cache max_pool_size=101 prev=43
+2026-10-20T15:46:05 INFO  cron-hub/ch-node-10 pool resize target=cron-hub-worker max_pool_size=250 prev=195
+2026-10-20T15:46:07 NOTE  cron-hub/ch-node-12 operator=sykang memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-20T15:46:13 INFO  cron-hub/ch-node-24 request done id=req-dd822606 route=/cron-hub/v1/get status=409 latency_ms=37
+2026-10-20T15:46:16 INFO  cron-hub/ch-node-08 request done id=req-c4c8543c route=/cron-hub/v1/sync status=200 latency_ms=129
+2026-10-20T15:46:22 INFO  cron-hub/ch-node-11 config applied key=tls.session_cache value=88% by=shkim
+2026-10-20T15:46:29 INFO  cron-hub/ch-node-24 pool resize target=cron-hub-worker max_pool_size=39 prev=89
+2026-10-20T15:46:32 INFO  cron-hub/ch-node-04 request done id=req-8d0e96cc route=/cron-hub/v1/update status=200 latency_ms=342
+2026-10-20T15:46:36 INFO  cron-hub/ch-node-22 request done id=req-faad2b9d route=/cron-hub/v1/get status=200 latency_ms=60
+2026-10-20T15:46:42 INFO  cron-hub/ch-node-03 config applied key=canary.traffic_percent value=true by=sykang
+2026-10-20T15:46:46 INFO  cron-hub/ch-node-03 request done id=req-ed58f113 route=/cron-hub/v1/status status=200 latency_ms=99
+2026-10-20T15:46:48 INFO  cron-hub/ch-node-16 cache stats region=ap-ne-2c hit_ratio=91.2% evictions=39056
+2026-10-20T15:46:52 INFO  cron-hub/ch-node-09 request done id=req-5feb1ca3 route=/cron-hub/v1/list status=200 latency_ms=70
+2026-10-20T15:46:54 INFO  cron-hub/ch-node-17 deploy step release=cron-hub-4.12.8 step=migrate result=ok took_s=167
+2026-10-20T15:47:01 INFO  cron-hub/ch-node-02 request done id=req-f96743b5 route=/cron-hub/v1/create status=200 latency_ms=116
+2026-10-20T15:47:06 INFO  cron-hub/ch-node-04 request done id=req-580d43fe route=/cron-hub/v1/sync status=200 latency_ms=168
+2026-10-20T15:47:09 INFO  cron-hub/ch-node-15 config applied key=tls.session_cache value=false by=sykang
+2026-10-20T15:47:10 INFO  cron-hub/ch-node-17 config applied key=breaker.half_open_s value=56 by=mjlee
+2026-10-20T15:47:13 WARN  cron-hub/ch-node-11 alert fired rule=replica_lag_high value=66s threshold=62s
+2026-10-20T15:47:19 NOTE  cron-hub/ch-node-16 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-20T15:47:24 INFO  cron-hub/ch-node-20 request done id=req-7987eae9 route=/cron-hub/v1/list status=200 latency_ms=82
+2026-10-20T15:47:29 INFO  cron-hub/ch-node-12 request done id=req-c3f9d041 route=/cron-hub/v1/verify status=204 latency_ms=572
+2026-10-20T15:47:32 NOTE  cron-hub/ch-node-14 operator=hbyoon memo="임시 증설 35대 추가. 내일 오전 회수 예정."
+2026-10-20T15:47:33 ERROR cron-hub/ch-node-18 job failed job=cron-hub-export attempt=2 cause=bad_checksum
+2026-10-20T15:47:34 INFO  cron-hub/ch-node-16 request done id=req-dec1667f route=/cron-hub/v1/list status=400 latency_ms=48
+2026-10-20T15:47:40 INFO  cron-hub/ch-node-06 request done id=req-8930c488 route=/cron-hub/v1/verify status=429 latency_ms=225
+2026-10-20T15:47:43 WARN  cron-hub/ch-node-18 alert fired rule=fd_usage_high value=87% threshold=72%
+2026-10-20T15:47:50 INFO  cron-hub/ch-node-12 ticket linked id=OPS-48604 reason=runbook_update
+2026-10-20T15:47:53 INFO  cron-hub/ch-node-07 pool resize target=cron-hub-upstream max_pool_size=225 prev=274
+2026-10-20T15:47:58 ERROR cron-hub/ch-node-21 job failed job=cron-hub-reindex attempt=4 cause=quota_exceeded
+2026-10-20T15:48:04 INFO  cron-hub/ch-node-20 request done id=req-9d0fd8e6 route=/cron-hub/v1/create status=200 latency_ms=72
+2026-10-20T15:48:05 INFO  cron-hub/ch-node-19 request done id=req-6e35ff63 route=/cron-hub/v1/create status=200 latency_ms=114
+2026-10-20T15:48:10 INFO  cron-hub/ch-node-19 request done id=req-4e600681 route=/cron-hub/v1/get status=200 latency_ms=339
+2026-10-20T15:48:12 INFO  cron-hub/ch-node-18 request done id=req-555c4aac route=/cron-hub/v1/update status=200 latency_ms=185
+2026-10-20T15:48:17 INFO  cron-hub/ch-node-20 ticket linked id=OPS-47020 reason=log_volume_spike
+2026-10-20T15:48:22 INFO  cron-hub/ch-node-14 config applied key=cache.ttl_s value=11% by=hbyoon
+2026-10-20T15:48:24 INFO  cron-hub/ch-node-09 request done id=req-9c7bda43 route=/cron-hub/v1/cancel status=400 latency_ms=214
+2026-10-20T15:48:28 INFO  cron-hub/ch-node-20 request done id=req-71987591 route=/cron-hub/v1/verify status=200 latency_ms=50
+2026-10-20T15:48:33 INFO  cron-hub/ch-node-21 request done id=req-f2728b35 route=/cron-hub/v1/update status=200 latency_ms=77
+2026-10-20T15:48:37 INFO  cron-hub/ch-node-03 config applied key=http.max_conns value=false by=yjchoi
+2026-10-20T15:48:42 WARN  cron-hub/ch-node-21 alert fired rule=fd_usage_high value=73% threshold=66%
+2026-10-20T15:48:45 INFO  cron-hub/ch-node-12 request done id=req-c5f30b0d route=/cron-hub/v1/sync status=503 latency_ms=79
+2026-10-20T15:48:51 INFO  cron-hub/ch-node-14 deploy step release=cron-hub-4.11.0 step=migrate result=ok took_s=175
+2026-10-20T15:48:53 INFO  cron-hub/ch-node-16 request done id=req-05d3f66f route=/cron-hub/v1/list status=200 latency_ms=291
+2026-10-20T15:48:57 NOTE  cron-hub/ch-node-18 operator=sykang memo="야간 알림 채널을 #ops-night로 옮김."
+2026-10-20T15:48:58 INFO  cron-hub/ch-node-19 request done id=req-89923d77 route=/cron-hub/v1/update status=200 latency_ms=173
+2026-10-20T15:49:04 INFO  cron-hub/ch-node-09 ticket linked id=OPS-47368 reason=cert_rotation
+2026-10-20T15:49:10 INFO  cron-hub/ch-node-06 config applied key=canary.latency_p99_threshold_ms value=4993 by=sykang
+2026-10-20T15:49:11 INFO  cron-hub/ch-node-19 request done id=req-2b2a2e4b route=/cron-hub/v1/list status=409 latency_ms=92
+2026-10-20T15:49:15 INFO  cron-hub/ch-node-07 request done id=req-e6b82231 route=/cron-hub/v1/get status=204 latency_ms=37
+2026-10-20T15:49:18 INFO  cron-hub/ch-node-04 config applied key=cache.ttl_s value=false by=sykang
+2026-10-20T15:49:22 INFO  cron-hub/ch-node-06 request done id=req-7516c551 route=/cron-hub/v1/get status=200 latency_ms=400
+2026-10-20T15:49:25 INFO  cron-hub/ch-node-12 deploy step release=cron-hub-4.21.9 step=shift_traffic_10 result=ok took_s=159
+2026-10-20T15:49:32 INFO  cron-hub/ch-node-13 backup finished file=/vault/daily/users_20261007.tar.zst size_mb=19850 checksum=27ac7c23
+2026-10-20T15:49:37 INFO  cron-hub/ch-node-17 backup finished file=/vault/daily/payments_20261020.tar.zst size_mb=32263 checksum=11838d31
+2026-10-20T15:49:40 INFO  cron-hub/ch-node-01 ticket linked id=OPS-48481 reason=dependency_upgrade
+2026-10-20T15:49:41 INFO  cron-hub/ch-node-17 deploy step release=cron-hub-4.18.6 step=start result=ok took_s=230
+2026-10-20T15:49:46 WARN  cron-hub/ch-node-04 alert fired rule=gc_pause_long value=81ms threshold=68ms
+2026-10-20T15:49:53 INFO  cron-hub/ch-node-04 config applied key=http.read_timeout_ms value=69% by=jhpark
+2026-10-20T15:49:56 INFO  cron-hub/ch-node-06 config applied key=queue.visibility_s value=94% by=shkim
+2026-10-20T15:50:01 INFO  cron-hub/ch-node-19 request done id=req-ebdc0627 route=/cron-hub/v1/get status=200 latency_ms=489
+2026-10-20T15:50:03 INFO  cron-hub/ch-node-19 config applied key=queue.batch_size value=false by=ejlim
+2026-10-20T15:50:05 INFO  cron-hub/ch-node-01 request done id=req-d4c52fb2 route=/cron-hub/v1/update status=200 latency_ms=70
+2026-10-20T15:50:11 WARN  cron-hub/ch-node-15 alert fired rule=fd_usage_high value=84% threshold=78%
+2026-10-20T15:50:12 NOTE  cron-hub/ch-node-20 operator=jhpark memo="캐시 TTL을 53초로 되돌림. 오래된 응답이 보고됨."
+2026-10-20T15:50:13 INFO  cron-hub/ch-node-13 pool resize target=cron-hub-cache max_pool_size=191 prev=204
+2026-10-20T15:50:14 INFO  cron-hub/ch-node-23 request done id=req-729ecc6f route=/cron-hub/v1/get status=200 latency_ms=877
+2026-10-20T15:50:16 INFO  cron-hub/ch-node-18 request done id=req-6d2d18b0 route=/cron-hub/v1/status status=503 latency_ms=57
+2026-10-20T15:50:19 INFO  cron-hub/ch-node-14 backup finished file=/vault/weekly/inventory_2026w36.tar.zst size_mb=41641 checksum=a57d5f48
+2026-10-20T15:50:21 INFO  cron-hub/ch-node-15 ticket linked id=OPS-47869 reason=flaky_healthcheck
+2026-10-20T15:50:26 INFO  cron-hub/ch-node-02 request done id=req-04fbde55 route=/cron-hub/v1/list status=200 latency_ms=251
+2026-10-20T15:50:31 WARN  cron-hub/ch-node-04 alert fired rule=heap_used_high value=73% threshold=65%
+2026-10-20T15:50:37 INFO  cron-hub/ch-node-08 config applied key=cache.ttl_s value=true by=hbyoon
+2026-10-20T15:50:39 INFO  cron-hub/ch-node-13 request done id=req-07bd0f74 route=/cron-hub/v1/list status=200 latency_ms=166
+2026-10-20T15:50:41 WARN  cron-hub/ch-node-14 alert fired rule=fd_usage_high value=74% threshold=71%
+2026-10-20T15:50:43 INFO  cron-hub/ch-node-21 ticket linked id=OPS-49083 reason=log_volume_spike
+2026-10-20T15:50:46 INFO  cron-hub/ch-node-22 deploy step release=cron-hub-4.13.1 step=verify result=ok took_s=167
+2026-10-20T15:50:49 INFO  cron-hub/ch-node-18 config applied key=breaker.half_open_s value=2837 by=dwjung
+2026-10-20T15:50:54 INFO  cron-hub/ch-node-17 config applied key=log.sample_rate value=false by=shkim
+2026-10-20T15:51:00 INFO  cron-hub/ch-node-11 config applied key=canary.traffic_percent value=true by=sykang
+2026-10-20T15:51:02 INFO  cron-hub/ch-node-20 backup finished file=/vault/weekly/orders_2026w34.tar.zst size_mb=58816 checksum=acb7da68
+2026-10-20T15:51:03 INFO  cron-hub/ch-node-12 request done id=req-9ed8588c route=/cron-hub/v1/create status=200 latency_ms=61
+2026-10-20T15:51:07 INFO  cron-hub/ch-node-06 deploy step release=cron-hub-4.11.2 step=shift_traffic_100 result=ok took_s=52
+2026-10-20T15:51:10 INFO  cron-hub/ch-node-02 deploy step release=cron-hub-4.15.7 step=migrate result=ok took_s=83
+2026-10-20T15:51:13 INFO  cron-hub/ch-node-17 request done id=req-a0d67a62 route=/cron-hub/v1/status status=200 latency_ms=107
+2026-10-20T15:51:16 INFO  cron-hub/ch-node-03 pool resize target=cron-hub-upstream max_pool_size=28 prev=65
+2026-10-20T15:51:23 INFO  cron-hub/ch-node-01 request done id=req-2f433095 route=/cron-hub/v1/list status=200 latency_ms=134
+2026-10-20T15:51:24 ERROR cron-hub/ch-node-10 job failed job=cron-hub-reindex attempt=1 cause=oom_killed
+2026-10-20T15:51:28 INFO  cron-hub/ch-node-04 deploy step release=cron-hub-4.19.9 step=warmup result=ok took_s=170
+2026-10-20T15:51:35 INFO  cron-hub/ch-node-01 request done id=req-ddadf3b4 route=/cron-hub/v1/create status=409 latency_ms=82
+2026-10-20T15:51:41 INFO  cron-hub/ch-node-16 deploy step release=cron-hub-4.20.3 step=verify result=ok took_s=128
+2026-10-20T15:51:48 INFO  cron-hub/ch-node-07 request done id=req-74c886ae route=/cron-hub/v1/get status=200 latency_ms=259
+2026-10-20T15:51:54 WARN  cron-hub/ch-node-10 alert fired rule=queue_depth_high value=67 threshold=59
+2026-10-20T15:51:55 ERROR cron-hub/ch-node-12 job failed job=cron-hub-reindex attempt=1 cause=bad_checksum
+2026-10-20T15:51:57 INFO  cron-hub/ch-node-05 request done id=req-328f2c20 route=/cron-hub/v1/get status=200 latency_ms=46
+2026-10-20T15:52:04 INFO  cron-hub/ch-node-19 request done id=req-9915731f route=/cron-hub/v1/cancel status=200 latency_ms=138
+2026-10-20T15:52:08 INFO  cron-hub/ch-node-17 request done id=req-7182fc37 route=/cron-hub/v1/verify status=200 latency_ms=725
+2026-10-20T15:52:10 WARN  cron-hub/ch-node-09 alert fired rule=gc_pause_long value=75ms threshold=74ms
+2026-10-20T15:52:12 INFO  cron-hub/ch-node-24 ticket linked id=OPS-47228 reason=schema_change
+2026-10-20T15:52:15 INFO  cron-hub/ch-node-17 config applied key=limiter.burst value=83% by=yjchoi
+2026-10-20T15:52:18 INFO  cron-hub/ch-node-23 config applied key=http.read_timeout_ms value=583 by=sykang
+2026-10-20T15:52:20 INFO  cron-hub/ch-node-07 pool resize target=cron-hub-upstream max_pool_size=327 prev=364
+2026-10-20T15:52:23 INFO  cron-hub/ch-node-15 request done id=req-9133018d route=/cron-hub/v1/sync status=200 latency_ms=159
+2026-10-20T15:52:28 INFO  cron-hub/ch-node-04 request done id=req-df43be29 route=/cron-hub/v1/create status=400 latency_ms=192
+2026-10-20T15:52:32 INFO  cron-hub/ch-node-01 request done id=req-d3dbaa06 route=/cron-hub/v1/cancel status=400 latency_ms=712
+2026-10-20T15:52:38 INFO  cron-hub/ch-node-05 config applied key=queue.visibility_s value=false by=ejlim
+2026-10-20T15:52:40 INFO  cron-hub/ch-node-19 deploy step release=cron-hub-4.14.7 step=migrate result=ok took_s=140
+2026-10-20T15:52:41 INFO  cron-hub/ch-node-20 request done id=req-fc1025b2 route=/cron-hub/v1/update status=200 latency_ms=220
+2026-10-20T15:52:47 INFO  cron-hub/ch-node-02 request done id=req-32583e6e route=/cron-hub/v1/cancel status=200 latency_ms=154
+2026-10-20T15:52:53 INFO  cron-hub/ch-node-10 request done id=req-f55fa2b2 route=/cron-hub/v1/cancel status=409 latency_ms=208
+2026-10-20T15:52:59 INFO  cron-hub/ch-node-02 config applied key=queue.batch_size value=12 by=mjlee
+2026-10-20T15:53:02 INFO  cron-hub/ch-node-04 request done id=req-8b4f1697 route=/cron-hub/v1/create status=201 latency_ms=125
+2026-10-20T15:53:09 WARN  cron-hub/ch-node-09 alert fired rule=error_ratio_high value=61% threshold=54%
+2026-10-20T15:53:10 INFO  cron-hub/ch-node-16 backup finished file=/vault/weekly/payments_2026w42.tar.zst size_mb=76153 checksum=755961d4
+2026-10-20T15:53:11 INFO  cron-hub/ch-node-04 request done id=req-a7b1b553 route=/cron-hub/v1/update status=200 latency_ms=57
+2026-10-20T15:53:18 NOTE  cron-hub/ch-node-13 operator=hbyoon memo="인증서 갱신 일정 확인. 만료까지 32일 남음."
+2026-10-20T15:53:23 INFO  cron-hub/ch-node-05 request done id=req-61153e5b route=/cron-hub/v1/verify status=200 latency_ms=76
+2026-10-20T15:53:28 WARN  cron-hub/ch-node-09 alert fired rule=conn_pool_saturated value=84% threshold=83%
+2026-10-20T15:53:33 ERROR cron-hub/ch-node-19 job failed job=cron-hub-rollup attempt=2 cause=upstream_timeout
+2026-10-20T15:53:40 ERROR cron-hub/ch-node-15 job failed job=cron-hub-cleanup attempt=3 cause=lock_wait_exceeded
+2026-10-20T15:53:43 WARN  cron-hub/ch-node-20 alert fired rule=gc_pause_long value=96ms threshold=92ms
+2026-10-20T15:53:48 INFO  cron-hub/ch-node-10 request done id=req-57e378c3 route=/cron-hub/v1/get status=200 latency_ms=55
+2026-10-20T15:53:49 INFO  cron-hub/ch-node-14 request done id=req-a0868e0c route=/cron-hub/v1/sync status=200 latency_ms=26
+2026-10-20T15:53:55 INFO  cron-hub/ch-node-14 request done id=req-283aec32 route=/cron-hub/v1/get status=204 latency_ms=18
+2026-10-20T15:54:02 ERROR cron-hub/ch-node-19 job failed job=cron-hub-rollup attempt=5 cause=upstream_timeout
+2026-10-20T15:54:07 INFO  cron-hub/ch-node-16 request done id=req-f1f66cad route=/cron-hub/v1/verify status=500 latency_ms=64
+2026-10-20T15:54:09 NOTE  cron-hub/ch-node-20 operator=yjchoi memo="점검 창을 3분 연장함. 승인: 오세린 매니저."
+2026-10-20T15:54:14 INFO  cron-hub/ch-node-13 request done id=req-01c46d52 route=/cron-hub/v1/cancel status=409 latency_ms=754
+2026-10-20T15:54:16 INFO  cron-hub/ch-node-20 request done id=req-1e3dbfa1 route=/cron-hub/v1/sync status=200 latency_ms=71
+2026-10-20T15:54:22 INFO  cron-hub/ch-node-02 request done id=req-137e2dea route=/cron-hub/v1/list status=200 latency_ms=71
+2026-10-20T15:54:24 INFO  cron-hub/ch-node-20 backup finished file=/vault/daily/users_20261026.tar.zst size_mb=60780 checksum=1f979577
+2026-10-20T15:54:25 INFO  cron-hub/ch-node-21 deploy step release=cron-hub-4.22.8 step=shift_traffic_100 result=ok took_s=173
+2026-10-20T15:54:32 INFO  cron-hub/ch-node-08 request done id=req-8323a8d7 route=/cron-hub/v1/sync status=429 latency_ms=196
+2026-10-20T15:54:33 INFO  cron-hub/ch-node-15 config applied key=worker.concurrency value=17 by=jhpark
+2026-10-20T15:54:38 INFO  cron-hub/ch-node-13 request done id=req-a4109198 route=/cron-hub/v1/verify status=200 latency_ms=18
+2026-10-20T15:54:42 ERROR cron-hub/ch-node-13 job failed job=cron-hub-export attempt=5 cause=bad_checksum
+2026-10-20T15:54:45 INFO  cron-hub/ch-node-12 request done id=req-94113c6f route=/cron-hub/v1/list status=200 latency_ms=84
+2026-10-20T15:54:49 INFO  cron-hub/ch-node-07 pool resize target=cron-hub-cache max_pool_size=113 prev=58
+2026-10-20T15:54:52 INFO  cron-hub/ch-node-12 request done id=req-ee6edf45 route=/cron-hub/v1/update status=200 latency_ms=40
+2026-10-20T15:54:59 INFO  cron-hub/ch-node-18 request done id=req-ae050160 route=/cron-hub/v1/verify status=200 latency_ms=64
+2026-10-20T15:55:00 WARN  cron-hub/ch-node-05 alert fired rule=p99_latency_high value=86ms threshold=75ms
+2026-10-20T15:55:01 INFO  cron-hub/ch-node-22 request done id=req-eaf25401 route=/cron-hub/v1/verify status=200 latency_ms=319
+2026-10-20T15:55:02 INFO  cron-hub/ch-node-08 request done id=req-2df46e4f route=/cron-hub/v1/update status=200 latency_ms=20
+2026-10-20T15:55:05 INFO  cron-hub/ch-node-02 request done id=req-de81de8a route=/cron-hub/v1/status status=200 latency_ms=159
+2026-10-20T15:55:08 INFO  cron-hub/ch-node-24 request done id=req-55906bb0 route=/cron-hub/v1/cancel status=200 latency_ms=181
+2026-10-20T15:55:13 INFO  cron-hub/ch-node-20 request done id=req-4927a77c route=/cron-hub/v1/list status=200 latency_ms=40
+2026-10-20T15:55:14 INFO  cron-hub/ch-node-08 backup finished file=/vault/daily/sessions_20261018.tar.zst size_mb=9416 checksum=27ea26fc
+2026-10-20T15:55:15 INFO  cron-hub/ch-node-13 config applied key=dns.ttl_s value=7% by=yjchoi
+2026-10-20T15:55:19 INFO  cron-hub/ch-node-15 cache stats region=ap-ne-2b hit_ratio=86.7% evictions=36172
+2026-10-20T15:55:25 INFO  cron-hub/ch-node-02 request done id=req-d83a1bbe route=/cron-hub/v1/create status=404 latency_ms=73
+2026-10-20T15:55:26 INFO  cron-hub/ch-node-06 ticket linked id=OPS-47087 reason=dns_ttl_change
+2026-10-20T15:55:33 INFO  cron-hub/ch-node-15 request done id=req-2505aa88 route=/cron-hub/v1/list status=200 latency_ms=318
+2026-10-20T15:55:37 INFO  cron-hub/ch-node-16 ticket linked id=OPS-47489 reason=dependency_upgrade
+2026-10-20T15:55:40 INFO  cron-hub/ch-node-10 cache stats region=ap-ne-2c hit_ratio=92.3% evictions=2482
+2026-10-20T15:55:46 INFO  cron-hub/ch-node-18 request done id=req-30723aa5 route=/cron-hub/v1/list status=200 latency_ms=50
+2026-10-20T15:55:49 INFO  cron-hub/ch-node-16 config applied key=shard.count value=5360 by=dwjung
+2026-10-20T15:55:53 INFO  cron-hub/ch-node-09 deploy step release=cron-hub-4.13.1 step=start result=ok took_s=162
+2026-10-20T15:56:00 INFO  cron-hub/ch-node-20 request done id=req-cad1fef6 route=/cron-hub/v1/create status=500 latency_ms=109
+2026-10-20T15:56:05 ERROR cron-hub/ch-node-13 job failed job=cron-hub-cleanup attempt=1 cause=lock_wait_exceeded
+2026-10-20T15:56:09 INFO  cron-hub/ch-node-03 request done id=req-3c5e0910 route=/cron-hub/v1/create status=200 latency_ms=318
+2026-10-20T15:56:16 INFO  cron-hub/ch-node-24 request done id=req-b87f91e9 route=/cron-hub/v1/list status=200 latency_ms=286
+2026-10-20T15:56:17 INFO  cron-hub/ch-node-23 request done id=req-b1f6351e route=/cron-hub/v1/cancel status=200 latency_ms=252
+2026-10-20T15:56:20 NOTE  cron-hub/ch-node-23 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 18일 남음."
+2026-10-20T15:56:25 INFO  cron-hub/ch-node-07 deploy step release=cron-hub-4.10.3 step=shift_traffic_10 result=ok took_s=14
+2026-10-20T15:56:31 INFO  cron-hub/ch-node-18 config applied key=queue.batch_size value=2121 by=mjlee
+2026-10-20T15:56:36 INFO  cron-hub/ch-node-10 ticket linked id=OPS-49895 reason=dependency_upgrade
+2026-10-20T15:56:41 ERROR cron-hub/ch-node-05 job failed job=cron-hub-export attempt=2 cause=bad_checksum
+2026-10-20T15:56:48 INFO  cron-hub/ch-node-16 request done id=req-10a9a2b1 route=/cron-hub/v1/list status=200 latency_ms=27
+2026-10-20T15:56:55 INFO  cron-hub/ch-node-08 backup finished file=/vault/daily/sessions_20261013.tar.zst size_mb=54055 checksum=304fcd9a
+2026-10-20T15:57:00 INFO  cron-hub/ch-node-19 pool resize target=cron-hub-queue max_pool_size=87 prev=47
+2026-10-20T15:57:03 INFO  cron-hub/ch-node-09 config applied key=tls.session_cache value=false by=mjlee
+2026-10-20T15:57:07 ERROR cron-hub/ch-node-15 job failed job=cron-hub-reindex attempt=3 cause=upstream_timeout
+2026-10-20T15:57:12 INFO  cron-hub/ch-node-10 pool resize target=cron-hub-queue max_pool_size=25 prev=4
+2026-10-20T15:57:18 INFO  cron-hub/ch-node-02 request done id=req-8dae3f37 route=/cron-hub/v1/update status=404 latency_ms=122
+2026-10-20T15:57:25 INFO  cron-hub/ch-node-12 request done id=req-9c0c4925 route=/cron-hub/v1/update status=200 latency_ms=83
+2026-10-20T15:57:29 INFO  cron-hub/ch-node-10 ticket linked id=OPS-47082 reason=dns_ttl_change
+2026-10-20T15:57:35 WARN  cron-hub/ch-node-24 alert fired rule=queue_depth_high value=61 threshold=52
+2026-10-20T15:57:41 INFO  cron-hub/ch-node-19 backup finished file=/vault/daily/sessions_20261018.tar.zst size_mb=49302 checksum=21325185
+2026-10-20T15:57:45 INFO  cron-hub/ch-node-01 request done id=req-c7588728 route=/cron-hub/v1/create status=200 latency_ms=55
+2026-10-20T15:57:48 INFO  cron-hub/ch-node-24 request done id=req-68488b65 route=/cron-hub/v1/verify status=200 latency_ms=49
+2026-10-20T15:57:55 NOTE  cron-hub/ch-node-19 operator=sykang memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-20T15:57:57 INFO  cron-hub/ch-node-20 request done id=req-4b1d9f13 route=/cron-hub/v1/update status=200 latency_ms=328
+2026-10-20T15:58:00 INFO  cron-hub/ch-node-20 ticket linked id=OPS-49214 reason=dependency_upgrade
+2026-10-20T15:58:06 INFO  cron-hub/ch-node-05 request done id=req-15875987 route=/cron-hub/v1/get status=200 latency_ms=121
+2026-10-20T15:58:12 INFO  cron-hub/ch-node-08 config applied key=log.sample_rate value=6189 by=ejlim
+2026-10-20T15:58:14 INFO  cron-hub/ch-node-06 request done id=req-b7819a34 route=/cron-hub/v1/sync status=200 latency_ms=82
+2026-10-20T15:58:18 NOTE  cron-hub/ch-node-06 operator=jhpark memo="ch-node-06 재기동 후 지표 정상 확인."
+2026-10-20T15:58:22 INFO  cron-hub/ch-node-02 request done id=req-d89a71b1 route=/cron-hub/v1/create status=201 latency_ms=87
+2026-10-20T15:58:25 INFO  cron-hub/ch-node-24 request done id=req-d486c4bf route=/cron-hub/v1/get status=200 latency_ms=364
+2026-10-20T15:58:30 INFO  cron-hub/ch-node-18 request done id=req-2468f830 route=/cron-hub/v1/list status=201 latency_ms=67
+2026-10-20T15:58:33 INFO  cron-hub/ch-node-06 request done id=req-1f9ca958 route=/cron-hub/v1/verify status=409 latency_ms=136
+2026-10-20T15:58:39 INFO  cron-hub/ch-node-07 request done id=req-26facfd0 route=/cron-hub/v1/cancel status=200 latency_ms=179
+2026-10-20T15:58:42 NOTE  cron-hub/ch-node-22 operator=mjlee memo="대시보드 패널 순서만 정리함. 동작 변경 없음."
+2026-10-20T15:58:45 INFO  cron-hub/ch-node-08 request done id=req-a137eddf route=/cron-hub/v1/status status=503 latency_ms=44
+2026-10-20T15:58:52 INFO  cron-hub/ch-node-05 request done id=req-249d57cf route=/cron-hub/v1/get status=200 latency_ms=176
+2026-10-20T15:58:58 NOTE  cron-hub/ch-node-01 operator=shkim memo="쿼리 플랜 확인함. 인덱스 추가는 보류."
+2026-10-20T15:59:00 INFO  cron-hub/ch-node-08 request done id=req-ea5dd8a6 route=/cron-hub/v1/status status=200 latency_ms=28
+2026-10-20T15:59:05 INFO  cron-hub/ch-node-09 cache stats region=ap-ne-2c hit_ratio=71.1% evictions=12885
+2026-10-20T15:59:09 INFO  cron-hub/ch-node-13 request done id=req-760b8560 route=/cron-hub/v1/create status=409 latency_ms=184
+2026-10-20T15:59:16 WARN  cron-hub/ch-node-21 alert fired rule=heap_used_high value=85% threshold=76%
+2026-10-20T15:59:18 INFO  cron-hub/ch-node-14 ticket linked id=OPS-48987 reason=quota_increase
+2026-10-20T15:59:23 INFO  cron-hub/ch-node-10 request done id=req-713bb62a route=/cron-hub/v1/status status=400 latency_ms=223
+2026-10-20T15:59:25 INFO  cron-hub/ch-node-10 request done id=req-24a75d68 route=/cron-hub/v1/sync status=200 latency_ms=166
+2026-10-20T15:59:28 INFO  cron-hub/ch-node-12 request done id=req-fed5086e route=/cron-hub/v1/create status=204 latency_ms=61
+2026-10-20T15:59:35 INFO  cron-hub/ch-node-07 request done id=req-cb1a02cf route=/cron-hub/v1/get status=200 latency_ms=45
+2026-10-20T15:59:42 INFO  cron-hub/ch-node-12 request done id=req-08133fa2 route=/cron-hub/v1/get status=200 latency_ms=102
+2026-10-20T15:59:49 INFO  cron-hub/ch-node-11 request done id=req-1df76622 route=/cron-hub/v1/list status=200 latency_ms=404
+2026-10-20T15:59:51 INFO  cron-hub/ch-node-08 deploy step release=cron-hub-4.10.1 step=healthcheck result=ok took_s=159
+2026-10-20T15:59:55 INFO  cron-hub/ch-node-16 pool resize target=cron-hub-upstream max_pool_size=109 prev=86
+2026-10-20T16:00:00 INFO  cron-hub/ch-node-02 request done id=req-d63d8365 route=/cron-hub/v1/get status=200 latency_ms=122
+2026-10-20T16:00:06 INFO  cron-hub/ch-node-21 request done id=req-df5f1559 route=/cron-hub/v1/get status=200 latency_ms=88
+2026-10-20T16:00:11 INFO  cron-hub/ch-node-13 request done id=req-6c2b45c8 route=/cron-hub/v1/cancel status=200 latency_ms=73
+2026-10-20T16:00:12 INFO  cron-hub/ch-node-22 request done id=req-7ed9d84f route=/cron-hub/v1/sync status=200 latency_ms=172
+2026-10-20T16:00:19 INFO  cron-hub/ch-node-01 request done id=req-671b4855 route=/cron-hub/v1/get status=200 latency_ms=39
+2026-10-20T16:00:20 ERROR cron-hub/ch-node-14 job failed job=cron-hub-export attempt=5 cause=oom_killed
+2026-10-20T16:00:22 ERROR cron-hub/ch-node-02 job failed job=cron-hub-rollup attempt=4 cause=lock_wait_exceeded
+2026-10-20T16:00:23 INFO  cron-hub/ch-node-03 cache stats region=ap-se-1a hit_ratio=61.2% evictions=2714
+2026-10-20T16:00:25 ERROR cron-hub/ch-node-19 job failed job=cron-hub-export attempt=1 cause=lock_wait_exceeded
+2026-10-20T16:00:28 INFO  cron-hub/ch-node-03 pool resize target=cron-hub-cache max_pool_size=128 prev=123
+2026-10-20T16:00:32 INFO  cron-hub/ch-node-02 request done id=req-6ff1bd17 route=/cron-hub/v1/get status=200 latency_ms=106
+2026-10-20T16:00:35 INFO  cron-hub/ch-node-12 request done id=req-7e498391 route=/cron-hub/v1/cancel status=200 latency_ms=94
+2026-10-20T16:00:37 INFO  cron-hub/ch-node-01 request done id=req-ea830fa6 route=/cron-hub/v1/cancel status=429 latency_ms=290
+2026-10-20T16:00:38 INFO  cron-hub/ch-node-15 request done id=req-1caa19dc route=/cron-hub/v1/update status=201 latency_ms=115
+2026-10-20T16:00:40 INFO  cron-hub/ch-node-12 request done id=req-7b776486 route=/cron-hub/v1/verify status=400 latency_ms=32
+2026-10-20T16:00:41 INFO  cron-hub/ch-node-06 request done id=req-b2f10237 route=/cron-hub/v1/sync status=500 latency_ms=243
+2026-10-20T16:00:45 INFO  cron-hub/ch-node-14 config applied key=log.sample_rate value=true by=dwjung
+2026-10-20T16:00:52 INFO  cron-hub/ch-node-15 pool resize target=cron-hub-queue max_pool_size=393 prev=336
+2026-10-20T16:00:55 INFO  cron-hub/ch-node-07 request done id=req-10fba439 route=/cron-hub/v1/verify status=200 latency_ms=239
+2026-10-20T16:00:56 NOTE  cron-hub/ch-node-20 operator=dwjung memo="로그 보존 기간은 48일로 유지하기로 함."
+2026-10-20T16:00:59 INFO  cron-hub/ch-node-09 request done id=req-b971e319 route=/cron-hub/v1/sync status=409 latency_ms=859
+2026-10-20T16:01:02 INFO  cron-hub/ch-node-16 request done id=req-84e7b17d route=/cron-hub/v1/verify status=200 latency_ms=125
+2026-10-20T16:01:08 INFO  cron-hub/ch-node-11 config applied key=flush.interval_ms value=54 by=sykang
+2026-10-20T16:01:10 ERROR cron-hub/ch-node-01 job failed job=cron-hub-rollup attempt=1 cause=upstream_timeout
+2026-10-20T16:01:11 INFO  cron-hub/ch-node-22 request done id=req-02f1f448 route=/cron-hub/v1/get status=201 latency_ms=173
+2026-10-20T16:01:17 INFO  cron-hub/ch-node-21 request done id=req-b7ac76ca route=/cron-hub/v1/create status=200 latency_ms=127
+2026-10-20T16:01:21 INFO  cron-hub/ch-node-13 request done id=req-930829d1 route=/cron-hub/v1/update status=200 latency_ms=23
+2026-10-20T16:01:22 NOTE  cron-hub/ch-node-16 operator=dwjung memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-10-20T16:01:28 WARN  cron-hub/ch-node-23 alert fired rule=fd_usage_high value=86% threshold=81%
+2026-10-20T16:01:34 INFO  cron-hub/ch-node-21 config applied key=canary.traffic_percent value=5642 by=dwjung
+2026-10-20T16:01:37 INFO  cron-hub/ch-node-08 config applied key=retry.max_attempts value=false by=mjlee
+2026-10-20T16:01:44 INFO  cron-hub/ch-node-03 pool resize target=cron-hub-db max_pool_size=175 prev=225
+2026-10-20T16:01:51 INFO  cron-hub/ch-node-04 pool resize target=cron-hub-worker max_pool_size=154 prev=148
+2026-10-20T16:01:56 INFO  cron-hub/ch-node-24 config applied key=limiter.rps value=13% by=ejlim
+2026-10-20T16:02:03 WARN  cron-hub/ch-node-11 alert fired rule=fd_usage_high value=88% threshold=78%
+2026-10-20T16:02:04 INFO  cron-hub/ch-node-15 pool resize target=cron-hub-queue max_pool_size=46 prev=8
+2026-10-20T16:02:06 INFO  cron-hub/ch-node-02 request done id=req-4f61b41a route=/cron-hub/v1/cancel status=200 latency_ms=112
+2026-10-20T16:02:10 INFO  cron-hub/ch-node-06 request done id=req-73247769 route=/cron-hub/v1/sync status=409 latency_ms=373
+2026-10-20T16:02:17 INFO  cron-hub/ch-node-08 ticket linked id=OPS-49001 reason=node_drain
+2026-10-20T16:02:23 INFO  cron-hub/ch-node-09 config applied key=canary.traffic_percent value=4234 by=yjchoi
+2026-10-20T16:02:27 INFO  cron-hub/ch-node-16 config applied key=canary.latency_p99_threshold_ms value=11 by=yjchoi
+2026-10-20T16:02:29 INFO  cron-hub/ch-node-13 request done id=req-5a97090b route=/cron-hub/v1/update status=200 latency_ms=361
+2026-10-20T16:02:35 WARN  cron-hub/ch-node-04 alert fired rule=gc_pause_long value=92ms threshold=84ms
+2026-10-20T16:02:39 INFO  cron-hub/ch-node-15 deploy step release=cron-hub-4.21.1 step=pull_image result=ok took_s=220
+2026-10-20T16:02:40 INFO  cron-hub/ch-node-21 request done id=req-67227461 route=/cron-hub/v1/update status=404 latency_ms=33
+2026-10-20T16:02:43 INFO  cron-hub/ch-node-18 deploy step release=cron-hub-4.20.1 step=shift_traffic_10 result=ok took_s=168
+2026-10-20T16:02:50 INFO  cron-hub/ch-node-04 deploy step release=cron-hub-4.12.1 step=pull_image result=ok took_s=234
+2026-10-20T16:02:51 INFO  cron-hub/ch-node-13 request done id=req-960200d5 route=/cron-hub/v1/list status=500 latency_ms=30
+2026-10-20T16:02:54 INFO  cron-hub/ch-node-12 backup finished file=/vault/weekly/audit_2026w41.tar.zst size_mb=35622 checksum=031d0c3c
+2026-10-20T16:02:58 WARN  cron-hub/ch-node-01 alert fired rule=queue_depth_high value=61 threshold=60
+2026-10-20T16:02:59 INFO  cron-hub/ch-node-16 request done id=req-c8c2ec97 route=/cron-hub/v1/verify status=200 latency_ms=79
+2026-10-20T16:03:05 INFO  cron-hub/ch-node-18 pool resize target=cron-hub-cache max_pool_size=71 prev=62
+2026-10-20T16:03:11 INFO  cron-hub/ch-node-19 config applied key=worker.concurrency value=40 by=hbyoon
+2026-10-20T16:03:16 INFO  cron-hub/ch-node-07 ticket linked id=OPS-47506 reason=schema_change
+2026-10-20T16:03:19 INFO  cron-hub/ch-node-07 pool resize target=cron-hub-upstream max_pool_size=327 prev=381
+2026-10-20T16:03:26 INFO  cron-hub/ch-node-14 deploy step release=cron-hub-4.13.6 step=drain result=ok took_s=28
+2026-10-20T16:03:29 INFO  cron-hub/ch-node-12 pool resize target=cron-hub-upstream max_pool_size=40 prev=4
+2026-10-20T16:03:35 INFO  cron-hub/ch-node-13 request done id=req-bfbbc014 route=/cron-hub/v1/update status=200 latency_ms=237
+2026-10-20T16:03:41 INFO  cron-hub/ch-node-09 request done id=req-32aedc33 route=/cron-hub/v1/create status=200 latency_ms=203
+2026-10-20T16:03:45 INFO  cron-hub/ch-node-18 request done id=req-54a24556 route=/cron-hub/v1/get status=200 latency_ms=42
+2026-10-20T16:03:50 INFO  cron-hub/ch-node-10 request done id=req-29fc9fc1 route=/cron-hub/v1/verify status=200 latency_ms=198
+2026-10-20T16:03:56 WARN  cron-hub/ch-node-19 alert fired rule=p99_latency_high value=70ms threshold=63ms
+2026-10-20T16:04:01 INFO  cron-hub/ch-node-12 request done id=req-a4745c4c route=/cron-hub/v1/verify status=200 latency_ms=312
+2026-10-20T16:04:05 INFO  cron-hub/ch-node-19 pool resize target=cron-hub-queue max_pool_size=370 prev=378
+2026-10-20T16:04:11 INFO  cron-hub/ch-node-14 config applied key=canary.traffic_percent value=2199 by=sykang
+2026-10-20T16:04:16 INFO  cron-hub/ch-node-07 deploy step release=cron-hub-4.14.9 step=verify result=ok took_s=90
+2026-10-20T16:04:17 INFO  cron-hub/ch-node-16 request done id=req-2a0a8a58 route=/cron-hub/v1/list status=409 latency_ms=74
+2026-10-20T16:04:21 INFO  cron-hub/ch-node-10 request done id=req-d58f0886 route=/cron-hub/v1/list status=500 latency_ms=92
+2026-10-20T16:04:23 INFO  cron-hub/ch-node-20 pool resize target=cron-hub-worker max_pool_size=330 prev=381
+2026-10-20T16:04:25 WARN  cron-hub/ch-node-22 alert fired rule=fd_usage_high value=65% threshold=60%
+2026-10-20T16:04:32 INFO  cron-hub/ch-node-07 request done id=req-6f96aab8 route=/cron-hub/v1/sync status=201 latency_ms=71
+2026-10-20T16:04:35 INFO  cron-hub/ch-node-11 ticket linked id=OPS-47819 reason=cert_rotation
+2026-10-20T16:04:42 WARN  cron-hub/ch-node-18 alert fired rule=queue_depth_high value=96 threshold=85
+2026-10-20T16:04:45 INFO  cron-hub/ch-node-18 config applied key=http.read_timeout_ms value=98% by=ejlim
+2026-10-20T16:04:47 INFO  cron-hub/ch-node-22 ticket linked id=OPS-47934 reason=log_volume_spike
+2026-10-20T16:04:52 WARN  cron-hub/ch-node-11 alert fired rule=queue_depth_high value=84 threshold=76
+2026-10-20T16:04:57 INFO  cron-hub/ch-node-08 request done id=req-cc79d8c9 route=/cron-hub/v1/create status=200 latency_ms=29
+2026-10-20T16:05:02 INFO  cron-hub/ch-node-12 pool resize target=cron-hub-worker max_pool_size=224 prev=172
+2026-10-20T16:05:06 INFO  cron-hub/ch-node-09 request done id=req-5b76ea42 route=/cron-hub/v1/create status=429 latency_ms=105
+2026-10-20T16:05:10 INFO  cron-hub/ch-node-05 deploy step release=cron-hub-4.16.4 step=drain result=ok took_s=79
+2026-10-20T16:05:14 INFO  cron-hub/ch-node-19 request done id=req-1e714de9 route=/cron-hub/v1/list status=200 latency_ms=75
+2026-10-20T16:05:19 INFO  cron-hub/ch-node-07 deploy step release=cron-hub-4.17.0 step=drain result=ok took_s=164
+2026-10-20T16:05:24 NOTE  cron-hub/ch-node-22 operator=sykang memo="임시 증설 57대 추가. 내일 오전 회수 예정."
+2026-10-20T16:05:27 INFO  cron-hub/ch-node-13 request done id=req-ba0aebf4 route=/cron-hub/v1/get status=200 latency_ms=112
+2026-10-20T16:05:33 INFO  cron-hub/ch-node-18 deploy step release=cron-hub-4.19.0 step=pull_image result=ok took_s=31
+2026-10-20T16:05:39 INFO  cron-hub/ch-node-18 pool resize target=cron-hub-queue max_pool_size=362 prev=322
+2026-10-20T16:05:46 INFO  cron-hub/ch-node-21 request done id=req-13352b9c route=/cron-hub/v1/list status=400 latency_ms=33
+2026-10-20T16:05:51 INFO  cron-hub/ch-node-22 request done id=req-16578742 route=/cron-hub/v1/status status=200 latency_ms=77
+2026-10-20T16:05:53 WARN  cron-hub/ch-node-21 alert fired rule=queue_depth_high value=57 threshold=47
+2026-10-20T16:05:59 INFO  cron-hub/ch-node-06 backup finished file=/vault/daily/audit_20261021.tar.zst size_mb=67440 checksum=ac5b2e08
+2026-10-20T16:06:04 INFO  cron-hub/ch-node-04 request done id=req-151a8a42 route=/cron-hub/v1/cancel status=200 latency_ms=67
+2026-10-20T16:06:11 INFO  cron-hub/ch-node-05 request done id=req-36ef9c2f route=/cron-hub/v1/create status=500 latency_ms=108
+2026-10-20T16:06:14 INFO  cron-hub/ch-node-01 request done id=req-d61ee241 route=/cron-hub/v1/get status=200 latency_ms=68
+2026-10-20T16:06:20 INFO  cron-hub/ch-node-01 request done id=req-ee7fd93c route=/cron-hub/v1/list status=503 latency_ms=316
+2026-10-20T16:06:23 INFO  cron-hub/ch-node-12 request done id=req-8cf1154a route=/cron-hub/v1/sync status=503 latency_ms=70
+2026-10-20T16:06:24 INFO  cron-hub/ch-node-06 request done id=req-6d5ed8ef route=/cron-hub/v1/list status=503 latency_ms=108
+2026-10-20T16:06:30 INFO  cron-hub/ch-node-15 request done id=req-6d3d0653 route=/cron-hub/v1/create status=201 latency_ms=196
+2026-10-20T16:06:35 INFO  cron-hub/ch-node-05 request done id=req-45195db3 route=/cron-hub/v1/update status=200 latency_ms=38
+2026-10-20T16:06:37 INFO  cron-hub/ch-node-08 request done id=req-4a28cdf9 route=/cron-hub/v1/status status=200 latency_ms=137
+2026-10-20T16:06:38 INFO  cron-hub/ch-node-02 ticket linked id=OPS-48914 reason=runbook_update
+2026-10-20T16:06:45 INFO  cron-hub/ch-node-17 request done id=req-47a7984b route=/cron-hub/v1/sync status=429 latency_ms=68
+2026-10-20T16:06:51 INFO  cron-hub/ch-node-12 pool resize target=cron-hub-db max_pool_size=318 prev=269
+2026-10-20T16:06:55 INFO  cron-hub/ch-node-03 request done id=req-c742b89f route=/cron-hub/v1/verify status=201 latency_ms=88
+2026-10-20T16:06:57 INFO  cron-hub/ch-node-15 deploy step release=cron-hub-4.10.0 step=shift_traffic_10 result=ok took_s=88
+2026-10-20T16:06:59 INFO  cron-hub/ch-node-23 request done id=req-841e6460 route=/cron-hub/v1/cancel status=200 latency_ms=356
+2026-10-20T16:07:01 INFO  cron-hub/ch-node-21 config applied key=retry.backoff_ms value=49 by=shkim
+2026-10-20T16:07:03 WARN  cron-hub/ch-node-12 alert fired rule=cpu_steal_high value=65% threshold=60%
+2026-10-20T16:07:07 INFO  cron-hub/ch-node-04 request done id=req-4a555b56 route=/cron-hub/v1/status status=201 latency_ms=9
+2026-10-20T16:07:08 WARN  cron-hub/ch-node-24 alert fired rule=conn_pool_saturated value=71% threshold=64%
+2026-10-20T16:07:09 INFO  cron-hub/ch-node-17 config applied key=queue.batch_size value=38 by=shkim
+2026-10-20T16:07:16 INFO  cron-hub/ch-node-19 request done id=req-d48a7125 route=/cron-hub/v1/update status=500 latency_ms=323
+2026-10-20T16:07:22 INFO  cron-hub/ch-node-15 request done id=req-b58be832 route=/cron-hub/v1/sync status=429 latency_ms=109
+2026-10-20T16:07:29 INFO  cron-hub/ch-node-02 request done id=req-046f1642 route=/cron-hub/v1/status status=503 latency_ms=54
+2026-10-20T16:07:33 INFO  cron-hub/ch-node-22 pool resize target=cron-hub-db max_pool_size=117 prev=136
+2026-10-20T16:07:37 ERROR cron-hub/ch-node-17 job failed job=cron-hub-rollup attempt=4 cause=bad_checksum
+2026-10-20T16:07:42 INFO  cron-hub/ch-node-11 request done id=req-3b8bfb0d route=/cron-hub/v1/list status=200 latency_ms=99
+2026-10-20T16:07:45 INFO  cron-hub/ch-node-09 request done id=req-f2e52355 route=/cron-hub/v1/list status=200 latency_ms=98
+2026-10-20T16:07:47 INFO  cron-hub/ch-node-04 ticket linked id=OPS-49303 reason=dns_ttl_change
+2026-10-20T16:07:54 INFO  cron-hub/ch-node-19 ticket linked id=OPS-47676 reason=node_drain
+2026-10-20T16:07:55 NOTE  cron-hub/ch-node-08 operator=jhpark memo="동시 처리 수를 50에서 26로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-10-20T16:07:57 INFO  cron-hub/ch-node-17 deploy step release=cron-hub-4.13.8 step=drain result=ok took_s=228
+2026-10-20T16:08:01 INFO  cron-hub/ch-node-18 request done id=req-bd66a010 route=/cron-hub/v1/create status=200 latency_ms=134
+2026-10-20T16:08:08 INFO  cron-hub/ch-node-05 deploy step release=cron-hub-4.21.7 step=healthcheck result=ok took_s=211
+2026-10-20T16:08:12 INFO  cron-hub/ch-node-13 ticket linked id=OPS-47448 reason=quota_increase
+2026-10-20T16:08:14 INFO  cron-hub/ch-node-05 config applied key=breaker.open_ratio value=34 by=jhpark
+2026-10-20T16:08:21 NOTE  cron-hub/ch-node-03 operator=dwjung memo="로그 보존 기간은 30일로 유지하기로 함."
+2026-10-20T16:08:23 WARN  cron-hub/ch-node-16 alert fired rule=replica_lag_high value=50s threshold=47s
+2026-10-20T16:08:30 WARN  cron-hub/ch-node-06 alert fired rule=heap_used_high value=69% threshold=58%
+2026-10-20T16:08:35 INFO  cron-hub/ch-node-15 request done id=req-c974f1d6 route=/cron-hub/v1/status status=200 latency_ms=51
+2026-10-20T16:08:36 INFO  cron-hub/ch-node-01 request done id=req-f3ddd4fa route=/cron-hub/v1/update status=400 latency_ms=99
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)

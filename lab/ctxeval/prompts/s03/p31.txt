@@ -1,0 +1,424 @@
+참고용 로그 31: 기능 플래그(feature-flag) 동기화 구간. '확인'이라고만 답해 줘.
+
+2026-11-04T10:08:19 INFO  feature-flag/ff-node-07 pool resize target=feature-flag-db max_pool_size=213 prev=199
+2026-11-04T10:08:22 INFO  feature-flag/ff-node-17 request done id=req-1eeffb7a route=/feature-flag/v1/list status=200 latency_ms=157
+2026-11-04T10:08:26 INFO  feature-flag/ff-node-21 deploy step release=feature-flag-4.14.9 step=drain result=ok took_s=127
+2026-11-04T10:08:33 INFO  feature-flag/ff-node-11 pool resize target=feature-flag-cache max_pool_size=306 prev=250
+2026-11-04T10:08:35 NOTE  feature-flag/ff-node-08 operator=hbyoon memo="야간 알림 채널을 #ops-night로 옮김."
+2026-11-04T10:08:38 INFO  feature-flag/ff-node-02 request done id=req-da719ddd route=/feature-flag/v1/verify status=500 latency_ms=99
+2026-11-04T10:08:41 INFO  feature-flag/ff-node-24 pool resize target=feature-flag-db max_pool_size=323 prev=280
+2026-11-04T10:08:43 INFO  feature-flag/ff-node-21 request done id=req-0a166ae4 route=/feature-flag/v1/verify status=200 latency_ms=54
+2026-11-04T10:08:49 INFO  feature-flag/ff-node-08 request done id=req-f26355f7 route=/feature-flag/v1/list status=200 latency_ms=106
+2026-11-04T10:08:50 INFO  feature-flag/ff-node-12 pool resize target=feature-flag-cache max_pool_size=110 prev=96
+2026-11-04T10:08:51 INFO  feature-flag/ff-node-20 request done id=req-4855dfce route=/feature-flag/v1/create status=500 latency_ms=243
+2026-11-04T10:08:55 INFO  feature-flag/ff-node-11 request done id=req-864446a8 route=/feature-flag/v1/cancel status=200 latency_ms=191
+2026-11-04T10:08:57 INFO  feature-flag/ff-node-19 request done id=req-dcbc9e3a route=/feature-flag/v1/cancel status=429 latency_ms=55
+2026-11-04T10:08:59 INFO  feature-flag/ff-node-15 config applied key=limiter.burst value=false by=dwjung
+2026-11-04T10:09:04 INFO  feature-flag/ff-node-01 config applied key=queue.visibility_s value=true by=shkim
+2026-11-04T10:09:08 INFO  feature-flag/ff-node-11 request done id=req-8f19bae7 route=/feature-flag/v1/cancel status=201 latency_ms=110
+2026-11-04T10:09:12 INFO  feature-flag/ff-node-18 request done id=req-dc26a610 route=/feature-flag/v1/status status=503 latency_ms=143
+2026-11-04T10:09:13 INFO  feature-flag/ff-node-02 request done id=req-aee96b21 route=/feature-flag/v1/cancel status=200 latency_ms=213
+2026-11-04T10:09:15 INFO  feature-flag/ff-node-13 request done id=req-b9efb55d route=/feature-flag/v1/status status=200 latency_ms=188
+2026-11-04T10:09:19 INFO  feature-flag/ff-node-05 deploy step release=feature-flag-4.13.6 step=shift_traffic_10 result=ok took_s=205
+2026-11-04T10:09:26 INFO  feature-flag/ff-node-20 backup finished file=/vault/daily/sessions_20261007.tar.zst size_mb=77316 checksum=75a8acd0
+2026-11-04T10:09:31 INFO  feature-flag/ff-node-05 config applied key=tls.session_cache value=true by=shkim
+2026-11-04T10:09:35 INFO  feature-flag/ff-node-21 config applied key=flush.interval_ms value=true by=yjchoi
+2026-11-04T10:09:39 INFO  feature-flag/ff-node-05 request done id=req-c8a2da6d route=/feature-flag/v1/update status=201 latency_ms=88
+2026-11-04T10:09:41 INFO  feature-flag/ff-node-24 request done id=req-e038b8fe route=/feature-flag/v1/update status=500 latency_ms=58
+2026-11-04T10:09:42 INFO  feature-flag/ff-node-16 backup finished file=/vault/daily/inventory_20261014.tar.zst size_mb=22973 checksum=ab7052b8
+2026-11-04T10:09:43 INFO  feature-flag/ff-node-11 request done id=req-890b45b4 route=/feature-flag/v1/sync status=200 latency_ms=121
+2026-11-04T10:09:45 INFO  feature-flag/ff-node-07 deploy step release=feature-flag-4.21.5 step=warmup result=ok took_s=97
+2026-11-04T10:09:51 INFO  feature-flag/ff-node-16 request done id=req-b3762474 route=/feature-flag/v1/sync status=200 latency_ms=122
+2026-11-04T10:09:53 INFO  feature-flag/ff-node-23 request done id=req-64feff9a route=/feature-flag/v1/create status=200 latency_ms=44
+2026-11-04T10:10:00 INFO  feature-flag/ff-node-11 config applied key=cache.ttl_s value=4444 by=mjlee
+2026-11-04T10:10:03 WARN  feature-flag/ff-node-05 alert fired rule=heap_used_high value=75% threshold=63%
+2026-11-04T10:10:09 INFO  feature-flag/ff-node-01 ticket linked id=OPS-48502 reason=oncall_handoff
+2026-11-04T10:10:12 INFO  feature-flag/ff-node-19 pool resize target=feature-flag-worker max_pool_size=202 prev=261
+2026-11-04T10:10:15 INFO  feature-flag/ff-node-13 deploy step release=feature-flag-4.14.3 step=start result=ok took_s=39
+2026-11-04T10:10:20 WARN  feature-flag/ff-node-05 alert fired rule=error_ratio_high value=87% threshold=80%
+2026-11-04T10:10:27 WARN  feature-flag/ff-node-12 alert fired rule=cpu_steal_high value=58% threshold=48%
+2026-11-04T10:10:28 INFO  feature-flag/ff-node-07 request done id=req-634b57a0 route=/feature-flag/v1/verify status=200 latency_ms=301
+2026-11-04T10:10:35 INFO  feature-flag/ff-node-05 pool resize target=feature-flag-queue max_pool_size=210 prev=238
+2026-11-04T10:10:41 INFO  feature-flag/ff-node-05 request done id=req-d2009c4e route=/feature-flag/v1/status status=500 latency_ms=125
+2026-11-04T10:10:48 INFO  feature-flag/ff-node-04 request done id=req-bf7f8c5c route=/feature-flag/v1/list status=200 latency_ms=49
+2026-11-04T10:10:54 INFO  feature-flag/ff-node-23 request done id=req-5be26bbf route=/feature-flag/v1/status status=200 latency_ms=195
+2026-11-04T10:11:00 INFO  feature-flag/ff-node-24 request done id=req-7ddf1a68 route=/feature-flag/v1/sync status=200 latency_ms=156
+2026-11-04T10:11:02 INFO  feature-flag/ff-node-24 deploy step release=feature-flag-4.17.8 step=shift_traffic_100 result=ok took_s=105
+2026-11-04T10:11:06 INFO  feature-flag/ff-node-06 backup finished file=/vault/weekly/audit_2026w40.tar.zst size_mb=22202 checksum=5a96d7e6
+2026-11-04T10:11:09 INFO  feature-flag/ff-node-23 ticket linked id=OPS-48523 reason=quota_increase
+2026-11-04T10:11:13 ERROR feature-flag/ff-node-21 job failed job=feature-flag-reindex attempt=4 cause=quota_exceeded
+2026-11-04T10:11:14 INFO  feature-flag/ff-node-19 config applied key=queue.batch_size value=false by=jhpark
+2026-11-04T10:11:15 INFO  feature-flag/ff-node-12 request done id=req-40cc64a0 route=/feature-flag/v1/list status=200 latency_ms=59
+2026-11-04T10:11:21 INFO  feature-flag/ff-node-04 request done id=req-dbfa86d2 route=/feature-flag/v1/create status=200 latency_ms=131
+2026-11-04T10:11:25 INFO  feature-flag/ff-node-22 request done id=req-c235179c route=/feature-flag/v1/sync status=200 latency_ms=85
+2026-11-04T10:11:30 INFO  feature-flag/ff-node-05 request done id=req-3ec28fe1 route=/feature-flag/v1/cancel status=200 latency_ms=379
+2026-11-04T10:11:32 INFO  feature-flag/ff-node-14 request done id=req-64845f99 route=/feature-flag/v1/list status=200 latency_ms=193
+2026-11-04T10:11:39 INFO  feature-flag/ff-node-11 request done id=req-0da87cf7 route=/feature-flag/v1/status status=200 latency_ms=252
+2026-11-04T10:11:41 INFO  feature-flag/ff-node-01 request done id=req-018143ce route=/feature-flag/v1/status status=201 latency_ms=390
+2026-11-04T10:11:44 WARN  feature-flag/ff-node-03 alert fired rule=error_ratio_high value=68% threshold=66%
+2026-11-04T10:11:48 INFO  feature-flag/ff-node-01 request done id=req-2700620c route=/feature-flag/v1/update status=400 latency_ms=32
+2026-11-04T10:11:55 INFO  feature-flag/ff-node-11 request done id=req-e0327c06 route=/feature-flag/v1/verify status=200 latency_ms=436
+2026-11-04T10:11:56 INFO  feature-flag/ff-node-21 pool resize target=feature-flag-upstream max_pool_size=256 prev=281
+2026-11-04T10:11:58 INFO  feature-flag/ff-node-16 request done id=req-0cee39a2 route=/feature-flag/v1/update status=200 latency_ms=49
+2026-11-04T10:11:59 INFO  feature-flag/ff-node-19 request done id=req-888d9ad7 route=/feature-flag/v1/status status=200 latency_ms=234
+2026-11-04T10:12:04 INFO  feature-flag/ff-node-20 cache stats region=ap-se-1a hit_ratio=56.4% evictions=18876
+2026-11-04T10:12:10 INFO  feature-flag/ff-node-07 request done id=req-fae3d1c3 route=/feature-flag/v1/create status=200 latency_ms=86
+2026-11-04T10:12:13 INFO  feature-flag/ff-node-13 request done id=req-8f7822dd route=/feature-flag/v1/cancel status=200 latency_ms=366
+2026-11-04T10:12:15 INFO  feature-flag/ff-node-22 pool resize target=feature-flag-queue max_pool_size=385 prev=329
+2026-11-04T10:12:19 INFO  feature-flag/ff-node-10 request done id=req-e6e5f527 route=/feature-flag/v1/verify status=200 latency_ms=122
+2026-11-04T10:12:21 INFO  feature-flag/ff-node-19 request done id=req-ee00456f route=/feature-flag/v1/get status=200 latency_ms=104
+2026-11-04T10:12:26 INFO  feature-flag/ff-node-03 deploy step release=feature-flag-4.20.3 step=shift_traffic_50 result=ok took_s=219
+2026-11-04T10:12:30 INFO  feature-flag/ff-node-03 request done id=req-4ee4a80d route=/feature-flag/v1/update status=503 latency_ms=83
+2026-11-04T10:12:36 INFO  feature-flag/ff-node-17 pool resize target=feature-flag-upstream max_pool_size=396 prev=428
+2026-11-04T10:12:37 INFO  feature-flag/ff-node-13 deploy step release=feature-flag-4.14.4 step=verify result=ok took_s=177
+2026-11-04T10:12:41 INFO  feature-flag/ff-node-24 pool resize target=feature-flag-queue max_pool_size=175 prev=124
+2026-11-04T10:12:43 ERROR feature-flag/ff-node-22 job failed job=feature-flag-rollup attempt=5 cause=dns_failure
+2026-11-04T10:12:49 INFO  feature-flag/ff-node-16 request done id=req-8ade9835 route=/feature-flag/v1/get status=200 latency_ms=144
+2026-11-04T10:12:52 NOTE  feature-flag/ff-node-21 operator=shkim memo="로그 보존 기간은 37일로 유지하기로 함."
+2026-11-04T10:12:54 WARN  feature-flag/ff-node-03 alert fired rule=p99_latency_high value=60ms threshold=54ms
+2026-11-04T10:13:01 INFO  feature-flag/ff-node-08 request done id=req-51be5e3d route=/feature-flag/v1/create status=500 latency_ms=50
+2026-11-04T10:13:02 INFO  feature-flag/ff-node-24 request done id=req-5b6f4dd8 route=/feature-flag/v1/status status=200 latency_ms=143
+2026-11-04T10:13:03 INFO  feature-flag/ff-node-03 request done id=req-62e5068f route=/feature-flag/v1/update status=200 latency_ms=243
+2026-11-04T10:13:06 INFO  feature-flag/ff-node-10 request done id=req-3b97860c route=/feature-flag/v1/get status=200 latency_ms=64
+2026-11-04T10:13:10 INFO  feature-flag/ff-node-04 request done id=req-75393a8f route=/feature-flag/v1/list status=429 latency_ms=320
+2026-11-04T10:13:17 INFO  feature-flag/ff-node-12 request done id=req-6836f78a route=/feature-flag/v1/cancel status=200 latency_ms=543
+2026-11-04T10:13:21 INFO  feature-flag/ff-node-14 request done id=req-82fe434d route=/feature-flag/v1/cancel status=409 latency_ms=95
+2026-11-04T10:13:25 INFO  feature-flag/ff-node-23 config applied key=canary.latency_p99_threshold_ms value=true by=shkim
+2026-11-04T10:13:31 INFO  feature-flag/ff-node-23 request done id=req-fb063111 route=/feature-flag/v1/cancel status=200 latency_ms=93
+2026-11-04T10:13:37 WARN  feature-flag/ff-node-16 alert fired rule=fd_usage_high value=58% threshold=47%
+2026-11-04T10:13:41 INFO  feature-flag/ff-node-05 backup finished file=/vault/daily/payments_20261014.tar.zst size_mb=76729 checksum=560c13af
+2026-11-04T10:13:42 NOTE  feature-flag/ff-node-13 operator=shkim memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-04T10:13:47 INFO  feature-flag/ff-node-04 request done id=req-03e01e5c route=/feature-flag/v1/verify status=200 latency_ms=37
+2026-11-04T10:13:48 INFO  feature-flag/ff-node-09 request done id=req-a8802bef route=/feature-flag/v1/sync status=200 latency_ms=1298
+2026-11-04T10:13:52 ERROR feature-flag/ff-node-20 job failed job=feature-flag-export attempt=4 cause=upstream_timeout
+2026-11-04T10:13:58 INFO  feature-flag/ff-node-21 config applied key=limiter.rps value=17 by=jhpark
+2026-11-04T10:14:02 INFO  feature-flag/ff-node-05 ticket linked id=OPS-47324 reason=runbook_update
+2026-11-04T10:14:05 INFO  feature-flag/ff-node-18 deploy step release=feature-flag-4.17.5 step=start result=ok took_s=156
+2026-11-04T10:14:06 INFO  feature-flag/ff-node-09 request done id=req-a1d0bcb6 route=/feature-flag/v1/verify status=204 latency_ms=127
+2026-11-04T10:14:09 INFO  feature-flag/ff-node-03 pool resize target=feature-flag-queue max_pool_size=21 prev=13
+2026-11-04T10:14:14 INFO  feature-flag/ff-node-02 pool resize target=feature-flag-upstream max_pool_size=219 prev=181
+2026-11-04T10:14:16 INFO  feature-flag/ff-node-23 request done id=req-33d020a5 route=/feature-flag/v1/status status=200 latency_ms=63
+2026-11-04T10:14:19 INFO  feature-flag/ff-node-08 request done id=req-5262ebf5 route=/feature-flag/v1/verify status=204 latency_ms=52
+2026-11-04T10:14:21 INFO  feature-flag/ff-node-12 ticket linked id=OPS-49379 reason=quota_increase
+2026-11-04T10:14:28 INFO  feature-flag/ff-node-23 request done id=req-5fd4de6a route=/feature-flag/v1/create status=200 latency_ms=253
+2026-11-04T10:14:33 INFO  feature-flag/ff-node-09 request done id=req-b2e43f36 route=/feature-flag/v1/get status=200 latency_ms=142
+2026-11-04T10:14:40 INFO  feature-flag/ff-node-09 request done id=req-8cd62056 route=/feature-flag/v1/cancel status=400 latency_ms=333
+2026-11-04T10:14:46 ERROR feature-flag/ff-node-02 job failed job=feature-flag-rollup attempt=5 cause=oom_killed
+2026-11-04T10:14:49 INFO  feature-flag/ff-node-19 config applied key=queue.visibility_s value=true by=yjchoi
+2026-11-04T10:14:53 INFO  feature-flag/ff-node-08 request done id=req-3ee06e3f route=/feature-flag/v1/cancel status=200 latency_ms=55
+2026-11-04T10:14:58 INFO  feature-flag/ff-node-08 cache stats region=ap-se-1a hit_ratio=62.9% evictions=19522
+2026-11-04T10:15:01 INFO  feature-flag/ff-node-22 backup finished file=/vault/daily/payments_20261026.tar.zst size_mb=47573 checksum=353ece10
+2026-11-04T10:15:07 INFO  feature-flag/ff-node-24 deploy step release=feature-flag-4.14.1 step=shift_traffic_10 result=ok took_s=128
+2026-11-04T10:15:11 INFO  feature-flag/ff-node-24 request done id=req-cbddec2d route=/feature-flag/v1/get status=200 latency_ms=137
+2026-11-04T10:15:17 INFO  feature-flag/ff-node-23 config applied key=flush.interval_ms value=36% by=ejlim
+2026-11-04T10:15:22 INFO  feature-flag/ff-node-07 request done id=req-e3ef2ffb route=/feature-flag/v1/sync status=200 latency_ms=184
+2026-11-04T10:15:29 WARN  feature-flag/ff-node-21 alert fired rule=queue_depth_high value=50 threshold=41
+2026-11-04T10:15:30 INFO  feature-flag/ff-node-16 config applied key=limiter.burst value=67% by=dwjung
+2026-11-04T10:15:35 INFO  feature-flag/ff-node-14 request done id=req-ec7061be route=/feature-flag/v1/update status=429 latency_ms=41
+2026-11-04T10:15:42 INFO  feature-flag/ff-node-23 request done id=req-be927b7e route=/feature-flag/v1/update status=200 latency_ms=56
+2026-11-04T10:15:49 INFO  feature-flag/ff-node-15 config applied key=log.sample_rate value=40% by=mjlee
+2026-11-04T10:15:51 INFO  feature-flag/ff-node-22 request done id=req-752acaca route=/feature-flag/v1/update status=200 latency_ms=89
+2026-11-04T10:15:53 ERROR feature-flag/ff-node-06 job failed job=feature-flag-reindex attempt=3 cause=lock_wait_exceeded
+2026-11-04T10:15:59 INFO  feature-flag/ff-node-20 request done id=req-f2ec3d91 route=/feature-flag/v1/cancel status=503 latency_ms=131
+2026-11-04T10:16:02 INFO  feature-flag/ff-node-12 request done id=req-7692c5a1 route=/feature-flag/v1/update status=409 latency_ms=42
+2026-11-04T10:16:04 INFO  feature-flag/ff-node-14 pool resize target=feature-flag-worker max_pool_size=234 prev=180
+2026-11-04T10:16:05 INFO  feature-flag/ff-node-02 deploy step release=feature-flag-4.13.6 step=start result=ok took_s=152
+2026-11-04T10:16:11 INFO  feature-flag/ff-node-15 request done id=req-d6946fc1 route=/feature-flag/v1/sync status=404 latency_ms=248
+2026-11-04T10:16:12 INFO  feature-flag/ff-node-14 request done id=req-ffd634b8 route=/feature-flag/v1/verify status=200 latency_ms=21
+2026-11-04T10:16:14 INFO  feature-flag/ff-node-24 request done id=req-ae9dd31f route=/feature-flag/v1/verify status=200 latency_ms=181
+2026-11-04T10:16:21 INFO  feature-flag/ff-node-23 config applied key=retry.max_attempts value=766 by=ejlim
+2026-11-04T10:16:28 INFO  feature-flag/ff-node-08 request done id=req-421267a0 route=/feature-flag/v1/create status=200 latency_ms=186
+2026-11-04T10:16:35 NOTE  feature-flag/ff-node-21 operator=hbyoon memo="점검 창을 58분 연장함. 승인: 한지우 리드."
+2026-11-04T10:16:36 INFO  feature-flag/ff-node-18 request done id=req-6368e578 route=/feature-flag/v1/update status=409 latency_ms=106
+2026-11-04T10:16:42 WARN  feature-flag/ff-node-16 alert fired rule=conn_pool_saturated value=91% threshold=82%
+2026-11-04T10:16:46 INFO  feature-flag/ff-node-05 request done id=req-485a7e3c route=/feature-flag/v1/status status=500 latency_ms=485
+2026-11-04T10:16:47 INFO  feature-flag/ff-node-22 request done id=req-8d86611d route=/feature-flag/v1/get status=503 latency_ms=114
+2026-11-04T10:16:54 INFO  feature-flag/ff-node-03 request done id=req-8df4d154 route=/feature-flag/v1/create status=204 latency_ms=111
+2026-11-04T10:17:01 INFO  feature-flag/ff-node-09 deploy step release=feature-flag-4.13.3 step=verify result=ok took_s=213
+2026-11-04T10:17:08 INFO  feature-flag/ff-node-19 request done id=req-c41fd754 route=/feature-flag/v1/status status=200 latency_ms=52
+2026-11-04T10:17:13 INFO  feature-flag/ff-node-23 deploy step release=feature-flag-4.18.0 step=drain result=ok took_s=169
+2026-11-04T10:17:19 INFO  feature-flag/ff-node-03 pool resize target=feature-flag-db max_pool_size=258 prev=256
+2026-11-04T10:17:20 INFO  feature-flag/ff-node-19 request done id=req-3bfdce71 route=/feature-flag/v1/update status=201 latency_ms=76
+2026-11-04T10:17:24 INFO  feature-flag/ff-node-19 request done id=req-6268bd45 route=/feature-flag/v1/cancel status=200 latency_ms=157
+2026-11-04T10:17:28 INFO  feature-flag/ff-node-18 request done id=req-4c4066df route=/feature-flag/v1/status status=200 latency_ms=64
+2026-11-04T10:17:29 INFO  feature-flag/ff-node-20 request done id=req-0da600b8 route=/feature-flag/v1/verify status=200 latency_ms=66
+2026-11-04T10:17:32 WARN  feature-flag/ff-node-11 alert fired rule=error_ratio_high value=78% threshold=63%
+2026-11-04T10:17:37 INFO  feature-flag/ff-node-23 backup finished file=/vault/weekly/orders_2026w37.tar.zst size_mb=36368 checksum=093b69f8
+2026-11-04T10:17:42 INFO  feature-flag/ff-node-05 cache stats region=us-we-2b hit_ratio=98.0% evictions=28803
+2026-11-04T10:17:46 WARN  feature-flag/ff-node-10 alert fired rule=heap_used_high value=81% threshold=79%
+2026-11-04T10:17:50 INFO  feature-flag/ff-node-21 request done id=req-e9a54cc3 route=/feature-flag/v1/verify status=200 latency_ms=139
+2026-11-04T10:17:57 INFO  feature-flag/ff-node-17 pool resize target=feature-flag-worker max_pool_size=390 prev=404
+2026-11-04T10:18:01 INFO  feature-flag/ff-node-22 pool resize target=feature-flag-db max_pool_size=159 prev=188
+2026-11-04T10:18:04 WARN  feature-flag/ff-node-14 alert fired rule=replica_lag_high value=86s threshold=85s
+2026-11-04T10:18:07 WARN  feature-flag/ff-node-24 alert fired rule=disk_usage_warning value=84% threshold=83%
+2026-11-04T10:18:14 INFO  feature-flag/ff-node-03 pool resize target=feature-flag-worker max_pool_size=302 prev=272
+2026-11-04T10:18:21 NOTE  feature-flag/ff-node-20 operator=mjlee memo="트래픽 전환 비율 상향은 오세린 매니저 승인."
+2026-11-04T10:18:22 INFO  feature-flag/ff-node-22 config applied key=retry.backoff_ms value=23 by=yjchoi
+2026-11-04T10:18:28 INFO  feature-flag/ff-node-08 ticket linked id=OPS-48392 reason=dns_ttl_change
+2026-11-04T10:18:33 INFO  feature-flag/ff-node-16 request done id=req-ca639ae5 route=/feature-flag/v1/create status=200 latency_ms=130
+2026-11-04T10:18:36 INFO  feature-flag/ff-node-15 ticket linked id=OPS-47485 reason=flaky_healthcheck
+2026-11-04T10:18:38 INFO  feature-flag/ff-node-07 deploy step release=feature-flag-4.12.5 step=start result=ok took_s=130
+2026-11-04T10:18:42 INFO  feature-flag/ff-node-13 request done id=req-57c89b77 route=/feature-flag/v1/cancel status=503 latency_ms=96
+2026-11-04T10:18:44 NOTE  feature-flag/ff-node-09 operator=dwjung memo="동시 처리 수를 58에서 31로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-04T10:18:46 INFO  feature-flag/ff-node-14 request done id=req-3946e647 route=/feature-flag/v1/get status=200 latency_ms=70
+2026-11-04T10:18:48 INFO  feature-flag/ff-node-17 config applied key=breaker.open_ratio value=false by=yjchoi
+2026-11-04T10:18:53 INFO  feature-flag/ff-node-04 request done id=req-a8d38a74 route=/feature-flag/v1/sync status=200 latency_ms=144
+2026-11-04T10:18:59 INFO  feature-flag/ff-node-12 ticket linked id=OPS-47387 reason=oncall_handoff
+2026-11-04T10:19:05 INFO  feature-flag/ff-node-19 backup finished file=/vault/weekly/payments_2026w33.tar.zst size_mb=89039 checksum=4da40259
+2026-11-04T10:19:06 INFO  feature-flag/ff-node-17 request done id=req-16121a65 route=/feature-flag/v1/verify status=200 latency_ms=111
+2026-11-04T10:19:07 INFO  feature-flag/ff-node-15 request done id=req-8aac7fe9 route=/feature-flag/v1/create status=200 latency_ms=521
+2026-11-04T10:19:12 INFO  feature-flag/ff-node-18 config applied key=worker.concurrency value=false by=hbyoon
+2026-11-04T10:19:18 INFO  feature-flag/ff-node-10 deploy step release=feature-flag-4.15.6 step=shift_traffic_100 result=ok took_s=118
+2026-11-04T10:19:20 INFO  feature-flag/ff-node-13 request done id=req-e9911230 route=/feature-flag/v1/create status=400 latency_ms=89
+2026-11-04T10:19:27 ERROR feature-flag/ff-node-01 job failed job=feature-flag-rollup attempt=4 cause=oom_killed
+2026-11-04T10:19:33 INFO  feature-flag/ff-node-07 deploy step release=feature-flag-4.14.3 step=shift_traffic_10 result=ok took_s=142
+2026-11-04T10:19:39 INFO  feature-flag/ff-node-18 request done id=req-2419408b route=/feature-flag/v1/update status=204 latency_ms=110
+2026-11-04T10:19:43 INFO  feature-flag/ff-node-11 backup finished file=/vault/weekly/audit_2026w42.tar.zst size_mb=79959 checksum=f4668491
+2026-11-04T10:19:49 INFO  feature-flag/ff-node-15 config applied key=shard.count value=true by=jhpark
+2026-11-04T10:19:50 INFO  feature-flag/ff-node-06 request done id=req-f8feccaf route=/feature-flag/v1/update status=409 latency_ms=932
+2026-11-04T10:19:52 INFO  feature-flag/ff-node-03 request done id=req-c79a4736 route=/feature-flag/v1/verify status=200 latency_ms=101
+2026-11-04T10:19:53 INFO  feature-flag/ff-node-23 request done id=req-312cd5a5 route=/feature-flag/v1/verify status=200 latency_ms=66
+2026-11-04T10:20:00 WARN  feature-flag/ff-node-17 alert fired rule=p99_latency_high value=63ms threshold=49ms
+2026-11-04T10:20:05 INFO  feature-flag/ff-node-21 deploy step release=feature-flag-4.14.7 step=pull_image result=ok took_s=70
+2026-11-04T10:20:07 WARN  feature-flag/ff-node-20 alert fired rule=heap_used_high value=69% threshold=60%
+2026-11-04T10:20:08 INFO  feature-flag/ff-node-04 request done id=req-e0c30453 route=/feature-flag/v1/create status=200 latency_ms=729
+2026-11-04T10:20:13 INFO  feature-flag/ff-node-02 config applied key=log.sample_rate value=27 by=yjchoi
+2026-11-04T10:20:15 INFO  feature-flag/ff-node-12 request done id=req-31235c5b route=/feature-flag/v1/cancel status=200 latency_ms=191
+2026-11-04T10:20:21 INFO  feature-flag/ff-node-20 deploy step release=feature-flag-4.14.7 step=shift_traffic_100 result=ok took_s=185
+2026-11-04T10:20:25 INFO  feature-flag/ff-node-24 pool resize target=feature-flag-upstream max_pool_size=57 prev=113
+2026-11-04T10:20:26 INFO  feature-flag/ff-node-01 request done id=req-a5fe4405 route=/feature-flag/v1/create status=500 latency_ms=142
+2026-11-04T10:20:32 INFO  feature-flag/ff-node-23 config applied key=http.read_timeout_ms value=37 by=dwjung
+2026-11-04T10:20:36 INFO  feature-flag/ff-node-03 request done id=req-d05a52bf route=/feature-flag/v1/status status=409 latency_ms=73
+2026-11-04T10:20:41 NOTE  feature-flag/ff-node-13 operator=dwjung memo="연동 팀에 변경 공지 완료."
+2026-11-04T10:20:43 INFO  feature-flag/ff-node-14 request done id=req-1a359937 route=/feature-flag/v1/get status=409 latency_ms=123
+2026-11-04T10:20:50 INFO  feature-flag/ff-node-23 config applied key=queue.visibility_s value=6498 by=shkim
+2026-11-04T10:20:56 INFO  feature-flag/ff-node-04 config applied key=limiter.rps value=1 by=dwjung
+2026-11-04T10:20:57 INFO  feature-flag/ff-node-07 pool resize target=feature-flag-cache max_pool_size=134 prev=167
+2026-11-04T10:21:00 INFO  feature-flag/ff-node-13 pool resize target=feature-flag-cache max_pool_size=57 prev=91
+2026-11-04T10:21:01 INFO  feature-flag/ff-node-21 request done id=req-29b55d18 route=/feature-flag/v1/cancel status=200 latency_ms=131
+2026-11-04T10:21:04 INFO  feature-flag/ff-node-07 backup finished file=/vault/daily/inventory_20261024.tar.zst size_mb=82910 checksum=73267c37
+2026-11-04T10:21:06 INFO  feature-flag/ff-node-05 pool resize target=feature-flag-db max_pool_size=237 prev=285
+2026-11-04T10:21:08 INFO  feature-flag/ff-node-07 request done id=req-d6cb0556 route=/feature-flag/v1/create status=200 latency_ms=439
+2026-11-04T10:21:13 INFO  feature-flag/ff-node-11 pool resize target=feature-flag-cache max_pool_size=97 prev=71
+2026-11-04T10:21:17 INFO  feature-flag/ff-node-15 request done id=req-0899b97b route=/feature-flag/v1/update status=404 latency_ms=133
+2026-11-04T10:21:24 INFO  feature-flag/ff-node-20 cache stats region=ap-ne-2a hit_ratio=73.8% evictions=24101
+2026-11-04T10:21:29 INFO  feature-flag/ff-node-07 pool resize target=feature-flag-db max_pool_size=262 prev=304
+2026-11-04T10:21:31 ERROR feature-flag/ff-node-06 job failed job=feature-flag-cleanup attempt=3 cause=dns_failure
+2026-11-04T10:21:34 INFO  feature-flag/ff-node-13 backup finished file=/vault/daily/audit_20261010.tar.zst size_mb=5849 checksum=98d84f11
+2026-11-04T10:21:40 ERROR feature-flag/ff-node-05 job failed job=feature-flag-rollup attempt=2 cause=oom_killed
+2026-11-04T10:21:46 INFO  feature-flag/ff-node-07 ticket linked id=OPS-47398 reason=cert_rotation
+2026-11-04T10:21:48 INFO  feature-flag/ff-node-14 ticket linked id=OPS-48526 reason=log_volume_spike
+2026-11-04T10:21:53 INFO  feature-flag/ff-node-06 request done id=req-f4cab370 route=/feature-flag/v1/verify status=200 latency_ms=48
+2026-11-04T10:21:55 INFO  feature-flag/ff-node-09 config applied key=dns.ttl_s value=true by=ejlim
+2026-11-04T10:22:00 INFO  feature-flag/ff-node-22 deploy step release=feature-flag-4.21.4 step=healthcheck result=ok took_s=179
+2026-11-04T10:22:07 WARN  feature-flag/ff-node-06 alert fired rule=p99_latency_high value=76ms threshold=65ms
+2026-11-04T10:22:10 INFO  feature-flag/ff-node-06 ticket linked id=OPS-48219 reason=cert_rotation
+2026-11-04T10:22:12 NOTE  feature-flag/ff-node-21 operator=yjchoi memo="헬스체크 간격을 21초에서 55초로 조정함. 배포 중 오탐이 잦았음."
+2026-11-04T10:22:19 WARN  feature-flag/ff-node-17 alert fired rule=queue_depth_high value=64 threshold=57
+2026-11-04T10:22:24 INFO  feature-flag/ff-node-05 request done id=req-a34afd1b route=/feature-flag/v1/verify status=200 latency_ms=94
+2026-11-04T10:22:27 WARN  feature-flag/ff-node-05 alert fired rule=error_ratio_high value=85% threshold=73%
+2026-11-04T10:22:31 INFO  feature-flag/ff-node-18 pool resize target=feature-flag-db max_pool_size=43 prev=30
+2026-11-04T10:22:34 INFO  feature-flag/ff-node-21 cache stats region=ap-ne-2b hit_ratio=74.5% evictions=23391
+2026-11-04T10:22:38 ERROR feature-flag/ff-node-19 job failed job=feature-flag-reindex attempt=3 cause=oom_killed
+2026-11-04T10:22:42 INFO  feature-flag/ff-node-01 request done id=req-a0f3f571 route=/feature-flag/v1/update status=200 latency_ms=605
+2026-11-04T10:22:46 INFO  feature-flag/ff-node-09 request done id=req-acfb7bd4 route=/feature-flag/v1/verify status=200 latency_ms=371
+2026-11-04T10:22:51 INFO  feature-flag/ff-node-17 ticket linked id=OPS-49050 reason=oncall_handoff
+2026-11-04T10:22:56 INFO  feature-flag/ff-node-05 config applied key=limiter.burst value=7708 by=shkim
+2026-11-04T10:22:58 NOTE  feature-flag/ff-node-03 operator=mjlee memo="동시 처리 수를 40에서 3로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-04T10:23:00 INFO  feature-flag/ff-node-23 ticket linked id=OPS-47125 reason=quota_increase
+2026-11-04T10:23:02 INFO  feature-flag/ff-node-12 request done id=req-de8cc1ea route=/feature-flag/v1/sync status=200 latency_ms=390
+2026-11-04T10:23:07 INFO  feature-flag/ff-node-17 request done id=req-2d6b47b2 route=/feature-flag/v1/get status=400 latency_ms=115
+2026-11-04T10:23:13 INFO  feature-flag/ff-node-12 ticket linked id=OPS-47440 reason=flaky_healthcheck
+2026-11-04T10:23:14 INFO  feature-flag/ff-node-20 request done id=req-90fb059b route=/feature-flag/v1/get status=204 latency_ms=75
+2026-11-04T10:23:15 WARN  feature-flag/ff-node-14 alert fired rule=fd_usage_high value=72% threshold=67%
+2026-11-04T10:23:19 INFO  feature-flag/ff-node-01 ticket linked id=OPS-48062 reason=cert_rotation
+2026-11-04T10:23:25 INFO  feature-flag/ff-node-21 request done id=req-8338be21 route=/feature-flag/v1/get status=409 latency_ms=73
+2026-11-04T10:23:26 INFO  feature-flag/ff-node-10 deploy step release=feature-flag-4.22.6 step=shift_traffic_100 result=ok took_s=54
+2026-11-04T10:23:29 INFO  feature-flag/ff-node-08 request done id=req-5970c05e route=/feature-flag/v1/get status=200 latency_ms=19
+2026-11-04T10:23:34 INFO  feature-flag/ff-node-20 config applied key=breaker.open_ratio value=63% by=shkim
+2026-11-04T10:23:39 INFO  feature-flag/ff-node-02 ticket linked id=OPS-47936 reason=node_drain
+2026-11-04T10:23:44 INFO  feature-flag/ff-node-05 deploy step release=feature-flag-4.18.1 step=drain result=ok took_s=211
+2026-11-04T10:23:51 INFO  feature-flag/ff-node-06 request done id=req-20f2af5a route=/feature-flag/v1/verify status=404 latency_ms=77
+2026-11-04T10:23:53 INFO  feature-flag/ff-node-01 request done id=req-2704aea6 route=/feature-flag/v1/create status=204 latency_ms=216
+2026-11-04T10:23:58 INFO  feature-flag/ff-node-23 request done id=req-a18e17fb route=/feature-flag/v1/update status=429 latency_ms=30
+2026-11-04T10:24:04 NOTE  feature-flag/ff-node-02 operator=mjlee memo="ff-node-02 재기동 후 지표 정상 확인."
+2026-11-04T10:24:06 INFO  feature-flag/ff-node-11 config applied key=log.sample_rate value=77% by=jhpark
+2026-11-04T10:24:12 NOTE  feature-flag/ff-node-07 operator=shkim memo="로그 보존 기간은 4일로 유지하기로 함."
+2026-11-04T10:24:15 INFO  feature-flag/ff-node-13 config applied key=canary.traffic_percent value=true by=mjlee
+2026-11-04T10:24:22 INFO  feature-flag/ff-node-22 request done id=req-9c160452 route=/feature-flag/v1/verify status=200 latency_ms=129
+2026-11-04T10:24:29 INFO  feature-flag/ff-node-05 request done id=req-4e43cb6b route=/feature-flag/v1/cancel status=200 latency_ms=98
+2026-11-04T10:24:36 INFO  feature-flag/ff-node-15 pool resize target=feature-flag-worker max_pool_size=290 prev=295
+2026-11-04T10:24:43 INFO  feature-flag/ff-node-08 ticket linked id=OPS-47655 reason=quota_increase
+2026-11-04T10:24:48 INFO  feature-flag/ff-node-15 deploy step release=feature-flag-4.10.1 step=start result=ok took_s=177
+2026-11-04T10:24:52 INFO  feature-flag/ff-node-20 deploy step release=feature-flag-4.12.6 step=warmup result=ok took_s=165
+2026-11-04T10:24:53 INFO  feature-flag/ff-node-16 cache stats region=ap-ne-2b hit_ratio=67.2% evictions=21243
+2026-11-04T10:25:00 INFO  feature-flag/ff-node-17 deploy step release=feature-flag-4.16.9 step=migrate result=ok took_s=127
+2026-11-04T10:25:02 INFO  feature-flag/ff-node-18 request done id=req-8ca36a40 route=/feature-flag/v1/status status=400 latency_ms=521
+2026-11-04T10:25:09 INFO  feature-flag/ff-node-15 request done id=req-e946c824 route=/feature-flag/v1/list status=201 latency_ms=322
+2026-11-04T10:25:10 INFO  feature-flag/ff-node-13 request done id=req-c5c22823 route=/feature-flag/v1/get status=200 latency_ms=79
+2026-11-04T10:25:16 INFO  feature-flag/ff-node-11 request done id=req-8aeb6dd4 route=/feature-flag/v1/create status=200 latency_ms=94
+2026-11-04T10:25:22 INFO  feature-flag/ff-node-01 request done id=req-01c71fc3 route=/feature-flag/v1/status status=200 latency_ms=364
+2026-11-04T10:25:28 INFO  feature-flag/ff-node-22 request done id=req-1473e985 route=/feature-flag/v1/list status=200 latency_ms=186
+2026-11-04T10:25:30 INFO  feature-flag/ff-node-14 request done id=req-f3544cf9 route=/feature-flag/v1/create status=404 latency_ms=118
+2026-11-04T10:25:34 INFO  feature-flag/ff-node-12 ticket linked id=OPS-49715 reason=runbook_update
+2026-11-04T10:25:35 WARN  feature-flag/ff-node-23 alert fired rule=p99_latency_high value=78ms threshold=69ms
+2026-11-04T10:25:41 INFO  feature-flag/ff-node-08 pool resize target=feature-flag-upstream max_pool_size=96 prev=74
+2026-11-04T10:25:48 INFO  feature-flag/ff-node-16 cache stats region=ap-ne-2a hit_ratio=70.6% evictions=17457
+2026-11-04T10:25:51 INFO  feature-flag/ff-node-16 request done id=req-cb07643b route=/feature-flag/v1/status status=200 latency_ms=25
+2026-11-04T10:25:52 INFO  feature-flag/ff-node-13 config applied key=queue.batch_size value=30 by=sykang
+2026-11-04T10:25:56 INFO  feature-flag/ff-node-14 ticket linked id=OPS-48006 reason=quota_increase
+2026-11-04T10:26:01 INFO  feature-flag/ff-node-11 request done id=req-e9cdc7a8 route=/feature-flag/v1/status status=200 latency_ms=80
+2026-11-04T10:26:07 INFO  feature-flag/ff-node-24 cache stats region=ap-ne-2b hit_ratio=69.5% evictions=36907
+2026-11-04T10:26:13 INFO  feature-flag/ff-node-24 request done id=req-888b75d6 route=/feature-flag/v1/status status=200 latency_ms=209
+2026-11-04T10:26:16 INFO  feature-flag/ff-node-06 request done id=req-874db543 route=/feature-flag/v1/create status=201 latency_ms=75
+2026-11-04T10:26:23 INFO  feature-flag/ff-node-03 cache stats region=us-we-2b hit_ratio=81.8% evictions=36081
+2026-11-04T10:26:25 INFO  feature-flag/ff-node-10 request done id=req-e38f2533 route=/feature-flag/v1/cancel status=200 latency_ms=398
+2026-11-04T10:26:29 INFO  feature-flag/ff-node-11 request done id=req-8e16ef36 route=/feature-flag/v1/status status=200 latency_ms=78
+2026-11-04T10:26:33 INFO  feature-flag/ff-node-23 config applied key=retry.backoff_ms value=true by=dwjung
+2026-11-04T10:26:34 INFO  feature-flag/ff-node-08 request done id=req-6b802fba route=/feature-flag/v1/verify status=200 latency_ms=406
+2026-11-04T10:26:41 INFO  feature-flag/ff-node-13 request done id=req-403ac22a route=/feature-flag/v1/get status=200 latency_ms=168
+2026-11-04T10:26:43 INFO  feature-flag/ff-node-06 pool resize target=feature-flag-db max_pool_size=347 prev=332
+2026-11-04T10:26:44 INFO  feature-flag/ff-node-02 request done id=req-c1fa768e route=/feature-flag/v1/list status=201 latency_ms=235
+2026-11-04T10:26:45 INFO  feature-flag/ff-node-11 request done id=req-7072231f route=/feature-flag/v1/list status=200 latency_ms=51
+2026-11-04T10:26:48 INFO  feature-flag/ff-node-08 request done id=req-b4bf86f5 route=/feature-flag/v1/list status=404 latency_ms=301
+2026-11-04T10:26:54 INFO  feature-flag/ff-node-15 request done id=req-e09c22e5 route=/feature-flag/v1/create status=429 latency_ms=130
+2026-11-04T10:26:59 INFO  feature-flag/ff-node-11 ticket linked id=OPS-49556 reason=runbook_update
+2026-11-04T10:27:05 INFO  feature-flag/ff-node-23 config applied key=retry.max_attempts value=false by=sykang
+2026-11-04T10:27:12 INFO  feature-flag/ff-node-12 pool resize target=feature-flag-cache max_pool_size=83 prev=48
+2026-11-04T10:27:14 INFO  feature-flag/ff-node-18 request done id=req-e8874c07 route=/feature-flag/v1/sync status=200 latency_ms=458
+2026-11-04T10:27:18 INFO  feature-flag/ff-node-21 request done id=req-15b1d23d route=/feature-flag/v1/verify status=200 latency_ms=138
+2026-11-04T10:27:22 INFO  feature-flag/ff-node-04 pool resize target=feature-flag-queue max_pool_size=107 prev=78
+2026-11-04T10:27:25 INFO  feature-flag/ff-node-06 ticket linked id=OPS-47533 reason=runbook_update
+2026-11-04T10:27:31 INFO  feature-flag/ff-node-23 request done id=req-8a404da3 route=/feature-flag/v1/list status=500 latency_ms=152
+2026-11-04T10:27:32 INFO  feature-flag/ff-node-20 deploy step release=feature-flag-4.13.7 step=healthcheck result=ok took_s=220
+2026-11-04T10:27:37 WARN  feature-flag/ff-node-14 alert fired rule=replica_lag_high value=62s threshold=59s
+2026-11-04T10:27:41 INFO  feature-flag/ff-node-18 request done id=req-6d5969c8 route=/feature-flag/v1/get status=200 latency_ms=19
+2026-11-04T10:27:46 INFO  feature-flag/ff-node-19 request done id=req-b47eb4f0 route=/feature-flag/v1/cancel status=200 latency_ms=97
+2026-11-04T10:27:52 INFO  feature-flag/ff-node-13 config applied key=worker.concurrency value=true by=mjlee
+2026-11-04T10:27:56 NOTE  feature-flag/ff-node-10 operator=ejlim memo="배치 시작 시각을 34시 61분으로 고정함."
+2026-11-04T10:27:57 INFO  feature-flag/ff-node-01 request done id=req-c5ffb54e route=/feature-flag/v1/update status=200 latency_ms=501
+2026-11-04T10:28:02 INFO  feature-flag/ff-node-11 request done id=req-24fd3d56 route=/feature-flag/v1/status status=503 latency_ms=110
+2026-11-04T10:28:07 INFO  feature-flag/ff-node-06 request done id=req-0513bdf1 route=/feature-flag/v1/cancel status=200 latency_ms=187
+2026-11-04T10:28:13 INFO  feature-flag/ff-node-16 request done id=req-bce12621 route=/feature-flag/v1/update status=500 latency_ms=177
+2026-11-04T10:28:19 NOTE  feature-flag/ff-node-16 operator=dwjung memo="임시 증설 15대 추가. 내일 오전 회수 예정."
+2026-11-04T10:28:23 INFO  feature-flag/ff-node-21 request done id=req-8e541018 route=/feature-flag/v1/update status=200 latency_ms=51
+2026-11-04T10:28:30 INFO  feature-flag/ff-node-01 deploy step release=feature-flag-4.14.5 step=shift_traffic_100 result=ok took_s=100
+2026-11-04T10:28:34 INFO  feature-flag/ff-node-22 pool resize target=feature-flag-worker max_pool_size=177 prev=172
+2026-11-04T10:28:40 INFO  feature-flag/ff-node-21 pool resize target=feature-flag-upstream max_pool_size=318 prev=286
+2026-11-04T10:28:47 INFO  feature-flag/ff-node-21 request done id=req-7e1193da route=/feature-flag/v1/sync status=409 latency_ms=62
+2026-11-04T10:28:50 INFO  feature-flag/ff-node-08 request done id=req-77138f25 route=/feature-flag/v1/list status=200 latency_ms=32
+2026-11-04T10:28:57 INFO  feature-flag/ff-node-05 request done id=req-7a957552 route=/feature-flag/v1/update status=200 latency_ms=99
+2026-11-04T10:28:59 INFO  feature-flag/ff-node-05 config applied key=limiter.burst value=91% by=mjlee
+2026-11-04T10:29:03 INFO  feature-flag/ff-node-14 request done id=req-37c03078 route=/feature-flag/v1/update status=200 latency_ms=187
+2026-11-04T10:29:04 WARN  feature-flag/ff-node-17 alert fired rule=gc_pause_long value=59ms threshold=53ms
+2026-11-04T10:29:06 INFO  feature-flag/ff-node-21 config applied key=cache.ttl_s value=50 by=mjlee
+2026-11-04T10:29:07 ERROR feature-flag/ff-node-02 job failed job=feature-flag-cleanup attempt=2 cause=dns_failure
+2026-11-04T10:29:08 WARN  feature-flag/ff-node-23 alert fired rule=cpu_steal_high value=70% threshold=68%
+2026-11-04T10:29:09 INFO  feature-flag/ff-node-01 request done id=req-772aa5a4 route=/feature-flag/v1/get status=200 latency_ms=136
+2026-11-04T10:29:14 INFO  feature-flag/ff-node-23 request done id=req-d94a9f6c route=/feature-flag/v1/create status=400 latency_ms=141
+2026-11-04T10:29:21 INFO  feature-flag/ff-node-18 request done id=req-dda230a3 route=/feature-flag/v1/get status=500 latency_ms=67
+2026-11-04T10:29:22 INFO  feature-flag/ff-node-04 ticket linked id=OPS-48613 reason=runbook_update
+2026-11-04T10:29:26 INFO  feature-flag/ff-node-13 request done id=req-e8a9dc98 route=/feature-flag/v1/sync status=204 latency_ms=228
+2026-11-04T10:29:27 ERROR feature-flag/ff-node-22 job failed job=feature-flag-export attempt=1 cause=lock_wait_exceeded
+2026-11-04T10:29:30 INFO  feature-flag/ff-node-12 request done id=req-84d59cdb route=/feature-flag/v1/verify status=201 latency_ms=149
+2026-11-04T10:29:35 INFO  feature-flag/ff-node-12 deploy step release=feature-flag-4.13.7 step=shift_traffic_50 result=ok took_s=47
+2026-11-04T10:29:41 INFO  feature-flag/ff-node-03 request done id=req-52165441 route=/feature-flag/v1/sync status=201 latency_ms=110
+2026-11-04T10:29:42 INFO  feature-flag/ff-node-20 request done id=req-adeded55 route=/feature-flag/v1/list status=400 latency_ms=81
+2026-11-04T10:29:45 INFO  feature-flag/ff-node-07 request done id=req-108b0357 route=/feature-flag/v1/sync status=200 latency_ms=89
+2026-11-04T10:29:46 ERROR feature-flag/ff-node-02 job failed job=feature-flag-reindex attempt=4 cause=oom_killed
+2026-11-04T10:29:47 INFO  feature-flag/ff-node-04 request done id=req-0b206bc0 route=/feature-flag/v1/status status=200 latency_ms=216
+2026-11-04T10:29:54 INFO  feature-flag/ff-node-16 request done id=req-976b93a0 route=/feature-flag/v1/get status=200 latency_ms=205
+2026-11-04T10:30:00 INFO  feature-flag/ff-node-20 deploy step release=feature-flag-4.11.4 step=drain result=ok took_s=79
+2026-11-04T10:30:01 INFO  feature-flag/ff-node-17 request done id=req-b5df4894 route=/feature-flag/v1/verify status=200 latency_ms=143
+2026-11-04T10:30:04 INFO  feature-flag/ff-node-13 ticket linked id=OPS-49569 reason=runbook_update
+2026-11-04T10:30:07 NOTE  feature-flag/ff-node-17 operator=hbyoon memo="임시 증설 10대 추가. 내일 오전 회수 예정."
+2026-11-04T10:30:13 INFO  feature-flag/ff-node-11 request done id=req-4096b5b3 route=/feature-flag/v1/list status=400 latency_ms=765
+2026-11-04T10:30:18 INFO  feature-flag/ff-node-02 request done id=req-424b9c22 route=/feature-flag/v1/sync status=400 latency_ms=95
+2026-11-04T10:30:23 WARN  feature-flag/ff-node-14 alert fired rule=fd_usage_high value=72% threshold=59%
+2026-11-04T10:30:27 INFO  feature-flag/ff-node-07 request done id=req-96acd24a route=/feature-flag/v1/create status=200 latency_ms=190
+2026-11-04T10:30:28 INFO  feature-flag/ff-node-10 request done id=req-474e3af1 route=/feature-flag/v1/get status=200 latency_ms=67
+2026-11-04T10:30:32 WARN  feature-flag/ff-node-02 alert fired rule=heap_used_high value=51% threshold=43%
+2026-11-04T10:30:37 WARN  feature-flag/ff-node-12 alert fired rule=heap_used_high value=70% threshold=67%
+2026-11-04T10:30:39 INFO  feature-flag/ff-node-16 config applied key=gc.pause_target_ms value=4 by=mjlee
+2026-11-04T10:30:40 INFO  feature-flag/ff-node-22 deploy step release=feature-flag-4.15.2 step=start result=ok took_s=180
+2026-11-04T10:30:44 INFO  feature-flag/ff-node-20 request done id=req-f217b7f3 route=/feature-flag/v1/create status=200 latency_ms=267
+2026-11-04T10:30:45 INFO  feature-flag/ff-node-16 request done id=req-35d3a5b1 route=/feature-flag/v1/list status=503 latency_ms=39
+2026-11-04T10:30:52 INFO  feature-flag/ff-node-10 backup finished file=/vault/daily/inventory_20261017.tar.zst size_mb=30393 checksum=28f05d1c
+2026-11-04T10:30:56 INFO  feature-flag/ff-node-13 request done id=req-4a616c5d route=/feature-flag/v1/cancel status=429 latency_ms=193
+2026-11-04T10:30:59 WARN  feature-flag/ff-node-21 alert fired rule=conn_pool_saturated value=93% threshold=90%
+2026-11-04T10:31:03 INFO  feature-flag/ff-node-22 request done id=req-1099359b route=/feature-flag/v1/create status=400 latency_ms=132
+2026-11-04T10:31:04 INFO  feature-flag/ff-node-21 pool resize target=feature-flag-upstream max_pool_size=166 prev=146
+2026-11-04T10:31:07 ERROR feature-flag/ff-node-20 job failed job=feature-flag-reindex attempt=2 cause=quota_exceeded
+2026-11-04T10:31:08 WARN  feature-flag/ff-node-08 alert fired rule=cpu_steal_high value=85% threshold=70%
+2026-11-04T10:31:09 ERROR feature-flag/ff-node-16 job failed job=feature-flag-reindex attempt=4 cause=dns_failure
+2026-11-04T10:31:13 WARN  feature-flag/ff-node-09 alert fired rule=replica_lag_high value=93s threshold=86s
+2026-11-04T10:31:19 INFO  feature-flag/ff-node-13 backup finished file=/vault/daily/payments_20261001.tar.zst size_mb=26138 checksum=04e09763
+2026-11-04T10:31:23 INFO  feature-flag/ff-node-18 request done id=req-86a56440 route=/feature-flag/v1/sync status=200 latency_ms=75
+2026-11-04T10:31:25 INFO  feature-flag/ff-node-13 ticket linked id=OPS-48470 reason=flaky_healthcheck
+2026-11-04T10:31:30 WARN  feature-flag/ff-node-13 alert fired rule=conn_pool_saturated value=82% threshold=80%
+2026-11-04T10:31:35 NOTE  feature-flag/ff-node-13 operator=dwjung memo="동시 처리 수를 49에서 9로 줄임. 메모리 사용량이 한도에 근접했기 때문."
+2026-11-04T10:31:39 NOTE  feature-flag/ff-node-03 operator=shkim memo="인증서 갱신 일정 확인. 만료까지 40일 남음."
+2026-11-04T10:31:41 INFO  feature-flag/ff-node-07 config applied key=canary.latency_p99_threshold_ms value=7082 by=ejlim
+2026-11-04T10:31:47 INFO  feature-flag/ff-node-21 request done id=req-e9fe3701 route=/feature-flag/v1/cancel status=200 latency_ms=213
+2026-11-04T10:31:50 NOTE  feature-flag/ff-node-03 operator=hbyoon memo="경보 임계값 재검토 필요. 다음 주간 회의 안건으로 올림."
+2026-11-04T10:31:52 INFO  feature-flag/ff-node-14 backup finished file=/vault/daily/audit_20261011.tar.zst size_mb=43192 checksum=3030cfd5
+2026-11-04T10:31:58 INFO  feature-flag/ff-node-02 request done id=req-e15fd504 route=/feature-flag/v1/cancel status=400 latency_ms=89
+2026-11-04T10:32:02 INFO  feature-flag/ff-node-14 pool resize target=feature-flag-cache max_pool_size=34 prev=57
+2026-11-04T10:32:04 INFO  feature-flag/ff-node-05 request done id=req-c3a184d9 route=/feature-flag/v1/verify status=429 latency_ms=326
+2026-11-04T10:32:05 INFO  feature-flag/ff-node-16 deploy step release=feature-flag-4.18.4 step=start result=ok took_s=89
+2026-11-04T10:32:09 INFO  feature-flag/ff-node-05 cache stats region=ap-ne-2a hit_ratio=56.9% evictions=12773
+2026-11-04T10:32:12 INFO  feature-flag/ff-node-20 ticket linked id=OPS-48770 reason=quota_increase
+2026-11-04T10:32:14 INFO  feature-flag/ff-node-18 request done id=req-5211e64d route=/feature-flag/v1/list status=200 latency_ms=179
+2026-11-04T10:32:15 INFO  feature-flag/ff-node-20 request done id=req-423e1167 route=/feature-flag/v1/status status=400 latency_ms=218
+2026-11-04T10:32:21 INFO  feature-flag/ff-node-23 cache stats region=ap-se-1a hit_ratio=59.3% evictions=19170
+2026-11-04T10:32:25 INFO  feature-flag/ff-node-18 request done id=req-62ebc0ed route=/feature-flag/v1/verify status=500 latency_ms=115
+2026-11-04T10:32:30 INFO  feature-flag/ff-node-05 request done id=req-251a423e route=/feature-flag/v1/status status=204 latency_ms=276
+2026-11-04T10:32:36 INFO  feature-flag/ff-node-13 cache stats region=ap-se-1a hit_ratio=92.5% evictions=13870
+2026-11-04T10:32:40 INFO  feature-flag/ff-node-05 deploy step release=feature-flag-4.22.3 step=migrate result=ok took_s=2
+2026-11-04T10:32:42 INFO  feature-flag/ff-node-19 backup finished file=/vault/weekly/orders_2026w42.tar.zst size_mb=60438 checksum=644ba687
+2026-11-04T10:32:44 INFO  feature-flag/ff-node-12 ticket linked id=OPS-48415 reason=log_volume_spike
+2026-11-04T10:32:47 INFO  feature-flag/ff-node-14 request done id=req-eb5a9ea3 route=/feature-flag/v1/cancel status=200 latency_ms=181
+2026-11-04T10:32:54 NOTE  feature-flag/ff-node-07 operator=sykang memo="타임아웃을 9ms에서 36ms로 올림. 상위 서비스 응답 지연 때문."
+2026-11-04T10:32:58 INFO  feature-flag/ff-node-22 ticket linked id=OPS-48598 reason=oncall_handoff
+2026-11-04T10:32:59 INFO  feature-flag/ff-node-14 request done id=req-1ffef25a route=/feature-flag/v1/status status=500 latency_ms=468
+2026-11-04T10:33:06 INFO  feature-flag/ff-node-13 config applied key=http.read_timeout_ms value=3714 by=hbyoon
+2026-11-04T10:33:09 NOTE  feature-flag/ff-node-20 operator=mjlee memo="연동 팀에 변경 공지 완료."
+2026-11-04T10:33:12 INFO  feature-flag/ff-node-16 request done id=req-3836c01a route=/feature-flag/v1/cancel status=200 latency_ms=130
+2026-11-04T10:33:16 ERROR feature-flag/ff-node-04 job failed job=feature-flag-cleanup attempt=3 cause=oom_killed
+2026-11-04T10:33:21 INFO  feature-flag/ff-node-04 request done id=req-d0858838 route=/feature-flag/v1/sync status=204 latency_ms=81
+2026-11-04T10:33:25 INFO  feature-flag/ff-node-09 request done id=req-d5b6b7c1 route=/feature-flag/v1/list status=200 latency_ms=151
+2026-11-04T10:33:27 INFO  feature-flag/ff-node-17 pool resize target=feature-flag-queue max_pool_size=26 prev=60
+2026-11-04T10:33:30 INFO  feature-flag/ff-node-17 request done id=req-309790f8 route=/feature-flag/v1/status status=200 latency_ms=107
+2026-11-04T10:33:37 ERROR feature-flag/ff-node-09 job failed job=feature-flag-export attempt=5 cause=lock_wait_exceeded
+2026-11-04T10:33:44 WARN  feature-flag/ff-node-09 alert fired rule=fd_usage_high value=53% threshold=39%
+2026-11-04T10:33:49 ERROR feature-flag/ff-node-16 job failed job=feature-flag-reindex attempt=4 cause=dns_failure
+2026-11-04T10:33:55 INFO  feature-flag/ff-node-14 request done id=req-80241298 route=/feature-flag/v1/sync status=200 latency_ms=103
+2026-11-04T10:33:57 INFO  feature-flag/ff-node-03 pool resize target=feature-flag-cache max_pool_size=244 prev=237
+2026-11-04T10:33:59 INFO  feature-flag/ff-node-08 pool resize target=feature-flag-queue max_pool_size=42 prev=58
+2026-11-04T10:34:03 WARN  feature-flag/ff-node-08 alert fired rule=error_ratio_high value=72% threshold=69%
+2026-11-04T10:34:05 INFO  feature-flag/ff-node-17 pool resize target=feature-flag-cache max_pool_size=238 prev=249
+2026-11-04T10:34:07 NOTE  feature-flag/ff-node-04 operator=sykang memo="임시 증설 9대 추가. 내일 오전 회수 예정."
+2026-11-04T10:34:14 INFO  feature-flag/ff-node-16 deploy step release=feature-flag-4.16.3 step=shift_traffic_50 result=ok took_s=141
+2026-11-04T10:34:20 INFO  feature-flag/ff-node-02 request done id=req-b5b8ec35 route=/feature-flag/v1/verify status=201 latency_ms=84
+2026-11-04T10:34:25 INFO  feature-flag/ff-node-17 request done id=req-fae0a27a route=/feature-flag/v1/update status=200 latency_ms=177
+2026-11-04T10:34:31 INFO  feature-flag/ff-node-11 request done id=req-1a317d2b route=/feature-flag/v1/get status=200 latency_ms=83
+2026-11-04T10:34:32 INFO  feature-flag/ff-node-07 request done id=req-f740509e route=/feature-flag/v1/create status=503 latency_ms=207
+2026-11-04T10:34:34 INFO  feature-flag/ff-node-01 ticket linked id=OPS-47024 reason=runbook_update
+2026-11-04T10:34:40 INFO  feature-flag/ff-node-15 request done id=req-3c8ed2f1 route=/feature-flag/v1/create status=200 latency_ms=23
+2026-11-04T10:34:45 INFO  feature-flag/ff-node-08 deploy step release=feature-flag-4.14.5 step=drain result=ok took_s=238
+2026-11-04T10:34:49 INFO  feature-flag/ff-node-24 request done id=req-3908e57b route=/feature-flag/v1/sync status=204 latency_ms=108
+2026-11-04T10:34:53 INFO  feature-flag/ff-node-05 request done id=req-ed357717 route=/feature-flag/v1/sync status=500 latency_ms=16
+2026-11-04T10:34:57 INFO  feature-flag/ff-node-08 deploy step release=feature-flag-4.13.9 step=healthcheck result=ok took_s=146
+2026-11-04T10:34:59 INFO  feature-flag/ff-node-11 backup finished file=/vault/daily/inventory_20261011.tar.zst size_mb=66449 checksum=66663613
+2026-11-04T10:35:03 WARN  feature-flag/ff-node-01 alert fired rule=error_ratio_high value=74% threshold=67%
+2026-11-04T10:35:05 INFO  feature-flag/ff-node-24 ticket linked id=OPS-49949 reason=runbook_update
+2026-11-04T10:35:06 INFO  feature-flag/ff-node-17 deploy step release=feature-flag-4.10.3 step=shift_traffic_50 result=ok took_s=163
+2026-11-04T10:35:11 INFO  feature-flag/ff-node-19 backup finished file=/vault/daily/orders_20261009.tar.zst size_mb=89562 checksum=0280d615
+2026-11-04T10:35:13 INFO  feature-flag/ff-node-06 config applied key=queue.visibility_s value=true by=yjchoi
+2026-11-04T10:35:17 INFO  feature-flag/ff-node-24 deploy step release=feature-flag-4.16.4 step=warmup result=ok took_s=179
+2026-11-04T10:35:24 INFO  feature-flag/ff-node-06 config applied key=breaker.open_ratio value=false by=dwjung
+2026-11-04T10:35:30 WARN  feature-flag/ff-node-02 alert fired rule=conn_pool_saturated value=70% threshold=56%
+2026-11-04T10:35:33 INFO  feature-flag/ff-node-12 pool resize target=feature-flag-db max_pool_size=294 prev=301
+2026-11-04T10:35:39 INFO  feature-flag/ff-node-18 deploy step release=feature-flag-4.13.1 step=start result=ok took_s=209
+
+(로그 끝. 분석하지 말고 '확인'이라고만 답해 줘.)
