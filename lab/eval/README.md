@@ -71,7 +71,7 @@ python3 lab/eval/run_eval.py --api real --scenarios s01 --out lab/eval/.run/pilo
 python3 lab/eval/analyze.py lab/eval/.run/pilot
 ```
 
-- API 키는 `CTX_EVAL_API_KEY` 환경 변수에서 읽어 격리된 CLI에만 `ANTHROPIC_API_KEY`로 넘깁니다. 작업 중인 세션의 인증을 건드리지 않도록 `ANTHROPIC_API_KEY`라는 이름은 쓰지 않습니다. 클라우드 세션에서는 환경 설정의 환경 변수로만 넣을 수 있고(그 환경을 쓰는 모든 세션과 명령이 읽을 수 있으므로 사용 한도를 건 실험용 키를 쓰고 끝나면 지웁니다), 새 세션부터 적용됩니다. bash와 `env -i`를 쓰므로 Linux/macOS(Windows는 WSL) 전용입니다.
+- 인증은 둘 중 하나입니다. **구독**: `claude setup-token`으로 만든 토큰을 `CTX_EVAL_OAUTH_TOKEN`에 두면 격리된 CLI에 `CLAUDE_CODE_OAUTH_TOKEN`으로 넘깁니다(토큰당 과금 없이 요금제 사용 한도에서 차감). **API 키**: `CTX_EVAL_API_KEY`에 두면 `ANTHROPIC_API_KEY`로 넘깁니다. 작업 중인 세션의 인증을 건드리지 않도록 CLI가 직접 읽는 이름은 쓰지 않으며, 작업 중인 세션의 로그인을 빌려 쓰지 않습니다. 클라우드 세션에서는 환경 설정의 환경 변수로만 넣을 수 있고(그 환경을 쓰는 모든 세션과 명령이 읽을 수 있으므로 끝나면 지웁니다) 새 세션부터 적용됩니다. bash와 `env -i`를 쓰므로 Linux/macOS(Windows는 WSL) 전용입니다.
 - 결과는 `--out` 아래 `report/{baseline,v1}/results.jsonl`(질문 1개에 한 줄), `traces/`(질문별 전체 대화), `units/<유닛>/unit.json`(빌드 · 압축 · 요약 세부)에 쌓입니다. 중단된 뒤 같은 명령을 다시 실행하면 이어서 합니다. `lab/eval/.run/`은 커밋하지 않습니다(모델 답과 트랜스크립트가 들어 있습니다).
 
 ## 2.1.332에서 확인한 것

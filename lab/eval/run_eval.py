@@ -42,7 +42,7 @@ from ctx_index_measure import classify_call  # noqa: E402  (the same rule as the
 RUNNER = os.path.join(HERE, "run_cli_eval.sh")
 MOCK = os.path.join(HERE, "mock_eval_api.py")
 INSTALL = os.path.join(REPO, "tools", "install_hook.py")
-PLACEHOLDER = "sk-ant-eval-placeholder-0000000000000000"     # must match run_cli_eval.sh
+PLACEHOLDER = "sk-ant-eval-placeholder-0000000000000000"     # the mock key in run_cli_eval.sh
 TOOLS = "Read,Grep,Glob"
 READ_RULE = "Read(~/.claude/**)"
 VARIANT = {"A": "baseline", "B": "v1"}
@@ -555,8 +555,11 @@ def main():
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--i-approve-paid-run", action="store_true", help="required for --api real")
     a = ap.parse_args()
-    if a.api == "real" and not a.i_approve_paid_run:
-        sys.exit("--api real spends money on the account whose key the proxy injects; pass --i-approve-paid-run once that is approved")
+    if a.api == "real":
+        if not (os.environ.get("CTX_EVAL_OAUTH_TOKEN") or os.environ.get("CTX_EVAL_API_KEY")):
+            sys.exit("--api real needs CTX_EVAL_OAUTH_TOKEN (a subscription token from `claude setup-token`) or CTX_EVAL_API_KEY")
+        if not a.i_approve_paid_run:
+            sys.exit("--api real uses the subscription's limits or bills the API key; pass --i-approve-paid-run once that is approved")
     ev = Eval(a)
     units = [(s, r) for r in range(a.first_rep, a.first_rep + a.reps) for s in a.scenarios.split(",")]
     log(ev.out, "eval: %d units (%s), api=%s model=%s window=%d build stop %d" % (len(units), a.scenarios, a.api, a.model, a.window, a.build_stop))
